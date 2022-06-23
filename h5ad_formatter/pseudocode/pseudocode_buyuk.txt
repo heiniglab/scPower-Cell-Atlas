@@ -11,7 +11,7 @@ source("R/em.R")
 source("R/expression_fit.R")
 source("R/plotting.R")
 source("R/power.R")
-source("R/priors.R")
+source("R/priors.R") 
 
 
 1. Reading the data in seurat format
@@ -46,22 +46,32 @@ source("R/priors.R")
    countsByCellTypeID <- list()
 
    for(tissueDataset in splittedByTissueID){
-      cellTypeDataset <- list()
+      for(tissueCollection in tissueDataset){
+         cellTypeDataset <- list()
 
-      for(tissue in tissueDataset){
-         cellTypeCollection <- list()
-         cellTypes <- SplitObject(tissue, split.by = "cell_type_ontology_term_id")
+         for(tissue in tissueCollection){
+            cellTypeMarker <- 1
+            cellTypeCollection <- list()
+            cellTypes <- SplitObject(tissue[[3]], split.by = "cell_type_ontology_term_id")
+            cellTypeNames <- names(cellTypes)
 
-         for(cellType in cellTypes)
-            # Cell count threshold: check which cell type has how many cells related to it. 
-            # If it is under 50, don't include them
-            if(cellType@assays$RNA@counts@Dim[[2]] >= 50)
-               cellTypeCollection[[length(cellTypeCollection)+1]] <- cellType@assays$RNA@counts
+            for(cellType in cellTypes)
+               # Cell count threshold: check which cell type has how many cells related to it. 
+               # If it is under 50, don't include them
+               if(cellType@assays$RNA@counts@Dim[[2]] >= 50){
+                  assayName <- tissue[[1]]
+                  tissueName <- tissue[[2]]
+                  cellTypeName <- cellTypeNames[[cellTypeMarker]]
+                  description <- list(assayName, tissueName, cellTypeName, cellType@assays$RNA@counts)
+                  cellTypeCollection[[length(cellTypeCollection)+1]] <- list(description)
+                  cellTypeMarker <- cellTypeMarker + 1
+               }
 
-         cellTypeDataset[[length(cellTypeDataset)+1]] <- cellTypeCollection
+            cellTypeDataset[[length(cellTypeDataset)+1]] <- cellTypeCollection
+         }
+
+         countsByCellTypeID[[length(countsByCellTypeID)+1]] <- cellTypeDataset
       }
-
-      countsByCellTypeID[[length(countsByCellTypeID)+1]] <- cellTypeDataset
    }
 
 
