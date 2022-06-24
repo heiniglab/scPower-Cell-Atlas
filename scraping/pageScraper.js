@@ -3,6 +3,8 @@ const scraperObject = {
 
     async scraper(browser){
 		let regexForLink = /href=\\["']([^"']*)["']/
+		let alternativeRegex = /href="([^"]*)/
+		// href=\\["']([^"']*)["']
 		let page = await browser.newPage();
 
 		console.log(`Navigating to ${this.url}...`);
