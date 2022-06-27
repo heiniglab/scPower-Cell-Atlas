@@ -13,7 +13,7 @@ const scraperObject = {
 		await page.goto(this.url);
 
 		// Wait for the required DOM to be rendered
-		await page.waitForSelector('.bp3-button-text');		  
+		await page.waitForSelector('[data-icon=chevron-down]');		  
 
 		// Get the link to all the required books
 		let pageContent = await page.evaluate(() => {
