@@ -1,4 +1,4 @@
-module helmholtz
+module helmholtz/cellxgene_collector
 
 go 1.17
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"helmholtz/cellxgene_collector"
+	cellxgene_collector "helmholtz/cellxgene_collector/model"
 )
 
 func main() {

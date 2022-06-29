@@ -17,7 +17,7 @@ const scraperObject = {
 
 		// Get the link to all the required books
 		let pageContent = await page.evaluate(() => {
-			// Extract the links from the data
+			// Extract the contents from the data
 			const tds = Array.from(document.querySelectorAll('table tbody tr td'))
 			const pageTextContent = tds.map(td => td.innerText)
 
