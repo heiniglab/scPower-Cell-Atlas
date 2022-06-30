@@ -8,11 +8,18 @@ import (
 	"net/http"
 )
 
-type Collector struct {
-	Collections []Instance `json:"assets"`
+// TODO: to be extended for every type contained
+type IDInstance struct {
+	CellCount    int    `json:"cell_count"`
+	CollectionID string `json:"collection_id"`
+	DatasetID    string `json:"id"`
 }
 
-type Instance struct {
+type DatasetCollection struct {
+	DatasetCollections []DatasetInstance `json:"assets"`
+}
+
+type DatasetInstance struct {
 	DatasetID string `json:"dataset_id"`
 	FileType  string `json:"filetype"`
 	ID        string `json:"id"`
@@ -26,8 +33,17 @@ type DownloadInstance struct {
 	PresignedUrl string `json:"presigned_url"`
 }
 
-func GetCollectionBody() ([]byte, string) {
-	res, err := http.Get("https://api.cellxgene.cziscience.com/dp/v1/datasets/dd018fc0-8da7-4033-a2ba-6b47de8ebb4f/assets")
+// Firstly scraping every dataset involved in the endpoint
+// Then extracting "id" information out of each dataset
+// return: idCollection []string
+func IDExtractor() []string {
+	// general endpoints:
+	// https://api.cellxgene.cziscience.com/dp/v1/collections/index
+
+	// creating GET request towards specified url
+	url := "https://api.cellxgene.cziscience.com/dp/v1/datasets/index"
+
+	res, err := http.Get(url)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -40,25 +56,63 @@ func GetCollectionBody() ([]byte, string) {
 	}
 
 	var (
-		collection Collector
+		datasetCollection []IDInstance
+		idCollection      []string
+	)
+
+	// embed our response body into specified struct
+	json.Unmarshal(body, &datasetCollection)
+
+	for i := range datasetCollection {
+		idCollection = append(idCollection, datasetCollection[i].DatasetID)
+	}
+
+	return idCollection
+}
+
+// Extracting fileType dependent url for a single dataset
+// url: https://api.cellxgene.cziscience.com/dp/v1/datasets/[ID]/assets
+// ID: obtained collection from IDExtractor function
+// fileType: H5AD, RDS, CXG
+// return: IDH5AD string
+func GetH5adId(url string, fileType string) string {
+
+	// creating GET request towards specified url
+	res, err := http.Get(url)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer res.Body.Close()
+
+	// read body and parse the json
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	var (
+		collection DatasetCollection
 		IDH5AD     string
 	)
+
+	// embed our response body into specified struct
 	json.Unmarshal(body, &collection)
 
 	// prettify json body
-	body_prettified, err := json.MarshalIndent(collection, "", "  ")
+	/*body_prettified, err := json.MarshalIndent(collection, "", "  ")
 	if err != nil {
 		fmt.Println(err)
-	}
+	}*/
 
-	for i := range collection.Collections {
-		if collection.Collections[i].FileType == "H5AD" {
-			IDH5AD = collection.Collections[i].ID
+	// extract only
+	for i := range collection.DatasetCollections {
+		if collection.DatasetCollections[i].FileType == fileType {
+			IDH5AD = collection.DatasetCollections[i].ID
 		}
 
 	}
 
-	return body_prettified, IDH5AD
+	return IDH5AD
 }
 
 func GetDownloadBody() ([]byte, string) {
@@ -89,13 +143,18 @@ func GetDownloadBody() ([]byte, string) {
 	downloadLink := downloadInstance.PresignedUrl
 
 	return body_prettified, downloadLink
-
 }
 
 func main() {
-	//_, IDH5AD := GetCollectionBody()
+	idCollection := IDExtractor()
 
-	body, _ := GetDownloadBody()
+	var h5adIdCollector []string
 
-	fmt.Println(string(body))
+	for _, id := range idCollection {
+		url := "https://api.cellxgene.cziscience.com/dp/v1/datasets/" + id + "/assets"
+		h5adId := GetH5adId(url, "H5AD")
+		h5adIdCollector = append(h5adIdCollector, h5adId)
+	}
+
+	fmt.Println(h5adIdCollector)
 }
