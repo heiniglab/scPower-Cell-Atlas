@@ -117,6 +117,7 @@ func GetH5adId(url string, fileType string) string {
 
 // After having both "dataset_id" and "H5AD" format related id
 // we have the complete url for reaching out to the aws with a proper request
+// url: https://api.cellxgene.cziscience.com/dp/v1/datasets/[ID]/asset/[IDH5AD]
 // return: presigned_url (which is the download link for a single dataset)
 func GetDownloadUrl(url string) string {
 
