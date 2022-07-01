@@ -1,6 +1,7 @@
 package main
 
 import (
+	"apiTrial/models"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -8,18 +9,11 @@ import (
 	"net/http"
 )
 
-// TODO: to be extended for every type contained
-type IDInstance struct {
-	CellCount    int    `json:"cell_count"`
-	CollectionID string `json:"collection_id"`
-	DatasetID    string `json:"id"`
-}
-
 type DatasetCollection struct {
-	DatasetCollections []DatasetInstance `json:"assets"`
+	DatasetCollections []UpLayerDatasetInstance `json:"assets"`
 }
 
-type DatasetInstance struct {
+type UpLayerDatasetInstance struct {
 	DatasetID string `json:"dataset_id"`
 	FileType  string `json:"filetype"`
 	ID        string `json:"id"`
@@ -55,16 +49,14 @@ func IDExtractor() []string {
 		log.Fatalln(err)
 	}
 
-	var (
-		datasetCollection []IDInstance
-		idCollection      []string
-	)
+	var idCollection []string
+	datasetCollection := &models.DatasetInstance{}
 
 	// embed our response body into specified struct
-	json.Unmarshal(body, &datasetCollection)
+	json.Unmarshal(body, datasetCollection)
 
-	for i := range datasetCollection {
-		idCollection = append(idCollection, datasetCollection[i].DatasetID)
+	for _, dataset := range *datasetCollection {
+		idCollection = append(idCollection, dataset.DatasetID)
 	}
 
 	return idCollection
