@@ -115,10 +115,12 @@ func GetH5adId(url string, fileType string) string {
 	return IDH5AD
 }
 
-func GetDownloadBody() ([]byte, string) {
-	res, err := http.Post("https://api.cellxgene.cziscience.com/dp/v1/datasets/b74100ea-1a1a-486a-9cad-70ae44150935/asset/d3bc4de8-ed94-4a85-94db-7ccc21f61195",
-		"application/json",
-		nil)
+// After having both "dataset_id" and "H5AD" format related id
+// we have the complete url for reaching out to the aws with a proper request
+// return: presigned_url (which is the download link for a single dataset)
+func GetDownloadUrl(url string) string {
+
+	res, err := http.Post(url, "application/json", nil)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -134,27 +136,24 @@ func GetDownloadBody() ([]byte, string) {
 
 	json.Unmarshal(body, &downloadInstance)
 
-	// prettify json body
-	body_prettified, err := json.MarshalIndent(downloadInstance, "", "  ")
-	if err != nil {
-		fmt.Println(err)
-	}
-
 	downloadLink := downloadInstance.PresignedUrl
 
-	return body_prettified, downloadLink
+	return downloadLink
 }
 
 func main() {
 	idCollection := IDExtractor()
 
-	var h5adIdCollector []string
+	var downloadUrlCollector []string
 
 	for _, id := range idCollection {
-		url := "https://api.cellxgene.cziscience.com/dp/v1/datasets/" + id + "/assets"
-		h5adId := GetH5adId(url, "H5AD")
-		h5adIdCollector = append(h5adIdCollector, h5adId)
+		baseUrl := "https://api.cellxgene.cziscience.com/dp/v1/datasets/" + id + "/assets"
+		h5adId := GetH5adId(baseUrl, "H5AD")
+		completeUrl := "https://api.cellxgene.cziscience.com/dp/v1/datasets/" + id + "/asset/" + h5adId
+		downloadUrl := GetDownloadUrl(completeUrl)
+
+		downloadUrlCollector = append(downloadUrlCollector, downloadUrl)
 	}
 
-	fmt.Println(h5adIdCollector)
+	fmt.Println(downloadUrlCollector)
 }
