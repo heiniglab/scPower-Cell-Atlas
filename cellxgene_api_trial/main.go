@@ -9,24 +9,6 @@ import (
 	"net/http"
 )
 
-type DatasetCollection struct {
-	DatasetCollections []UpLayerDatasetInstance `json:"assets"`
-}
-
-type UpLayerDatasetInstance struct {
-	DatasetID string `json:"dataset_id"`
-	FileType  string `json:"filetype"`
-	ID        string `json:"id"`
-	S3Uri     string `json:"s3_uri"`
-}
-
-type DownloadInstance struct {
-	DatasetID    string `json:"dataset_id"`
-	Filename     string `json:"file_name"`
-	FileSize     int    `json:"file_size"`
-	PresignedUrl string `json:"presigned_url"`
-}
-
 // Firstly scraping every dataset involved in the endpoint
 // Then extracting "id" information out of each dataset
 // return: idCollection []string
@@ -82,13 +64,11 @@ func GetH5adId(url string, fileType string) string {
 		log.Fatalln(err)
 	}
 
-	var (
-		collection DatasetCollection
-		IDH5AD     string
-	)
+	var IDH5AD string
+	collection := &models.DatasetCollection{}
 
 	// embed our response body into specified struct
-	json.Unmarshal(body, &collection)
+	json.Unmarshal(body, collection)
 
 	// prettify json body
 	/*body_prettified, err := json.MarshalIndent(collection, "", "  ")
@@ -125,9 +105,9 @@ func GetDownloadUrl(url string) string {
 		log.Fatalln(err)
 	}
 
-	var downloadInstance DownloadInstance
+	downloadInstance := &models.DownloadInstance{}
 
-	json.Unmarshal(body, &downloadInstance)
+	json.Unmarshal(body, downloadInstance)
 
 	downloadLink := downloadInstance.PresignedUrl
 
