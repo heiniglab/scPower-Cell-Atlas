@@ -2,8 +2,11 @@ package main
 
 import (
 	"database/sql"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
+	"net/http"
 	"os"
 
 	_ "github.com/lib/pq"
@@ -12,8 +15,51 @@ import (
 	"github.com/gofiber/template/html"
 )
 
-type todo struct {
-	Item string
+type DatasetInstance []DatasetMiniInstance
+
+type DatasetMiniInstance struct {
+	CellCount        int     `json:"cell_count"`
+	CollectionID     string  `json:"collection_id"`
+	CXGUrl           string  `json:"explorer_url"`
+	DatasetID        string  `json:"id"`
+	MeanGenesPerCell float64 `json:"mean_genes_per_cell"`
+	Name             string  `json:"name"`
+	PublishedAt      float64 `json:"published_at"`
+	RevisedAt        float64 `json:"revised_at"`
+}
+
+func IDExtractor() (DatasetInstance, []string) {
+	// general endpoints:
+	// https://api.cellxgene.cziscience.com/dp/v1/collections/index
+
+	// creating GET request towards specified url
+	url := "https://api.cellxgene.cziscience.com/dp/v1/datasets/index"
+
+	res, err := http.Get(url)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	defer res.Body.Close()
+
+	// read body and parse the json
+	body, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	var (
+		idCollection      []string
+		datasetCollection DatasetInstance
+	)
+
+	// embed our response body into specified struct
+	json.Unmarshal(body, &datasetCollection)
+
+	for _, dataset := range datasetCollection {
+		idCollection = append(idCollection, dataset.DatasetID)
+	}
+
+	return datasetCollection, idCollection
 }
 
 func indexHandler(c *fiber.Ctx, db *sql.DB) error {
@@ -36,14 +82,25 @@ func indexHandler(c *fiber.Ctx, db *sql.DB) error {
 }
 
 func postHandler(c *fiber.Ctx, db *sql.DB) error {
-	newTodo := todo{}
-	if err := c.BodyParser(&newTodo); err != nil {
+	datasetCollection, _ := IDExtractor()
+	newTodo := DatasetInstance{}
+	/*if err := c.BodyParser(&newTodo); err != nil {
 		log.Printf("An error occured: %v", err)
 		return c.SendString(err.Error())
-	}
+	}*/
+
 	fmt.Printf("%v", newTodo)
-	if newTodo.Item != "" {
-		_, err := db.Exec("INSERT into todos VALUES ($1)", newTodo.Item)
+
+	for _, dataset := range datasetCollection {
+		_, err := db.Exec("INSERT into todos VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
+			dataset.CellCount,
+			dataset.CollectionID,
+			dataset.CXGUrl,
+			dataset.DatasetID,
+			dataset.MeanGenesPerCell,
+			dataset.Name,
+			dataset.PublishedAt,
+			dataset.RevisedAt)
 		if err != nil {
 			log.Fatalf("An error occured while executing query: %v", err)
 		}
@@ -67,6 +124,7 @@ func deleteHandler(c *fiber.Ctx, db *sql.DB) error {
 
 func main() {
 	connStr := "postgresql://postgres:asdasd12x@127.0.0.1:5432/todos?sslmode=disable"
+
 	// Connect to database
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
