@@ -7,12 +7,28 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
+	"strings"
+	"time"
 )
+
+func timeStampToDatetime(timestamp string) {
+	v := strings.Split(timestamp, ".")
+	if len(v[1]) > 0 {
+		for len(v[1]) < 9 {
+			v[1] += "0"
+		}
+	}
+	a, _ := strconv.ParseInt(v[0], 10, 64)
+	b, _ := strconv.ParseInt(v[1], 10, 64)
+	t := time.Unix(a, b).UnixNano()
+	fmt.Printf("The time is: %d which is: %s\n", t, time.Unix(0, t).UTC())
+}
 
 // Firstly scraping every dataset involved in the endpoint
 // Then extracting "id" information out of each dataset
 // return: idCollection []string
-func IDExtractor() []string {
+func IDExtractor() ([]byte, []string) {
 	// general endpoints:
 	// https://api.cellxgene.cziscience.com/dp/v1/collections/index
 
@@ -41,7 +57,12 @@ func IDExtractor() []string {
 		idCollection = append(idCollection, dataset.DatasetID)
 	}
 
-	return idCollection
+	body_prettified, err := json.MarshalIndent(datasetCollection, "", "  ")
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	return body_prettified, idCollection
 }
 
 // Extracting fileType dependent url for a single dataset
@@ -115,7 +136,7 @@ func GetDownloadUrl(url string) string {
 }
 
 func main() {
-	idCollection := IDExtractor()
+	datasetCollection, idCollection := IDExtractor()
 
 	var downloadUrlCollector []string
 
@@ -128,5 +149,5 @@ func main() {
 		downloadUrlCollector = append(downloadUrlCollector, downloadUrl)
 	}
 
-	fmt.Println(downloadUrlCollector)
+	fmt.Println(string(datasetCollection))
 }
