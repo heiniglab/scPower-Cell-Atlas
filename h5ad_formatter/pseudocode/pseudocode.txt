@@ -10,6 +10,14 @@ Pseudocode:
 * > names <- list(assayNames[[1]], tissueNames[[1]], cellTypeNames[[1]], x)
     deneme[[length(deneme)+1]] <- list(names)
 
+* > subset(wholeDataset, assay_ontology_term_id=='EFO:0009922' & 
+           tissue_ontology_term_id == 'UBERON:0000178' & 
+           cell_type_ontology_term_id == 'CL:0000789')
+
+* > wholeDataset[,wholeDataset@meta.data$assay_ontology_term_id=='EFO:0009922' & 
+                  wholeDataset@meta.data$tissue_ontology_term_id == 'UBERON:0000178' & 
+                  wholeDataset@meta.data$cell_type_ontology_term_id == 'CL:0000817']
+
 Dataset: https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af
 
 library(Seurat)
