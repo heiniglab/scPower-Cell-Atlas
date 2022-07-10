@@ -1,0 +1,78 @@
+Dataset: https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3
+
+library(Seurat)
+library(SeuratData)
+library(SeuratDisk)
+library(DropletUtils)
+library(scuttle)
+
+source("R/datasets.R")
+source("R/em.R")
+source("R/expression_fit.R")
+source("R/plotting.R")
+source("R/power.R")
+source("R/priors.R")   
+
+
+1. Reading the data in seurat format
+   wholeDataset <- LoadH5Seurat("data/global_17_normal_3_homosap_329762.h5seurat", assays = "RNA")
+
+2. Split for a single cell type
+    datasetCollectionCombinedID <- paste(wholeDataset@meta.data$assay_ontology_term_id, 
+                                         wholeDataset@meta.data$tissue_ontology_term_id, 
+                                         wholeDataset@meta.data$cell_type_ontology_term_id,
+                                         sep="_")
+
+    for(datasetID in datasetCollectionCombinedID){
+        datasetID <- strsplit(dataset, split = "_")[[1]]
+
+        dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] & 
+                                        tissue_ontology_term_id == datasetID[[2]] & 
+                                        cell_type_ontology_term_id == datasetID[[3]])
+        
+        cellCount <- deneme@assays$RNA@counts@Dim[[2]]
+        if(cellCount < 50){
+            next
+        }
+
+        // processing part
+    }
+
+
+//@@@ Tissue checking @@@//
+
+tissueList <- list()
+partitions <- paste(wholeDataset@meta.data$assay, 
+                wholeDataset@meta.data$tissue, 
+                wholeDataset@meta.data$cell_type,
+                sep="_") 
+
+for(dataset in unique(partitions)){
+    tissueList[[length(tissueList)+1]] <- strsplit(dataset, split = "_")[[1]][[2]]
+}
+
+tissueList <- unique(tissueList)
+
+
+//@@@ CellType checking @@@//
+
+tissueCTComb <- list()
+cellTypeList <- list()
+
+partitions <- paste(splittedByAssay[[1]]@meta.data$assay, 
+                    splittedByAssay[[1]]@meta.data$tissue, 
+                    splittedByAssay[[1]]@meta.data$cell_type,
+                    sep="_") 
+
+for(dataset in unique(partitions)){
+    tmp <- strsplit(dataset, split = "_")[[1]]
+    tissueCTComb[[length(tissueCTComb)+1]] <- paste(tmp[[2]], tmp[[3]], sep = "_")
+}
+
+count <- 0
+for(dataset in tissueCTComb){
+    if(strsplit(dataset[[1]], split = "_")[[1]][[1]] == "ileum"){
+        count = count + 1
+    }    
+}
+
