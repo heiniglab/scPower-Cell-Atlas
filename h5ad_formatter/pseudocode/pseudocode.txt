@@ -101,8 +101,8 @@ source("R/priors.R")
 
 
 
-8. deneme <- subsampleIntoList(countsByCellType[[1]])
-   sapply(deneme,dim)
+8. dataset <- subsampleIntoList(countsByCellType[[1]])
+   sapply(dataset,dim)
 
 
 9. Counting observed expressed genes
@@ -110,8 +110,8 @@ source("R/priors.R")
    expressed.genes.df<-NULL
 
    #Iterate over each count matrix
-   for(name in names(deneme)){
-       count.matrix<-deneme[[name]]
+   for(name in names(dataset)){
+       count.matrix<-dataset[[name]]
 
        #Create an annotation file (here containing only one cell type, but can be more)
        annot.df<-data.frame(individual=paste0("S",rep(1:14,length.out=ncol(count.matrix))),
@@ -140,8 +140,8 @@ source("R/priors.R")
    norm.mean.values<-NULL
    disp.param<-NULL
 
-   for(name in names(deneme)){
-      temp<-nbinom.estimation(deneme[[name]], sizeFactorMethod="poscounts")
+   for(name in names(dataset)){
+      temp<-nbinom.estimation(dataset[[name]], sizeFactorMethod="poscounts")
 
       #Save the normalized mean values
       norm.mean.values.temp<-temp[[1]]
@@ -164,10 +164,10 @@ source("R/priors.R")
 11. Estimation of a gamma mixed distribution over all means
    
    gamma.fits<-NULL
-   for(name in names(deneme)){
+   for(name in names(dataset)){
 
       #Number of cells per cell type as censoring point
-      censoredPoint<- 1 / ncol(deneme[[name]])
+      censoredPoint<- 1 / ncol(dataset[[name]])
 
       norm.mean.values.temp<-norm.mean.values[norm.mean.values$matrix==name,]
       gamma.fit.temp<-mixed.gamma.estimation(norm.mean.values.temp$mean,
@@ -192,8 +192,8 @@ source("R/priors.R")
    #Estimate the mean umi values per cell for each matrix
    umi.values<-NULL
 
-   for(name in names(deneme)){
-      mean.umi<-meanUMI.calculation(deneme[[name]])
+   for(name in names(dataset)){
+      mean.umi<-meanUMI.calculation(dataset[[name]])
       umi.values<-rbind(umi.values,data.frame(mean.umi,matrix=name))
    }
 
