@@ -1,4 +1,5 @@
 # Dataset: https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3
+# Small dataset: https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
 
 # TODO:
 # * loadSources gerek var mı?
@@ -6,8 +7,8 @@
 # * daha fazla yorumlama
 
 loadPackages <- function() {
-  Packages <- c("devtools", "DropletUtils", "HardyWeinberg", "MKmisc", 
-              "plotly", "pwr", "reshape2", "scuttle", "Seurat", 
+  Packages <- c("devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
+              "plotly", "pwr", "reshape2", "scuttle", "Seurat",
               "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
   lapply(Packages, library, character.only = TRUE)
@@ -15,7 +16,7 @@ loadPackages <- function() {
 
 loadSources <- function() {
   Sources <- c("R/datasets.R", "R/em.R", "R/expression_fit.R",
-             "R/plotting.R", "R/power.R", "R/priors.R")   
+             "R/plotting.R", "R/power.R", "R/priors.R")
 
   lapply(Sources, source, character.only = TRUE)
 }
@@ -27,7 +28,7 @@ subsampleIntoList <- function(counts.subsampled){
   for(s in c(0.75,0.5,0.25)){
     subsample <- downsampleMatrix(counts.subsampled, prop = s, bycol = TRUE)
     tmp[[length(tmp)+1]] <- subsample
-  }      
+  }
 
   tmp <- setNames(tmp, c("complete", "subsampled75", "subsampled50", "subsampled25"))
 
@@ -35,7 +36,7 @@ subsampleIntoList <- function(counts.subsampled){
 }
 
 countObservedGenes <- function(counts.subsampled){
-        
+
   # Dimensions of the three count matrices
   print(sapply(counts.subsampled,dim))
 
@@ -43,22 +44,22 @@ countObservedGenes <- function(counts.subsampled){
 
   # Iterate over each count matrix
   for(name in names(counts.subsampled)){
-      
+
     count.matrix <- counts.subsampled[[name]]
-    
+
     # Create an annotation file (here containing only one cell type, but can be more)
     annot.df <- data.frame(individual = paste0("S", rep(1:14, length.out = ncol(count.matrix))),
                             cell.type = rep("default_ct", ncol(count.matrix)))
-    
+
     # Reformat count matrix into pseudobulk matrix
     pseudo.bulk <- create.pseudobulk(count.matrix, annot.df)
-    
+
     # Calculate expressed genes in the pseudobulk matrix
     expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts=3, perc.indiv=0.5)
-    
+
     # Get the number of expressed genes
     num.expressed.genes <- nrow(expressed.genes)
-    
+
     # Save expressed genes
     expressed.genes.df <- rbind(expressed.genes.df,
                                 data.frame(matrix = name,
@@ -80,12 +81,12 @@ negBinomParamEstimation <- function(counts.subsampled) {
 
   for(name in names(counts.subsampled)){
     temp <- nbinom.estimation(counts.subsampled[[name]])
-    
+
     # Save the normalized mean values
     norm.mean.values.temp <- temp[[1]]
     norm.mean.values.temp$matrix <- name
     norm.mean.values <- rbind(norm.mean.values, norm.mean.values.temp)
-    
+
     # Save the parameter of the mean-dispersion function
     disp.param.temp <- temp[[3]]
     disp.param.temp$matrix <- name
@@ -97,11 +98,11 @@ negBinomParamEstimation <- function(counts.subsampled) {
 
 # Estimation of a gamma mixed distribution over all means
 gammaMixedDistEstimation <- function(counts.subsampled, norm.mean.values) {
-        
+
   gamma.fits <- NULL
 
   for(name in names(counts.subsampled)){
-      
+
     # Number of cells per cell type as censoring point
     censoredPoint <- 1 / ncol(counts.subsampled[[name]])
 
@@ -126,7 +127,7 @@ compareGammaFixedFits <- function(norm.mean.values, gamma.fits){
 
 # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
 parameterizationOfGammaFits <- function(counts.subsampled, gamma.fits) {
-    
+
   # Estimate the mean umi values per cell for each matrix
   umi.values <- NULL
 
@@ -136,10 +137,10 @@ parameterizationOfGammaFits <- function(counts.subsampled, gamma.fits) {
   }
 
   gamma.fits <- merge(gamma.fits, umi.values, by = "matrix")
-  
+
   # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
   gamma.fits <- convert.gamma.parameters(gamma.fits)
-  
+
   # Visualize the linear relationship between gamma parameters and UMI values in plots
   visualizeLinearRelation(gamma.fits)
 
@@ -161,11 +162,11 @@ visualizeLinearRelation <- function(gamma.fits) {
 validationOfModel <- function(expressed.genes.df, mapped.reads) {
   #Merge the observed numbers of expressed genes with the read depth
   expressed.genes.df <- merge(expressed.genes.df, mapped.reads, by = "matrix")
-  
+
   #Get the number of cells per cell type and individual
   expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / 14
   expressed.genes.df$estimated.genes <- NA
-  
+
   for(i in 1:nrow(expressed.genes.df)){
     #Vector with the expression probability for each gene
     expr.prob <- estimate.exp.prob.param(nSamples = 14,
@@ -177,14 +178,13 @@ validationOfModel <- function(expressed.genes.df, mapped.reads) {
                                         disp.fun.param = disp.fun.general.new,
                                         min.counts = 3,
                                         perc.indiv = 0.5)
-    
+
     #Expected number of expressed genes
     expressed.genes.df$estimated.genes[i] <- round(sum(expr.prob))
   }
 
   return(expressed.genes.df)
 }
-
 
 visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
   plot.expressed.genes.df <- reshape2::melt(expressed.genes.df,
@@ -193,58 +193,55 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
   ggplot(plot.expressed.genes.df, aes(x = transcriptome.mapped.reads,
                                       y = value,
       color = variable)) +
-      geom_point() + 
+      geom_point() +
       geom_line()
 }
 
 main <- function (argv) {
-  
-  # cat(sprintf ('This program was called with %d arguments\n', length (argv)))
-  
-  #loadPackages()
+
+  loadPackages()
 
   # Reading the data in seurat format
-  #wholeDataset <- LoadH5Seurat("data/global_17_normal_3_homosap_329762.h5seurat", assays = "RNA")
+  wholeDataset <- LoadH5Seurat("MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat", assays = "RNA")
 
   # Split for a single cell type
-  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data$assay_ontology_term_id, 
-                                                wholeDataset@meta.data$tissue_ontology_term_id, 
-                                                wholeDataset@meta.data$cell_type_ontology_term_id,
-                                                sep="_"))
-                
-
-    for(datasetID in datasetCollectionCombinedID){
-        datasetID <- strsplit(dataset, split = "_")[[1]]
-
-        dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] & 
-                                        tissue_ontology_term_id == datasetID[[2]] & 
-                                        cell_type_ontology_term_id == datasetID[[3]])
-        
-        cellCount <- deneme@assays$RNA@counts@Dim[[2]]
-        if(cellCount < 50){
-            next
-        }
-
-        counts <- dataset@assays$RNA@counts
-        countsSubsampled <- subsampleIntoList(counts)
-
-        # Counting observed expressed genes
-        expressedGenesDF <- countObservedGenes(countsSubsampled)
-
-        # Estimation of negative binomial paramters for each gene
-        c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
-
-        # Estimation of a gamma mixed distribution over all means
-        gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)        
-
-        # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-        c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
-        
-        # Validation of expression probability model
+  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data$assay_ontology_term_id,
+                                              wholeDataset@meta.data$tissue_ontology_term_id,
+                                              wholeDataset@meta.data$cell_type_ontology_term_id,
+                                              sep="_"))
 
 
-        # Power Calculation
-    }
+  #for(datasetID in datasetCollectionCombinedID){
+  datasetID <- strsplit(dataset, split = "_")[[1]]
+
+  dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                  tissue_ontology_term_id == datasetID[[2]] &
+                                  cell_type_ontology_term_id == datasetID[[3]])
+
+  # cellCount <- deneme@assays$RNA@counts@Dim[[2]]
+  # if(cellCount < 50){
+  #   next
+  # }
+
+  counts <- dataset@assays$RNA@counts
+  countsSubsampled <- subsampleIntoList(counts)
+
+  # Counting observed expressed genes
+  expressedGenesDF <- countObservedGenes(countsSubsampled)
+
+  # Estimation of negative binomial paramters for each gene
+  #c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+
+  # Estimation of a gamma mixed distribution over all means
+  #gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
+
+  # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+  #c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
+
+  # Validation of expression probability model
+
+
+  # Power Calculation
 
   return (0)
 }
