@@ -2,13 +2,16 @@
 # Small dataset: https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
 
 # TODO:
-# * loadSources gerek var mı?
-# * her fonksiyonda statik olarak verilmiş parametreler input olarak alınan parametre haline getirilebilir
-# * daha fazla yorumlama
+# her fonksiyonda statik olarak verilmiş parametreler input olarak alınan parametre haline getirilebilir
+# daha fazla yorumlama
+# her adımda terminal outputu
+# memory limit
+# loadSources olmadan nasıl yaparız
+# validationOfModel ve örnek powerEstimation şimdilik run etmeyeceğim. cellranger ile ilişkisini çözmem gerekiyor
 
 loadPackages <- function() {
   Packages <- c("devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
-              "plotly", "pwr", "reshape2", "scuttle", "Seurat",
+              "plotly", "pwr", "reshape2", "scPower", "scuttle", "Seurat",
               "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
   lapply(Packages, library, character.only = TRUE)
@@ -18,7 +21,7 @@ loadSources <- function() {
   Sources <- c("R/datasets.R", "R/em.R", "R/expression_fit.R",
              "R/plotting.R", "R/power.R", "R/priors.R")
 
-  lapply(Sources, source, character.only = TRUE)
+  lapply(Sources, source)
 }
 
 subsampleIntoList <- function(counts.subsampled){
@@ -159,6 +162,7 @@ visualizeLinearRelation <- function(gamma.fits) {
         facet_wrap(~variable, ncol = 2, scales = "free")
 }
 
+# Validation of expression probability model
 validationOfModel <- function(expressed.genes.df, mapped.reads) {
   #Merge the observed numbers of expressed genes with the read depth
   expressed.genes.df <- merge(expressed.genes.df, mapped.reads, by = "matrix")
@@ -200,6 +204,7 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
 main <- function (argv) {
 
   loadPackages()
+  loadSources()
 
   # Reading the data in seurat format
   wholeDataset <- LoadH5Seurat("MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat", assays = "RNA")
@@ -212,7 +217,7 @@ main <- function (argv) {
 
 
   #for(datasetID in datasetCollectionCombinedID){
-  datasetID <- strsplit(dataset, split = "_")[[1]]
+  datasetID <- strsplit(datasetCollectionCombinedID[[1]], split = "_")[[1]]
 
   dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
                                   tissue_ontology_term_id == datasetID[[2]] &
@@ -230,18 +235,13 @@ main <- function (argv) {
   expressedGenesDF <- countObservedGenes(countsSubsampled)
 
   # Estimation of negative binomial paramters for each gene
-  #c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+  c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
 
   # Estimation of a gamma mixed distribution over all means
-  #gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
+  gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
 
   # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-  #c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
-
-  # Validation of expression probability model
-
-
-  # Power Calculation
+  c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
 
   return (0)
 }
