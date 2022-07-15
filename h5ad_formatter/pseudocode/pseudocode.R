@@ -216,34 +216,33 @@ main <- function (argv) {
                                               sep="_"))
 
 
-  #for(datasetID in datasetCollectionCombinedID){
-  datasetID <- strsplit(datasetCollectionCombinedID[[1]], split = "_")[[1]]
+  for(datasetID in datasetCollectionCombinedID){
+    datasetID <- strsplit(datasetID, split = "_")[[1]]
 
-  dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                                  tissue_ontology_term_id == datasetID[[2]] &
-                                  cell_type_ontology_term_id == datasetID[[3]])
+    dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                    tissue_ontology_term_id == datasetID[[2]] &
+                                    cell_type_ontology_term_id == datasetID[[3]])
 
-  # cellCount <- deneme@assays$RNA@counts@Dim[[2]]
-  # if(cellCount < 50){
-  #   next
-  # }
+    cellCount <- dataset@assays$RNA@counts@Dim[[2]]
+    if(cellCount < 50){
+      next
+    }
 
-  counts <- dataset@assays$RNA@counts
-  countsSubsampled <- subsampleIntoList(counts)
+    counts <- dataset@assays$RNA@counts
+    countsSubsampled <- subsampleIntoList(counts)
 
-  # Counting observed expressed genes
-  expressedGenesDF <- countObservedGenes(countsSubsampled)
+    # Counting observed expressed genes
+    expressedGenesDF <- countObservedGenes(countsSubsampled)
 
-  # Estimation of negative binomial paramters for each gene
-  c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+    # Estimation of negative binomial paramters for each gene
+    c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
 
-  # Estimation of a gamma mixed distribution over all means
-  gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
+    # Estimation of a gamma mixed distribution over all means
+    gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
 
-  # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-  c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
-
-  return (0)
+    # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+    c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
+  }
 }
 
 if(identical(environment(), globalenv()))
