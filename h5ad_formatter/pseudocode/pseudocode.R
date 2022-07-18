@@ -1,14 +1,6 @@
 # Dataset: https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3
 # Small dataset: https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
 
-# TODO:
-# her fonksiyonda statik olarak verilmiş parametreler input olarak alınan parametre haline getirilebilir
-# daha fazla yorumlama
-# her adımda terminal outputu
-# memory limit
-# loadSources olmadan nasıl yaparız
-# validationOfModel ve örnek powerEstimation şimdilik run etmeyeceğim. cellranger ile ilişkisini çözmem gerekiyor
-
 loadPackages <- function() {
   Packages <- c("devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
               "plotly", "pwr", "reshape2", "scPower", "scuttle", "Seurat",
