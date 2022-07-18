@@ -70,8 +70,8 @@ countObservedGenes <- function(counts.subsampled){
     # Save expressed genes
     expressed.genes.df <- rbind(expressed.genes.df,
                                 data.frame(matrix = name,
-                                            num.cells = ncol(count.matrix),
-                                            expressed.genes = num.expressed.genes))
+                                           num.cells = ncol(count.matrix),
+                                           expressed.genes = num.expressed.genes))
   }
 
   print("Counting process done successfully.")
@@ -220,6 +220,20 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
       geom_line()
 }
 
+# [cellCount]_[#assays]_[#tissues]_[#cellTypes]
+# [assayID]_[tissueID]_[cellTypeID]
+# gammaLinearFits: parameter, intercept, meanUMI)
+mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
+                             assayID, tissueID, cellTypeID, gammaLinearFits) {
+  
+  datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+  resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
+
+  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits)
+
+  return(resultingDataFrame)
+}
+
 main <- function (argv) {
 
   loadPackages()
@@ -261,6 +275,15 @@ main <- function (argv) {
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
+
+    # Merging cellCount, #assays, #tissues, #cellTypes,
+    # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
+    resultingDataFrame <- mergeFinalStatus(wholeDataset@assays$RNA@counts@Dim[[2]],
+                                           length(levels(wholeDataset$assay_ontology_term_id)),
+                                           length(levels(wholeDataset$tissue_ontology_term_id)),
+                                           length(levels(wholeDataset$cell_type_ontology_term_id)),
+                                           datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                           gammaLinearFits)    
   }
 }
 
