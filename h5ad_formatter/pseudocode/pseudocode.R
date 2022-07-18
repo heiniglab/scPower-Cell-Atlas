@@ -7,6 +7,8 @@ loadPackages <- function() {
               "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
   lapply(Packages, library, character.only = TRUE)
+
+  print("Packages are loaded successfully.")
 }
 
 loadSources <- function() {
@@ -14,6 +16,8 @@ loadSources <- function() {
              "R/plotting.R", "R/power.R", "R/priors.R")
 
   lapply(Sources, source)
+
+  print("Sources are loaded successfully.")
 }
 
 # Downsamples the reads for each molecule by the specified "prop",
@@ -31,6 +35,7 @@ subsampleIntoList <- function(counts.subsampled){
 
   tmp <- setNames(tmp, c("complete", "subsampled75", "subsampled50", "subsampled25"))
 
+  print("Subsampling process done successfully.")
   return(tmp)
 }
 
@@ -38,8 +43,8 @@ subsampleIntoList <- function(counts.subsampled){
 # matrix titles, number of cells and expressed gene counts
 countObservedGenes <- function(counts.subsampled){
 
-  # Dimensions of the three count matrices
-  print(sapply(counts.subsampled,dim))
+  print("Dimensions of each count matrices:")
+  print(sapply(counts.subsampled, dim))
 
   expressed.genes.df <- NULL
 
@@ -69,6 +74,7 @@ countObservedGenes <- function(counts.subsampled){
                                             expressed.genes = num.expressed.genes))
   }
 
+  print("Counting process done successfully.")
   return(expressed.genes.df)
 }
 
@@ -97,6 +103,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
     disp.param <- rbind(disp.param, disp.param.temp)
   }
 
+  print("Estimation of negative binomial parameters done successfully.")
   return(list(norm.mean.values, disp.param))
 }
 
@@ -122,6 +129,7 @@ gammaMixedDistEstimation <- function(counts.subsampled, norm.mean.values) {
     gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
   }
 
+  print("Estimation of a gamma mixed distribution done successfully.")
   return(gamma.fits)
 }
 
@@ -156,6 +164,9 @@ parameterizationOfGammaFits <- function(counts.subsampled, gamma.fits) {
 
   # Fit relationship between gamma parameters and UMI values
   gamma.linear.fits <- umi.gamma.relation(gamma.fits)
+
+  print("Parameterization of the gamma fits done successfully.")
+  print(gamma.linear.fits)
 
   return(list(umi.values, gamma.linear.fits))
 }
@@ -194,6 +205,7 @@ validationOfModel <- function(expressed.genes.df, mapped.reads) {
     expressed.genes.df$estimated.genes[i] <- round(sum(expr.prob))
   }
 
+  print("Validation of model done successfully.")
   return(expressed.genes.df)
 }
 
