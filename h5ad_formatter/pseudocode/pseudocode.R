@@ -75,7 +75,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
   disp.param <- NULL
 
   for(name in names(counts.subsampled)){
-    temp <- nbinom.estimation(counts.subsampled[[name]])
+    temp <- nbinom.estimation(counts.subsampled[[name]], sizeFactorMethod = "poscounts")
 
     # Save the normalized mean values
     norm.mean.values.temp <- temp[[1]]
