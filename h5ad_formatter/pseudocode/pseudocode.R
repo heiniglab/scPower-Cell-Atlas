@@ -16,6 +16,10 @@ loadSources <- function() {
   lapply(Sources, source)
 }
 
+# Downsamples the reads for each molecule by the specified "prop",
+# using the information in "sample".
+# Please see: https://rdrr.io/bioc/DropletUtils/man/downsampleReads.html
+# return: a list consisting of downsampled reads, proportions of 0.25, 0.5, 0.75 and complete
 subsampleIntoList <- function(counts.subsampled){
   tmp <- list()
   tmp[[length(tmp)+1]] <- counts.subsampled
@@ -30,6 +34,8 @@ subsampleIntoList <- function(counts.subsampled){
   return(tmp)
 }
 
+# return: a data frame consisting of:
+# matrix titles, number of cells and expressed gene counts
 countObservedGenes <- function(counts.subsampled){
 
   # Dimensions of the three count matrices
@@ -46,10 +52,11 @@ countObservedGenes <- function(counts.subsampled){
     annot.df <- data.frame(individual = paste0("S", rep(1:14, length.out = ncol(count.matrix))),
                             cell.type = rep("default_ct", ncol(count.matrix)))
 
-    # Reformat count matrix into pseudobulk matrix
+    # Reformat count matrix into 3d pseudobulk matrix
     pseudo.bulk <- create.pseudobulk(count.matrix, annot.df)
 
     # Calculate expressed genes in the pseudobulk matrix
+    # threshold of more than 3 counts in more 50% of the individuals
     expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts=3, perc.indiv=0.5)
 
     # Get the number of expressed genes
@@ -66,6 +73,8 @@ countObservedGenes <- function(counts.subsampled){
 }
 
 # Estimation of negative binomial parameters for each gene
+# return: a list with three elements: the normalized mean values,
+# the dispersion values and the parameters of the mean-dispersion function fitted from DESeq
 negBinomParamEstimation <- function(counts.subsampled) {
 
   # Data frame with normalized mean values
@@ -92,6 +101,10 @@ negBinomParamEstimation <- function(counts.subsampled) {
 }
 
 # Estimation of a gamma mixed distribution over all means
+# return: a data frame consisting of p1, p2, s1, s2, r1 and r2
+# p1=emfit@proportions[1]     p2=emfit@proportions[2]
+# s1=emfit@models[[2]]@shape  s2=emfit@models[[3]]@shape
+# r1=emfit@models[[2]]@rate   r2=emfit@models[[3]]@rate
 gammaMixedDistEstimation <- function(counts.subsampled, norm.mean.values) {
 
   gamma.fits <- NULL
@@ -101,7 +114,7 @@ gammaMixedDistEstimation <- function(counts.subsampled, norm.mean.values) {
     # Number of cells per cell type as censoring point
     censoredPoint <- 1 / ncol(counts.subsampled[[name]])
 
-    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix==name,]
+    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name,]
     gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
                                               num.genes.kept = 21000,
                                               censoredPoint = censoredPoint)
@@ -121,6 +134,8 @@ compareGammaFixedFits <- function(norm.mean.values, gamma.fits){
 }
 
 # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+# return: umi values (a data frame of mean UMIs for each subsample) and
+# gamma linear fits (a data frame of )
 parameterizationOfGammaFits <- function(counts.subsampled, gamma.fits) {
 
   # Estimate the mean umi values per cell for each matrix
