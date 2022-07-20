@@ -2,9 +2,9 @@
 # Small dataset: https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
 
 loadPackages <- function() {
-  Packages <- c("devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
-              "plotly", "pwr", "reshape2", "scPower", "scuttle", "Seurat",
-              "SeuratData", "SeuratDisk", "shiny", "zeallot")
+  Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
+              "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
+              "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
   lapply(Packages, library, character.only = TRUE)
 
@@ -234,6 +234,19 @@ mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberO
   return(resultingDataFrame)
 }
 
+establishDBConnection <- function() {
+  connectionInstance <- dbConnect(
+      Postgres(),
+      dbname = "todos",
+      host = "localhost",
+      port = 5432,
+      user = "postgres",
+      password = "asdasd12x"
+  )
+
+  return(connectionInstance)
+}
+
 main <- function (argv) {
 
   loadPackages()
@@ -283,7 +296,11 @@ main <- function (argv) {
                                            length(levels(wholeDataset$tissue_ontology_term_id)),
                                            length(levels(wholeDataset$cell_type_ontology_term_id)),
                                            datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                           gammaLinearFits)    
+                                           gammaLinearFits)
+    
+    # Writing resulting data frame to table named "priorsResult"
+    connectionInstance <- establishDBConnection()
+    dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
   }
 }
 
