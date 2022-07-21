@@ -2,7 +2,9 @@ package main
 
 import (
 	"database/sql"
+	"database/sql/driver"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -18,14 +20,27 @@ import (
 type DatasetInstance []DatasetMiniInstance
 
 type DatasetMiniInstance struct {
-	CellCount        int     `json:"cell_count"`
-	CollectionID     string  `json:"collection_id"`
-	CXGUrl           string  `json:"explorer_url"`
-	DatasetID        string  `json:"id"`
-	MeanGenesPerCell float64 `json:"mean_genes_per_cell"`
-	Name             string  `json:"name"`
-	PublishedAt      float64 `json:"published_at"`
-	RevisedAt        float64 `json:"revised_at"`
+	Assay            []CommonObject `json:"assay"`
+	CellCount        int            `json:"cell_count"`
+	CellType         []CommonObject `json:"cell_type"`
+	CollectionID     string         `json:"collection_id"`
+	DevelopmentStage []CommonObject `json:"development_stage"`
+	Disease          []CommonObject `json:"disease"`
+	Etnicity         []CommonObject `json:"ethnicity"`
+	CXGUrl           string         `json:"explorer_url"`
+	DatasetID        string         `json:"id"`
+	MeanGenesPerCell float64        `json:"mean_genes_per_cell"`
+	Name             string         `json:"name"`
+	Organism         []CommonObject `json:"organism"`
+	PublishedAt      float64        `json:"published_at"`
+	RevisedAt        float64        `json:"revised_at"`
+	Sex              []CommonObject `json:"sex"`
+	Tissue           []CommonObject `json:"tissue"`
+}
+
+type CommonObject struct {
+	Label          string `json:"label"`
+	OntologyTermID string `json:"ontology_term_id"`
 }
 
 func IDExtractor() (DatasetInstance, []string) {
@@ -62,6 +77,20 @@ func IDExtractor() (DatasetInstance, []string) {
 	return datasetCollection, idCollection
 }
 
+// returns JSON encoding for the CommonObject struct
+func (c CommonObject) Value() (driver.Value, error) {
+	return json.Marshal(c)
+}
+
+// parses JSON from database to Go struct
+func (c *CommonObject) Scan(value interface{}) error {
+	b, ok := value.([]byte)
+	if !ok {
+		return errors.New("type assertion to []byte failed")
+	}
+	return json.Unmarshal(b, &c)
+}
+
 func indexHandler(c *fiber.Ctx, db *sql.DB) error {
 	var res string
 	var todos []string
@@ -83,24 +112,39 @@ func indexHandler(c *fiber.Ctx, db *sql.DB) error {
 
 func postHandler(c *fiber.Ctx, db *sql.DB) error {
 	datasetCollection, _ := IDExtractor()
-	newTodo := DatasetInstance{}
-	/*if err := c.BodyParser(&newTodo); err != nil {
+	/*newTodo := DatasetInstance{}
+	if err := c.BodyParser(&newTodo); err != nil {
 		log.Printf("An error occured: %v", err)
 		return c.SendString(err.Error())
 	}*/
 
-	fmt.Printf("%v", newTodo)
-
 	for _, dataset := range datasetCollection {
-		_, err := db.Exec("INSERT into todos VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
+		statement := "INSERT into todos VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)"
+		assayValue, _ := json.Marshal(dataset.Assay)
+		cellTypeValue, _ := json.Marshal(dataset.CellType)
+		developmentStageValue, _ := json.Marshal(dataset.DevelopmentStage)
+		diseaseValue, _ := json.Marshal(dataset.Disease)
+		etnicityValue, _ := json.Marshal(dataset.Etnicity)
+		organismValue, _ := json.Marshal(dataset.Organism)
+		sexValue, _ := json.Marshal(dataset.Sex)
+		tissueValue, _ := json.Marshal(dataset.Tissue)
+		_, err := db.Exec(statement,
+			assayValue,
 			dataset.CellCount,
+			cellTypeValue,
 			dataset.CollectionID,
+			developmentStageValue,
+			diseaseValue,
+			etnicityValue,
 			dataset.CXGUrl,
 			dataset.DatasetID,
 			dataset.MeanGenesPerCell,
 			dataset.Name,
+			organismValue,
 			dataset.PublishedAt,
-			dataset.RevisedAt)
+			dataset.RevisedAt,
+			sexValue,
+			tissueValue)
 		if err != nil {
 			log.Fatalf("An error occured while executing query: %v", err)
 		}
