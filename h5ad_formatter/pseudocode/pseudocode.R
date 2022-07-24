@@ -220,8 +220,8 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
       geom_line()
 }
 
-# [cellCount]_[#assays]_[#tissues]_[#cellTypes]
-# [assayID]_[tissueID]_[cellTypeID]
+# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: dataset specific distinguisher
+# [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 # gammaLinearFits: parameter, intercept, meanUMI)
 mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
                              assayID, tissueID, cellTypeID, gammaLinearFits) {
@@ -270,7 +270,7 @@ main <- function (argv) {
                                     cell_type_ontology_term_id == datasetID[[3]])
 
     cellCount <- dataset@assays$RNA@counts@Dim[[2]]
-    if(cellCount < 50){
+    if(cellCount < 50) {
       next
     }
 
