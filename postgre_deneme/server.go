@@ -174,6 +174,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer db.Close()
 
 	engine := html.New("./views", ".html")
 	app := fiber.New(fiber.Config{
