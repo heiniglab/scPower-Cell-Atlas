@@ -112,19 +112,19 @@ negBinomParamEstimation <- function(counts.subsampled) {
 # p1=emfit@proportions[1]     p2=emfit@proportions[2]
 # s1=emfit@models[[2]]@shape  s2=emfit@models[[3]]@shape
 # r1=emfit@models[[2]]@rate   r2=emfit@models[[3]]@rate
-gammaMixedDistEstimation <- function(counts.subsampled, norm.mean.values) {
+gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 
   gamma.fits <- NULL
 
-  for(name in names(counts.subsampled)){
+  for(name in unique(norm.mean.values$matrix)){
 
     # Number of cells per cell type as censoring point
-    censoredPoint <- 1 / ncol(counts.subsampled[[name]])
+    censoredPoint <- censor.points[name]
 
     norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name,]
     gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
-                                              num.genes.kept = 21000,
-                                              censoredPoint = censoredPoint)
+                                             num.genes.kept = 21000,
+                                             censoredPoint = censoredPoint)
     gamma.fit.temp$matrix <- name
     gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
   }
@@ -144,16 +144,17 @@ compareGammaFixedFits <- function(norm.mean.values, gamma.fits){
 # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
 # return: umi values (a data frame of mean UMIs for each subsample) and
 # gamma linear fits (a data frame of )
-parameterizationOfGammaFits <- function(counts.subsampled, gamma.fits) {
+parameterizationOfGammaFits <- function(gamma.fits, mean_umi_counts) {
 
   # Estimate the mean umi values per cell for each matrix
-  umi.values <- NULL
+  #umi.values <- NULL
 
-  for(name in names(counts.subsampled)){
-    mean.umi <- meanUMI.calculation(counts.subsampled[[name]])
-    umi.values <- rbind(umi.values, data.frame(mean.umi, matrix = name))
-  }
-
+  #for(name in names(counts.subsampled)){
+  #  mean.umi <- meanUMI.calculation(counts.subsampled[[name]])
+  #  umi.values <- rbind(umi.values, data.frame(mean.umi, matrix = name))
+  #}
+  umi.values <- data.frame(mean.umi=mean_umi_counts, matrix=names(mean_umi_counts))
+  
   gamma.fits <- merge(gamma.fits, umi.values, by = "matrix")
 
   # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
@@ -251,6 +252,7 @@ main <- function (argv) {
 
   loadPackages()
   loadSources()
+  connectionInstance <- establishDBConnection()
 
   # Reading the data in seurat format
   wholeDataset <- LoadH5Seurat("MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat", assays = "RNA")
@@ -277,6 +279,17 @@ main <- function (argv) {
     counts <- dataset@assays$RNA@counts
     countsSubsampled <- subsampleIntoList(counts)
 
+    censorPoints <- rep(NA, length(countsSubsampled))
+    names(censorPoints) <- names(countsSubsampled)
+    
+    meanUmi <- rep(NA, length(countsSubsampled))
+    names(meanUmi) <- names(countsSubsampled)
+
+    for(matrixName in names(countsSubsampled)) {
+      censorPoints[matrixName] <- 1 / ncol(counts)
+      meanUmi[matrixName] <- meanUMI.calculation(counts)
+    }
+
     # Counting observed expressed genes
     expressedGenesDF <- countObservedGenes(countsSubsampled)
 
@@ -284,7 +297,7 @@ main <- function (argv) {
     c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
 
     # Estimation of a gamma mixed distribution over all means
-    gammaFits <- gammaMixedDistEstimation(countsSubsampled, normMeanValues)
+    gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
@@ -299,10 +312,9 @@ main <- function (argv) {
                                            gammaLinearFits)
     
     # Writing resulting data frame to table named "priorsResult"
-    connectionInstance <- establishDBConnection()
     dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
   }
 }
 
-if(identical(environment(), globalenv()))
+if(identical(environment(), globalenv()) && commandArgs()[1] != "RStudio")
   quit(status = main(commandArgs(trailingOnly = TRUE)))
