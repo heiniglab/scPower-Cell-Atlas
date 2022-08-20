@@ -241,6 +241,17 @@ establishDBConnection <- function() {
   return(connectionInstance)
 }
 
+# clear everything from runtime memory 
+# except specified variable string
+clearMemoryExcept <- function(except) {
+  rm(list = setdiff(ls(), except))
+}
+
+listWarnings <- function() {
+  warningList <- paste0(unlist(unique(names(last.warning))), collapse = "\n")
+  cat(warningList)
+}
+
 main <- function (argv) {
 
   loadPackages()
