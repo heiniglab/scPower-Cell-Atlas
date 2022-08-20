@@ -247,24 +247,27 @@ main <- function (argv) {
 
   loadPackages()
   connectionInstance <- establishDBConnection()
+  datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 
   # Reading the data in seurat format
-  wholeDataset <- LoadH5Seurat("MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat", assays = "RNA")
+  wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
 
-  # Split for a single cell type
+  # Split for each unique singular assay, tissue, cell type combination
   datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data$assay_ontology_term_id,
                                               wholeDataset@meta.data$tissue_ontology_term_id,
                                               wholeDataset@meta.data$cell_type_ontology_term_id,
                                               sep="_"))
 
-
   for(datasetID in datasetCollectionCombinedID){
+    # datasetID: {[assay], [tissue], [cellType]}
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
     dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
                                     tissue_ontology_term_id == datasetID[[2]] &
                                     cell_type_ontology_term_id == datasetID[[3]])
 
+    # cell count threshold
+    # if under 50, skip to the next sample
     cellCount <- dataset@assays$RNA@counts@Dim[[2]]
     if(cellCount < 50) {
       next
