@@ -11,15 +11,6 @@ loadPackages <- function() {
   print("Packages are loaded successfully.")
 }
 
-loadSources <- function() {
-  Sources <- c("R/datasets.R", "R/em.R", "R/expression_fit.R",
-             "R/plotting.R", "R/power.R", "R/priors.R")
-
-  lapply(Sources, source)
-
-  print("Sources are loaded successfully.")
-}
-
 # Downsamples the reads for each molecule by the specified "prop",
 # using the information in "sample".
 # Please see: https://rdrr.io/bioc/DropletUtils/man/downsampleReads.html
@@ -255,7 +246,6 @@ listWarnings <- function() {
 main <- function (argv) {
 
   loadPackages()
-  loadSources()
   connectionInstance <- establishDBConnection()
 
   # Reading the data in seurat format
