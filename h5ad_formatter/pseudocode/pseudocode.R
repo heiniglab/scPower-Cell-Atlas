@@ -144,16 +144,9 @@ compareGammaFixedFits <- function(norm.mean.values, gamma.fits){
 # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
 # return: umi values (a data frame of mean UMIs for each subsample) and
 # gamma linear fits (a data frame of )
-parameterizationOfGammaFits <- function(gamma.fits, mean_umi_counts) {
+parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
 
-  # Estimate the mean umi values per cell for each matrix
-  #umi.values <- NULL
-
-  #for(name in names(counts.subsampled)){
-  #  mean.umi <- meanUMI.calculation(counts.subsampled[[name]])
-  #  umi.values <- rbind(umi.values, data.frame(mean.umi, matrix = name))
-  #}
-  umi.values <- data.frame(mean.umi=mean_umi_counts, matrix=names(mean_umi_counts))
+  umi.values <- data.frame(mean.umi = mean.umi.counts, matrix = names(mean.umi.counts))
   
   gamma.fits <- merge(gamma.fits, umi.values, by = "matrix")
 
@@ -286,8 +279,11 @@ main <- function (argv) {
     names(meanUmi) <- names(countsSubsampled)
 
     for(matrixName in names(countsSubsampled)) {
-      censorPoints[matrixName] <- 1 / ncol(counts)
-      meanUmi[matrixName] <- meanUMI.calculation(counts)
+      # Number of cells per cell type as censoring point
+      censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
+      
+      # Estimate the mean umi values per cell for each matrix
+      meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
     }
 
     # Counting observed expressed genes
@@ -300,7 +296,7 @@ main <- function (argv) {
     gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-    c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(countsSubsampled, gammaFits)
+    c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
 
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
