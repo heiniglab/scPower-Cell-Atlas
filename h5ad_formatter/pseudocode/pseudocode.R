@@ -205,7 +205,7 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
       geom_line()
 }
 
-# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: dataset specific distinguisher
+# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 # gammaLinearFits: parameter, intercept, meanUMI)
 mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 

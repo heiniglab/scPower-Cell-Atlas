@@ -18,6 +18,11 @@ Pseudocode:
                   wholeDataset@meta.data$tissue_ontology_term_id == 'UBERON:0000178' & 
                   wholeDataset@meta.data$cell_type_ontology_term_id == 'CL:0000817']
 
+* > Sources <- c("R/datasets.R", "R/em.R", "R/expression_fit.R",
+                 "R/plotting.R", "R/power.R", "R/priors.R")
+
+    lapply(Sources, source)
+
 Dataset: https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af
 
 library(Seurat)
