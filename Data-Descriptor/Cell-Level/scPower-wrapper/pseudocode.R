@@ -6,7 +6,7 @@ loadPackages <- function() {
               "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
               "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
-  lapply(Packages, library, character.only = TRUE)
+  suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
 
   print("Packages are loaded successfully.")
 }
@@ -216,6 +216,7 @@ mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberO
 
   resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits)
 
+  print("Merging of the finals informations done successfully.")
   return(resultingDataFrame)
 }
 
@@ -259,7 +260,7 @@ main <- function (argv) {
                                               sep="_"))
 
   for(datasetID in datasetCollectionCombinedID){
-    # datasetID: {[assay], [tissue], [cellType]}
+    # datasetID: {[assayID], [tissueID], [cellTypeID]}
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
     dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
@@ -287,7 +288,7 @@ main <- function (argv) {
       censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
       
       # Estimate the mean umi values per cell for each matrix
-      meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
+      meanUmi[matrixName] <- scPower::meanUMI.calculation(countsSubsampled[[matrixName]])
     }
 
     # Counting observed expressed genes
@@ -313,6 +314,7 @@ main <- function (argv) {
     
     # Writing resulting data frame to table named "priorsResult"
     dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
+    print("Data written into database successfully.")
   }
 }
 
