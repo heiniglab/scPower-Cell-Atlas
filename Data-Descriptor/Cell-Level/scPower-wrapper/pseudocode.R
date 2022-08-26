@@ -15,7 +15,7 @@ loadPackages <- function() {
 # using the information in "sample".
 # Please see: https://rdrr.io/bioc/DropletUtils/man/downsampleReads.html
 # return: a list consisting of downsampled reads, proportions of 0.25, 0.5, 0.75 and complete
-subsampleIntoList <- function(counts.subsampled){
+subsampleIntoList <- function(counts.subsampled) {
   tmp <- list()
   tmp[[length(tmp)+1]] <- counts.subsampled
 
@@ -30,9 +30,26 @@ subsampleIntoList <- function(counts.subsampled){
   return(tmp)
 }
 
+# Conversion from dgCMatrix (sparse matrix) to list
+sparseToList <- function(counts) {
+  tmp <- matrix(data=0L, nrow = counts@Dim[1], ncol = counts@Dim[2])
+  
+  row_pos <- counts@i+1
+  col_pos <- findInterval(seq(counts@x)-1,counts@p[-1])+1
+  val <- counts@x
+    
+  for (i in seq_along(val)){
+      tmp[row_pos[i],col_pos[i]] <- val[i]
+  }
+    
+  row.names(tmp) <- counts@Dimnames[[1]]
+  colnames(tmp) <- counts@Dimnames[[2]]
+  return(tmp)
+}
+
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled){
+countObservedGenes <- function(counts.subsampled) {
 
   print("Dimensions of each count matrices:")
   print(sapply(counts.subsampled, dim))
@@ -81,7 +98,9 @@ negBinomParamEstimation <- function(counts.subsampled) {
   disp.param <- NULL
 
   for(name in names(counts.subsampled)){
-    temp <- nbinom.estimation(counts.subsampled[[name]], sizeFactorMethod = "poscounts")
+    # Converting from sparse matrix to normal one
+    counts.subsampled.converted <- sparseToList(counts.subsampled[[name]])
+    temp <- nbinom.estimation(counts.subsampled.converted, sizeFactorMethod = "poscounts")
 
     # Save the normalized mean values
     norm.mean.values.temp <- temp[[1]]
@@ -125,7 +144,7 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 }
 
 # Comparison of gamma mixed fits with original means
-compareGammaFixedFits <- function(norm.mean.values, gamma.fits){
+compareGammaFixedFits <- function(norm.mean.values, gamma.fits) {
   g <- visualize.gamma.fits(norm.mean.values$mean[norm.mean.values$matrix == "complete"],
                     gamma.fits[gamma.fits$matrix == "complete",],
                     nGenes = 21000)
@@ -233,9 +252,9 @@ establishDBConnection <- function() {
   return(connectionInstance)
 }
 
-# clear everything from runtime memory 
+# clear everything from runtime memory
 # except specified variable string
-clearMemoryExcept <- function(except) {
+flushMemoryExcept <- function(except) {
   rm(list = setdiff(ls(), except))
 }
 
@@ -252,6 +271,7 @@ main <- function (argv) {
 
   # Reading the data in seurat format
   wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
+  print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
   datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data$assay_ontology_term_id,
@@ -288,7 +308,7 @@ main <- function (argv) {
       censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
       
       # Estimate the mean umi values per cell for each matrix
-      meanUmi[matrixName] <- scPower::meanUMI.calculation(countsSubsampled[[matrixName]])
+      meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
     }
 
     # Counting observed expressed genes
