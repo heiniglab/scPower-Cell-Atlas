@@ -3,8 +3,8 @@
 
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
-              "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
-              "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "zeallot")
+                "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
+                "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "zeallot")
 
   suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
 
@@ -169,8 +169,8 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   # Fit relationship between gamma parameters and UMI values
   gamma.linear.fits <- umi.gamma.relation(gamma.fits)
 
-  print("Parameterization of the gamma fits done successfully.")
   print(gamma.linear.fits)
+  print("Parameterization of the gamma fits done successfully.")
 
   return(list(umi.values, gamma.linear.fits))
 }
@@ -239,16 +239,16 @@ mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberO
   return(resultingDataFrame)
 }
 
-establishDBConnection <- function() {
+establishDBConnection <- function(hostIP) {
   connectionInstance <- dbConnect(
       Postgres(),
       dbname = "todos",
-      host = "localhost",
+      host = toString(hostIP),
       port = 5432,
       user = "postgres",
-      password = "asdasd12x"
-  )
+      password = "asdasd12x")
 
+  print("Connection to database established successfully.")
   return(connectionInstance)
 }
 
@@ -263,10 +263,19 @@ listWarnings <- function() {
   cat(warningList)
 }
 
-main <- function (argv) {
+handleFlags <- function(argList) {
+  # arranging HOSTIP as a global variable
+  tmp <- strsplit(gsub(" ", "", argList[1]), split = "=")[[1]]
+  if(tmp[[1]] == "hostIP") HOSTIP <<- tmp[[2]] else stop("Incorrect flag name entered for hostIP.")
 
+  print("Flags are arranged successfully.")
+}
+
+main <- function(argv) {
+  
   loadPackages()
-  connectionInstance <- establishDBConnection()
+  handleFlags(argv)
+  connectionInstance <- establishDBConnection(HOSTIP)
   datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 
   # Reading the data in seurat format
@@ -339,4 +348,4 @@ main <- function (argv) {
 }
 
 if(identical(environment(), globalenv()) && commandArgs()[1] != "RStudio")
-  quit(status = main(commandArgs(trailingOnly = TRUE)))
+  main(commandArgs(trailingOnly = TRUE))
