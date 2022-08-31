@@ -4,7 +4,7 @@
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
                 "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
-                "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "zeallot")
+                "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
   suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
 
@@ -263,10 +263,26 @@ listWarnings <- function() {
   cat(warningList)
 }
 
+# Flags do not have to be in order and each flag can have whitespaces between. 
+# But keywords has to be "hostIP", "assay", "tissue", "cellType"
+# An example usage:
+# Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
 handleFlags <- function(argList) {
+
+  argSequence <- paste(unlist(argList), collapse=' ')
+
+  hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
+  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z]+")
+  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z]+")
+  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z]+")
+
   # arranging HOSTIP as a global variable
-  tmp <- strsplit(gsub(" ", "", argList[1]), split = "=")[[1]]
-  if(tmp[[1]] == "hostIP") HOSTIP <<- tmp[[2]] else stop("Incorrect flag name entered for hostIP.")
+  if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
+
+  # arranging assay, tissue and cell type names as a global variable
+  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay_ontology_term_id"
+  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue_ontology_term_id"
+  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type_ontology_term_id"
 
   print("Flags are arranged successfully.")
 }
