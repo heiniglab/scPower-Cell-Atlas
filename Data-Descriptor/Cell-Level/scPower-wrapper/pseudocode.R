@@ -272,9 +272,9 @@ handleFlags <- function(argList) {
   argSequence <- paste(unlist(argList), collapse=' ')
 
   hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
-  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z]+")
-  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z]+")
-  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z]+")
+  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z0-9_]+")
 
   # arranging HOSTIP as a global variable
   if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
@@ -299,9 +299,9 @@ main <- function(argv) {
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
-  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data$assay_ontology_term_id,
-                                              wholeDataset@meta.data$tissue_ontology_term_id,
-                                              wholeDataset@meta.data$cell_type_ontology_term_id,
+  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
+                                              wholeDataset@meta.data[[TISSUENAME]],
+                                              wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep="_"))
 
   for(datasetID in datasetCollectionCombinedID){
