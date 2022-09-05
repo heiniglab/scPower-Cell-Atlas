@@ -241,7 +241,7 @@ powerSRDRD <- function(gamma.fits, disp.fun.general.new, name) {
          MTmethod = "Bonferroni"))
 }
 
-yenifunc <- function(gamma.fits, disp.param) {
+validationUsingModel <- function(gamma.fits, disp.param) {
   disp.fun.general.new <- dispersion.function.estimation(disp.param)
   disp.fun.general.new$ct <- "New_ct"
   gamma.fits$ct <- "New_ct"
@@ -381,6 +381,7 @@ main <- function(argv) {
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
 
     # Validation of the model
+    powerList <- validationUsingModel(gammaFits, dispParam)
 
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
