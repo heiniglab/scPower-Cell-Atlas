@@ -224,6 +224,23 @@ visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
       geom_line()
 }
 
+# power.general.restrictedDoublets
+powerSRDRD <- function(gamma.fits, disp.fun.general.new, name) {
+  return(power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
+         ct.freq = 0.2, type = "eqtl",
+         ref.study = scPower::eqtl.ref.study,
+         ref.study.name = "Blueprint (Monocytes)",
+         cellsPerLane = 20000,
+         gamma.parameters = gamma.fits[gamma.fits$matrix == name,],
+         ct = "New_ct",
+         disp.fun.param = disp.fun.general.new,
+         mappingEfficiency = 0.8,
+         min.UMI.counts = 3,
+         perc.indiv.expr = 0.5,
+         sign.threshold = 0.05,
+         MTmethod = "Bonferroni"))
+}
+
 yenifunc <- function(gamma.fits, disp.param) {
   disp.fun.general.new <- dispersion.function.estimation(disp.param)
   disp.fun.general.new$ct <- "New_ct"
@@ -231,19 +248,7 @@ yenifunc <- function(gamma.fits, disp.param) {
   powerList <- list()
 
   for(name in c("complete", "subsampled75", "subsampled50", "subsampled25")) {
-    power <- power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
-                ct.freq = 0.2, type = "eqtl",
-                ref.study = scPower::eqtl.ref.study,
-                ref.study.name = "Blueprint (Monocytes)",
-                cellsPerLane = 20000,
-                gamma.parameters = gamma.fits[gamma.fits$matrix == name,],
-                ct = "New_ct",
-                disp.fun.param = disp.fun.general.new,
-                mappingEfficiency = 0.8,
-                min.UMI.counts = 3,
-                perc.indiv.expr = 0.5,
-                sign.threshold = 0.05,
-                MTmethod = "Bonferroni")
+    power <- powerSRDRD(gamma.fits, disp.fun.general.new, name)
     
     powerList[[length(powerList)+1]] <- power
   }
@@ -374,6 +379,8 @@ main <- function(argv) {
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+
+    # Validation of the model
 
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
