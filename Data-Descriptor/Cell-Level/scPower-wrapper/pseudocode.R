@@ -340,9 +340,15 @@ main <- function(argv) {
     # datasetID: {[assayID], [tissueID], [cellTypeID]}
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
-    dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                                    tissue_ontology_term_id == datasetID[[2]] &
-                                    cell_type_ontology_term_id == datasetID[[3]])
+    dataset <- tryCatch({
+      subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                           tissue_ontology_term_id == datasetID[[2]] &
+                           cell_type_ontology_term_id == datasetID[[3]])
+    }, warning = function(w) {
+      warning(w)
+    }, error = function(e) {
+      stop(e)
+    })
 
     # cell count threshold
     # if under 50, skip to the next sample
@@ -369,7 +375,17 @@ main <- function(argv) {
     }
 
     # Counting observed expressed genes
-    nSamples <- length(levels(wholeDataset@meta.data$Sample))
+    nSamples <- tryCatch({
+      if(is.null(wholeDataset@meta.data$Donor)) {
+        length(levels(wholeDataset@meta.data$Sample))
+      } else {
+        length(levels(wholeDataset@meta.data$Donor))
+      }
+    }, warning = function(w) {
+      warning(w)
+    }, error = function(e) {
+      stop("Both Donor and Sample not found in the meta data.")
+    })
     expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
 
     # Estimation of negative binomial paramters for each gene
