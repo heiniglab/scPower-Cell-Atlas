@@ -49,7 +49,7 @@ sparseToList <- function(counts) {
 
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled) {
+countObservedGenes <- function(counts.subsampled, nSamples) {
 
   print("Dimensions of each count matrices:")
   print(sapply(counts.subsampled, dim))
@@ -62,7 +62,7 @@ countObservedGenes <- function(counts.subsampled) {
     count.matrix <- counts.subsampled[[name]]
 
     # Create an annotation file (here containing only one cell type, but can be more)
-    annot.df <- data.frame(individual = paste0("S", rep(1:14, length.out = ncol(count.matrix))),
+    annot.df <- data.frame(individual = paste0("S", rep(1:nSamples, length.out = ncol(count.matrix))),
                             cell.type = rep("default_ct", ncol(count.matrix)))
 
     # Reformat count matrix into 3d pseudobulk matrix
@@ -185,17 +185,17 @@ visualizeLinearRelation <- function(gamma.fits) {
 }
 
 # Validation of expression probability model
-validationOfModel <- function(expressed.genes.df, mapped.reads) {
+validationOfModel <- function(expressed.genes.df, mapped.reads, nSamples) {
   #Merge the observed numbers of expressed genes with the read depth
   expressed.genes.df <- merge(expressed.genes.df, mapped.reads, by = "matrix")
 
   #Get the number of cells per cell type and individual
-  expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / 14
+  expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / nSamples
   expressed.genes.df$estimated.genes <- NA
 
   for(i in 1:nrow(expressed.genes.df)){
     #Vector with the expression probability for each gene
-    expr.prob <- estimate.exp.prob.param(nSamples = 14,
+    expr.prob <- estimate.exp.prob.param(nSamples = nSamples,
                                         readDepth = expressed.genes.df$transcriptome.mapped.reads[i],
                                         nCellsCt = expressed.genes.df$cells.indiv[i],
                                         read.umi.fit = read.umi.fit.new,
@@ -369,7 +369,8 @@ main <- function(argv) {
     }
 
     # Counting observed expressed genes
-    expressedGenesDF <- countObservedGenes(countsSubsampled)
+    nSamples <- length(levels(wholeDataset@meta.data$Sample))
+    expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
 
     # Estimation of negative binomial paramters for each gene
     c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
