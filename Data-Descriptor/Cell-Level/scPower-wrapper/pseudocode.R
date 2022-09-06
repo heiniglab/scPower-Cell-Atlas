@@ -17,11 +17,11 @@ loadPackages <- function() {
 # return: a list consisting of downsampled reads, proportions of 0.25, 0.5, 0.75 and complete
 subsampleIntoList <- function(counts.subsampled) {
   tmp <- list()
-  tmp[[length(tmp)+1]] <- counts.subsampled
+  tmp[[length(tmp) + 1]] <- counts.subsampled
 
-  for(s in c(0.75,0.5,0.25)){
+  for(s in c(0.75, 0.5, 0.25)){
     subsample <- downsampleMatrix(counts.subsampled, prop = s, bycol = TRUE)
-    tmp[[length(tmp)+1]] <- subsample
+    tmp[[length(tmp) + 1]] <- subsample
   }
 
   tmp <- setNames(tmp, c("complete", "subsampled75", "subsampled50", "subsampled25"))
@@ -32,16 +32,16 @@ subsampleIntoList <- function(counts.subsampled) {
 
 # Conversion from dgCMatrix (sparse matrix) to list
 sparseToList <- function(counts) {
-  tmp <- matrix(data=0L, nrow = counts@Dim[1], ncol = counts@Dim[2])
-  
-  row_pos <- counts@i+1
-  col_pos <- findInterval(seq(counts@x)-1,counts@p[-1])+1
+  tmp <- matrix(data = 0L, nrow = counts@Dim[1], ncol = counts@Dim[2])
+
+  row_pos <- counts@i + 1
+  col_pos <- findInterval(seq(counts@x) - 1, counts@p[-1]) + 1
   val <- counts@x
-    
+
   for (i in seq_along(val)){
-      tmp[row_pos[i],col_pos[i]] <- val[i]
+      tmp[row_pos[i], col_pos[i]] <- val[i]
   }
-    
+
   row.names(tmp) <- counts@Dimnames[[1]]
   colnames(tmp) <- counts@Dimnames[[2]]
   return(tmp)
@@ -70,7 +70,7 @@ countObservedGenes <- function(counts.subsampled, nSamples) {
 
     # Calculate expressed genes in the pseudobulk matrix
     # threshold of more than 3 counts in more 50% of the individuals
-    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts=3, perc.indiv=0.5)
+    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts = 3, perc.indiv = 0.5)
 
     # Get the number of expressed genes
     num.expressed.genes <- nrow(expressed.genes)
@@ -131,7 +131,7 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
     # Number of cells per cell type as censoring point
     censoredPoint <- censor.points[name]
 
-    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name,]
+    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
     gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
                                              num.genes.kept = 21000,
                                              censoredPoint = censoredPoint)
@@ -146,8 +146,8 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 # Comparison of gamma mixed fits with original means
 compareGammaFixedFits <- function(norm.mean.values, gamma.fits) {
   g <- visualize.gamma.fits(norm.mean.values$mean[norm.mean.values$matrix == "complete"],
-                    gamma.fits[gamma.fits$matrix == "complete",],
-                    nGenes = 21000)
+                            gamma.fits[gamma.fits$matrix == "complete",],
+                            nGenes = 21000)
   print(g)
 }
 
@@ -170,8 +170,8 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   gamma.linear.fits <- umi.gamma.relation(gamma.fits)
 
   print(gamma.linear.fits)
-  print("Parameterization of the gamma fits done successfully.")
 
+  print("Parameterization of the gamma fits done successfully.")
   return(list(umi.values, gamma.linear.fits))
 }
 
@@ -179,9 +179,9 @@ visualizeLinearRelation <- function(gamma.fits) {
   plot.values <- melt(gamma.fits, id.vars = c("matrix", "mean.umi"))
   plot.values <- plot.values[plot.values$variable %in% c("mean1", "mean2", "sd1", "sd2", "p1", "p2"),]
   ggplot(plot.values, aes(x = mean.umi, y = value)) +
-        geom_point() +
-        geom_line() +
-        facet_wrap(~variable, ncol = 2, scales = "free")
+         geom_point() +
+         geom_line() +
+         facet_wrap(~variable, ncol = 2, scales = "free")
 }
 
 # Validation of expression probability model
@@ -193,7 +193,7 @@ validationOfModel <- function(expressed.genes.df, mapped.reads, nSamples) {
   expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / nSamples
   expressed.genes.df$estimated.genes <- NA
 
-  for(i in 1:nrow(expressed.genes.df)){
+  for(i in seq_len(nrow(expressed.genes.df))){
     #Vector with the expression probability for each gene
     expr.prob <- estimate.exp.prob.param(nSamples = nSamples,
                                         readDepth = expressed.genes.df$transcriptome.mapped.reads[i],
@@ -231,7 +231,7 @@ powerSRDRD <- function(gamma.fits, disp.fun.general.new, name) {
          ref.study = scPower::eqtl.ref.study,
          ref.study.name = "Blueprint (Monocytes)",
          cellsPerLane = 20000,
-         gamma.parameters = gamma.fits[gamma.fits$matrix == name,],
+         gamma.parameters = gamma.fits[gamma.fits$matrix == name, ],
          ct = "New_ct",
          disp.fun.param = disp.fun.general.new,
          mappingEfficiency = 0.8,
@@ -250,9 +250,10 @@ validationUsingModel <- function(gamma.fits, disp.param) {
   for(name in c("complete", "subsampled75", "subsampled50", "subsampled25")) {
     power <- powerSRDRD(gamma.fits, disp.fun.general.new, name)
     
-    powerList[[length(powerList)+1]] <- power
+    powerList[[length(powerList) + 1]] <- power
   }
 
+  print("Validation using model done successfully.")
   return(powerList)
 }
 
@@ -301,7 +302,7 @@ listWarnings <- function() {
 # Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
 handleFlags <- function(argList) {
 
-  argSequence <- paste(unlist(argList), collapse=' ')
+  argSequence <- paste(unlist(argList), collapse = " ")
 
   hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
   assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z0-9_]+")
@@ -320,7 +321,6 @@ handleFlags <- function(argList) {
 }
 
 main <- function(argv) {
-  
   loadPackages()
   handleFlags(argv)
   connectionInstance <- establishDBConnection(HOSTIP)
@@ -334,7 +334,7 @@ main <- function(argv) {
   datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
                                               wholeDataset@meta.data[[TISSUENAME]],
                                               wholeDataset@meta.data[[CELLTYPENAME]],
-                                              sep="_"))
+                                              sep = "_"))
 
   for(datasetID in datasetCollectionCombinedID){
     # datasetID: {[assayID], [tissueID], [cellTypeID]}
@@ -369,7 +369,7 @@ main <- function(argv) {
     for(matrixName in names(countsSubsampled)) {
       # Number of cells per cell type as censoring point
       censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
-      
+
       # Estimate the mean umi values per cell for each matrix
       meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
     }
@@ -408,7 +408,7 @@ main <- function(argv) {
                                            length(levels(wholeDataset$cell_type_ontology_term_id)),
                                            datasetID[[1]], datasetID[[2]], datasetID[[3]],
                                            gammaLinearFits)
-    
+
     # Writing resulting data frame to table named "priorsResult"
     dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
     print("Data written into database successfully.")
