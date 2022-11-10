@@ -261,12 +261,12 @@ validationUsingModel <- function(gamma.fits, disp.param) {
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 # gammaLinearFits: parameter, intercept, meanUMI)
 mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID, gammaLinearFits) {
+                             assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
 
-  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits)
+  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults)
 
   print("Merging of the finals informations done successfully.")
   return(resultingDataFrame)
@@ -318,6 +318,11 @@ handleFlags <- function(argList) {
   if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type_ontology_term_id"
 
   print("Flags are arranged successfully.")
+}
+
+outputResults <- function(dataFrame) {
+  write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
+  write("\n", "results.txt", append = TRUE)
 }
 
 main <- function(argv) {
@@ -402,12 +407,13 @@ main <- function(argv) {
 
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
-    resultingDataFrame <- mergeFinalStatus(wholeDataset@assays$RNA@counts@Dim[[2]],
+    resultingDataFrame <- mergeFinalStatus(cellCount,
                                            length(levels(wholeDataset$assay_ontology_term_id)),
                                            length(levels(wholeDataset$tissue_ontology_term_id)),
                                            length(levels(wholeDataset$cell_type_ontology_term_id)),
                                            datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                           gammaLinearFits)
+                                           gammaLinearFits,
+                                           dispersion.function.estimation(dispParam))
 
     # Writing resulting data frame to table named "priorsResult"
     dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
