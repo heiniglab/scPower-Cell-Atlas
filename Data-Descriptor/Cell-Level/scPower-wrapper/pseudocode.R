@@ -381,10 +381,10 @@ main <- function(argv) {
 
     # Counting observed expressed genes
     nSamples <- tryCatch({
-      if(is.null(wholeDataset@meta.data$Donor)) {
-        length(levels(wholeDataset@meta.data$Sample))
+      if(is.null(dataset@meta.data$Donor)) {
+        length(levels(dataset@meta.data$Sample))
       } else {
-        length(levels(wholeDataset@meta.data$Donor))
+        length(levels(dataset@meta.data$Donor))
       }
     }, warning = function(w) {
       warning(w)
@@ -408,9 +408,9 @@ main <- function(argv) {
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
     resultingDataFrame <- mergeFinalStatus(cellCount,
-                                           length(levels(wholeDataset$assay_ontology_term_id)),
-                                           length(levels(wholeDataset$tissue_ontology_term_id)),
-                                           length(levels(wholeDataset$cell_type_ontology_term_id)),
+                                           length(levels(dataset$assay_ontology_term_id)),
+                                           length(levels(dataset$tissue_ontology_term_id)),
+                                           length(levels(dataset$cell_type_ontology_term_id)),
                                            datasetID[[1]], datasetID[[2]], datasetID[[3]],
                                            gammaLinearFits,
                                            dispersion.function.estimation(dispParam))
