@@ -313,9 +313,9 @@ handleFlags <- function(argList) {
   if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
 
   # arranging assay, tissue and cell type names as a global variable
-  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay_ontology_term_id"
-  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue_ontology_term_id"
-  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type_ontology_term_id"
+  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay"
+  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue"
+  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type"
 
   print("Flags are arranged successfully.")
 }
@@ -346,9 +346,9 @@ main <- function(argv) {
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
     dataset <- tryCatch({
-      subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                           tissue_ontology_term_id == datasetID[[2]] &
-                           cell_type_ontology_term_id == datasetID[[3]])
+      subset(wholeDataset, assay == datasetID[[1]] &
+                           tissue == datasetID[[2]] &
+                           cell_type == datasetID[[3]])
     }, warning = function(w) {
       warning(w)
     }, error = function(e) {
