@@ -13,6 +13,7 @@ import (
 
 	_ "github.com/lib/pq"
 
+	"github.com/blockloop/scan"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html"
 )
@@ -38,6 +39,28 @@ type DatasetMiniInstance struct {
 	Tissue           []CommonObject `json:"tissue"`
 }
 
+type DatasetMiniInstancePrimitives struct {
+	CellCount        int     `json:"cell_count"`
+	CollectionID     string  `json:"collection_id"`
+	CXGUrl           string  `json:"explorer_url"`
+	DatasetID        string  `json:"id"`
+	MeanGenesPerCell float64 `json:"mean_genes_per_cell"`
+	Name             string  `json:"name"`
+	PublishedAt      float64 `json:"published_at"`
+	RevisedAt        float64 `json:"revised_at"`
+}
+
+type DatasetMiniInstanceCommonObjects struct {
+	Assay            []CommonObject `json:"assay"`
+	CellType         []CommonObject `json:"cell_type"`
+	DevelopmentStage []CommonObject `json:"development_stage"`
+	Disease          []CommonObject `json:"disease"`
+	Etnicity         []CommonObject `json:"ethnicity"`
+	Organism         []CommonObject `json:"organism"`
+	Sex              []CommonObject `json:"sex"`
+	Tissue           []CommonObject `json:"tissue"`
+}
+
 type CommonObject struct {
 	Label          string `json:"label"`
 	OntologyTermID string `json:"ontology_term_id"`
@@ -51,16 +74,12 @@ func IDExtractor() (DatasetInstance, []string) {
 	url := "https://api.cellxgene.cziscience.com/dp/v1/datasets/index"
 
 	res, err := http.Get(url)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	ErrCheck("http get on url", err)
 	defer res.Body.Close()
 
 	// read body and parse the json
 	body, err := ioutil.ReadAll(res.Body)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	ErrCheck("read body and parse the json", err)
 
 	var (
 		idCollection      []string
@@ -91,22 +110,41 @@ func (c *CommonObject) Scan(value interface{}) error {
 	return json.Unmarshal(b, &c)
 }
 
-func indexHandler(c *fiber.Ctx, db *sql.DB) error {
-	var res string
-	var todos []string
-	rows, err := db.Query("SELECT * FROM todos")
+func ErrCheck(stage string, err error) {
 	if err != nil {
-		log.Fatalln(err)
-		c.JSON("An error occured")
+		log.Fatalf("%s %v\n", stage, err)
 	}
-	defer rows.Close()
+}
 
+func indexHandler(c *fiber.Ctx, db *sql.DB) error {
+	var primitiveCollection []DatasetMiniInstancePrimitives
+	queryPrimitive := "SELECT \"CellCount\", \"CollectionID\", \"CXGUrl\"," +
+		"\"DatasetID\", \"MeanGenesPerCell\", \"Name\"," +
+		"\"PublishedAt\", \"RevisedAt\" FROM todos"
+	primitiveRows, err := db.Query(queryPrimitive)
+	ErrCheck("primitive types query read", err)
+	defer primitiveRows.Close()
+
+	err = scan.Rows(&primitiveCollection, primitiveRows)
+	ErrCheck("primitive types scan rows", err)
+
+	fmt.Printf("%#v", primitiveCollection)
+
+	// Multiple rows of primitive types
+	/*err = scan.Rows(&todos, rows)
+	ErrCheck("deneme1", err)
+	*/
+
+	/*var ws []CommonObject
 	for rows.Next() {
-		rows.Scan(&res)
-		todos = append(todos, res)
-	}
+		w := CommonObject{}
+		err := rows.Scan(&w.Label)
+		ErrCheck("deneme2", err)
+		ws = append(ws, w)
+	}*/
+
 	return c.Render("index", fiber.Map{
-		"Todos": todos,
+		"Todos": primitiveCollection,
 	})
 }
 
@@ -145,9 +183,8 @@ func postHandler(c *fiber.Ctx, db *sql.DB) error {
 			dataset.RevisedAt,
 			sexValue,
 			tissueValue)
-		if err != nil {
-			log.Fatalf("An error occured while executing query: %v", err)
-		}
+
+		ErrCheck("An error occured while executing query", err)
 	}
 
 	return c.Redirect("/")
@@ -171,9 +208,7 @@ func main() {
 
 	// Connect to database
 	db, err := sql.Open("postgres", connStr)
-	if err != nil {
-		log.Fatal(err)
-	}
+	ErrCheck("creating connection with database", err)
 	defer db.Close()
 
 	engine := html.New("./views", ".html")
