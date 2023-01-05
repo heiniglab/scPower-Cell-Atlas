@@ -2,28 +2,24 @@ package main
 
 import (
 	"backend-boilerplate/controllers"
-	"backend-boilerplate/models"
+	"backend-boilerplate/initializers"
 
 	"github.com/gin-gonic/gin"
 )
 
+func init() {
+	initializers.LoadEnvVariables()
+	initializers.ConnectToDB()
+}
+
 func main() {
-	// Setting up default router defined in gin
 	r := gin.Default()
 
-	// Connecting to database
-	models.ConnectDatabase()
+	r.POST("/posts", controllers.PostsCreate)
+	r.GET("/posts", controllers.PostsIndex)
+	r.GET("/posts/:id", controllers.PostsShow)
+	r.PUT("/posts/:id", controllers.PostsUpdate)
+	r.DELETE("/posts/:id", controllers.PostsDelete)
 
-	// Routes
-	r.GET("/books", controllers.FindBooks)
-	r.POST("/books", controllers.CreateBook)
-	r.GET("/books/:id", controllers.FindBook)
-	r.PATCH("/books/:id", controllers.UpdateBook)
-	r.DELETE("/books/:id", controllers.DeleteBook)
-
-	// Run the server
-	err := r.Run()
-	if err != nil {
-		return
-	}
+	r.Run()
 }
