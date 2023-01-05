@@ -1,25 +1,20 @@
 package main
 
 import (
-	"backend-boilerplate/controllers"
 	"backend-boilerplate/initializers"
+	"backend-boilerplate/routers"
 
 	"github.com/gin-gonic/gin"
 )
 
+var r *gin.Engine
+
 func init() {
 	initializers.LoadEnvVariables()
 	initializers.ConnectToDB()
+	r = routers.InitRouter()
 }
 
 func main() {
-	r := gin.Default()
-
-	r.POST("/posts", controllers.PostsCreate)
-	r.GET("/posts", controllers.PostsIndex)
-	r.GET("/posts/:id", controllers.PostsShow)
-	r.PUT("/posts/:id", controllers.PostsUpdate)
-	r.DELETE("/posts/:id", controllers.PostsDelete)
-
 	r.Run()
 }
