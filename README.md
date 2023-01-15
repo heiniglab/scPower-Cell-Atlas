@@ -1,3 +1,5 @@
+# Enabling cell atlas guided optimal experimental design
+
 ## Project Purpose
 To develop an online resource for optimal experimental design and power analysis of cell type specific multisample comparisons and CRISPR screening single cell transcriptomics experiments.
 
