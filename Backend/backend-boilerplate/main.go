@@ -16,5 +16,6 @@ func init() {
 }
 
 func main() {
+	// Running on localhost:3000
 	r.Run()
 }
