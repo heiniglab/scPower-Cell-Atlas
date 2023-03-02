@@ -3,18 +3,8 @@ title: "Enabling cell atlas guided optimal experimental design"
 output: html_notebook
 ---
 
-Add a new chunk: *Ctrl+Alt+I*.
-Save the notebook as an HTML file: *Ctrl+Shift+K*
-
-
-Functions listed below:
+Functions to be loaded:
 ```{r}
-# Dataset List:
-# https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3
-# https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
-# https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af
-
-
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
                 "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
@@ -208,79 +198,6 @@ visualizeLinearRelation <- function(gamma.fits) {
          facet_wrap(~variable, ncol = 2, scales = "free")
 }
 
-# Validation of expression probability model
-validationOfModel <- function(expressed.genes.df, mapped.reads, nSamples) {
-  #Merge the observed numbers of expressed genes with the read depth
-  expressed.genes.df <- merge(expressed.genes.df, mapped.reads, by = "matrix")
-
-  #Get the number of cells per cell type and individual
-  expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / nSamples
-  expressed.genes.df$estimated.genes <- NA
-
-  for(i in seq_len(nrow(expressed.genes.df))){
-    #Vector with the expression probability for each gene
-    expr.prob <- estimate.exp.prob.param(nSamples = nSamples,
-                                        readDepth = expressed.genes.df$transcriptome.mapped.reads[i],
-                                        nCellsCt = expressed.genes.df$cells.indiv[i],
-                                        read.umi.fit = read.umi.fit.new,
-                                        gamma.mixed.fits = gamma.linear.fit.new,
-                                        ct = "New_ct",
-                                        disp.fun.param = disp.fun.general.new,
-                                        min.counts = 3,
-                                        perc.indiv = 0.5)
-
-    #Expected number of expressed genes
-    expressed.genes.df$estimated.genes[i] <- round(sum(expr.prob))
-  }
-
-  print("Validation of model done successfully.")
-  return(expressed.genes.df)
-}
-
-visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
-  plot.expressed.genes.df <- reshape2::melt(expressed.genes.df,
-                                          id.vars = c("matrix", "num.cells", "cells.indiv", "transcriptome.mapped.reads"))
-
-  ggplot(plot.expressed.genes.df, aes(x = transcriptome.mapped.reads,
-                                      y = value,
-      color = variable)) +
-      geom_point() +
-      geom_line()
-}
-
-# power.general.restrictedDoublets
-powerSRDRD <- function(gamma.fits, disp.fun.general.new, name) {
-  return(power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
-         ct.freq = 0.2, type = "eqtl",
-         ref.study = scPower::eqtl.ref.study,
-         ref.study.name = "Blueprint (Monocytes)",
-         cellsPerLane = 20000,
-         gamma.parameters = gamma.fits[gamma.fits$matrix == name, ],
-         ct = "New_ct",
-         disp.fun.param = disp.fun.general.new,
-         mappingEfficiency = 0.8,
-         min.UMI.counts = 3,
-         perc.indiv.expr = 0.5,
-         sign.threshold = 0.05,
-         MTmethod = "Bonferroni"))
-}
-
-validationUsingModel <- function(gamma.fits, disp.param) {
-  disp.fun.general.new <- dispersion.function.estimation(disp.param)
-  disp.fun.general.new$ct <- "New_ct"
-  gamma.fits$ct <- "New_ct"
-  powerList <- list()
-
-  for(name in c("complete", "subsampled75", "subsampled50", "subsampled25")) {
-    power <- powerSRDRD(gamma.fits, disp.fun.general.new, name)
-    
-    powerList[[length(powerList) + 1]] <- power
-  }
-
-  print("Validation using model done successfully.")
-  return(powerList)
-}
-
 mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
   resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
                                    expressedGenes, meanUmi, evaluation)
@@ -360,11 +277,13 @@ outputResults <- function(dataFrame) {
 }
 ```
 
-Preparation before going into getting priors:
+
+Preparation beforehand:
 ```{r}
   loadPackages()
   handleFlagsTags(list("hostIP=127.0.0.1"))
   connectionInstance <- establishDBConnection(HOSTIP)
+  # path of dataset location
   setwd("C:/Users/Cem/Documents/Github/dataset")
   datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 
@@ -377,13 +296,17 @@ Preparation before going into getting priors:
                                               wholeDataset@meta.data[[TISSUENAME]],
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
+  
   observedGeneCountsDF <- data.frame()
-
+  # Gamma linear fit values needed for later binding with scPower::gamma.mixed.fits
+  gammaLinearFitsDF <- data.frame()
+  dispFunParamDF <- data.frame()
 ```
+
 
 Loop through cell types:
 ```{r}
-for(datasetID in datasetCollectionCombinedID){
+  for(datasetID in datasetCollectionCombinedID){
     
     # datasetID: {[assayID], [tissueID], [cellTypeID]}
     datasetID <- strsplit(datasetID, split = "_")[[1]]
@@ -444,14 +367,25 @@ for(datasetID in datasetCollectionCombinedID){
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
-
+    
+    # Firstly arranging gamma linear fit values for each cell type
+    tmp <- gammaLinearFits
+    tmp$ct <- datasetID[[3]]
+    gammaLinearFitsDF <- rbind(gammaLinearFitsDF, tmp)
+    
+    # Then also arranging disp fun parameter values for each cell type
+    tmp <- dispersion.function.estimation(dispParam)
+    tmp$ct <- datasetID[[3]]
+    tmp <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
+    dispFunParamDF <- rbind(dispFunParamDF, tmp)
+    
     # Collecting data for validation of the model
     observedGeneCounts <- mergeGeneCounts("Run 5", datasetID[[3]], cellCount, "own_count10",
                                           meanUmi, expressedGenesDF$expressed.genes)
     observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
     
     # Merging cellCount, #assays, #tissues, #cellTypes,
-    # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
+    # assayID, tissueID, cellTypeID, gammaLinearFits, dispParameters into a data frame
     resultingDataFrame <- mergeFinalStatus(cellCount,
                                            length(levels(dataset$assay_ontology_term_id)),
                                            length(levels(dataset$tissue_ontology_term_id)),
@@ -466,3 +400,131 @@ for(datasetID in datasetCollectionCombinedID){
   }
 ```
 
+
+Then for the validation step:
+```{r}
+  # Firstly append gammaLinearFitsDF to the already existing one in the scPower library
+  #gammaLinearFitsDF <- rbind(scPower::gamma.mixed.fits, gammaLinearFitsDF)
+
+  # stepping into validation
+  estimates.allSamples <- NULL
+  estimates <- observedGeneCountsDF
+  estimates$estimated.counts <- NA
+  
+  i <- 1
+  exp.probs <- estimateExpProbCountParam(
+    nSamples = nSamples,
+    nCellsCt = estimates$num.cells[i] / nSamples,
+    meanCellCounts = estimates$meanUMI[i],
+    gamma.mixed.fits = gammaLinearFitsDF,
+    ct = estimates$cell.type[i],
+    disp.fun.param = dispFunParamDF,
+    min.counts = 10,
+    perc.indiv = 0.5
+  )
+  #estimates$estimated.counts[i] <- round(sum(exp.probs))
+  
+  
+  #estimates$dataset <- "Training data set"
+  #estimates$threshold <- "Training data set - Count > 10"
+  #estimates.allSamples <- rbind(estimates.allSamples, estimates)
+  
+  # Set batch variable
+  
+  # Get the correlation values
+  
+  # Reformat data for plotting
+```
+
+
+estimate.exp.prob.count.param
+```{r}
+  estimateExpProbCountParam <- function(nSamples,nCellsCt,meanCellCounts,
+                                        gamma.mixed.fits,
+                                        ct,disp.fun.param,
+                                        min.counts=3,perc.indiv.expr=0.5,
+                                        cutoffVersion="absolute",
+                                        nGenes=21000,samplingMethod="quantiles",
+                                        countMethod="UMI"){
+
+
+    #Check if gamma fit data for the cell type exists
+    if(! any(gamma.mixed.fits$ct==ct)){
+      stop(paste("No gene curve fitting data in the data frame gamma.mixed.fits fits to the specified cell type",
+                 ct,". Check that the cell type is correctly spelled and the right gamma.mixed.fits object used."))
+    }
+  
+    #Get gamma values dependent on mean umi
+    gamma.fits.ct<-gamma.mixed.fits[gamma.mixed.fits$ct==ct,]
+    gamma.fits.ct$fitted.value<-gamma.fits.ct$intercept+gamma.fits.ct$meanUMI*meanCellCounts
+  
+    gamma.parameters<-data.frame(p1=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="p1"],
+                                 p3=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="p3"],
+                                 mean1=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="mean1"],
+                                 mean2=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="mean2"],
+                                 sd1=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="sd1"],
+                                 sd2=gamma.fits.ct$fitted.value[gamma.fits.ct$parameter=="sd2"])
+  
+    #Convert them to the rateshape variant
+    gamma.parameters<-convert.gamma.parameters(gamma.parameters,type="rateshape")
+  
+    #Sample means values
+    gene.means<-sampleMeanValuesQuantiles(gamma.parameters,nGenes)
+  
+    #Check if dispersion data for the cell type exists
+    if(! any(disp.fun.param$ct==ct)){
+      stop(paste("No dispersion fitting data in the data frame disp.fun.param fits to the specified cell type",
+                 ct,". Check that the cell type is correctly spelled and the right disp.fun.param object used."))
+    }
+  
+    #Fit dispersion parameter dependent on mean parameter
+    disp.fun<-disp.fun.param[disp.fun.param$ct==ct,]
+  
+    gene.disps<-sample.disp.values(gene.means,disp.fun)
+  
+    return(estimate.exp.prob.values(gene.means,1/gene.disps,nCellsCt,
+                                    nSamples,min.counts,perc.indiv.expr,cutoffVersion))
+  }
+```
+
+
+sample.mean.values.quantiles
+```{r}
+  sampleMeanValuesQuantiles <- function(gamma.parameters, nGenes=21000){
+    
+    #Set p1 to a minimal value of 0.01
+    gamma.parameters$p1<-max(gamma.parameters$p1,0.01)
+  
+    #Calculate p2 given the other two parameters if it is not provided
+    if(! "p2" %in% colnames(gamma.parameters)){
+      gamma.parameters$p2<-1-gamma.parameters$p1-gamma.parameters$p3
+    }
+  
+    #Zero Component
+    nZeros<-round(nGenes*gamma.parameters$p1)
+    vals<-rep(0,nZeros)
+    #vals<-lapply(nZeros, function(x) rep(0, x))
+    
+    #First Gamma component
+    nGamma1<-round(nGenes*gamma.parameters$p2)
+    quantiles.c1<-seq(1/(nGamma1+1),1-1/(nGamma1+1),by=1/(nGamma1+1))
+    vals<-c(vals,qgamma(quantiles.c1,shape = gamma.parameters$s1,
+                      rate = gamma.parameters$r1))
+    
+    #from <- 1/(nGamma1+1)
+    #to <- 1-1/(nGamma1+1)
+    #by <- 1/(nGamma1+1)
+    #quantiles.c1<-mapply(seq, from = from, to = to, by = by)
+    #scale <- 1/gamma.parameters$r1
+    #vals<-c(vals,qgamma(quantiles.c1, shape = gamma.parameters$s1,
+    #                    scale = scale))
+  
+    #Second Gamma component
+    nGamma2<-nGenes-nZeros-nGamma1
+    quantiles.c2<-seq(1/(nGamma2+1),1-1/(nGamma2+1),by=1/(nGamma2+1))
+    vals<-c(vals,qgamma(quantiles.c2,shape = gamma.parameters$s2,
+                        rate = gamma.parameters$r2))
+  
+    return(vals)
+  }
+```
