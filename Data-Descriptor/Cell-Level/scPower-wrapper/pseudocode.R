@@ -1,5 +1,10 @@
-# Dataset: https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3
-# Small dataset: https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc
+# TODO: 
+# estimate.exp.prob.count.param
+    # Get gamma values dependent on mean umi > ID'ye encode et
+# sample.mean.values.quantiles:
+    # output an error message if multiple rows present in gamma parameters
+        # stopifnot(nrow(gamma.parameters))
+    # zero component: nZeros elemanları değişir mi? Neden liste atıldı çöz
 
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
@@ -9,6 +14,13 @@ loadPackages <- function() {
   suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
 
   print("Packages are loaded successfully.")
+}
+
+# Converting from AnnData to Seurat via h5Seurat
+convertH5Seurat <- function(file.name) {
+  converted <- Convert(file.name, dest = "h5seurat", overwrite = TRUE)
+
+  return(converted)
 }
 
 # Downsamples the reads for each molecule by the specified "prop",
@@ -113,6 +125,9 @@ negBinomParamEstimation <- function(counts.subsampled) {
     disp.param <- rbind(disp.param, disp.param.temp)
   }
 
+  # First rows of the data frame with normalized mean values
+  head(norm.mean.values)
+
   print("Estimation of negative binomial parameters done successfully.")
   return(list(norm.mean.values, disp.param))
 }
@@ -144,7 +159,7 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 }
 
 # Comparison of gamma mixed fits with original means
-compareGammaFixedFits <- function(norm.mean.values, gamma.fits) {
+compareGammaMixedFits <- function(norm.mean.values, gamma.fits) {
   g <- visualize.gamma.fits(norm.mean.values$mean[norm.mean.values$matrix == "complete"],
                             gamma.fits[gamma.fits$matrix == "complete",],
                             nGenes = 21000)
@@ -163,7 +178,6 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
   gamma.fits <- convert.gamma.parameters(gamma.fits)
 
-  # Visualize the linear relationship between gamma parameters and UMI values in plots
   visualizeLinearRelation(gamma.fits)
 
   # Fit relationship between gamma parameters and UMI values
@@ -175,6 +189,7 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   return(list(umi.values, gamma.linear.fits))
 }
 
+# Visualize the linear relationship between gamma parameters and UMI values in plots
 visualizeLinearRelation <- function(gamma.fits) {
   plot.values <- melt(gamma.fits, id.vars = c("matrix", "mean.umi"))
   plot.values <- plot.values[plot.values$variable %in% c("mean1", "mean2", "sd1", "sd2", "p1", "p2"),]
@@ -257,9 +272,19 @@ validationUsingModel <- function(gamma.fits, disp.param) {
   return(powerList)
 }
 
+mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
+  resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
+                                   expressedGenes, meanUmi, evaluation)
+  rownames(resultingDataFrame) <- NULL
+  colnames(resultingDataFrame) <- c('run', 'sample', 'cell.type', 'num.cells', 'expressed.genes', 'meanUMI', 'evaluation')
+
+  return(resultingDataFrame)
+}
+
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 # gammaLinearFits: parameter, intercept, meanUMI)
+# There will be 3 tables in the end we'll be dealing with: datasetBody, downloadBody, []result (for each datasetBody)
 mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
                              assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
   
@@ -300,7 +325,7 @@ listWarnings <- function() {
 # But keywords has to be "hostIP", "assay", "tissue", "cellType"
 # An example usage:
 # Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
-handleFlags <- function(argList) {
+handleFlagsTags <- function(argList) {
 
   argSequence <- paste(unlist(argList), collapse = " ")
 
@@ -327,7 +352,7 @@ outputResults <- function(dataFrame) {
 
 main <- function(argv) {
   loadPackages()
-  handleFlags(argv)
+  handleFlagsTags(argv)
   connectionInstance <- establishDBConnection(HOSTIP)
   datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 
@@ -340,8 +365,10 @@ main <- function(argv) {
                                               wholeDataset@meta.data[[TISSUENAME]],
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
+  observedGeneCountsDF <- data.frame()
 
   for(datasetID in datasetCollectionCombinedID){
+    
     # datasetID: {[assayID], [tissueID], [cellTypeID]}
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
@@ -402,9 +429,11 @@ main <- function(argv) {
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
 
-    # Validation of the model
-    powerList <- validationUsingModel(gammaFits, dispParam)
-
+    # Collecting data for validation of the model
+    observedGeneCounts <- mergeGeneCounts("Run 5", datasetID[[3]], cellCount, "own_count10",
+                                          meanUmi, expressedGenesDF$expressed.genes)
+    observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
+    
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, into a data frame
     resultingDataFrame <- mergeFinalStatus(cellCount,
@@ -419,6 +448,11 @@ main <- function(argv) {
     dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
     print("Data written into database successfully.")
   }
+
+  # Validation of the model
+  print(observedGeneCountsDF)
+  
+  #powerList <- validationUsingModel(gammaFits, dispParam)
 }
 
 if(identical(environment(), globalenv()) && commandArgs()[1] != "RStudio")
