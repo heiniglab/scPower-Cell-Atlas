@@ -408,7 +408,7 @@ Then for the validation step:
 
   # stepping into validation
   estimates.allSamples <- NULL
-  estimates <- observedGeneCountsDF
+  estimates <- head(observedGeneCountsDF, 8)
   estimates$estimated.counts <- NA
   
   i <- 1
@@ -416,9 +416,9 @@ Then for the validation step:
     nSamples = nSamples,
     nCellsCt = estimates$num.cells[i] / nSamples,
     meanCellCounts = estimates$meanUMI[i],
-    gamma.mixed.fits = gammaLinearFitsDF,
+    gamma.mixed.fits = head(gammaLinearFitsDF, 12),
     ct = estimates$cell.type[i],
-    disp.fun.param = dispFunParamDF,
+    disp.fun.param = head(dispFunParamDF, 2),
     min.counts = 10,
     perc.indiv = 0.5
   )
@@ -516,8 +516,10 @@ sample.mean.values.quantiles
     #by <- 1/(nGamma1+1)
     #quantiles.c1<-mapply(seq, from = from, to = to, by = by)
     #scale <- 1/gamma.parameters$r1
-    #vals<-c(vals,qgamma(quantiles.c1, shape = gamma.parameters$s1,
-    #                    scale = scale))
+    
+    # Convert any non-numeric elements in quantiles.c1 to numeric
+    #quantiles.c1 <- lapply(quantiles.c1, as.numeric)
+    #vals <- c(vals, qgamma(quantiles.c1, shape = gamma.parameters$s1, scale = scale))
   
     #Second Gamma component
     nGamma2<-nGenes-nZeros-nGamma1
