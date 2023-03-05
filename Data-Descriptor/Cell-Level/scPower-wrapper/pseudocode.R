@@ -277,46 +277,6 @@ mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberO
   return(resultingDataFrame)
 }
 
-# Validation of expression probability model
-validationOfModel <- function(expressed.genes.df, mapped.reads, nSamples) {
-  #Merge the observed numbers of expressed genes with the read depth
-  expressed.genes.df <- merge(expressed.genes.df, mapped.reads, by = "matrix")
-
-  #Get the number of cells per cell type and individual
-  expressed.genes.df$cells.indiv <- expressed.genes.df$num.cells / nSamples
-  expressed.genes.df$estimated.genes <- NA
-
-  for(i in seq_len(nrow(expressed.genes.df))){
-    #Vector with the expression probability for each gene
-    expr.prob <- estimate.exp.prob.param(nSamples = nSamples,
-                                        readDepth = expressed.genes.df$transcriptome.mapped.reads[i],
-                                        nCellsCt = expressed.genes.df$cells.indiv[i],
-                                        read.umi.fit = read.umi.fit.new,
-                                        gamma.mixed.fits = gamma.linear.fit.new,
-                                        ct = "New_ct",
-                                        disp.fun.param = disp.fun.general.new,
-                                        min.counts = 3,
-                                        perc.indiv = 0.5)
-
-    #Expected number of expressed genes
-    expressed.genes.df$estimated.genes[i] <- round(sum(expr.prob))
-  }
-
-  print("Validation of model done successfully.")
-  return(expressed.genes.df)
-}
-
-visualizeEstimatedvsExpressedGenes <- function(expressed.genes.df) {
-  plot.expressed.genes.df <- reshape2::melt(expressed.genes.df,
-                                          id.vars = c("matrix", "num.cells", "cells.indiv", "transcriptome.mapped.reads"))
-
-  ggplot(plot.expressed.genes.df, aes(x = transcriptome.mapped.reads,
-                                      y = value,
-      color = variable)) +
-      geom_point() +
-      geom_line()
-}
-
 # power.general.restrictedDoublets
 powerSRDRD <- function(gamma.fits, disp.fun.general.new, name) {
   return(power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
