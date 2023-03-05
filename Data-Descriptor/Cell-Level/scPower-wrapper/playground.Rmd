@@ -403,37 +403,31 @@ Loop through cell types:
 
 Then for the validation step:
 ```{r}
-  # Firstly append gammaLinearFitsDF to the already existing one in the scPower library
-  #gammaLinearFitsDF <- rbind(scPower::gamma.mixed.fits, gammaLinearFitsDF)
+  # Firstly appending data created to the ones already existing in the scPower library 
+  gammaLinearFitsDF <- rbind(scPower::gamma.mixed.fits, gammaLinearFitsDF)
+  dispFunParamDF <- rbind(scPower::disp.fun.param, dispFunParamDF)
 
-  # stepping into validation
   estimates.allSamples <- NULL
   # our own data generated from the dataset
   # run: 5 and count > 10
   estimates <- head(observedGeneCountsDF, 8)
   estimates$estimated.counts <- NA
   
-  i <- 1
-  exp.probs <- scPower::estimate.exp.prob.count.param(
-    nSamples = nSamples,
-    nCellsCt = estimates$num.cells[i] / nSamples,
-    meanCellCounts = estimates$meanUMI[i],
-    gamma.mixed.fits = head(gammaLinearFitsDF, 12),
-    ct = estimates$cell.type[i],
-    disp.fun.param = head(dispFunParamDF, 2),
-    min.counts = 10,
-    perc.indiv = 0.5
-  )
-  #estimates$estimated.counts[i] <- round(sum(exp.probs))
+  for(i in 1:nrow(estimates)){
+    exp.probs <- scPower::estimate.exp.prob.count.param(
+      nSamples = nSamples,
+      nCellsCt = estimates$num.cells[i] / nSamples,
+      meanCellCounts = estimates$meanUMI[i],
+      gamma.mixed.fits = head(gammaLinearFitsDF, 54),
+      ct = estimates$cell.type[i],
+      disp.fun.param = head(dispFunParamDF, 9),
+      min.counts = 10,
+      perc.indiv = 0.5
+    )
+    estimates$estimated.counts[i] <- round(sum(exp.probs))
+  }
   
-  
-  #estimates$dataset <- "Training data set"
-  #estimates$threshold <- "Training data set - Count > 10"
-  #estimates.allSamples <- rbind(estimates.allSamples, estimates)
-  
-  # Set batch variable
-  
-  # Get the correlation values
-  
-  # Reformat data for plotting
+  estimates$dataset <- "Training data set"
+  estimates$threshold <- "Training data set - Count > 10"
+  estimates.allSamples <- rbind(estimates.allSamples, estimates)
 ```
