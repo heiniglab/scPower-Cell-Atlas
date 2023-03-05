@@ -431,3 +431,12 @@ Then for the validation step:
   estimates$threshold <- "Training data set - Count > 10"
   estimates.allSamples <- rbind(estimates.allSamples, estimates)
 ```
+
+```{r}
+  # Fitting a linear regression model between estimated and expressed gene counts
+  model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
+
+  # Calculate the R-squared value
+  rsq <- summary(model)$r.squared
+```
+
