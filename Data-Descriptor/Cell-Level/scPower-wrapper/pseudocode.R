@@ -16,11 +16,64 @@ loadPackages <- function() {
   print("Packages are loaded successfully.")
 }
 
+# Flags do not have to be in order and each flag can have whitespaces between. 
+# But keywords has to be "hostIP", "assay", "tissue", "cellType"
+# An example usage:
+# Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
+handleFlagsTags <- function(argList) {
+
+  argSequence <- paste(unlist(argList), collapse = " ")
+
+  hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
+  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+
+  # arranging HOSTIP as a global variable
+  if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
+
+  # arranging assay, tissue and cell type names as a global variable
+  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay"
+  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue"
+  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type"
+
+  print("Flags are arranged successfully.")
+}
+
+establishDBConnection <- function(hostIP) {
+  connectionInstance <- dbConnect(
+      Postgres(),
+      dbname = "todos",
+      host = toString(hostIP),
+      port = 5432,
+      user = "postgres",
+      password = "asdasd12x")
+
+  print("Connection to database established successfully.")
+  return(connectionInstance)
+}
+
 # Converting from AnnData to Seurat via h5Seurat
 convertH5Seurat <- function(file.name) {
   converted <- Convert(file.name, dest = "h5seurat", overwrite = TRUE)
 
   return(converted)
+}
+
+outputResults <- function(dataFrame) {
+  write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
+  write("\n", "results.txt", append = TRUE)
+}
+
+# clear everything from runtime memory
+# except specified variable string
+flushMemoryExcept <- function(except) {
+  rm(list = setdiff(ls(), except))
+}
+
+listWarnings <- function() {
+  warningList <- paste0(unlist(unique(names(last.warning))), collapse = "\n")
+  cat(warningList)
 }
 
 # Downsamples the reads for each molecule by the specified "prop",
@@ -199,6 +252,31 @@ visualizeLinearRelation <- function(gamma.fits) {
          facet_wrap(~variable, ncol = 2, scales = "free")
 }
 
+mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
+  resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
+                                   expressedGenes, meanUmi, evaluation)
+  rownames(resultingDataFrame) <- NULL
+  colnames(resultingDataFrame) <- c('run', 'sample', 'cell.type', 'num.cells', 'expressed.genes', 'meanUMI', 'evaluation')
+
+  return(resultingDataFrame)
+}
+
+# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
+# [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
+# gammaLinearFits: parameter, intercept, meanUMI)
+# There will be 3 tables in the end we'll be dealing with: datasetBody, downloadBody, []result (for each datasetBody)
+mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
+                             assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
+  
+  datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+  resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
+
+  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults)
+
+  print("Merging of the finals informations done successfully.")
+  return(resultingDataFrame)
+}
+
 # Validation of expression probability model
 validationOfModel <- function(expressed.genes.df, mapped.reads, nSamples) {
   #Merge the observed numbers of expressed genes with the read depth
@@ -270,84 +348,6 @@ validationUsingModel <- function(gamma.fits, disp.param) {
 
   print("Validation using model done successfully.")
   return(powerList)
-}
-
-mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
-  resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
-                                   expressedGenes, meanUmi, evaluation)
-  rownames(resultingDataFrame) <- NULL
-  colnames(resultingDataFrame) <- c('run', 'sample', 'cell.type', 'num.cells', 'expressed.genes', 'meanUMI', 'evaluation')
-
-  return(resultingDataFrame)
-}
-
-# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
-# [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
-# gammaLinearFits: parameter, intercept, meanUMI)
-# There will be 3 tables in the end we'll be dealing with: datasetBody, downloadBody, []result (for each datasetBody)
-mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
-  
-  datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
-  resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
-
-  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults)
-
-  print("Merging of the finals informations done successfully.")
-  return(resultingDataFrame)
-}
-
-establishDBConnection <- function(hostIP) {
-  connectionInstance <- dbConnect(
-      Postgres(),
-      dbname = "todos",
-      host = toString(hostIP),
-      port = 5432,
-      user = "postgres",
-      password = "asdasd12x")
-
-  print("Connection to database established successfully.")
-  return(connectionInstance)
-}
-
-# clear everything from runtime memory
-# except specified variable string
-flushMemoryExcept <- function(except) {
-  rm(list = setdiff(ls(), except))
-}
-
-listWarnings <- function() {
-  warningList <- paste0(unlist(unique(names(last.warning))), collapse = "\n")
-  cat(warningList)
-}
-
-# Flags do not have to be in order and each flag can have whitespaces between. 
-# But keywords has to be "hostIP", "assay", "tissue", "cellType"
-# An example usage:
-# Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
-handleFlagsTags <- function(argList) {
-
-  argSequence <- paste(unlist(argList), collapse = " ")
-
-  hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
-  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z0-9_]+")
-  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z0-9_]+")
-  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z0-9_]+")
-
-  # arranging HOSTIP as a global variable
-  if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
-
-  # arranging assay, tissue and cell type names as a global variable
-  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay"
-  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue"
-  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type"
-
-  print("Flags are arranged successfully.")
-}
-
-outputResults <- function(dataFrame) {
-  write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
-  write("\n", "results.txt", append = TRUE)
 }
 
 main <- function(argv) {
