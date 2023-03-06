@@ -302,6 +302,7 @@ Preparation beforehand:
   gammaLinearFitsDF <- data.frame()
   gammaFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
+  powerResultsDF <- data.frame()
 ```
 
 
@@ -387,6 +388,11 @@ Loop through cell types:
                                           meanUmi, expressedGenesDF$expressed.genes)
     observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
     
+    # Power calculation
+    dispFunEstimation <- dispersion.function.estimation(dispParam)
+    power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+    powerResultsDF <- rbind(powerResultsDF, power)
+    
     # Merging cellCount, #assays, #tissues, #cellTypes,
     # assayID, tissueID, cellTypeID, gammaLinearFits, dispParameters into a data frame
     resultingDataFrame <- mergeFinalStatus(cellCount,
@@ -395,7 +401,7 @@ Loop through cell types:
                                            length(levels(dataset$cell_type_ontology_term_id)),
                                            datasetID[[1]], datasetID[[2]], datasetID[[3]],
                                            gammaLinearFits,
-                                           dispersion.function.estimation(dispParam))
+                                           dispFunEstimation)
 
     # Writing resulting data frame to table named "priorsResult"
     #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
@@ -460,25 +466,25 @@ Visualizing results (Not yet completed):
 
 Power calculation: simplified gamma model without optimizing the read depth
 ```{r}
-  # Setting the cell type specification
-  gammaFitsDF <- head(gammaFitsDF, 8)
-  gammaFitsDF$ct <- "New_ct"
-  disp.fun.general.new <- head(dispFunParamDF, 2) %>% select(asymptDisp, extraPois)
-  
-  power <- power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
+  powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
+    
+    # Setting up the cell type specification
+    gamma.fits$ct <- "New_ct"
+    disp.fun.param$ct <- "New_ct"
+    
+    return(power.sameReadDepth.restrictedDoublets(nSamples = nSamples, nCells = nCells,
                                                   ct.freq = 0.2, type = "eqtl",
                                                   ref.study = scPower::eqtl.ref.study,
                                                   ref.study.name = "Blueprint (Monocytes)",
                                                   cellsPerLane = 20000,
-                                                  gamma.parameters = gammaFitsDF[gammaFitsDF$matrix == "complete",],
+                                                  gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
                                                   ct = "New_ct",
-                                                  disp.fun.param = disp.fun.general.new,
+                                                  disp.fun.param = disp.fun.param,
                                                   mappingEfficiency = 0.8,
                                                   min.UMI.counts = 3,
                                                   perc.indiv.expr = 0.5,
                                                   sign.threshold = 0.05,
-                                                  MTmethod = "Bonferroni")
-  
-  print(power)
+                                                  MTmethod = "Bonferroni"))
+  }
 ```
 
