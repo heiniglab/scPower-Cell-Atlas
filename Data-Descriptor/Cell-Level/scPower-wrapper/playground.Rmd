@@ -185,7 +185,7 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   print(gamma.linear.fits)
 
   print("Parameterization of the gamma fits done successfully.")
-  return(list(umi.values, gamma.linear.fits))
+  return(list(umi.values, gamma.linear.fits, gamma.fits))
 }
 
 # Visualize the linear relationship between gamma parameters and UMI values in plots
@@ -300,10 +300,12 @@ Preparation beforehand:
   observedGeneCountsDF <- data.frame()
   # Gamma linear fit values needed for later binding with scPower::gamma.mixed.fits
   gammaLinearFitsDF <- data.frame()
+  gammaFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
 ```
 
 
+Main
 Loop through cell types:
 ```{r}
   for(datasetID in datasetCollectionCombinedID){
@@ -366,7 +368,8 @@ Loop through cell types:
     gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-    c(umiValues, gammaLinearFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+    c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+    gammaFitsDF <- rbind(gammaFitsDF, gammaFits)
     
     # Firstly arranging gamma linear fit values for each cell type
     tmp <- gammaLinearFits
@@ -401,7 +404,7 @@ Loop through cell types:
 ```
 
 
-Then for the validation step:
+Validation by UMI counts per cell:
 ```{r}
   # Firstly appending data created to the ones already existing in the scPower library 
   gammaLinearFitsDF <- rbind(scPower::gamma.mixed.fits, gammaLinearFitsDF)
@@ -432,11 +435,50 @@ Then for the validation step:
   estimates.allSamples <- rbind(estimates.allSamples, estimates)
 ```
 
+
+Calculating R squared error:
 ```{r}
   # Fitting a linear regression model between estimated and expressed gene counts
   model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
 
   # Calculate the R-squared value
   rsq <- summary(model)$r.squared
+```
+
+
+Visualizing results (Not yet completed):
+```{r}
+
+  # Create a scatterplot of estimated.counts vs. expressed.genes, with meanUMI on the x-axis
+  ggplot(estimates, aes(x = meanUMI, y = estimated.counts)) +
+    geom_point(aes(color = cell.type)) +
+    geom_line(aes(y = expressed.genes, color = cell.type), size = 1) +
+    labs(x = "meanUMI", y = "estimated/expressed counts", color = "cell type") +
+    theme_classic()
+```
+
+
+Power calculation: simplified gamma model without optimizing the read depth
+```{r}
+  # Setting the cell type specification
+  gammaFitsDF <- head(gammaFitsDF, 8)
+  gammaFitsDF$ct <- "New_ct"
+  disp.fun.general.new <- head(dispFunParamDF, 2) %>% select(asymptDisp, extraPois)
+  
+  power <- power.sameReadDepth.restrictedDoublets(nSamples = 100, nCells = 1500,
+                                                  ct.freq = 0.2, type = "eqtl",
+                                                  ref.study = scPower::eqtl.ref.study,
+                                                  ref.study.name = "Blueprint (Monocytes)",
+                                                  cellsPerLane = 20000,
+                                                  gamma.parameters = gammaFitsDF[gammaFitsDF$matrix == "complete",],
+                                                  ct = "New_ct",
+                                                  disp.fun.param = disp.fun.general.new,
+                                                  mappingEfficiency = 0.8,
+                                                  min.UMI.counts = 3,
+                                                  perc.indiv.expr = 0.5,
+                                                  sign.threshold = 0.05,
+                                                  MTmethod = "Bonferroni")
+  
+  print(power)
 ```
 
