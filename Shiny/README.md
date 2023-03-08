@@ -37,8 +37,8 @@
 
 ### Initial installation has been like this:
 
-Repository is cloned and removed all the RData files not needed for the shiny server, then installed with:
-``devtools::install("~/scpower_git")``
-``git clone -b dev https://github.com/heiniglab/scPower scpower_git``
-`` R -e "devtools::install('~/scpower_git')"``
+Repository is cloned and removed all the RData files not needed for the shiny server, then installed with:<br />
+``devtools::install("~/scpower_git")`` <br />
+``git clone -b dev https://github.com/heiniglab/scPower scpower_git``<br />
+``R -e "devtools::install('~/scpower_git')"``<br />
 ``ln -s scpower_git/inst/shinyApp scPower``
