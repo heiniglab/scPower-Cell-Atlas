@@ -12,3 +12,9 @@ allow for the optimal design of allele specific expression and perturbation expe
 - /Backend: services created with Go and database scripts
 - /Data-Descriptor/Cell-Level: scPower wrapper and sfaira connection point
 - /Data-Descriptor/Collection-Level: cellxgene scrapper with both puppeteer and Go
+
+## Resources supported
+| Dataset | Detail | Tissue | Disease | Assay | Organism | Cells | Raw Data | Contact | Publication | Link |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| asd  | asd  | asd | asd | asd | asd | asd | asd | asd | asd | asd |
+| asd  | asd  | asd | asd | asd | asd | asd | asd | asd | asd | asd |
