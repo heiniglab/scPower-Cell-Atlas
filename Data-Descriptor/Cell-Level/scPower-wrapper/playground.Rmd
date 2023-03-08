@@ -312,6 +312,7 @@ Loop through cell types:
   for(datasetID in datasetCollectionCombinedID){
     
     # datasetID: {[assayID], [tissueID], [cellTypeID]}
+    completeDatasetID <- datasetID
     datasetID <- strsplit(datasetID, split = "_")[[1]]
 
     dataset <- tryCatch({
@@ -374,17 +375,17 @@ Loop through cell types:
     
     # Firstly arranging gamma linear fit values for each cell type
     tmp <- gammaLinearFits
-    tmp$ct <- datasetID[[3]]
+    tmp$ct <- completeDatasetID
     gammaLinearFitsDF <- rbind(gammaLinearFitsDF, tmp)
     
     # Then also arranging disp fun parameter values for each cell type
     tmp <- dispersion.function.estimation(dispParam)
-    tmp$ct <- datasetID[[3]]
+    tmp$ct <- completeDatasetID
     tmp <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
     dispFunParamDF <- rbind(dispFunParamDF, tmp)
     
     # Collecting data for validation of the model
-    observedGeneCounts <- mergeGeneCounts("Run 5", datasetID[[3]], cellCount, "own_count10",
+    observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
                                           meanUmi, expressedGenesDF$expressed.genes)
     observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
     
@@ -419,7 +420,7 @@ Validation by UMI counts per cell:
   estimates.allSamples <- NULL
   # our own data generated from the dataset
   # run: 5 and count > 10
-  estimates <- head(observedGeneCountsDF, 8)
+  estimates <- observedGeneCountsDF
   estimates$estimated.counts <- NA
   
   for(i in 1:nrow(estimates)){
@@ -427,9 +428,9 @@ Validation by UMI counts per cell:
       nSamples = nSamples,
       nCellsCt = estimates$num.cells[i] / nSamples,
       meanCellCounts = estimates$meanUMI[i],
-      gamma.mixed.fits = head(gammaLinearFitsDF, 54),
+      gamma.mixed.fits = gammaLinearFitsDF,
       ct = estimates$cell.type[i],
-      disp.fun.param = head(dispFunParamDF, 9),
+      disp.fun.param = dispFunParamDF,
       min.counts = 10,
       perc.indiv = 0.5
     )
