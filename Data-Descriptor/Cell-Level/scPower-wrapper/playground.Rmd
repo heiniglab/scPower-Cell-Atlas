@@ -275,6 +275,31 @@ outputResults <- function(dataFrame) {
   write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
   write("\n", "results.txt", append = TRUE)
 }
+
+# Power calculation: simplified gamma model without optimizing the read depth
+powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
+    
+    # Setting up the cell type specification
+    gamma.fits$ct <- "New_ct"
+    disp.fun.param$ct <- "New_ct"
+    
+    return(power.sameReadDepth.restrictedDoublets(nSamples = nSamples, 
+                                                  nCells = nCells,
+                                                  ct.freq = 1, 
+                                                  type = "eqtl",
+                                                  ref.study = scPower::eqtl.ref.study,
+                                                  ref.study.name = "Blueprint (Monocytes)",
+                                                  cellsPerLane = 8000,
+                                                  gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
+                                                  ct = "New_ct", 
+                                                  disp.fun.param = disp.fun.param,
+                                                  mappingEfficiency = 0.8,
+                                                  min.UMI.counts = 3,
+                                                  perc.indiv.expr = 0.5,
+                                                  sign.threshold = 0.05,
+                                                  MTmethod = "Bonferroni",
+                                                  multipletRate = 0))
+  }
 ```
 
 
@@ -455,7 +480,6 @@ Calculating R squared error:
 
 Visualizing results (Not yet completed):
 ```{r}
-
   # Create a scatterplot of estimated.counts vs. expressed.genes, with meanUMI on the x-axis
   ggplot(estimates, aes(x = meanUMI, y = estimated.counts)) +
     geom_point(aes(color = cell.type)) +
@@ -463,29 +487,3 @@ Visualizing results (Not yet completed):
     labs(x = "meanUMI", y = "estimated/expressed counts", color = "cell type") +
     theme_classic()
 ```
-
-
-Power calculation: simplified gamma model without optimizing the read depth
-```{r}
-  powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
-    
-    # Setting up the cell type specification
-    gamma.fits$ct <- "New_ct"
-    disp.fun.param$ct <- "New_ct"
-    
-    return(power.sameReadDepth.restrictedDoublets(nSamples = nSamples, nCells = nCells,
-                                                  ct.freq = 0.2, type = "eqtl",
-                                                  ref.study = scPower::eqtl.ref.study,
-                                                  ref.study.name = "Blueprint (Monocytes)",
-                                                  cellsPerLane = 20000,
-                                                  gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
-                                                  ct = "New_ct",
-                                                  disp.fun.param = disp.fun.param,
-                                                  mappingEfficiency = 0.8,
-                                                  min.UMI.counts = 3,
-                                                  perc.indiv.expr = 0.5,
-                                                  sign.threshold = 0.05,
-                                                  MTmethod = "Bonferroni"))
-  }
-```
-
