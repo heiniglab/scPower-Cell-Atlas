@@ -262,10 +262,13 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
-# gammaLinearFits: parameter, intercept, meanUMI)
+# gammaLinearFits: parameter, intercept, meanUMI
+# dispersionFunctionResults: asymptDisp, extraPois
+# powerResults: name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
+              # multipletFraction, ctCells, expressedGenes
 # There will be 3 tables in the end we'll be dealing with: datasetBody, downloadBody, []result (for each datasetBody)
 mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
+                                assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
@@ -308,6 +311,7 @@ Preparation beforehand:
   loadPackages()
   handleFlagsTags(list("hostIP=127.0.0.1"))
   connectionInstance <- establishDBConnection(HOSTIP)
+  
   # path of dataset location
   setwd("C:/Users/Cem/Documents/Github/dataset")
   datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
@@ -419,19 +423,18 @@ Loop through cell types:
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
     powerResultsDF <- rbind(powerResultsDF, power)
     
-    # Merging cellCount, #assays, #tissues, #cellTypes,
-    # assayID, tissueID, cellTypeID, gammaLinearFits, dispParameters into a data frame
+    # Descriptive parameters passed:
+      # cellCount, #assays, #tissues, #cellTypes,
+      # assayID, tissueID, cellTypeID
+      # gammaLinearFits, dispFunEstimation
+    # Power calculation: simplified gamma model without optimizing the read depth 
     resultingDataFrame <- mergeFinalStatus(cellCount,
-                                           length(levels(dataset$assay_ontology_term_id)),
-                                           length(levels(dataset$tissue_ontology_term_id)),
-                                           length(levels(dataset$cell_type_ontology_term_id)),
-                                           datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                           gammaLinearFits,
-                                           dispFunEstimation)
-
-    # Writing resulting data frame to table named "priorsResult"
-    #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
-    #print("Data written into database successfully.")
+                                                 length(levels(dataset$assay_ontology_term_id)),
+                                                 length(levels(dataset$tissue_ontology_term_id)),
+                                                 length(levels(dataset$cell_type_ontology_term_id)),
+                                                 datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                                 gammaLinearFits,
+                                                 dispFunEstimation)
   }
 ```
 
@@ -465,11 +468,9 @@ Validation by UMI counts per cell:
   estimates$dataset <- "Training data set"
   estimates$threshold <- "Training data set - Count > 10"
   estimates.allSamples <- rbind(estimates.allSamples, estimates)
-```
-
-
-Calculating R squared error:
-```{r}
+  
+  # Calculating R squared error
+  
   # Fitting a linear regression model between estimated and expressed gene counts
   model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
 
@@ -487,3 +488,18 @@ Visualizing results (Not yet completed):
     labs(x = "meanUMI", y = "estimated/expressed counts", color = "cell type") +
     theme_classic()
 ```
+
+
+Writing Results:
+```{r}
+  # Descriptive parameters (as above)
+  # estimates: estimating gene counts
+  # rsq: R squared error rate of the estimate
+  # powerResults
+  resultingDataFrame <- mergeFinalStatus()
+  
+  # Writing final data frame, different results merged into, to database table named "priorsResult"
+  #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
+  #print("Data written into database successfully.")
+```
+
