@@ -6,7 +6,7 @@ output: html_notebook
 Functions to be loaded:
 ```{r}
 loadPackages <- function() {
-  Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
+  Packages <- c("DBI", "devtools", "dplyr", "DropletUtils", "HardyWeinberg", "MKmisc",
                 "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
@@ -266,17 +266,20 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 # dispersionFunctionResults: asymptDisp, extraPois
 # powerResults: name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
               # multipletFraction, ctCells, expressedGenes
-# There will be 3 tables in the end we'll be dealing with: datasetBody, downloadBody, []result (for each datasetBody)
-mergeFinalStatus <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                                assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults) {
+mergeFirstIteration <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
+                                assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults, powerResults) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
 
-  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults)
+  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults, powerResults)
 
   print("Merging of the finals informations done successfully.")
   return(resultingDataFrame)
+}
+
+mergeFinalStatus <- function(firstIterationResults, estimates) {
+  return(data.frame(firstIterationResults, estimates))
 }
 
 # Power calculation: simplified gamma model without optimizing the read depth
@@ -332,6 +335,7 @@ Preparation beforehand:
   gammaFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
   powerResultsDF <- data.frame()
+  firstIterationResultsDF <- data.frame()
 ```
 
 
@@ -428,13 +432,15 @@ Loop through cell types:
       # assayID, tissueID, cellTypeID
       # gammaLinearFits, dispFunEstimation
     # Power calculation: simplified gamma model without optimizing the read depth 
-    resultingDataFrame <- mergeFinalStatus(cellCount,
-                                                 length(levels(dataset$assay_ontology_term_id)),
-                                                 length(levels(dataset$tissue_ontology_term_id)),
-                                                 length(levels(dataset$cell_type_ontology_term_id)),
-                                                 datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                                 gammaLinearFits,
-                                                 dispFunEstimation)
+    firstIterationResult <- mergeFirstIteration(cellCount,
+                                                length(levels(dataset$assay_ontology_term_id)),
+                                                length(levels(dataset$tissue_ontology_term_id)),
+                                                length(levels(dataset$cell_type_ontology_term_id)),
+                                                datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                                gammaLinearFits,
+                                                dispFunEstimation,
+                                                power)
+    firstIterationResultsDF <- rbind(firstIterationResultsDF, firstIterationResult)
   }
 ```
 
@@ -475,7 +481,7 @@ Validation by UMI counts per cell:
   model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
 
   # Calculate the R-squared value
-  rsq <- summary(model)$r.squared
+  estimates$rsq <- summary(model)$r.squared
 ```
 
 
@@ -492,11 +498,15 @@ Visualizing results (Not yet completed):
 
 Writing Results:
 ```{r}
-  # Descriptive parameters (as above)
-  # estimates: estimating gene counts
-  # rsq: R squared error rate of the estimate
-  # powerResults
-  resultingDataFrame <- mergeFinalStatus()
+  # datasetBody table: descriptive parameters (datasetBodySpecific, resultTableSpecific)
+  # downloadBody table
+  # result tables
+  #   gammaLinearFits
+  #   dispersionFunctionResults
+  #   powerResults
+  #   estimates: estimating gene counts
+  #   rsq: R squared error rate of the estimate
+  resultingDataFrame <- mergeFinalStatus(firstIterationResultsDF, estimates)
   
   # Writing final data frame, different results merged into, to database table named "priorsResult"
   #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
