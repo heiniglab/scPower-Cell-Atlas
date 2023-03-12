@@ -262,20 +262,16 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
-# gammaLinearFits: parameter, intercept, meanUMI
-# dispersionFunctionResults: asymptDisp, extraPois
-# powerResults: name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
-              # multipletFraction, ctCells, expressedGenes
-mergeFirstIteration <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                                assayID, tissueID, cellTypeID, gammaLinearFits, dispersionFunctionResults, powerResults) {
+mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
+                             assayID, tissueID, cellTypeID) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
 
-  resultingDataFrame <- data.frame(datasetBodySpecific, resultTableSpecific, gammaLinearFits, dispersionFunctionResults, powerResults)
-
-  print("Merging of the finals informations done successfully.")
-  return(resultingDataFrame)
+  return(list(
+    datasetBodySpecific = datasetBodySpecific, 
+    resultTableSpecific = resultTableSpecific
+    ))
 }
 
 # Power calculation: simplified gamma model without optimizing the read depth
@@ -301,7 +297,18 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
                                                   sign.threshold = 0.05,
                                                   MTmethod = "Bonferroni",
                                                   multipletRate = 0))
-  }
+}
+
+# Writing a data frame into a data table inside PostgreSQL database
+# Final design:
+#     datasetBody table: descriptive parameters (datasetBodySpecific, resultTableSpecific)
+#     downloadBody table
+#     result tables: gammaLinearFits, dispersionFunctionResults, powerResults
+#                    estimates (estimating gene counts), rsq (R squared error rate of the estimate)
+# Data table names: descriptiveParams, gammaLinearFits, dispFunEstimation, powerResults, estimates
+writeToDatabase <- function(data.frame, table.name, append = TRUE) {
+  dbWriteTable(connectionInstance, table.name, data.frame, append = append)
+}
 ```
 
 
@@ -309,7 +316,7 @@ Preparation beforehand:
 ```{r}
   loadPackages()
   handleFlagsTags(list("hostIP=127.0.0.1"))
-  connectionInstance <- establishDBConnection(HOSTIP)
+  connectionInstance <<- establishDBConnection(HOSTIP)
   
   # path of dataset location
   setwd("C:/Users/Cem/Documents/Github/dataset")
@@ -397,7 +404,9 @@ Loop through cell types:
     gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+    # gammaLinearFits: parameter, intercept, meanUMI
     c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+    #writeToDatabase(gammaLinearFits, "gammaLinearFits")
 
     # Firstly arranging gamma linear fit values for each cell type
     tmp <- gammaLinearFits
@@ -415,23 +424,25 @@ Loop through cell types:
                                           meanUmi, expressedGenesDF$expressed.genes)
     observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
     
-    # Power calculation
+    # dispFunEstimation: asymptDisp, extraPois
     dispFunEstimation <- dispersion.function.estimation(dispParam)
+    #writeToDatabase(dispFunEstimation, "dispFunEstimation")
+    
+    # Power calculation: simplified gamma model without optimizing the read depth 
+    #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
+    #       multipletFraction, ctCells, expressedGenes
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+    #writeToDatabase(power, "powerResults")
 
     # Descriptive parameters passed:
-      # cellCount, #assays, #tissues, #cellTypes,
-      # assayID, tissueID, cellTypeID
-      # gammaLinearFits, dispFunEstimation
-    # Power calculation: simplified gamma model without optimizing the read depth 
-    firstIterationResult <- mergeFirstIteration(cellCount,
-                                                length(levels(dataset$assay_ontology_term_id)),
-                                                length(levels(dataset$tissue_ontology_term_id)),
-                                                length(levels(dataset$cell_type_ontology_term_id)),
-                                                datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                                gammaLinearFits,
-                                                dispFunEstimation,
-                                                power)
+    #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
+    #       resultTableSpecific: assayID, tissueID, cellTypeID
+    descriptiveParams <- mergeDescription(cellCount,
+                                          length(levels(dataset$assay_ontology_term_id)),
+                                          length(levels(dataset$tissue_ontology_term_id)),
+                                          length(levels(dataset$cell_type_ontology_term_id)),
+                                          datasetID[[1]], datasetID[[2]], datasetID[[3]])
+    #writeToDatabase(descriptiveParams, "descriptiveParams")
   }
 ```
 
@@ -473,6 +484,9 @@ Validation by UMI counts per cell:
 
   # Calculate the R-squared value
   estimates$rsq <- summary(model)$r.squared
+  
+  # Write results into database
+  #writeToDatabase(estimates, "estimates")
 ```
 
 
@@ -485,22 +499,3 @@ Visualizing results (Not yet completed):
     labs(x = "meanUMI", y = "estimated/expressed counts", color = "cell type") +
     theme_classic()
 ```
-
-
-Writing Results:
-```{r}
-  # datasetBody table: descriptive parameters (datasetBodySpecific, resultTableSpecific)
-  # downloadBody table
-  # result tables
-  #   gammaLinearFits
-  #   dispersionFunctionResults
-  #   powerResults
-  #   estimates: estimating gene counts
-  #   rsq: R squared error rate of the estimate
-  
-  #dbWriteTable(resultingDataFrame)
-  
-  # Writing final data frame, different results merged into, to database table named "priorsResult"
-  #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
-```
-
