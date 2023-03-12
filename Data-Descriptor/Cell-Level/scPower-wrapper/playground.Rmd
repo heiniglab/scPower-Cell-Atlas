@@ -278,10 +278,6 @@ mergeFirstIteration <- function(cellCount, numberOfAssays, numberOfTissues, numb
   return(resultingDataFrame)
 }
 
-mergeFinalStatus <- function(firstIterationResults, estimates) {
-  return(data.frame(firstIterationResults, estimates))
-}
-
 # Power calculation: simplified gamma model without optimizing the read depth
 powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
     
@@ -329,13 +325,11 @@ Preparation beforehand:
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
   
+  # Gamma linear fit and dispersion values needed later for binding with scPower
+  # They are also used to estimate gene counts
   observedGeneCountsDF <- data.frame()
-  # Gamma linear fit values needed for later binding with scPower::gamma.mixed.fits
   gammaLinearFitsDF <- data.frame()
-  gammaFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
-  powerResultsDF <- data.frame()
-  firstIterationResultsDF <- data.frame()
 ```
 
 
@@ -404,8 +398,7 @@ Loop through cell types:
 
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
-    gammaFitsDF <- rbind(gammaFitsDF, gammaFits)
-    
+
     # Firstly arranging gamma linear fit values for each cell type
     tmp <- gammaLinearFits
     tmp$ct <- completeDatasetID
@@ -425,8 +418,7 @@ Loop through cell types:
     # Power calculation
     dispFunEstimation <- dispersion.function.estimation(dispParam)
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
-    powerResultsDF <- rbind(powerResultsDF, power)
-    
+
     # Descriptive parameters passed:
       # cellCount, #assays, #tissues, #cellTypes,
       # assayID, tissueID, cellTypeID
@@ -440,7 +432,6 @@ Loop through cell types:
                                                 gammaLinearFits,
                                                 dispFunEstimation,
                                                 power)
-    firstIterationResultsDF <- rbind(firstIterationResultsDF, firstIterationResult)
   }
 ```
 
@@ -506,10 +497,10 @@ Writing Results:
   #   powerResults
   #   estimates: estimating gene counts
   #   rsq: R squared error rate of the estimate
-  resultingDataFrame <- mergeFinalStatus(firstIterationResultsDF, estimates)
+  
+  #dbWriteTable(resultingDataFrame)
   
   # Writing final data frame, different results merged into, to database table named "priorsResult"
   #dbWriteTable(connectionInstance, "priorsResult", resultingDataFrame, append = TRUE)
-  #print("Data written into database successfully.")
 ```
 
