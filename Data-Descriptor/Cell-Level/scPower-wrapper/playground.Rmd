@@ -111,6 +111,33 @@ sparseToList <- function(counts) {
   return(tmp)
 }
 
+# calculating sparsity of the count matrix
+calculateZeroPerc <- function(counts) {
+  zeros <- sum(counts == 0)
+  non_zeros <- sum(counts != 0)
+  total <- length(counts)
+  return(c(zero_perc = zeros/total * 100, non_zero_perc = non_zeros/total * 100))
+}
+
+calculateGeneRanks <- function(count.matrix, iteration) {
+  # To speed up computation, remove all 0 genes
+  count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
+  
+  # Normalize by count per cell
+  count.matrix <- t(t(count.matrix) / colSums(count.matrix))
+  
+  # Randomly select a fraction of the gene to be significant DE genes
+  sign.genes <- rownames(count.matrix)[1:300]
+  
+  # Calculate gene ranks
+  gene.ranks <- gene.rank.calculation(count.matrix, sign.genes)
+  
+  # Indicator to distinguish different list of elements belogs to different cell type results
+  gene.ranks[["indicator"]] <- iteration
+  
+  return(gene.ranks)
+}
+
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
 countObservedGenes <- function(counts.subsampled, nSamples) {
@@ -306,6 +333,7 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
 #     result tables: gammaLinearFits, dispersionFunctionResults, powerResults
 #                    estimates (estimating gene counts), rsq (R squared error rate of the estimate)
 # Data table names: descriptiveParams, gammaLinearFits, dispFunEstimation, powerResults, estimates
+#                   geneRanks
 writeToDatabase <- function(data.frame, table.name, append = TRUE) {
   dbWriteTable(connectionInstance, table.name, data.frame, append = append)
 }
@@ -337,6 +365,7 @@ Preparation beforehand:
   observedGeneCountsDF <- data.frame()
   gammaLinearFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
+  iteration <- 1
 ```
 
 
@@ -368,6 +397,12 @@ Loop through cell types:
 
     counts <- dataset@assays$RNA@counts
     countsSubsampled <- subsampleIntoList(counts)
+    print(calculateZeroPerc(countsSubsampled$complete))
+    
+    # Calculating gene ranks
+    countsSubsampledConverted <- sparseToList(countsSubsampled$complete)
+    geneRanks <- calculateGeneRanks(countsSubsampledConverted, iteration) 
+    writeToDatabase(geneRanks, "geneRanks")
 
     censorPoints <- rep(NA, length(countsSubsampled))
     names(censorPoints) <- names(countsSubsampled)
@@ -443,6 +478,8 @@ Loop through cell types:
                                           length(levels(dataset$cell_type_ontology_term_id)),
                                           datasetID[[1]], datasetID[[2]], datasetID[[3]])
     #writeToDatabase(descriptiveParams, "descriptiveParams")
+    
+    iteration <- iteration + 1
   }
 ```
 
