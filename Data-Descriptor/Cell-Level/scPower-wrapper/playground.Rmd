@@ -1,5 +1,5 @@
 ---
-title: "Enabling cell atlas guided optimal experimental design"
+title: "Analysis on dataset containing prostate gland tissue (#cells: 1.647)"
 output: html_notebook
 ---
 
@@ -59,9 +59,11 @@ convertH5Seurat <- function(file.name) {
   return(converted)
 }
 
-outputResults <- function(dataFrame) {
-  write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
-  write("\n", "results.txt", append = TRUE)
+outputResults <- function(dataFrame, fileName) {
+  resultPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/"
+  fileName <- paste0(resultPath, fileName, ".txt")
+  write.table(dataFrame, fileName, row.names = FALSE, append = TRUE)
+  write("\n", fileName, append = TRUE)
 }
 
 # clear everything from runtime memory
@@ -402,7 +404,8 @@ Loop through cell types:
     # Calculating gene ranks
     countsSubsampledConverted <- sparseToList(countsSubsampled$complete)
     geneRanks <- calculateGeneRanks(countsSubsampledConverted, iteration) 
-    writeToDatabase(geneRanks, "geneRanks")
+    outputResults(geneRanks, "geneRanks")
+    #writeToDatabase(geneRanks, "geneRanks")
 
     censorPoints <- rep(NA, length(countsSubsampled))
     names(censorPoints) <- names(countsSubsampled)
@@ -441,6 +444,7 @@ Loop through cell types:
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     # gammaLinearFits: parameter, intercept, meanUMI
     c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+    outputResults(gammaLinearFits, "gammaLinearFits")
     #writeToDatabase(gammaLinearFits, "gammaLinearFits")
 
     # Firstly arranging gamma linear fit values for each cell type
@@ -461,12 +465,14 @@ Loop through cell types:
     
     # dispFunEstimation: asymptDisp, extraPois
     dispFunEstimation <- dispersion.function.estimation(dispParam)
+    outputResults(dispFunEstimation, "dispFunEstimation")
     #writeToDatabase(dispFunEstimation, "dispFunEstimation")
     
     # Power calculation: simplified gamma model without optimizing the read depth 
     #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
     #       multipletFraction, ctCells, expressedGenes
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+    outputResults(power, "powerResults")
     #writeToDatabase(power, "powerResults")
 
     # Descriptive parameters passed:
@@ -477,6 +483,7 @@ Loop through cell types:
                                           length(levels(dataset$tissue_ontology_term_id)),
                                           length(levels(dataset$cell_type_ontology_term_id)),
                                           datasetID[[1]], datasetID[[2]], datasetID[[3]])
+    outputResults(descriptiveParams, "descriptiveParams")
     #writeToDatabase(descriptiveParams, "descriptiveParams")
     
     iteration <- iteration + 1
@@ -523,6 +530,7 @@ Validation by UMI counts per cell:
   estimates$rsq <- summary(model)$r.squared
   
   # Write results into database
+  outputResults(estimates, "estimates")
   #writeToDatabase(estimates, "estimates")
 ```
 

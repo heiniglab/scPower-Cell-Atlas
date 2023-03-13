@@ -1,0 +1,23 @@
+"run" "sample" "cell.type" "num.cells" "expressed.genes" "meanUMI" "evaluation" "estimated.counts" "dataset" "threshold" "rsq"
+"Run 5" "complete" "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 519 7631 3983.87668593449 "own_count10" 4447 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled75" "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 519 6567 2988.03468208092 "own_count10" 3522 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled50" "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 519 5027 1992.18304431599 "own_count10" 2384 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled25" "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 519 2886 996.104046242775 "own_count10" 1052 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "complete" "10x 3' v2_prostate gland_smooth muscle cell of prostate" 60 1790 5425.63333333333 "own_count10" 618 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled75" "10x 3' v2_prostate gland_smooth muscle cell of prostate" 60 1346 4069.31666666667 "own_count10" 489 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled50" "10x 3' v2_prostate gland_smooth muscle cell of prostate" 60 930 2713.1 "own_count10" 360 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled25" "10x 3' v2_prostate gland_smooth muscle cell of prostate" 60 479 1356.55 "own_count10" 200 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "complete" "10x 3' v2_urethra_fibroblast of connective tissue of prostate" 331 3991 2238.46223564955 "own_count10" 1487 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled75" "10x 3' v2_urethra_fibroblast of connective tissue of prostate" 331 3077 1678.97280966767 "own_count10" 990 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled50" "10x 3' v2_urethra_fibroblast of connective tissue of prostate" 331 2028 1119.50151057402 "own_count10" 573 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled25" "10x 3' v2_urethra_fibroblast of connective tissue of prostate" 331 890 559.719033232628 "own_count10" 323 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "complete" "10x 3' v2_urethra_smooth muscle cell of prostate" 99 958 2022.20202020202 "own_count10" 338 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled75" "10x 3' v2_urethra_smooth muscle cell of prostate" 99 696 1516.72727272727 "own_count10" 297 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled50" "10x 3' v2_urethra_smooth muscle cell of prostate" 99 453 1011.38383838384 "own_count10" 258 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled25" "10x 3' v2_urethra_smooth muscle cell of prostate" 99 237 505.676767676768 "own_count10" 167 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "complete" "10x 3' v3_urethra_fibroblast of connective tissue of prostate" 569 10271 6705.60632688928 "own_count10" 7121 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled75" "10x 3' v3_urethra_fibroblast of connective tissue of prostate" 569 9481 5029.33040421793 "own_count10" 6085 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled50" "10x 3' v3_urethra_fibroblast of connective tissue of prostate" 569 8173 3353.05448154657 "own_count10" 4663 "Training data set" "Training data set - Count > 10" 0.962469184523008
+"Run 5" "subsampled25" "10x 3' v3_urethra_fibroblast of connective tissue of prostate" 569 5469 1676.52196836555 "own_count10" 2505 "Training data set" "Training data set - Count > 10" 0.962469184523008
+
+
