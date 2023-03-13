@@ -1,0 +1,16 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" 0.000102087447702029 0.372044091073288 0.000411398064419578 12 163 163 0 163 5511
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" 0.000110283108974745 0.437224328536555 0.000304764051086784 12 312 312 0 312 6427
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" 0.000104884714429223 0.387186424198444 0.000397728694461539 12 122 122 0 122 5721
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" 9.80069808308776e-05 0.290785356416852 0.000424328164669929 12 98 98 0 98 4376
+
+

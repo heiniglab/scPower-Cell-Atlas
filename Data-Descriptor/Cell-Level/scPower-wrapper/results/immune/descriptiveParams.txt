@@ -1,0 +1,16 @@
+"datasetBodySpecific" "resultTableSpecific"
+"163_3_17_35" "10x 5' v1_ileum_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific"
+"312_3_17_35" "10x 5' v1_ileum_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific"
+"122_3_17_35" "10x 5' v1_ileum_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific"
+"98_3_17_35" "10x 5' v1_ileum_memory B cell"
+
+
