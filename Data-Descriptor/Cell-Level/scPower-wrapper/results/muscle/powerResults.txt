@@ -1,0 +1,76 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 234 234 0 234 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 374 374 0 374 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 302 302 0 302 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 68 68 0 68 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 737 737 0 737 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 375 375 0 375 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 143 143 0 143 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 57 57 0 57 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 3787 3787 0 3787 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 1113 1113 0 1113 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 342 342 0 342 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 360 360 0 360 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 147 147 0 147 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 173 173 0 173 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 2766 2766 0 2766 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 574 574 0 574 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 955 955 0 955 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 1445 1445 0 1445 0
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes"
+"Blueprint (Monocytes)" NA 0 NA 0 195 195 0 195 0
+
+

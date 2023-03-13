@@ -4,7 +4,8 @@ output: html_notebook
 ---
 
 Note:
-num.genes.kept taken as 30000
+* num.genes.kept taken as 32000
+* only list of datasetIDs are run, fix it
 
 Functions to be loaded:
 ```{r}
@@ -62,9 +63,11 @@ convertH5Seurat <- function(file.name) {
   return(converted)
 }
 
-outputResults <- function(dataFrame) {
-  write.table(dataFrame, "results.txt", row.names = FALSE, append = TRUE)
-  write("\n", "results.txt", append = TRUE)
+outputResults <- function(dataFrame, fileName) {
+  resultPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/"
+  fileName <- paste0(resultPath, fileName, ".txt")
+  write.table(dataFrame, fileName, row.names = FALSE, append = TRUE)
+  write("\n", fileName, append = TRUE)
 }
 
 # clear everything from runtime memory
@@ -359,10 +362,41 @@ Preparation beforehand:
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
-  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
-                                              wholeDataset@meta.data[[TISSUENAME]],
-                                              wholeDataset@meta.data[[CELLTYPENAME]],
-                                              sep = "_"))
+  #datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
+  #                                            wholeDataset@meta.data[[TISSUENAME]],
+  #                                            wholeDataset@meta.data[[CELLTYPENAME]],
+  #                                            sep = "_"))
+  datasetCollectionCombinedID <- list("10x 3' v3_muscle tissue_skeletal muscle satellite stem cell", 
+                                      "10x 3' v3_muscle tissue_pericyte",                            
+                                      "10x 3' v3_muscle tissue_endothelial cell of vascular tree",   
+                                      "10x 3' v3_muscle tissue_macrophage",                          
+                                      "10x 3' v3_muscle tissue_mesenchymal stem cell",               
+                                      "10x 3' v3_muscle tissue_capillary endothelial cell",          
+                                      "10x 3' v3_muscle tissue_fast muscle cell",                    
+                                      "10x 3' v3_muscle tissue_slow muscle cell",                    
+                                      "10x 3' v3_muscle tissue_mature NK T cell",
+                                      "10x 3' v3_muscle of abdomen_mesenchymal stem cell",               
+                                      "10x 3' v3_muscle of abdomen_skeletal muscle satellite stem cell", 
+                                      "10x 3' v3_muscle of abdomen_smooth muscle cell",                  
+                                      "10x 3' v3_muscle of abdomen_capillary endothelial cell",          
+                                      "10x 3' v3_muscle of abdomen_pericyte",                            
+                                      "10x 3' v3_muscle of abdomen_fast muscle cell",                    
+                                      "10x 3' v3_muscle of abdomen_macrophage",                          
+                                      "10x 3' v3_muscle of abdomen_endothelial cell of vascular tree",   
+                                      "10x 3' v3_muscle of abdomen_CD8-positive, alpha-beta T cell",     
+                                      "10x 3' v3_muscle of abdomen_endothelial cell of artery",
+                                      "10x 3' v3_muscle of abdomen_T cell",
+                                      "10x 3' v3_muscle of pelvic diaphragm_mesenchymal stem cell",               
+                                      "10x 3' v3_muscle of pelvic diaphragm_macrophage",                          
+                                      "10x 3' v3_muscle of pelvic diaphragm_skeletal muscle satellite stem cell", 
+                                      "10x 3' v3_muscle of pelvic diaphragm_CD4-positive, alpha-beta T cell",
+                                      "10x 3' v3_muscle of pelvic diaphragm_mesothelial cell",                    
+                                      "10x 3' v3_muscle of pelvic diaphragm_endothelial cell of lymphatic vessel",
+                                      "10x 3' v3_muscle of pelvic diaphragm_fast muscle cell",                    
+                                      "10x 3' v3_muscle of pelvic diaphragm_endothelial cell of vascular tree",   
+                                      "10x 3' v3_muscle of pelvic diaphragm_T cell",                              
+                                      "10x 3' v3_muscle of pelvic diaphragm_endothelial cell of artery",          
+                                      "10x 3' v3_muscle of pelvic diaphragm_tendon cell")
   
   # Gamma linear fit and dispersion values needed later for binding with scPower
   # They are also used to estimate gene counts
@@ -406,7 +440,8 @@ Loop through cell types:
     # Calculating gene ranks
     countsSubsampledConverted <- sparseToList(countsSubsampled$complete)
     geneRanks <- calculateGeneRanks(countsSubsampledConverted, iteration) 
-    writeToDatabase(geneRanks, "geneRanks")
+    outputResults(geneRanks, "geneRanks")
+    #writeToDatabase(geneRanks, "geneRanks")
 
     censorPoints <- rep(NA, length(countsSubsampled))
     names(censorPoints) <- names(countsSubsampled)
@@ -445,6 +480,7 @@ Loop through cell types:
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     # gammaLinearFits: parameter, intercept, meanUMI
     c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+    outputResults(gammaLinearFits, "gammaLinearFits")
     #writeToDatabase(gammaLinearFits, "gammaLinearFits")
 
     # Firstly arranging gamma linear fit values for each cell type
@@ -465,12 +501,14 @@ Loop through cell types:
     
     # dispFunEstimation: asymptDisp, extraPois
     dispFunEstimation <- dispersion.function.estimation(dispParam)
+    outputResults(dispFunEstimation, "dispFunEstimation")
     #writeToDatabase(dispFunEstimation, "dispFunEstimation")
     
     # Power calculation: simplified gamma model without optimizing the read depth 
     #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
     #       multipletFraction, ctCells, expressedGenes
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+    outputResults(power, "powerResults")
     #writeToDatabase(power, "powerResults")
 
     # Descriptive parameters passed:
@@ -481,6 +519,7 @@ Loop through cell types:
                                           length(levels(dataset$tissue_ontology_term_id)),
                                           length(levels(dataset$cell_type_ontology_term_id)),
                                           datasetID[[1]], datasetID[[2]], datasetID[[3]])
+    outputResults(descriptiveParams, "descriptiveParams")
     #writeToDatabase(descriptiveParams, "descriptiveParams")
     
     iteration <- iteration + 1
@@ -527,11 +566,12 @@ Validation by UMI counts per cell:
   estimates$rsq <- summary(model)$r.squared
   
   # Write results into database
+  outputResults(estimates, "estimates")
   #writeToDatabase(estimates, "estimates")
 ```
 
 
-Visualizing results (Not yet completed):
+Visualizing estimate results (Not yet completed):
 ```{r}
   # Create a scatterplot of estimated.counts vs. expressed.genes, with meanUMI on the x-axis
   ggplot(estimates, aes(x = meanUMI, y = estimated.counts)) +
