@@ -416,9 +416,7 @@ Loop through cell types:
     
     # Calculating gene ranks
     geneRanks <- calculateGeneRanks(countsSubsampled$complete, iteration) 
-    outputResults(geneRanks, "geneRanks")
-    #writeToDatabase(geneRanks, "geneRanks")
-
+    
     censorPoints <- rep(NA, length(countsSubsampled))
     names(censorPoints) <- names(countsSubsampled)
     
@@ -456,9 +454,7 @@ Loop through cell types:
     # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
     # gammaLinearFits: parameter, intercept, meanUMI
     c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
-    outputResults(gammaLinearFits, "gammaLinearFits")
-    #writeToDatabase(gammaLinearFits, "gammaLinearFits")
-
+    
     # Firstly arranging gamma linear fit values for each cell type
     tmp <- gammaLinearFits
     tmp$ct <- completeDatasetID
@@ -477,16 +473,12 @@ Loop through cell types:
     
     # dispFunEstimation: asymptDisp, extraPois
     dispFunEstimation <- dispersion.function.estimation(dispParam)
-    outputResults(dispFunEstimation, "dispFunEstimation")
-    #writeToDatabase(dispFunEstimation, "dispFunEstimation")
     
     # Power calculation: simplified gamma model without optimizing the read depth 
     #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
     #       multipletFraction, ctCells, expressedGenes
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
-    outputResults(power, "powerResults")
-    #writeToDatabase(power, "powerResults")
-
+    
     # Descriptive parameters passed:
     #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
     #       resultTableSpecific: assayID, tissueID, cellTypeID
@@ -495,9 +487,20 @@ Loop through cell types:
                                           length(levels(dataset$tissue_ontology_term_id)),
                                           length(levels(dataset$cell_type_ontology_term_id)),
                                           datasetID[[1]], datasetID[[2]], datasetID[[3]])
+    # Write into respective files
     outputResults(descriptiveParams, "descriptiveParams")
-    #writeToDatabase(descriptiveParams, "descriptiveParams")
+    outputResults(geneRanks, "geneRanks")
+    outputResults(gammaLinearFits, "gammaLinearFits")
+    outputResults(dispFunEstimation, "dispFunEstimation")
+    outputResults(power, "powerResults")
     
+    # Write into database
+    #writeToDatabase(descriptiveParams, "descriptiveParams")
+    #writeToDatabase(geneRanks, "geneRanks")
+    #writeToDatabase(gammaLinearFits, "gammaLinearFits")
+    #writeToDatabase(dispFunEstimation, "dispFunEstimation")
+    #writeToDatabase(power, "powerResults")
+
     iteration <- iteration + 1
   }
 ```
@@ -541,7 +544,7 @@ Validation by UMI counts per cell:
   # Calculate the R-squared value
   estimates$rsq <- summary(model)$r.squared
   
-  # Write results into database
+  # Firstly writing results into a file, then into the database
   outputResults(estimates, "estimates")
   #writeToDatabase(estimates, "estimates")
 ```
