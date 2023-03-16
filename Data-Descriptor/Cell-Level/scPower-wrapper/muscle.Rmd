@@ -1,11 +1,24 @@
 ---
-title: "Analysis on Tabula Sapiens (All Cells)"
+params: 
+    collection_name: "Tabula Sapiens"
+    dataset_name: "All Cells"
+    link: "https://cellxgene.cziscience.com/collections/e5f58829-1a66-40b5-a624-9046778e74f5"
+title: |
+  <h3>**Collection name:**</h3>
+  <span style='font-size:10pt'>`r params$collection_name`</span><br>
+  <h3>**Dataset name:**</h3>
+  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
+  <h3>[**Link**](`r params$link`)</h3>
 output: html_notebook
 ---
 
-Note:
-* num.genes.kept taken as 32000
-* only list of datasetIDs are run, fix it
+---
+
+<!--
+  Note:
+  * num.genes.kept taken as 32000
+  * only list of datasetIDs are run, fix it
+-->
 
 Functions to be loaded:
 ```{r}

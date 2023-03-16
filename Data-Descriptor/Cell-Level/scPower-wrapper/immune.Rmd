@@ -1,10 +1,24 @@
 ---
-title: "Cross-tissue immune cell analysis reveals tissue-specific features in humans (Global)"
+params: 
+    collection_name: "Cross-tissue immune cell analysis reveals tissue-specific features in humans"
+    dataset_name: "Global"
+    link: "https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3"
+title: |
+  <h3>**Collection name:**</h3>
+  <span style='font-size:10pt'>`r params$collection_name`</span><br>
+  <h3>**Dataset name:**</h3>
+  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
+  <h3>[**Link**](`r params$link`)</h3>
 output: html_notebook
 ---
 
-Note:
-* num.genes.kept taken as 32000
+---
+
+<!--  
+  Note:
+  * num.genes.kept taken as 32000
+-->
+
 
 Functions to be loaded:
 ```{r}

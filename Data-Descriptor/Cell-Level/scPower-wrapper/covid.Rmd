@@ -1,10 +1,24 @@
 ---
-title: "Analysis on A transcriptional cross species map of pancreatic islet cells (Homo Sapiens)"
+params: 
+    collection_name: "Sampling peripheral blood and matched nasal swabs from donors with prior immunodeficiencies and autoimmune conditions infected with SARS-CoV-2"
+    dataset_name: "Autoimmunity PBMCs"
+    link: "https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af"
+title: |
+  <h3>**Collection name:**</h3>
+  <span style='font-size:10pt'>`r params$collection_name`</span><br>
+  <h3>**Dataset name:**</h3>
+  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
+  <h3>[**Link**](`r params$link`)</h3>
 output: html_notebook
 ---
 
-Note:
-* num.genes.kept taken as 32000
+---
+
+<!--
+  Note:
+  * num.genes.kept taken as 32000
+-->
+
 
 Functions to be loaded:
 ```{r}

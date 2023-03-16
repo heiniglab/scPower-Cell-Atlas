@@ -1,6 +1,17 @@
 ---
-title: "Analysis on dataset containing prostate gland tissue (#cells: 1.647)"
+params: 
+    collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
+    dataset_name: "Mouse Fibromuscular Stromal Cells"
+    link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
+title: |
+  <h3>**Collection name:**</h3>
+  <span style='font-size:10pt'>`r params$collection_name`</span><br>
+  <h3>**Dataset name:**</h3>
+  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
+  <h3>[**Link**](`r params$link`)</h3>
 output: html_notebook
+---
+
 ---
 
 Functions to be loaded:
@@ -535,7 +546,7 @@ Validation by UMI counts per cell:
 ```
 
 
-Visualizing results (Not yet completed):
+Visualizing estimate results (Not yet completed):
 ```{r}
   # Create a scatterplot of estimated.counts vs. expressed.genes, with meanUMI on the x-axis
   ggplot(estimates, aes(x = meanUMI, y = estimated.counts)) +
