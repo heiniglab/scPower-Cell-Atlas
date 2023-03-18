@@ -329,7 +329,7 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
                                                   type = "eqtl",
                                                   ref.study = scPower::eqtl.ref.study,
                                                   ref.study.name = "Blueprint (Monocytes)",
-                                                  cellsPerLane = 8000,
+                                                  cellsPerLane = nCells,
                                                   gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
                                                   ct = "New_ct", 
                                                   disp.fun.param = disp.fun.param,

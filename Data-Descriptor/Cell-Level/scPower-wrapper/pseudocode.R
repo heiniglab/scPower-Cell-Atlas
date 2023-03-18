@@ -1,10 +1,3 @@
-# TODO: 
-# estimate.exp.prob.count.param
-    # Get gamma values dependent on mean umi > ID'ye encode et
-# sample.mean.values.quantiles:
-    # output an error message if multiple rows present in gamma parameters
-        # stopifnot(nrow(gamma.parameters))
-    # zero component: nZeros elemanları değişir mi? Neden liste atıldı çöz
 
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "DropletUtils", "HardyWeinberg", "MKmisc",
