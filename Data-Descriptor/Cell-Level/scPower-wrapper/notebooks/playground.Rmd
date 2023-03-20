@@ -18,7 +18,7 @@ Functions to be loaded:
 ```{r}
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "dplyr", "DropletUtils", "HardyWeinberg", "MKmisc",
-                "plotly", "pwr", "reshape2", "RPostgreSQL", "RPostgres", "scPower",
+                "plotly", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
   suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
@@ -61,6 +61,23 @@ establishDBConnection <- function(hostIP) {
 
   print("Connection to database established successfully.")
   return(connectionInstance)
+}
+
+# Used for converting ontology ids such as: 
+# Cell Ontology, Experimental Factor Ontology and Uberon multi-species anatomy ontology
+convertIDtoName <- function(term_id_list) {
+    term_name_list <- list("efo", "uberon", "cl")
+    term_name_result <- list()
+    
+    for (i in seq_along(term_name_list)) {
+        # term is called by "rols" library which makes a query to Ontology Lookup Service (OLS)
+        current_name <- term(term_name_list[[i]], term_id_list[[i]])
+        
+        # Add the result to the output list
+        term_name_result[[i]] <- current_name@label
+    }
+    
+    return(term_name_result)
 }
 
 # Converting from AnnData to Seurat via h5Seurat
@@ -305,14 +322,15 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID) {
+                             assayID, tissueID, cellTypeID, idToName) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
 
   return(list(
     datasetBodySpecific = datasetBodySpecific, 
-    resultTableSpecific = resultTableSpecific
+    resultTableSpecific = resultTableSpecific,
+    idToName = idToName
     ))
 }
 
@@ -402,6 +420,9 @@ Loop through cell types:
     }, error = function(e) {
       stop(e)
     })
+    
+    # ontology ids converted to their ontology names and concatenated
+    idToName <- paste(convertIDtoName(datasetID), collapse="_")
 
     # cell count threshold
     # if under 50, skip to the next sample
@@ -416,7 +437,7 @@ Loop through cell types:
     
     # Calculating gene ranks
     geneRanks <- calculateGeneRanks(countsSubsampled$complete, iteration) 
-    
+
     censorPoints <- rep(NA, length(countsSubsampled))
     names(censorPoints) <- names(countsSubsampled)
     
@@ -478,6 +499,7 @@ Loop through cell types:
     #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
     #       multipletFraction, ctCells, expressedGenes
     power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+    power[["idToName"]] <- idToName
     
     # Descriptive parameters passed:
     #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
@@ -486,7 +508,8 @@ Loop through cell types:
                                           length(levels(dataset$assay_ontology_term_id)),
                                           length(levels(dataset$tissue_ontology_term_id)),
                                           length(levels(dataset$cell_type_ontology_term_id)),
-                                          datasetID[[1]], datasetID[[2]], datasetID[[3]])
+                                          datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                          idToName)
     # Write into respective files
     outputResults(descriptiveParams, "descriptiveParams")
     outputResults(geneRanks, "geneRanks")
@@ -535,7 +558,7 @@ Validation by UMI counts per cell:
   estimates$dataset <- "Training data set"
   estimates$threshold <- "Training data set - Count > 10"
   estimates.allSamples <- rbind(estimates.allSamples, estimates)
-  
+
   # Calculating R squared error
   
   # Fitting a linear regression model between estimated and expressed gene counts
