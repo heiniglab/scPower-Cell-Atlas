@@ -398,7 +398,19 @@ Preparation beforehand:
   observedGeneCountsDF <- data.frame()
   gammaLinearFitsDF <- data.frame()
   dispFunParamDF <- data.frame()
+  
+  expressedGenesDF <- data.frame()
+  gammaFits <- data.frame()
+  gammaLinearFits <- data.frame()
+  dispFunEstimation <- data.frame()
+  power <- data.frame()
+  
   iteration <- 1
+  numberOfAssays <- 0
+  numberOfTissues <- 0
+  numberOfCellTypes <- 0
+  idToName <- ""
+  cellCount <- 0
 ```
 
 
@@ -406,125 +418,158 @@ Main
 Loop through cell types:
 ```{r}
   for(datasetID in datasetCollectionCombinedID){
+      # datasetID: {[assayID], [tissueID], [cellTypeID]}
+      completeDatasetID <- datasetID
+      datasetID <- strsplit(datasetID, split = "_")[[1]]
+  
+      # covering the code block with try catch in the purpose of
+      # catching error for a particular cell type combination inside any dataset
+      result <- tryCatch({
+        
+        dataset <- tryCatch({
+          subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                               tissue_ontology_term_id == datasetID[[2]] &
+                               cell_type_ontology_term_id == datasetID[[3]])
+        }, warning = function(w) {
+          warning(w)
+        }, error = function(e) {
+          stop(e)
+        })
+        
+        # ontology ids converted to their ontology names and concatenated
+        idToName <- paste(convertIDtoName(datasetID), collapse="_")
     
-    # datasetID: {[assayID], [tissueID], [cellTypeID]}
-    completeDatasetID <- datasetID
-    datasetID <- strsplit(datasetID, split = "_")[[1]]
-
-    dataset <- tryCatch({
-      subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                           tissue_ontology_term_id == datasetID[[2]] &
-                           cell_type_ontology_term_id == datasetID[[3]])
-    }, warning = function(w) {
-      warning(w)
-    }, error = function(e) {
-      stop(e)
-    })
+        # cell count threshold
+        # if under 50, skip to the next sample
+        cellCount <- dataset@assays$RNA@counts@Dim[[2]]
+        if(cellCount < 50) {
+          next
+        }
+        
+        numberOfAssays <- length(levels(dataset$assay_ontology_term_id))
+        numberOfTissues <- length(levels(dataset$tissue_ontology_term_id))
+        numberOfCellTypes <- length(levels(dataset$cell_type_ontology_term_id))
+      
+        counts <- dataset@assays$RNA@counts
+        countsSubsampled <- subsampleIntoList(counts)
+        print(calculateZeroPerc(countsSubsampled$complete))
+        
+        # Calculating gene ranks
+        geneRanks <- calculateGeneRanks(countsSubsampled$complete, iteration) 
     
-    # ontology ids converted to their ontology names and concatenated
-    idToName <- paste(convertIDtoName(datasetID), collapse="_")
-
-    # cell count threshold
-    # if under 50, skip to the next sample
-    cellCount <- dataset@assays$RNA@counts@Dim[[2]]
-    if(cellCount < 50) {
-      next
-    }
-
-    counts <- dataset@assays$RNA@counts
-    countsSubsampled <- subsampleIntoList(counts)
-    print(calculateZeroPerc(countsSubsampled$complete))
+        censorPoints <- rep(NA, length(countsSubsampled))
+        names(censorPoints) <- names(countsSubsampled)
+        
+        meanUmi <- rep(NA, length(countsSubsampled))
+        names(meanUmi) <- names(countsSubsampled)
     
-    # Calculating gene ranks
-    geneRanks <- calculateGeneRanks(countsSubsampled$complete, iteration) 
-
-    censorPoints <- rep(NA, length(countsSubsampled))
-    names(censorPoints) <- names(countsSubsampled)
+        for(matrixName in names(countsSubsampled)) {
+          # Number of cells per cell type as censoring point
+          censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
     
-    meanUmi <- rep(NA, length(countsSubsampled))
-    names(meanUmi) <- names(countsSubsampled)
-
-    for(matrixName in names(countsSubsampled)) {
-      # Number of cells per cell type as censoring point
-      censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
-
-      # Estimate the mean umi values per cell for each matrix
-      meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
-    }
-
-    # Counting observed expressed genes
-    nSamples <- tryCatch({
-      if(is.null(dataset@meta.data$Donor)) {
-        length(levels(dataset@meta.data$Sample))
-      } else {
-        length(levels(dataset@meta.data$Donor))
+          # Estimate the mean umi values per cell for each matrix
+          meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
+        }
+    
+        # Counting observed expressed genes
+        nSamples <- tryCatch({
+          if(is.null(dataset@meta.data$Donor)) {
+            length(levels(dataset@meta.data$Sample))
+          } else {
+            length(levels(dataset@meta.data$Donor))
+          }
+        }, warning = function(w) {
+          warning(w)
+        }, error = function(e) {
+          stop("Both Donor and Sample not found in the meta data.")
+        })
+        expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
+    
+        # Estimation of negative binomial paramters for each gene
+        c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+    
+        # Estimation of a gamma mixed distribution over all means
+        gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
+    
+        # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+        # gammaLinearFits: parameter, intercept, meanUMI
+        c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+        
+        # Firstly arranging gamma linear fit values for each cell type
+        tmp <- gammaLinearFits
+        tmp$ct <- completeDatasetID
+        gammaLinearFitsDF <- rbind(gammaLinearFitsDF, tmp)
+        
+        # Then also arranging disp fun parameter values for each cell type
+        tmp <- dispersion.function.estimation(dispParam)
+        tmp$ct <- completeDatasetID
+        tmp <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
+        dispFunParamDF <- rbind(dispFunParamDF, tmp)
+        
+        # Collecting data for validation of the model
+        observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
+                                              meanUmi, expressedGenesDF$expressed.genes)
+        observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
+        
+        # dispFunEstimation: asymptDisp, extraPois
+        dispFunEstimation <- dispersion.function.estimation(dispParam)
+        
+        # Power calculation: simplified gamma model without optimizing the read depth 
+        #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
+        #       multipletFraction, ctCells, expressedGenes
+        power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+        power[["idToName"]] <- idToName
+        
+        # Descriptive parameters passed:
+        #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
+        #       resultTableSpecific: assayID, tissueID, cellTypeID
+        descriptiveParams <- mergeDescription(cellCount,
+                                              length(levels(dataset$assay_ontology_term_id)),
+                                              length(levels(dataset$tissue_ontology_term_id)),
+                                              length(levels(dataset$cell_type_ontology_term_id)),
+                                              datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                              idToName)
+        # Write into respective files
+        outputResults(descriptiveParams, "descriptiveParams")
+        outputResults(geneRanks, "geneRanks")
+        outputResults(gammaLinearFits, "gammaLinearFits")
+        outputResults(dispFunEstimation, "dispFunEstimation")
+        outputResults(power, "powerResults")
+        
+        # Write into database
+        #writeToDatabase(descriptiveParams, "descriptiveParams")
+        #writeToDatabase(geneRanks, "geneRanks")
+        #writeToDatabase(gammaLinearFits, "gammaLinearFits")
+        #writeToDatabase(dispFunEstimation, "dispFunEstimation")
+        #writeToDatabase(power, "powerResults")
+    
+        iteration <- iteration + 1
+        
+      }, 
+      
+      # error handling code (currently only used for outputting related informations)
+      error = function(e) {
+        datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+        
+        errorDF <- data.frame(completeDatasetID,
+                              idToName,
+                              iteration,
+                              paste(e),
+                              datasetBodySpecific,
+                              cellCount)
+        # errorDF <- merge(errorDF, expressedGenesDF, by = "cellCount")
+        # gammaFits, gammaLinearFits, dispFunEstimation, power
+                              
+        colnames(errorDF)[4] <- "errorMessage"
+        outputResults(errorDF, "error")
+      })
+      
+      # skip current iteration of the loop if an error occurs
+      if (inherits(result, "try-error")) {
+        next 
       }
-    }, warning = function(w) {
-      warning(w)
-    }, error = function(e) {
-      stop("Both Donor and Sample not found in the meta data.")
-    })
-    expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
-
-    # Estimation of negative binomial paramters for each gene
-    c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
-
-    # Estimation of a gamma mixed distribution over all means
-    gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
-
-    # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-    # gammaLinearFits: parameter, intercept, meanUMI
-    c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
-    
-    # Firstly arranging gamma linear fit values for each cell type
-    tmp <- gammaLinearFits
-    tmp$ct <- completeDatasetID
-    gammaLinearFitsDF <- rbind(gammaLinearFitsDF, tmp)
-    
-    # Then also arranging disp fun parameter values for each cell type
-    tmp <- dispersion.function.estimation(dispParam)
-    tmp$ct <- completeDatasetID
-    tmp <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
-    dispFunParamDF <- rbind(dispFunParamDF, tmp)
-    
-    # Collecting data for validation of the model
-    observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
-                                          meanUmi, expressedGenesDF$expressed.genes)
-    observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
-    
-    # dispFunEstimation: asymptDisp, extraPois
-    dispFunEstimation <- dispersion.function.estimation(dispParam)
-    
-    # Power calculation: simplified gamma model without optimizing the read depth 
-    #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
-    #       multipletFraction, ctCells, expressedGenes
-    power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
-    power[["idToName"]] <- idToName
-    
-    # Descriptive parameters passed:
-    #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
-    #       resultTableSpecific: assayID, tissueID, cellTypeID
-    descriptiveParams <- mergeDescription(cellCount,
-                                          length(levels(dataset$assay_ontology_term_id)),
-                                          length(levels(dataset$tissue_ontology_term_id)),
-                                          length(levels(dataset$cell_type_ontology_term_id)),
-                                          datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                          idToName)
-    # Write into respective files
-    outputResults(descriptiveParams, "descriptiveParams")
-    outputResults(geneRanks, "geneRanks")
-    outputResults(gammaLinearFits, "gammaLinearFits")
-    outputResults(dispFunEstimation, "dispFunEstimation")
-    outputResults(power, "powerResults")
-    
-    # Write into database
-    #writeToDatabase(descriptiveParams, "descriptiveParams")
-    #writeToDatabase(geneRanks, "geneRanks")
-    #writeToDatabase(gammaLinearFits, "gammaLinearFits")
-    #writeToDatabase(dispFunEstimation, "dispFunEstimation")
-    #writeToDatabase(power, "powerResults")
-
-    iteration <- iteration + 1
+      
+      # code to execute in case there is no error
   }
 ```
 
