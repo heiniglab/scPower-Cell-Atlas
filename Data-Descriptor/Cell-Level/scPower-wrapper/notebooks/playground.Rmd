@@ -3,6 +3,8 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/AllCells/"
+    dataset_path: "UrethralLuminalEpithelia_AllCells.rds"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
@@ -88,8 +90,8 @@ convertH5Seurat <- function(file.name) {
 }
 
 outputResults <- function(dataFrame, fileName) {
-  resultPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/"
-  fileName <- paste0(resultPath, fileName, ".txt")
+  resultsPath <- params$results_path
+  fileName <- paste0(resultsPath, fileName, ".txt")
   write.table(dataFrame, fileName, row.names = FALSE, append = TRUE)
   write("\n", fileName, append = TRUE)
 }
@@ -381,9 +383,12 @@ Preparation beforehand:
   
   # path of dataset location
   setwd("C:/Users/Cem/Documents/Github/dataset")
-  datasetFilePath <- "MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
+  datasetFilePath <- params$dataset_path
 
   # Reading the data in seurat format
+  # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
+  # For reading .rds      file: readRDS(datasetFilePath)
+  memory.limit(999999)
   wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
   print("Dataset loaded successfully.")
 
