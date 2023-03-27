@@ -1,0 +1,92 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00677951707981117 0.874893233574142 0.00727193618174077 22 3638 3638 0 3638 13347 "10x 5' v1_blood_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00671670159872437 0.952142583995374 0.00685528443505824 22 8679 8679 0 8679 15217 "10x 5' v1_blood_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00526682766370822 0.498270012822874 0.00737473532159146 22 75 75 0 75 7284 "10x 5' v1_blood_plasmacytoid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00677509108454342 0.925290013277842 0.00709216055111361 22 6948 6948 0 6948 14465 "10x 5' v1_blood_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00654046978110656 0.997498162938421 0.00666549202315624 22 26887 26887 0 26887 16725 "10x 5' v1_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00678131496354581 0.87295228063485 0.00726233054014579 22 1923 1923 0 1923 13301 "10x 5' v1_blood_CD14-low, CD16-positive monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00654950815285014 0.996939178022447 0.006742366860046 22 23648 23648 0 23648 16682 "10x 5' v1_blood_CD14-positive monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00674273115965238 0.862927145623979 0.00732455918361889 22 2387 2387 0 2387 13086 "10x 5' v1_blood_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00678865569378185 0.909084028137327 0.00708033028381633 22 6224 6224 0 6224 14079 "10x 5' v1_blood_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00668347791878606 0.809112045983189 0.00744851375353123 22 1807 1807 0 1807 12005 "10x 5' v1_blood_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00655688886117582 0.750295598660209 0.00771338149715125 22 457 457 0 457 10998 "10x 5' v1_blood_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00571624162571998 0.589157182993369 0.00769162363655822 22 223 223 0 223 8604 "10x 5' v1_blood_mucosal invariant T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00678030964341832 0.897666534685646 0.00696737254239105 22 1697 1697 0 1697 13851 "10x 5' v1_blood_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00616150388306212 0.683528735172721 0.00746241808266315 22 226 226 0 226 9942 "10x 5' v1_blood_natural killer cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00593947059442055 0.635569222662568 0.00769856403410353 22 306 306 0 306 9248 "10x 5' v1_blood_regulatory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0066680038392824 0.801965283315046 0.00741383210386633 22 543 543 0 543 11873 "10x 5' v1_blood_conventional dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00655441838967094 0.753670580920286 0.00779486968539451 22 1444 1444 0 1444 11051 "10x 5' v1_blood_platelet"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00660793172027233 0.778526994241098 0.00730342928042126 22 415 415 0 415 11453 "10x 5' v1_blood_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00624434049331431 0.695426030592224 0.00749074814686925 22 510 510 0 510 10125 "10x 5' v1_blood_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00561936477153927 0.561001979434425 0.00714207635309387 22 216 216 0 216 8181 "10x 5' v1_blood_gamma-delta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00677893808069911 0.896970847739705 0.00712221244771833 22 1239 1239 0 1239 13836 "10x 5' v1_blood_plasmablast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00672195821541753 0.848520875704506 0.0074799897978798 22 3907 3907 0 3907 12795 "10x 5' v1_blood_erythrocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00663908376474475 0.792453534924184 0.00750018686031276 22 270 270 0 270 11702 "10x 5' v1_blood_hematopoietic stem cell"
+
+
