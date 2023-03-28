@@ -3,8 +3,8 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
-    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/AllCells/"
-    dataset_path: "UrethralLuminalEpithelia_AllCells.rds"
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/Small Dataset/"
+    dataset_path: "prostate_MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
@@ -151,7 +151,7 @@ calculateZeroPerc <- function(counts) {
   return(c(zero_perc = zeros/total * 100, non_zero_perc = non_zeros/total * 100))
 }
 
-calculateGeneRanks <- function(count.matrix, iteration) {
+calculateGeneRanks <- function(count.matrix, idToName) {
   count.matrix <- sparseToList(count.matrix)
     
   # To speed up computation, remove all 0 genes
@@ -166,8 +166,8 @@ calculateGeneRanks <- function(count.matrix, iteration) {
   # Calculate gene ranks
   gene.ranks <- gene.rank.calculation(count.matrix, sign.genes)
   
-  # Indicator to distinguish different list of elements belogs to different cell type results
-  gene.ranks[["indicator"]] <- iteration
+  # Indicator to distinguish different list of elements belongs to different cell type results
+  gene.ranks[["indicator"]] <- idToName
   
   return(gene.ranks)
 }
@@ -460,7 +460,7 @@ Loop through cell types:
         print(calculateZeroPerc(countsSubsampled$complete))
         
         # Calculating gene ranks
-        geneRanks <- calculateGeneRanks(countsSubsampled$complete, iteration) 
+        geneRanks <- calculateGeneRanks(countsSubsampled$complete, idToName) 
     
         censorPoints <- rep(NA, length(countsSubsampled))
         names(censorPoints) <- names(countsSubsampled)
@@ -537,8 +537,8 @@ Loop through cell types:
         # Write into respective files
         outputResults(descriptiveParams, "descriptiveParams")
         outputResults(geneRanks, "geneRanks")
-        outputResults(gammaLinearFits, "gammaLinearFits")
-        outputResults(dispFunEstimation, "dispFunEstimation")
+        outputResults(data.frame(idToName, gammaLinearFits), "gammaLinearFits")
+        outputResults(data.frame(idToName, dispFunEstimation), "dispFunEstimation")
         outputResults(power, "powerResults")
         
         # Write into database
@@ -549,10 +549,9 @@ Loop through cell types:
         #writeToDatabase(power, "powerResults")
     
         iteration <- iteration + 1
-        
       }, 
       
-      # error handling code (currently only used for outputting related informations)
+       # error handling code (currently only used for outputting related informations)
       error = function(e) {
         datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
         
@@ -569,12 +568,10 @@ Loop through cell types:
         outputResults(errorDF, "error")
       })
       
-      # skip current iteration of the loop if an error occurs
+       # skip current iteration of the loop if an error occurs
       if (inherits(result, "try-error")) {
-        next 
+        next
       }
-      
-      # code to execute in case there is no error
   }
 ```
 
