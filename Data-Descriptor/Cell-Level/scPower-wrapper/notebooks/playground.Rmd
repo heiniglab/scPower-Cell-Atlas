@@ -426,6 +426,10 @@ Loop through cell types:
       # datasetID: {[assayID], [tissueID], [cellTypeID]}
       completeDatasetID <- datasetID
       datasetID <- strsplit(datasetID, split = "_")[[1]]
+      
+      # ontology ids converted to their ontology names and concatenated
+      idToName <- paste(convertIDtoName(datasetID), collapse="_")
+    
   
       # covering the code block with try catch in the purpose of
       # catching error for a particular cell type combination inside any dataset
@@ -435,10 +439,6 @@ Loop through cell types:
                                         tissue_ontology_term_id == datasetID[[2]] &
                                         cell_type_ontology_term_id == datasetID[[3]])
         
-        
-        # ontology ids converted to their ontology names and concatenated
-        idToName <- paste(convertIDtoName(datasetID), collapse="_")
-    
         # cell count threshold
         # if under 50, skip to the next sample
         cellCount <- dataset@assays$RNA@counts@Dim[[2]]
