@@ -1,0 +1,225 @@
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p1" 0.0243147539985788 -2.71205560150151e-06
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean1" 0.00192033725319465 1.21937135272813e-05
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean2" -0.0549134791866024 0.000788707994055642
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd1" 0.00545060707715082 2.36287952960611e-05
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd2" 0.341139963469637 0.00181828382464009
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p3" 0.0505503654181442 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_leukocyte" "p1" 0.060325476880823 -5.75708410833452e-06
+"10x 3' v2_prostate gland_leukocyte" "mean1" 0.00106196057941961 1.64510133993317e-05
+"10x 3' v2_prostate gland_leukocyte" "mean2" -0.00156246676732907 0.000685686982291097
+"10x 3' v2_prostate gland_leukocyte" "sd1" 0.00176837429379303 3.04981579529616e-05
+"10x 3' v2_prostate gland_leukocyte" "sd2" 0.0348966115813898 0.00147444892560156
+"10x 3' v2_prostate gland_leukocyte" "p3" 0.0523489384334345 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "p1" 0.0493564859812737 -7.48147818196925e-06
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "mean1" 0.00126677793856646 1.67219764004574e-05
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "mean2" -0.0149783981905343 0.000691732180607221
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "sd1" 0.00299913871282999 3.23993886881188e-05
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "sd2" 0.0949810842311773 0.00149958192132898
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "p3" 0.0515396272187901 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "p1" 0.0708065301760166 -4.04484433167844e-06
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "mean1" 0.00158421518997789 9.09335811848708e-06
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "mean2" -0.0159970282829809 0.000808703893948173
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "sd1" 0.00360032870972077 1.7536237914269e-05
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "sd2" 0.33020325192054 0.00254574423230602
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "p3" 0.0528738282874928 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p1" 0.0749737237946168 -6.94690928869697e-06
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean1" 0.000946993365160215 2.11819669782893e-05
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean2" -0.000194032131258348 0.000615440225684663
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd1" 0.00164279182023325 3.84284364217655e-05
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd2" 0.00678126022630199 0.00124001012393311
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p3" 0.051872761585877 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "p1" 0.114887205044597 -9.25848541166617e-06
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "mean1" 0.003291252459727 2.21120673097372e-05
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "mean2" -0.0361060148919834 0.000611423380370471
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "sd1" 0.0137798202549033 3.88919425598062e-05
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "sd2" 0.18504587597044 0.00129172303538832
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "p3" 0.0518455195672045 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_urethra urothelial cell" "p1" 0.0762487126915098 -7.31372678678111e-06
+"10x 3' v2_prostate gland_urethra urothelial cell" "mean1" 0.00087586066872937 1.89362990429291e-05
+"10x 3' v2_prostate gland_urethra urothelial cell" "mean2" 0.00225673946873428 0.00065128659764029
+"10x 3' v2_prostate gland_urethra urothelial cell" "sd1" 0.0012208990013831 3.59750588168843e-05
+"10x 3' v2_prostate gland_urethra urothelial cell" "sd2" 0.00392114417283285 0.00167247919030403
+"10x 3' v2_prostate gland_urethra urothelial cell" "p3" 0.0520298975564174 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p1" 0.12253561736847 -6.37118749258229e-06
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean1" 0.0072632050793862 1.89132155271818e-05
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean2" -0.0823607286759778 0.000654872570348796
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd1" 0.0355926596708173 3.03820134562122e-05
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd2" 0.493566513791913 0.0010593081560279
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p3" 0.0525832008802009 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "p1" 0.0688673167817467 -7.21034442466736e-06
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "mean1" 0.00219137027041995 1.75080970812323e-05
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "mean2" -0.0196276547544514 0.000674495443769934
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "sd1" 0.00562134074803977 3.49813132696651e-05
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "sd2" 0.202026301255639 0.00169557792158528
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "p3" 0.0515802796174218 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_prostate gland_leukocyte" "p1" 0.099968939250864 -6.00074267153579e-06
+"10x 3' v3_prostate gland_leukocyte" "mean1" 0.00235905175275074 2.15353288742275e-05
+"10x 3' v3_prostate gland_leukocyte" "mean2" 0.00442102363365615 0.000613706858355907
+"10x 3' v3_prostate gland_leukocyte" "sd1" 0.00523261247712364 4.25606441890251e-05
+"10x 3' v3_prostate gland_leukocyte" "sd2" 0.0838780421655052 0.0014679624144444
+"10x 3' v3_prostate gland_leukocyte" "p3" 0.0512574122692792 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_leukocyte" "p1" 0.103072921811888 -1.48684499181062e-05
+"10x 3' v2_urethra_leukocyte" "mean1" 0.00135561940180516 1.86839072945292e-05
+"10x 3' v2_urethra_leukocyte" "mean2" -0.0142367644781847 0.000667264325352864
+"10x 3' v2_urethra_leukocyte" "sd1" 0.00483572169424078 3.09740612703456e-05
+"10x 3' v2_urethra_leukocyte" "sd2" 0.0767239380515248 0.00140072107521305
+"10x 3' v2_urethra_leukocyte" "p3" 0.0520548894938911 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_urethra urothelial cell" "p1" 0.0682456163985175 -1.25346037663241e-05
+"10x 3' v2_urethra_urethra urothelial cell" "mean1" 0.000931244129914896 2.06846814367089e-05
+"10x 3' v2_urethra_urethra urothelial cell" "mean2" -0.0125999003571589 0.000630721650480771
+"10x 3' v2_urethra_urethra urothelial cell" "sd1" 0.00156505196246094 3.97292877109772e-05
+"10x 3' v2_urethra_urethra urothelial cell" "sd2" 0.0560240131779182 0.00162872681354915
+"10x 3' v2_urethra_urethra urothelial cell" "p3" 0.0515199792987909 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "p1" 0.080171589782434 -8.51046638547608e-06
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "mean1" 0.000821446587592096 1.68539005988958e-05
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "mean2" 2.2128812015465e-05 0.00068594575788664
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "sd1" 0.0010863340500295 3.21785575888573e-05
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "sd2" 0.00741737713546886 0.00178345965827697
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "p3" 0.0523025745026272 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "p1" 0.0647655072898343 -7.82321478170593e-06
+"10x 3' v2_urethra_seminal vesicle glandular cell" "mean1" 0.000854892186338232 1.37385247908498e-05
+"10x 3' v2_urethra_seminal vesicle glandular cell" "mean2" -0.0106460726652629 0.000735421366696034
+"10x 3' v2_urethra_seminal vesicle glandular cell" "sd1" 0.00157893018225545 2.61324532152648e-05
+"10x 3' v2_urethra_seminal vesicle glandular cell" "sd2" 0.0595139158018858 0.0019328813617383
+"10x 3' v2_urethra_seminal vesicle glandular cell" "p3" 0.0527224019082701 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p1" 0.0908427506130986 -1.32684324133712e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean1" 0.000485650066088316 2.1976021337364e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean2" 0.00560063019656787 0.000608579730918468
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd1" 0.000862013436299471 3.65829184601358e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd2" -0.0142022986414081 0.00147151270620461
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p3" 0.0518415078262167 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "p1" 0.0974895198251952 -1.28220099603634e-05
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "mean1" 0.00123202124543824 2.32864360432679e-05
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "mean2" -0.0134106443347835 0.000592588037726664
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "sd1" 0.00494518889778098 3.77774670276126e-05
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "sd2" 0.0814286548819663 0.00143604070407173
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "p3" 0.0519251998250663 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "p1" 0.0720313317795344 -1.6379824495026e-05
+"10x 3' v2_urethra_basal cell of prostate epithelium" "mean1" 0.000637168845328762 1.88430168426907e-05
+"10x 3' v2_urethra_basal cell of prostate epithelium" "mean2" -0.00839560090302205 0.000663183764744387
+"10x 3' v2_urethra_basal cell of prostate epithelium" "sd1" 0.00101430277949274 3.47478291973929e-05
+"10x 3' v2_urethra_basal cell of prostate epithelium" "sd2" 0.0403322653106941 0.00172521045525018
+"10x 3' v2_urethra_basal cell of prostate epithelium" "p3" 0.0516193776240132 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p1" 0.16882228224878 -4.37641225698802e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean1" 0.000928992267846027 2.09839610788726e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean2" 0.0196811393714348 0.000619257252348781
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd1" -0.00866799389802645 4.33179358313071e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd2" -0.316027564771355 0.00168328751819923
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p3" 0.052816817576599 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_urethra urothelial cell" "p1" 0.0384615309292795 -2.47673054486133e-06
+"10x 3' v3_urethra_urethra urothelial cell" "mean1" 0.00683272951048886 2.01254624259016e-05
+"10x 3' v3_urethra_urethra urothelial cell" "mean2" -0.0994398798760079 0.000627358314579657
+"10x 3' v3_urethra_urethra urothelial cell" "sd1" 0.0168278078428372 3.95372507167347e-05
+"10x 3' v3_urethra_urethra urothelial cell" "sd2" 0.759539823024793 0.0014678169427862
+"10x 3' v3_urethra_urethra urothelial cell" "p3" 0.0505234039130321 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "p1" 0.0624939884042298 -1.6721515202324e-06
+"10x 3' v3_urethra_seminal vesicle glandular cell" "mean1" 0.00855892208080225 1.3514267818286e-05
+"10x 3' v3_urethra_seminal vesicle glandular cell" "mean2" -0.00755021422086344 0.000710846527711792
+"10x 3' v3_urethra_seminal vesicle glandular cell" "sd1" 0.0193068145254837 2.6976206351258e-05
+"10x 3' v3_urethra_seminal vesicle glandular cell" "sd2" 1.7616053456636 0.00212203188899321
+"10x 3' v3_urethra_seminal vesicle glandular cell" "p3" 0.052726980710446 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "p1" 0.0615014633991557 -2.12786676561935e-06
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "mean1" 0.011786587767789 1.76751889641311e-05
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "mean2" 0.242303705948371 0.000577798236057018
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "sd1" 0.0258113264984008 3.49299552165503e-05
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "sd2" 1.11932342321331 0.00133220070855003
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "p3" 0.051739068949373 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "p1" 0.0503400490614659 -3.38289184191282e-06
+"10x 3' v3_urethra_basal cell of prostate epithelium" "mean1" 0.00493142933281432 2.02467567373148e-05
+"10x 3' v3_urethra_basal cell of prostate epithelium" "mean2" -0.124296783236747 0.000643468330792534
+"10x 3' v3_urethra_basal cell of prostate epithelium" "sd1" 0.0102707981217223 3.92898408819497e-05
+"10x 3' v3_urethra_basal cell of prostate epithelium" "sd2" 0.685720640357141 0.00167970058591385
+"10x 3' v3_urethra_basal cell of prostate epithelium" "p3" 0.0510878754720201 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_leukocyte" "p1" 0.0721404070780636 -4.5196012047034e-06
+"10x 3' v3_urethra_leukocyte" "mean1" 0.00316263743301358 2.22711332504685e-05
+"10x 3' v3_urethra_leukocyte" "mean2" 0.0152002710992245 0.000576927480380432
+"10x 3' v3_urethra_leukocyte" "sd1" 0.00570974135325758 4.02606131279805e-05
+"10x 3' v3_urethra_leukocyte" "sd2" 0.098365337677965 0.00138795368687227
+"10x 3' v3_urethra_leukocyte" "p3" 0.0517658017280397 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p1" 0.0627810793509326 -4.16530674310542e-06
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean1" 0.0017301819373213 2.52926857218697e-05
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean2" 0.0085936958904167 0.000529151253620436
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd1" 0.00166591797316074 4.47759659541092e-05
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd2" -0.00977318146563366 0.00139813922862362
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p3" 0.0524135965678389 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "p1" 0.076770948882657 -5.64798902981946e-06
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "mean1" 0.00118911340766047 2.64156702225098e-05
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "mean2" 0.0228425295009727 0.000510574535198191
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "sd1" 0.00142949102434758 4.75647219373047e-05
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "sd2" -0.0516742310525711 0.00137345632233176
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "p3" 0.0521946705413408 0
+
+

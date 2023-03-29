@@ -1,0 +1,100 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" 0.311676449535972 0.0538553353595293
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_leukocyte" 0.676720561443494 0.144593832419165
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" 0.268576176033373 0.0551026404841998
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" 0.433329066630991 0.11153016756332
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 0.547119396810031 0.135554857640038
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" 0.442252147151335 0.321601756008985
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_urethra urothelial cell" 0.437809441358902 0.129299185081404
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" 0.308805893684732 0.228864085541039
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" 0.881774342812705 0.104277792295315
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_leukocyte" 0.835325998939837 0.221107940289551
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_leukocyte" 0.434399455004988 0.207870816656325
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_urethra urothelial cell" 0.173390596369212 0.0494122870341402
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" 0.325544358346667 0.0914560012925937
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_seminal vesicle glandular cell" 0.212934164668914 0.0704074170187867
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" 0.338503807150671 0.139522602287999
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" 0.368844695119802 0.197793691589885
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_basal cell of prostate epithelium" 0.146229233176635 0.0564468185189156
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_smooth muscle cell of prostate" 0.155186828768071 0.272180554912166
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_urethra urothelial cell" 0.229721092561987 0.0818784060874456
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_seminal vesicle glandular cell" 0.221436418997359 0.150632659824087
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" 0.465243735440576 0.177707975469698
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_basal cell of prostate epithelium" 0.150439032229828 0.0706023427651986
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_leukocyte" 0.755688356656392 0.250083356990096
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" 0.353371050186071 0.174641159268577
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" 0.597134692923814 0.215497389174879
+
+
