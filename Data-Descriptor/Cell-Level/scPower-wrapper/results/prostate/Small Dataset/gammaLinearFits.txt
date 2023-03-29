@@ -1,0 +1,45 @@
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p1" 0.0749737237946168 -6.94690928869697e-06
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean1" 0.000946993365160215 2.11819669782893e-05
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean2" -0.000194032131258348 0.000615440225684663
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd1" 0.00164279182023325 3.84284364217655e-05
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd2" 0.00678126022630199 0.00124001012393311
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p3" 0.051872761585877 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p1" 0.12253561736847 -6.37118749258229e-06
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean1" 0.0072632050793862 1.89132155271818e-05
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean2" -0.0823607286759778 0.000654872570348796
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd1" 0.0355926596708173 3.03820134562122e-05
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd2" 0.493566513791913 0.0010593081560279
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p3" 0.0525832008802009 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p1" 0.0908427506130986 -1.32684324133712e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean1" 0.000485650066088316 2.1976021337364e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean2" 0.00560063019656787 0.000608579730918468
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd1" 0.000862013436299471 3.65829184601358e-05
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd2" -0.0142022986414081 0.00147151270620461
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p3" 0.0518415078262167 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p1" 0.16882228224878 -4.37641225698802e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean1" 0.000928992267846027 2.09839610788726e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean2" 0.0196811393714348 0.000619257252348781
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd1" -0.00866799389802645 4.33179358313071e-05
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd2" -0.316027564771355 0.00168328751819923
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p3" 0.052816817576599 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p1" 0.0627810793509326 -4.16530674310542e-06
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean1" 0.0017301819373213 2.52926857218697e-05
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean2" 0.0085936958904167 0.000529151253620436
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd1" 0.00166591797316074 4.47759659541092e-05
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd2" -0.00977318146563366 0.00139813922862362
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p3" 0.0524135965678389 0
+
+

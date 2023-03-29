@@ -410,7 +410,6 @@ Preparation beforehand:
   dispFunEstimation <- data.frame()
   power <- data.frame()
   
-  iteration <- 1
   numberOfAssays <- 0
   numberOfTissues <- 0
   numberOfCellTypes <- 0
@@ -542,8 +541,6 @@ Loop through cell types:
         #writeToDatabase(gammaLinearFits, "gammaLinearFits")
         #writeToDatabase(dispFunEstimation, "dispFunEstimation")
         #writeToDatabase(power, "powerResults")
-    
-        iteration <- iteration + 1
       }, 
       
        # error handling code (currently only used for outputting related informations)
@@ -552,7 +549,6 @@ Loop through cell types:
         
         errorDF <- data.frame(completeDatasetID,
                               idToName,
-                              iteration,
                               paste(e),
                               datasetBodySpecific,
                               cellCount)
