@@ -431,15 +431,10 @@ Loop through cell types:
       # catching error for a particular cell type combination inside any dataset
       result <- tryCatch({
         
-        dataset <- tryCatch({
-          subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                               tissue_ontology_term_id == datasetID[[2]] &
-                               cell_type_ontology_term_id == datasetID[[3]])
-        }, warning = function(w) {
-          warning(w)
-        }, error = function(e) {
-          stop(e)
-        })
+        dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                        tissue_ontology_term_id == datasetID[[2]] &
+                                        cell_type_ontology_term_id == datasetID[[3]])
+        
         
         # ontology ids converted to their ontology names and concatenated
         idToName <- paste(convertIDtoName(datasetID), collapse="_")
