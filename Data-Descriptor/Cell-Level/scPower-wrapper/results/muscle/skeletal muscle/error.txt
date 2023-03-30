@@ -1,0 +1,900 @@
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002107_CL:0000057" "10x 3' v3_liver_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 72
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002107_CL:0000084" "10x 3' v3_liver_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 139
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0003126_CL:0000646" "10x 3' v3_trachea_basal cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 32271 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 4067
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0003126_CL:0000319" "10x 3' v3_trachea_mucus secreting cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 50
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0003126_CL:0000624" "10x 3' v3_trachea_CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 65
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000178_CL:0000233" "10x 3' v3_blood_platelet" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 204
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000029_CL:0000236" "10x 3' v3_lymph node_B cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31064 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 9135
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000029_CL:0000775" "10x 3' v3_lymph node_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 99
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001831_CL:0002623" "10x 3' v3_parotid gland_acinar cell of salivary gland" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31399 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 8052
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001831_CL:0000084" "10x 3' v3_parotid gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 80
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001831_CL:0000185" "10x 3' v3_parotid gland_myoepithelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 135
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002106_CL:0000787" "10x 3' v3_spleen_memory B cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31135 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5916
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002106_CL:0000786" "10x 3' v3_spleen_plasma cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31768 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 2986
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0010033_CL:0000646" "10x 3' v3_posterior part of tongue_basal cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 32890 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5139
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0010033_CL:0002144" "10x 3' v3_posterior part of tongue_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 55
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001911_CL:0002326" "10x 3' v3_mammary gland_luminal epithelial cell of mammary gland" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 32097 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5160
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001295_CL:0000057" "10x 3' v3_endometrium_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31126 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 2520
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000970_CL:0000148" "10x 3' v3_eye_melanocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 59
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001013_CL:0000057" "10x 3' v3_adipose tissue_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31485 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 3883
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001013_CL:0000814" "10x 3' v3_adipose tissue_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 69
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002190_CL:0000057" "10x 3' v3_subcutaneous adipose tissue_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31852 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 4504
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002097_CL:0000084" "10x 3' v3_skin of body_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 280
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002081_CL:0000746" "10x 3' v3_cardiac atrium_cardiac muscle cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31368 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5315
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002081_CL:0000192" "10x 3' v3_cardiac atrium_smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 101
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002081_CL:0002548" "10x 3' v3_cardiac atrium_fibroblast of cardiac tissue" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 86
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002082_CL:0000192" "10x 3' v3_cardiac ventricle_smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 90
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002367_CL:0002341" "10x 3' v3_prostate gland_basal cell of prostate epithelium" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31181 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 3243
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002367_CL:0000038" "10x 3' v3_prostate gland_erythroid progenitor cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 86
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001013_CL:0000738" "Smart-seq2_adipose tissue_leukocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 102
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002190_CL:0000814" "Smart-seq2_subcutaneous adipose tissue_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 102
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002190_CL:0000084" "Smart-seq2_subcutaneous adipose tissue_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 106
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002190_CL:0000738" "Smart-seq2_subcutaneous adipose tissue_leukocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 53
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002190_CL:0000115" "Smart-seq2_subcutaneous adipose tissue_endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 71
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001416_CL:0000235" "Smart-seq2_skin of abdomen_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 103
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001416_CL:0000499" "Smart-seq2_skin of abdomen_stromal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 58
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001868_CL:0000235" "Smart-seq2_skin of chest_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 87
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001868_CL:0000097" "Smart-seq2_skin of chest_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000576" "Smart-seq2_bone marrow_monocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 316
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000625" "Smart-seq2_bone marrow_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 305
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000814" "Smart-seq2_bone marrow_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 208
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000775" "Smart-seq2_bone marrow_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 338
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000094" "Smart-seq2_bone marrow_granulocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 72
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002371_CL:0000037" "Smart-seq2_bone marrow_hematopoietic stem cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 182
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002081_CL:0010008" "Smart-seq2_cardiac atrium_cardiac endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 63
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000970_CL:0000084" "Smart-seq2_eye_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 50
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001817_CL:0000499" "Smart-seq2_lacrimal gland_stromal cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 52417 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 107
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001817_CL:0000084" "Smart-seq2_lacrimal gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 65
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001911_CL:4006000" "Smart-seq2_mammary gland_fibroblast of breast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 105
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001911_CL:0000084" "Smart-seq2_mammary gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 177
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000995_CL:0000057" "Smart-seq2_uterus_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31709 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 154
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001723_CL:0000646" "Smart-seq2_tongue_basal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 164
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0002144" "Smart-seq2_muscle of pelvic diaphragm_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 103
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0000134" "Smart-seq2_muscle of pelvic diaphragm_mesenchymal stem cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 32562 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 342
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0000669" "Smart-seq2_muscle of pelvic diaphragm_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 59
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0008011" "Smart-seq2_muscle of pelvic diaphragm_skeletal muscle satellite stem cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 241
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0000235" "Smart-seq2_muscle of pelvic diaphragm_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 82
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0008612_CL:0000625" "Smart-seq2_muscle of pelvic diaphragm_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 112
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0002139" "Smart-seq2_rectus abdominis muscle_endothelial cell of vascular tree" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 138
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0000669" "Smart-seq2_rectus abdominis muscle_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 55
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0002144" "Smart-seq2_rectus abdominis muscle_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 67
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0008011" "Smart-seq2_rectus abdominis muscle_skeletal muscle satellite stem cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 183
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0000625" "Smart-seq2_rectus abdominis muscle_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 112
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0000235" "Smart-seq2_rectus abdominis muscle_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 71
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002382_CL:0000134" "Smart-seq2_rectus abdominis muscle_mesenchymal stem cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 34828 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 461
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002107_CL:0000775" "Smart-seq2_liver_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 79
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002107_CL:0000235" "Smart-seq2_liver_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 74
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000921" "Smart-seq2_spleen_type I NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 58
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000897" "Smart-seq2_spleen_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 109
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000909" "Smart-seq2_spleen_CD8-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 338
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000815" "Smart-seq2_spleen_regulatory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 51
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000788" "Smart-seq2_spleen_naive B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 54
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000895" "Smart-seq2_spleen_naive thymus-derived CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 101
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000860" "Smart-seq2_spleen_classical monocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 329
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002106_CL:0000775" "Smart-seq2_spleen_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 131
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000897" "Smart-seq2_blood_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 92
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000625" "Smart-seq2_blood_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 93
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000775" "Smart-seq2_blood_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 78
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000814" "Smart-seq2_blood_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 77
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000232" "Smart-seq2_blood_erythrocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 87
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000860" "Smart-seq2_blood_classical monocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 212
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000787" "Smart-seq2_blood_memory B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 61
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000788" "Smart-seq2_blood_naive B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 160
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001542_CL:0000236" "Smart-seq2_inguinal lymph node_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 262
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001542_CL:0001065" "Smart-seq2_inguinal lymph node_innate lymphoid cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 239
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0001065" "Smart-seq2_lymph node_innate lymphoid cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 275
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0001044" "Smart-seq2_lymph node_effector CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 79
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0000236" "Smart-seq2_lymph node_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 179
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000624" "Smart-seq2_parotid gland_CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 182
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000236" "Smart-seq2_parotid gland_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 56
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000084" "Smart-seq2_parotid gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 77
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000492" "Smart-seq2_parotid gland_CD4-positive helper T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 120
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000787" "Smart-seq2_parotid gland_memory B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 63
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000625" "Smart-seq2_parotid gland_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 92
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001831_CL:0000057" "Smart-seq2_parotid gland_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 123
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0010032_CL:0000738" "Smart-seq2_anterior part of tongue_leukocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 233
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0010032_CL:0000646" "Smart-seq2_anterior part of tongue_basal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 282
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0010033_CL:0000738" "Smart-seq2_posterior part of tongue_leukocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 256
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002367_CL:0000625" "Smart-seq2_prostate gland_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 119
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002367_CL:0002341" "Smart-seq2_prostate gland_basal cell of prostate epithelium" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 55
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000017_CL:0002064" "Smart-seq2_exocrine pancreas_pancreatic acinar cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 37830 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 340
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000017_CL:0002079" "Smart-seq2_exocrine pancreas_pancreatic ductal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 79
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001736_CL:0002623" "10x 3' v3_submandibular gland_acinar cell of salivary gland" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31526 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 2095
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001736_CL:0000084" "10x 3' v3_submandibular gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 70
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001736_CL:0000185" "10x 3' v3_submandibular gland_myoepithelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 61
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001736_CL:0000669" "10x 3' v3_submandibular gland_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 99
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002370_CL:0000492" "10x 3' v3_thymus_CD4-positive helper T cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31426 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 7604
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002370_CL:0000057" "10x 3' v3_thymus_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 33212 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 3828
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001773_CL:0000451" "10x 3' v3_sclera_dendritic cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 123
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0018707_CL:1001428" "10x 3' v3_bladder organ_bladder urothelial cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 33676 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 3924
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0018707_CL:0000057" "10x 3' v3_bladder organ_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31235 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5256
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000059_CL:0000131" "10x 3' v3_large intestine_gut endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 53
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000059_CL:0009016" "10x 3' v3_large intestine_intestinal crypt stem cell of large intestine" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 114
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0002063" "10x 3' v3_lung_type II pneumocyte" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 35130 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 8827
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000775" "10x 3' v3_lung_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 138
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0001044" "10x 3' v3_lung_effector CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 132
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0001050" "10x 3' v3_lung_effector CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 80
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000814" "10x 3' v3_lung_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 126
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0002503" "10x 3' v3_lung_adventitial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 74
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000235" "10x 3' v3_lung_macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31466 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 12034
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002108_CL:0019032" "10x 3' v3_small intestine_intestinal tuft cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 160
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002108_CL:0000057" "10x 3' v3_small intestine_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 112
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001416_CL:0000897" "10x 3' v3_skin of abdomen_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 89
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001868_CL:0000897" "10x 3' v3_skin of chest_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001868_CL:0000084" "10x 3' v3_skin of chest_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 110
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0010032_CL:0002543" "10x 3' v3_anterior part of tongue_vein endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0010032_CL:0000057" "10x 3' v3_anterior part of tongue_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 80
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002190_CL:0000775" "10x 3' v3_subcutaneous adipose tissue_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 69
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0008612_CL:0002144" "10x 3' v3_muscle of pelvic diaphragm_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 90
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0008612_CL:0000669" "10x 3' v3_muscle of pelvic diaphragm_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 103
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002049_CL:0000057" "10x 3' v3_vasculature_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31372 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 934
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002049_CL:0000084" "10x 3' v3_vasculature_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 92
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001621_CL:0000057" "10x 3' v3_coronary artery_fibroblast" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 31517 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 1906
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0018707_CL:0000057" "Smart-seq2_bladder organ_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 301
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0018707_CL:0002543" "Smart-seq2_bladder organ_vein endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 64
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0018707_CL:0000786" "Smart-seq2_bladder organ_plasma cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 95
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0018707_CL:0000235" "Smart-seq2_bladder organ_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 236
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0018707_CL:0000097" "Smart-seq2_bladder organ_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 105
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000624" "Smart-seq2_blood_CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 493
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000178_CL:0000576" "Smart-seq2_blood_monocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 537
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002113_CL:0000115" "10x 3' v3_kidney_endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 95
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002113_CL:0000814" "10x 3' v3_kidney_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002113_CL:0000625" "Smart-seq2_kidney_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 58
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002113_CL:0000236" "Smart-seq2_kidney_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 67
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000059_CL:0000584" "Smart-seq2_large intestine_enterocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 263
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000059_CL:0000160" "Smart-seq2_large intestine_goblet cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 105
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:1000413" "10x 3' v3_lung_endothelial cell of artery" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 161
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000236" "10x 3' v3_lung_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 82
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0002598" "10x 3' v3_lung_bronchial smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 67
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000359" "10x 3' v3_lung_vascular associated smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 71
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000669" "10x 3' v3_lung_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 195
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002048_CL:0002144" "Smart-seq2_lung_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 160
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002048_CL:0000860" "Smart-seq2_lung_classical monocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002048_CL:0000057" "Smart-seq2_lung_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 92
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0000909" "Smart-seq2_lymph node_CD8-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 75
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0000897" "Smart-seq2_lymph node_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 127
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000029_CL:0000895" "Smart-seq2_lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 173
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001542_CL:0000897" "Smart-seq2_inguinal lymph node_CD4-positive, alpha-beta memory T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 66
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0001542_CL:0000895" "Smart-seq2_inguinal lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 60
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002385_CL:0000388" "10x 3' v3_muscle tissue_tendon cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 106
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0002144" "Smart-seq2_muscle tissue_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 248
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0000669" "Smart-seq2_muscle tissue_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 170
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0008011" "Smart-seq2_muscle tissue_skeletal muscle satellite stem cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 187
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0000814" "Smart-seq2_muscle tissue_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 93
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0000624" "Smart-seq2_muscle tissue_CD4-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 72
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002385_CL:0000625" "Smart-seq2_muscle tissue_CD8-positive, alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 264
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002382_CL:0000134" "10x 3' v3_rectus abdominis muscle_mesenchymal stem cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 32360 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 5435
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002382_CL:0000084" "10x 3' v3_rectus abdominis muscle_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 114
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000016_CL:0002275" "Smart-seq2_endocrine pancreas_pancreatic PP cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 68
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000016_CL:0002064" "Smart-seq2_endocrine pancreas_pancreatic acinar cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 37132 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "2_45_160" 196
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000016_CL:0000763" "Smart-seq2_endocrine pancreas_myeloid cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 52
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000016_CL:0000236" "Smart-seq2_endocrine pancreas_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 89
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000016_CL:0000097" "Smart-seq2_endocrine pancreas_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 50
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002108_CL:0000584" "Smart-seq2_small intestine_enterocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 474
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002370_CL:0002144" "Smart-seq2_thymus_capillary endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 137
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002370_CL:0002543" "Smart-seq2_thymus_vein endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 94
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0002370_CL:0000359" "Smart-seq2_thymus_vascular associated smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 146
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0003126_CL:0000160" "10x 3' v3_trachea_goblet cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 83
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000947_CL:0000084" "10x 3' v3_aorta_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 212
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000947_CL:0000235" "Smart-seq2_aorta_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 247
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0008931_UBERON:0000947_CL:0000115" "Smart-seq2_aorta_endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "2_45_160" 275
+
+

@@ -3,8 +3,8 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
-    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/prostate/Small Dataset/"
-    dataset_path: "prostate_MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/skeletal muscle/"
+    dataset_path: "muscle_TabulaSapiens_AllCells.rds"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
@@ -389,7 +389,7 @@ Preparation beforehand:
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
-  wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
+  wholeDataset <- readRDS(datasetFilePath)
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
@@ -555,7 +555,7 @@ Loop through cell types:
         # errorDF <- merge(errorDF, expressedGenesDF, by = "cellCount")
         # gammaFits, gammaLinearFits, dispFunEstimation, power
                               
-        colnames(errorDF)[4] <- "errorMessage"
+        colnames(errorDF)[3] <- "errorMessage"
         outputResults(errorDF, "error")
       })
       

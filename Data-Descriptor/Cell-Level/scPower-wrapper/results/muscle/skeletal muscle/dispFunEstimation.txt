@@ -1,0 +1,1564 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_macrophage" 0.44787264994725 0.153005837373132
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_monocyte" 0.451326506674653 0.174933484713108
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_endothelial cell of hepatic sinusoid" 0.529950570922356 0.145911065862054
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_mature NK T cell" 0.355122341155371 0.144890919216936
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_hepatocyte" 0.719957088713846 0.0481841355827985
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_macrophage" 0.923417438763386 0.157322627338733
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_tracheal goblet cell" 0.832657685807209 0.227087775917922
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_fibroblast" 0.840330450815584 0.115291703074948
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_endothelial cell" 0.84326816452169 0.140964402059835
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_smooth muscle cell" 0.944038238847235 0.208272236814085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_ciliated cell" 0.827781535684531 0.100290230228065
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_secretory cell" 1.20202335405163 0.124444754859275
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_T cell" 2.86705584067285 0.133596588638903
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_mast cell" 0.769936820108836 0.200175435576404
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_plasma cell" 0.932424819799937 0.317574107788423
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_CD8-positive, alpha-beta T cell" 0.414821546324377 0.126790513007852
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_B cell" 0.370392294743478 0.17564489560922
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_neutrophil" 0.480725043745429 0.124477835458538
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_erythrocyte" 3.94101196496892 0.148048063533376
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD4-positive, alpha-beta memory T cell" 0.432894505310114 0.158168349729975
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD8-positive, alpha-beta cytokine secreting effector T cell" 0.267600049994366 0.124512185198085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_classical monocyte" 0.327942243990258 0.100714555275173
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_neutrophil" 0.587328446049041 0.0994013584112542
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_naive B cell" 0.162647085636136 0.103349931131744
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_mature NK T cell" 0.256034882403594 0.107578938834476
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_memory B cell" 0.368357520222234 0.140315921712751
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_type I NK T cell" 0.299143436257191 0.159429848225755
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD8-positive, alpha-beta T cell" 0.711901056480074 0.0893094321366138
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_plasma cell" 0.480961003023221 0.197229407450621
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_naive thymus-derived CD4-positive, alpha-beta T cell" 0.142388302443173 0.161787429722925
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_hematopoietic stem cell" 0.385975131803033 0.238868234720306
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_B cell" 0.320754188632593 0.0974928080058968
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_effector CD8-positive, alpha-beta T cell" 0.391419999581327 0.175427247885551
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_T cell" 0.352230607693689 0.173231001374607
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_type I NK T cell" 0.462633517811734 0.18220249014748
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_effector CD4-positive, alpha-beta T cell" 0.390191669021869 0.146353992002715
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_innate lymphoid cell" 0.519006448358891 0.208081421934787
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_inguinal lymph node_plasma cell" 0.771415669980922 0.245196040349646
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_effector CD4-positive, alpha-beta T cell" 0.431368477423532 0.107287061804071
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_type I NK T cell" 0.416237912918726 0.127675593125445
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_effector CD8-positive, alpha-beta T cell" 0.377268484904154 0.108220142202271
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_innate lymphoid cell" 0.423304548444822 0.162197978860378
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_macrophage" 0.685125564826439 0.156243810211608
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_regulatory T cell" 0.974304751032029 0.130983714166728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_T cell" 0.27746563708201 0.115980316932439
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_plasma cell" 0.456846976837799 0.271803994605355
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_mature NK T cell" 0.422528228678221 0.148019349927807
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_mast cell" 0.67239593234234 0.243243287714434
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_CD141-positive myeloid dendritic cell" 0.739717092643716 0.1569953162664
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_intermediate monocyte" 0.544781430145214 0.229800594048776
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_stromal cell" 0.475673078448028 0.243772216867114
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_CD1c-positive myeloid dendritic cell" 0.38230131368533 0.281205573859532
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_classical monocyte" 0.754327357933337 0.238119981145605
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_endothelial cell" 1.07906263653116 0.277958898805718
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_naive B cell" 0.154836255186272 0.107714565683252
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_memory B cell" 0.386178695343315 0.0984309470831506
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_CD4-positive helper T cell" 0.166666852908195 0.102701280803908
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_mature NK T cell" 0.438678719595835 0.152607648267868
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_fibroblast" 0.714566214610829 0.149831951953295
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_endothelial cell of lymphatic vessel" 0.58020269312662 0.173599714332515
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_adventitial cell" 0.420669745427477 0.192828322057197
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_B cell" 0.65925019679774 0.349616763607476
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_endothelial cell" 1.06075044660277 0.201039594367901
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_monocyte" 0.599827865326336 0.160815521493615
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_duct epithelial cell" 0.676138091600802 0.107648046952573
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_CD8-positive, alpha-beta T cell" 0.276072505808002 0.0548685463293517
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_neutrophil" 0.918369662157415 0.241724233343293
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell" 0.286141422708488 0.103340109858885
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_macrophage" 0.682118498324369 0.166544995764733
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive thymus-derived CD4-positive, alpha-beta T cell" 0.302004083579388 0.128475266816846
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_intermediate monocyte" 2.03566611247312 0.182215183426454
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_endothelial cell" 0.705268279310345 0.191105295669801
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_classical monocyte" 0.449967029427606 0.131065671381931
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_neutrophil" 0.571906627635933 0.125479007677085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive B cell" 0.225733054761062 0.146036346435546
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD4-positive, alpha-beta memory T cell" 0.305573240552295 0.127273013090247
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_type I NK T cell" 0.2448311932167 0.130384380542743
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive thymus-derived CD8-positive, alpha-beta T cell" 0.973455555324382 0.101581639254793
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_mature NK T cell" 0.333233025660441 0.135141734746175
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_innate lymphoid cell" 0.513683853407381 0.253642991115426
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_erythrocyte" 3.41227341253466 0.195019349513257
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_regulatory T cell" 0.768440315995924 0.158861995158484
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_hematopoietic stem cell" 0.9802972373965 0.171864221930658
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_anterior part of tongue_epithelial cell" 0.217217939604867 0.0820239337746374
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_posterior part of tongue_leukocyte" 1.63084207625099 0.124232862232356
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_posterior part of tongue_fibroblast" 0.643613207234047 0.211475235121558
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_posterior part of tongue_vein endothelial cell" 0.699210375612711 0.155653716929003
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_posterior part of tongue_pericyte" 0.605144405484794 0.250330203078424
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_posterior part of tongue_keratinocyte" 0.373028134962858 0.184469217633661
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_fibroblast of breast" 0.79523374937441 0.0981707002177185
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_T cell" 0.23960688435565 0.0876546815577545
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_macrophage" 1.26752417463828 0.17712165338513
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_pericyte" 0.730180361830124 0.21922794830206
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_vascular associated smooth muscle cell" 0.731439925384463 0.236034750094849
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_vein endothelial cell" 0.41300349830569 0.13537492596999
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_basal cell" 0.534402347979152 0.12266862510802
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_plasma cell" 0.742244476696729 0.23391373860446
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_mammary gland_endothelial cell of artery" 0.80231279403796 0.157348170185868
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_T cell" 0.409940084436209 0.141358959347129
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_macrophage" 0.806623284620431 0.150008273271049
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_epithelial cell of uterus" 0.987136426705949 0.163162326919326
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_endothelial cell" 0.758744195704372 0.144896707924337
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_epithelial cell" 0.380297615115942 0.228134414578907
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endometrium_endothelial cell of lymphatic vessel" 0.512274845616901 0.192030100782061
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_myometrium_vascular associated smooth muscle cell" 0.565194992940837 0.143238802818978
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_myometrium_myometrial cell" 1.25351044750749 0.1610147235234
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_myometrium_endothelial cell" 0.861198916219723 0.0975283858763455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_myometrium_fibroblast" 1.0841831005243 0.163349767921365
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_myometrium_pericyte" 0.881254192353769 0.199147252086542
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_conjunctival epithelial cell" 0.889678399008747 0.150095244218709
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_microglial cell" 0.994425886447149 0.282147669325353
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_eye photoreceptor cell" 0.748812350748082 0.0991674917160427
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_Mueller cell" 1.11723085679386 0.286657636604156
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_T cell" 0.428626034699092 0.274819219096183
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_epithelial cell of lacrimal sac" 0.387708555597379 0.161564226656057
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_eye_keratocyte" 1.17043837561259 0.169829090653947
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_conjunctiva_conjunctival epithelial cell" 0.508790695431893 0.0380766237773748
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_endothelial cell" 0.720817066933172 0.132426115068317
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_T cell" 0.308665245077601 0.129364757564013
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_macrophage" 0.832021192728091 0.158965462933448
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_myofibroblast cell" 0.535734207904468 0.178895160450936
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_mesenchymal stem cell" 0.363236498775635 0.147259620113201
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_adipose tissue_neutrophil" 0.5750632439853 0.287866783349209
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_subcutaneous adipose tissue_mature NK T cell" 0.294815501863781 0.143340336408584
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_subcutaneous adipose tissue_myofibroblast cell" 0.476424734261348 0.13979580859818
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_subcutaneous adipose tissue_macrophage" 0.872878770322377 0.163890701268569
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_subcutaneous adipose tissue_endothelial cell" 0.848940622558162 0.106447834658292
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_subcutaneous adipose tissue_T cell" 0.323953217468922 0.150848524828444
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_macrophage" 1.17201089440815 0.262080809574473
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_stromal cell" 0.891618547146409 0.161140998402223
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_CD8-positive, alpha-beta memory T cell" 0.445559881774113 0.155021189429326
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_mature NK T cell" 0.455295788591363 0.184957679829866
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_mast cell" 0.461729140780144 0.166109304473882
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_muscle cell" 0.991914666297991 0.248409992930549
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_CD8-positive, alpha-beta cytotoxic T cell" 0.411432499877081 0.328533409580746
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_CD1c-positive myeloid dendritic cell" 1.27558221946866 0.299463908160825
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_endothelial cell" 0.627276177588588 0.171347894845284
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_CD4-positive, alpha-beta memory T cell" 0.361456984412857 0.240725018274064
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_naive thymus-derived CD8-positive, alpha-beta T cell" 0.165171701282758 0.26020636105665
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of body_epithelial cell" 0.89608979792194 0.27468554565793
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_monocyte" 0.800528123858017 0.264750759159271
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_plasma cell" 0.879694165763275 0.202800996915117
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_hematopoietic stem cell" 0.597970468920417 0.184611924271765
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_erythroid progenitor cell" 0.498761645877386 0.155931840675859
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_mature NK T cell" 0.397545921227123 0.165310352518708
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_granulocyte" 0.62772970158075 0.147126388280565
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_naive B cell" 0.375840584993221 0.236859780807998
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_macrophage" 0.516748806045636 0.166530737201593
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_common myeloid progenitor" 0.337393802047308 0.202747483757764
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_memory B cell" 0.367555939973924 0.196537216224059
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD8-positive, alpha-beta T cell" 0.286852446182322 0.12713176176564
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD4-positive, alpha-beta T cell" 0.348867522902954 0.138092657370444
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_neutrophil" 0.561278190384974 0.141591570383169
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac atrium_cardiac endothelial cell" 0.63076509662826 0.1115610182242
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac atrium_hepatocyte" 0.536927528210676 0.252673399969702
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac ventricle_cardiac muscle cell" 0.400051403947318 0.154420773447572
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac ventricle_cardiac endothelial cell" 0.540731995828015 0.113346292122132
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac ventricle_hepatocyte" 0.547101339233545 0.239411806663168
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cardiac ventricle_fibroblast of cardiac tissue" 0.605344783900581 0.178655393927544
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_pancreatic acinar cell" 0.662123888683988 0.143095923417576
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_T cell" 0.226258227343089 0.121046893456622
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_endothelial cell" 0.398870727108802 0.148925018909271
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_myeloid cell" 0.583628389356721 0.12200145445322
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_pancreatic stellate cell" 0.763947966847244 0.150462247796575
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_pancreatic ductal cell" 0.444030514461686 0.126159823926031
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_plasma cell" 0.273468314366664 0.261890654541093
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_exocrine pancreas_type B pancreatic cell" 0.510885431922102 0.158581842153465
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_epithelial cell" 0.51328921218958 0.170355711371258
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_fibroblast" 0.430538748972308 0.187338122985112
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_club cell" 1.17648230613252 0.125540893214524
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_macrophage" 0.571564088403626 0.192934186666017
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_mature NK T cell" 0.364346384317311 0.173082885547302
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_CD8-positive, alpha-beta T cell" 0.284820939643677 0.0966043539552465
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" 0.654472696531176 0.108181772175658
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_endothelial cell" 0.730878221436504 0.119544483341741
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_smooth muscle cell" 0.688215556841004 0.178369343648015
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_subcutaneous adipose tissue_fibroblast" 29.3290632062612 0.519919503362131
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_skin of abdomen_endothelial cell" 19.7608057129134 1.08626164073802
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_skin of abdomen_mast cell" 24.6196840551633 6.67267871473551
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_skin of chest_endothelial cell" 29.4866436006066 1.58917702632151
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_bone marrow_CD4-positive, alpha-beta T cell" 120.053391090319 0.881265866438016
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_bone marrow_plasma cell" 101.049145921297 0.534469096137365
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_bone marrow_erythroid progenitor cell" 19.0127400525516 5.77491557838713
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_uterus_epithelial cell of uterus" 15.167151036036 3.69883246033015
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_mammary gland_luminal epithelial cell of mammary gland" 60.2379956951308 3.4813932534541
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_muscle of pelvic diaphragm_endothelial cell of vascular tree" 109.351416756642 1.39211500291077
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_trachea_ciliated cell" 20.00434257998 0.986266142970924
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_trachea_basal cell" 37.4918940999728 3.00129342945815
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_trachea_fibroblast" 31.5185443444692 1.58599053931715
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_spleen_memory B cell" 147.329227138858 1.94691853340816
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_spleen_plasma cell" 40.0205253327796 5.92001357067903
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_spleen_mature NK T cell" 43.1113407091441 2.01806031441277
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lymph node_plasma cell" 25.0477124702029 1.29420403201392
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_parotid gland_adventitial cell" 40.4761167386183 1.3439841838907
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_posterior part of tongue_basal cell" 113.664327829852 0.609433009863702
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_prostate gland_epithelial cell" 65.6060869372755 15.7868049353793
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_erythrocyte" 0.509596043540174 0.373953048458851
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_endothelial cell" 0.465069309074904 0.15145633822138
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_liver_erythrocyte" 1.33213799529187 0.262717175567075
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_parotid gland_macrophage" 0.358907344267883 0.102029218320319
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_basal cell" 0.535189756983157 0.0839058978342607
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_plasma cell" 0.57457127201098 0.160002279231037
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_macrophage" 0.759304555966255 0.135056350066124
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_ionocyte" 0.313900181213373 0.17070306541823
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_duct epithelial cell" 0.949843676095846 0.062686146914401
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_endothelial cell of lymphatic vessel" 0.746426186934759 0.120917552604693
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_endothelial cell" 0.664514250257425 0.13173319053056
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_submandibular gland_fibroblast" 0.747773018413363 0.1236887601337
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_naive regulatory T cell" 0.449796148652199 0.107867058481291
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_T follicular helper cell" 0.253059656798745 0.140044410013478
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_CD8-positive, alpha-beta cytotoxic T cell" 0.402917055357384 0.0944130843149812
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_B cell" 0.191033509522634 0.131224692443858
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_medullary thymic epithelial cell" 0.468136505641808 0.219728476829278
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_macrophage" 0.857315465110827 0.16467674231887
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_vascular associated smooth muscle cell" 0.815983444762749 0.13747710617373
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_plasma cell" 0.549480442667714 0.157069359022911
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_vein endothelial cell" 0.550326878912528 0.13644797850707
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_capillary endothelial cell" 0.822829458095629 0.120628330290895
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_endothelial cell of artery" 0.631729509187131 0.139952332831782
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_mature NK T cell" 0.613072567896107 0.187768385197802
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_monocyte" 0.342560684482644 0.241130175374468
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_endothelial cell of lymphatic vessel" 0.837423356703049 0.152462848211147
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_corneal epithelial cell" 0.311878258050751 0.136561820704999
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_conjunctival epithelial cell" 0.602148650424291 0.168346149915503
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_radial glial cell" 0.569867483066798 0.225417072474953
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_stem cell" 1.00982971838898 0.171332916683073
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_keratocyte" 0.816974628548997 0.158988537229605
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_fibroblast" 0.964724847775033 0.237475150321358
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_retinal blood vessel endothelial cell" 0.439493674839822 0.216350604016211
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_cornea_melanocyte" 0.304586389161758 0.235596412244782
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_retinal neural layer_eye photoreceptor cell" 0.417876028156202 0.138930804295505
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_retinal neural layer_Mueller cell" 1.09696231116266 0.170773123516685
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_retinal blood vessel endothelial cell" 0.693227580601493 0.156052228716728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_keratocyte" 0.633335302188318 0.162152248381985
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_stromal cell" 1.3432437009533 0.329429155818358
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_endothelial cell" 0.678995835053555 0.240152829010864
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_macrophage" 0.723607766727837 0.26426190910233
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_sclera_conjunctival epithelial cell" 0.653758926066592 0.187387994125648
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_T cell" 0.655437198147274 0.116054723452617
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_macrophage" 1.06726036441695 0.161483901267401
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_myofibroblast cell" 0.691158620751474 0.106075282074096
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_capillary endothelial cell" 0.694331978740818 0.196190017559147
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_smooth muscle cell" 0.343470823482386 0.183592961433092
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_pericyte" 0.848383583753553 0.198401706734886
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_mast cell" 0.613721472786935 0.167383344668926
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_mature NK T cell" 1.01045571283575 0.135857860581052
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_endothelial cell of lymphatic vessel" 0.749987456579092 0.175400660570142
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_vein endothelial cell" 0.697572747480954 0.170747410360702
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_B cell" 1.63566528637034 0.177189101712308
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_CD4-positive, alpha-beta T cell" 0.30559303780228 0.168192615442228
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_enterocyte of epithelium of large intestine" 1.08879410477421 0.0758774765446417
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_monocyte" 0.584747180406853 0.158375183545714
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_plasma cell" 0.557335418459182 0.228586766349668
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_CD8-positive, alpha-beta T cell" 0.352638866180333 0.144592404725729
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_fibroblast" 0.832541210618431 0.167361506329541
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_large intestine goblet cell" 1.12329476910946 0.137791345385316
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_paneth cell of colon" 0.999391600537535 0.103587883039087
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_B cell" 0.272434565136529 0.196541526020962
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_transit amplifying cell of colon" 0.413512924043272 0.140535981302608
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_intestinal enteroendocrine cell" 0.836877901316576 0.251293280788812
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_respiratory goblet cell" 0.67913320131805 0.15017112395223
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_T cell" 0.260470929657481 0.128634096535428
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_prostate gland_myeloid cell" 0.720899686597079 0.193747010551737
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_CD4-positive, alpha-beta T cell" 0.308351395102713 0.142221483629705
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_enterocyte of epithelium of small intestine" 0.761239990369171 0.123539839514554
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_neutrophil" 1.47892763875106 0.171174194178652
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_transit amplifying cell of small intestine" 0.944430281823244 0.114908951297113
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_small intestine goblet cell" 1.13908799788063 0.160163188902839
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_CD8-positive, alpha-beta T cell" 0.363407565043613 0.153197526967724
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_B cell" 0.311095213441992 0.189138018727203
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_monocyte" 0.735891428333814 0.24184993931988
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_paneth cell of epithelium of small intestine" 0.872603893452525 0.096311292856395
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_plasma cell" 0.492600359598985 0.246599551980183
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_mast cell" 0.811150790007343 0.188114546957645
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_intestinal enteroendocrine cell" 0.836177272060518 0.28739362325412
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_intestinal crypt stem cell of small intestine" 0.296620193093874 0.226934524405422
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_mature NK T cell" 0.323990177990392 0.253034510158439
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_stromal cell" 0.817325058312978 0.202142035117774
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_endothelial cell" 0.52493442569628 0.216243947496216
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_CD8-positive, alpha-beta memory T cell" 0.351943339038504 0.202182687236281
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_mast cell" 0.489726990496761 0.405620372236188
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_macrophage" 1.17802372231989 0.351190106772368
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_muscle cell" 0.760005346884452 0.246564565102566
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of abdomen_T cell" 0.461163363693944 0.258855495890065
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of chest_endothelial cell" 0.533895793582231 0.186776767230881
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of chest_stromal cell" 0.827301576766608 0.160722948743346
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of chest_CD8-positive, alpha-beta memory T cell" 0.352324094940253 0.225776508540171
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of chest_muscle cell" 0.685248138599086 0.229144748231723
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_skin of chest_mature NK T cell" 0.320988382943663 0.244065577373565
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_DN3 thymocyte" 0.365612413604629 0.106972711125455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_DN1 thymic pro-T cell" 0.430026742638867 0.109553914248381
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_innate lymphoid cell" 0.414633132123133 0.0953651095657402
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_anterior part of tongue_basal cell" 0.502208609737681 0.121471590804117
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_anterior part of tongue_keratinocyte" 0.412124969418466 0.21354868074359
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_anterior part of tongue_leukocyte" 1.13743256553372 0.202650786204148
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_mesenchymal stem cell" 0.34893804634229 0.103299343162884
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_skeletal muscle satellite stem cell" 0.451395738556266 0.11935723515622
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_capillary endothelial cell" 0.771098742252467 0.161270883028988
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_pericyte" 0.618475592058217 0.144389699002357
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_macrophage" 0.762320682091071 0.246124146380851
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of abdomen_endothelial cell of vascular tree" 0.442471382663546 0.206451499326917
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of pelvic diaphragm_mesenchymal stem cell" 0.61342880155477 0.110815527241906
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of pelvic diaphragm_macrophage" 0.829516958784597 0.161248195654921
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of pelvic diaphragm_skeletal muscle satellite stem cell" 0.858652699619294 0.130761015642533
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of pelvic diaphragm_endothelial cell of vascular tree" 0.343454183518853 0.102600306666703
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle of pelvic diaphragm_T cell" 0.478589819638078 0.170536860957817
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_vasculature_smooth muscle cell" 0.643586912210031 0.216931273469398
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_vasculature_macrophage" 0.775379692573467 0.251188546523064
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_vasculature_pericyte" 0.4839852769731 0.236853665054339
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_coronary artery_smooth muscle cell" 0.555016955559622 0.171637727119523
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_coronary artery_T cell" 0.618369444662656 0.156141064687751
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_coronary artery_macrophage" 0.703414150695362 0.170321673942001
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_coronary artery_endothelial cell of artery" 0.645151189556797 0.168981063510773
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_coronary artery_pericyte" 0.515281189498133 0.179548534226391
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bladder organ_plasma cell" 0.956465701488719 0.229013325906124
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_bladder organ_bladder urothelial cell" 45.2838186039106 3.76378634495815
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD4-positive, alpha-beta T cell" 0.383813372638363 0.0937136775164941
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_monocyte" 0.347988376585578 0.0918135511071341
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_macrophage" 0.215601926853236 0.0938894581817257
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_kidney_kidney epithelial cell" 0.451780259470995 0.108486233649578
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_kidney_B cell" 0.182735489223593 0.154796990015188
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_kidney_CD8-positive, alpha-beta T cell" 0.679345093046415 0.26904413422065
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_kidney_macrophage" 0.437833858104743 0.244450421534801
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_kidney_CD4-positive helper T cell" 0.261713403355091 0.231411589853506
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_kidney_kidney epithelial cell" 51.2422718131332 1.81562877828547
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_enterocyte" 0.453471826707116 0.0804983815438129
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_intestinal crypt stem cell" 0.164507749465518 0.167374648619908
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_large intestine_goblet cell" 1.9108240096032 0.133559961038302
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_basophil" 1.05633494685009 0.138584172340337
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_classical monocyte" 0.239350117493761 0.0983199789422254
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_lung ciliated cell" 0.584868582134484 0.143949685008281
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_dendritic cell" 0.42552105902268 0.21615474663948
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD4-positive, alpha-beta T cell" 0.383640638820316 0.155015669358091
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_basal cell" 0.579523955605425 0.104154697410768
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_plasma cell" 1.64671706544651 0.382170200472455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD8-positive, alpha-beta T cell" 0.68818498898077 0.162022210455049
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_non-classical monocyte" 0.349328643270876 0.0979277125870698
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_capillary endothelial cell" 0.390492977617537 0.106087863291533
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_type I pneumocyte" 0.88469432411733 0.19237478685081
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_vein endothelial cell" 0.574685664815599 0.160623272446541
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_fibroblast" 1.15969995909855 0.225814993855976
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_club cell" 0.589785222265672 0.119720004056394
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_lung microvascular endothelial cell" 0.325356463964031 0.147446614759739
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lung_type II pneumocyte" 6.85950816515002 46.8494893032774
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lung_macrophage" 40.6480965596313 0.942904638356323
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lung_basal cell" 11.5932215466241 27.0202656144872
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lung_adventitial cell" 4.40123149480897 71.9514194821845
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_intermediate monocyte" 0.216709002763707 0.142834030046266
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_naive B cell" 0.171721090678549 0.100463328416479
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_memory B cell" 0.271155134209128 0.0922225059589963
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.192825373065688 0.126119730959463
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_CD4-positive, alpha-beta memory T cell" 0.749980899890822 0.128270871533129
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lymph node_CD8-positive, alpha-beta memory T cell" 0.466329425072391 0.1447943815407
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_lymph node_memory B cell" 86.8943194796268 1.29754102657011
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_inguinal lymph node_memory B cell" 43.4123465977352 0.270418955510918
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_skeletal muscle satellite stem cell" 0.539288661293097 0.150277194454329
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_pericyte" 0.832711367729934 0.149963907567084
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_endothelial cell of vascular tree" 0.363909136294016 0.20385366379645
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_macrophage" 1.35618157215502 0.186970064782339
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_mesenchymal stem cell" 0.404724653813602 0.115186788715352
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_capillary endothelial cell" 0.768437260699658 0.147046415043218
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_fast muscle cell" 0.814763262131798 0.297369230627812
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_muscle tissue_slow muscle cell" 0.435309065745555 0.283454693072883
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_muscle tissue_endothelial cell of vascular tree" 39.5147547488913 13.4078283986326
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_muscle tissue_macrophage" 104.238936879906 1.57689899671509
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_muscle tissue_mesenchymal stem cell" 127.512246910522 10.9069243821118
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_rectus abdominis muscle_pericyte" 0.751819331690212 0.108979530067567
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_rectus abdominis muscle_skeletal muscle satellite stem cell" 0.615055827906148 0.1159908998586
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_rectus abdominis muscle_capillary endothelial cell" 0.551540232457913 0.132958347079001
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_rectus abdominis muscle_endothelial cell of vascular tree" 0.340762779914636 0.15135216205172
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_rectus abdominis muscle_macrophage" 0.698102644744343 0.153168532535542
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endocrine pancreas_endothelial cell" 0.311279400512801 0.211143056030906
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endocrine pancreas_pancreatic acinar cell" 0.901722079661386 0.177847070138925
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_endocrine pancreas_pancreatic ductal cell" 0.473809565108836 0.110506960597874
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_intestinal crypt stem cell" 0.308041138955538 0.166789064702622
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_small intestine_enterocyte" 0.470238013677806 0.0962600850314683
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_CD8-positive, alpha-beta T cell" 0.203062972479449 0.165612577942094
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_memory B cell" 0.164323544082917 0.129040309124556
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_naive B cell" 0.144136996618762 0.116352435936791
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_fast muscle cell" 0.792137345631772 0.266028686511772
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thymus_thymocyte" 0.134850243309214 0.113634290970558
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_thymus_fibroblast" 37.1030076397031 0.395985233804065
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_trachea_connective tissue cell" 0.727444986158626 0.1835378120991
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_fibroblast" 0.397645810686189 0.122529860255692
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_macrophage" 0.682180369729643 0.133793261460031
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_smooth muscle cell" 0.469682532498933 0.141154483710058
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_endothelial cell" 0.701342989546965 0.103005798065195
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_mature NK T cell" 0.35636330480071 0.283673484809348
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_pericyte" 0.552398059353939 0.167898274672587
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_aorta_mast cell" 0.463106644846071 0.232882942731087
+
+
+"idToName" "asymptDisp" "extraPois"
+"Smart-seq2_vasculature_fibroblast" 9.22582377250446 24.1174572087861
+
+
