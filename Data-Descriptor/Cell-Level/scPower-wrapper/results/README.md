@@ -5,6 +5,7 @@
   - [ ] List proper warning messages
   - [ ] skeletal muscle: estimates error 
   - [ ] limb muscle: estimates error 
+  - [ ] heart: cannot allocate more vector of size 9.8 Gb
 </details>
 
 
