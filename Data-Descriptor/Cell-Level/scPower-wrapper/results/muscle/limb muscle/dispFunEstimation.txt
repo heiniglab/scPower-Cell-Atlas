@@ -1,0 +1,36 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_macrophage" 1.21337001993985 0.212236367879457
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_endothelial cell" 0.669612429694855 0.106389147683847
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_mesenchymal stem cell" 0.844496210101536 0.10757195783357
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_smooth muscle cell" 0.858595029424163 0.152112890944403
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_Schwann cell" 0.787827498528989 0.218609787223726
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_skeletal muscle satellite cell" 0.837336727954493 0.134785130031714
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_B cell" 0.845603880463569 0.141724689292975
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_cell of skeletal muscle" 1.34172919020809 0.411977099364598
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_limb muscle_T cell" 0.790675758635129 0.178575792385953
+
+

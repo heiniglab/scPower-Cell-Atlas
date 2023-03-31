@@ -1,0 +1,36 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2485 2485 0 2485 0 "10x 3' v2_limb muscle_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 6894 6894 0 6894 0 "10x 3' v2_limb muscle_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 13037 13037 0 13037 0 "10x 3' v2_limb muscle_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1165 1165 0 1165 0 "10x 3' v2_limb muscle_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 274 274 0 274 0 "10x 3' v2_limb muscle_Schwann cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2055 2055 0 2055 0 "10x 3' v2_limb muscle_skeletal muscle satellite cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1511 1511 0 1511 0 "10x 3' v2_limb muscle_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 192 192 0 192 0 "10x 3' v2_limb muscle_cell of skeletal muscle"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1254 1254 0 1254 0 "10x 3' v2_limb muscle_T cell"
+
+
