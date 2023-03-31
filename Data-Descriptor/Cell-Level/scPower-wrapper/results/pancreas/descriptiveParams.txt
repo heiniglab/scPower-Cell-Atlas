@@ -1,0 +1,12 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"11541_1_1_4" "EFO:0009899_UBERON:0000006_CL:0000171" "10x 3' v2_islet of Langerhans_pancreatic A cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2889_1_1_4" "EFO:0009899_UBERON:0000006_CL:0000173" "10x 3' v2_islet of Langerhans_pancreatic D cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"11923_1_1_4" "EFO:0009899_UBERON:0000006_CL:0000169" "10x 3' v2_islet of Langerhans_type B pancreatic cell"
+
+

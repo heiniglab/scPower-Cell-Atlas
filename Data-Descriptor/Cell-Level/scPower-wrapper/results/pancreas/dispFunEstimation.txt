@@ -1,0 +1,12 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_islet of Langerhans_pancreatic A cell" 0.322909026881002 0.0598537349486157
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_islet of Langerhans_pancreatic D cell" 0.339564362023833 0.0792231832422238
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" 0.473899795491831 0.0655825094879435
+
+

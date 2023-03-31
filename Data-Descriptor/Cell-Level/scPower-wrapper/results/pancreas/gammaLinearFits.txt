@@ -1,0 +1,27 @@
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "p1" 0.086220290372312 -1.88145757558445e-06
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "mean1" 0.00475156701622886 1.16748375011334e-05
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "mean2" -0.022748139086473 0.000420756936559194
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "sd1" 0.0151317351752654 3.13961928604304e-05
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "sd2" 0.448445302768809 0.00122079071326999
+"10x 3' v2_islet of Langerhans_pancreatic A cell" "p3" 0.0509158494294537 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "p1" 0.102313530154137 -1.5007217171406e-06
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "mean1" 0.00533918848864405 1.02759438261946e-05
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "mean2" -0.0124141039849031 0.000444078147112386
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "sd1" 0.0166200874548729 2.70619369145944e-05
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "sd2" 0.67267889250299 0.00138251628428682
+"10x 3' v2_islet of Langerhans_pancreatic D cell" "p3" 0.0511850981229951 0
+
+
+"idToName" "parameter" "intercept" "meanUMI"
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "p1" 0.0762449892963418 -1.08431433463461e-06
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "mean1" 0.0120143124558427 7.96973164797376e-06
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "mean2" -0.0549157999462917 0.000477749275656364
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "sd1" 0.0359060922428611 2.06031276650766e-05
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "sd2" 2.00532753825433 0.00164691944831994
+"10x 3' v2_islet of Langerhans_type B pancreatic cell" "p3" 0.050806934231939 0
+
+
