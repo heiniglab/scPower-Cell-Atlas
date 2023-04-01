@@ -1,0 +1,155 @@
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002116_CL:0000789" "10x 5' v1_ileum_alpha-beta T cell" "Error in optim(start, obj): non-finite value supplied by optim
+" "3_17_35" 50
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002509_CL:0000235" "10x 5' v1_mesenteric lymph node_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 97
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002509_CL:0000990" "10x 5' v1_mesenteric lymph node_conventional dendritic cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 56
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002509_CL:0000789" "10x 5' v1_mesenteric lymph node_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 216
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002107_CL:0000789" "10x 5' v1_liver_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 212
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002106_CL:0000789" "10x 5' v1_spleen_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 199
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002371_CL:0000789" "10x 5' v1_bone marrow_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 53
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002370_CL:0000789" "10x 5' v1_thymus_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 60
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0002114_CL:0000542" "10x 5' v1_duodenum_lymphocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 122
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0000178_CL:0000789" "10x 5' v1_blood_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 82
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0000178_CL:0000788" "10x 5' v1_blood_naive B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 112
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002509_CL:0000235" "10x 5' v2_mesenteric lymph node_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 124
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0007644_CL:0000789" "10x 5' v2_thoracic lymph node_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 427
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0000400_CL:0000542" "10x 5' v2_jejunal epithelium_lymphocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 64
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0007644_CL:0000548" "10x 5' v2_thoracic lymph node_animal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 105
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0000030_CL:0001062" "10x 5' v2_lamina propria_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 108
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0000400_CL:0000235" "10x 5' v2_jejunal epithelium_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 58
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0000030_CL:0000789" "10x 5' v2_lamina propria_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 420
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002509_CL:0000789" "10x 5' v2_mesenteric lymph node_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 321
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002371_CL:0000789" "10x 5' v2_bone marrow_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 52
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002107_CL:0000542" "10x 5' v2_liver_lymphocyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 54
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002107_CL:0000789" "10x 5' v2_liver_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 119
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009900_UBERON:0002107_CL:0000235" "10x 5' v2_liver_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 60
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000400_CL:0000789" "10x 3' v3_jejunal epithelium_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 442
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000787" "10x 3' v3_lung_memory B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 99
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002048_CL:0000789" "10x 3' v3_lung_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 202
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002106_CL:0000789" "10x 3' v3_spleen_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 250
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000030_CL:0001203" "10x 3' v3_lamina propria_CD8-positive, alpha-beta memory T cell, CD45RO-positive" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 247
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002371_CL:0000789" "10x 3' v3_bone marrow_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 196
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000030_CL:0000789" "10x 3' v3_lamina propria_alpha-beta T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 159
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0000400_CL:0000548" "10x 3' v3_jejunal epithelium_animal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "3_17_35" 61
+
+

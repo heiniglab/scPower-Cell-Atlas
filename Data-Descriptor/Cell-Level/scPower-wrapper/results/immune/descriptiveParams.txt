@@ -1,0 +1,1476 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"163_3_17_35" "EFO:0011025_UBERON:0002116_CL:0000492" "10x 5' v1_ileum_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"312_3_17_35" "EFO:0011025_UBERON:0002116_CL:0000909" "10x 5' v1_ileum_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"122_3_17_35" "EFO:0011025_UBERON:0002116_CL:0000798" "10x 5' v1_ileum_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"98_3_17_35" "EFO:0011025_UBERON:0002116_CL:0000787" "10x 5' v1_ileum_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"133_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000990" "10x 5' v1_lung_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1834_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000235" "10x 5' v1_lung_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3103_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000583" "10x 5' v1_lung_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"295_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000939" "10x 5' v1_lung_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"443_3_17_35" "EFO:0011025_UBERON:0002048_CL:0001062" "10x 5' v1_lung_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"489_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000492" "10x 5' v1_lung_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"150_3_17_35" "EFO:0011025_UBERON:0002048_CL:0001203" "10x 5' v1_lung_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"187_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000905" "10x 5' v1_lung_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"345_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000860" "10x 5' v1_lung_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"101_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000097" "10x 5' v1_lung_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"129_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000875" "10x 5' v1_lung_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"154_3_17_35" "EFO:0011025_UBERON:0002048_CL:0000548" "10x 5' v1_lung_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"874_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000900" "10x 5' v1_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4223_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000895" "10x 5' v1_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1439_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000905" "10x 5' v1_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2251_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000788" "10x 5' v1_thoracic lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000860" "10x 5' v1_thoracic lymph node_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"687_3_17_35" "EFO:0011025_UBERON:0007644_CL:0001203" "10x 5' v1_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4611_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000787" "10x 5' v1_thoracic lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1414_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000815" "10x 5' v1_thoracic lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"248_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000938" "10x 5' v1_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1588_3_17_35" "EFO:0011025_UBERON:0007644_CL:0002038" "10x 5' v1_thoracic lymph node_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"125_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000786" "10x 5' v1_thoracic lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"558_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000789" "10x 5' v1_thoracic lymph node_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000990" "10x 5' v1_thoracic lymph node_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"78_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000235" "10x 5' v1_thoracic lymph node_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"297_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000492" "10x 5' v1_thoracic lymph node_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"196_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000844" "10x 5' v1_thoracic lymph node_germinal center B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000940" "10x 5' v1_thoracic lymph node_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"69_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000583" "10x 5' v1_thoracic lymph node_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_3_17_35" "EFO:0011025_UBERON:0007644_CL:0001056" "10x 5' v1_thoracic lymph node_dendritic cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_3_17_35" "EFO:0011025_UBERON:0007644_CL:0001071" "10x 5' v1_thoracic lymph node_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"104_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000909" "10x 5' v1_thoracic lymph node_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"241_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000542" "10x 5' v1_thoracic lymph node_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"51_3_17_35" "EFO:0011025_UBERON:0007644_CL:0000548" "10x 5' v1_thoracic lymph node_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2179_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000895" "10x 5' v1_mesenteric lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"539_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000788" "10x 5' v1_mesenteric lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1678_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000787" "10x 5' v1_mesenteric lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"228_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000905" "10x 5' v1_mesenteric lymph node_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1172_3_17_35" "EFO:0011025_UBERON:0002509_CL:0002038" "10x 5' v1_mesenteric lymph node_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"433_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000900" "10x 5' v1_mesenteric lymph node_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1263_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000815" "10x 5' v1_mesenteric lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"457_3_17_35" "EFO:0011025_UBERON:0002509_CL:0001203" "10x 5' v1_mesenteric lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"69_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000542" "10x 5' v1_mesenteric lymph node_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"86_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000844" "10x 5' v1_mesenteric lymph node_germinal center B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"109_3_17_35" "EFO:0011025_UBERON:0002509_CL:0000909" "10x 5' v1_mesenteric lymph node_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_3_17_35" "EFO:0011025_UBERON:0002509_CL:0001071" "10x 5' v1_mesenteric lymph node_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"837_3_17_35" "EFO:0011025_UBERON:0002371_CL:0001062" "10x 5' v1_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"421_3_17_35" "EFO:0011025_UBERON:0002371_CL:0001203" "10x 5' v1_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"637_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000860" "10x 5' v1_bone marrow_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"541_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000939" "10x 5' v1_bone marrow_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"238_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000764" "10x 5' v1_bone marrow_erythroid lineage cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"119_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000548" "10x 5' v1_bone marrow_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"329_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000905" "10x 5' v1_bone marrow_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000940" "10x 5' v1_bone marrow_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"175_3_17_35" "EFO:0011025_UBERON:0002371_CL:0011026" "10x 5' v1_bone marrow_progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"294_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000895" "10x 5' v1_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"157_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000798" "10x 5' v1_bone marrow_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"257_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000788" "10x 5' v1_bone marrow_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000556" "10x 5' v1_bone marrow_megakaryocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"256_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000787" "10x 5' v1_bone marrow_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000990" "10x 5' v1_bone marrow_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000938" "10x 5' v1_bone marrow_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"83_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000900" "10x 5' v1_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"207_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000875" "10x 5' v1_bone marrow_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000542" "10x 5' v1_bone marrow_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"50_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000784" "10x 5' v1_bone marrow_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000815" "10x 5' v1_bone marrow_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"211_3_17_35" "EFO:0011025_UBERON:0001134_CL:0001062" "10x 5' v1_skeletal muscle tissue_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"105_3_17_35" "EFO:0011025_UBERON:0001134_CL:0000860" "10x 5' v1_skeletal muscle tissue_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"120_3_17_35" "EFO:0011025_UBERON:0001134_CL:0000939" "10x 5' v1_skeletal muscle tissue_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"184_3_17_35" "EFO:0011025_UBERON:0002107_CL:0001203" "10x 5' v1_liver_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1534_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000940" "10x 5' v1_liver_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"416_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000235" "10x 5' v1_liver_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1112_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000860" "10x 5' v1_liver_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"990_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000938" "10x 5' v1_liver_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000788" "10x 5' v1_liver_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"136_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000798" "10x 5' v1_liver_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"181_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000548" "10x 5' v1_liver_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"525_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000939" "10x 5' v1_liver_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"83_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000990" "10x 5' v1_liver_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"179_3_17_35" "EFO:0011025_UBERON:0002107_CL:0001062" "10x 5' v1_liver_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"222_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000875" "10x 5' v1_liver_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"98_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000905" "10x 5' v1_liver_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"152_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000786" "10x 5' v1_liver_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"143_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000787" "10x 5' v1_liver_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1038_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000905" "10x 5' v1_spleen_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6255_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000787" "10x 5' v1_spleen_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2866_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000788" "10x 5' v1_spleen_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"198_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000900" "10x 5' v1_spleen_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"312_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000815" "10x 5' v1_spleen_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"267_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000548" "10x 5' v1_spleen_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"547_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000798" "10x 5' v1_spleen_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"684_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000895" "10x 5' v1_spleen_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"696_3_17_35" "EFO:0011025_UBERON:0002106_CL:0001062" "10x 5' v1_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"468_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000940" "10x 5' v1_spleen_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"736_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000235" "10x 5' v1_spleen_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1491_3_17_35" "EFO:0011025_UBERON:0002106_CL:0001203" "10x 5' v1_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"829_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000860" "10x 5' v1_spleen_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"837_3_17_35" "EFO:0011025_UBERON:0002106_CL:0002038" "10x 5' v1_spleen_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"825_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000938" "10x 5' v1_spleen_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"152_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000990" "10x 5' v1_spleen_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"147_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000875" "10x 5' v1_spleen_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"536_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000939" "10x 5' v1_spleen_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"601_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000909" "10x 5' v1_spleen_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1110_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000786" "10x 5' v1_spleen_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"202_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000492" "10x 5' v1_spleen_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"383_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000542" "10x 5' v1_spleen_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"271_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000980" "10x 5' v1_spleen_plasmablast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"77_3_17_35" "EFO:0011025_UBERON:0002106_CL:0000844" "10x 5' v1_spleen_germinal center B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"90_3_17_35" "EFO:0011025_UBERON:0003688_CL:0000787" "10x 5' v1_omentum_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"95_3_17_35" "EFO:0011025_UBERON:0003688_CL:0000492" "10x 5' v1_omentum_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"71_3_17_35" "EFO:0011025_UBERON:0003688_CL:0001203" "10x 5' v1_omentum_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"116_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000542" "10x 5' v1_liver_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"88_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000909" "10x 5' v1_liver_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"101_3_17_35" "EFO:0011025_UBERON:0002107_CL:0000492" "10x 5' v1_liver_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"56_3_17_35" "EFO:0011025_UBERON:0001153_CL:0000798" "10x 5' v1_caecum_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"58_3_17_35" "EFO:0011025_UBERON:0001153_CL:0000909" "10x 5' v1_caecum_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"175_3_17_35" "EFO:0011025_UBERON:0001153_CL:0000786" "10x 5' v1_caecum_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"84_3_17_35" "EFO:0011025_UBERON:0002371_CL:0000786" "10x 5' v1_bone marrow_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"78_3_17_35" "EFO:0011025_UBERON:0002370_CL:0000900" "10x 5' v1_thymus_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"53_3_17_35" "EFO:0011025_UBERON:0002370_CL:0000787" "10x 5' v1_thymus_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"166_3_17_35" "EFO:0011025_UBERON:0002114_CL:0000492" "10x 5' v1_duodenum_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"225_3_17_35" "EFO:0011025_UBERON:0002114_CL:0000909" "10x 5' v1_duodenum_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"77_3_17_35" "EFO:0011025_UBERON:0002114_CL:0000789" "10x 5' v1_duodenum_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1200_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000860" "10x 5' v1_blood_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"128_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000815" "10x 5' v1_blood_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"621_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000895" "10x 5' v1_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1021_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000905" "10x 5' v1_blood_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"510_3_17_35" "EFO:0011025_UBERON:0000178_CL:0001062" "10x 5' v1_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"170_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000875" "10x 5' v1_blood_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"182_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000939" "10x 5' v1_blood_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"82_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000787" "10x 5' v1_blood_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000900" "10x 5' v1_blood_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"68_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000940" "10x 5' v1_blood_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"136_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000556" "10x 5' v1_blood_megakaryocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"76_3_17_35" "EFO:0011025_UBERON:0000178_CL:0000542" "10x 5' v1_blood_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"155_3_17_35" "EFO:0011025_UBERON:0000178_CL:0001203" "10x 5' v1_blood_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_3_17_35" "EFO:0011025_UBERON:0001134_CL:0000787" "10x 5' v1_skeletal muscle tissue_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"53_3_17_35" "EFO:0011025_UBERON:0001134_CL:0000905" "10x 5' v1_skeletal muscle tissue_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"71_3_17_35" "EFO:0011025_UBERON:0001134_CL:0000875" "10x 5' v1_skeletal muscle tissue_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_3_17_35" "EFO:0011025_UBERON:0001157_CL:0000786" "10x 5' v1_transverse colon_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3087_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000788" "10x 5' v2_spleen_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1359_3_17_35" "EFO:0009900_UBERON:0002106_CL:0002038" "10x 5' v2_spleen_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"611_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000940" "10x 5' v2_spleen_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5289_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000787" "10x 5' v2_spleen_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"981_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000905" "10x 5' v2_spleen_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"812_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000815" "10x 5' v2_spleen_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"680_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000860" "10x 5' v2_spleen_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"839_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000939" "10x 5' v2_spleen_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"113_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000990" "10x 5' v2_spleen_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1259_3_17_35" "EFO:0009900_UBERON:0002106_CL:0001203" "10x 5' v2_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"493_3_17_35" "EFO:0009900_UBERON:0002106_CL:0001062" "10x 5' v2_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1504_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000895" "10x 5' v2_spleen_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"55_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000844" "10x 5' v2_spleen_germinal center B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2012_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000787" "10x 5' v2_mesenteric lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"912_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000938" "10x 5' v2_spleen_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"224_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000548" "10x 5' v2_spleen_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"812_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000798" "10x 5' v2_spleen_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"341_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000235" "10x 5' v2_spleen_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"209_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000542" "10x 5' v2_spleen_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"257_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000909" "10x 5' v2_spleen_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"254_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000789" "10x 5' v2_spleen_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"268_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000492" "10x 5' v2_spleen_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"385_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000900" "10x 5' v2_spleen_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1702_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000815" "10x 5' v2_mesenteric lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1016_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000788" "10x 5' v2_mesenteric lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"754_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000900" "10x 5' v2_mesenteric lymph node_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000875" "10x 5' v2_spleen_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"166_3_17_35" "EFO:0009900_UBERON:0002106_CL:0000786" "10x 5' v2_spleen_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"93_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000548" "10x 5' v2_mesenteric lymph node_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"92_3_17_35" "EFO:0009900_UBERON:0002106_CL:0001071" "10x 5' v2_spleen_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"684_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000905" "10x 5' v2_mesenteric lymph node_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1500_3_17_35" "EFO:0009900_UBERON:0002509_CL:0002038" "10x 5' v2_mesenteric lymph node_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"413_3_17_35" "EFO:0009900_UBERON:0002509_CL:0001071" "10x 5' v2_mesenteric lymph node_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000542" "10x 5' v2_mesenteric lymph node_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"302_3_17_35" "EFO:0009900_UBERON:0002509_CL:0001203" "10x 5' v2_mesenteric lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"322_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000909" "10x 5' v2_mesenteric lymph node_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1413_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000492" "10x 5' v2_lamina propria_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2041_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000815" "10x 5' v2_thoracic lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6068_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000895" "10x 5' v2_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1983_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000905" "10x 5' v2_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"136_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000542" "10x 5' v2_thoracic lymph node_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_3_17_35" "EFO:0009900_UBERON:0007644_CL:0001062" "10x 5' v2_thoracic lymph node_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1184_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000900" "10x 5' v2_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3381_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000909" "10x 5' v2_lamina propria_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2492_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000787" "10x 5' v2_thoracic lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000895" "10x 5' v2_lamina propria_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"973_3_17_35" "EFO:0009900_UBERON:0007644_CL:0002038" "10x 5' v2_thoracic lymph node_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"149_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000938" "10x 5' v2_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1894_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000788" "10x 5' v2_thoracic lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"308_3_17_35" "EFO:0009900_UBERON:0007644_CL:0001203" "10x 5' v2_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"261_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000895" "10x 5' v2_jejunal epithelium_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000788" "10x 5' v2_jejunal epithelium_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"359_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000786" "10x 5' v2_lamina propria_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"70_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000786" "10x 5' v2_thoracic lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"56_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000938" "10x 5' v2_jejunal epithelium_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"251_3_17_35" "EFO:0009900_UBERON:0000400_CL:0001062" "10x 5' v2_jejunal epithelium_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"190_3_17_35" "EFO:0009900_UBERON:0007644_CL:0000492" "10x 5' v2_thoracic lymph node_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"66_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000905" "10x 5' v2_jejunal epithelium_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1585_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000492" "10x 5' v2_jejunal epithelium_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"97_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000235" "10x 5' v2_lamina propria_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"431_3_17_35" "EFO:0009900_UBERON:0000030_CL:0000798" "10x 5' v2_lamina propria_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1868_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000798" "10x 5' v2_jejunal epithelium_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2942_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000895" "10x 5' v2_mesenteric lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"363_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000939" "10x 5' v2_mesenteric lymph node_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"457_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000492" "10x 5' v2_mesenteric lymph node_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"587_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000938" "10x 5' v2_mesenteric lymph node_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"144_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000798" "10x 5' v2_mesenteric lymph node_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"117_3_17_35" "EFO:0009900_UBERON:0002509_CL:0000940" "10x 5' v2_mesenteric lymph node_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"372_3_17_35" "EFO:0009900_UBERON:0002371_CL:0001203" "10x 5' v2_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"336_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000905" "10x 5' v2_bone marrow_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"459_3_17_35" "EFO:0009900_UBERON:0002371_CL:0001062" "10x 5' v2_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000492" "10x 5' v2_bone marrow_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"148_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000900" "10x 5' v2_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"401_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000895" "10x 5' v2_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000815" "10x 5' v2_bone marrow_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"104_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000764" "10x 5' v2_bone marrow_erythroid lineage cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"246_3_17_35" "EFO:0009900_UBERON:0000178_CL:0000939" "10x 5' v2_blood_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"244_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000788" "10x 5' v2_bone marrow_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"99_3_17_35" "EFO:0009900_UBERON:0000178_CL:0000895" "10x 5' v2_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"194_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000798" "10x 5' v2_bone marrow_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"142_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000938" "10x 5' v2_bone marrow_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"107_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000940" "10x 5' v2_bone marrow_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"143_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000787" "10x 5' v2_bone marrow_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"252_3_17_35" "EFO:0009900_UBERON:0000178_CL:0001062" "10x 5' v2_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_3_17_35" "EFO:0009900_UBERON:0000178_CL:0000905" "10x 5' v2_blood_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"611_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000939" "10x 5' v2_bone marrow_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"84_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000548" "10x 5' v2_bone marrow_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"265_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000860" "10x 5' v2_bone marrow_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"156_3_17_35" "EFO:0009900_UBERON:0002371_CL:0011026" "10x 5' v2_bone marrow_progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"170_3_17_35" "EFO:0009900_UBERON:0002371_CL:0000875" "10x 5' v2_bone marrow_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"231_3_17_35" "EFO:0009900_UBERON:0002509_CL:0001062" "10x 5' v2_mesenteric lymph node_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"715_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000938" "10x 5' v2_liver_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"571_3_17_35" "EFO:0009900_UBERON:0002107_CL:0001062" "10x 5' v2_liver_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"907_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000798" "10x 5' v2_liver_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"622_3_17_35" "EFO:0009900_UBERON:0002107_CL:0001203" "10x 5' v2_liver_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1357_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000939" "10x 5' v2_liver_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"705_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000940" "10x 5' v2_liver_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"486_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000492" "10x 5' v2_liver_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"383_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000860" "10x 5' v2_liver_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"236_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000875" "10x 5' v2_liver_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"161_3_17_35" "EFO:0009900_UBERON:0002107_CL:0000905" "10x 5' v2_liver_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"78_3_17_35" "EFO:0009900_UBERON:0002048_CL:0000583" "10x 5' v2_lung_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5576_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000909" "10x 5' v2_jejunal epithelium_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"543_3_17_35" "EFO:0009900_UBERON:0000400_CL:0000789" "10x 5' v2_jejunal epithelium_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3691_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000909" "10x 3' v3_lamina propria_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1369_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000492" "10x 3' v3_lung_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"630_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000938" "10x 3' v3_bone marrow_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"10331_3_17_35" "EFO:0009922_UBERON:0000400_CL:0000909" "10x 3' v3_jejunal epithelium_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4610_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000860" "10x 3' v3_blood_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2154_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000938" "10x 3' v3_spleen_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"440_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000940" "10x 3' v3_spleen_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"183_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000789" "10x 3' v3_blood_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3111_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000939" "10x 3' v3_blood_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5889_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000895" "10x 3' v3_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5354_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000895" "10x 3' v3_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4130_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000860" "10x 3' v3_bone marrow_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2944_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000939" "10x 3' v3_spleen_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2234_3_17_35" "EFO:0009922_UBERON:0002106_CL:0001203" "10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3420_3_17_35" "EFO:0009922_UBERON:0000400_CL:0000798" "10x 3' v3_jejunal epithelium_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"899_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000548" "10x 3' v3_bone marrow_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"428_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000938" "10x 3' v3_lung_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2351_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000815" "10x 3' v3_thoracic lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3111_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000787" "10x 3' v3_spleen_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"577_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000980" "10x 3' v3_spleen_plasmablast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6286_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000492" "10x 3' v3_lamina propria_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"756_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000905" "10x 3' v3_lung_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1748_3_17_35" "EFO:0009922_UBERON:0000400_CL:0000492" "10x 3' v3_jejunal epithelium_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3022_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000787" "10x 3' v3_thoracic lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1818_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000905" "10x 3' v3_spleen_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"398_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000900" "10x 3' v3_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3027_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000860" "10x 3' v3_lung_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"887_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000798" "10x 3' v3_lamina propria_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3895_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000895" "10x 3' v3_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"264_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000788" "10x 3' v3_bone marrow_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"721_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000097" "10x 3' v3_lung_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2763_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000895" "10x 3' v3_spleen_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1079_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000900" "10x 3' v3_blood_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5116_3_17_35" "EFO:0009922_UBERON:0007644_CL:0002038" "10x 3' v3_thoracic lymph node_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3274_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000905" "10x 3' v3_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3236_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000905" "10x 3' v3_blood_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"400_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000938" "10x 3' v3_blood_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"693_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000788" "10x 3' v3_spleen_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"399_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000900" "10x 3' v3_spleen_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4205_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000860" "10x 3' v3_spleen_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2120_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000097" "10x 3' v3_lamina propria_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6242_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000939" "10x 3' v3_bone marrow_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"745_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000798" "10x 3' v3_spleen_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"255_3_17_35" "EFO:0009922_UBERON:0002048_CL:0001203" "10x 3' v3_lung_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"981_3_17_35" "EFO:0009922_UBERON:0002371_CL:0011026" "10x 3' v3_bone marrow_progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"197_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000542" "10x 3' v3_blood_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"736_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000542" "10x 3' v3_bone marrow_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"329_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000815" "10x 3' v3_bone marrow_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"286_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000787" "10x 3' v3_bone marrow_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2452_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000939" "10x 3' v3_lung_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"335_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000542" "10x 3' v3_spleen_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1972_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000905" "10x 3' v3_bone marrow_effector memory CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"209_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000875" "10x 3' v3_bone marrow_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2175_3_17_35" "EFO:0009922_UBERON:0002106_CL:0002038" "10x 3' v3_spleen_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"519_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000815" "10x 3' v3_spleen_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"216_3_17_35" "EFO:0009922_UBERON:0002106_CL:0001071" "10x 3' v3_spleen_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"13795_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000583" "10x 3' v3_lung_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"71_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000764" "10x 3' v3_bone marrow_erythroid lineage cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"212_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000815" "10x 3' v3_lung_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5388_3_17_35" "EFO:0009922_UBERON:0002371_CL:0001062" "10x 3' v3_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"716_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000786" "10x 3' v3_spleen_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"101_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000492" "10x 3' v3_spleen_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"210_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000542" "10x 3' v3_thoracic lymph node_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"343_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000938" "10x 3' v3_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"86_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000492" "10x 3' v3_bone marrow_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"660_3_17_35" "EFO:0009922_UBERON:0007644_CL:0001203" "10x 3' v3_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"374_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000492" "10x 3' v3_thoracic lymph node_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"111_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000990" "10x 3' v3_bone marrow_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"474_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000235" "10x 3' v3_lamina propria_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"268_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000990" "10x 3' v3_lung_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000990" "10x 3' v3_lamina propria_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"302_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000784" "10x 3' v3_bone marrow_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000788" "10x 3' v3_lung_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"654_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000815" "10x 3' v3_blood_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2583_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000786" "10x 3' v3_lamina propria_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1221_3_17_35" "EFO:0009922_UBERON:0000178_CL:0001062" "10x 3' v3_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"136_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000980" "10x 3' v3_bone marrow_plasmablast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"109_3_17_35" "EFO:0009922_UBERON:0000178_CL:0002038" "10x 3' v3_blood_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"608_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000875" "10x 3' v3_lung_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"427_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000789" "10x 3' v3_thoracic lymph node_alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1938_3_17_35" "EFO:0009922_UBERON:0002106_CL:0001062" "10x 3' v3_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"313_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000786" "10x 3' v3_thoracic lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"208_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000548" "10x 3' v3_blood_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_3_17_35" "EFO:0009922_UBERON:0000178_CL:0011026" "10x 3' v3_blood_progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2102_3_17_35" "EFO:0009922_UBERON:0002371_CL:0001203" "10x 3' v3_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"209_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000542" "10x 3' v3_lung_lymphocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"366_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000235" "10x 3' v3_lung_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_3_17_35" "EFO:0009922_UBERON:0002106_CL:0011026" "10x 3' v3_spleen_progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"58_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000788" "10x 3' v3_blood_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1366_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000548" "10x 3' v3_lung_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"147_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000895" "10x 3' v3_lung_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"165_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000909" "10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"358_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000788" "10x 3' v3_thoracic lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"131_3_17_35" "EFO:0009922_UBERON:0007644_CL:0001071" "10x 3' v3_thoracic lymph node_group 3 innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"55_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000097" "10x 3' v3_spleen_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"55_3_17_35" "EFO:0009922_UBERON:0002048_CL:0001056" "10x 3' v3_lung_dendritic cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"237_3_17_35" "EFO:0009922_UBERON:0002371_CL:0002038" "10x 3' v3_bone marrow_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"76_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000784" "10x 3' v3_spleen_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"79_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000940" "10x 3' v3_lung_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"56_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000940" "10x 3' v3_thoracic lymph node_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"124_3_17_35" "EFO:0009922_UBERON:0002048_CL:0000798" "10x 3' v3_lung_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000097" "10x 3' v3_bone marrow_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"472_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000980" "10x 3' v3_thoracic lymph node_plasmablast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"480_3_17_35" "EFO:0009922_UBERON:0002048_CL:0001062" "10x 3' v3_lung_effector memory CD8-positive, alpha-beta T cell, terminally differentiated"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"677_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000798" "10x 3' v3_bone marrow_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"148_3_17_35" "EFO:0009922_UBERON:0002106_CL:0000548" "10x 3' v3_spleen_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"114_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000786" "10x 3' v3_bone marrow_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"464_3_17_35" "EFO:0009922_UBERON:0000178_CL:0001203" "10x 3' v3_blood_CD8-positive, alpha-beta memory T cell, CD45RO-positive"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"78_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000990" "10x 3' v3_blood_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"71_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000097" "10x 3' v3_thoracic lymph node_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"233_3_17_35" "EFO:0009922_UBERON:0002371_CL:0000940" "10x 3' v3_bone marrow_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1595_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000900" "10x 3' v3_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"70_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000798" "10x 3' v3_thoracic lymph node_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"103_3_17_35" "EFO:0009922_UBERON:0000178_CL:0000787" "10x 3' v3_blood_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"189_3_17_35" "EFO:0009922_UBERON:0007644_CL:0000548" "10x 3' v3_thoracic lymph node_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"67_3_17_35" "EFO:0009922_UBERON:0002048_CL:0002038" "10x 3' v3_lung_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"68_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000548" "10x 3' v3_lamina propria_animal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"56_3_17_35" "EFO:0009922_UBERON:0000400_CL:0000097" "10x 3' v3_jejunal epithelium_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"69_3_17_35" "EFO:0009922_UBERON:0000030_CL:0000542" "10x 3' v3_lamina propria_lymphocyte"
+
+
