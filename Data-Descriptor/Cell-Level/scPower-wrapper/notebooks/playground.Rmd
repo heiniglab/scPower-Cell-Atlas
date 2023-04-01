@@ -3,8 +3,8 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
-    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/skeletal muscle/"
-    dataset_path: "muscle_TabulaSapiens_AllCells.rds"
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/lung/"
+    dataset_path: "lung_TheIntegratedHumanLungCellAtlas.rds"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
@@ -425,6 +425,9 @@ Loop through cell types:
       # datasetID: {[assayID], [tissueID], [cellTypeID]}
       completeDatasetID <- datasetID
       datasetID <- strsplit(datasetID, split = "_")[[1]]
+      
+      indexOnCollection <- which(sapply(datasetCollectionCombinedID, function(x) x == completeDatasetID))
+      print(paste0("index: ", indexOnCollection, "/", length(datasetCollectionCombinedID)))
       
       # ontology ids converted to their ontology names and concatenated
       idToName <- paste(convertIDtoName(datasetID), collapse="_")

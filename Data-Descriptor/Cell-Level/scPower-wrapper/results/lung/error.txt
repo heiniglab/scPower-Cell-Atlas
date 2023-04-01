@@ -1,0 +1,35 @@
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008946_CL:0000583" "10x 3' v2_lung parenchyma_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 24485 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "5_3_47" 33561
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008946_CL:0002063" "10x 3' v2_lung parenchyma_type II pneumocyte" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 24716 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "5_3_47" 31000
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001005_CL:0000583" "10x 3' v2_respiratory airway_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21558 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "5_3_47" 5368
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0001005_CL:0002633" "10x 3' v3_respiratory airway_respiratory basal cell" "Error: cannot allocate vector of size 4.2 Gb
+" "5_3_47" 20307
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001005_CL:0002633" "10x 3' v2_respiratory airway_respiratory basal cell" "Error: cannot allocate vector of size 12.6 Gb
+" "5_3_47" 60114
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001005_CL:0000625" "10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21102 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "5_3_47" 12611
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0008946_CL:0000583" "10x 5' v1_lung parenchyma_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21934 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
+" "5_3_47" 16754
+
+
