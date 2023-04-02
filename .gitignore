@@ -52,3 +52,4 @@ rsconnect/
 Data-Descriptor/Cell-Level/scPower-wrapper/*.nb.html
 Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/skeletal muscle/skeletal_muscle.RData
 Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/limb muscle/limb_muscle.RData
+Data-Descriptor/Cell-Level/scPower-wrapper/results/gtex/gtex.RData
