@@ -1,0 +1,236 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 646 646 0 646 0 "10x 3' v2_gastrocnemius_slow muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 19491 19491 0 19491 0 "10x 3' v2_gastrocnemius_skeletal muscle fiber"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1117 1117 0 1117 0 "10x 3' v2_gastrocnemius_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 5913 5913 0 5913 0 "10x 3' v2_gastrocnemius_skeletal muscle fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1581 1581 0 1581 0 "10x 3' v2_gastrocnemius_fast muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 5546 5546 0 5546 0 "10x 3' v2_breast_luminal epithelial cell of mammary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1756 1756 0 1756 0 "10x 3' v2_breast_subcutaneous fat cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 318 318 0 318 0 "10x 3' v2_breast_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 751 751 0 751 0 "10x 3' v2_breast_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2770 2770 0 2770 0 "10x 3' v2_mucosa_squamous epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2399 2399 0 2399 0 "10x 3' v2_mucosa_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 973 973 0 973 0 "10x 3' v2_mucosa_myoepithelial cell of mammary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 3136 3136 0 3136 0 "10x 3' v2_mucosa_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 8145 8145 0 8145 0 "10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 459 459 0 459 0 "10x 3' v2_mucosa_glandular epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2848 2848 0 2848 0 "10x 3' v2_mucosa_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1549 1549 0 1549 0 "10x 3' v2_mucosa_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 504 504 0 504 0 "10x 3' v2_mucosa_contractile cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 974 974 0 974 0 "10x 3' v2_mucosa_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1620 1620 0 1620 0 "10x 3' v2_mucosa_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 4385 4385 0 4385 0 "10x 3' v2_esophagus muscularis mucosa_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 9159 9159 0 9159 0 "10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 3275 3275 0 3275 0 "10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1210 1210 0 1210 0 "10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 10580 10580 0 10580 0 "10x 3' v2_esophagus muscularis mucosa_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1679 1679 0 1679 0 "10x 3' v2_esophagus muscularis mucosa_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 685 685 0 685 0 "10x 3' v2_esophagus muscularis mucosa_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 168 168 0 168 0 "10x 3' v2_esophagus muscularis mucosa_fat cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 9619 9619 0 9619 0 "10x 3' v2_anterior wall of left ventricle_cardiac muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 6846 6846 0 6846 0 "10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 8990 8990 0 8990 0 "10x 3' v2_anterior wall of left ventricle_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2459 2459 0 2459 0 "10x 3' v2_anterior wall of left ventricle_contractile cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 3062 3062 0 3062 0 "10x 3' v2_anterior wall of left ventricle_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 189 189 0 189 0 "10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 3043 3043 0 3043 0 "10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 345 345 0 345 0 "10x 3' v2_anterior wall of left ventricle_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 297 297 0 297 0 "10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 265 265 0 265 0 "10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 22305 22305 0 22305 0 "10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1062 1062 0 1062 0 "10x 3' v2_lingula of left lung_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 5229 5229 0 5229 0 "10x 3' v2_lingula of left lung_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 693 693 0 693 0 "10x 3' v2_lingula of left lung_bronchial epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 683 683 0 683 0 "10x 3' v2_lingula of left lung_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2437 2437 0 2437 0 "10x 3' v2_lingula of left lung_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1483 1483 0 1483 0 "10x 3' v2_lingula of left lung_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 338 338 0 338 0 "10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 11104 11104 0 11104 0 "10x 3' v2_prostate gland_luminal cell of prostate epithelium"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 4587 4587 0 4587 0 "10x 3' v2_prostate gland_epithelial cell of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 7295 7295 0 7295 0 "10x 3' v2_prostate gland_basal epithelial cell of prostatic duct"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2006 2006 0 2006 0 "10x 3' v2_prostate gland_smooth muscle cell of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1139 1139 0 1139 0 "10x 3' v2_prostate gland_skin fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 2600 2600 0 2600 0 "10x 3' v2_prostate gland_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 856 856 0 856 0 "10x 3' v2_prostate gland_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 247 247 0 247 0 "10x 3' v2_prostate gland_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 301 301 0 301 0 "10x 3' v2_skin of leg_epithelial cell of sweat gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 1815 1815 0 1815 0 "10x 3' v2_skin of leg_basal cell of epidermis"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 233 233 0 233 0 "10x 3' v2_skin of leg_sebaceous gland cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 261 261 0 261 0 "10x 3' v2_skin of leg_keratinocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0 NA 0 505 505 0 505 0 "10x 3' v2_skin of leg_skin fibroblast"
+
+

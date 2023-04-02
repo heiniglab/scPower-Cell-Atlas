@@ -1,0 +1,225 @@
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000183" "10x 3' v2_gastrocnemius_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 448
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000145" "10x 3' v2_gastrocnemius_professional antigen presenting cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 197
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0002521" "10x 3' v2_gastrocnemius_subcutaneous fat cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 150
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000235" "10x 3' v2_gastrocnemius_macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 432
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000594" "10x 3' v2_gastrocnemius_skeletal muscle satellite cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 461
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000775" "10x 3' v2_gastrocnemius_neutrophil" "Error in optim(start, obj): non-finite value supplied by optim
+" "1_8_53" 63
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0002138" "10x 3' v2_gastrocnemius_endothelial cell of lymphatic vessel" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 209
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001388_CL:0000084" "10x 3' v2_gastrocnemius_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 66
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000310_CL:0002324" "10x 3' v2_breast_myoepithelial cell of mammary gland" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 399
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000310_CL:4006000" "10x 3' v2_breast_fibroblast of breast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 762
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000310_CL:0002138" "10x 3' v2_breast_endothelial cell of lymphatic vessel" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 108
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000310_CL:0000183" "10x 3' v2_breast_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 130
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000344_CL:0000236" "10x 3' v2_mucosa_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 157
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000344_CL:0000451" "10x 3' v2_mucosa_dendritic cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 257
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000344_CL:0002573" "10x 3' v2_mucosa_Schwann cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 63
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0000344_CL:0000782" "10x 3' v2_mucosa_myeloid dendritic cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 126
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0004648_CL:0002088" "10x 3' v2_esophagus muscularis mucosa_interstitial cell of Cajal" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 225
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0004648_CL:0000451" "10x 3' v2_esophagus muscularis mucosa_dendritic cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 539
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0004648_CL:0002573" "10x 3' v2_esophagus muscularis mucosa_Schwann cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 970
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0004648_CL:0000183" "10x 3' v2_esophagus muscularis mucosa_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 965
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0004648_CL:0000084" "10x 3' v2_esophagus muscularis mucosa_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 236
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0036288_CL:0002138" "10x 3' v2_anterior wall of left ventricle_endothelial cell of lymphatic vessel" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 553
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0036288_CL:0002573" "10x 3' v2_anterior wall of left ventricle_Schwann cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 294
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0036288_CL:0000192" "10x 3' v2_anterior wall of left ventricle_smooth muscle cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 209
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0036288_CL:0000097" "10x 3' v2_anterior wall of left ventricle_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 65
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0036288_CL:0000814" "10x 3' v2_anterior wall of left ventricle_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 319
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000183" "10x 3' v2_lingula of left lung_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 158
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000097" "10x 3' v2_lingula of left lung_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 65
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000084" "10x 3' v2_lingula of left lung_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 611
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000814" "10x 3' v2_lingula of left lung_mature NK T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 78
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000236" "10x 3' v2_lingula of left lung_B cell" "Error in optim(start, obj): non-finite value supplied by optim
+" "1_8_53" 62
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0008954_CL:0000861" "10x 3' v2_lingula of left lung_elicited macrophage" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 80
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0002367_CL:0000183" "10x 3' v2_prostate gland_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 224
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0002367_CL:0000775" "10x 3' v2_prostate gland_neutrophil" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 164
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0002367_CL:0002573" "10x 3' v2_prostate gland_Schwann cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 67
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0002367_CL:0000165" "10x 3' v2_prostate gland_neuroendocrine cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 79
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0002367_CL:0000084" "10x 3' v2_prostate gland_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 611
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0002139" "10x 3' v2_skin of leg_endothelial cell of vascular tree" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 721
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0000362" "10x 3' v2_skin of leg_epidermal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 446
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0000183" "10x 3' v2_skin of leg_contractile cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 190
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:1000458" "10x 3' v2_skin of leg_melanocyte of skin" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 266
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0002138" "10x 3' v2_skin of leg_endothelial cell of lymphatic vessel" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 290
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0002521" "10x 3' v2_skin of leg_subcutaneous fat cell" "Error in optim(start, obj): non-finite value supplied by optim
+" "1_8_53" 57
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0000145" "10x 3' v2_skin of leg_professional antigen presenting cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 107
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001511_CL:0000084" "10x 3' v2_skin of leg_T cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "1_8_53" 74
+
+

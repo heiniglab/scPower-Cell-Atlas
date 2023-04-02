@@ -7,6 +7,7 @@
   - [ ] limb muscle: estimates error 
   - [ ] heart: cannot allocate more vector of size 9.8 Gb
   - [ ] pancreas: estimates error
+  - [ ] gtex: a lot nans produced, thus estimates missing
 </details>
 
 
