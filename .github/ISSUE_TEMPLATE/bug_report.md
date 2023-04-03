@@ -20,7 +20,7 @@ A clear and concise description of what you expected to happen.
 
 **System [please complete the following information]:**
  - OS: e.g. [Ubuntu 20.04]
- - R Version: [e.g. 4.1.3]
+ - Language Version: [e.g. 4.1.3]
  - Virtual environment: [e.g. Renv]
 
 **Additional context**
