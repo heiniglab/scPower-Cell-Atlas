@@ -10,7 +10,18 @@
   - [ ] gtex: a lot nans produced, thus estimates missing
 </details>
 
+## Processing Detail
+Dataset Lable | Success | Error | In Total | # assay | # tissue | # cell type
+--- | --- | --- | --- | --- | --- | --- 
+covid           | 23  | 3  | - | - | - | - 
+gtex            | 59  | 45 | -  | - | - | -
+immune          | 369 | 31 | - | - | - | -
+skeletal muscle | 391 | 19 | - | - | - | -
+limb muscle     | 9   | 0  | - | - | - | -
+pancreas        | 3   | 1  | - | - | - | -
+prostate        | 25  | 0  | - | - | - | -
 
+## Details about each dataset:
 ``covid:``
 - **Collection Name**: Sampling peripheral blood and matched nasal swabs from donors with prior immunodeficiencies and autoimmune conditions infected with SARS-CoV-2
 - **Dataset Name**: Autoimmunity PBMCs
