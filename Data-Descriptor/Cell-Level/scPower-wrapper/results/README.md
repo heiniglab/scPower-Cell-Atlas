@@ -13,13 +13,13 @@
 ## Processing Detail
 Dataset Lable | Success | Error | In Total | # assay | # tissue | # cell type
 --- | --- | --- | --- | --- | --- | --- 
-covid           | 23  | 3  | - | - | - | - 
-gtex            | 59  | 45 | -  | - | - | -
-immune          | 369 | 31 | - | - | - | -
 skeletal muscle | 391 | 19 | - | - | - | -
+immune          | 369 | 31 | - | - | - | -
+gtex            | 59  | 45 | -  | - | - | -
+prostate        | 25  | 0  | - | - | - | -
+covid           | 23  | 3  | - | - | - | - 
 limb muscle     | 9   | 0  | - | - | - | -
 pancreas        | 3   | 1  | - | - | - | -
-prostate        | 25  | 0  | - | - | - | -
 
 ## Details about each dataset:
 ``covid:``
