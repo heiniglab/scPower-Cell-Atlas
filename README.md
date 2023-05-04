@@ -14,5 +14,5 @@ allow for the optimal design of allele specific expression and perturbation expe
 - /Data-Descriptor/Collection-Level: cellxgene scrapper with both puppeteer and Go
 
 ## Presented at:
-08 December 2022: Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day
-18 April 2023: RECOMB - 27th Annual International Conference on Research in Computational Molecular Biology
+``08 December 2022`` Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day <br>
+``18 April 2023`` &emsp;&nbsp; RECOMB - 27th Annual International Conference on Research in Computational Molecular Biology
