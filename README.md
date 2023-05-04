@@ -13,8 +13,6 @@ allow for the optimal design of allele specific expression and perturbation expe
 - /Data-Descriptor/Cell-Level: scPower wrapper and sfaira connection point
 - /Data-Descriptor/Collection-Level: cellxgene scrapper with both puppeteer and Go
 
-## Resources supported
-| Dataset | Detail | Tissue | Disease | Assay | Organism | Cells | Raw Data | Contact | Publication | Link |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| asd  | asd  | asd | asd | asd | asd | asd | asd | asd | asd | asd |
-| asd  | asd  | asd | asd | asd | asd | asd | asd | asd | asd | asd |
+## Presented at:
+08 December 2022: Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day
+18 April 2023: RECOMB - 27th Annual International Conference on Research in Computational Molecular Biology
