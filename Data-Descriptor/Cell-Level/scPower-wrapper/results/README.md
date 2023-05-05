@@ -1,15 +1,3 @@
-<details>
-  <summary>Todo List <br><br></summary>
-
-  - [ ] List the errors occurred properly and start working on them
-  - [ ] List proper warning messages
-  - [ ] skeletal muscle: estimates error 
-  - [ ] limb muscle: estimates error 
-  - [ ] heart: cannot allocate more vector of size 9.8 Gb
-  - [ ] pancreas: estimates error
-  - [ ] gtex: a lot nans produced, thus estimates missing
-</details>
-
 ## Processing Detail
 Dataset Lable | Success | Error | In Total | # assay | # tissue | # cell type
 --- | --- | --- | --- | --- | --- | --- 
