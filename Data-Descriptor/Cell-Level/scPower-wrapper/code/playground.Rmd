@@ -19,7 +19,7 @@ output: html_notebook
 Functions to be loaded:
 ```{r}
 loadPackages <- function() {
-  Packages <- c("DBI", "devtools", "dplyr", "DropletUtils", "HardyWeinberg", "MKmisc",
+  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "MKmisc",
                 "plotly", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
@@ -105,6 +105,12 @@ flushMemoryExcept <- function(except) {
 listWarnings <- function() {
   warningList <- paste0(unlist(unique(names(last.warning))), collapse = "\n")
   cat(warningList)
+}
+
+# converts two different identification information into a primary key to be used in database
+generateID <- function(datasetBodySpecific, resultTableSpecific) {
+  hash <- digest(paste0(datasetBodySpecific, resultTableSpecific), algo = "md5")
+  return(hash)
 }
 
 # Downsamples the reads for each molecule by the specified "prop",
@@ -668,6 +674,7 @@ Example results (number of cells) :
   print(csv_string)
 ```
 
+(RECOMB)
 Results for genes
 ```{r}
 # for #genes
