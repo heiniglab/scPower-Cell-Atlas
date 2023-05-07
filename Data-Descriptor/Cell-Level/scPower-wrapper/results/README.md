@@ -7,6 +7,7 @@ gtex            | 59  | 45 | -  | - | - | -
 prostate        | 25  | 0  | - | - | - | -
 covid           | 23  | 3  | - | - | - | - 
 limb muscle     | 9   | 0  | - | - | - | -
+pancreas_small  | 5   | 0  | - | - | - | -
 pancreas        | 3   | 1  | - | - | - | -
 
 ## Details about each dataset:
