@@ -634,13 +634,13 @@ Visualizing estimate results (Not yet completed):
 Middleware (temporary) script for pushing data into DB:
 ```{r}
   # set the path where the files are located
-  path <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
+  rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
   
   # get a list of all .txt files in the directory and subdirectories
-  files <- list.files(path, recursive = TRUE, pattern = "^descriptiveParams\\.txt$", full.names = TRUE)
+  descriptiveFiles <- list.files(rootPath, recursive = TRUE, pattern = "^descriptiveParams\\.txt$", full.names = TRUE)
   
   hashResultsList <- list()
-  for (file in files){
+  for (file in descriptiveFiles){
     # Read the file as a data frame
     df <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
