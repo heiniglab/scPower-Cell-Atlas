@@ -639,20 +639,25 @@ Middleware (temporary) script for pushing data into DB:
   # get a list of all .txt files in the directory and subdirectories
   files <- list.files(path, recursive = TRUE, pattern = "^descriptiveParams\\.txt$", full.names = TRUE)
   
-  # Read the file as a data frame
-  df <- read.table(files[[1]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
-
-  # Subset the data frame to select only the columns you want
-  result_table <- df[, c("resultTableSpecific", "idToName")]
-  result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+  hashResultsList <- list()
+  for (file in files){
+    # Read the file as a data frame
+    df <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-  hashResults <- list()
-  resultTableSpecific <- result_table[[1]]
-  idToName <- result_table[[2]]
-  
-  for (i in seq_along(idToName)){
-    hash <- generateID(resultTableSpecific[[i]], idToName[[i]])
-    hashResults <- append(hashResults, hash)
+    # Subset the data frame to select only the columns you want
+    result_table <- df[, c("resultTableSpecific", "idToName")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    
+    hashResults <- list()
+    resultTableSpecific <- result_table[[1]]
+    idToName <- result_table[[2]]
+    
+    for (i in seq_along(idToName)){
+      hash <- generateID(resultTableSpecific[[i]], idToName[[i]])
+      hashResults <- append(hashResults, hash)
+    }
+    
+    hashResultsList[[length(hashResultsList) + 1]] <- hashResults
   }
 ```
 
