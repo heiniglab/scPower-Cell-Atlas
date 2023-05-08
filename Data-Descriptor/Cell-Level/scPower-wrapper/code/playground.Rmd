@@ -668,6 +668,9 @@ Visualizing estimate results (Not yet completed):
   
   # get a list of all .txt files in the directory and subdirectories
   dispFunEstimationFiles <- list.files(rootPath, recursive = TRUE, pattern = "^dispFunEstimation\\.txt$", full.names = TRUE)
+  gammaLinearFitsFiles <- list.files(rootPath, recursive = TRUE, pattern = "^gammaLinearFits\\.txt$", full.names = TRUE)
+  geneRanksFiles <- list.files(rootPath, recursive = TRUE, pattern = "^geneRanks\\.txt$", full.names = TRUE)
+  powerResultsFiles <- list.files(rootPath, recursive = TRUE, pattern = "^powerResults\\.txt$", full.names = TRUE)
   
   dispFunResultsDF <- data.frame()
   for (i in seq_along(dispFunEstimationFiles)){
@@ -677,6 +680,7 @@ Visualizing estimate results (Not yet completed):
     # Subset the data frame to select only the columns you want
     result_table <- dispFunDF[, c("asymptDisp", "extraPois")]
     result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
     
     # merge hash values as the primary key to the table
     result_table$primary_key <- hashResultsList[[i]]
@@ -685,7 +689,30 @@ Visualizing estimate results (Not yet completed):
     dispFunResultsDF <- rbind(dispFunResultsDF, result_table)
   }
   
-  writeToDatabase(dispFunResultsDF, "dispFunEstimationResults")
+  #writeToDatabase(dispFunResultsDF, "dispFunEstimationResults")
+  
+  ######################################################################
+  
+  gammaLinearFitResultsDF <- data.frame()
+  for (i in seq_along(gammaLinearFitsFiles)){
+    # Read the file as a data frame
+    gammaLinearFitsDF <- read.table(gammaLinearFitsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns you want
+    result_table <- gammaLinearFitsDF[, c("parameter", "intercept", "meanUMI")]
+    to_delete <- seq(7, nrow(result_table), by = 7)
+    result_table <- result_table[-to_delete, ]
+    rownames(result_table) <- NULL
+    
+    # merge hash values as the primary key to the table
+    primary_keys <- rep(hashResultsList[[i]], each=6, length.out=nrow(result_table))
+    result_table$primary_key <- primary_keys
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    gammaLinearFitResultsDF <- rbind(gammaLinearFitResultsDF, result_table)
+  }
+  
+  writeToDatabase(gammaLinearFitResultsDF, "gammaLinearFitResults")
 ```
 
 
