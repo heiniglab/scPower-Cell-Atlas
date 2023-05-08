@@ -732,6 +732,25 @@ Visualizing estimate results (Not yet completed):
   #writeToDatabase(geneRankResultsDF, "geneRanks")
   
   #############################################################################################
+  
+  powerResultsDF <- data.frame()
+  for (i in seq_along(powerResultsFiles)){
+    # Read the file as a data frame
+    powerResult <- read.table(powerResultsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns you want
+    result_table <- powerResult[, c("name", "powerDetect", "exp.probs", "power", "sampleSize", "totalCells", "usableCells", "multipletFraction", "ctCells", "expressedGenes")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
+    
+    # merge hash values as the primary key to the table
+    result_table$primary_key <- hashResultsList[[i]]
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    powerResultsDF <- rbind(powerResultsDF, result_table)
+  }
+  
+  writeToDatabase(powerResultsDF, "powerResults")
 ```
 
 
