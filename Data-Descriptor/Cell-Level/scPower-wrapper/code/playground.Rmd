@@ -631,7 +631,7 @@ Visualizing estimate results (Not yet completed):
 ```
 
 
-Middleware (temporary) script for pushing data into DB:
+(Temporary script) for converting identification informations of each dataset into hash codes:
 ```{r}
   # set the path where the files are located
   rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
@@ -660,6 +660,34 @@ Middleware (temporary) script for pushing data into DB:
     hashResultsList[[length(hashResultsList) + 1]] <- hashResults
   }
 ```
+
+(Temporary script) for pushing data into the database:
+```{r}
+  # set the path where the files are located
+  rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
+  
+  # get a list of all .txt files in the directory and subdirectories
+  dispFunEstimationFiles <- list.files(rootPath, recursive = TRUE, pattern = "^dispFunEstimation\\.txt$", full.names = TRUE)
+  
+  dispFunResultsDF <- data.frame()
+  for (i in seq_along(dispFunEstimationFiles)){
+    # Read the file as a data frame
+    dispFunDF <- read.table(dispFunEstimationFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns you want
+    result_table <- dispFunDF[, c("asymptDisp", "extraPois")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    
+    # merge hash values as the primary key to the table
+    result_table$primary_key <- hashResultsList[[i]]
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    dispFunResultsDF <- rbind(dispFunResultsDF, result_table)
+  }
+  
+  writeToDatabase(dispFunResultsDF, "dispFunEstimationResults")
+```
+
 
 
 (RECOMB)
