@@ -691,7 +691,7 @@ Visualizing estimate results (Not yet completed):
   
   #writeToDatabase(dispFunResultsDF, "dispFunEstimationResults")
   
-  ######################################################################
+  #############################################################################################
   
   gammaLinearFitResultsDF <- data.frame()
   for (i in seq_along(gammaLinearFitsFiles)){
@@ -712,7 +712,26 @@ Visualizing estimate results (Not yet completed):
     gammaLinearFitResultsDF <- rbind(gammaLinearFitResultsDF, result_table)
   }
   
-  writeToDatabase(gammaLinearFitResultsDF, "gammaLinearFitResults")
+  #writeToDatabase(gammaLinearFitResultsDF, "gammaLinearFitResults")
+  
+  #############################################################################################
+  
+  geneRankResultsDF <- data.frame()
+  for (i in seq_along(geneRanksFiles)){
+    # Read the file as a data frame
+    geneRanksDF <- read.table(geneRanksFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns you want
+    result_table <- geneRanksDF[, c("gene_symbol", "cumFraction", "rank", "indicator")]
+    result_table <- result_table[!(result_table$gene_symbol == "gene_symbol"), ]
+    rownames(result_table) <- NULL
+    
+    geneRankResultsDF <- rbind(geneRankResultsDF, result_table)
+  }
+  
+  #writeToDatabase(geneRankResultsDF, "geneRanks")
+  
+  #############################################################################################
 ```
 
 
