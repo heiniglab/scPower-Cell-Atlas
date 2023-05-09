@@ -43,7 +43,7 @@ export default {
         limits: {
           disp_fun_estimation_results: 10,
           power_results: 10,
-          gamma_linear_fit_results: 10,
+          gamma_linear_fit_results: 6,
           gene_ranks: 10,
         },
         hasMore: {
