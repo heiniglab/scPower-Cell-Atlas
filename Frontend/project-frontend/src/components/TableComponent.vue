@@ -43,7 +43,7 @@
   }
   
   th {
-    background-color: #f3f3f3;
+    background-color: #f3f3f371;
   }
   </style>
   

@@ -14,6 +14,13 @@ const pool = new Pool({
   database: 'todos',
 });
 
+const convertPrimaryKey = (rows) => {
+  return rows.map((row) => {
+    row.primary_key = row.primary_key.toString('hex');
+    return row;
+  });
+};
+
 // Use CORS middleware
 app.use(cors());
 
@@ -36,11 +43,12 @@ app.get('/data', async (req, res) => {
     ]);
 
     res.json({
-      disp_fun_estimation_results: dispFunResult.rows,
-      power_results: powerResult.rows,
-      gamma_linear_fit_results: gammaFitsResult.rows,
+      disp_fun_estimation_results: convertPrimaryKey(dispFunResult.rows),
+      gamma_linear_fit_results: convertPrimaryKey(gammaFitsResult.rows),
       gene_ranks: geneRanksResult.rows,
+      power_results: convertPrimaryKey(powerResult.rows),
     });
+
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
