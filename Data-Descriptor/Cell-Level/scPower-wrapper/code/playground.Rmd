@@ -617,6 +617,9 @@ Validation by UMI counts per cell:
   # Firstly writing results into a file, then into the database
   outputResults(estimates, "estimates")
   #writeToDatabase(estimates, "estimates")
+  
+  # Close the connection to the database
+  dbDisconnect(connectionInstance)
 ```
 
 
