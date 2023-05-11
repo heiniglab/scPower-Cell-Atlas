@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Update this configuration with your PostgreSQL database information.
+// Configuration of the PostgreSQL database
 const pool = new Pool({
   host: '127.0.0.1',
   port: '5432',
