@@ -15,7 +15,7 @@ const scraperObject = {
 		// Wait for the required DOM to be rendered
 		await page.waitForSelector('[data-icon=chevron-down]');		  
 
-		// Get the link to all the required books
+		// Get the link to all the required datasets
 		let pageContent = await page.evaluate(() => {
 			// Extract the contents from the data
 			const tds = Array.from(document.querySelectorAll('table tbody tr td'))
