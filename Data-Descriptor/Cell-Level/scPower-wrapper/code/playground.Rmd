@@ -368,13 +368,19 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
 }
 
 # Writing a data frame into a data table inside PostgreSQL database
-# Final design:
-#     datasetBody table: descriptive parameters (datasetBodySpecific, resultTableSpecific)
+# Final design of the data tables:
+#     datasetBody table (descriptive parameters):  id, datasetBodySpecific, resultTableSpecific, idToName,
+#                                                  gammaLinearFits, dispFunEstimation, geneRanks, powerResults
 #     downloadBody table
-#     result tables: gammaLinearFits, dispersionFunctionResults, powerResults
-#                    estimates (estimating gene counts), rsq (R squared error rate of the estimate)
-# Data table names: descriptiveParams, gammaLinearFits, dispFunEstimation, powerResults, estimates
+#     result tables: gammaLinearFits, dispFunEstimation, geneRanks, powerResults
+#                    estimates (estimating gene counts) & rsq (R squared error rate of the estimate)
+# Data table names: datasetBody
+#                   downloadBody
+#                   gammaLinearFits
+#                   dispFunEstimation
 #                   geneRanks
+#                   powerResults
+#                   estimates
 writeToDatabase <- function(data.frame, table.name, append = TRUE) {
   dbWriteTable(connectionInstance, table.name, data.frame, append = append)
 }
@@ -531,13 +537,14 @@ Loop through cell types:
         # Descriptive parameters passed:
         #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
         #       resultTableSpecific: assayID, tissueID, cellTypeID
+        #       idToName: assayName, tissueName, cellTypeName (converted from ontology ids)
         descriptiveParams <- mergeDescription(cellCount,
                                               length(levels(dataset$assay_ontology_term_id)),
                                               length(levels(dataset$tissue_ontology_term_id)),
                                               length(levels(dataset$cell_type_ontology_term_id)),
                                               datasetID[[1]], datasetID[[2]], datasetID[[3]],
                                               idToName)
-        # Write into respective files
+        # Write into files as an output
         outputResults(descriptiveParams, "descriptiveParams")
         outputResults(geneRanks, "geneRanks")
         outputResults(data.frame(idToName, gammaLinearFits), "gammaLinearFits")
@@ -552,7 +559,7 @@ Loop through cell types:
         #writeToDatabase(power, "powerResults")
       }, 
       
-       # error handling code (currently only used for outputting related informations)
+       # error handling part (currently only used for outputting related informations)
       error = function(e) {
         datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
         
@@ -647,7 +654,7 @@ Visualizing estimate results (Not yet completed):
     # Read the file as a data frame
     df <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-    # Subset the data frame to select only the columns you want
+    # Subset the data frame to select only the columns wanted
     result_table <- df[, c("resultTableSpecific", "idToName")]
     result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
     
@@ -663,6 +670,7 @@ Visualizing estimate results (Not yet completed):
     hashResultsList[[length(hashResultsList) + 1]] <- hashResults
   }
 ```
+
 
 (Temporary script) for pushing data into the database:
 ```{r}
@@ -680,7 +688,7 @@ Visualizing estimate results (Not yet completed):
     # Read the file as a data frame
     dispFunDF <- read.table(dispFunEstimationFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-    # Subset the data frame to select only the columns you want
+    # Subset the data frame to select only the columns wanted
     result_table <- dispFunDF[, c("asymptDisp", "extraPois")]
     result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
     rownames(result_table) <- NULL
@@ -701,7 +709,7 @@ Visualizing estimate results (Not yet completed):
     # Read the file as a data frame
     gammaLinearFitsDF <- read.table(gammaLinearFitsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-    # Subset the data frame to select only the columns you want
+    # Subset the data frame to select only the columns wanted
     result_table <- gammaLinearFitsDF[, c("parameter", "intercept", "meanUMI")]
     to_delete <- seq(7, nrow(result_table), by = 7)
     result_table <- result_table[-to_delete, ]
@@ -724,7 +732,7 @@ Visualizing estimate results (Not yet completed):
     # Read the file as a data frame
     geneRanksDF <- read.table(geneRanksFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-    # Subset the data frame to select only the columns you want
+    # Subset the data frame to select only the columns wanted
     result_table <- geneRanksDF[, c("gene_symbol", "cumFraction", "rank", "indicator")]
     result_table <- result_table[!(result_table$gene_symbol == "gene_symbol"), ]
     rownames(result_table) <- NULL
@@ -741,7 +749,7 @@ Visualizing estimate results (Not yet completed):
     # Read the file as a data frame
     powerResult <- read.table(powerResultsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
   
-    # Subset the data frame to select only the columns you want
+    # Subset the data frame to select only the columns wanted
     result_table <- powerResult[, c("name", "powerDetect", "exp.probs", "power", "sampleSize", "totalCells", "usableCells", "multipletFraction", "ctCells", "expressedGenes")]
     result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
     rownames(result_table) <- NULL
@@ -753,7 +761,7 @@ Visualizing estimate results (Not yet completed):
     powerResultsDF <- rbind(powerResultsDF, result_table)
   }
   
-  writeToDatabase(powerResultsDF, "powerResults")
+  #writeToDatabase(powerResultsDF, "powerResults")
 ```
 
 
@@ -785,7 +793,6 @@ Example results (number of cells) :
   #         cluster_rows = FALSE, 
   #         cluster_cols = TRUE)
   
-  # Assuming you have the matrix named 'data_matrix'
   tissue_names <- row.names(heatmap_data)
   cell_types <- colnames(heatmap_data)
   
@@ -803,40 +810,32 @@ Example results (number of cells) :
 ```
 
 (RECOMB)
-Results for genes
+Results for #genes
 ```{r}
-# for #genes
-
   # Load libraries
   lapply(c("tidyverse"), library, character.only = TRUE)
-  
-  
-# Function to calculate the number of expressed genes for a given tissue and cell type
-num_expressed_genes <- function(cells, seurat_obj) {
-  if (length(cells) == 0) {
-    return(0)
+      
+  # Function to calculate the number of expressed genes for a given tissue and cell type
+  num_expressed_genes <- function(cells, seurat_obj) {
+    if (length(cells) == 0) {
+      return(0)
+    }
+    
+    counts_sub <- seurat_obj@assays$RNA@counts[, cells, drop = FALSE]
+    num_genes <- sum(apply(counts_sub, 1, function(x) any(x > 0)))
+    return(num_genes)
   }
-  
-  counts_sub <- seurat_obj@assays$RNA@counts[, cells, drop = FALSE]
-  num_genes <- sum(apply(counts_sub, 1, function(x) any(x > 0)))
-  return(num_genes)
-}
 
-# Create a data frame with unique tissue and cell type combinations
-tissue_cell_type_combinations <- unique(wholeDataset@meta.data %>% select(tissue, cell_type))
+  # Create a data frame with unique tissue and cell type combinations
+  tissue_cell_type_combinations <- unique(wholeDataset@meta.data %>% select(tissue, cell_type))
 
-# Calculate the number of expressed genes for each unique combination of tissue and cell type
-tissue_cell_type_combinations$num_genes <- mapply(function(tissue, cell_type) {
-  cells <- rownames(wholeDataset@meta.data[wholeDataset@meta.data$tissue == tissue & wholeDataset@meta.data$cell_type == cell_type,])
-  num_expressed_genes(cells, wholeDataset)
-}, tissue_cell_type_combinations$tissue, tissue_cell_type_combinations$cell_type)
-  
-  
-  
-  
+  # Calculate the number of expressed genes for each unique combination of tissue and cell type
+  tissue_cell_type_combinations$num_genes <- mapply(function(tissue, cell_type) {
+    cells <- rownames(wholeDataset@meta.data[wholeDataset@meta.data$tissue == tissue & wholeDataset@meta.data$cell_type == cell_type,])
+    num_expressed_genes(cells, wholeDataset)
+  }, tissue_cell_type_combinations$tissue, tissue_cell_type_combinations$cell_type)
 ```
 ```{r}
-# Assuming you have the matrix named 'data_matrix'
   tissue_names <- unique(tissue_cell_type_combinations$tissue)
   cell_types <- unique(tissue_cell_type_combinations$cell_type)
   
