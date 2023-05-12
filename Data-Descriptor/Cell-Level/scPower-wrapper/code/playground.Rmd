@@ -14,12 +14,14 @@ title: |
 output: html_notebook
 ---
 
+<!-- when using another dataset, change: results & dataset path, num.genes.kept (mixed.gamma.estimation) -->
+
 ---
 
 Functions to be loaded:
 ```{r}
 loadPackages <- function() {
-  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "MKmisc",
+  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc",
                 "plotly", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
@@ -374,13 +376,13 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
 #     downloadBody table
 #     result tables: gammaLinearFits, dispFunEstimation, geneRanks, powerResults
 #                    estimates (estimating gene counts) & rsq (R squared error rate of the estimate)
-# Data table names: datasetBody
-#                   downloadBody
-#                   gammaLinearFits
-#                   dispFunEstimation
-#                   geneRanks
-#                   powerResults
-#                   estimates
+# Data table names: datasetBody       (8 fields)
+#                   downloadBody      (16     ")
+#                   gammaLinearFits   (4      ")
+#                   dispFunEstimation (3      ")
+#                   geneRanks         (4      ")
+#                   powerResults      (11     ")
+#                   estimates         (12 + 1 ")
 writeToDatabase <- function(data.frame, table.name, append = TRUE) {
   dbWriteTable(connectionInstance, table.name, data.frame, append = append)
 }
@@ -641,7 +643,8 @@ Visualizing estimate results (Not yet completed):
 ```
 
 
-(Temporary script) for converting identification informations of each dataset into hash codes:
+(Temporary script) 
+for converting identification informations of each dataset into hash codes:
 ```{r}
   # set the path where the files are located
   rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
@@ -672,7 +675,7 @@ Visualizing estimate results (Not yet completed):
 ```
 
 
-(Temporary script) for pushing data into the database:
+for each of the result tables pushing data into the database:
 ```{r}
   # set the path where the files are located
   rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
@@ -765,6 +768,77 @@ Visualizing estimate results (Not yet completed):
 ```
 
 
+combining data for creating main table
+```{r}
+  # What main table parameters look like:
+  # datasetBody table (descriptive parameters):  id, datasetBodySpecific, resultTableSpecific, idToName,
+  #                                                 gammaLinearFits, dispFunEstimation, geneRanks, powerResults
+
+  # scrapping descriptive parameters from the .txt files
+  descriptiveParams <- data.frame()
+  
+  for (file in descriptiveFiles){
+    # Read the file as a data frame
+    result_table <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
+    
+    descriptiveParams <- rbind(descriptiveParams, result_table)
+  } 
+
+  # converting hash results data frame into a vector of hash values
+  hashAsList <- list()
+  
+  for (hashResults in hashResultsList){
+    for(hash in hashResults){
+      hashAsList <- append(hashAsList, hash)
+    }
+  }
+  
+  # adding hashes into already existing main data frame
+  descriptiveParams$primary_key <- hashAsList
+  
+  # scrapping gammaLinearFits, dispFunEstimations and powerResults from the database
+  gammaLinearList <- list()
+  dispFunList <- list()
+  powerResultsList <- list()
+  
+  for (hash in hashAsList){
+    # convert binary data to a format that can be included in a SQL query
+    target_value <- charToRaw(hash)
+    
+    # Convert the target value to PostgreSQL special escape syntax
+    escaped_target_value <- paste0("E'\\\\x", paste(rawToChar(as.raw(target_value)), collapse = ""), "'")
+    
+    # Then include it in the query string
+    query_gammaLinear <- paste0("SELECT * FROM ", "gamma_linear_fit_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    query_dispFun <- paste0("SELECT * FROM ", "disp_fun_estimation_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    query_powerResults <- paste0("SELECT * FROM ", "power_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    
+    # Finally execute the query
+    result_gammaLinear <- dbGetQuery(connectionInstance, query_gammaLinear)
+    result_dispFun <- dbGetQuery(connectionInstance, query_dispFun)
+    result_powerResults <- dbGetQuery(connectionInstance, query_powerResults)
+    
+    # convert blob field -> text
+    primary_key <- paste(result_gammaLinear$primary_key[[1]], collapse = "")
+    result_gammaLinear$primary_key <- primary_key
+    result_dispFun$primary_key <- primary_key
+    result_powerResults$primary_key <- primary_key
+    
+    # convert results into json and append them
+    gammaLinearList <- append(gammaLinearList, toJSON(result_gammaLinear))
+    dispFunList <- append(dispFunList, toJSON(result_dispFun))
+    powerResultsList <- append(powerResultsList, toJSON(result_powerResults))
+  }
+  
+  # en son descriptiveparams ve hashleri main tablo olarak yazdım
+  # result tablolarından gammalinear, dispfun ve poweresults'ı pull ettim, variablelarda tutuyorum
+  # daha append etmedim
+  # problem: neden örneğin son result_dispFun 2 instance içeriyor
+  # bunun dışında bir de geneRanks dahil edilecek
+```
+
 
 (RECOMB)
 Example results (number of cells) :
@@ -809,6 +883,7 @@ Example results (number of cells) :
   print(csv_string)
 ```
 
+
 (RECOMB)
 Results for #genes
 ```{r}
@@ -835,6 +910,8 @@ Results for #genes
     num_expressed_genes(cells, wholeDataset)
   }, tissue_cell_type_combinations$tissue, tissue_cell_type_combinations$cell_type)
 ```
+
+
 ```{r}
   tissue_names <- unique(tissue_cell_type_combinations$tissue)
   cell_types <- unique(tissue_cell_type_combinations$cell_type)
@@ -851,5 +928,3 @@ Results for #genes
   csv_string <- paste(capture.output(write.csv(long_data, row.names = FALSE)), collapse = "\n")
   print(csv_string)
 ```
-
-
