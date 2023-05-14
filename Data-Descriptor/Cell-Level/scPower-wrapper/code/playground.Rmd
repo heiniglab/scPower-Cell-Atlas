@@ -768,10 +768,6 @@ for each of the result tables pushing data into the database:
 ```
 
 
-# TODO:
-# data table parametrelerinin isimleri tireyle ayır
-# primary key başa
-# gene ranks 
 combining data for creating main table
 ```{r}
   # What main table parameters look like:
@@ -855,6 +851,13 @@ combining data for creating main table
   }
   
   descriptiveParams$gene_ranks <- geneRanksList
+  
+  # beautifying data frame a little
+  descriptiveParams <- descriptiveParams %>% rename(dataset_body_specific = datasetBodySpecific)
+  descriptiveParams <- descriptiveParams %>% rename(result_table_specific = resultTableSpecific)
+  descriptiveParams <- descriptiveParams %>% rename(id_to_name = idToName)
+  
+  descriptiveParams <- select(descriptiveParams, primary_key, everything())
 ```
 
 
