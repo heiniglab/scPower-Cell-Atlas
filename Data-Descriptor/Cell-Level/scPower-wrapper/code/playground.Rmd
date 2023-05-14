@@ -768,6 +768,10 @@ for each of the result tables pushing data into the database:
 ```
 
 
+# TODO:
+# data table parametrelerinin isimleri tireyle ayır
+# primary key başa
+# gene ranks 
 combining data for creating main table
 ```{r}
   # What main table parameters look like:
@@ -816,9 +820,9 @@ combining data for creating main table
     query_powerResults <- paste0("SELECT * FROM ", "power_results", " WHERE ", "primary_key", " = ", escaped_target_value)
     
     # Finally execute the query
-    result_gammaLinear <- dbGetQuery(connectionInstance, query_gammaLinear)
-    result_dispFun <- dbGetQuery(connectionInstance, query_dispFun)
-    result_powerResults <- dbGetQuery(connectionInstance, query_powerResults)
+    result_gammaLinear <- dbGetQuery(connectionInstance, query_gammaLinear)[1:6,]
+    result_dispFun <- dbGetQuery(connectionInstance, query_dispFun)[1,]
+    result_powerResults <- dbGetQuery(connectionInstance, query_powerResults)[1,]
     
     # convert blob field -> text
     primary_key <- paste(result_gammaLinear$primary_key[[1]], collapse = "")
@@ -832,11 +836,10 @@ combining data for creating main table
     powerResultsList <- append(powerResultsList, toJSON(result_powerResults))
   }
   
-  # en son descriptiveparams ve hashleri main tablo olarak yazdım
-  # result tablolarından gammalinear, dispfun ve poweresults'ı pull ettim, variablelarda tutuyorum
-  # daha append etmedim
-  # problem: neden örneğin son result_dispFun 2 instance içeriyor
-  # bunun dışında bir de geneRanks dahil edilecek
+  # adding result tables into main table as json instances
+  descriptiveParams$gamma_linear_fits <- gammaLinearList
+  descriptiveParams$disp_fun_estimations <- dispFunList
+  descriptiveParams$power_results <- powerResultsList
 ```
 
 
