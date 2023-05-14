@@ -840,6 +840,21 @@ combining data for creating main table
   descriptiveParams$gamma_linear_fits <- gammaLinearList
   descriptiveParams$disp_fun_estimations <- dispFunList
   descriptiveParams$power_results <- powerResultsList
+  
+  # adding gene ranks
+  geneRanksList <- list()
+  
+  for (idToName in descriptiveParams$idToName){
+    # firstly changing idToName into an sql readable format
+    idToName <- gsub("'", "''", idToName)
+    idToName <- paste0("'", idToName, "'")
+    
+    query_geneRanks <- paste0("SELECT * FROM ", "gene_ranks", " WHERE ", "indicator", " = ", idToName)
+    result_geneRanks <- dbGetQuery(connectionInstance, query_geneRanks)
+    geneRanksList <- append(geneRanksList, toJSON(result_geneRanks))
+  }
+  
+  descriptiveParams$gene_ranks <- geneRanksList
 ```
 
 
