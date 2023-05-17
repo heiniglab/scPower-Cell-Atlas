@@ -22,7 +22,7 @@ Functions to be loaded:
 ```{r}
 loadPackages <- function() {
   Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc",
-                "plotly", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
+                "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
   suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
@@ -113,6 +113,10 @@ listWarnings <- function() {
 generateID <- function(resultTableSpecific, idToName) {
   hash <- digest(paste0(resultTableSpecific, idToName), algo = "md5")
   return(hash)
+}
+
+escapeQuotes <- function(json_str) {
+  return(gsub("'", "''", json_str))
 }
 
 # Downsamples the reads for each molecule by the specified "prop",
@@ -643,6 +647,8 @@ Validation by UMI counts per cell:
   
   # Close the connection to the database
   dbDisconnect(connectionInstance)
+  # Clear memory at validation
+  gc()
 ```
 
 
@@ -872,6 +878,28 @@ combining data for creating main table
   descriptiveParams <- descriptiveParams %>% rename(id_to_name = idToName)
   
   descriptiveParams <- select(descriptiveParams, primary_key, everything())
+  
+  # adding result tables to the main table
+  apply(descriptiveParams, 1, function(row) {
+    query <- sprintf("INSERT INTO main_table (primary_key, 
+                     dataset_body_specific,
+                     result_table_specific,
+                     id_to_name,
+                     gamma_linear_fits, 
+                     disp_fun_estimations,
+                     power_results,
+                     gene_ranks) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')", 
+                     row["primary_key"],
+                     row["dataset_body_specific"],
+                     row["result_table_specific"],
+                     escapeQuotes(row["id_to_name"]),
+                     escapeQuotes(row["gamma_linear_fits"]),
+                     escapeQuotes(row["disp_fun_estimations"]),
+                     escapeQuotes(row["power_results"]),
+                     escapeQuotes(row["gene_ranks"]))
+    
+    dbExecute(connectionInstance, query)
+  })
 ```
 
 
