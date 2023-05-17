@@ -543,6 +543,7 @@ Preparation beforehand:
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
+  max_cells <- 1000 # Max number of cells to keep in each chunk
 ```
 
 
@@ -574,6 +575,25 @@ Loop through cell types:
         cellCount <- dataset@assays$RNA@counts@Dim[[2]]
         if(cellCount < 50) {
           next
+        }
+        
+        # if dataset size is more than 3 GBs, seperate it into chunks
+        if ((object.size(dataset) / 1024^3) > 3){
+          # num_cells <- nrow(dataset@meta.data) # Number of cells in the subset
+          # num_chunks <- ceiling(num_cells / max_cells)
+          # 
+          # # Split the subset into chunks
+          # for(i in seq_len(num_chunks)) {
+          #   print(paste0("subset index: ", i, "/", num_chunks))
+          # 
+          #   start_index <- (i - 1) * max_cells + 1
+          #   end_index <- min(i * max_cells, num_cells)
+          #   
+          #   chunk <- dataset[start_index:end_index, ]
+          #   
+          #   mainProcessing(chunk)
+          # }
+          print("warning: vector of size more than 3 GBs")
         }
         
         mainProcessing(dataset)
