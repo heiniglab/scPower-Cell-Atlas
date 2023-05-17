@@ -135,20 +135,23 @@ subsampleIntoList <- function(counts.subsampled) {
 }
 
 # Conversion from dgCMatrix (sparse matrix) to list
-sparseToList <- function(counts) {
-  tmp <- matrix(data = 0L, nrow = counts@Dim[1], ncol = counts@Dim[2])
-
-  row_pos <- counts@i + 1
-  col_pos <- findInterval(seq(counts@x) - 1, counts@p[-1]) + 1
-  val <- counts@x
-
-  for (i in seq_along(val)){
-      tmp[row_pos[i], col_pos[i]] <- val[i]
-  }
-
-  row.names(tmp) <- counts@Dimnames[[1]]
-  colnames(tmp) <- counts@Dimnames[[2]]
-  return(tmp)
+sparseToMatrix <- function(sparseMatrix) {
+  # Get indices and values from sparse matrix
+  i <- sparseMatrix@i + 1
+  j <- rep(seq_len(ncol(sparseMatrix)), diff(sparseMatrix@p))
+  v <- sparseMatrix@x
+  
+  # Create a zero matrix of the correct dimensions
+  denseMatrix <- matrix(0, nrow = sparseMatrix@Dim[1], ncol = sparseMatrix@Dim[2])
+  
+  # Populate the non-zero entries
+  denseMatrix[cbind(i, j)] <- v
+  
+  # Assign row and column names
+  row.names(denseMatrix) <- sparseMatrix@Dimnames[[1]]
+  colnames(denseMatrix) <- sparseMatrix@Dimnames[[2]]
+  
+  return(denseMatrix)
 }
 
 # calculating sparsity of the count matrix
@@ -160,7 +163,7 @@ calculateZeroPerc <- function(counts) {
 }
 
 calculateGeneRanks <- function(count.matrix, idToName) {
-  count.matrix <- sparseToList(count.matrix)
+  count.matrix <- sparseToMatrix(count.matrix)
     
   # To speed up computation, remove all 0 genes
   count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
@@ -232,7 +235,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
 
   for(name in names(counts.subsampled)){
     # Converting from sparse matrix to normal one
-    counts.subsampled.converted <- sparseToList(counts.subsampled[[name]])
+    counts.subsampled.converted <- sparseToMatrix(counts.subsampled[[name]])
     temp <- nbinom.estimation(counts.subsampled.converted, sizeFactorMethod = "poscounts")
 
     # Save the normalized mean values
@@ -541,7 +544,7 @@ Loop through cell types:
       datasetID <- strsplit(datasetID, split = "_")[[1]]
       
       indexOnCollection <- which(sapply(datasetCollectionCombinedID, function(x) x == completeDatasetID))
-      print(paste0("index: ", indexOnCollection, "/", length(datasetCollectionCombinedID)))
+      print(paste0("index of dataset: ", indexOnCollection, "/", length(datasetCollectionCombinedID)))
       
       # ontology ids converted to their ontology names and concatenated
       idToName <- paste(convertIDtoName(datasetID), collapse="_")
@@ -565,7 +568,7 @@ Loop through cell types:
         mainProcessing(dataset)
       }, 
       
-       # error handling part (currently only used for outputting related informations)
+      # error handling part (currently only used for outputting related informations)
       error = function(e) {
         datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
         
