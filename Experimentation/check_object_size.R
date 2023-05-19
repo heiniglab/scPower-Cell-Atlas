@@ -23,13 +23,10 @@ for(datasetID in datasetCollectionCombinedID){
     # cell count threshold
     # if under 50, skip to the next sample
     cellCount <- dataset@assays$RNA@counts@Dim[[2]]
-    print(paste0("cellcount: ", cellCount))
+    print(paste0("cellcount: ", cellCount, " - size (GBs): ", object.size(dataset) / 1024^3))
     if(cellCount < 50) {
       next
-    }
-    
-    # in terms of GBs
-    print(object.size(dataset) / 1024^3)      
+    }      
   }, 
   
   # error handling part (currently only used for outputting related informations)
