@@ -7,7 +7,21 @@
       </thead>
       <tbody>
         <tr v-for="row in data" :key="JSON.stringify(row)">
-          <td v-for="column in columns" :key="column">{{ row[column] }}</td>
+          <td v-for="column in columns" :key="column">
+            <div v-if="Array.isArray(row[column])">
+              <button @click="shownArrays[column] = !shownArrays[column]">
+                {{ column }}
+              </button>
+              <ul v-if="shownArrays[column]">
+                <li v-for="(item, index) in row[column]" :key="index">
+                  {{ item }}
+                </li>
+              </ul>
+            </div>
+            <div v-else>
+              {{ row[column] }}
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -16,6 +30,11 @@
   
   <script>
   export default {
+    data() {
+      return {
+        shownArrays: {}
+      }
+    },
     props: {
       data: Array,
     },

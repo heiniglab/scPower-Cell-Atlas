@@ -29,24 +29,28 @@ export default {
         loading: true,
         error: null,
         tableStates: {
+          main_table: false,
           disp_fun_estimation_results: false,
           power_results: false,
           gamma_linear_fit_results: false,
           gene_ranks: false,
         },
         pages: {
+          main_table: 1,
           disp_fun_estimation_results: 1,
           power_results: 1,
           gamma_linear_fit_results: 1,
           gene_ranks: 1,
         },
         limits: {
+          main_table: 10,
           disp_fun_estimation_results: 10,
           power_results: 10,
           gamma_linear_fit_results: 6,
           gene_ranks: 10,
         },
         hasMore: {
+          main_table: true,
           disp_fun_estimation_results: true,
           power_results: true,
           gamma_linear_fit_results: true,

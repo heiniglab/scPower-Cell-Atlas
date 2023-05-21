@@ -30,12 +30,14 @@ app.get('/data', async (req, res) => {
     const limit = parseInt(req.query.limit) || 10;
     const offset = (page - 1) * limit;
 
+    const mainTablePromise = pool.query('SELECT * FROM main_table LIMIT $1 OFFSET $2', [limit, offset]);
     const dispFunPromise = pool.query('SELECT * FROM disp_fun_estimation_results LIMIT $1 OFFSET $2', [limit, offset]);
     const powerResultPromise = pool.query('SELECT * FROM power_results LIMIT $1 OFFSET $2', [limit, offset]);
     const gammaFitsPromise = pool.query('SELECT * FROM gamma_linear_fit_results LIMIT $1 OFFSET $2', [limit, offset]);
     const geneRanksPromise = pool.query('SELECT * FROM gene_ranks LIMIT $1 OFFSET $2', [limit, offset]);
 
-    const [dispFunResult, powerResult, gammaFitsResult, geneRanksResult] = await Promise.all([
+    const [mainTableResult, dispFunResult, powerResult, gammaFitsResult, geneRanksResult] = await Promise.all([
+      mainTablePromise,
       dispFunPromise,
       powerResultPromise,
       gammaFitsPromise,
@@ -43,6 +45,7 @@ app.get('/data', async (req, res) => {
     ]);
 
     res.json({
+      main_table: mainTableResult.rows,
       disp_fun_estimation_results: convertPrimaryKey(dispFunResult.rows),
       gamma_linear_fit_results: convertPrimaryKey(gammaFitsResult.rows),
       gene_ranks: geneRanksResult.rows,
