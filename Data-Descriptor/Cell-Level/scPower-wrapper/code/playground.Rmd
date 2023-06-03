@@ -429,15 +429,19 @@ mainProcessing <- function(dataset) {
 
   # Counting observed expressed genes
   nSamples <- tryCatch({
-    if(is.null(dataset@meta.data$Donor)) {
-      length(levels(dataset@meta.data$Sample))
-    } else {
+    if(!is.null(dataset@meta.data$Donor)) {
       length(levels(dataset@meta.data$Donor))
+    } else if (!is.null(dataset@meta.data$Sample)) {
+      length(levels(dataset@meta.data$Sample))
+    } else if (!is.null(dataset@meta.data$sample)) {
+      length(levels(dataset@meta.data$sample))
+    } else {
+      stop("Neither Donor nor Sample nor sample found in the meta data.")
     }
   }, warning = function(w) {
     warning(w)
   }, error = function(e) {
-    stop("Both Donor and Sample not found in the meta data.")
+    stop(e)
   })
   expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
 
@@ -543,7 +547,8 @@ Preparation beforehand:
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
-  max_cells <- 1000 # Max number of cells to keep in each chunk
+  chunk_size <- 1000 # Max number of cells to keep in each chunk
+  chunk_index <- 0
 ```
 
 
@@ -577,26 +582,23 @@ Loop through cell types:
           next
         }
         
-        # if dataset size is more than 3 GBs, seperate it into chunks
-        if ((object.size(dataset) / 1024^3) > 3){
-          # num_cells <- nrow(dataset@meta.data) # Number of cells in the subset
-          # num_chunks <- ceiling(num_cells / max_cells)
-          # 
-          # # Split the subset into chunks
-          # for(i in seq_len(num_chunks)) {
-          #   print(paste0("subset index: ", i, "/", num_chunks))
-          # 
-          #   start_index <- (i - 1) * max_cells + 1
-          #   end_index <- min(i * max_cells, num_cells)
-          #   
-          #   chunk <- dataset[start_index:end_index, ]
-          #   
-          #   mainProcessing(chunk)
-          # }
-          print("warning: vector of size more than 3 GBs")
-        }
+        # After subsetting, split the data into chunks
+        cell.ids <- Cells(dataset)
+        # split these cell IDs into chunks
+        chunks <- split(cell.ids, ceiling(seq_along(cell.ids)/chunk_size))
         
-        mainProcessing(dataset)
+        for(i in seq_along(chunks)) {
+            print(paste0("index of chunk: ", i, "/", length(chunks)))
+            chunk_index <- i
+      
+            chunk <- chunks[[i]]
+            
+            # subset Seurat object based on the cells in the chunk
+            dataset_chunk <- subset(dataset, cells = chunk)
+            
+            # process it
+            mainProcessing(dataset_chunk)
+        }
       }, 
       
       # error handling part (currently only used for outputting related informations)
@@ -605,6 +607,7 @@ Loop through cell types:
         
         errorDF <- data.frame(completeDatasetID,
                               idToName,
+                              chunk_index,
                               paste(e),
                               datasetBodySpecific,
                               cellCount)
