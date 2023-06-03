@@ -100,8 +100,11 @@ outputResults <- function(dataFrame, fileName) {
 
 # clear everything from runtime memory
 # except specified variable string
-flushMemoryExcept <- function(except) {
-  rm(list = setdiff(ls(), except))
+removeExcept <- function(except) {
+  objects_to_remove <- setdiff(ls(envir = parent.frame()), except)
+  rm(list = objects_to_remove, envir = parent.frame())
+  library(rstudioapi)
+  restartSession()
 }
 
 listWarnings <- function() {
