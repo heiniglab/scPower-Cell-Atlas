@@ -14,7 +14,7 @@
               </button>
               <ul v-if="shownArrays[column]">
                 <li v-for="(item, index) in row[column]" :key="index">
-                  {{ item }}
+                  <pre>{{item}}</pre>
                 </li>
               </ul>
             </div>
