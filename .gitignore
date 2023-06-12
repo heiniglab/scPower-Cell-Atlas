@@ -44,6 +44,8 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+_next-advancements/
+_errors/
 
 *.nb.html
 Data-Descriptor/Cell-Level/scPower-wrapper/*.nb.html
