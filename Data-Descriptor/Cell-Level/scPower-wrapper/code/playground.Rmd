@@ -3,7 +3,7 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
-    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/lung/"
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
     dataset_path: "lung_TheIntegratedHumanLungCellAtlas.rds"
 title: |
   <h3>**Collection name:**</h3>
@@ -103,8 +103,6 @@ outputResults <- function(dataFrame, fileName) {
 removeExcept <- function(except) {
   objects_to_remove <- setdiff(ls(envir = parent.frame()), except)
   rm(list = objects_to_remove, envir = parent.frame())
-  library(rstudioapi)
-  restartSession()
 }
 
 listWarnings <- function() {
