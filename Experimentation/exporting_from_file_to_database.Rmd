@@ -1,0 +1,237 @@
+for converting identification informations of each dataset into hash codes:
+```{r}
+  # set the path where the files are located
+  rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
+  
+  # get a list of all .txt files in the directory and subdirectories
+  descriptiveFiles <- list.files(rootPath, recursive = TRUE, pattern = "^descriptiveParams\\.txt$", full.names = TRUE)
+  
+  hashResultsList <- list()
+  for (file in descriptiveFiles){
+    # Read the file as a data frame
+    df <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns wanted
+    result_table <- df[, c("resultTableSpecific", "idToName")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    
+    hashResults <- list()
+    resultTableSpecific <- result_table[[1]]
+    idToName <- result_table[[2]]
+    
+    for (i in seq_along(idToName)){
+      hash <- generateID(resultTableSpecific[[i]], idToName[[i]])
+      hashResults <- append(hashResults, hash)
+    }
+    
+    hashResultsList[[length(hashResultsList) + 1]] <- hashResults
+  }
+```
+
+
+for each of the result tables pushing data into the database:
+```{r}
+  # set the path where the files are located
+  rootPath <- "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results"
+  
+  # get a list of all .txt files in the directory and subdirectories
+  dispFunEstimationFiles <- list.files(rootPath, recursive = TRUE, pattern = "^dispFunEstimation\\.txt$", full.names = TRUE)
+  gammaLinearFitsFiles <- list.files(rootPath, recursive = TRUE, pattern = "^gammaLinearFits\\.txt$", full.names = TRUE)
+  geneRanksFiles <- list.files(rootPath, recursive = TRUE, pattern = "^geneRanks\\.txt$", full.names = TRUE)
+  powerResultsFiles <- list.files(rootPath, recursive = TRUE, pattern = "^powerResults\\.txt$", full.names = TRUE)
+  
+  dispFunResultsDF <- data.frame()
+  for (i in seq_along(dispFunEstimationFiles)){
+    # Read the file as a data frame
+    dispFunDF <- read.table(dispFunEstimationFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns wanted
+    result_table <- dispFunDF[, c("asymptDisp", "extraPois")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
+    
+    # merge hash values as the primary key to the table
+    result_table$primary_key <- hashResultsList[[i]]
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    dispFunResultsDF <- rbind(dispFunResultsDF, result_table)
+  }
+  
+  #writeToDatabase(dispFunResultsDF, "dispFunEstimationResults")
+  
+  #############################################################################################
+  
+  gammaLinearFitResultsDF <- data.frame()
+  for (i in seq_along(gammaLinearFitsFiles)){
+    # Read the file as a data frame
+    gammaLinearFitsDF <- read.table(gammaLinearFitsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns wanted
+    result_table <- gammaLinearFitsDF[, c("parameter", "intercept", "meanUMI")]
+    to_delete <- seq(7, nrow(result_table), by = 7)
+    result_table <- result_table[-to_delete, ]
+    rownames(result_table) <- NULL
+    
+    # merge hash values as the primary key to the table
+    primary_keys <- rep(hashResultsList[[i]], each=6, length.out=nrow(result_table))
+    result_table$primary_key <- primary_keys
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    gammaLinearFitResultsDF <- rbind(gammaLinearFitResultsDF, result_table)
+  }
+  
+  #writeToDatabase(gammaLinearFitResultsDF, "gammaLinearFitResults")
+  
+  #############################################################################################
+  
+  geneRankResultsDF <- data.frame()
+  for (i in seq_along(geneRanksFiles)){
+    # Read the file as a data frame
+    geneRanksDF <- read.table(geneRanksFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns wanted
+    result_table <- geneRanksDF[, c("gene_symbol", "cumFraction", "rank", "indicator")]
+    result_table <- result_table[!(result_table$gene_symbol == "gene_symbol"), ]
+    rownames(result_table) <- NULL
+    
+    geneRankResultsDF <- rbind(geneRankResultsDF, result_table)
+  }
+  
+  #writeToDatabase(geneRankResultsDF, "geneRanks")
+  
+  #############################################################################################
+  
+  powerResultsDF <- data.frame()
+  for (i in seq_along(powerResultsFiles)){
+    # Read the file as a data frame
+    powerResult <- read.table(powerResultsFiles[[i]], sep = " ", header = TRUE, stringsAsFactors = FALSE)
+  
+    # Subset the data frame to select only the columns wanted
+    result_table <- powerResult[, c("name", "powerDetect", "exp.probs", "power", "sampleSize", "totalCells", "usableCells", "multipletFraction", "ctCells", "expressedGenes")]
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
+    
+    # merge hash values as the primary key to the table
+    result_table$primary_key <- hashResultsList[[i]]
+    result_table <- result_table[, c("primary_key", names(result_table)[-ncol(result_table)])]
+    
+    powerResultsDF <- rbind(powerResultsDF, result_table)
+  }
+  
+  #writeToDatabase(powerResultsDF, "powerResults")
+```
+
+
+combining data for creating main table
+```{r}
+  # What main table parameters look like:
+  # datasetBody table (descriptive parameters):  id, datasetBodySpecific, resultTableSpecific, idToName,
+  #                                                 gammaLinearFits, dispFunEstimation, geneRanks, powerResults
+
+  # scrapping descriptive parameters from the .txt files
+  descriptiveParams <- data.frame()
+  
+  for (file in descriptiveFiles){
+    # Read the file as a data frame
+    result_table <- read.table(file, sep = " ", header = TRUE, stringsAsFactors = FALSE)
+    result_table <- result_table[seq(1, nrow(result_table), by = 2), ]
+    rownames(result_table) <- NULL
+    
+    descriptiveParams <- rbind(descriptiveParams, result_table)
+  } 
+
+  # converting hash results data frame into a vector of hash values
+  hashAsList <- list()
+  
+  for (hashResults in hashResultsList){
+    for(hash in hashResults){
+      hashAsList <- append(hashAsList, hash)
+    }
+  }
+  
+  # adding hashes into already existing main data frame
+  descriptiveParams$primary_key <- hashAsList
+  
+  # scrapping gammaLinearFits, dispFunEstimations and powerResults from the database
+  gammaLinearList <- list()
+  dispFunList <- list()
+  powerResultsList <- list()
+  
+  for (hash in hashAsList){
+    # convert binary data to a format that can be included in a SQL query
+    target_value <- charToRaw(hash)
+    
+    # Convert the target value to PostgreSQL special escape syntax
+    escaped_target_value <- paste0("E'\\\\x", paste(rawToChar(as.raw(target_value)), collapse = ""), "'")
+    
+    # Then include it in the query string
+    query_gammaLinear <- paste0("SELECT * FROM ", "gamma_linear_fit_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    query_dispFun <- paste0("SELECT * FROM ", "disp_fun_estimation_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    query_powerResults <- paste0("SELECT * FROM ", "power_results", " WHERE ", "primary_key", " = ", escaped_target_value)
+    
+    # Finally execute the query
+    result_gammaLinear <- dbGetQuery(connectionInstance, query_gammaLinear)[1:6,]
+    result_dispFun <- dbGetQuery(connectionInstance, query_dispFun)[1,]
+    result_powerResults <- dbGetQuery(connectionInstance, query_powerResults)[1,]
+    
+    # convert blob field -> text
+    primary_key <- paste(result_gammaLinear$primary_key[[1]], collapse = "")
+    result_gammaLinear$primary_key <- primary_key
+    result_dispFun$primary_key <- primary_key
+    result_powerResults$primary_key <- primary_key
+    
+    # convert results into json and append them
+    gammaLinearList <- append(gammaLinearList, toJSON(result_gammaLinear))
+    dispFunList <- append(dispFunList, toJSON(result_dispFun))
+    powerResultsList <- append(powerResultsList, toJSON(result_powerResults))
+  }
+  
+  # adding result tables into main table as json instances
+  descriptiveParams$gamma_linear_fits <- gammaLinearList
+  descriptiveParams$disp_fun_estimations <- dispFunList
+  descriptiveParams$power_results <- powerResultsList
+  
+  # adding gene ranks
+  geneRanksList <- list()
+  
+  for (idToName in descriptiveParams$idToName){
+    # firstly changing idToName into an sql readable format
+    idToName <- gsub("'", "''", idToName)
+    idToName <- paste0("'", idToName, "'")
+    
+    query_geneRanks <- paste0("SELECT * FROM ", "gene_ranks", " WHERE ", "indicator", " = ", idToName)
+    result_geneRanks <- dbGetQuery(connectionInstance, query_geneRanks)
+    geneRanksList <- append(geneRanksList, toJSON(result_geneRanks))
+  }
+  
+  descriptiveParams$gene_ranks <- geneRanksList
+  
+  # beautifying data frame a little
+  descriptiveParams <- descriptiveParams %>% rename(dataset_body_specific = datasetBodySpecific)
+  descriptiveParams <- descriptiveParams %>% rename(result_table_specific = resultTableSpecific)
+  descriptiveParams <- descriptiveParams %>% rename(id_to_name = idToName)
+  
+  descriptiveParams <- select(descriptiveParams, primary_key, everything())
+  
+  # adding result tables to the main table
+  apply(descriptiveParams, 1, function(row) {
+    query <- sprintf("INSERT INTO main_table (primary_key, 
+                     dataset_body_specific,
+                     result_table_specific,
+                     id_to_name,
+                     gamma_linear_fits, 
+                     disp_fun_estimations,
+                     power_results,
+                     gene_ranks) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')", 
+                     row["primary_key"],
+                     row["dataset_body_specific"],
+                     row["result_table_specific"],
+                     escapeQuotes(row["id_to_name"]),
+                     escapeQuotes(row["gamma_linear_fits"]),
+                     escapeQuotes(row["disp_fun_estimations"]),
+                     escapeQuotes(row["power_results"]),
+                     escapeQuotes(row["gene_ranks"]))
+    
+    dbExecute(connectionInstance, query)
+  })
+```
