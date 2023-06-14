@@ -1,0 +1,84 @@
+Example results (number of cells) :
+```{r}
+  lapply(c("tidyverse", "pheatmap"), library, character.only = TRUE)
+
+  metadata <- wholeDataset@meta.data
+
+  cell_counts <- metadata %>%
+    group_by(tissue, cell_type) %>%
+    summarize(Count = n()) %>%
+    spread(key = cell_type, value = Count, fill = 0)
+  
+  heatmap_data <- cell_counts %>%
+    column_to_rownames("tissue") %>%
+    as.matrix()
+  
+  #pheatmap(heatmap_data,
+  #       scale = "none",
+  #       cluster_rows = T,
+  #       cluster_cols = T)
+  
+  # for one tissue datasets
+  #pheatmap(heatmap_data, 
+  #         scale = "none", 
+  #         cluster_rows = FALSE, 
+  #         cluster_cols = TRUE)
+  
+  tissue_names <- row.names(heatmap_data)
+  cell_types <- colnames(heatmap_data)
+  
+  # Create a data frame from the matrix, and add tissue names as a column
+  data_frame <- as.data.frame(heatmap_data)
+  data_frame$Tissue <- tissue_names
+  
+  # Melt the data frame to get it in long format
+  library(reshape2)
+  long_data <- melt(data_frame, id.vars = "Tissue", variable.name = "CellType", value.name = "Count")
+  
+  # Save the long data as a CSV string
+  csv_string <- paste(capture.output(write.csv(long_data, row.names = FALSE)), collapse = "\n")
+  print(csv_string)
+```
+
+Results for #genes
+```{r}
+  # Load libraries
+  lapply(c("tidyverse"), library, character.only = TRUE)
+      
+  # Function to calculate the number of expressed genes for a given tissue and cell type
+  num_expressed_genes <- function(cells, seurat_obj) {
+    if (length(cells) == 0) {
+      return(0)
+    }
+    
+    counts_sub <- seurat_obj@assays$RNA@counts[, cells, drop = FALSE]
+    num_genes <- sum(apply(counts_sub, 1, function(x) any(x > 0)))
+    return(num_genes)
+  }
+
+  # Create a data frame with unique tissue and cell type combinations
+  tissue_cell_type_combinations <- unique(wholeDataset@meta.data %>% select(tissue, cell_type))
+
+  # Calculate the number of expressed genes for each unique combination of tissue and cell type
+  tissue_cell_type_combinations$num_genes <- mapply(function(tissue, cell_type) {
+    cells <- rownames(wholeDataset@meta.data[wholeDataset@meta.data$tissue == tissue & wholeDataset@meta.data$cell_type == cell_type,])
+    num_expressed_genes(cells, wholeDataset)
+  }, tissue_cell_type_combinations$tissue, tissue_cell_type_combinations$cell_type)
+```
+
+```{r}
+  tissue_names <- unique(tissue_cell_type_combinations$tissue)
+  cell_types <- unique(tissue_cell_type_combinations$cell_type)
+  
+  # Create a data frame from the matrix, and add tissue names as a column
+  data_frame <- tissue_cell_type_combinations
+  data_frame$Tissue <- tissue_names
+  
+  # Melt the data frame to get it in long format
+  library(reshape2)
+  long_data <- melt(data_frame, id.vars = "tissue", variable.name = "cell_type", value.name = "num_genes")
+  
+  # Save the long data as a CSV string
+  csv_string <- paste(capture.output(write.csv(long_data, row.names = FALSE)), collapse = "\n")
+  print(csv_string)
+```
