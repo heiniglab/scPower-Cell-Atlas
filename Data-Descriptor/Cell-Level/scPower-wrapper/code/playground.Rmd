@@ -548,7 +548,7 @@ Preparation beforehand:
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
-  chunk_size <- 1000 # Max number of cells to keep in each chunk
+  chunk_size <- 10000 # Max number of gene to keep in each chunk
   chunk_index <- 0
 ```
 
@@ -583,10 +583,10 @@ Loop through cell types:
           next
         }
         
-        # After subsetting, split the data into chunks
-        cell.ids <- Cells(dataset)
-        # split these cell IDs into chunks
-        chunks <- split(cell.ids, ceiling(seq_along(cell.ids)/chunk_size))
+        # After subsetting, split the data into chunks by genes
+        gene.ids <- rownames(dataset@assays[[1]]@counts)
+        # split these gene IDs into chunks
+        chunks <- split(gene.ids, ceiling(seq_along(gene.ids)/chunk_size))
         
         for(i in seq_along(chunks)) {
             print(paste0("index of chunk: ", i, "/", length(chunks)))
@@ -595,7 +595,7 @@ Loop through cell types:
             chunk <- chunks[[i]]
             
             # subset Seurat object based on the cells in the chunk
-            dataset_chunk <- subset(dataset, cells = chunk)
+            dataset_chunk <- dataset[chunk, ]
             
             # process it
             mainProcessing(dataset_chunk)
@@ -612,9 +612,7 @@ Loop through cell types:
                               paste(e),
                               datasetBodySpecific,
                               cellCount)
-        # errorDF <- merge(errorDF, expressedGenesDF, by = "cellCount")
-        # gammaFits, gammaLinearFits, dispFunEstimation, power
-                              
+
         colnames(errorDF)[3] <- "errorMessage"
         outputResults(errorDF, "error")
       })
