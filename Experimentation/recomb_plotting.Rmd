@@ -1,7 +1,10 @@
 Example results (number of cells) :
 ```{r}
-  lapply(c("tidyverse", "pheatmap"), library, character.only = TRUE)
-
+  library(tidyverse)
+  library(reshape2)
+  
+  combined_df <- data.frame()
+  
   metadata <- wholeDataset@meta.data
 
   cell_counts <- metadata %>%
@@ -13,17 +16,6 @@ Example results (number of cells) :
     column_to_rownames("tissue") %>%
     as.matrix()
   
-  #pheatmap(heatmap_data,
-  #       scale = "none",
-  #       cluster_rows = T,
-  #       cluster_cols = T)
-  
-  # for one tissue datasets
-  #pheatmap(heatmap_data, 
-  #         scale = "none", 
-  #         cluster_rows = FALSE, 
-  #         cluster_cols = TRUE)
-  
   tissue_names <- row.names(heatmap_data)
   cell_types <- colnames(heatmap_data)
   
@@ -32,18 +24,21 @@ Example results (number of cells) :
   data_frame$Tissue <- tissue_names
   
   # Melt the data frame to get it in long format
-  library(reshape2)
   long_data <- melt(data_frame, id.vars = "Tissue", variable.name = "CellType", value.name = "Count")
+  long_data <- long_data %>%
+    filter(Count != 0)
+  
+  # Combine each of the dataframe
+  combined_df <- rbind(combined_df, long_data)
   
   # Save the long data as a CSV string
-  csv_string <- paste(capture.output(write.csv(long_data, row.names = FALSE)), collapse = "\n")
+  csv_string <- paste(capture.output(write.csv(combined_df, row.names = FALSE)), collapse = "\n")
   print(csv_string)
 ```
 
 Results for #genes
 ```{r}
-  # Load libraries
-  lapply(c("tidyverse"), library, character.only = TRUE)
+  library(tidyverse)
       
   # Function to calculate the number of expressed genes for a given tissue and cell type
   num_expressed_genes <- function(cells, seurat_obj) {
@@ -65,6 +60,7 @@ Results for #genes
     num_expressed_genes(cells, wholeDataset)
   }, tissue_cell_type_combinations$tissue, tissue_cell_type_combinations$cell_type)
 ```
+
 
 ```{r}
   tissue_names <- unique(tissue_cell_type_combinations$tissue)
