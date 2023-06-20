@@ -3,6 +3,7 @@ params:
     collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
     dataset_name: "Mouse Fibromuscular Stromal Cells"
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
+    
     results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
     dataset_path: "lung_TheIntegratedHumanLungCellAtlas.rds"
 title: |
@@ -518,7 +519,6 @@ Preparation beforehand:
   setwd("C:/Users/Cem/Documents/Github/dataset")
   datasetFilePath <- params$dataset_path
 
-  # Reading the data in seurat format
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
