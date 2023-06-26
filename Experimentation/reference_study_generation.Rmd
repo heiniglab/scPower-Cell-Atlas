@@ -1,0 +1,134 @@
+
+<!--
+Sorular:
+----------
+- direkt komple tüm dataseti alarak başlamak doğru mudur? 
+-->
+
+```{r}
+Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc", "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
+"scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
+
+suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
+
+setwd("C:/Users/Cem/Documents/Github/scPower")
+data("DERefStudy")
+
+rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
+datasetFilePath <- "prostate_UrethralLuminalEpithelia_AllCells"
+
+# For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
+# For reading .rds      file: readRDS(datasetFilePath)
+memory.limit(999999)
+wholeDataset <- readRDS(paste0(rootPath, datasetFilePath, ".rds"))
+```
+
+
+```{r}
+sparseToMatrix <- function(sparseMatrix) {
+  # Get indices and values from sparse matrix
+  i <- sparseMatrix@i + 1
+  j <- rep(seq_len(ncol(sparseMatrix)), diff(sparseMatrix@p))
+  v <- sparseMatrix@x
+  
+  # Create a zero matrix of the correct dimensions
+  denseMatrix <- matrix(0, nrow = sparseMatrix@Dim[1], ncol = sparseMatrix@Dim[2])
+  
+  # Populate the non-zero entries
+  denseMatrix[cbind(i, j)] <- v
+  
+  # Assign row and column names
+  row.names(denseMatrix) <- sparseMatrix@Dimnames[[1]]
+  colnames(denseMatrix) <- sparseMatrix@Dimnames[[2]]
+  
+  return(denseMatrix)
+}
+
+subsampleIntoList <- function(counts.subsampled) {
+  tmp <- vector("list", 4)
+  
+  tmp[[1]] <- counts.subsampled
+
+  # Define the proportions
+  proportions <- c(0.75, 0.5, 0.25)
+  
+  # Loop over the proportions and fill the list
+  for(i in seq_along(proportions)){
+    s <- proportions[i]
+    subsample <- downsampleMatrix(counts.subsampled, prop = s, bycol = TRUE)
+    tmp[[i + 1]] <- subsample
+  }
+
+  # Name the list elements
+  names(tmp) <- c("complete", "subsampled75", "subsampled50", "subsampled25")
+
+  print("Subsampling process done successfully.")
+  return(tmp)
+}
+
+calculateGeneRanks <- function(count.matrix, tissue.name) {
+  among_top_N <- 5000
+  
+  # To speed up computation, remove all 0 genes
+  count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
+  
+  # Normalize by count per cell
+  count.matrix <- t(t(count.matrix) / colSums(count.matrix))
+  
+  # Randomly select a fraction of the gene to be significant DE genes
+  sign.genes <- sample(rownames(count.matrix), among_top_N)
+  
+  # Calculate gene ranks
+  gene.ranks <- geneRankCalculation(count.matrix, sign.genes, tissue.name)
+
+  return(gene.ranks)
+}
+
+geneRankCalculation <- function (countMatrix, diff.expr.genes, tissue.name) {
+  geneRankCalculationVector(rowMeans(countMatrix), rownames(countMatrix), diff.expr.genes, tissue.name)
+}
+
+geneRankCalculationVector <- function (meanVector, geneNames, diff.expr.genes, tissue.name) {
+  N <- length(geneNames)
+  ndiff <- 50
+  mean_fc <- 1.5
+  sd_fc <- 0.5
+  
+  gene.expr <- data.frame(name = datasetFilePath, gene = geneNames, meanExpr = meanVector, FoldChange = 2^rnorm(N, sd = sd_fc), type = tissue.name, stringsAsFactors = FALSE)
+  gene.expr$diff.expressed <- ifelse(gene.expr$gene %in% diff.expr.genes, 1, 0)
+  gene.expr$FoldChange[gene.expr$diff.expressed] <- 2^rnorm(ndiff, log2(mean_fc), sd=sd_fc)
+  gene.expr <- gene.expr[order(gene.expr$meanExpr, decreasing = T),]
+  gene.expr$cumFraction <- cumsum(rep(1/nrow(gene.expr), nrow(gene.expr)))
+  gene.expr$numberGenes <- cumsum(rep(1, nrow(gene.expr)))
+  gene.expr$rank <- rank(-gene.expr$meanExpr, ties.method = "min")
+  gene.expr <- gene.expr[gene.expr$diff.expressed == 1, ]
+  
+  return(gene.expr[, c("name", "gene", "FoldChange", "cumFraction", "rank", "type")])
+}
+```
+
+
+```{r}
+# an empty list to store gene ranks for each tissue
+list_of_gene_ranks <- list()
+list_of_tissue_objects <- SplitObject(wholeDataset, split.by = "tissue")
+
+for (tissue_name in names(list_of_tissue_objects)) {
+  
+  # Get the tissue-specific Seurat object
+  tissue_obj <- list_of_tissue_objects[[tissue_name]]
+  
+  # Extract the count matrix from the tissue-specific Seurat object
+  count_matrix <- tissue_obj@assays$RNA@counts 
+
+  # Calculate gene ranks for this tissue
+  gene_ranks <- calculateGeneRanks(count_matrix, tissue_name)
+  
+  # Store gene ranks in the list
+  list_of_gene_ranks[[tissue_name]] <- gene_ranks
+}
+
+# combine the gene ranks for all tissues into a single data frame
+combined_gene_ranks <- do.call(rbind, list_of_gene_ranks)
+
+```
