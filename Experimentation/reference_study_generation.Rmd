@@ -1,4 +1,5 @@
 
+Preparations (dataset and library loading etc.):
 ```{r}
 Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc", "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
@@ -18,6 +19,7 @@ wholeDataset <- readRDS(paste0(rootPath, datasetFilePath, ".rds"))
 ```
 
 
+Function prototypes:
 ```{r}
 calculateGeneRanks <- function(count.matrix, tissue.name) {
   among_top_N <- 5000
@@ -61,6 +63,7 @@ geneRankCalculationVector <- function (meanVector, geneNames, diff.expr.genes, t
 ```
 
 
+Main code to process each tissue seperately: 
 ```{r}
 # an empty list to store gene ranks for each tissue
 list_of_gene_ranks <- list()
