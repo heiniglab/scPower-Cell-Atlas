@@ -1,10 +1,4 @@
 
-<!--
-Sorular:
-----------
-- direkt komple tüm dataseti alarak başlamak doğru mudur? 
--->
-
 ```{r}
 Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc", "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
@@ -15,7 +9,7 @@ setwd("C:/Users/Cem/Documents/Github/scPower")
 data("DERefStudy")
 
 rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
-datasetFilePath <- "prostate_UrethralLuminalEpithelia_AllCells"
+datasetFilePath <- "prostate_UrethralLuminalEpithelia_AllMouseCells"
 
 # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
 # For reading .rds      file: readRDS(datasetFilePath)
@@ -25,47 +19,6 @@ wholeDataset <- readRDS(paste0(rootPath, datasetFilePath, ".rds"))
 
 
 ```{r}
-sparseToMatrix <- function(sparseMatrix) {
-  # Get indices and values from sparse matrix
-  i <- sparseMatrix@i + 1
-  j <- rep(seq_len(ncol(sparseMatrix)), diff(sparseMatrix@p))
-  v <- sparseMatrix@x
-  
-  # Create a zero matrix of the correct dimensions
-  denseMatrix <- matrix(0, nrow = sparseMatrix@Dim[1], ncol = sparseMatrix@Dim[2])
-  
-  # Populate the non-zero entries
-  denseMatrix[cbind(i, j)] <- v
-  
-  # Assign row and column names
-  row.names(denseMatrix) <- sparseMatrix@Dimnames[[1]]
-  colnames(denseMatrix) <- sparseMatrix@Dimnames[[2]]
-  
-  return(denseMatrix)
-}
-
-subsampleIntoList <- function(counts.subsampled) {
-  tmp <- vector("list", 4)
-  
-  tmp[[1]] <- counts.subsampled
-
-  # Define the proportions
-  proportions <- c(0.75, 0.5, 0.25)
-  
-  # Loop over the proportions and fill the list
-  for(i in seq_along(proportions)){
-    s <- proportions[i]
-    subsample <- downsampleMatrix(counts.subsampled, prop = s, bycol = TRUE)
-    tmp[[i + 1]] <- subsample
-  }
-
-  # Name the list elements
-  names(tmp) <- c("complete", "subsampled75", "subsampled50", "subsampled25")
-
-  print("Subsampling process done successfully.")
-  return(tmp)
-}
-
 calculateGeneRanks <- function(count.matrix, tissue.name) {
   among_top_N <- 5000
   
@@ -130,5 +83,44 @@ for (tissue_name in names(list_of_tissue_objects)) {
 
 # combine the gene ranks for all tissues into a single data frame
 combined_gene_ranks <- do.call(rbind, list_of_gene_ranks)
-
 ```
+
+
+for getting gene length
+```{r}
+library(httr)
+library(jsonlite)
+
+# Base URL for Ensembl REST API
+base_url <- "https://rest.ensembl.org"
+gene_lengths <- list()
+i <- 1
+
+# Loop through each gene ID and request gene information
+for (gene_id in combined_gene_ranks$gene) {
+  
+  # Make the request
+  response <- GET(paste0(base_url, "/lookup/id/", gene_id, "?content-type=application/json;expand=1"))
+  
+  # Check if the request was successful
+  if (status_code(response) == 200) {
+    
+    # Parse the JSON response
+    gene_data <- fromJSON(content(response, "text", encoding="UTF-8"))
+    
+    # Calculate gene length and append it
+    gene_length <- gene_data$end - gene_data$start + 1
+    gene_lengths[[length(gene_lengths) + 1]] <- gene_length
+    
+    # Output the gene length
+    cat(i, " Gene ID:", gene_id, "Gene Length:", gene_length, "\n")
+    i <- i + 1
+  } else {
+    # Output an error message
+    cat("Failed to retrieve data for gene ID:", gene_id, "\n")
+  }
+}
+
+combined_gene_ranks$geneLength <- gene_lengths
+```
+
