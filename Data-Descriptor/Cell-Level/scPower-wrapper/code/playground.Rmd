@@ -548,8 +548,6 @@ Preparation beforehand:
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
-  chunk_size <- 10000 # Max number of gene to keep in each chunk
-  chunk_index <- 0
 ```
 
 
@@ -571,7 +569,6 @@ Loop through cell types:
       # covering the code block with try catch in the purpose of
       # catching error for a particular cell type combination inside any dataset
       result <- tryCatch({
-        
         dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
                                         tissue_ontology_term_id == datasetID[[2]] &
                                         cell_type_ontology_term_id == datasetID[[3]])
@@ -583,23 +580,10 @@ Loop through cell types:
           next
         }
         
-        # After subsetting, split the data into chunks by genes
-        gene.ids <- rownames(dataset@assays[[1]]@counts)
-        # split these gene IDs into chunks
-        chunks <- split(gene.ids, ceiling(seq_along(gene.ids)/chunk_size))
-        
-        for(i in seq_along(chunks)) {
-            print(paste0("index of chunk: ", i, "/", length(chunks)))
-            chunk_index <- i
-      
-            chunk <- chunks[[i]]
-            
-            # subset Seurat object based on the cells in the chunk
-            dataset_chunk <- dataset[chunk, ]
-            
-            # process it
-            mainProcessing(dataset_chunk)
-        }
+        # process it
+        time_main <- system.time(mainProcessing(dataset))
+        print(paste0("Time elapsed in secs: ", time_main["elapsed"]))
+    
       }, 
       
       # error handling part (currently only used for outputting related informations)
