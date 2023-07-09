@@ -348,7 +348,7 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID, idToName) {
+                             assayID, tissueID, cellTypeID, idToName, rsq) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
@@ -356,7 +356,8 @@ mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberO
   return(list(
     datasetBodySpecific = datasetBodySpecific, 
     resultTableSpecific = resultTableSpecific,
-    idToName = idToName
+    idToName = idToName,
+    r_squared_error = rsq
     ))
 }
 
@@ -383,6 +384,41 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
                                                   sign.threshold = 0.05,
                                                   MTmethod = "Bonferroni",
                                                   multipletRate = 0))
+}
+
+validationByUMICounts <- function(observedGeneCountsDF, nSamples, gammaLinearFitsDF, dispFunParamDF) {
+
+  # our own data generated from the dataset
+  # run: 5 and count > 10
+  estimates <- observedGeneCountsDF
+  estimates$estimated.counts <- NA
+
+  for(i in 1:nrow(estimates)){
+    exp.probs <- scPower::estimate.exp.prob.count.param(
+      nSamples = nSamples,
+      nCellsCt = estimates$num.cells[i] / nSamples,
+      meanCellCounts = estimates$meanUMI[i],
+      gamma.mixed.fits = gammaLinearFitsDF,
+      ct = estimates$cell.type[i],
+      disp.fun.param = dispFunParamDF,
+      min.counts = 10,
+      perc.indiv = 0.5
+    )
+    estimates$estimated.counts[i] <- round(sum(exp.probs))
+  }
+  
+  estimates$dataset <- "Training data set"
+  estimates$threshold <- "Training data set - Count > 10"
+
+  # Calculating R squared error
+  
+  # Fitting a linear regression model between estimated and expressed gene counts
+  model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
+
+  # Calculate the R-squared value
+  estimates$rsq <- summary(model)$r.squared
+  
+  return(estimates)
 }
 
 # Writing a data frame into a data table inside PostgreSQL database
@@ -437,6 +473,8 @@ mainProcessing <- function(dataset) {
       length(levels(dataset@meta.data$Sample))
     } else if (!is.null(dataset@meta.data$sample)) {
       length(levels(dataset@meta.data$sample))
+    } else if (!is.null(dataset@meta.data$`Sample ID`)) {
+      length(levels(dataset@meta.data$`Sample ID`))
     } else {
       stop("Neither Donor nor Sample nor sample found in the meta data.")
     }
@@ -482,6 +520,9 @@ mainProcessing <- function(dataset) {
   power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
   power[["idToName"]] <- idToName
   
+  # Validation part
+  estimates <- validationByUMICounts(observedGeneCountsDF, nSamples, gammaLinearFitsDF, dispFunParamDF)
+  
   # Descriptive parameters passed:
   #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
   #       resultTableSpecific: assayID, tissueID, cellTypeID
@@ -491,7 +532,8 @@ mainProcessing <- function(dataset) {
                                         length(levels(dataset$tissue_ontology_term_id)),
                                         length(levels(dataset$cell_type_ontology_term_id)),
                                         datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                        idToName)
+                                        idToName,
+                                        estimates$rsq)
   # Write into files as an output
   outputResults(descriptiveParams, "descriptiveParams")
   outputResults(geneRanks, "geneRanks")
