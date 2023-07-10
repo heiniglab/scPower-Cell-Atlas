@@ -17,9 +17,13 @@
   
   - **Collection Name**: Tabula Sapiens
   - **Dataset Name**: Tabula Sapiens - All Cells
-  - **Tissue**: 45 Tissues
+  - **Tissue**: 
+      <details> 
+        <summary> 45 Tissues </summary>
+          adipose tissue, anterior part of tongue, aorta, bladder organ, blood, bone marrow, cardiac atrium, cardiac ventricle, conjunctiva, cornea, coronary artery, endocrine pancreas, endometrium, exocrine pancreas, eye, inguinal lymph node, kidney, lacrimal gland, large intestine, liver, lung, lymph node, mammary gland, muscle of abdomen, muscle of pelvic diaphragm, muscle tissue, myometrium, parotid gland, posterior part of tongue, prostate gland, rectus abdominis muscle, retinal neural layer, sclera, skin of abdomen, skin of body, skin of chest, small intestine, spleen, subcutaneous adipose tissue, sublingual gland, thymus, tongue, trachea, uterus, vasculature
+      </details>
   - **Disease**: Normal
-  - **Assay**: 3 Assays
+  - **Assay**: 10x 3' v3, 10x 5' transcription profiling, Smart-seq2
   - **Organism**: Homo sapiens
   - **Cells**: 483.152
   - **Contact**: [Angela Pisco](angela.pisco@czbiohub.org)
@@ -32,9 +36,13 @@
   
   - **Collection Name**: Cross-tissue immune cell analysis reveals tissue-specific features in humans
   - **Dataset Name**: Global
-  - **Tissue**: 17 Tissues
+  - **Tissue**: 
+      <details>
+        <summary> 17 Tissues </summary>
+        blood, bone marrow, caecum, duodenum, ileum, jejunal epithelium, lamina propria, liver, lung, mesenteric lymph node, omentum, sigmoid colon, skeletal muscle tissue, spleen, thoracic lymph node, thymus, transverse colon
+      </details> 
   - **Disease**: Normal
-  - **Assay**: 3 Assays
+  - **Assay**: 10x 3' v3, 10x 5' v1, 10x 5' v2
   - **Organism**: Homo sapiens
   - **Cells**: 329.762
   - **Contact**: [Sarah Teichmann](st9@sanger.ac.uk)
@@ -47,7 +55,11 @@
   
   - **Collection Name**: Single-nucleus cross-tissue molecular reference maps to decipher disease gene function
   - **Dataset Name**: Single-nucleus cross-tissue molecular reference maps to decipher disease gene function
-  - **Tissue**: 8 Tissues
+  - **Tissue**: 
+      <details>
+        <summary> 8 Tissues </summary>
+        anterior wall of left ventricle, breast, esophagus muscularis mucosa, gastrocnemius, lingula of left lung, mucosa, prostate gland, skin of leg
+      </details> 
   - **Disease**: Normal
   - **Assay**: 10x 3' v2
   - **Organism**: Homo sapiens
