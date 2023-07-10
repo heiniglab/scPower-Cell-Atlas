@@ -23,9 +23,11 @@ pattern = r'"(Error in .+?)"'
 matches = re.findall(pattern, text, re.DOTALL)
 
 # Print the error messages
-for match in matches:
-    print(match)
+#for match in matches:
+    #print(match)
 
+# unique error messages
+unique_errors = list(set(matches))
 
-# for unique error messages
-print(list(set(matches)))
+for error in unique_errors:
+    print(error)
