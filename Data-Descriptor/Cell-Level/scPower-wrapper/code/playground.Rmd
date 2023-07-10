@@ -121,6 +121,18 @@ escapeQuotes <- function(json_str) {
   return(gsub("'", "''", json_str))
 }
 
+getNSamples <- function(dataset) {
+    sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
+
+  for (column in sampleColumnNames) {
+    if (!is.null(dataset@meta.data[[column]])) {
+      return(length(levels(dataset@meta.data[[column]])))
+    }
+  }
+  
+  stop("None of the specified columns found in the meta data.")
+}
+
 # Downsamples the reads for each molecule by the specified "prop",
 # using the information in "sample".
 # Please see: https://rdrr.io/bioc/DropletUtils/man/downsampleReads.html
@@ -464,25 +476,14 @@ mainProcessing <- function(dataset) {
     # Estimate the mean umi values per cell for each matrix
     meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
   }
-
+  
+  nSamples <- tryCatch(
+    getNSamples(dataset),
+    warning = function(w) { warning(w) },
+    error = function(e) { stop(e) }
+  )
+  
   # Counting observed expressed genes
-  nSamples <- tryCatch({
-    if(!is.null(dataset@meta.data$Donor)) {
-      length(levels(dataset@meta.data$Donor))
-    } else if (!is.null(dataset@meta.data$Sample)) {
-      length(levels(dataset@meta.data$Sample))
-    } else if (!is.null(dataset@meta.data$sample)) {
-      length(levels(dataset@meta.data$sample))
-    } else if (!is.null(dataset@meta.data$`Sample ID`)) {
-      length(levels(dataset@meta.data$`Sample ID`))
-    } else {
-      stop("Neither Donor nor Sample nor sample found in the meta data.")
-    }
-  }, warning = function(w) {
-    warning(w)
-  }, error = function(e) {
-    stop(e)
-  })
   expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
 
   # Estimation of negative binomial paramters for each gene
@@ -558,8 +559,8 @@ Preparation beforehand:
   connectionInstance <<- establishDBConnection(HOSTIP)
   
   # path of dataset location
-  setwd("C:/Users/Cem/Documents/Github/dataset")
-  datasetFilePath <- params$dataset_path
+  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
+  datasetFilePath <- paste0(rootPath, params$dataset_path)
 
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
