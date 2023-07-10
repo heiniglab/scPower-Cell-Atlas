@@ -360,7 +360,7 @@ mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expre
 # [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
 # [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
 mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
-                             assayID, tissueID, cellTypeID, idToName, rsq) {
+                             assayID, tissueID, cellTypeID, idToName) {
   
   datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
   resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
@@ -368,8 +368,7 @@ mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberO
   return(list(
     datasetBodySpecific = datasetBodySpecific, 
     resultTableSpecific = resultTableSpecific,
-    idToName = idToName,
-    r_squared_error = rsq
+    idToName = idToName
     ))
 }
 
@@ -422,14 +421,10 @@ validationByUMICounts <- function(observedGeneCountsDF, nSamples, gammaLinearFit
   estimates$dataset <- "Training data set"
   estimates$threshold <- "Training data set - Count > 10"
 
+  # Based on the correlation between estimated and real values
   # Calculating R squared error
-  
-  # Fitting a linear regression model between estimated and expressed gene counts
-  model <- lm(estimates$estimated.counts ~ estimates$expressed.genes)
+  estimates$rsq <- cor(estimates$estimated.counts, estimates$expressed.genes)^2
 
-  # Calculate the R-squared value
-  estimates$rsq <- summary(model)$r.squared
-  
   return(estimates)
 }
 
@@ -521,7 +516,7 @@ mainProcessing <- function(dataset) {
   power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
   power[["idToName"]] <- idToName
   
-  # Validation part
+  # Validation by UMI counts
   estimates <- validationByUMICounts(observedGeneCountsDF, nSamples, gammaLinearFitsDF, dispFunParamDF)
   
   # Descriptive parameters passed:
@@ -533,10 +528,10 @@ mainProcessing <- function(dataset) {
                                         length(levels(dataset$tissue_ontology_term_id)),
                                         length(levels(dataset$cell_type_ontology_term_id)),
                                         datasetID[[1]], datasetID[[2]], datasetID[[3]],
-                                        idToName,
-                                        estimates$rsq)
+                                        idToName)
   # Write into files as an output
   outputResults(descriptiveParams, "descriptiveParams")
+  outputResults(estimates, "estimates")
   outputResults(geneRanks, "geneRanks")
   outputResults(data.frame(idToName, gammaLinearFits), "gammaLinearFits")
   outputResults(data.frame(idToName, dispFunEstimation), "dispFunEstimation")
