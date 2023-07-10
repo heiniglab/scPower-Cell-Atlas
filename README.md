@@ -17,3 +17,6 @@ It will enable researchers to design the most powerful experiments for the ident
 ## Presented at:
 ``08 December 2022`` Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day <br>
 ``18 April 2023`` &emsp;&nbsp; RECOMB - 27th Annual International Conference on Research in Computational Molecular Biology
+
+## Resources
+contained in the project and their details can be found [here](https://github.com/Cem-Gulec/Helmholtz-Workspace/blob/main/Data-Descriptor/Cell-Level/scPower-wrapper/results/README.md).
