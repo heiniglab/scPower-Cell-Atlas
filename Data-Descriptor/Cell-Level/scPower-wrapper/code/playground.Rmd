@@ -492,21 +492,17 @@ mainProcessing <- function(dataset) {
   c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
   
   # Firstly arranging gamma linear fit values for each cell type
-  tmp <- gammaLinearFits
-  tmp$ct <- completeDatasetID
-  gammaLinearFitsDF <- rbind(gammaLinearFitsDF, tmp)
-  
+  gammaLinearFits$ct <- completeDatasetID
+
   # Then also arranging disp fun parameter values for each cell type
   tmp <- dispersion.function.estimation(dispParam)
   tmp$ct <- completeDatasetID
-  tmp <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
-  dispFunParamDF <- rbind(dispFunParamDF, tmp)
-  
+  dispFunParam <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
+
   # Collecting data for validation of the model
   observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
                                         meanUmi, expressedGenesDF$expressed.genes)
-  observedGeneCountsDF <- rbind(observedGeneCountsDF, observedGeneCounts)
-  
+
   # dispFunEstimation: asymptDisp, extraPois
   dispFunEstimation <- dispersion.function.estimation(dispParam)
   
@@ -517,7 +513,7 @@ mainProcessing <- function(dataset) {
   power[["idToName"]] <- idToName
   
   # Validation by UMI counts
-  estimates <- validationByUMICounts(observedGeneCountsDF, nSamples, gammaLinearFitsDF, dispFunParamDF)
+  estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
   
   # Descriptive parameters passed:
   #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
@@ -568,12 +564,6 @@ Preparation beforehand:
                                               wholeDataset@meta.data[[TISSUENAME]],
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
-  
-  # Gamma linear fit and dispersion values needed later for binding with scPower
-  # They are also used to estimate gene counts
-  observedGeneCountsDF <- data.frame()
-  gammaLinearFitsDF <- data.frame()
-  dispFunParamDF <- data.frame()
   
   expressedGenesDF <- data.frame()
   gammaFits <- data.frame()
