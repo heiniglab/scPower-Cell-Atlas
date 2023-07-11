@@ -15,7 +15,7 @@ title: |
 output: html_notebook
 ---
 
-<!-- when using another dataset, change: results & dataset path, num.genes.kept (mixed.gamma.estimation) -->
+<!-- when using another dataset, change: results & dataset path, num.genes.kept -->
 
 ---
 
@@ -297,7 +297,7 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 
     norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
     gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
-                                             num.genes.kept = 21000,
+                                             num.genes.kept = 31000,
                                              censoredPoint = censoredPoint)
     gamma.fit.temp$matrix <- name
     gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
@@ -630,7 +630,6 @@ Loop through cell types:
         
         errorDF <- data.frame(completeDatasetID,
                               idToName,
-                              chunk_index,
                               paste(e),
                               datasetBodySpecific,
                               cellCount)
