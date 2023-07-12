@@ -9,10 +9,21 @@ Previously this information was available only for selected cell types and tissu
 We systematically apply scPower wrapped into a data processing and data management infrastructure to obtain the required prior information on cell type specific gene expression distributions. Based on these systematic priors, a unified experimental design online resource will be established. <br>
 It will enable researchers to design the most powerful experiments for the identification of differential expression or eQTL in their respective application areas. In future work, this model will further be extended to allow for the optimal design of allele specific expression and perturbation experiments such as CROP-seq and Perturb-seq.
 
-## Folder Structure
-- /Backend: services created with Go and database scripts
-- /Data-Descriptor/Cell-Level: scPower wrapper and sfaira connection point
-- /Data-Descriptor/Collection-Level: cellxgene scrapper with both puppeteer and Go
+## 🗂 Repository Map  
+<pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┣━━ 📰 Data-Descriptor
+┃   ┣━━ Cell-Level: scPower wrapper and sfaira connection point
+┃   ┗━━ Collection-Level: cellxgene scrapper with both puppeteer and Go
+┃
+┣━━ 🔬 Experimentation: consists of useful scripts I use during the development of the project
+┃
+┣━━ 📦 Web-Server
+┃   ┣━━ Backend: services created with Go and database scripts
+┃   ┗━━ Frontend: web server created with Vue.js
+┃
+┣━━ 📄 Documentation
+    ┣━━ Presentations: done in journal clubs 
+    ┗━━ Project: presentations done related to the project
+</pre>
 
 ## Presented at:
 ``08 December 2022`` Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day <br>
