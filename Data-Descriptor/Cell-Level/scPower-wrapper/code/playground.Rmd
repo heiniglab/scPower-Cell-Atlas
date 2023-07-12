@@ -583,6 +583,8 @@ Main
 Loop through cell types:
 ```{r}
   for(datasetID in datasetCollectionCombinedID){
+      sink(paste0(params$results_path, "consoleOutput.txt"))
+      
       # datasetID: {[assayID], [tissueID], [cellTypeID]}
       completeDatasetID <- datasetID
       datasetID <- strsplit(datasetID, split = "_")[[1]]
