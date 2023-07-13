@@ -10,19 +10,22 @@ We systematically apply scPower wrapped into a data processing and data manageme
 It will enable researchers to design the most powerful experiments for the identification of differential expression or eQTL in their respective application areas. In future work, this model will further be extended to allow for the optimal design of allele specific expression and perturbation experiments such as CROP-seq and Perturb-seq.
 
 ## 🗂 Repository Map  
-<pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┣━━ 📰 Data-Descriptor
-┃   ┣━━ Cell-Level: scPower wrapper and sfaira connection point
-┃   ┗━━ Collection-Level: cellxgene scrapper with both puppeteer and Go
+<pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━ 📰 Data-Descriptor
+┃   ┣━━ 🧫 Cell-Level: scPower wrapper
+┃   ┃   ┣━━ code: main codes (.R and .Rmd) are contained here
+┃   ┃   ┗━━ results: dataset specific ones (descriptive parameters, estimations, errors, dispersion function estimation, gamma linear fits, gene ranks, power results) and
+┃   ┃                general results either across all datasets or some general assumptions for a group of them are contained here.
+┃   ┃
+┃   ┗━━ 🧬 Collection-Level: cellxgene scrapper with both puppeteer, Go and sfaira connection point
 ┃
-┣━━ 🔬 Experimentation: consists of useful scripts I use during the development of the project
+┣━━ 🔬 Experimentation: consists of useful scripts I use during the development of the project, also for plotting things
 ┃
 ┣━━ 📦 Web-Server
 ┃   ┣━━ Backend: services created with Go and database scripts
+┃   ┃
 ┃   ┗━━ Frontend: web server created with Vue.js
 ┃
-┣━━ 📄 Documentation
-    ┣━━ Presentations: done in journal clubs 
-    ┗━━ Project: presentations done related to the project
+┗━━ 📄 Documentation: presentations done related to the project
 </pre>
 
 ## Presented at:
