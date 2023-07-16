@@ -1,21 +1,19 @@
 ## Processing Detail
 
-| Dataset Label  | Success | Error | In Total | # assay | # tissue | # cell type |
+| Collection | Success | Error | In Total | # assay | # tissue | # cell type |
 | -------------- | ------- | ----- | -------- | ------- | -------- | ----------- | 
-| Skeletal Muscle| 391     | 19    | -        | -       | -        | -           |
-| Immune         | 369     | 31    | -        | -       | -        | -           |
-| Gtex           | 59      | 45    | -        | -       | -        | -           |
-| Prostate       | 25      | 0     | -        | -       | -        | -           |
-| Covid          | 23      | 3     | -        | -       | -        | -           |
-| Limb Muscle    | 9       | 0     | -        | -       | -        | -           |
-| Pancreas Small | 5       | 0     | -        | -       | -        | -           |
-| Pancreas       | 3       | 1     | -        | -       | -        | -           |
+| Tabula Sapiens | 391     | 19    | -        | -       | -        | -           |
+| Cross-Tissue Immune Cell Analysis         | 369     | 31    | -        | -       | -        | -           |
+| Mapping Disease Gene Function with Molecular Reference Maps | 59      | 45    | -        | -       | -        | -           |
+| Castration-Insensitive Epithelial Cells in the Proximal Prostate       | 25      | 0     | -        | -       | -        | -           |
+| COVID-19 Sampling in Immunodeficient Donors | 23      | 3     | -        | -       | -        | -           |
+| Tabula Muris Senis    | 9       | 0     | -        | -       | -        | -           |
+| Pancreatic Islet Cell Transcriptional Cross-Species Map  | 3       | 1     | -        | -       | -        | -           |
 
 ## Details about each dataset:
 <details>
-  <summary>Skeletal Muscle</summary>
+  <summary>Tabula Sapiens</summary>
   
-  - **Collection Name**: Tabula Sapiens
   - **Dataset Name**: Tabula Sapiens - All Cells
   - **Tissue**: 
       <details> 
@@ -32,9 +30,8 @@
 </details>
 
 <details>
-  <summary>Immune</summary>
+  <summary>Cross-tissue immune cell analysis reveals tissue-specific features in humans</summary>
   
-  - **Collection Name**: Cross-tissue immune cell analysis reveals tissue-specific features in humans
   - **Dataset Name**: Global
   - **Tissue**: 
       <details>
@@ -51,9 +48,8 @@
 </details>
 
 <details>
-  <summary>Gtex</summary>
+  <summary>Single-nucleus cross-tissue molecular reference maps to decipher disease gene function</summary>
   
-  - **Collection Name**: Single-nucleus cross-tissue molecular reference maps to decipher disease gene function
   - **Dataset Name**: Single-nucleus cross-tissue molecular reference maps to decipher disease gene function
   - **Tissue**: 
       <details>
@@ -70,9 +66,8 @@
 </details>
 
 <details>
-  <summary>Prostate</summary>
+  <summary>Urethral luminal epithelia are castration-insensitive cells of the proximal prostate</summary>
   
-  - **Collection Name**: Urethral luminal epithelia are castration-insensitive cells of the proximal prostate
   - **Dataset Name**: Urethral luminal epithelia are castration-insensitive cells of the proximal prostate - All Mouse Cells
   - **Tissue**: Prostate gland, Urethra
   - **Disease**: Normal
@@ -85,9 +80,8 @@
 </details>
 
 <details>
-  <summary>Covid</summary>
+  <summary>Sampling peripheral blood and matched nasal swabs from donors with prior immunodeficiencies and autoimmune conditions infected with SARS-CoV-2</summary>
   
-  - **Collection Name**: Sampling peripheral blood and matched nasal swabs from donors with prior immunodeficiencies and autoimmune conditions infected with SARS-CoV-2
   - **Dataset Name**: Autoimmunity PBMCs
   - **Tissue**: Blood
   - **Disease**: COVID-19
@@ -100,9 +94,8 @@
 </details>
 
 <details>
-  <summary>Limb Muscle</summary>
+  <summary>Tabula Muris Senis</summary>
   
-  - **Collection Name**: Tabula Muris Senis
   - **Dataset Name**: Limb muscle - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse - 10x
   - **Tissue**: Limb muscle
   - **Disease**: Normal
@@ -115,9 +108,8 @@
 </details>
 
 <details>
-  <summary>Pancreas</summary>
+  <summary>A transcriptional cross species map of pancreatic islet cells</summary>
   
-  - **Collection Name**: A transcriptional cross species map of pancreatic islet cells
   - **Dataset Name**: Human pancreatic islet cells
   - **Tissue**: Islet of Langerhans
   - **Disease**: Normal
