@@ -1,14 +1,14 @@
 ## Processing Detail
 
-| Collection | Success | Error | In Total | # assay | # tissue | # cell type |
-| -------------- | ------- | ----- | -------- | ------- | -------- | ----------- | 
-| Tabula Sapiens | 391     | 19    | -        | -       | -        | -           |
-| Cross-Tissue Immune Cell Analysis         | 369     | 31    | -        | -       | -        | -           |
-| Mapping Disease Gene Function with Molecular Reference Maps | 59      | 45    | -        | -       | -        | -           |
-| Castration-Insensitive Epithelial Cells in the Proximal Prostate       | 25      | 0     | -        | -       | -        | -           |
-| COVID-19 Sampling in Immunodeficient Donors | 23      | 3     | -        | -       | -        | -           |
-| Tabula Muris Senis    | 9       | 0     | -        | -       | -        | -           |
-| Pancreatic Islet Cell Transcriptional Cross-Species Map  | 3       | 1     | -        | -       | -        | -           |
+| Collection | Success | Error | Total Unique Instance | #Tissue | #Assay | #Cells |
+| ---------- | ------- | ----- | --------------- | ------ | ------- | --------- | 
+| Tabula Sapiens                                                   | 391     | 19    | 1156     | 45      | 3        | 483152      |
+| Cross-Tissue Immune Cell Analysis                                | 369     | 31    | 891      | 17      | 3        | 329762      |
+| Mapping Disease Gene Function with Molecular Reference Maps      | 59      | 45    | 121      | 8       | 1        | 209126      |
+| COVID-19 Sampling in Immunodeficient Donors                      | 23      | 3     | 26       | 1       | 1        | 97499       |
+| Castration-Insensitive Epithelial Cells in the Proximal Prostate | 25      | 0     | 32       | 2       | 2        | 47435       |
+| Tabula Muris Senis                                               | 9       | 0     | 9        | 1       | 1        | 28867       |
+| Pancreatic Islet Cell Transcriptional Cross-Species Map          | 3       | 1     | 4        | 1       | 1        | 26474       |
 
 ## Details about each dataset:
 <details>
@@ -66,20 +66,6 @@
 </details>
 
 <details>
-  <summary>Urethral luminal epithelia are castration-insensitive cells of the proximal prostate</summary>
-  
-  - **Dataset Name**: Urethral luminal epithelia are castration-insensitive cells of the proximal prostate - All Mouse Cells
-  - **Tissue**: Prostate gland, Urethra
-  - **Disease**: Normal
-  - **Assay**: 10x 3' v2, 10x 3' v3
-  - **Organism**: Mus musculus
-  - **Cells**: 47.435
-  - **Contact**: [Douglas Strand](Douglas.Strand@UTSouthwestern.edu)
-  - **Publication**: [Joseph et al. (2020) Prostate](https://doi.org/10.1002/pros.24020)
-  - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc)
-</details>
-
-<details>
   <summary>Sampling peripheral blood and matched nasal swabs from donors with prior immunodeficiencies and autoimmune conditions infected with SARS-CoV-2</summary>
   
   - **Dataset Name**: Autoimmunity PBMCs
@@ -91,6 +77,20 @@
   - **Contact**: [Roser Vento-Tormo](rv4@sanger.ac.uk)
   - **Publication**: [Chan Zuckerberg Initiative Single-Cell COVID-19 Consortia et al. (2020) medRxiv](https://doi.org/10.1101/2020.11.20.20227355)
   - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af)
+</details>
+
+<details>
+  <summary>Urethral luminal epithelia are castration-insensitive cells of the proximal prostate</summary>
+  
+  - **Dataset Name**: Urethral luminal epithelia are castration-insensitive cells of the proximal prostate - All Mouse Cells
+  - **Tissue**: Prostate gland, Urethra
+  - **Disease**: Normal
+  - **Assay**: 10x 3' v2, 10x 3' v3
+  - **Organism**: Mus musculus
+  - **Cells**: 47.435
+  - **Contact**: [Douglas Strand](Douglas.Strand@UTSouthwestern.edu)
+  - **Publication**: [Joseph et al. (2020) Prostate](https://doi.org/10.1002/pros.24020)
+  - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc)
 </details>
 
 <details>
