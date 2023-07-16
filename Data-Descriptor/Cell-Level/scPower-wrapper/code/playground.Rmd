@@ -126,7 +126,7 @@ getNSamples <- function(dataset) {
 
   for (column in sampleColumnNames) {
     if (!is.null(dataset@meta.data[[column]])) {
-      return(length(levels(dataset@meta.data[[column]])))
+      return(list(length(levels(dataset@meta.data[[column]])), column))
     }
   }
   
@@ -397,11 +397,11 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
                                                   multipletRate = 0))
 }
 
-validationByUMICounts <- function(observedGeneCountsDF, nSamples, gammaLinearFitsDF, dispFunParamDF) {
+validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam) {
 
   # our own data generated from the dataset
   # run: 5 and count > 10
-  estimates <- observedGeneCountsDF
+  estimates <- observedGeneCounts
   estimates$estimated.counts <- NA
 
   for(i in 1:nrow(estimates)){
@@ -409,9 +409,9 @@ validationByUMICounts <- function(observedGeneCountsDF, nSamples, gammaLinearFit
       nSamples = nSamples,
       nCellsCt = estimates$num.cells[i] / nSamples,
       meanCellCounts = estimates$meanUMI[i],
-      gamma.mixed.fits = gammaLinearFitsDF,
+      gamma.mixed.fits = gammaLinearFits,
       ct = estimates$cell.type[i],
-      disp.fun.param = dispFunParamDF,
+      disp.fun.param = dispFunParam,
       min.counts = 10,
       perc.indiv = 0.5
     )
@@ -472,7 +472,7 @@ mainProcessing <- function(dataset) {
     meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
   }
   
-  nSamples <- tryCatch(
+  c(nSamples, sampleName) %<-% tryCatch(
     getNSamples(dataset),
     warning = function(w) { warning(w) },
     error = function(e) { stop(e) }
