@@ -121,6 +121,7 @@ escapeQuotes <- function(json_str) {
   return(gsub("'", "''", json_str))
 }
 
+# field names are looked up and assigned statically
 getNSamples <- function(dataset) {
     sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
 
@@ -210,7 +211,7 @@ calculateGeneRanks <- function(count.matrix, idToName) {
 
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled, nSamples) {
+countObservedGenes <- function(counts.subsampled, nSamples, metadata) {
 
   print("Dimensions of each count matrices:")
   print(sapply(counts.subsampled, dim))
@@ -222,9 +223,16 @@ countObservedGenes <- function(counts.subsampled, nSamples) {
 
     count.matrix <- counts.subsampled[[name]]
 
-    # Create an annotation file (here containing only one cell type, but can be more)
-    annot.df <- data.frame(individual = paste0("S", rep(1:nSamples, length.out = ncol(count.matrix))),
-                            cell.type = rep("default_ct", ncol(count.matrix)))
+    # Check if the rows in the metadata match the columns in the count matrix
+    if(!all(colnames(count.matrix) %in% rownames(metadata))){
+      stop("The rows in the metadata do not match the columns in the count matrix.")
+    }
+    
+    # Ensure that the annotation dataframe is ordered correctly
+    annot.df <- metadata[colnames(count.matrix),]
+    # Rename columns to "individual" and "cell.type"
+    colnames(annot.df) <- c("individual", "cell.type")
+    rownames(annot.df) <- NULL
 
     # Reformat count matrix into 3d pseudobulk matrix
     pseudo.bulk <- create.pseudobulk(count.matrix, annot.df)
@@ -459,10 +467,10 @@ mainProcessing <- function(dataset) {
 
   counts <- dataset@assays$RNA@counts
   countsSubsampled <- subsampleIntoList(counts)
-  print(calculateZeroPerc(countsSubsampled$complete))
+  print(calculateZeroPerc(counts))
   
   # Calculating gene ranks
-  geneRanks <- calculateGeneRanks(countsSubsampled$complete, idToName) 
+  geneRanks <- calculateGeneRanks(counts, idToName) 
 
   censorPoints <- rep(NA, length(countsSubsampled))
   names(censorPoints) <- names(countsSubsampled)
@@ -479,7 +487,10 @@ mainProcessing <- function(dataset) {
   }
   
   # Counting observed expressed genes
-  expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples)
+  # required metadata information for annot.df inside counting observed genes step
+  # is provided statically
+  metadata <- dataset@meta.data[, c(sampleName, "cell_type")]
+  expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples, metadata)
 
   # Estimation of negative binomial paramters for each gene
   c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
@@ -500,6 +511,7 @@ mainProcessing <- function(dataset) {
   dispFunParam <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
 
   # Collecting data for validation of the model
+  # Some field names like "run", "evaluation" is assigned statically
   observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
                                         meanUmi, expressedGenesDF$expressed.genes)
 
@@ -514,6 +526,7 @@ mainProcessing <- function(dataset) {
   
   # Validation by UMI counts
   estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
+  estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq")]
   
   # Descriptive parameters passed:
   #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
