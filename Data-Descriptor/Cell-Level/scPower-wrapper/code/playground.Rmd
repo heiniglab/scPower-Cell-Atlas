@@ -15,7 +15,6 @@ title: |
 output: html_notebook
 ---
 
-<!-- when using another dataset, change: results & dataset path, num.genes.kept -->
 
 ---
 
@@ -122,6 +121,7 @@ escapeQuotes <- function(json_str) {
 }
 
 # field names are looked up and assigned statically
+# These are all "donor" and "sample" related ones from datasets at issue#1
 getNSamples <- function(dataset) {
     sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
 
@@ -211,7 +211,7 @@ calculateGeneRanks <- function(count.matrix, idToName) {
 
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled, nSamples, metadata) {
+countObservedGenes <- function(counts.subsampled, metadata) {
 
   print("Dimensions of each count matrices:")
   print(sapply(counts.subsampled, dim))
@@ -294,7 +294,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
 # p1=emfit@proportions[1]     p2=emfit@proportions[2]
 # s1=emfit@models[[2]]@shape  s2=emfit@models[[3]]@shape
 # r1=emfit@models[[2]]@rate   r2=emfit@models[[3]]@rate
-gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
+gammaMixedDistEstimation <- function(norm.mean.values, censor.points, num.genes.kept) {
 
   gamma.fits <- NULL
 
@@ -305,7 +305,7 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points) {
 
     norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
     gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
-                                             num.genes.kept = 31000,
+                                             num.genes.kept = num.genes.kept,
                                              censoredPoint = censoredPoint)
     gamma.fit.temp$matrix <- name
     gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
@@ -490,13 +490,15 @@ mainProcessing <- function(dataset) {
   # required metadata information for annot.df inside counting observed genes step
   # is provided statically
   metadata <- dataset@meta.data[, c(sampleName, "cell_type")]
-  expressedGenesDF <- countObservedGenes(countsSubsampled, nSamples, metadata)
+  expressedGenesDF <- countObservedGenes(countsSubsampled, metadata)
 
   # Estimation of negative binomial paramters for each gene
   c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
 
   # Estimation of a gamma mixed distribution over all means
-  gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints)
+  nExpressedGenes <- sum(normMeanValues[normMeanValues$matrix == "complete",]$mean != 0)
+  numGenesKept <- ceiling(nExpressedGenes / 100) * 100
+  gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
 
   # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
   # gammaLinearFits: parameter, intercept, meanUMI
