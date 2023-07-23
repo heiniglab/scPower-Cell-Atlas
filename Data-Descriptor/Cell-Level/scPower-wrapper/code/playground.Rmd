@@ -440,6 +440,22 @@ validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits,
   return(estimates)
 }
 
+calculateRMSE <- function(df) {
+  for (i in 1:nrow(df)) {
+    rmse_value <- sqrt(mean((df$expressed.genes[i] - df$estimated.genes[i])^2))
+    
+    if(df$name[i] == "complete") {
+      complete_RMSEs[[length(complete_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled75") {
+      subsampled75_RMSEs[[length(subsampled75_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled50") {
+      subsampled50_RMSEs[[length(subsampled50_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled25") {
+      subsampled25_RMSEs[[length(subsampled25_RMSEs) + 1]] <<- rmse_value
+    }
+  }
+}
+
 # Writing a data frame into a data table inside PostgreSQL database
 # Final design of the data tables:
 #     datasetBody table (descriptive parameters):  id, datasetBodySpecific, resultTableSpecific, idToName,
@@ -534,6 +550,11 @@ mainProcessing <- function(dataset) {
   estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
   estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
   
+  # calculating RMSE across all dataset
+  df <- data.frame(estimates$sample, estimates$expressed.genes, estimates$estimated.counts)
+  df <- setNames(df, c("name", "expressed.genes", "estimated.genes"))
+  calculateRMSE(df)
+  
   # Descriptive parameters passed:
   #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
   #       resultTableSpecific: assayID, tissueID, cellTypeID
@@ -595,15 +616,21 @@ Preparation beforehand:
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
+  
+  # RMSE values summarized across the different subsampled matrices
+  complete_RMSEs <- c()
+  subsampled75_RMSEs <- c()
+  subsampled50_RMSEs <- c()
+  subsampled25_RMSEs <- c()
 ```
 
 
 Main
 Loop through cell types:
 ```{r}
-  for(datasetID in datasetCollectionCombinedID){
-      sink(paste0(params$results_path, "consoleOutput.txt"))
+  sink(paste0(params$results_path, "consoleOutput.txt"))
       
+  for(datasetID in datasetCollectionCombinedID){
       # datasetID: {[assayID], [tissueID], [cellTypeID]}
       completeDatasetID <- datasetID
       datasetID <- strsplit(datasetID, split = "_")[[1]]
@@ -654,6 +681,13 @@ Loop through cell types:
         next
       }
   }
+
+  # Calculate the mean RMSE for each subsampling level
+  mean_RMSE_complete <- mean(unlist(complete_RMSEs))
+  mean_RMSE_subsampled75 <- mean(unlist(subsampled75_RMSEs))
+  mean_RMSE_subsampled50 <- mean(unlist(subsampled50_RMSEs))
+  mean_RMSE_subsampled25 <- mean(unlist(subsampled25_RMSEs))
+  outputResults(data.frame(mean_RMSE_complete, mean_RMSE_subsampled75, mean_RMSE_subsampled50, mean_RMSE_subsampled25), "RMSE_results")
   
   # Close the connection to the database
   dbDisconnect(connectionInstance)
