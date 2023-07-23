@@ -433,7 +433,10 @@ validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits,
   # Based on the correlation between estimated and real values
   # Calculating R squared error
   estimates$rsq <- cor(estimates$estimated.counts, estimates$expressed.genes)^2
-
+  
+  # as another evaluation metric, deviation for each entry
+  estimates$deviation <- abs(estimates$expressed.genes - estimates$estimated.counts) / estimates$expressed.genes
+  
   return(estimates)
 }
 
@@ -529,7 +532,7 @@ mainProcessing <- function(dataset) {
   
   # Validation by UMI counts
   estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
-  estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq")]
+  estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
   
   # Descriptive parameters passed:
   #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
