@@ -381,7 +381,7 @@ mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberO
 }
 
 # Power calculation: simplified gamma model without optimizing the read depth
-powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
+powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param, num.genes.kept) {
     
     # Setting up the cell type specification
     gamma.fits$ct <- "New_ct"
@@ -402,7 +402,8 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param) {
                                                   perc.indiv.expr = 0.5,
                                                   sign.threshold = 0.05,
                                                   MTmethod = "Bonferroni",
-                                                  multipletRate = 0))
+                                                  multipletRate = 0,
+                                                  nGenes = num.genes.kept))
 }
 
 validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam) {
@@ -523,7 +524,7 @@ mainProcessing <- function(dataset) {
   # Power calculation: simplified gamma model without optimizing the read depth 
   #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
   #       multipletFraction, ctCells, expressedGenes
-  power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation)
+  power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation, numGenesKept)
   power[["idToName"]] <- idToName
   
   # Validation by UMI counts
