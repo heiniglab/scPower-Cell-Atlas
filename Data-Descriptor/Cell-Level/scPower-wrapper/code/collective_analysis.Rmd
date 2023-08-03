@@ -5,7 +5,7 @@ params:
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
     
     results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
-    dataset_path: "lung_TheIntegratedHumanLungCellAtlas.rds"
+    dataset_path: "prostate_UrethralLuminalEpithelia_AllMouseCells.rds"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
