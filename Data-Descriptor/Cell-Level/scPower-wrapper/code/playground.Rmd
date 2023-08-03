@@ -435,7 +435,9 @@ validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits,
   estimates$rsq <- cor(estimates$estimated.counts, estimates$expressed.genes)^2
   
   # as another evaluation metric, deviation for each entry
-  estimates$deviation <- abs(estimates$expressed.genes - estimates$estimated.counts) / estimates$expressed.genes
+  deviation <- abs(estimates$expressed.genes - estimates$estimated.counts) / estimates$expressed.genes
+  estimates$deviation <- deviation
+  overallDeviation[[length(overallDeviation) + 1]] <<- deviation
   
   return(estimates)
 }
@@ -622,6 +624,7 @@ Preparation beforehand:
   subsampled75_RMSEs <- c()
   subsampled50_RMSEs <- c()
   subsampled25_RMSEs <- c()
+  overallDeviation <- c()
 ```
 
 
@@ -687,8 +690,13 @@ Loop through cell types:
   mean_RMSE_subsampled75 <- mean(unlist(subsampled75_RMSEs))
   mean_RMSE_subsampled50 <- mean(unlist(subsampled50_RMSEs))
   mean_RMSE_subsampled25 <- mean(unlist(subsampled25_RMSEs))
-  outputResults(data.frame(mean_RMSE_complete, mean_RMSE_subsampled75, mean_RMSE_subsampled50, mean_RMSE_subsampled25), "RMSE_results")
+  overall_mean_deviation <- mean(unlist(overallDeviation))
+  outputResults(data.frame(mean_RMSE_complete, mean_RMSE_subsampled75, mean_RMSE_subsampled50, 
+                           mean_RMSE_subsampled25, overall_mean_deviation), "RMSE_deviation_results")
   
+  # Reset sink 
+  sink()
+
   # Close the connection to the database
   dbDisconnect(connectionInstance)
   # Clean memory
