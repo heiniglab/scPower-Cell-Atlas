@@ -1,0 +1,704 @@
+---
+params: 
+    collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
+    dataset_name: "Mouse Fibromuscular Stromal Cells"
+    link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
+    
+    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
+    dataset_path: "prostate_UrethralLuminalEpithelia_AllMouseCells.rds"
+title: |
+  <h3>**Collection name:**</h3>
+  <span style='font-size:10pt'>`r params$collection_name`</span><br>
+  <h3>**Dataset name:**</h3>
+  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
+  <h3>[**Link**](`r params$link`)</h3>
+output: html_notebook
+---
+
+
+---
+
+Functions to be loaded:
+```{r}
+loadPackages <- function() {
+  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc",
+                "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
+                "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
+
+  suppressPackageStartupMessages(lapply(Packages, library, character.only = TRUE))
+
+  print("Packages are loaded successfully.")
+}
+
+# Flags do not have to be in order and each flag can have whitespaces between. 
+# But keywords has to be "hostIP", "assay", "tissue", "cellType"
+# An example usage:
+# Rscript main.R hostIP=[HOSTIP] assay=[assayName] tissue=[tissueName] cellType=[cellTypeName]
+handleFlagsTags <- function(argList) {
+
+  argSequence <- paste(unlist(argList), collapse = " ")
+
+  hostIPSequence <- str_extract(argSequence, "hostIP(\\s)*=(\\s)*[1-9]+.[0-9]+.[0-9]+.[0-9]+")
+  assaySequence <- str_extract(argSequence, "assay(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  tissueSequence <- str_extract(argSequence, "tissue(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+  cellTypeSequence <- str_extract(argSequence, "cellType(\\s)*=(\\s)*[a-zA-Z0-9_]+")
+
+  # arranging HOSTIP as a global variable
+  if(!is.na(hostIPSequence)) HOSTIP <<- strsplit(gsub(" ", "", hostIPSequence), split = "=")[[1]][[2]] else stop("hostIP not provided.")
+
+  # arranging assay, tissue and cell type names as a global variable
+  if(!is.na(assaySequence)) ASSAYNAME <<- strsplit(gsub(" ", "", assaySequence), split = "=")[[1]][[2]] else ASSAYNAME <<- "assay_ontology_term_id"
+  if(!is.na(tissueSequence)) TISSUENAME <<- strsplit(gsub(" ", "", tissueSequence), split = "=")[[1]][[2]] else TISSUENAME <<- "tissue_ontology_term_id"
+  if(!is.na(cellTypeSequence)) CELLTYPENAME <<- strsplit(gsub(" ", "", cellTypeSequence), split = "=")[[1]][[2]] else CELLTYPENAME <<- "cell_type_ontology_term_id"
+
+  print("Flags are arranged successfully.")
+}
+
+establishDBConnection <- function(hostIP) {
+  connectionInstance <- dbConnect(
+      Postgres(),
+      dbname = "todos",
+      host = toString(hostIP),
+      port = 5432,
+      user = "postgres",
+      password = "asdasd12x")
+
+  print("Connection to database established successfully.")
+  return(connectionInstance)
+}
+
+# Used for converting ontology ids such as: 
+# Cell Ontology, Experimental Factor Ontology and Uberon multi-species anatomy ontology
+convertIDtoName <- function(term_id_list) {
+    term_name_list <- list("efo", "uberon", "cl")
+    term_name_result <- list()
+    
+    for (i in seq_along(term_name_list)) {
+        # term is called by "rols" library which makes a query to Ontology Lookup Service (OLS)
+        current_name <- term(term_name_list[[i]], term_id_list[[i]])
+        
+        # Add the result to the output list
+        term_name_result[[i]] <- current_name@label
+    }
+    
+    return(term_name_result)
+}
+
+# Converting from AnnData to Seurat via h5Seurat
+convertH5Seurat <- function(file.name) {
+  converted <- Convert(file.name, dest = "h5seurat", overwrite = TRUE)
+
+  return(converted)
+}
+
+outputResults <- function(dataFrame, fileName) {
+  resultsPath <- params$results_path
+  fileName <- paste0(resultsPath, fileName, ".txt")
+  write.table(dataFrame, fileName, row.names = FALSE, append = TRUE)
+  write("\n", fileName, append = TRUE)
+}
+
+# clear everything from runtime memory
+# except specified variable string
+removeExcept <- function(except) {
+  objects_to_remove <- setdiff(ls(envir = parent.frame()), except)
+  rm(list = objects_to_remove, envir = parent.frame())
+}
+
+listWarnings <- function() {
+  warningList <- paste0(unlist(unique(names(last.warning))), collapse = "\n")
+  cat(warningList)
+}
+
+# converts two different identification information into a primary key to be used in database
+generateID <- function(resultTableSpecific, idToName) {
+  hash <- digest(paste0(resultTableSpecific, idToName), algo = "md5")
+  return(hash)
+}
+
+escapeQuotes <- function(json_str) {
+  return(gsub("'", "''", json_str))
+}
+
+# field names are looked up and assigned statically
+# These are all "donor" and "sample" related ones from datasets at issue#1
+getNSamples <- function(dataset) {
+    sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
+
+  for (column in sampleColumnNames) {
+    if (!is.null(dataset@meta.data[[column]])) {
+      return(list(length(levels(dataset@meta.data[[column]])), column))
+    }
+  }
+  
+  stop("None of the specified columns found in the meta data.")
+}
+
+# Downsamples the reads for each molecule by the specified "prop",
+# using the information in "sample".
+# Please see: https://rdrr.io/bioc/DropletUtils/man/downsampleReads.html
+# return: a list consisting of downsampled reads, proportions of 0.25, 0.5, 0.75 and complete
+subsampleIntoList <- function(counts) {
+  tmp <- vector("list", 4)
+  
+  tmp[[1]] <- counts
+
+  # Define the proportions
+  proportions <- c(0.75, 0.5, 0.25)
+  
+  # Loop over the proportions and fill the list
+  for(i in seq_along(proportions)){
+    subsample <- downsampleMatrix(counts, prop = proportions[i], bycol = TRUE)
+    
+    tmp[[i + 1]] <- subsample
+  }
+
+  # Name the list elements
+  names(tmp) <- c("complete", "subsampled75", "subsampled50", "subsampled25")
+
+  print("Subsampling process done successfully.")
+  return(tmp)
+}
+
+# Conversion from dgCMatrix (sparse matrix) to list
+sparseToMatrix <- function(sparseMatrix) {
+  # Get indices and values from sparse matrix
+  i <- sparseMatrix@i + 1
+  j <- rep(seq_len(ncol(sparseMatrix)), diff(sparseMatrix@p))
+  v <- sparseMatrix@x
+  
+  # Create a zero matrix of the correct dimensions
+  denseMatrix <- matrix(0, nrow = sparseMatrix@Dim[1], ncol = sparseMatrix@Dim[2])
+  
+  # Populate the non-zero entries
+  denseMatrix[cbind(i, j)] <- v
+  
+  # Assign row and column names
+  row.names(denseMatrix) <- sparseMatrix@Dimnames[[1]]
+  colnames(denseMatrix) <- sparseMatrix@Dimnames[[2]]
+  
+  return(denseMatrix)
+}
+
+# calculating sparsity of the count matrix
+calculateZeroPerc <- function(counts) {
+  zeros <- sum(counts == 0)
+  non_zeros <- sum(counts != 0)
+  total <- length(counts)
+  return(c(zero_perc = zeros/total * 100, non_zero_perc = non_zeros/total * 100))
+}
+
+calculateGeneRanks <- function(count.matrix, idToName) {
+  count.matrix <- sparseToMatrix(count.matrix)
+    
+  # To speed up computation, remove all 0 genes
+  count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
+  
+  # Normalize by count per cell
+  count.matrix <- t(t(count.matrix) / colSums(count.matrix))
+  
+  # Randomly select a fraction of the gene to be significant DE genes
+  sign.genes <- rownames(count.matrix)[1:300]
+  
+  # Calculate gene ranks
+  gene.ranks <- gene.rank.calculation(count.matrix, sign.genes)
+  
+  # Indicator to distinguish different list of elements belongs to different cell type results
+  gene.ranks[["indicator"]] <- idToName
+  
+  return(gene.ranks)
+}
+
+# return: a data frame consisting of:
+# matrix titles, number of cells and expressed gene counts
+countObservedGenes <- function(counts.subsampled, metadata) {
+
+  print("Dimensions of each count matrices:")
+  print(sapply(counts.subsampled, dim))
+
+  expressed.genes.df <- NULL
+
+  # Iterate over each count matrix
+  for(name in names(counts.subsampled)){
+
+    count.matrix <- counts.subsampled[[name]]
+
+    # Check if the rows in the metadata match the columns in the count matrix
+    if(!all(colnames(count.matrix) %in% rownames(metadata))){
+      stop("The rows in the metadata do not match the columns in the count matrix.")
+    }
+    
+    # Ensure that the annotation dataframe is ordered correctly
+    annot.df <- metadata[colnames(count.matrix),]
+    # Rename columns to "individual" and "cell.type"
+    colnames(annot.df) <- c("individual", "cell.type")
+    rownames(annot.df) <- NULL
+
+    # Reformat count matrix into 3d pseudobulk matrix
+    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df)
+
+    # Calculate expressed genes in the pseudobulk matrix
+    # threshold of more than 3 counts in more 50% of the individuals
+    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts = 3, perc.indiv = 0.5)
+
+    # Get the number of expressed genes
+    num.expressed.genes <- nrow(expressed.genes)
+
+    # Save expressed genes
+    expressed.genes.df <- rbind(expressed.genes.df,
+                                data.frame(matrix = name,
+                                           num.cells = ncol(count.matrix),
+                                           expressed.genes = num.expressed.genes))
+  }
+
+  print("Counting process done successfully.")
+  return(expressed.genes.df)
+}
+
+# Estimation of negative binomial parameters for each gene
+# return: a list with three elements: the normalized mean values,
+# the dispersion values and the parameters of the mean-dispersion function fitted from DESeq
+negBinomParamEstimation <- function(counts.subsampled) {
+
+  # Data frame with normalized mean values
+  norm.mean.values <- NULL
+
+  # Parameter of the mean - dispersion function
+  disp.param <- NULL
+
+  for(name in names(counts.subsampled)){
+    # Converting from sparse matrix to normal one
+    counts.subsampled.converted <- sparseToMatrix(counts.subsampled[[name]])
+    temp <- nbinom.estimation(counts.subsampled.converted, sizeFactorMethod = "poscounts")
+
+    # Save the normalized mean values
+    norm.mean.values.temp <- temp[[1]]
+    norm.mean.values.temp$matrix <- name
+    norm.mean.values <- rbind(norm.mean.values, norm.mean.values.temp)
+
+    # Save the parameter of the mean-dispersion function
+    disp.param.temp <- temp[[3]]
+    disp.param.temp$matrix <- name
+    disp.param <- rbind(disp.param, disp.param.temp)
+  }
+
+  # First rows of the data frame with normalized mean values
+  head(norm.mean.values)
+
+  print("Estimation of negative binomial parameters done successfully.")
+  return(list(norm.mean.values, disp.param))
+}
+
+# Estimation of a gamma mixed distribution over all means
+# return: a data frame consisting of p1, p2, s1, s2, r1 and r2
+# p1=emfit@proportions[1]     p2=emfit@proportions[2]
+# s1=emfit@models[[2]]@shape  s2=emfit@models[[3]]@shape
+# r1=emfit@models[[2]]@rate   r2=emfit@models[[3]]@rate
+gammaMixedDistEstimation <- function(norm.mean.values, censor.points, num.genes.kept) {
+
+  gamma.fits <- NULL
+
+  for(name in unique(norm.mean.values$matrix)){
+
+    # Number of cells per cell type as censoring point
+    censoredPoint <- censor.points[name]
+
+    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
+    gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
+                                             num.genes.kept = num.genes.kept,
+                                             censoredPoint = censoredPoint)
+    gamma.fit.temp$matrix <- name
+    gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
+  }
+
+  print("Estimation of a gamma mixed distribution done successfully.")
+  return(gamma.fits)
+}
+
+# Comparison of gamma mixed fits with original means
+compareGammaFixedFits <- function(norm.mean.values, gamma.fits) {
+  g <- visualize.gamma.fits(norm.mean.values$mean[norm.mean.values$matrix == "complete"],
+                            gamma.fits[gamma.fits$matrix == "complete",],
+                            nGenes = 21000)
+  print(g)
+}
+
+# Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+# return: umi values (a data frame of mean UMIs for each subsample) and
+# gamma linear fits (a data frame of )
+parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
+
+  umi.values <- data.frame(mean.umi = mean.umi.counts, matrix = names(mean.umi.counts))
+  
+  gamma.fits <- merge(gamma.fits, umi.values, by = "matrix")
+
+  # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
+  gamma.fits <- convert.gamma.parameters(gamma.fits)
+
+  visualizeLinearRelation(gamma.fits)
+
+  # Fit relationship between gamma parameters and UMI values
+  gamma.linear.fits <- umi.gamma.relation(gamma.fits)
+
+  print(gamma.linear.fits)
+
+  print("Parameterization of the gamma fits done successfully.")
+  return(list(umi.values, gamma.linear.fits, gamma.fits))
+}
+
+# Visualize the linear relationship between gamma parameters and UMI values in plots
+visualizeLinearRelation <- function(gamma.fits) {
+  plot.values <- melt(gamma.fits, id.vars = c("matrix", "mean.umi"))
+  plot.values <- plot.values[plot.values$variable %in% c("mean1", "mean2", "sd1", "sd2", "p1", "p2"),]
+  ggplot(plot.values, aes(x = mean.umi, y = value)) +
+         geom_point() +
+         geom_line() +
+         facet_wrap(~variable, ncol = 2, scales = "free")
+}
+
+mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
+  resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
+                                   expressedGenes, meanUmi, evaluation)
+  rownames(resultingDataFrame) <- NULL
+  colnames(resultingDataFrame) <- c('run', 'sample', 'cell.type', 'num.cells', 'expressed.genes', 'meanUMI', 'evaluation')
+
+  return(resultingDataFrame)
+}
+
+# [cellCount]_[#assays]_[#tissues]_[#cellTypes]: single dataset specific distinguisher
+# [assayID]_[tissueID]_[cellTypeID]: result table specific distinguisher
+mergeDescription <- function(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, 
+                             assayID, tissueID, cellTypeID, idToName) {
+  
+  datasetBodySpecific <- paste(cellCount, numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+  resultTableSpecific <- paste(assayID, tissueID, cellTypeID, sep = "_")
+
+  return(list(
+    datasetBodySpecific = datasetBodySpecific, 
+    resultTableSpecific = resultTableSpecific,
+    idToName = idToName
+    ))
+}
+
+# Power calculation: simplified gamma model without optimizing the read depth
+powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param, num.genes.kept) {
+    
+    # Setting up the cell type specification
+    gamma.fits$ct <- "New_ct"
+    disp.fun.param$ct <- "New_ct"
+    
+    return(power.sameReadDepth.restrictedDoublets(nSamples = nSamples, 
+                                                  nCells = nCells,
+                                                  ct.freq = 1, 
+                                                  type = "eqtl",
+                                                  ref.study = scPower::eqtl.ref.study,
+                                                  ref.study.name = "Blueprint (Monocytes)",
+                                                  cellsPerLane = nCells,
+                                                  gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
+                                                  ct = "New_ct", 
+                                                  disp.fun.param = disp.fun.param,
+                                                  mappingEfficiency = 0.8,
+                                                  min.UMI.counts = 3,
+                                                  perc.indiv.expr = 0.5,
+                                                  sign.threshold = 0.05,
+                                                  MTmethod = "Bonferroni",
+                                                  multipletRate = 0,
+                                                  nGenes = num.genes.kept))
+}
+
+validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam) {
+
+  # our own data generated from the dataset
+  # run: 5 and count > 10
+  estimates <- observedGeneCounts
+  estimates$estimated.counts <- NA
+
+  for(i in 1:nrow(estimates)){
+    exp.probs <- scPower::estimate.exp.prob.count.param(
+      nSamples = nSamples,
+      nCellsCt = estimates$num.cells[i] / nSamples,
+      meanCellCounts = estimates$meanUMI[i],
+      gamma.mixed.fits = gammaLinearFits,
+      ct = estimates$cell.type[i],
+      disp.fun.param = dispFunParam,
+      min.counts = 10,
+      perc.indiv = 0.5
+    )
+    estimates$estimated.counts[i] <- round(sum(exp.probs))
+  }
+  
+  estimates$dataset <- "Training data set"
+  estimates$threshold <- "Training data set - Count > 10"
+
+  # Based on the correlation between estimated and real values
+  # Calculating R squared error
+  estimates$rsq <- cor(estimates$estimated.counts, estimates$expressed.genes)^2
+  
+  # as another evaluation metric, deviation for each entry
+  deviation <- abs(estimates$expressed.genes - estimates$estimated.counts) / estimates$expressed.genes
+  estimates$deviation <- deviation
+  overallDeviation[[length(overallDeviation) + 1]] <<- deviation
+  
+  return(estimates)
+}
+
+calculateRMSE <- function(df) {
+  for (i in 1:nrow(df)) {
+    rmse_value <- sqrt(mean((df$expressed.genes[i] - df$estimated.genes[i])^2))
+    
+    if(df$name[i] == "complete") {
+      complete_RMSEs[[length(complete_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled75") {
+      subsampled75_RMSEs[[length(subsampled75_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled50") {
+      subsampled50_RMSEs[[length(subsampled50_RMSEs) + 1]] <<- rmse_value
+    } else if(df$name[i] == "subsampled25") {
+      subsampled25_RMSEs[[length(subsampled25_RMSEs) + 1]] <<- rmse_value
+    }
+  }
+}
+
+# Writing a data frame into a data table inside PostgreSQL database
+# Final design of the data tables:
+#     datasetBody table (descriptive parameters):  id, datasetBodySpecific, resultTableSpecific, idToName,
+#                                                  gammaLinearFits, dispFunEstimation, geneRanks, powerResults
+#     downloadBody table
+#     result tables: gammaLinearFits, dispFunEstimation, geneRanks, powerResults
+#                    estimates (estimating gene counts) & rsq (R squared error rate of the estimate)
+# Data table names: datasetBody       (8 fields)
+#                   downloadBody      (16     ")
+#                   gammaLinearFits   (4      ")
+#                   dispFunEstimation (3      ")
+#                   geneRanks         (4      ")
+#                   powerResults      (11     ")
+#                   estimates         (12 + 1 ")
+writeToDatabase <- function(data.frame, table.name, append = TRUE) {
+  dbWriteTable(connectionInstance, table.name, data.frame, append = append)
+}
+
+mainProcessing <- function(dataset) {
+  numberOfAssays <- length(levels(dataset$assay_ontology_term_id))
+  numberOfTissues <- length(levels(dataset$tissue_ontology_term_id))
+  numberOfCellTypes <- length(levels(dataset$cell_type_ontology_term_id))
+  
+  c(nSamples, sampleName) %<-% tryCatch(
+    getNSamples(dataset),
+    warning = function(w) { warning(w) },
+    error = function(e) { stop(e) }
+  )
+
+  counts <- dataset@assays$RNA@counts
+  countsSubsampled <- subsampleIntoList(counts)
+  print(calculateZeroPerc(counts))
+  
+  # Calculating gene ranks
+  geneRanks <- calculateGeneRanks(counts, idToName) 
+
+  censorPoints <- rep(NA, length(countsSubsampled))
+  names(censorPoints) <- names(countsSubsampled)
+  
+  meanUmi <- rep(NA, length(countsSubsampled))
+  names(meanUmi) <- names(countsSubsampled)
+
+  for(matrixName in names(countsSubsampled)) {
+    # Number of cells per cell type as censoring point
+    censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
+
+    # Estimate the mean umi values per cell for each matrix
+    meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
+  }
+  
+  # Counting observed expressed genes
+  # required metadata information for annot.df inside counting observed genes step
+  # is provided statically
+  metadata <- dataset@meta.data[, c(sampleName, "cell_type")]
+  expressedGenesDF <- countObservedGenes(countsSubsampled, metadata)
+
+  # Estimation of negative binomial paramters for each gene
+  c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+
+  # Estimation of a gamma mixed distribution over all means
+  nExpressedGenes <- sum(normMeanValues[normMeanValues$matrix == "complete",]$mean != 0)
+  numGenesKept <- ceiling(nExpressedGenes / 100) * 100
+  gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
+
+  # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+  # gammaLinearFits: parameter, intercept, meanUMI
+  c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+  
+  # Firstly arranging gamma linear fit values for each cell type
+  gammaLinearFits$ct <- completeDatasetID
+
+  # Then also arranging disp fun parameter values for each cell type
+  tmp <- dispersion.function.estimation(dispParam)
+  tmp$ct <- completeDatasetID
+  dispFunParam <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
+
+  # Collecting data for validation of the model
+  # Some field names like "run", "evaluation" is assigned statically
+  observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
+                                        meanUmi, expressedGenesDF$expressed.genes)
+
+  # dispFunEstimation: asymptDisp, extraPois
+  dispFunEstimation <- dispersion.function.estimation(dispParam)
+  
+  # Power calculation: simplified gamma model without optimizing the read depth 
+  #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
+  #       multipletFraction, ctCells, expressedGenes
+  power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation, numGenesKept)
+  power[["idToName"]] <- idToName
+  
+  # Validation by UMI counts
+  estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
+  estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
+  
+  # calculating RMSE across all dataset
+  df <- data.frame(estimates$sample, estimates$expressed.genes, estimates$estimated.counts)
+  df <- setNames(df, c("name", "expressed.genes", "estimated.genes"))
+  calculateRMSE(df)
+  
+  # Descriptive parameters passed:
+  #       datasetBodySpecific: cellCount, #assays, #tissues, #cellTypes,
+  #       resultTableSpecific: assayID, tissueID, cellTypeID
+  #       idToName: assayName, tissueName, cellTypeName (converted from ontology ids)
+  descriptiveParams <- mergeDescription(cellCount,
+                                        length(levels(dataset$assay_ontology_term_id)),
+                                        length(levels(dataset$tissue_ontology_term_id)),
+                                        length(levels(dataset$cell_type_ontology_term_id)),
+                                        datasetID[[1]], datasetID[[2]], datasetID[[3]],
+                                        idToName)
+  # Write into files as an output
+  outputResults(descriptiveParams, "descriptiveParams")
+  outputResults(estimates, "estimates")
+  outputResults(geneRanks, "geneRanks")
+  outputResults(data.frame(idToName, gammaLinearFits), "gammaLinearFits")
+  outputResults(data.frame(idToName, dispFunEstimation), "dispFunEstimation")
+  outputResults(power, "powerResults")
+  
+  # Write into database
+  #writeToDatabase(descriptiveParams, "descriptiveParams")
+  #writeToDatabase(geneRanks, "geneRanks")
+  #writeToDatabase(gammaLinearFits, "gammaLinearFits")
+  #writeToDatabase(dispFunEstimation, "dispFunEstimation")
+  #writeToDatabase(power, "powerResults")
+}
+```
+
+
+Preparation beforehand:
+```{r}
+  loadPackages()
+  handleFlagsTags(list("hostIP=127.0.0.1"))
+  connectionInstance <<- establishDBConnection(HOSTIP)
+  
+  # path of dataset location
+  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
+  datasetFilePath <- paste0(rootPath, params$dataset_path)
+
+  # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
+  # For reading .rds      file: readRDS(datasetFilePath)
+  memory.limit(999999)
+  wholeDataset <- readRDS(datasetFilePath)
+  print("Dataset loaded successfully.")
+
+  # Split for each unique singular assay, tissue, cell type combination
+  datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
+                                              wholeDataset@meta.data[[TISSUENAME]],
+                                              wholeDataset@meta.data[[CELLTYPENAME]],
+                                              sep = "_"))
+  
+  expressedGenesDF <- data.frame()
+  gammaFits <- data.frame()
+  gammaLinearFits <- data.frame()
+  dispFunEstimation <- data.frame()
+  power <- data.frame()
+  
+  numberOfAssays <- 0
+  numberOfTissues <- 0
+  numberOfCellTypes <- 0
+  idToName <- ""
+  cellCount <- 0
+  
+  # RMSE values summarized across the different subsampled matrices
+  complete_RMSEs <- c()
+  subsampled75_RMSEs <- c()
+  subsampled50_RMSEs <- c()
+  subsampled25_RMSEs <- c()
+  overallDeviation <- c()
+```
+
+
+Main
+Loop through cell types:
+```{r}
+  sink(paste0(params$results_path, "consoleOutput.txt"))
+      
+  for(datasetID in datasetCollectionCombinedID){
+      # datasetID: {[assayID], [tissueID], [cellTypeID]}
+      completeDatasetID <- datasetID
+      datasetID <- strsplit(datasetID, split = "_")[[1]]
+      
+      indexOnCollection <- which(sapply(datasetCollectionCombinedID, function(x) x == completeDatasetID))
+      print(paste0("index of dataset: ", indexOnCollection, "/", length(datasetCollectionCombinedID)))
+      
+      # ontology ids converted to their ontology names and concatenated
+      idToName <- paste(convertIDtoName(datasetID), collapse="_")
+    
+  
+      # covering the code block with try catch in the purpose of
+      # catching error for a particular cell type combination inside any dataset
+      result <- tryCatch({
+        dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                        tissue_ontology_term_id == datasetID[[2]] &
+                                        cell_type_ontology_term_id == datasetID[[3]])
+        
+        # cell count threshold
+        # if under 50, skip to the next sample
+        cellCount <- dataset@assays$RNA@counts@Dim[[2]]
+        if(cellCount < 50) {
+          next
+        }
+        
+        # process it
+        time_main <- system.time(mainProcessing(dataset))
+        print(paste0("Time elapsed in secs: ", time_main["elapsed"]))
+    
+      }, 
+      
+      # error handling part (currently only used for outputting related informations)
+      error = function(e) {
+        datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+        
+        errorDF <- data.frame(completeDatasetID,
+                              idToName,
+                              paste(e),
+                              datasetBodySpecific,
+                              cellCount)
+
+        colnames(errorDF)[3] <- "errorMessage"
+        outputResults(errorDF, "error")
+      })
+      
+       # skip current iteration of the loop if an error occurs
+      if (inherits(result, "try-error")) {
+        next
+      }
+  }
+
+  # Calculate the mean RMSE for each subsampling level
+  mean_RMSE_complete <- mean(unlist(complete_RMSEs))
+  mean_RMSE_subsampled75 <- mean(unlist(subsampled75_RMSEs))
+  mean_RMSE_subsampled50 <- mean(unlist(subsampled50_RMSEs))
+  mean_RMSE_subsampled25 <- mean(unlist(subsampled25_RMSEs))
+  overall_mean_deviation <- mean(unlist(overallDeviation))
+  outputResults(data.frame(mean_RMSE_complete, mean_RMSE_subsampled75, mean_RMSE_subsampled50, 
+                           mean_RMSE_subsampled25, overall_mean_deviation), "RMSE_deviation_results")
+  
+  # Reset sink 
+  sink()
+
+  # Close the connection to the database
+  dbDisconnect(connectionInstance)
+  # Clean memory
+  gc()
+```
