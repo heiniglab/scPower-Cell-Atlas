@@ -633,56 +633,52 @@ Loop through cell types:
 ```{r}
   sink(paste0(params$results_path, "consoleOutput.txt"))
       
-  for(datasetID in datasetCollectionCombinedID){
-      # datasetID: {[assayID], [tissueID], [cellTypeID]}
-      completeDatasetID <- datasetID
-      datasetID <- strsplit(datasetID, split = "_")[[1]]
-      
-      indexOnCollection <- which(sapply(datasetCollectionCombinedID, function(x) x == completeDatasetID))
-      print(paste0("index of dataset: ", indexOnCollection, "/", length(datasetCollectionCombinedID)))
-      
-      # ontology ids converted to their ontology names and concatenated
-      idToName <- paste(convertIDtoName(datasetID), collapse="_")
-    
-  
-      # covering the code block with try catch in the purpose of
-      # catching error for a particular cell type combination inside any dataset
-      result <- tryCatch({
-        dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
-                                        tissue_ontology_term_id == datasetID[[2]] &
-                                        cell_type_ontology_term_id == datasetID[[3]])
-        
-        # cell count threshold
-        # if under 50, skip to the next sample
-        cellCount <- dataset@assays$RNA@counts@Dim[[2]]
-        if(cellCount < 50) {
-          next
-        }
-        
-        # process it
-        time_main <- system.time(mainProcessing(dataset))
-        print(paste0("Time elapsed in secs: ", time_main["elapsed"]))
-    
-      }, 
-      
-      # error handling part (currently only used for outputting related informations)
-      error = function(e) {
-        datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
-        
-        errorDF <- data.frame(completeDatasetID,
-                              idToName,
-                              paste(e),
-                              datasetBodySpecific,
-                              cellCount)
+  datasetID <- datasetCollectionCombinedID[[1]]
 
-        colnames(errorDF)[3] <- "errorMessage"
-        outputResults(errorDF, "error")
-      })
-      
-       # skip current iteration of the loop if an error occurs
-      if (inherits(result, "try-error")) {
-        next
-      }
+  # datasetID: {[assayID], [tissueID], [cellTypeID]}
+  completeDatasetID <- datasetID
+  datasetID <- strsplit(datasetID, split = "_")[[1]]
+  
+  # ontology ids converted to their ontology names and concatenated
+  idToName <- paste(convertIDtoName(datasetID), collapse="_")
+
+
+  # covering the code block with try catch in the purpose of
+  # catching error for a particular cell type combination inside any dataset
+  result <- tryCatch({
+    dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                    tissue_ontology_term_id == datasetID[[2]] &
+                                    cell_type_ontology_term_id == datasetID[[3]])
+    
+    # cell count threshold
+    # if under 50, skip to the next sample
+    cellCount <- dataset@assays$RNA@counts@Dim[[2]]
+    if(cellCount < 50) {
+      next
+    }
+    
+    # process it
+    time_main <- system.time(mainProcessing(dataset))
+    print(paste0("Time elapsed in secs: ", time_main["elapsed"]))
+  }, 
+  
+  # error handling part (currently only used for outputting related informations)
+  error = function(e) {
+    datasetBodySpecific <- paste(numberOfAssays, numberOfTissues, numberOfCellTypes, sep = "_")
+    
+    errorDF <- data.frame(completeDatasetID,
+                          idToName,
+                          paste(e),
+                          datasetBodySpecific,
+                          cellCount)
+
+    colnames(errorDF)[3] <- "errorMessage"
+    outputResults(errorDF, "error")
+  })
+  
+   # skip current iteration of the loop if an error occurs
+  if (inherits(result, "try-error")) {
+    next
   }
 
   # Calculate the mean RMSE for each subsampling level

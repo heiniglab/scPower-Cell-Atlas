@@ -1,22 +1,9 @@
 ---
 params: 
-    collection_name: "Urethral luminal epithelia are castration-insensitive cells of the proximal prostate"
-    dataset_name: "Mouse Fibromuscular Stromal Cells"
-    link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
-    
     results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
-    dataset_path: "prostate_UrethralLuminalEpithelia_AllMouseCells.rds"
-title: |
-  <h3>**Collection name:**</h3>
-  <span style='font-size:10pt'>`r params$collection_name`</span><br>
-  <h3>**Dataset name:**</h3>
-  <span style='font-size:10pt'>`r params$dataset_name`</span><br>
-  <h3>[**Link**](`r params$link`)</h3>
-output: html_notebook
+    dataset_path: "muscle_TabulaSapiens_AllCells.rds"
 ---
 
-
----
 
 Functions to be loaded:
 ```{r}
@@ -591,13 +578,11 @@ Preparation beforehand:
   handleFlagsTags(list("hostIP=127.0.0.1"))
   connectionInstance <<- establishDBConnection(HOSTIP)
   
-  # path of dataset location
-  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
-  datasetFilePath <- paste0(rootPath, params$dataset_path)
-
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
+  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
+  datasetFilePath <- paste0(rootPath, params$dataset_path)
   wholeDataset <- readRDS(datasetFilePath)
   print("Dataset loaded successfully.")
 
@@ -607,24 +592,26 @@ Preparation beforehand:
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
   
-  expressedGenesDF <- data.frame()
-  gammaFits <- data.frame()
-  gammaLinearFits <- data.frame()
-  dispFunEstimation <- data.frame()
-  power <- data.frame()
-  
+  # global variables to be saved in different occasions
   numberOfAssays <- 0
   numberOfTissues <- 0
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
   
-  # RMSE values summarized across the different subsampled matrices
+  # RMSE values and overall deviation summarized across the different subsampled matrices
   complete_RMSEs <- c()
   subsampled75_RMSEs <- c()
   subsampled50_RMSEs <- c()
   subsampled25_RMSEs <- c()
   overallDeviation <- c()
+  
+  # global data frames to be saved in different occasions
+  expressedGenesDF <- data.frame()
+  gammaFits <- data.frame()
+  gammaLinearFits <- data.frame()
+  dispFunEstimation <- data.frame()
+  power <- data.frame()
 ```
 
 
@@ -634,6 +621,7 @@ Loop through cell types:
   sink(paste0(params$results_path, "consoleOutput.txt"))
       
   for(datasetID in datasetCollectionCombinedID){
+      
       # datasetID: {[assayID], [tissueID], [cellTypeID]}
       completeDatasetID <- datasetID
       datasetID <- strsplit(datasetID, split = "_")[[1]]
@@ -644,7 +632,6 @@ Loop through cell types:
       # ontology ids converted to their ontology names and concatenated
       idToName <- paste(convertIDtoName(datasetID), collapse="_")
     
-  
       # covering the code block with try catch in the purpose of
       # catching error for a particular cell type combination inside any dataset
       result <- tryCatch({
