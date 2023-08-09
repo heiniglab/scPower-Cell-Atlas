@@ -590,14 +590,12 @@ Preparation beforehand:
   loadPackages()
   handleFlagsTags(list("hostIP=127.0.0.1"))
   connectionInstance <<- establishDBConnection(HOSTIP)
-  
-  # path of dataset location
-  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
-  datasetFilePath <- paste0(rootPath, params$dataset_path)
 
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
+  rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
+  datasetFilePath <- paste0(rootPath, params$dataset_path)
   wholeDataset <- readRDS(datasetFilePath)
   print("Dataset loaded successfully.")
 
@@ -607,24 +605,26 @@ Preparation beforehand:
                                               wholeDataset@meta.data[[CELLTYPENAME]],
                                               sep = "_"))
   
-  expressedGenesDF <- data.frame()
-  gammaFits <- data.frame()
-  gammaLinearFits <- data.frame()
-  dispFunEstimation <- data.frame()
-  power <- data.frame()
-  
+  # global variables to be saved in different occasions
   numberOfAssays <- 0
   numberOfTissues <- 0
   numberOfCellTypes <- 0
   idToName <- ""
   cellCount <- 0
   
-  # RMSE values summarized across the different subsampled matrices
+  # RMSE values and overall deviation summarized across the different subsampled matrices
   complete_RMSEs <- c()
   subsampled75_RMSEs <- c()
   subsampled50_RMSEs <- c()
   subsampled25_RMSEs <- c()
   overallDeviation <- c()
+  
+  # global data frames to be saved in different occasions
+  expressedGenesDF <- data.frame()
+  gammaFits <- data.frame()
+  gammaLinearFits <- data.frame()
+  dispFunEstimation <- data.frame()
+  power <- data.frame()
 ```
 
 
