@@ -2,13 +2,13 @@
 
 | Collection | Success | Error | Total Unique Instance | #Tissue | #Assay | #Cells |
 | ---------- | ------- | ----- | --------------- | ------ | ------- | --------- | 
-| Tabula Sapiens                                                   | 391     | 19    | 1156     | 45      | 3        | 483152      |
-| Cross-Tissue Immune Cell Analysis                                | 369     | 31    | 891      | 17      | 3        | 329762      |
-| Mapping Disease Gene Function with Molecular Reference Maps      | 59      | 45    | 121      | 8       | 1        | 209126      |
-| COVID-19 Sampling in Immunodeficient Donors                      | 23      | 3     | 26       | 1       | 1        | 97499       |
-| Castration-Insensitive Epithelial Cells in the Proximal Prostate | 25      | 0     | 32       | 2       | 2        | 47435       |
-| Tabula Muris Senis                                               | 9       | 0     | 9        | 1       | 1        | 28867       |
-| Pancreatic Islet Cell Transcriptional Cross-Species Map          | 3       | 1     | 4        | 1       | 1        | 26474       |
+| [Tabula Sapiens](https://cellxgene.cziscience.com/collections/e5f58829-1a66-40b5-a624-9046778e74f5) | 391 | 19 | 1156 | 45 | 3 | 483152 |
+| [Cross-Tissue Immune Cell Analysis](https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3) | 369 | 31 | 891 | 17 | 3 | 329762 |
+| [Mapping Disease Gene Function with Molecular Reference Maps](https://cellxgene.cziscience.com/collections/a3ffde6c-7ad2-498a-903c-d58e732f7470) | 59 | 45 | 121 | 8 | 1 | 209126 |
+| [COVID-19 Sampling in Immunodeficient Donors](https://cellxgene.cziscience.com/collections/eb735cc9-d0a7-48fa-b255-db726bf365af) | 23 | 3 | 26 | 1 | 1 | 97499 |
+| [Castration-Insensitive Epithelial Cells in the Proximal Prostate](https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc) | 25 | 0 | 32 | 2  | 2 | 47435 |
+| [Tabula Muris Senis](https://cellxgene.cziscience.com/collections/0b9d8a04-bb9d-44da-aa27-705bb65b54eb) | 9 | 0 | 9 | 1 | 1 | 28867 |
+| [Pancreatic Islet Cell Transcriptional Cross-Species Map](https://cellxgene.cziscience.com/collections/0a77d4c0-d5d0-40f0-aa1a-5e1429bcbd7e) | 3 | 1 | 4 | 1 | 1 | 26474 |
 
 ## Details about each dataset:
 <details>
