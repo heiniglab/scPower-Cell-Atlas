@@ -34,15 +34,16 @@ Documentation can be found [here](https://helmholtz-workspace.readthedocs.io/en/
 ┗━━ 📄 Documentation: presentations done related to the project
 </pre>
 
-## Workflow
-Here, I will be adding how the pipeline is built on top of scPower. Also, any parts extended on scPower will be demonstrated here.
+## Workflow 
+Here, I will be adding how the pipeline is built on top of scPower. Also, any parts extended on scPower will be demonstrated here...
 
 ## Getting started
 In this section, we will show you how to customize the necessary parts for your needs.
 
 ## Installation
+Here, installation steps will be explained...
 
-## [Steps](https://github.com/scverse/cookiecutter-scverse/blob/main/README.md#set-up-online-services) could be included in the future:
+# [Steps](https://github.com/scverse/cookiecutter-scverse/blob/main/README.md#set-up-online-services) <a name="steps-anchor"> </a>  could be included in the future:
 -   pre-commit checks for code style and consistency
 -   automated testing with testthat
 -   coverage tests with covr
@@ -54,4 +55,4 @@ In this section, we will show you how to customize the necessary parts for your 
 
 ✔   issue templates for better bug reports and feature requests <br>
 
-Acknowledgements to [cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse) for this.
+Acknowledgements to [cookiecutter-scverse](https://github.com/scverse/cookiecutter-scverse) for [this](#steps-anchor).
