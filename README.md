@@ -1,14 +1,18 @@
 # Enabling cell atlas guided optimal experimental design
 
 ## Table of contents
-- [Abstract](#getting-started)
+- Project Overview
+  - [Abstract](#abstract)
+  - [Project Purpose](#project-purpose)
+  - [Presented at](#presented-at)
+- [Abstract](#abstract)
 
 ## Abstract
-We have previously developed [scPower](https://www.nature.com/articles/s41467-021-26779-7) - a statistical framework that allows user to optimize the power of their experimental design of multi-sample single cell transcriptomics with a user friendly interface. However it requires cell type specific prior information. Previously this information was available only for selected cell types and tissues. Now with the increasing availability of reference cell atlases available, we can scale our framework to allow experimental design an all known cells of an organism. <br>
-We systematically apply scPower wrapped into a data processing and data management infrastructure to obtain the required prior information on cell type specific gene expression distributions. Based on these systematic priors, a unified experimental design online resource will be established. It will enable researchers to design the most powerful experiments for the identification of differential expression or eQTL in their respective application areas. In future work, this model will further be extended to allow for the optimal design of allele specific expression and perturbation experiments such as CROP-seq and Perturb-seq.
+We have previously developed [scPower](https://www.nature.com/articles/s41467-021-26779-7) - a statistical framework that allows users to optimize the power of their experimental design of multi-sample single-cell transcriptomics with a user-friendly interface. However, it requires cell type-specific prior information. Previously this information was available only for selected cell types and tissues. Now with the increasing availability of reference cell atlases available, we can scale our framework to allow experimental design an all known cells of an organism. <br>
+We systematically apply scPower wrapped into a data processing and data management infrastructure to obtain the required prior information on cell type-specific gene expression distributions. Based on these systematic priors, a unified experimental design online resource will be established. It will enable researchers to design the most powerful experiments for the identification of differential expression or eQTL in their respective application areas. In future work, this model will further be extended to allow for the optimal design of allele-specific expression and perturbation experiments such as CROP-seq and Perturb-seq.
 
 ## Project Purpose
-To develop an online resource for optimal experimental design and power analysis of cell type specific multisample comparisons and CRISPR screening single cell transcriptomics experiments.
+To develop an online resource for optimal experimental design and power analysis of cell type-specific multisample comparisons and CRISPR screening single-cell transcriptomics experiments.
 
 ## Presented at:
 ``08 December 2022`` Helmholtz Munich - Kim-Hellmuth/Heinig joint Group Meetin Day <br>
@@ -22,10 +26,10 @@ Documentation can be found [here](https://helmholtz-workspace.readthedocs.io/en/
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━ 📰 Data-Descriptor
 ┃   ┣━━ 🧫 Cell-Level: scPower wrapper
 ┃   ┃   ┣━━ code: main codes (.R and .Rmd) are contained here
-┃   ┃   ┗━━ results: dataset specific ones (descriptive parameters, estimations, errors, dispersion function estimation, gamma linear fits, gene ranks, power results) and
+┃   ┃   ┗━━ results: dataset-specific ones (descriptive parameters, estimations, errors, dispersion function estimation, gamma linear fits, gene ranks, power results) and
 ┃   ┃                general results either across all datasets or some general assumptions for a group of them are contained here.
 ┃   ┃
-┃   ┗━━ 🧬 Collection-Level: cellxgene scrapper with both puppeteer, Go and sfaira connection point
+┃   ┗━━ 🧬 Collection-Level: cellxgene scrapper with both puppeteer, Go, and sfaira connection point
 ┃
 ┣━━ 🔬 Experimentation: consists of useful scripts I use during the development of the project, also for plotting things
 ┃
@@ -38,7 +42,7 @@ Documentation can be found [here](https://helmholtz-workspace.readthedocs.io/en/
 </pre>
 
 ## Workflow 
-Here, I will be adding how the pipeline is built on top of scPower. Also, any parts extended on scPower will be demonstrated here...
+Here, I will add how the pipeline is built on top of scPower. Also, any parts extended on scPower will be demonstrated here...
 
 ## Getting started
 In this section, we will show you how to customize the necessary parts for your needs.
@@ -46,7 +50,7 @@ In this section, we will show you how to customize the necessary parts for your 
 ## Installation
 Here, installation steps will be explained...
 
-# [Steps](https://github.com/scverse/cookiecutter-scverse/blob/main/README.md#set-up-online-services) could be included in the future:
+## [Steps](https://github.com/scverse/cookiecutter-scverse/blob/main/README.md#set-up-online-services) that could be included in the future:
 -   pre-commit checks for code style and consistency
 -   automated testing with testthat
 -   coverage tests with covr
