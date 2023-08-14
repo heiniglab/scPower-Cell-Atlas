@@ -4,8 +4,13 @@
 - Project Overview
   - [Abstract](#abstract)
   - [Project Purpose](#project-purpose)
-  - [Presented at](#presented-at)
-- [Abstract](#abstract)
+  - [Presented At](#presented-at)
+- [Resources](#resources)
+- [Repository Map](#repository-map)
+- [Workflow](#workflow)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Steps could be included](#steps-that-could-be-included-in-the-future)
 
 ## Abstract
 We have previously developed [scPower](https://www.nature.com/articles/s41467-021-26779-7) - a statistical framework that allows users to optimize the power of their experimental design of multi-sample single-cell transcriptomics with a user-friendly interface. However, it requires cell type-specific prior information. Previously this information was available only for selected cell types and tissues. Now with the increasing availability of reference cell atlases available, we can scale our framework to allow experimental design an all known cells of an organism. <br>
@@ -22,7 +27,7 @@ To develop an online resource for optimal experimental design and power analysis
 contained in the project and their details can be found [here](https://github.com/Cem-Gulec/Helmholtz-Workspace/blob/main/Data-Descriptor/Cell-Level/scPower-wrapper/results/README.md). <br>
 Documentation can be found [here](https://helmholtz-workspace.readthedocs.io/en/latest/)
 
-## 🗂 Repository Map  
+## Repository Map  
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">┏━━ 📰 Data-Descriptor
 ┃   ┣━━ 🧫 Cell-Level: scPower wrapper
 ┃   ┃   ┣━━ code: main codes (.R and .Rmd) are contained here
