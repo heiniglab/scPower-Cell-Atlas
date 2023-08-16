@@ -147,6 +147,7 @@ subsampleIntoList <- function(counts) {
   # Loop over the proportions and fill the list
   for(i in seq_along(proportions)){
     subsample <- downsampleMatrix(counts, prop = proportions[i], bycol = TRUE)
+    subsample <- sparseToMatrix(subsample)
     
     tmp[[i + 1]] <- subsample
   }
@@ -553,7 +554,7 @@ Main:
     error = function(e) { stop(e) }
   )
 
-  counts <- dataset@assays$RNA@counts
+  counts <- sparseToMatrix(dataset@assays$RNA@counts)
   countsSubsampled <- subsampleIntoList(counts)
   print(calculateZeroPerc(counts))
 ```
