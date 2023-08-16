@@ -209,8 +209,13 @@ calculateGeneRanks <- function(count.matrix, idToName) {
 
 # return: a data frame consisting of:
 # matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled, metadata) {
-
+countObservedGenes <- function(counts.subsampled, annot.df) {
+  
+  # Check if the rows in the annot.df match the columns in the count matrix
+  if(all(colnames(counts.subsampled[["complete"]]) != annot.df$cell)) {
+    stop("The rows in the annot.df do not match the columns in the count matrix.")
+  }
+  
   print("Dimensions of each count matrices:")
   print(sapply(counts.subsampled, dim))
 
@@ -221,19 +226,11 @@ countObservedGenes <- function(counts.subsampled, metadata) {
 
     count.matrix <- counts.subsampled[[name]]
 
-    # Check if the rows in the metadata match the columns in the count matrix
-    if(!all(colnames(count.matrix) %in% rownames(metadata))){
-      stop("The rows in the metadata do not match the columns in the count matrix.")
-    }
-    
-    # Ensure that the annotation dataframe is ordered correctly
-    annot.df <- metadata[colnames(count.matrix),]
-    # Rename columns to "individual" and "cell.type"
-    colnames(annot.df) <- c("individual", "cell.type")
-    rownames(annot.df) <- NULL
+    # Filter the annotation data frame to be ordered in the same way as the count matrix
+    annot.df <- annot.df[colnames(count.matrix),]
 
     # Reformat count matrix into 3d pseudobulk matrix
-    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df)
+    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName = "cell_type")
 
     # Calculate expressed genes in the pseudobulk matrix
     # threshold of more than 3 counts in more 50% of the individuals
@@ -572,7 +569,6 @@ counting expressed genes:
   metadata <- dataset@meta.data[, c("cell_type", sampleName)]
   metadata <- cbind(cell = rownames(metadata), metadata)
   colnames(metadata) <- c("cell", "cell_type", "individual")
-  rownames(metadata) <- NULL
   expressedGenesDF <- countObservedGenes(countsSubsampled, metadata)
 ```
 
