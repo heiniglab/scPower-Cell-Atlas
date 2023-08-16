@@ -5,7 +5,7 @@ params:
     link: "https://cellxgene.cziscience.com/collections/fbc5881f-1ee3-4ffe-8095-35e15e1a08fc"
     
     results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
-    dataset_path: "prostate_UrethralLuminalEpithelia_AllMouseCells.rds"
+    dataset_path: "prostate_MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 title: |
   <h3>**Collection name:**</h3>
   <span style='font-size:10pt'>`r params$collection_name`</span><br>
@@ -188,8 +188,7 @@ calculateZeroPerc <- function(counts) {
 }
 
 calculateGeneRanks <- function(count.matrix, idToName) {
-  count.matrix <- sparseToMatrix(count.matrix)
-    
+
   # To speed up computation, remove all 0 genes
   count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
   
@@ -267,7 +266,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
 
   for(name in names(counts.subsampled)){
     # Converting from sparse matrix to normal one
-    counts.subsampled.converted <- sparseToMatrix(counts.subsampled[[name]])
+    counts.subsampled.converted <- counts.subsampled[[name]]
     temp <- nbinom.estimation(counts.subsampled.converted, sizeFactorMethod = "poscounts")
 
     # Save the normalized mean values
@@ -488,7 +487,7 @@ some definitions:
   memory.limit(999999)
   rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
   datasetFilePath <- paste0(rootPath, params$dataset_path)
-  wholeDataset <- readRDS(datasetFilePath)
+  wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
@@ -570,7 +569,10 @@ counting expressed genes:
 ```{r}
   # required metadata information for annot.df inside counting 
   # observed genes step is provided statically
-  metadata <- dataset@meta.data[, c(sampleName, "cell_type")]
+  metadata <- dataset@meta.data[, c("cell_type", sampleName)]
+  metadata <- cbind(cell = rownames(metadata), metadata)
+  colnames(metadata) <- c("cell", "cell_type", "individual")
+  rownames(metadata) <- NULL
   expressedGenesDF <- countObservedGenes(countsSubsampled, metadata)
 ```
 
