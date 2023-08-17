@@ -207,49 +207,6 @@ calculateGeneRanks <- function(count.matrix, idToName) {
   return(gene.ranks)
 }
 
-# return: a data frame consisting of:
-# matrix titles, number of cells and expressed gene counts
-countObservedGenes <- function(counts.subsampled, annot.df) {
-  
-  # Check if the rows in the annot.df match the columns in the count matrix
-  if(all(colnames(counts.subsampled[["complete"]]) != annot.df$cell)) {
-    stop("The rows in the annot.df do not match the columns in the count matrix.")
-  }
-  
-  print("Dimensions of each count matrices:")
-  print(sapply(counts.subsampled, dim))
-
-  expressed.genes.df <- NULL
-
-  # Iterate over each count matrix
-  for(name in names(counts.subsampled)){
-
-    count.matrix <- counts.subsampled[[name]]
-
-    # Filter the annotation data frame to be ordered in the same way as the count matrix
-    annot.df <- annot.df[colnames(count.matrix),]
-
-    # Reformat count matrix into 3d pseudobulk matrix
-    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName = "cell_type")
-
-    # Calculate expressed genes in the pseudobulk matrix
-    # threshold of more than 3 counts in more 50% of the individuals
-    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts = 3, perc.indiv = 0.5)
-
-    # Get the number of expressed genes
-    num.expressed.genes <- nrow(expressed.genes)
-
-    # Save expressed genes
-    expressed.genes.df <- rbind(expressed.genes.df,
-                                data.frame(matrix = name,
-                                           num.cells = ncol(count.matrix),
-                                           expressed.genes = num.expressed.genes))
-  }
-
-  print("Counting process done successfully.")
-  return(expressed.genes.df)
-}
-
 # Estimation of negative binomial parameters for each gene
 # return: a list with three elements: the normalized mean values,
 # the dispersion values and the parameters of the mean-dispersion function fitted from DESeq
@@ -262,9 +219,7 @@ negBinomParamEstimation <- function(counts.subsampled) {
   disp.param <- NULL
 
   for(name in names(counts.subsampled)){
-    # Converting from sparse matrix to normal one
-    counts.subsampled.converted <- counts.subsampled[[name]]
-    temp <- nbinom.estimation(counts.subsampled.converted, sizeFactorMethod = "poscounts")
+    temp <- nbinom.estimation(counts.subsampled[[name]], sizeFactorMethod = "poscounts")
 
     # Save the normalized mean values
     norm.mean.values.temp <- temp[[1]]
@@ -406,12 +361,15 @@ validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits,
   # our own data generated from the dataset
   # run: 5 and count > 10
   estimates <- observedGeneCounts
+  
+  # Get the number of cells per cell type and individual
+  estimates$cells.indiv <- estimates$num.cells / nSamples
   estimates$estimated.counts <- NA
 
   for(i in 1:nrow(estimates)){
     exp.probs <- scPower::estimate.exp.prob.count.param(
       nSamples = nSamples,
-      nCellsCt = estimates$num.cells[i] / nSamples,
+      nCellsCt = estimates$cells.indiv[i],
       meanCellCounts = estimates$meanUMI[i],
       gamma.mixed.fits = gammaLinearFits,
       ct = estimates$cell.type[i],
@@ -566,10 +524,48 @@ counting expressed genes:
 ```{r}
   # required metadata information for annot.df inside counting 
   # observed genes step is provided statically
-  metadata <- dataset@meta.data[, c("cell_type", sampleName)]
-  metadata <- cbind(cell = rownames(metadata), metadata)
-  colnames(metadata) <- c("cell", "cell_type", "individual")
-  expressedGenesDF <- countObservedGenes(countsSubsampled, metadata)
+  annot.df <- dataset@meta.data[, c("cell_type", sampleName)]
+  annot.df <- cbind(cell = rownames(annot.df), annot.df)
+  colnames(annot.df) <- c("cell", "cell_type", "individual")
+  
+  # Make sure that the annotation data frame is order the same way as the count matrix
+  if(all(colnames(countsSubsampled[["complete"]]) != annot.df$cell)) {
+    stop("The rows in the annot.df do not match the columns in the count matrix.")
+  }
+  
+  print("Dimensions of each count matrices:")
+  print(sapply(countsSubsampled, dim))
+  
+  expressed.genes.df <- NULL
+  
+  # Assign rownames to annot dataframe for easier filtering later
+  rownames(annot.df) <- annot.df$cell
+  
+  # Iterate over each count matrix
+  for(name in names(countsSubsampled)){
+    
+    count.matrix <- countsSubsampled[[name]]
+    
+    # Filter the annotation data frame to be ordered in the same way as the count matrix
+    annot.df <- annot.df[colnames(count.matrix),]
+    
+    # Reformat count matrix into pseudobulk matrix
+    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName="cell_type")
+    
+    # Calculate expressed genes in the pseudobulk matrix
+    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts=3, perc.indiv=0.5)
+    
+    # Get the number of expressed genes
+    num.expressed.genes <- nrow(expressed.genes)
+    
+    # Save expressed genes
+    expressed.genes.df <- rbind(expressed.genes.df,
+                                data.frame(matrix = name,
+                                           num.cells = ncol(count.matrix),
+                                           expressed.genes = num.expressed.genes))
+  }
+  
+  expressedGenesDF <- expressed.genes.df
 ```
 
 
@@ -636,10 +632,11 @@ power:
   power[["idToName"]] <- idToName
 ```
 
-
-estimates:
+estimates
+Validation by UMI counts:
 ```{r}
-  # Validation by UMI counts
+  # Choose the same number of donors in the example count matrix
+  nSamples <- length(unique(annot.df$individual))
   estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
   estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
 ```
