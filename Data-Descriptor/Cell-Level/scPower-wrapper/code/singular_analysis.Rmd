@@ -121,11 +121,17 @@ escapeQuotes <- function(json_str) {
 # field names are looked up and assigned statically
 # These are all "donor" and "sample" related ones from datasets at issue#1
 getNSamples <- function(dataset) {
-    sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
+  
+  sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
 
   for (column in sampleColumnNames) {
     if (!is.null(dataset@meta.data[[column]])) {
-      return(list(length(levels(dataset@meta.data[[column]])), column))
+      
+      annot.df <- dataset@meta.data[, c("cell_type", column)]
+      annot.df <- cbind(cell = rownames(annot.df), annot.df)
+      colnames(annot.df) <- c("cell", "cell_type", "individual")
+      
+      return(list(annot.df, length(unique(annot.df$individual))))
     }
   }
   
@@ -502,7 +508,7 @@ Main:
   numberOfTissues <- length(levels(dataset$tissue_ontology_term_id))
   numberOfCellTypes <- length(levels(dataset$cell_type_ontology_term_id))
   
-  c(nSamples, sampleName) %<-% tryCatch(
+  c(annot.df, nSamples) %<-% tryCatch(
     getNSamples(dataset),
     warning = function(w) { warning(w) },
     error = function(e) { stop(e) }
@@ -522,12 +528,6 @@ gene ranks:
 
 counting expressed genes:
 ```{r}
-  # required metadata information for annot.df inside counting 
-  # observed genes step is provided statically
-  annot.df <- dataset@meta.data[, c("cell_type", sampleName)]
-  annot.df <- cbind(cell = rownames(annot.df), annot.df)
-  colnames(annot.df) <- c("cell", "cell_type", "individual")
-  
   # Make sure that the annotation data frame is order the same way as the count matrix
   if(all(colnames(countsSubsampled[["complete"]]) != annot.df$cell)) {
     stop("The rows in the annot.df do not match the columns in the count matrix.")
@@ -550,10 +550,10 @@ counting expressed genes:
     annot.df <- annot.df[colnames(count.matrix),]
     
     # Reformat count matrix into pseudobulk matrix
-    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName="cell_type")
+    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName = "cell_type")
     
     # Calculate expressed genes in the pseudobulk matrix
-    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts=3, perc.indiv=0.5)
+    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts = 3, perc.indiv = 0.5)
     
     # Get the number of expressed genes
     num.expressed.genes <- nrow(expressed.genes)
