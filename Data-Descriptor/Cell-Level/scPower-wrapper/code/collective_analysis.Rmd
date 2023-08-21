@@ -1,7 +1,7 @@
 ---
 params: 
     results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
-    dataset_path: "muscle_TabulaSapiens_AllCells.rds"
+    dataset_path: "prostate_MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
 ---
 
 
@@ -110,11 +110,17 @@ escapeQuotes <- function(json_str) {
 # field names are looked up and assigned statically
 # These are all "donor" and "sample" related ones from datasets at issue#1
 getNSamples <- function(dataset) {
-    sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
+  
+  sampleColumnNames <- c("donor_id", "Donor", "Donor_ID", "Sample", "sample", "Sample ID", "Sample_ID", "sample_type", "Sample ID short", "Sample ID_prep")
 
   for (column in sampleColumnNames) {
     if (!is.null(dataset@meta.data[[column]])) {
-      return(list(length(levels(dataset@meta.data[[column]])), column))
+      
+      annot.df <- dataset@meta.data[, c("cell_type", column)]
+      annot.df <- cbind(cell = rownames(annot.df), annot.df)
+      colnames(annot.df) <- c("cell", "cell_type", "individual")
+      
+      return(list(annot.df, length(unique(annot.df$individual))))
     }
   }
   
@@ -469,7 +475,7 @@ mainProcessing <- function(dataset) {
   numberOfTissues <- length(levels(dataset$tissue_ontology_term_id))
   numberOfCellTypes <- length(levels(dataset$cell_type_ontology_term_id))
   
-  c(nSamples, sampleName) %<-% tryCatch(
+  c(annot.df, nSamples) %<-% tryCatch(
     getNSamples(dataset),
     warning = function(w) { warning(w) },
     error = function(e) { stop(e) }
@@ -497,11 +503,6 @@ mainProcessing <- function(dataset) {
   }
   
   # Counting observed expressed genes
-  # required metadata information for annot.df inside counting 
-  # observed genes step is provided statically
-  annot.df <- dataset@meta.data[, c("cell_type", sampleName)]
-  annot.df <- cbind(cell = rownames(annot.df), annot.df)
-  colnames(annot.df) <- c("cell", "cell_type", "individual")
   expressedGenesDF <- countObservedGenes(countsSubsampled, annot.df)
 
   # Estimation of negative binomial paramters for each gene
@@ -586,7 +587,7 @@ Preparation beforehand:
   memory.limit(999999)
   rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
   datasetFilePath <- paste0(rootPath, params$dataset_path)
-  wholeDataset <- readRDS(datasetFilePath)
+  wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
