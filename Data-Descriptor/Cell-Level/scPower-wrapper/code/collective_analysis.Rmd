@@ -1,9 +1,3 @@
----
-params: 
-    results_path: "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
-    dataset_path: "prostate_MouseFibromuscular_2Tissues_normal_2Assays_Musmusculus.h5seurat"
----
-
 
 Functions to be loaded:
 ```{r}
@@ -79,7 +73,7 @@ convertH5Seurat <- function(file.name) {
 }
 
 outputResults <- function(dataFrame, fileName) {
-  resultsPath <- params$results_path
+  resultsPath <- results_path
   fileName <- paste0(resultsPath, fileName, ".txt")
   write.table(dataFrame, fileName, row.names = FALSE, append = TRUE)
   write("\n", fileName, append = TRUE)
@@ -581,13 +575,15 @@ Preparation beforehand:
   loadPackages()
   handleFlagsTags(list("hostIP=127.0.0.1"))
   connectionInstance <<- establishDBConnection(HOSTIP)
+  results_path <<-  "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
+  dataset_path <<-  "muscle_TabulaSapiens_AllCells.rds"
   
   # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
   # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
   rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
-  datasetFilePath <- paste0(rootPath, params$dataset_path)
-  wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
+  datasetFilePath <- paste0(rootPath, dataset_path)
+  wholeDataset <- readRDS(datasetFilePath)
   print("Dataset loaded successfully.")
 
   # Split for each unique singular assay, tissue, cell type combination
@@ -622,7 +618,7 @@ Preparation beforehand:
 Main
 Loop through cell types:
 ```{r}
-  sink(paste0(params$results_path, "consoleOutput.txt"))
+  sink(paste0(results_path, "consoleOutput.txt"))
       
   for(datasetID in datasetCollectionCombinedID){
       
