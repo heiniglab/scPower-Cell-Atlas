@@ -578,13 +578,17 @@ Preparation beforehand:
   results_path <<-  "C:/Users/Cem/Documents/GitHub/Helmholtz-Workspace/Data-Descriptor/Cell-Level/scPower-wrapper/results/tryout/"
   dataset_path <<-  "muscle_TabulaSapiens_AllCells.rds"
   
-  # For reading .h5seurat file: LoadH5Seurat(datasetFilePath, assays = "RNA")
-  # For reading .rds      file: readRDS(datasetFilePath)
   memory.limit(999999)
   rootPath <- "C:/Users/Cem/Documents/Github/dataset/"
   datasetFilePath <- paste0(rootPath, dataset_path)
-  wholeDataset <- readRDS(datasetFilePath)
-  print("Dataset loaded successfully.")
+  
+  if (grepl("\\.rds", dataset_path)) {
+    wholeDataset <- readRDS(datasetFilePath)
+  } else if (grepl("\\.h5seurat", dataset_path)) {
+    wholeDataset <- LoadH5Seurat(datasetFilePath, assays = "RNA")
+  } else {
+    stop("Neither 'rds' nor 'h5seurat' file")
+  }
 
   # Split for each unique singular assay, tissue, cell type combination
   datasetCollectionCombinedID <- unique(paste(wholeDataset@meta.data[[ASSAYNAME]],
