@@ -391,7 +391,9 @@ powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param, num.genes.k
                                                   nGenes = num.genes.kept))
 }
 
-validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam) {
+validationByUMICounts <- function(observedGeneCounts, nSamples, 
+                                  gammaLinearFits, dispFunParam,
+                                  nGenes) {
 
   # our own data generated from the dataset
   # run: 5 and count > 10
@@ -409,8 +411,9 @@ validationByUMICounts <- function(observedGeneCounts, nSamples, gammaLinearFits,
       gamma.mixed.fits = gammaLinearFits,
       ct = estimates$cell.type[i],
       disp.fun.param = dispFunParam,
-      min.counts = 10,
-      perc.indiv = 0.5
+      min.counts = 3,
+      perc.indiv = 0.5,
+      nGenes = nGenes
     )
     estimates$estimated.counts[i] <- round(sum(exp.probs))
   }
@@ -550,7 +553,9 @@ mainProcessing <- function(dataset) {
   power[["idToName"]] <- idToName
   
   # Validation by UMI counts
-  estimates <- validationByUMICounts(observedGeneCounts, nSamples, gammaLinearFits, dispFunParam)
+  estimates <- validationByUMICounts(observedGeneCounts, nSamples, 
+                                   gammaLinearFits, dispFunParam,
+                                   nGenes=numGenesKept)
   estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
   
   # calculating RMSE across all dataset
