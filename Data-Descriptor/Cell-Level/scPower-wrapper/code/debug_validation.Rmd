@@ -1,0 +1,353 @@
+---
+title: "Debug Validation Routines of Cem"
+output: html_document
+date: "2023-09-15"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(scPower)
+library(dplyr)
+library(digest)
+library(purrr)
+library(zeallot) #for the operator "%<-%"
+library(ggplot2)
+
+```
+
+## Functions from Cem
+
+```{r}
+
+# return: a data frame consisting of:
+# matrix titles, number of cells and expressed gene counts
+countObservedGenes <- function(counts.subsampled, annot.df) {
+  
+  # Make sure that the annotation data frame is order the same way as the count matrix
+  if(all(colnames(counts.subsampled[["complete"]]) != annot.df$cell)) {
+    stop("The rows in the annot.df do not match the columns in the count matrix.")
+  }
+  
+  print("Dimensions of each count matrices:")
+  print(sapply(counts.subsampled, dim))
+
+  expressed.genes.df <- NULL
+  
+  # Assign rownames to annot dataframe for easier filtering later
+  rownames(annot.df) <- annot.df$cell
+
+  # Iterate over each count matrix
+  for(name in names(counts.subsampled)){
+
+    count.matrix <- counts.subsampled[[name]]
+
+    # Filter the annotation data frame to be ordered in the same way as the count matrix
+    annot.df <- annot.df[colnames(count.matrix),]
+    
+    # Reformat count matrix into 3d pseudobulk matrix
+    pseudo.bulk <- create.pseudobulk(count.matrix, annot.df, colName = "cell_type")
+
+    # Calculate expressed genes in the pseudobulk matrix
+    # threshold of more than 3 counts in more 50% of the individuals
+    expressed.genes <- calculate.gene.counts(pseudo.bulk, min.counts = 3, perc.indiv = 0.5)
+
+    # Get the number of expressed genes
+    num.expressed.genes <- nrow(expressed.genes)
+
+    # Save expressed genes
+    expressed.genes.df <- rbind(expressed.genes.df,
+                                data.frame(matrix = name,
+                                           num.cells = ncol(count.matrix),
+                                           expressed.genes = num.expressed.genes))
+  }
+
+  print("Counting process done successfully.")
+  return(expressed.genes.df)
+}
+
+# Estimation of negative binomial parameters for each gene
+# return: a list with three elements: the normalized mean values,
+# the dispersion values and the parameters of the mean-dispersion function fitted from DESeq
+negBinomParamEstimation <- function(counts.subsampled) {
+
+  # Data frame with normalized mean values
+  norm.mean.values <- NULL
+
+  # Parameter of the mean - dispersion function
+  disp.param <- NULL
+
+  for(name in names(counts.subsampled)){
+    temp <- nbinom.estimation(counts.subsampled[[name]], sizeFactorMethod = "poscounts")
+
+    # Save the normalized mean values
+    norm.mean.values.temp <- temp[[1]]
+    norm.mean.values.temp$matrix <- name
+    norm.mean.values <- rbind(norm.mean.values, norm.mean.values.temp)
+
+    # Save the parameter of the mean-dispersion function
+    disp.param.temp <- temp[[3]]
+    disp.param.temp$matrix <- name
+    disp.param <- rbind(disp.param, disp.param.temp)
+  }
+
+  # First rows of the data frame with normalized mean values
+  head(norm.mean.values)
+
+  print("Estimation of negative binomial parameters done successfully.")
+  return(list(norm.mean.values, disp.param))
+}
+
+# Estimation of a gamma mixed distribution over all means
+# return: a data frame consisting of p1, p2, s1, s2, r1 and r2
+# p1=emfit@proportions[1]     p2=emfit@proportions[2]
+# s1=emfit@models[[2]]@shape  s2=emfit@models[[3]]@shape
+# r1=emfit@models[[2]]@rate   r2=emfit@models[[3]]@rate
+gammaMixedDistEstimation <- function(norm.mean.values, censor.points, num.genes.kept) {
+
+  gamma.fits <- NULL
+
+  for(name in unique(norm.mean.values$matrix)){
+
+    # Number of cells per cell type as censoring point
+    censoredPoint <- censor.points[name]
+
+    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
+    gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
+                                             num.genes.kept = num.genes.kept,
+                                             censoredPoint = censoredPoint)
+    gamma.fit.temp$matrix <- name
+    gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
+  }
+
+  print("Estimation of a gamma mixed distribution done successfully.")
+  return(gamma.fits)
+}
+
+# Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+# return: umi values (a data frame of mean UMIs for each subsample) and
+# gamma linear fits (a data frame of )
+parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
+
+  umi.values <- data.frame(mean.umi = mean.umi.counts, matrix = names(mean.umi.counts))
+  
+  gamma.fits <- merge(gamma.fits, umi.values, by = "matrix")
+
+  # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
+  gamma.fits <- convert.gamma.parameters(gamma.fits)
+
+  visualizeLinearRelation(gamma.fits)
+
+  # Fit relationship between gamma parameters and UMI values
+  gamma.linear.fits <- umi.gamma.relation(gamma.fits)
+
+  print(gamma.linear.fits)
+
+  print("Parameterization of the gamma fits done successfully.")
+  return(list(umi.values, gamma.linear.fits, gamma.fits))
+}
+
+# Visualize the linear relationship between gamma parameters and UMI values in plots
+visualizeLinearRelation <- function(gamma.fits) {
+  plot.values <- melt(gamma.fits, id.vars = c("matrix", "mean.umi"))
+  plot.values <- plot.values[plot.values$variable %in% c("mean1", "mean2", "sd1", "sd2", "p1", "p2"),]
+  ggplot(plot.values, aes(x = mean.umi, y = value)) +
+         geom_point() +
+         geom_line() +
+         facet_wrap(~variable, ncol = 2, scales = "free")
+}
+
+mergeGeneCounts <- function(run, cellType, cellCount, evaluation, meanUmi, expressedGenes) {
+  resultingDataFrame <- data.frame(run, names(meanUmi), cellType, cellCount,
+                                   expressedGenes, meanUmi, evaluation)
+  rownames(resultingDataFrame) <- NULL
+  colnames(resultingDataFrame) <- c('run', 'sample', 'cell.type', 'num.cells', 'expressed.genes', 'meanUMI', 'evaluation')
+
+  return(resultingDataFrame)
+}
+
+# Power calculation: simplified gamma model without optimizing the read depth
+powerSRDRD <- function(nSamples, nCells, gamma.fits, disp.fun.param, num.genes.kept) {
+    
+    # Setting up the cell type specification
+    gamma.fits$ct <- "New_ct"
+    disp.fun.param$ct <- "New_ct"
+    
+    return(power.sameReadDepth.restrictedDoublets(nSamples = nSamples, 
+                                                  nCells = nCells,
+                                                  ct.freq = 1, 
+                                                  type = "eqtl",
+                                                  ref.study = scPower::eqtl.ref.study,
+                                                  ref.study.name = "Blueprint (Monocytes)",
+                                                  cellsPerLane = nCells,
+                                                  gamma.parameters = gamma.fits[gamma.fits$matrix == "complete",],
+                                                  ct = "New_ct", 
+                                                  disp.fun.param = disp.fun.param,
+                                                  mappingEfficiency = 0.8,
+                                                  min.UMI.counts = 3,
+                                                  perc.indiv.expr = 0.5,
+                                                  sign.threshold = 0.05,
+                                                  MTmethod = "Bonferroni",
+                                                  multipletRate = 0,
+                                                  nGenes = num.genes.kept))
+}
+
+validationByUMICounts <- function(observedGeneCounts, nSamples, 
+                                  gammaLinearFits, dispFunParam,
+                                  nGenes) {
+
+  # our own data generated from the dataset
+  # run: 5 and count > 10
+  estimates <- observedGeneCounts
+  
+  # Get the number of cells per cell type and individual
+  estimates$cells.indiv <- estimates$num.cells / nSamples
+  estimates$estimated.counts <- NA
+
+  for(i in 1:nrow(estimates)){
+    exp.probs <- scPower::estimate.exp.prob.count.param(
+      nSamples = nSamples,
+      nCellsCt = estimates$cells.indiv[i],
+      meanCellCounts = estimates$meanUMI[i],
+      gamma.mixed.fits = gammaLinearFits,
+      ct = estimates$cell.type[i],
+      disp.fun.param = dispFunParam,
+      min.counts = 3,
+      perc.indiv = 0.5,
+      nGenes = nGenes
+    )
+    estimates$estimated.counts[i] <- round(sum(exp.probs))
+  }
+  
+  estimates$dataset <- "Training data set"
+  estimates$threshold <- "Training data set - Count > 10"
+
+  # Based on the correlation between estimated and real values
+  # Calculating R squared error
+  estimates$rsq <- cor(estimates$estimated.counts, estimates$expressed.genes)^2
+  
+  # # as another evaluation metric, deviation for each entry
+  # deviation <- abs(estimates$expressed.genes - estimates$estimated.counts) / estimates$expressed.genes
+  # estimates$deviation <- deviation
+  # overallDeviation[[length(overallDeviation) + 1]] <<- deviation
+  
+  return(estimates)
+}
+
+# # calculating sparsity of the count matrix
+# calculateZeroPerc <- function(counts) {
+#   zeros <- sum(counts == 0)
+#   non_zeros <- sum(counts != 0)
+#   total <- length(counts)
+#   return(c(zero_perc = zeros/total * 100, non_zero_perc = non_zeros/total * 100))
+# }
+
+# calculateGeneRanks <- function(count.matrix, idToName) {
+# 
+#   # To speed up computation, remove all 0 genes
+#   count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
+#   
+#   # Normalize by count per cell
+#   count.matrix <- t(t(count.matrix) / colSums(count.matrix))
+#   
+#   # Randomly select a fraction of the gene to be significant DE genes
+#   sign.genes <- rownames(count.matrix)[1:300]
+#   
+#   # Calculate gene ranks
+#   gene.ranks <- gene.rank.calculation(count.matrix, sign.genes)
+#   
+#   # Indicator to distinguish different list of elements belongs to different cell type results
+#   gene.ranks[["indicator"]] <- idToName
+#   
+#   return(gene.ranks)
+# }
+
+```
+
+## Running the example dataset from the vignette
+
+
+```{r}
+
+count_example<-scPower::count.matrix.example
+
+counts<-count_example[["complete"]]
+countsSubsampled <- count_example
+idToName<-"test"
+completeDatasetID<-"testDataset"
+cellCount<-ncol(counts)
+nSamples<-length(unique(annot.df$individual))
+
+#Not necessary
+#print(calculateZeroPerc(counts))
+
+# # Calculating gene ranks - not necessary here, only for the DE matrix !!!
+# geneRanks <- calculateGeneRanks(counts, idToName) 
+
+censorPoints <- rep(NA, length(countsSubsampled))
+names(censorPoints) <- names(countsSubsampled)
+
+meanUmi <- rep(NA, length(countsSubsampled))
+names(meanUmi) <- names(countsSubsampled)
+
+for(matrixName in names(countsSubsampled)){
+  # Number of cells per cell type as censoring point
+  censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
+
+  # Estimate the mean umi values per cell for each matrix
+  meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
+}
+
+# Counting observed expressed genes
+expressedGenesDF <- countObservedGenes(countsSubsampled, annot.df)
+
+# Estimation of negative binomial paramters for each gene
+c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+
+# Estimation of a gamma mixed distribution over all means
+nExpressedGenes <- sum(normMeanValues[normMeanValues$matrix == "complete",]$mean != 0)
+numGenesKept <- ceiling(nExpressedGenes / 100) * 100
+gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
+
+# Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+# gammaLinearFits: parameter, intercept, meanUMI
+c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+
+# Firstly arranging gamma linear fit values for each cell type
+gammaLinearFits$ct <- completeDatasetID
+
+# Then also arranging disp fun parameter values for each cell type
+tmp <- dispersion.function.estimation(dispParam)
+tmp$ct <- completeDatasetID
+dispFunParam <- tmp[, c("ct", names(tmp)[-ncol(tmp)])]
+
+# Collecting data for validation of the model
+# Some field names like "run", "evaluation" is assigned statically
+observedGeneCounts <- mergeGeneCounts("Run 5", completeDatasetID, cellCount, "own_count10",
+                                      meanUmi, expressedGenesDF$expressed.genes)
+
+# dispFunEstimation: asymptDisp, extraPois
+dispFunEstimation <- dispersion.function.estimation(dispParam)
+
+# # Power calculation: simplified gamma model without optimizing the read depth 
+# #       name, powerDetect, exp.probs. power, sampleSize, totalCells, usableCells
+# #       multipletFraction, ctCells, expressedGenes
+# power <- powerSRDRD(nSamples, cellCount, gammaFits, dispFunEstimation, numGenesKept)
+# power[["idToName"]] <- idToName
+
+# Validation by UMI counts
+estimates <- validationByUMICounts(observedGeneCounts, nSamples, 
+                                   gammaLinearFits, dispFunParam,
+                                   nGenes=numGenesKept)
+
+print(estimates)
+
+# estimates <- estimates[, c("run", "dataset", "threshold", "evaluation", "cell.type", "sample", "num.cells", "meanUMI", "expressed.genes", "estimated.counts", "rsq", "deviation")]
+# 
+# # calculating RMSE across all dataset
+# df <- data.frame(estimates$sample, estimates$expressed.genes, estimates$estimated.counts)
+# df <- setNames(df, c("name", "expressed.genes", "estimated.genes"))
+# calculateRMSE(df)
+  
+
+```
