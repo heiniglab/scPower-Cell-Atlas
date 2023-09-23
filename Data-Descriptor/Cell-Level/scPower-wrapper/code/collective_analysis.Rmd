@@ -2,7 +2,7 @@
 Functions to be loaded:
 ```{r}
 loadPackages <- function() {
-  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "HardyWeinberg", "jsonlite", "MKmisc",
+  Packages <- c("DBI", "devtools", "digest", "dplyr", "DropletUtils", "ggplot2", "HardyWeinberg", "jsonlite", "MKmisc",
                 "plotly", "purrr", "pwr", "reshape2", "rols", "RPostgreSQL", "RPostgres", "scPower",
                 "scuttle", "Seurat", "SeuratData", "SeuratDisk", "shiny", "stringr", "zeallot")
 
@@ -507,9 +507,25 @@ mainProcessing <- function(dataset) {
   numGenesKept <- ceiling(nExpressedGenes / 100) * 100
   gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
 
+  # visualize gamma fits
+  p <- visualize.gamma.fits(normMeanValues$mean[normMeanValues$matrix == "complete"],
+                            gammaFits[gammaFits$matrix == "complete",],
+                            nGenes = numGenesKept)
+  
+  ggsave(paste0(results_path, "gamma_fits_plot.png"), plot = p)
+  
   # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
   # gammaLinearFits: parameter, intercept, meanUMI
   c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+  
+  # Visualize the linear relationship between gamma parameters and UMI values in plots
+  plot.values <- melt(gammaFits, id.vars = c("matrix","mean.umi"))
+  plot.values <- plot.values[plot.values$variable %in% c("mean1", "mean2", "sd1", "sd2", "p1", "p2"),]
+  gplot <- ggplot(plot.values, aes(x = mean.umi, y = value)) +
+    geom_point() + geom_line() +
+    facet_wrap(~variable, ncol = 2, scales = "free")
+  
+  ggsave(paste0(results_path, "linear_relation.png"), plot = gplot)
   
   # Firstly arranging gamma linear fit values for each cell type
   gammaLinearFits$ct <- completeDatasetID
