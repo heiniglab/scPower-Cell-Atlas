@@ -1,0 +1,35 @@
+"run" "dataset" "threshold" "evaluation" "cell.type" "sample" "num.cells" "meanUMI" "expressed.genes" "estimated.counts" "rsq" "deviation"
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000299" "complete" 519 3983.87668593449 9632 9831 0.99972576671189 0.0206602990033223
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000299" "subsampled75" 519 2988.03468208092 8798 9070 0.99972576671189 0.0309161172993862
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000299" "subsampled50" 519 1992.18304431599 7459 7890 0.99972576671189 0.057782544577021
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000299" "subsampled25" 519 996.104046242775 4950 5777 0.99972576671189 0.167070707070707
+
+
+"run" "dataset" "threshold" "evaluation" "cell.type" "sample" "num.cells" "meanUMI" "expressed.genes" "estimated.counts" "rsq" "deviation"
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000487" "complete" 60 5425.63333333333 820 3616 0.998991628716901 3.40975609756098
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000487" "subsampled75" 60 4069.31666666667 622 2858 0.998991628716901 3.59485530546624
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000487" "subsampled50" 60 2713.1 411 1990 0.998991628716901 3.84184914841849
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0002367_CL:1000487" "subsampled25" 60 1356.55 213 1113 0.998991628716901 4.22535211267606
+
+
+"run" "dataset" "threshold" "evaluation" "cell.type" "sample" "num.cells" "meanUMI" "expressed.genes" "estimated.counts" "rsq" "deviation"
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000299" "complete" 331 2238.46223564955 10714 10359 0.999410086992132 0.033134216912451
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000299" "subsampled75" 331 1678.97280966767 9949 9625 0.999410086992132 0.032566087043924
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000299" "subsampled50" 331 1119.50151057402 8673 8407 0.999410086992132 0.0306698950766747
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000299" "subsampled25" 331 559.719033232628 6089 6151 0.999410086992132 0.0101822959435047
+
+
+"run" "dataset" "threshold" "evaluation" "cell.type" "sample" "num.cells" "meanUMI" "expressed.genes" "estimated.counts" "rsq" "deviation"
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000487" "complete" 99 2022.20202020202 5970 5941 0.999622827488173 0.00485762144053601
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000487" "subsampled75" 99 1516.72727272727 4959 5035 0.999622827488173 0.0153256704980843
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000487" "subsampled50" 99 1011.38383838384 3663 3786 0.999622827488173 0.0335790335790336
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009899_UBERON:0000057_CL:1000487" "subsampled25" 99 505.676767676768 1912 2253 0.999622827488173 0.178347280334728
+
+
+"run" "dataset" "threshold" "evaluation" "cell.type" "sample" "num.cells" "meanUMI" "expressed.genes" "estimated.counts" "rsq" "deviation"
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009922_UBERON:0000057_CL:1000299" "complete" 569 6705.60632688928 13693 13432 0.998784536645699 0.0190608340027751
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009922_UBERON:0000057_CL:1000299" "subsampled75" 569 5029.33040421793 13281 13047 0.998784536645699 0.0176191551840976
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009922_UBERON:0000057_CL:1000299" "subsampled50" 569 3353.05448154657 12690 12409 0.998784536645699 0.0221434200157604
+"Run 5" "Training data set" "Training data set - Count > 10" "own_count10" "EFO:0009922_UBERON:0000057_CL:1000299" "subsampled25" 569 1676.52196836555 11438 10975 0.998784536645699 0.0404791047385907
+
+

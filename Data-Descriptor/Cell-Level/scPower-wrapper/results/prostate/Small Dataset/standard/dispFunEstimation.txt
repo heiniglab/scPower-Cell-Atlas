@@ -1,0 +1,20 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" 0.490294676123435 0.283536986328497
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" 0.20734629897216 0.378455772958579
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" 0.316425721078317 0.211046251189908
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_urethra_smooth muscle cell of prostate" 0.160863683455857 0.196302908447557
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" 0.224009247912985 0.256625960456578
+
+

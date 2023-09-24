@@ -1,0 +1,68 @@
+[1] "index of dataset: 1/8"
+[1] "Subsampling process done successfully."
+    zero_perc non_zero_perc 
+    92.033756      7.966244 
+[1] "Dimensions of each count matrices:"
+     complete subsampled75 subsampled50 subsampled25
+[1,]    19492        19492        19492        19492
+[2,]      519          519          519          519
+[1] "Counting process done successfully."
+[1] "Estimation of negative binomial parameters done successfully."
+[1] "Estimation of a gamma mixed distribution done successfully."
+[1] "Parameterization of the gamma fits done successfully."
+[1] "Time elapsed in secs: 109.700000000012"
+[1] "index of dataset: 2/8"
+[1] "Subsampling process done successfully."
+    zero_perc non_zero_perc 
+    90.117313      9.882687 
+[1] "Dimensions of each count matrices:"
+     complete subsampled75 subsampled50 subsampled25
+[1,]    19492        19492        19492        19492
+[2,]       60           60           60           60
+[1] "Counting process done successfully."
+[1] "Estimation of negative binomial parameters done successfully."
+[1] "Estimation of a gamma mixed distribution done successfully."
+[1] "Parameterization of the gamma fits done successfully."
+[1] "Time elapsed in secs: 164.75"
+[1] "index of dataset: 3/8"
+[1] "index of dataset: 4/8"
+[1] "index of dataset: 5/8"
+[1] "Subsampling process done successfully."
+    zero_perc non_zero_perc 
+    94.668337      5.331663 
+[1] "Dimensions of each count matrices:"
+     complete subsampled75 subsampled50 subsampled25
+[1,]    19492        19492        19492        19492
+[2,]      331          331          331          331
+[1] "Counting process done successfully."
+[1] "Estimation of negative binomial parameters done successfully."
+[1] "Estimation of a gamma mixed distribution done successfully."
+[1] "Parameterization of the gamma fits done successfully."
+[1] "Time elapsed in secs: 74.4899999999907"
+[1] "index of dataset: 6/8"
+[1] "Subsampling process done successfully."
+    zero_perc non_zero_perc 
+    95.218862      4.781138 
+[1] "Dimensions of each count matrices:"
+     complete subsampled75 subsampled50 subsampled25
+[1,]    19492        19492        19492        19492
+[2,]       99           99           99           99
+[1] "Counting process done successfully."
+[1] "Estimation of negative binomial parameters done successfully."
+[1] "Estimation of a gamma mixed distribution done successfully."
+[1] "Parameterization of the gamma fits done successfully."
+[1] "Time elapsed in secs: 95.9700000000303"
+[1] "index of dataset: 7/8"
+[1] "Subsampling process done successfully."
+    zero_perc non_zero_perc 
+      87.3365       12.6635 
+[1] "Dimensions of each count matrices:"
+     complete subsampled75 subsampled50 subsampled25
+[1,]    19492        19492        19492        19492
+[2,]      569          569          569          569
+[1] "Counting process done successfully."
+[1] "Estimation of negative binomial parameters done successfully."
+[1] "Estimation of a gamma mixed distribution done successfully."
+[1] "Parameterization of the gamma fits done successfully."
+[1] "Time elapsed in secs: 97.8399999999674"
+[1] "index of dataset: 8/8"

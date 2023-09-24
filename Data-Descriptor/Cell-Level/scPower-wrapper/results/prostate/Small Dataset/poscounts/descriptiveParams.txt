@@ -1,0 +1,20 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"519_2_2_2" "EFO:0009899_UBERON:0002367_CL:1000299" "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_2_2_2" "EFO:0009899_UBERON:0002367_CL:1000487" "10x 3' v2_prostate gland_smooth muscle cell of prostate"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"331_2_2_2" "EFO:0009899_UBERON:0000057_CL:1000299" "10x 3' v2_urethra_fibroblast of connective tissue of prostate"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"99_2_2_2" "EFO:0009899_UBERON:0000057_CL:1000487" "10x 3' v2_urethra_smooth muscle cell of prostate"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"569_2_2_2" "EFO:0009922_UBERON:0000057_CL:1000299" "10x 3' v3_urethra_fibroblast of connective tissue of prostate"
+
+

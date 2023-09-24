@@ -1,0 +1,20 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.808767866273826 NA 3 519 519 0 519 12022 "10x 3' v2_prostate gland_fibroblast of connective tissue of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.46895683008957 NA 3 60 60 0 60 6875 "10x 3' v2_prostate gland_smooth muscle cell of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.707129422936559 NA 1 331 331 0 331 10361 "10x 3' v2_urethra_fibroblast of connective tissue of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.401970974106373 NA 1 99 99 0 99 5937 "10x 3' v2_urethra_smooth muscle cell of prostate"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.878396568942165 NA 1 569 569 0 569 13439 "10x 3' v3_urethra_fibroblast of connective tissue of prostate"
+
+
