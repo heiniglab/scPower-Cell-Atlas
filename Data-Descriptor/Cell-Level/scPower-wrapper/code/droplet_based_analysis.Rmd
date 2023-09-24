@@ -515,7 +515,7 @@ mainProcessing <- function(dataset) {
                             gammaFits[gammaFits$matrix == "complete",],
                             nGenes = numGenesKept)
   
-  ggsave(paste0(results_path, "gamma_fits_plot.png"), plot = p)
+  ggsave(paste0(results_path, paste0("gamma_fits_plot_", idToName, ".png")), plot = p)
   
   # Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
   # gammaLinearFits: parameter, intercept, meanUMI
@@ -528,7 +528,7 @@ mainProcessing <- function(dataset) {
     geom_point() + geom_line() +
     facet_wrap(~variable, ncol = 2, scales = "free")
   
-  ggsave(paste0(results_path, "linear_relation.png"), plot = gplot)
+  ggsave(paste0(results_path, paste0("linear_relation_", idToName, ".png")), plot = gplot)
   
   # Firstly arranging gamma linear fit values for each cell type
   gammaLinearFits$ct <- completeDatasetID
