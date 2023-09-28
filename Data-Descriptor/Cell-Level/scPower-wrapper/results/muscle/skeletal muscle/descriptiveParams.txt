@@ -1,0 +1,1652 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1307_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000235" "10x 3' v3_liver_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"606_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000576" "10x 3' v3_liver_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"410_2_45_160" "EFO:0009922_UBERON:0002107_CL:1000398" "10x 3' v3_liver_endothelial cell of hepatic sinusoid"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"231_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000814" "10x 3' v3_liver_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1551_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000182" "10x 3' v3_liver_hepatocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"531_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000235" "10x 3' v3_trachea_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"65_2_45_160" "EFO:0009922_UBERON:0003126_CL:1000329" "10x 3' v3_trachea_tracheal goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1135_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000057" "10x 3' v3_trachea_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"225_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000115" "10x 3' v3_trachea_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"83_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000192" "10x 3' v3_trachea_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"262_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000064" "10x 3' v3_trachea_ciliated cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"224_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000151" "10x 3' v3_trachea_secretory cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"130_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000084" "10x 3' v3_trachea_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4067_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000646" "10x 3' v3_trachea_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"61_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000097" "10x 3' v3_trachea_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"115_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000786" "10x 3' v3_trachea_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"464_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000625" "10x 3' v3_trachea_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"459_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000236" "10x 3' v3_trachea_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"727_2_45_160" "EFO:0009922_UBERON:0003126_CL:0000775" "10x 3' v3_trachea_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"10397_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000232" "10x 3' v3_blood_erythrocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"857_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000897" "10x 3' v3_blood_CD4-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1477_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000908" "10x 3' v3_blood_CD8-positive, alpha-beta cytokine secreting effector T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6999_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000860" "10x 3' v3_blood_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8378_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000775" "10x 3' v3_blood_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2079_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000788" "10x 3' v3_blood_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2871_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000814" "10x 3' v3_blood_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"793_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000787" "10x 3' v3_blood_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"499_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000921" "10x 3' v3_blood_type I NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1229_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000625" "10x 3' v3_blood_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"485_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000786" "10x 3' v3_blood_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"403_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000895" "10x 3' v3_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"65_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000037" "10x 3' v3_blood_hematopoietic stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5673_2_45_160" "EFO:0009922_UBERON:0001542_CL:0000236" "10x 3' v3_inguinal lymph node_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"329_2_45_160" "EFO:0009922_UBERON:0001542_CL:0001050" "10x 3' v3_inguinal lymph node_effector CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"293_2_45_160" "EFO:0009922_UBERON:0001542_CL:0000084" "10x 3' v3_inguinal lymph node_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"293_2_45_160" "EFO:0009922_UBERON:0001542_CL:0000921" "10x 3' v3_inguinal lymph node_type I NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"673_2_45_160" "EFO:0009922_UBERON:0001542_CL:0001044" "10x 3' v3_inguinal lymph node_effector CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"199_2_45_160" "EFO:0009922_UBERON:0001542_CL:0001065" "10x 3' v3_inguinal lymph node_innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"107_2_45_160" "EFO:0009922_UBERON:0001542_CL:0000786" "10x 3' v3_inguinal lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"9135_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000236" "10x 3' v3_lymph node_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6118_2_45_160" "EFO:0009922_UBERON:0000029_CL:0001044" "10x 3' v3_lymph node_effector CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3463_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000921" "10x 3' v3_lymph node_type I NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5477_2_45_160" "EFO:0009922_UBERON:0000029_CL:0001050" "10x 3' v3_lymph node_effector CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1707_2_45_160" "EFO:0009922_UBERON:0000029_CL:0001065" "10x 3' v3_lymph node_innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1141_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000235" "10x 3' v3_lymph node_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"830_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000815" "10x 3' v3_lymph node_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3462_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000084" "10x 3' v3_lymph node_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2486_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000786" "10x 3' v3_lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"587_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000814" "10x 3' v3_lymph node_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"126_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000097" "10x 3' v3_lymph node_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"94_2_45_160" "EFO:0009922_UBERON:0000029_CL:0002394" "10x 3' v3_lymph node_CD141-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"281_2_45_160" "EFO:0009922_UBERON:0000029_CL:0002393" "10x 3' v3_lymph node_intermediate monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"111_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000499" "10x 3' v3_lymph node_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_2_45_160" "EFO:0009922_UBERON:0000029_CL:0002399" "10x 3' v3_lymph node_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"215_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000860" "10x 3' v3_lymph node_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"148_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000115" "10x 3' v3_lymph node_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8052_2_45_160" "EFO:0009922_UBERON:0001831_CL:0002623" "10x 3' v3_parotid gland_acinar cell of salivary gland"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1120_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000788" "10x 3' v3_parotid gland_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2816_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000787" "10x 3' v3_parotid gland_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1101_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000492" "10x 3' v3_parotid gland_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"317_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000814" "10x 3' v3_parotid gland_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1503_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000057" "10x 3' v3_parotid gland_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_2_45_160" "EFO:0009922_UBERON:0001831_CL:0002138" "10x 3' v3_parotid gland_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"323_2_45_160" "EFO:0009922_UBERON:0001831_CL:0002503" "10x 3' v3_parotid gland_adventitial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000236" "10x 3' v3_parotid gland_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"200_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000115" "10x 3' v3_parotid gland_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"426_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000576" "10x 3' v3_parotid gland_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"703_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000068" "10x 3' v3_parotid gland_duct epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1887_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000625" "10x 3' v3_parotid gland_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"115_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000775" "10x 3' v3_parotid gland_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3963_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000909" "10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1312_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000235" "10x 3' v3_spleen_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1160_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000895" "10x 3' v3_spleen_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"125_2_45_160" "EFO:0009922_UBERON:0002106_CL:0002393" "10x 3' v3_spleen_intermediate monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"571_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000115" "10x 3' v3_spleen_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5916_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000787" "10x 3' v3_spleen_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4114_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000860" "10x 3' v3_spleen_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4408_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000775" "10x 3' v3_spleen_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"990_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000788" "10x 3' v3_spleen_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2986_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000786" "10x 3' v3_spleen_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1662_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000897" "10x 3' v3_spleen_CD4-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"980_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000921" "10x 3' v3_spleen_type I NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"573_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000900" "10x 3' v3_spleen_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2315_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000814" "10x 3' v3_spleen_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"114_2_45_160" "EFO:0009922_UBERON:0002106_CL:0001065" "10x 3' v3_spleen_innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"164_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000232" "10x 3' v3_spleen_erythrocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"237_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000815" "10x 3' v3_spleen_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_2_45_160" "EFO:0009922_UBERON:0002106_CL:0000037" "10x 3' v3_spleen_hematopoietic stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2114_2_45_160" "EFO:0009922_UBERON:0010032_CL:0000066" "10x 3' v3_anterior part of tongue_epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5139_2_45_160" "EFO:0009922_UBERON:0010033_CL:0000646" "10x 3' v3_posterior part of tongue_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1318_2_45_160" "EFO:0009922_UBERON:0010033_CL:0000738" "10x 3' v3_posterior part of tongue_leukocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"136_2_45_160" "EFO:0009922_UBERON:0010033_CL:0000057" "10x 3' v3_posterior part of tongue_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"120_2_45_160" "EFO:0009922_UBERON:0010033_CL:0002543" "10x 3' v3_posterior part of tongue_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_2_45_160" "EFO:0009922_UBERON:0010033_CL:0000669" "10x 3' v3_posterior part of tongue_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1898_2_45_160" "EFO:0009922_UBERON:0010033_CL:0000312" "10x 3' v3_posterior part of tongue_keratinocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1961_2_45_160" "EFO:0009922_UBERON:0001911_CL:4006000" "10x 3' v3_mammary gland_fibroblast of breast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2147_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000084" "10x 3' v3_mammary gland_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5160_2_45_160" "EFO:0009922_UBERON:0001911_CL:0002326" "10x 3' v3_mammary gland_luminal epithelial cell of mammary gland"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"206_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000235" "10x 3' v3_mammary gland_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"104_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000669" "10x 3' v3_mammary gland_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"69_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000359" "10x 3' v3_mammary gland_vascular associated smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"253_2_45_160" "EFO:0009922_UBERON:0001911_CL:0002543" "10x 3' v3_mammary gland_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"470_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000646" "10x 3' v3_mammary gland_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"180_2_45_160" "EFO:0009922_UBERON:0001911_CL:0000786" "10x 3' v3_mammary gland_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"159_2_45_160" "EFO:0009922_UBERON:0001911_CL:1000413" "10x 3' v3_mammary gland_endothelial cell of artery"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"508_2_45_160" "EFO:0009922_UBERON:0001295_CL:0000084" "10x 3' v3_endometrium_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2520_2_45_160" "EFO:0009922_UBERON:0001295_CL:0000057" "10x 3' v3_endometrium_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"290_2_45_160" "EFO:0009922_UBERON:0001295_CL:0000235" "10x 3' v3_endometrium_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"137_2_45_160" "EFO:0009922_UBERON:0001295_CL:0002149" "10x 3' v3_endometrium_epithelial cell of uterus"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_2_45_160" "EFO:0009922_UBERON:0001295_CL:0000115" "10x 3' v3_endometrium_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_2_45_160" "EFO:0009922_UBERON:0001295_CL:0000066" "10x 3' v3_endometrium_epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_2_45_160" "EFO:0009922_UBERON:0001295_CL:0002138" "10x 3' v3_endometrium_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"390_2_45_160" "EFO:0009922_UBERON:0001296_CL:0000359" "10x 3' v3_myometrium_vascular associated smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"197_2_45_160" "EFO:0009922_UBERON:0001296_CL:0002366" "10x 3' v3_myometrium_myometrial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1972_2_45_160" "EFO:0009922_UBERON:0001296_CL:0000115" "10x 3' v3_myometrium_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"340_2_45_160" "EFO:0009922_UBERON:0001296_CL:0000057" "10x 3' v3_myometrium_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_2_45_160" "EFO:0009922_UBERON:0001296_CL:0000669" "10x 3' v3_myometrium_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1154_2_45_160" "EFO:0009922_UBERON:0000970_CL:1000432" "10x 3' v3_eye_conjunctival epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"557_2_45_160" "EFO:0009922_UBERON:0000970_CL:0000287" "10x 3' v3_eye_eye photoreceptor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"57_2_45_160" "EFO:0009922_UBERON:0000970_CL:0000636" "10x 3' v3_eye_Mueller cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"75_2_45_160" "EFO:0009922_UBERON:0000970_CL:0000084" "10x 3' v3_eye_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_2_45_160" "EFO:0009922_UBERON:0000970_CL:1000436" "10x 3' v3_eye_epithelial cell of lacrimal sac"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"143_2_45_160" "EFO:0009922_UBERON:0000970_CL:0002363" "10x 3' v3_eye_keratocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2078_2_45_160" "EFO:0009922_UBERON:0001811_CL:1000432" "10x 3' v3_conjunctiva_conjunctival epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3883_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000057" "10x 3' v3_adipose tissue_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1952_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000115" "10x 3' v3_adipose tissue_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"997_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000084" "10x 3' v3_adipose tissue_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1250_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000235" "10x 3' v3_adipose tissue_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"308_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000186" "10x 3' v3_adipose tissue_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1310_2_45_160" "EFO:0009922_UBERON:0001013_CL:0000134" "10x 3' v3_adipose tissue_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"398_2_45_160" "EFO:0009922_UBERON:0002190_CL:0000814" "10x 3' v3_subcutaneous adipose tissue_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4504_2_45_160" "EFO:0009922_UBERON:0002190_CL:0000057" "10x 3' v3_subcutaneous adipose tissue_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"670_2_45_160" "EFO:0009922_UBERON:0002190_CL:0000186" "10x 3' v3_subcutaneous adipose tissue_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1467_2_45_160" "EFO:0009922_UBERON:0002190_CL:0000235" "10x 3' v3_subcutaneous adipose tissue_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"604_2_45_160" "EFO:0009922_UBERON:0002190_CL:0000084" "10x 3' v3_subcutaneous adipose tissue_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"528_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000235" "10x 3' v3_skin of body_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1448_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000499" "10x 3' v3_skin of body_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"544_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000909" "10x 3' v3_skin of body_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"343_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000814" "10x 3' v3_skin of body_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"389_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000097" "10x 3' v3_skin of body_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"145_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000187" "10x 3' v3_skin of body_muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"85_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000794" "10x 3' v3_skin of body_CD8-positive, alpha-beta cytotoxic T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"110_2_45_160" "EFO:0009922_UBERON:0002097_CL:0002399" "10x 3' v3_skin of body_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"702_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000115" "10x 3' v3_skin of body_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"145_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000897" "10x 3' v3_skin of body_CD4-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000900" "10x 3' v3_skin of body_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_2_45_160" "EFO:0009922_UBERON:0002097_CL:0000066" "10x 3' v3_skin of body_epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1073_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000576" "10x 3' v3_bone marrow_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"486_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000786" "10x 3' v3_bone marrow_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"435_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000037" "10x 3' v3_bone marrow_hematopoietic stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"670_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000038" "10x 3' v3_bone marrow_erythroid progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"470_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000814" "10x 3' v3_bone marrow_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"781_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000094" "10x 3' v3_bone marrow_granulocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"96_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000788" "10x 3' v3_bone marrow_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"264_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000235" "10x 3' v3_bone marrow_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"254_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000049" "10x 3' v3_bone marrow_common myeloid progenitor"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"288_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000787" "10x 3' v3_bone marrow_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"842_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000625" "10x 3' v3_bone marrow_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1689_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000624" "10x 3' v3_bone marrow_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2573_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000775" "10x 3' v3_bone marrow_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1797_2_45_160" "EFO:0009922_UBERON:0002081_CL:0010008" "10x 3' v3_cardiac atrium_cardiac endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5315_2_45_160" "EFO:0009922_UBERON:0002081_CL:0000746" "10x 3' v3_cardiac atrium_cardiac muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"766_2_45_160" "EFO:0009922_UBERON:0002081_CL:0000182" "10x 3' v3_cardiac atrium_hepatocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1876_2_45_160" "EFO:0009922_UBERON:0002082_CL:0000746" "10x 3' v3_cardiac ventricle_cardiac muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"274_2_45_160" "EFO:0009922_UBERON:0002082_CL:0000182" "10x 3' v3_cardiac ventricle_hepatocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"115_2_45_160" "EFO:0009922_UBERON:0002082_CL:0002548" "10x 3' v3_cardiac ventricle_fibroblast of cardiac tissue"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4752_2_45_160" "EFO:0009922_UBERON:0000017_CL:0002064" "10x 3' v3_exocrine pancreas_pancreatic acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"538_2_45_160" "EFO:0009922_UBERON:0000017_CL:0000084" "10x 3' v3_exocrine pancreas_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1927_2_45_160" "EFO:0009922_UBERON:0000017_CL:0000115" "10x 3' v3_exocrine pancreas_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1799_2_45_160" "EFO:0009922_UBERON:0000017_CL:0000763" "10x 3' v3_exocrine pancreas_myeloid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"385_2_45_160" "EFO:0009922_UBERON:0000017_CL:0002410" "10x 3' v3_exocrine pancreas_pancreatic stellate cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1813_2_45_160" "EFO:0009922_UBERON:0000017_CL:0002079" "10x 3' v3_exocrine pancreas_pancreatic ductal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_2_45_160" "EFO:0009922_UBERON:0000017_CL:0000786" "10x 3' v3_exocrine pancreas_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_2_45_160" "EFO:0009922_UBERON:0000017_CL:0000169" "10x 3' v3_exocrine pancreas_type B pancreatic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3243_2_45_160" "EFO:0009922_UBERON:0002367_CL:0002341" "10x 3' v3_prostate gland_basal cell of prostate epithelium"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6474_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000066" "10x 3' v3_prostate gland_epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"223_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000057" "10x 3' v3_prostate gland_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1078_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000158" "10x 3' v3_prostate gland_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"317_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000235" "10x 3' v3_prostate gland_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"410_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000814" "10x 3' v3_prostate gland_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"962_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000625" "10x 3' v3_prostate gland_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1092_2_45_160" "EFO:0009922_UBERON:0002367_CL:0002340" "10x 3' v3_prostate gland_luminal cell of prostate epithelium"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"585_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000115" "10x 3' v3_prostate gland_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"285_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000192" "10x 3' v3_prostate gland_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"63_2_45_160" "EFO:0008931_UBERON:0002190_CL:0000057" "Smart-seq2_subcutaneous adipose tissue_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_2_45_160" "EFO:0008931_UBERON:0001416_CL:0000115" "Smart-seq2_skin of abdomen_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"92_2_45_160" "EFO:0008931_UBERON:0001416_CL:0000097" "Smart-seq2_skin of abdomen_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"79_2_45_160" "EFO:0008931_UBERON:0001868_CL:0000115" "Smart-seq2_skin of chest_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"336_2_45_160" "EFO:0008931_UBERON:0002371_CL:0000624" "Smart-seq2_bone marrow_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"339_2_45_160" "EFO:0008931_UBERON:0002371_CL:0000786" "Smart-seq2_bone marrow_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_2_45_160" "EFO:0008931_UBERON:0002371_CL:0000038" "Smart-seq2_bone marrow_erythroid progenitor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"107_2_45_160" "EFO:0008931_UBERON:0001817_CL:0000499" "Smart-seq2_lacrimal gland_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"154_2_45_160" "EFO:0008931_UBERON:0000995_CL:0000057" "Smart-seq2_uterus_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"50_2_45_160" "EFO:0008931_UBERON:0000995_CL:0002149" "Smart-seq2_uterus_epithelial cell of uterus"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"218_2_45_160" "EFO:0008931_UBERON:0001911_CL:0002326" "Smart-seq2_mammary gland_luminal epithelial cell of mammary gland"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"364_2_45_160" "EFO:0008931_UBERON:0008612_CL:0002139" "Smart-seq2_muscle of pelvic diaphragm_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"342_2_45_160" "EFO:0008931_UBERON:0008612_CL:0000134" "Smart-seq2_muscle of pelvic diaphragm_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"461_2_45_160" "EFO:0008931_UBERON:0002382_CL:0000134" "Smart-seq2_rectus abdominis muscle_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"55_2_45_160" "EFO:0008931_UBERON:0003126_CL:0000064" "Smart-seq2_trachea_ciliated cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"131_2_45_160" "EFO:0008931_UBERON:0003126_CL:0000646" "Smart-seq2_trachea_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"104_2_45_160" "EFO:0008931_UBERON:0003126_CL:0000057" "Smart-seq2_trachea_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"544_2_45_160" "EFO:0008931_UBERON:0002106_CL:0000787" "Smart-seq2_spleen_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"185_2_45_160" "EFO:0008931_UBERON:0002106_CL:0000786" "Smart-seq2_spleen_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"124_2_45_160" "EFO:0008931_UBERON:0002106_CL:0000814" "Smart-seq2_spleen_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"69_2_45_160" "EFO:0008931_UBERON:0000029_CL:0000786" "Smart-seq2_lymph node_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"119_2_45_160" "EFO:0008931_UBERON:0001831_CL:0002503" "Smart-seq2_parotid gland_adventitial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"358_2_45_160" "EFO:0008931_UBERON:0010033_CL:0000646" "Smart-seq2_posterior part of tongue_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"374_2_45_160" "EFO:0008931_UBERON:0002367_CL:0000066" "Smart-seq2_prostate gland_epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"340_2_45_160" "EFO:0008931_UBERON:0000017_CL:0002064" "Smart-seq2_exocrine pancreas_pancreatic acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"86_2_45_160" "EFO:0009922_UBERON:0002371_CL:0000232" "10x 3' v3_bone marrow_erythrocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"267_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000115" "10x 3' v3_liver_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"106_2_45_160" "EFO:0009922_UBERON:0002107_CL:0000232" "10x 3' v3_liver_erythrocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1124_2_45_160" "EFO:0009922_UBERON:0001831_CL:0000235" "10x 3' v3_parotid gland_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"880_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000646" "10x 3' v3_submandibular gland_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2095_2_45_160" "EFO:0009922_UBERON:0001736_CL:0002623" "10x 3' v3_submandibular gland_acinar cell of salivary gland"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"309_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000786" "10x 3' v3_submandibular gland_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"637_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000235" "10x 3' v3_submandibular gland_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_2_45_160" "EFO:0009922_UBERON:0001736_CL:0005006" "10x 3' v3_submandibular gland_ionocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"990_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000068" "10x 3' v3_submandibular gland_duct epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"257_2_45_160" "EFO:0009922_UBERON:0001736_CL:0002138" "10x 3' v3_submandibular gland_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"123_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000115" "10x 3' v3_submandibular gland_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"543_2_45_160" "EFO:0009922_UBERON:0001736_CL:0000057" "10x 3' v3_submandibular gland_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"7604_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000492" "10x 3' v3_thymus_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"761_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002677" "10x 3' v3_thymus_naive regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"398_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002038" "10x 3' v3_thymus_T follicular helper cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"501_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000794" "10x 3' v3_thymus_CD8-positive, alpha-beta cytotoxic T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1919_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000236" "10x 3' v3_thymus_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"163_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002365" "10x 3' v3_thymus_medullary thymic epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3828_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000057" "10x 3' v3_thymus_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"443_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000235" "10x 3' v3_thymus_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1984_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000359" "10x 3' v3_thymus_vascular associated smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1526_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000786" "10x 3' v3_thymus_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2010_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002543" "10x 3' v3_thymus_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1225_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002144" "10x 3' v3_thymus_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"534_2_45_160" "EFO:0009922_UBERON:0002370_CL:1000413" "10x 3' v3_thymus_endothelial cell of artery"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"274_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000814" "10x 3' v3_thymus_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"410_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000576" "10x 3' v3_thymus_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"270_2_45_160" "EFO:0009922_UBERON:0002370_CL:0002138" "10x 3' v3_thymus_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1445_2_45_160" "EFO:0009922_UBERON:0000964_CL:0000575" "10x 3' v3_cornea_corneal epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1275_2_45_160" "EFO:0009922_UBERON:0000964_CL:1000432" "10x 3' v3_cornea_conjunctival epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"174_2_45_160" "EFO:0009922_UBERON:0000964_CL:0000681" "10x 3' v3_cornea_radial glial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"93_2_45_160" "EFO:0009922_UBERON:0000964_CL:0000034" "10x 3' v3_cornea_stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_2_45_160" "EFO:0009922_UBERON:0000964_CL:0002363" "10x 3' v3_cornea_keratocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"62_2_45_160" "EFO:0009922_UBERON:0000964_CL:0000057" "10x 3' v3_cornea_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"158_2_45_160" "EFO:0009922_UBERON:0000964_CL:0002585" "10x 3' v3_cornea_retinal blood vessel endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"75_2_45_160" "EFO:0009922_UBERON:0000964_CL:0000148" "10x 3' v3_cornea_melanocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"325_2_45_160" "EFO:0009922_UBERON:0003902_CL:0000287" "10x 3' v3_retinal neural layer_eye photoreceptor cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"297_2_45_160" "EFO:0009922_UBERON:0003902_CL:0000636" "10x 3' v3_retinal neural layer_Mueller cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"284_2_45_160" "EFO:0009922_UBERON:0001773_CL:0002585" "10x 3' v3_sclera_retinal blood vessel endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"367_2_45_160" "EFO:0009922_UBERON:0001773_CL:0002363" "10x 3' v3_sclera_keratocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"185_2_45_160" "EFO:0009922_UBERON:0001773_CL:0000499" "10x 3' v3_sclera_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"83_2_45_160" "EFO:0009922_UBERON:0001773_CL:0000115" "10x 3' v3_sclera_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_2_45_160" "EFO:0009922_UBERON:0001773_CL:0000235" "10x 3' v3_sclera_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_2_45_160" "EFO:0009922_UBERON:0001773_CL:1000432" "10x 3' v3_sclera_conjunctival epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2914_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000084" "10x 3' v3_bladder organ_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5102_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000235" "10x 3' v3_bladder organ_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2048_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000186" "10x 3' v3_bladder organ_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3924_2_45_160" "EFO:0009922_UBERON:0018707_CL:1001428" "10x 3' v3_bladder organ_bladder urothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"76_2_45_160" "EFO:0009922_UBERON:0018707_CL:0002144" "10x 3' v3_bladder organ_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"284_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000192" "10x 3' v3_bladder organ_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5256_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000057" "10x 3' v3_bladder organ_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"826_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000669" "10x 3' v3_bladder organ_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"924_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000097" "10x 3' v3_bladder organ_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"502_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000814" "10x 3' v3_bladder organ_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"52_2_45_160" "EFO:0009922_UBERON:0018707_CL:0002138" "10x 3' v3_bladder organ_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"214_2_45_160" "EFO:0009922_UBERON:0018707_CL:0002543" "10x 3' v3_bladder organ_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"237_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000236" "10x 3' v3_bladder organ_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2872_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000624" "10x 3' v3_large intestine_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2764_2_45_160" "EFO:0009922_UBERON:0000059_CL:0002071" "10x 3' v3_large intestine_enterocyte of epithelium of large intestine"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"543_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000576" "10x 3' v3_large intestine_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"330_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000786" "10x 3' v3_large intestine_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2146_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000625" "10x 3' v3_large intestine_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"945_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000057" "10x 3' v3_large intestine_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"385_2_45_160" "EFO:0009922_UBERON:0000059_CL:1000320" "10x 3' v3_large intestine_large intestine goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"888_2_45_160" "EFO:0009922_UBERON:0000059_CL:0009009" "10x 3' v3_large intestine_paneth cell of colon"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"497_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000236" "10x 3' v3_large intestine_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"204_2_45_160" "EFO:0009922_UBERON:0000059_CL:0009011" "10x 3' v3_large intestine_transit amplifying cell of colon"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_2_45_160" "EFO:0009922_UBERON:0000059_CL:1001516" "10x 3' v3_large intestine_intestinal enteroendocrine cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8827_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002063" "10x 3' v3_lung_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"729_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002370" "10x 3' v3_lung_respiratory goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"586_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000084" "10x 3' v3_prostate gland_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"365_2_45_160" "EFO:0009922_UBERON:0002367_CL:0000763" "10x 3' v3_prostate gland_myeloid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5257_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000624" "10x 3' v3_small intestine_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1100_2_45_160" "EFO:0009922_UBERON:0002108_CL:1000334" "10x 3' v3_small intestine_enterocyte of epithelium of small intestine"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"64_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000775" "10x 3' v3_small intestine_neutrophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"197_2_45_160" "EFO:0009922_UBERON:0002108_CL:0009012" "10x 3' v3_small intestine_transit amplifying cell of small intestine"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"300_2_45_160" "EFO:0009922_UBERON:0002108_CL:1000495" "10x 3' v3_small intestine_small intestine goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2323_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000625" "10x 3' v3_small intestine_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"518_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000236" "10x 3' v3_small intestine_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"61_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000576" "10x 3' v3_small intestine_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"614_2_45_160" "EFO:0009922_UBERON:0002108_CL:1000343" "10x 3' v3_small intestine_paneth cell of epithelium of small intestine"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"303_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000786" "10x 3' v3_small intestine_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"65_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000097" "10x 3' v3_small intestine_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"53_2_45_160" "EFO:0009922_UBERON:0002108_CL:1001516" "10x 3' v3_small intestine_intestinal enteroendocrine cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"71_2_45_160" "EFO:0009922_UBERON:0002108_CL:0009017" "10x 3' v3_small intestine_intestinal crypt stem cell of small intestine"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"118_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000814" "10x 3' v3_skin of abdomen_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"576_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000499" "10x 3' v3_skin of abdomen_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"139_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000115" "10x 3' v3_skin of abdomen_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"164_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000909" "10x 3' v3_skin of abdomen_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"51_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000097" "10x 3' v3_skin of abdomen_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"90_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000235" "10x 3' v3_skin of abdomen_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"101_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000187" "10x 3' v3_skin of abdomen_muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"98_2_45_160" "EFO:0009922_UBERON:0001416_CL:0000084" "10x 3' v3_skin of abdomen_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"337_2_45_160" "EFO:0009922_UBERON:0001868_CL:0000115" "10x 3' v3_skin of chest_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"849_2_45_160" "EFO:0009922_UBERON:0001868_CL:0000499" "10x 3' v3_skin of chest_stromal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"110_2_45_160" "EFO:0009922_UBERON:0001868_CL:0000909" "10x 3' v3_skin of chest_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"156_2_45_160" "EFO:0009922_UBERON:0001868_CL:0000187" "10x 3' v3_skin of chest_muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"120_2_45_160" "EFO:0009922_UBERON:0001868_CL:0000814" "10x 3' v3_skin of chest_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1788_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000807" "10x 3' v3_thymus_DN3 thymocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"985_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000894" "10x 3' v3_thymus_DN1 thymic pro-T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2594_2_45_160" "EFO:0009922_UBERON:0002370_CL:0001065" "10x 3' v3_thymus_innate lymphoid cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"338_2_45_160" "EFO:0009922_UBERON:0010032_CL:0000646" "10x 3' v3_anterior part of tongue_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1751_2_45_160" "EFO:0009922_UBERON:0010032_CL:0000312" "10x 3' v3_anterior part of tongue_keratinocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"296_2_45_160" "EFO:0009922_UBERON:0010032_CL:0000738" "10x 3' v3_anterior part of tongue_leukocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3787_2_45_160" "EFO:0009922_UBERON:0002378_CL:0000134" "10x 3' v3_muscle of abdomen_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"342_2_45_160" "EFO:0009922_UBERON:0002378_CL:0002144" "10x 3' v3_muscle of abdomen_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"360_2_45_160" "EFO:0009922_UBERON:0002378_CL:0000669" "10x 3' v3_muscle of abdomen_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"147_2_45_160" "EFO:0009922_UBERON:0002378_CL:0000235" "10x 3' v3_muscle of abdomen_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"173_2_45_160" "EFO:0009922_UBERON:0002378_CL:0002139" "10x 3' v3_muscle of abdomen_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2766_2_45_160" "EFO:0009922_UBERON:0008612_CL:0000134" "10x 3' v3_muscle of pelvic diaphragm_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"574_2_45_160" "EFO:0009922_UBERON:0008612_CL:0000235" "10x 3' v3_muscle of pelvic diaphragm_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"955_2_45_160" "EFO:0009922_UBERON:0008612_CL:0008011" "10x 3' v3_muscle of pelvic diaphragm_skeletal muscle satellite stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1445_2_45_160" "EFO:0009922_UBERON:0008612_CL:0002139" "10x 3' v3_muscle of pelvic diaphragm_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"195_2_45_160" "EFO:0009922_UBERON:0008612_CL:0000084" "10x 3' v3_muscle of pelvic diaphragm_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"934_2_45_160" "EFO:0009922_UBERON:0002049_CL:0000057" "10x 3' v3_vasculature_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"537_2_45_160" "EFO:0009922_UBERON:0002049_CL:0000192" "10x 3' v3_vasculature_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"589_2_45_160" "EFO:0009922_UBERON:0002049_CL:0000235" "10x 3' v3_vasculature_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"283_2_45_160" "EFO:0009922_UBERON:0002049_CL:0000669" "10x 3' v3_vasculature_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1273_2_45_160" "EFO:0009922_UBERON:0001621_CL:0000192" "10x 3' v3_coronary artery_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"153_2_45_160" "EFO:0009922_UBERON:0001621_CL:0000084" "10x 3' v3_coronary artery_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1906_2_45_160" "EFO:0009922_UBERON:0001621_CL:0000057" "10x 3' v3_coronary artery_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"805_2_45_160" "EFO:0009922_UBERON:0001621_CL:0000235" "10x 3' v3_coronary artery_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"117_2_45_160" "EFO:0009922_UBERON:0001621_CL:1000413" "10x 3' v3_coronary artery_endothelial cell of artery"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"526_2_45_160" "EFO:0009922_UBERON:0001621_CL:0000669" "10x 3' v3_coronary artery_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1046_2_45_160" "EFO:0009922_UBERON:0018707_CL:0000786" "10x 3' v3_bladder organ_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"227_2_45_160" "EFO:0008931_UBERON:0018707_CL:1001428" "Smart-seq2_bladder organ_bladder urothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2370_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000624" "10x 3' v3_blood_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8435_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000576" "10x 3' v3_blood_monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"488_2_45_160" "EFO:0009922_UBERON:0000178_CL:0000235" "10x 3' v3_blood_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8158_2_45_160" "EFO:0009922_UBERON:0002113_CL:0002518" "10x 3' v3_kidney_kidney epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"274_2_45_160" "EFO:0009922_UBERON:0002113_CL:0000236" "10x 3' v3_kidney_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"183_2_45_160" "EFO:0009922_UBERON:0002113_CL:0000625" "10x 3' v3_kidney_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"315_2_45_160" "EFO:0009922_UBERON:0002113_CL:0000235" "10x 3' v3_kidney_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"149_2_45_160" "EFO:0009922_UBERON:0002113_CL:0000492" "10x 3' v3_kidney_CD4-positive helper T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"173_2_45_160" "EFO:0008931_UBERON:0002113_CL:0002518" "Smart-seq2_kidney_kidney epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1201_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000584" "10x 3' v3_large intestine_enterocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"109_2_45_160" "EFO:0009922_UBERON:0000059_CL:0002250" "10x 3' v3_large intestine_intestinal crypt stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"61_2_45_160" "EFO:0009922_UBERON:0000059_CL:0000160" "10x 3' v3_large intestine_goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"677_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000767" "10x 3' v3_lung_basophil"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1390_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000860" "10x 3' v3_lung_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"567_2_45_160" "EFO:0009922_UBERON:0002048_CL:1000271" "10x 3' v3_lung_lung ciliated cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"278_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000451" "10x 3' v3_lung_dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"524_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000624" "10x 3' v3_lung_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2055_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000646" "10x 3' v3_lung_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"125_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000786" "10x 3' v3_lung_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"523_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000625" "10x 3' v3_lung_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"999_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000875" "10x 3' v3_lung_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1374_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002144" "10x 3' v3_lung_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"204_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002062" "10x 3' v3_lung_type I pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"478_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002543" "10x 3' v3_lung_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"244_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000057" "10x 3' v3_lung_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1023_2_45_160" "EFO:0009922_UBERON:0002048_CL:0000158" "10x 3' v3_lung_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"480_2_45_160" "EFO:0009922_UBERON:0002048_CL:2000016" "10x 3' v3_lung_lung microvascular endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"319_2_45_160" "EFO:0008931_UBERON:0002048_CL:0002063" "Smart-seq2_lung_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"126_2_45_160" "EFO:0008931_UBERON:0002048_CL:0000235" "Smart-seq2_lung_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"133_2_45_160" "EFO:0008931_UBERON:0002048_CL:0000646" "Smart-seq2_lung_basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"299_2_45_160" "EFO:0008931_UBERON:0002048_CL:0002503" "Smart-seq2_lung_adventitial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"252_2_45_160" "EFO:0009922_UBERON:0002048_CL:0002393" "10x 3' v3_lung_intermediate monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1324_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000788" "10x 3' v3_lymph node_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2919_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000787" "10x 3' v3_lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1266_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000895" "10x 3' v3_lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1241_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000897" "10x 3' v3_lymph node_CD4-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"750_2_45_160" "EFO:0009922_UBERON:0000029_CL:0000909" "10x 3' v3_lymph node_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"292_2_45_160" "EFO:0008931_UBERON:0000029_CL:0000787" "Smart-seq2_lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"108_2_45_160" "EFO:0008931_UBERON:0001542_CL:0000787" "Smart-seq2_inguinal lymph node_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"234_2_45_160" "EFO:0009922_UBERON:0002385_CL:0008011" "10x 3' v3_muscle tissue_skeletal muscle satellite stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"374_2_45_160" "EFO:0009922_UBERON:0002385_CL:0000669" "10x 3' v3_muscle tissue_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"302_2_45_160" "EFO:0009922_UBERON:0002385_CL:0002139" "10x 3' v3_muscle tissue_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"68_2_45_160" "EFO:0009922_UBERON:0002385_CL:0000235" "10x 3' v3_muscle tissue_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"737_2_45_160" "EFO:0009922_UBERON:0002385_CL:0000134" "10x 3' v3_muscle tissue_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"375_2_45_160" "EFO:0009922_UBERON:0002385_CL:0002144" "10x 3' v3_muscle tissue_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"143_2_45_160" "EFO:0009922_UBERON:0002385_CL:0000190" "10x 3' v3_muscle tissue_fast muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"57_2_45_160" "EFO:0009922_UBERON:0002385_CL:0000189" "10x 3' v3_muscle tissue_slow muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"233_2_45_160" "EFO:0008931_UBERON:0002385_CL:0002139" "Smart-seq2_muscle tissue_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"355_2_45_160" "EFO:0008931_UBERON:0002385_CL:0000235" "Smart-seq2_muscle tissue_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"620_2_45_160" "EFO:0008931_UBERON:0002385_CL:0000134" "Smart-seq2_muscle tissue_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"673_2_45_160" "EFO:0009922_UBERON:0002382_CL:0000669" "10x 3' v3_rectus abdominis muscle_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5435_2_45_160" "EFO:0009922_UBERON:0002382_CL:0000134" "10x 3' v3_rectus abdominis muscle_mesenchymal stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1918_2_45_160" "EFO:0009922_UBERON:0002382_CL:0008011" "10x 3' v3_rectus abdominis muscle_skeletal muscle satellite stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"790_2_45_160" "EFO:0009922_UBERON:0002382_CL:0002144" "10x 3' v3_rectus abdominis muscle_capillary endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"947_2_45_160" "EFO:0009922_UBERON:0002382_CL:0002139" "10x 3' v3_rectus abdominis muscle_endothelial cell of vascular tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"692_2_45_160" "EFO:0009922_UBERON:0002382_CL:0000235" "10x 3' v3_rectus abdominis muscle_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"146_2_45_160" "EFO:0009922_UBERON:0000016_CL:0000115" "10x 3' v3_endocrine pancreas_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"246_2_45_160" "EFO:0009922_UBERON:0000016_CL:0002064" "10x 3' v3_endocrine pancreas_pancreatic acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"505_2_45_160" "EFO:0009922_UBERON:0000016_CL:0002079" "10x 3' v3_endocrine pancreas_pancreatic ductal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"196_2_45_160" "EFO:0008931_UBERON:0000016_CL:0002064" "Smart-seq2_endocrine pancreas_pancreatic acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"62_2_45_160" "EFO:0009922_UBERON:0002108_CL:0002250" "10x 3' v3_small intestine_intestinal crypt stem cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"468_2_45_160" "EFO:0009922_UBERON:0002108_CL:0000584" "10x 3' v3_small intestine_enterocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"349_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000625" "10x 3' v3_thymus_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1829_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000787" "10x 3' v3_thymus_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"873_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000788" "10x 3' v3_thymus_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"66_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000190" "10x 3' v3_thymus_fast muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"553_2_45_160" "EFO:0009922_UBERON:0002370_CL:0000893" "10x 3' v3_thymus_thymocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"96_2_45_160" "EFO:0008931_UBERON:0002370_CL:0000057" "Smart-seq2_thymus_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"249_2_45_160" "EFO:0009922_UBERON:0003126_CL:0002320" "10x 3' v3_trachea_connective tissue cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2822_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000057" "10x 3' v3_aorta_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1660_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000235" "10x 3' v3_aorta_macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1232_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000192" "10x 3' v3_aorta_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1274_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000115" "10x 3' v3_aorta_endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"76_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000814" "10x 3' v3_aorta_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"357_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000669" "10x 3' v3_aorta_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"60_2_45_160" "EFO:0009922_UBERON:0000947_CL:0000097" "10x 3' v3_aorta_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"203_2_45_160" "EFO:0008931_UBERON:0002049_CL:0000057" "Smart-seq2_vasculature_fibroblast"
+
+

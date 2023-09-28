@@ -44,14 +44,21 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# some folders to avoid to be pushed
 _next-advancements/
 _errors/
+*relation_images/
 
+# some specific files to avoid
 *.nb.html
 Data-Descriptor/Cell-Level/scPower-wrapper/*.nb.html
 Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/skeletal muscle/skeletal_muscle.RData
 Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/limb muscle/limb_muscle.RData
 Data-Descriptor/Cell-Level/scPower-wrapper/results/gtex/gtex.RData
+*consoleOutput.txt
+*estimates_trimmed.txt
+*error.txt
 
 # Jupyter Notebook
 .ipynb_checkpoints

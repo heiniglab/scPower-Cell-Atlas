@@ -1,0 +1,1652 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.979083116054999 NA 2 1307 1307 0 1307 16177 "10x 3' v3_liver_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.875001698052084 NA 2 606 606 0 606 13375 "10x 3' v3_liver_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.927442885496608 NA 2 410 410 0 410 14625 "10x 3' v3_liver_endothelial cell of hepatic sinusoid"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.794118988519182 NA 2 231 231 0 231 11792 "10x 3' v3_liver_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999998187954264 NA 2 1551 1551 0 1551 19765 "10x 3' v3_liver_hepatocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.992407558572669 NA 2 531 531 0 531 16968 "10x 3' v3_trachea_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.899702149562014 NA 1 65 65 0 65 14021 "10x 3' v3_trachea_tracheal goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9999988504371 NA 1 1135 1135 0 1135 20491 "10x 3' v3_trachea_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.929789157244348 NA 2 225 225 0 225 14688 "10x 3' v3_trachea_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.794565337061758 NA 1 83 83 0 83 11876 "10x 3' v3_trachea_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.995828008534548 NA 2 262 262 0 262 17531 "10x 3' v3_trachea_ciliated cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.97085681975054 NA 2 224 224 0 224 15955 "10x 3' v3_trachea_secretory cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.807680052959863 NA 1 130 130 0 130 12102 "10x 3' v3_trachea_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 4067 4067 0 4067 24666 "10x 3' v3_trachea_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.590812222178056 NA 1 61 61 0 61 8629 "10x 3' v3_trachea_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.789723675780089 NA 2 115 115 0 115 11742 "10x 3' v3_trachea_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.903531092835061 NA 1 464 464 0 464 14056 "10x 3' v3_trachea_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.929057033233885 NA 1 459 459 0 459 14712 "10x 3' v3_trachea_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.77069540084787 NA 1 727 727 0 727 11399 "10x 3' v3_trachea_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.50973684274203e-06 0.943253178248802 8.24918270785858e-05 6 10397 10397 0 10397 14985 "10x 3' v3_blood_erythrocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.13368041232618e-05 0.988465861403608 9.62478207793379e-05 4 857 857 0 857 16536 "10x 3' v3_blood_CD4-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.26960158835129e-06 0.998884477529905 2.46304759407014e-06 4 1477 1477 0 1477 17464 "10x 3' v3_blood_CD8-positive, alpha-beta cytokine secreting effector T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 5.67762958644467e-07 1 5.67762958644467e-07 4 6999 6999 0 6999 22373 "10x 3' v3_blood_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.21128013126769e-06 0.999995648059504 1.21129854907144e-06 5 8378 8378 0 8378 18679 "10x 3' v3_blood_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.34675933365185e-06 0.999758078810381 2.34761519510088e-06 6 2079 2079 0 2079 17786 "10x 3' v3_blood_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.15010663941891e-06 0.999999985237602 2.15010679198256e-06 6 2871 2871 0 2871 19438 "10x 3' v3_blood_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.19866113586471e-06 0.982386672190895 4.93957643574516e-05 6 793 793 0 793 16223 "10x 3' v3_blood_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.58549960356273e-05 0.922721530908536 0.00158067674231322 4 499 499 0 499 14457 "10x 3' v3_blood_type I NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.37245285644487e-06 0.999496228689298 2.37428516890581e-06 6 1229 1229 0 1229 17586 "10x 3' v3_blood_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.28557467069259e-06 0.999353709588879 1.28645314032358e-06 5 485 485 0 485 17568 "10x 3' v3_blood_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.35989839480463e-05 0.872894943752687 0.00369007321112141 4 403 403 0 403 13321 "10x 3' v3_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.30356698422337e-06 0.852374737125828 0.000501041483764348 6 65 65 0 65 12889 "10x 3' v3_blood_hematopoietic stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999997681 NA 1 5673 5673 0 5673 22074 "10x 3' v3_inguinal lymph node_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.857990814876861 NA 1 329 329 0 329 13054 "10x 3' v3_inguinal lymph node_effector CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.817559072398211 NA 1 293 293 0 293 12258 "10x 3' v3_inguinal lymph node_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.856046919346099 NA 1 293 293 0 293 13019 "10x 3' v3_inguinal lymph node_type I NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.944660906724906 NA 1 673 673 0 673 15124 "10x 3' v3_inguinal lymph node_effector CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.758485230784996 NA 1 199 199 0 199 11219 "10x 3' v3_inguinal lymph node_innate lymphoid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.8128239125977 NA 1 107 107 0 107 12158 "10x 3' v3_inguinal lymph node_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 9135 9135 0 9135 23038 "10x 3' v3_lymph node_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999991062 NA 2 6118 6118 0 6118 21669 "10x 3' v3_lymph node_effector CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9999972401736 NA 2 3463 3463 0 3463 19658 "10x 3' v3_lymph node_type I NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9999999925277 NA 2 5477 5477 0 5477 20724 "10x 3' v3_lymph node_effector CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.66357085362196e-06 0.999552847029431 3.89080307750587e-06 3 1707 1707 0 1707 18019 "10x 3' v3_lymph node_innate lymphoid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.75535303114757e-07 0.999999987343437 3.75535311155621e-07 3 1141 1141 0 1141 20092 "10x 3' v3_lymph node_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000414046385196791 0.990535496762987 0.000779959716356155 3 830 830 0 830 16694 "10x 3' v3_lymph node_regulatory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999947065472652 NA 2 3462 3462 0 3462 18844 "10x 3' v3_lymph node_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.2893482146346e-07 1 3.2893482146346e-07 3 2486 2486 0 2486 22941 "10x 3' v3_lymph node_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.942084185507842 NA 3 587 587 0 587 14981 "10x 3' v3_lymph node_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.672619023045356 NA 3 126 126 0 126 9811 "10x 3' v3_lymph node_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.83987715929692 NA 3 94 94 0 94 12640 "10x 3' v3_lymph node_CD141-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.896524011928732 NA 3 281 281 0 281 13841 "10x 3' v3_lymph node_intermediate monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.825952476142182 NA 2 111 111 0 111 12401 "10x 3' v3_lymph node_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.823521651876446 NA 3 74 74 0 74 12319 "10x 3' v3_lymph node_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.826151226897325 NA 3 215 215 0 215 12368 "10x 3' v3_lymph node_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.927124605250752 NA 3 148 148 0 148 14606 "10x 3' v3_lymph node_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999999977 NA 2 8052 8052 0 8052 22330 "10x 3' v3_parotid gland_acinar cell of salivary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.992480135155697 NA 1 1120 1120 0 1120 17229 "10x 3' v3_parotid gland_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999998883447 NA 2 2816 2816 0 2816 21291 "10x 3' v3_parotid gland_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.991218151343608 NA 2 1101 1101 0 1101 16909 "10x 3' v3_parotid gland_CD4-positive helper T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.874664941109523 NA 2 317 317 0 317 13389 "10x 3' v3_parotid gland_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999735843124 NA 2 1503 1503 0 1503 20404 "10x 3' v3_parotid gland_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.774144329610164 NA 2 63 63 0 63 11463 "10x 3' v3_parotid gland_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.965693823752206 NA 2 323 323 0 323 15738 "10x 3' v3_parotid gland_adventitial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.927476550301588 NA 2 81 81 0 81 14639 "10x 3' v3_parotid gland_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.862498588842296 NA 2 200 200 0 200 13139 "10x 3' v3_parotid gland_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.926286588693606 NA 2 426 426 0 426 14589 "10x 3' v3_parotid gland_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997281513017484 NA 2 703 703 0 703 17546 "10x 3' v3_parotid gland_duct epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.991960416115389 NA 2 1887 1887 0 1887 16924 "10x 3' v3_parotid gland_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.530834307915034 NA 2 115 115 0 115 7758 "10x 3' v3_parotid gland_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.68444227669445e-07 0.999999999811338 3.68444227787815e-07 3 3963 3963 0 3963 20479 "10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.92987685783416e-07 0.999998221765112 3.92988839201547e-07 3 1312 1312 0 1312 19199 "10x 3' v3_spleen_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.95876183782304e-05 0.996561780322377 7.5091211571433e-05 3 1160 1160 0 1160 17173 "10x 3' v3_spleen_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.63179983838966 NA 2 125 125 0 125 9213 "10x 3' v3_spleen_intermediate monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.91801872713866e-07 0.999992761948332 3.91806085544857e-07 3 571 571 0 571 19257 "10x 3' v3_spleen_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.20463408275304e-07 1 3.20463408275304e-07 3 5916 5916 0 5916 23548 "10x 3' v3_spleen_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.54486835668297e-07 1 3.54486835668298e-07 3 4114 4114 0 4114 21286 "10x 3' v3_spleen_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000230811357101176 0.992505369796204 0.000451833341460247 3 4408 4408 0 4408 16825 "10x 3' v3_spleen_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.96739297763755 NA 3 990 990 0 990 15737 "10x 3' v3_spleen_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.14250414293426e-07 1 3.14250414293426e-07 3 2986 2986 0 2986 24014 "10x 3' v3_spleen_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.20274169068767e-06 0.999389846322469 7.36760148454689e-06 3 1662 1662 0 1662 17824 "10x 3' v3_spleen_CD4-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.981167906053307 NA 2 980 980 0 980 16303 "10x 3' v3_spleen_type I NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.930725144586431 NA 3 573 573 0 573 14672 "10x 3' v3_spleen_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.84249244178739e-07 0.999999750710821 3.8424940430974e-07 3 2315 2315 0 2315 19636 "10x 3' v3_spleen_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.749821319505958 NA 3 114 114 0 114 11028 "10x 3' v3_spleen_innate lymphoid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.608700346343795 NA 3 164 164 0 164 8872 "10x 3' v3_spleen_erythrocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.885103336485534 NA 3 237 237 0 237 13591 "10x 3' v3_spleen_regulatory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.800657411407724 NA 2 73 73 0 73 11922 "10x 3' v3_spleen_hematopoietic stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999999473 NA 1 2114 2114 0 2114 22718 "10x 3' v3_anterior part of tongue_epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 5139 5139 0 5139 25302 "10x 3' v3_posterior part of tongue_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999716491141866 NA 2 1318 1318 0 1318 18457 "10x 3' v3_posterior part of tongue_leukocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.806132718560045 NA 2 136 136 0 136 12033 "10x 3' v3_posterior part of tongue_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.815616701285561 NA 2 120 120 0 120 12198 "10x 3' v3_posterior part of tongue_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.639608274713574 NA 2 72 72 0 72 9338 "10x 3' v3_posterior part of tongue_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999963566582 NA 2 1898 1898 0 1898 20098 "10x 3' v3_posterior part of tongue_keratinocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999987164785961 NA 1 1961 1961 0 1961 19586 "10x 3' v3_mammary gland_fibroblast of breast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.995338508927835 NA 1 2147 2147 0 2147 17457 "10x 3' v3_mammary gland_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 5160 5160 0 5160 24598 "10x 3' v3_mammary gland_luminal epithelial cell of mammary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.816066792997818 NA 1 206 206 0 206 12234 "10x 3' v3_mammary gland_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.643161605955024 NA 1 104 104 0 104 9399 "10x 3' v3_mammary gland_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.557331672917198 NA 1 69 69 0 69 8139 "10x 3' v3_mammary gland_vascular associated smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.864617036165587 NA 1 253 253 0 253 13171 "10x 3' v3_mammary gland_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.894909179067777 NA 1 470 470 0 470 13856 "10x 3' v3_mammary gland_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.821454855685295 NA 1 180 180 0 180 12328 "10x 3' v3_mammary gland_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.799064890092155 NA 1 159 159 0 159 11899 "10x 3' v3_mammary gland_endothelial cell of artery"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.889363723180615 NA 1 508 508 0 508 13741 "10x 3' v3_endometrium_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 2520 2520 0 2520 24291 "10x 3' v3_endometrium_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.914587433673716 NA 1 290 290 0 290 14326 "10x 3' v3_endometrium_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9486094434373 NA 1 137 137 0 137 15325 "10x 3' v3_endometrium_epithelial cell of uterus"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.834610673459905 NA 1 87 87 0 87 12590 "10x 3' v3_endometrium_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.949682058960315 NA 1 64 64 0 64 15339 "10x 3' v3_endometrium_epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.874423605357358 NA 1 81 81 0 81 13398 "10x 3' v3_endometrium_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.873063225439903 NA 1 390 390 0 390 13361 "10x 3' v3_myometrium_vascular associated smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.831846628321203 NA 1 197 197 0 197 12538 "10x 3' v3_myometrium_myometrial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999972717361 NA 1 1972 1972 0 1972 20981 "10x 3' v3_myometrium_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.92970272244679 NA 1 340 340 0 340 14727 "10x 3' v3_myometrium_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.667525876477592 NA 1 74 74 0 74 9762 "10x 3' v3_myometrium_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999977610945 NA 2 1154 1154 0 1154 21054 "10x 3' v3_eye_conjunctival epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.981024026413774 NA 1 557 557 0 557 16522 "10x 3' v3_eye_eye photoreceptor cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.76425396066535 NA 1 57 57 0 57 11394 "10x 3' v3_eye_Mueller cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.533383767635962 NA 1 75 75 0 75 7802 "10x 3' v3_eye_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.48228041931365 NA 1 52 52 0 52 7076 "10x 3' v3_eye_epithelial cell of lacrimal sac"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.901044829576242 NA 1 143 143 0 143 14057 "10x 3' v3_eye_keratocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999141441313607 NA 1 2078 2078 0 2078 18275 "10x 3' v3_conjunctiva_conjunctival epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 3883 3883 0 3883 23672 "10x 3' v3_adipose tissue_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999988357 NA 2 1952 1952 0 1952 21824 "10x 3' v3_adipose tissue_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.970456271114538 NA 2 997 997 0 997 15900 "10x 3' v3_adipose tissue_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999968443224 NA 2 1250 1250 0 1250 20756 "10x 3' v3_adipose tissue_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.90539007634172 NA 2 308 308 0 308 14071 "10x 3' v3_adipose tissue_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999948421 NA 2 1310 1310 0 1310 21701 "10x 3' v3_adipose tissue_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.872385758285095 NA 2 398 398 0 398 13333 "10x 3' v3_subcutaneous adipose tissue_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 4504 4504 0 4504 23830 "10x 3' v3_subcutaneous adipose tissue_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.979898339142183 NA 2 670 670 0 670 16263 "10x 3' v3_subcutaneous adipose tissue_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999998026464 NA 2 1467 1467 0 1467 21176 "10x 3' v3_subcutaneous adipose tissue_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.923837895108566 NA 2 604 604 0 604 14533 "10x 3' v3_subcutaneous adipose tissue_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.867682844917929 NA 1 528 528 0 528 13240 "10x 3' v3_skin of body_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.996603422220789 NA 1 1448 1448 0 1448 17500 "10x 3' v3_skin of body_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.80727818900219 NA 1 544 544 0 544 12043 "10x 3' v3_skin of body_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.736018363250406 NA 1 343 343 0 343 10819 "10x 3' v3_skin of body_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.738635884516345 NA 1 389 389 0 389 10855 "10x 3' v3_skin of body_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.641420146542114 NA 1 145 145 0 145 9359 "10x 3' v3_skin of body_muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.450896529824143 NA 1 85 85 0 85 6624 "10x 3' v3_skin of body_CD8-positive, alpha-beta cytotoxic T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.56961327480649 NA 1 110 110 0 110 8313 "10x 3' v3_skin of body_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.941409931204497 NA 1 702 702 0 702 14986 "10x 3' v3_skin of body_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.56339763822042 NA 1 145 145 0 145 8224 "10x 3' v3_skin of body_CD4-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.373075068193239 NA 1 60 60 0 60 5528 "10x 3' v3_skin of body_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.621298871850402 NA 1 59 59 0 59 9070 "10x 3' v3_skin of body_epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.71306641813198e-07 0.999999953271398 3.7130667056829e-07 3 1073 1073 0 1073 20321 "10x 3' v3_bone marrow_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.977416622294128 NA 3 486 486 0 486 16104 "10x 3' v3_bone marrow_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.12050734508862e-07 0.9997692286398 4.12167696389897e-07 3 435 435 0 435 18305 "10x 3' v3_bone marrow_hematopoietic stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.9539447786202e-07 0.999996688152193 3.95396619806854e-07 3 670 670 0 670 19082 "10x 3' v3_bone marrow_erythroid progenitor cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.922515651030762 NA 3 470 470 0 470 14468 "10x 3' v3_bone marrow_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.03239453111132e-07 0.999979398491538 4.03252209860948e-07 3 781 781 0 781 18710 "10x 3' v3_bone marrow_granulocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.604796859618925 NA 3 96 96 0 96 8818 "10x 3' v3_bone marrow_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.773436312694545 NA 3 264 264 0 264 11401 "10x 3' v3_bone marrow_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.12622526754452e-07 0.999841109602851 4.12708419687018e-07 3 254 254 0 254 18281 "10x 3' v3_bone marrow_common myeloid progenitor"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.863392880515141 NA 3 288 288 0 288 13129 "10x 3' v3_bone marrow_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.960243963663967 NA 3 842 842 0 842 15508 "10x 3' v3_bone marrow_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.97513619989342e-07 0.999989686833949 3.97519930943849e-07 3 1689 1689 0 1689 18980 "10x 3' v3_bone marrow_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.43167438641062e-05 0.998850849658101 2.8208705859882e-05 3 2573 2573 0 2573 17493 "10x 3' v3_bone marrow_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997556743358614 NA 1 1797 1797 0 1797 17581 "10x 3' v3_cardiac atrium_cardiac endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 5315 5315 0 5315 24234 "10x 3' v3_cardiac atrium_cardiac muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999556931472 NA 1 766 766 0 766 20488 "10x 3' v3_cardiac atrium_hepatocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99999999769098 NA 1 1876 1876 0 1876 21200 "10x 3' v3_cardiac ventricle_cardiac muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99073801472904 NA 1 274 274 0 274 17096 "10x 3' v3_cardiac ventricle_hepatocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.727827744386645 NA 1 115 115 0 115 10709 "10x 3' v3_cardiac ventricle_fibroblast of cardiac tissue"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 4752 4752 0 4752 22377 "10x 3' v3_exocrine pancreas_pancreatic acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.87865157582163 NA 2 538 538 0 538 13466 "10x 3' v3_exocrine pancreas_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999991482170952 NA 2 1927 1927 0 1927 19175 "10x 3' v3_exocrine pancreas_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999995298018758 NA 2 1799 1799 0 1799 19204 "10x 3' v3_exocrine pancreas_myeloid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.973771060176591 NA 2 385 385 0 385 16003 "10x 3' v3_exocrine pancreas_pancreatic stellate cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999999752 NA 2 1813 1813 0 1813 21827 "10x 3' v3_exocrine pancreas_pancreatic ductal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.745990984893729 NA 1 63 63 0 63 10999 "10x 3' v3_exocrine pancreas_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.830798918630803 NA 2 87 87 0 87 12495 "10x 3' v3_exocrine pancreas_type B pancreatic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 3243 3243 0 3243 23852 "10x 3' v3_prostate gland_basal cell of prostate epithelium"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99999999998568 NA 2 6474 6474 0 6474 21305 "10x 3' v3_prostate gland_epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.828694603249703 NA 2 223 223 0 223 12451 "10x 3' v3_prostate gland_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999991669653 NA 2 1078 1078 0 1078 21288 "10x 3' v3_prostate gland_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.912662246262064 NA 1 317 317 0 317 14278 "10x 3' v3_prostate gland_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.821903890416439 NA 1 410 410 0 410 12340 "10x 3' v3_prostate gland_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.916654545297458 NA 1 962 962 0 962 14366 "10x 3' v3_prostate gland_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999912850286 NA 2 1092 1092 0 1092 20583 "10x 3' v3_prostate gland_luminal cell of prostate epithelium"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.965480625688539 NA 2 585 585 0 585 15716 "10x 3' v3_prostate gland_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.926934791517095 NA 1 285 285 0 285 14643 "10x 3' v3_prostate gland_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.995987277301955 NA 1 63 63 0 63 17510 "Smart-seq2_subcutaneous adipose tissue_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.918846315286215 NA 1 52 52 0 52 14380 "Smart-seq2_skin of abdomen_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.919905642456952 NA 1 92 92 0 92 14467 "Smart-seq2_skin of abdomen_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.986484996251818 NA 1 79 79 0 79 16632 "Smart-seq2_skin of chest_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.85265014961471e-07 0.999991626719373 3.85268893096861e-07 3 336 336 0 336 19584 "Smart-seq2_bone marrow_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.51353258288034e-07 0.999999987979565 3.51353263588867e-07 3 339 339 0 339 21476 "Smart-seq2_bone marrow_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.22558450794222e-07 0.999193083627389 4.22950570512709e-07 3 87 87 0 87 17838 "Smart-seq2_bone marrow_erythroid progenitor cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999953066402 NA 1 107 107 0 107 42230 "Smart-seq2_lacrimal gland_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999896393884 NA 1 154 154 0 154 25577 "Smart-seq2_uterus_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.964912134906077 NA 1 50 50 0 50 15771 "Smart-seq2_uterus_epithelial cell of uterus"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999555469525 NA 1 218 218 0 218 23318 "Smart-seq2_mammary gland_luminal epithelial cell of mammary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99999354885467 NA 2 364 364 0 364 22272 "Smart-seq2_muscle of pelvic diaphragm_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999191108112 NA 2 342 342 0 342 24070 "Smart-seq2_muscle of pelvic diaphragm_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999820437572 NA 2 461 461 0 461 26347 "Smart-seq2_rectus abdominis muscle_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998498311091825 NA 2 55 55 0 55 18638 "Smart-seq2_trachea_ciliated cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997933959810384 NA 2 131 131 0 131 17710 "Smart-seq2_trachea_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998092174077997 NA 1 104 104 0 104 17733 "Smart-seq2_trachea_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999998950800195 NA 2 544 544 0 544 23274 "Smart-seq2_spleen_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999855415938524 NA 2 185 185 0 185 19153 "Smart-seq2_spleen_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.940115231885287 NA 2 124 124 0 124 14947 "Smart-seq2_spleen_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.843450514033418 NA 2 69 69 0 69 12722 "Smart-seq2_lymph node_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997583285198624 NA 1 119 119 0 119 17946 "Smart-seq2_parotid gland_adventitial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999935969008418 NA 1 358 358 0 358 21637 "Smart-seq2_posterior part of tongue_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99999633209222 NA 1 374 374 0 374 19741 "Smart-seq2_prostate gland_epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999271013374 NA 2 340 340 0 340 29357 "Smart-seq2_exocrine pancreas_pancreatic acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.335018449808413 NA 1 86 86 0 86 4994 "10x 3' v3_bone marrow_erythrocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.843242835639894 NA 1 267 267 0 267 12745 "10x 3' v3_liver_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.443047646266842 NA 1 106 106 0 106 6513 "10x 3' v3_liver_erythrocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999907266575313 NA 1 1124 1124 0 1124 19079 "10x 3' v3_parotid gland_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999993127288 NA 1 880 880 0 880 21721 "10x 3' v3_submandibular gland_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 2095 2095 0 2095 24066 "10x 3' v3_submandibular gland_acinar cell of salivary gland"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.942581921113056 NA 1 309 309 0 309 15094 "10x 3' v3_submandibular gland_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.996524008479612 NA 1 637 637 0 637 17739 "10x 3' v3_submandibular gland_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.738925460239901 NA 1 87 87 0 87 10893 "10x 3' v3_submandibular gland_ionocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999818563731 NA 1 990 990 0 990 21192 "10x 3' v3_submandibular gland_duct epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.926620717097387 NA 1 257 257 0 257 14642 "10x 3' v3_submandibular gland_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.862153589205784 NA 1 123 123 0 123 13152 "10x 3' v3_submandibular gland_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998523098396436 NA 1 543 543 0 543 18315 "10x 3' v3_submandibular gland_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 7604 7604 0 7604 23425 "10x 3' v3_thymus_CD4-positive helper T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.925574499075666 NA 1 761 761 0 761 14555 "10x 3' v3_thymus_naive regulatory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.830082558434815 NA 1 398 398 0 398 12462 "10x 3' v3_thymus_T follicular helper cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.878212991350646 NA 1 501 501 0 501 13449 "10x 3' v3_thymus_CD8-positive, alpha-beta cytotoxic T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.993619693238604 NA 1 1919 1919 0 1919 17159 "10x 3' v3_thymus_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.982854863349703 NA 2 163 163 0 163 16487 "10x 3' v3_thymus_medullary thymic epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 2 3828 3828 0 3828 25222 "10x 3' v3_thymus_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.990699290842732 NA 2 443 443 0 443 16861 "10x 3' v3_thymus_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999275324421 NA 2 1984 1984 0 1984 20037 "10x 3' v3_thymus_vascular associated smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999997869346 NA 2 1526 1526 0 1526 20975 "10x 3' v3_thymus_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999736295 NA 2 2010 2010 0 2010 21651 "10x 3' v3_thymus_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999594893287066 NA 2 1225 1225 0 1225 18448 "10x 3' v3_thymus_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.971004653727197 NA 2 534 534 0 534 15903 "10x 3' v3_thymus_endothelial cell of artery"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.861149528754468 NA 2 274 274 0 274 13110 "10x 3' v3_thymus_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.893111229172005 NA 2 410 410 0 410 13778 "10x 3' v3_thymus_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.912713600897013 NA 2 270 270 0 270 14251 "10x 3' v3_thymus_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999997567 NA 1 1445 1445 0 1445 22024 "10x 3' v3_cornea_corneal epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999991177 NA 1 1275 1275 0 1275 22148 "10x 3' v3_cornea_conjunctival epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.974742919606608 NA 1 174 174 0 174 16179 "10x 3' v3_cornea_radial glial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.866546525244728 NA 1 93 93 0 93 13269 "10x 3' v3_cornea_stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.831235709537586 NA 1 73 73 0 73 12547 "10x 3' v3_cornea_keratocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.736539046915419 NA 1 62 62 0 62 10873 "10x 3' v3_cornea_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.885089187316038 NA 1 158 158 0 158 13633 "10x 3' v3_cornea_retinal blood vessel endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.727684860837765 NA 1 75 75 0 75 10699 "10x 3' v3_cornea_melanocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.956177279163145 NA 1 325 325 0 325 15528 "10x 3' v3_retinal neural layer_eye photoreceptor cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.972407804610896 NA 1 297 297 0 297 16227 "10x 3' v3_retinal neural layer_Mueller cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.970441031086898 NA 1 284 284 0 284 15974 "10x 3' v3_sclera_retinal blood vessel endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.987040246521806 NA 1 367 367 0 367 16812 "10x 3' v3_sclera_keratocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.934017198609506 NA 1 185 185 0 185 14899 "10x 3' v3_sclera_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.754771805340169 NA 1 83 83 0 83 11151 "10x 3' v3_sclera_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.701584033702725 NA 1 60 60 0 60 10299 "10x 3' v3_sclera_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.875985589876893 NA 1 64 64 0 64 13465 "10x 3' v3_sclera_conjunctival epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.9481491380716e-07 0.999995564557817 3.94817715193763e-07 3 2914 2914 0 2914 19110 "10x 3' v3_bladder organ_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.28220105650218e-07 1 3.28220105650218e-07 3 5102 5102 0 5102 22991 "10x 3' v3_bladder organ_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.64707386792801e-07 0.999999999724279 3.64707386963673e-07 3 2048 2048 0 2048 20689 "10x 3' v3_bladder organ_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.88826331440894e-07 1 2.88826331440894e-07 3 3924 3924 0 3924 26130 "10x 3' v3_bladder organ_bladder urothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.830199211872076 NA 3 76 76 0 76 12457 "10x 3' v3_bladder organ_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.93550071657723 NA 3 284 284 0 284 14797 "10x 3' v3_bladder organ_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.1376742483691e-07 1 3.1376742483691e-07 3 5256 5256 0 5256 24051 "10x 3' v3_bladder organ_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.93817817476782e-05 0.998414550486909 3.51523149326475e-05 3 826 826 0 826 17527 "10x 3' v3_bladder organ_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.917257876651898 NA 3 924 924 0 924 14334 "10x 3' v3_bladder organ_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.979744408728602 NA 3 502 502 0 502 16184 "10x 3' v3_bladder organ_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.685151054646326 NA 3 52 52 0 52 10002 "10x 3' v3_bladder organ_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.931875081516588 NA 3 214 214 0 214 14706 "10x 3' v3_bladder organ_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.833162085295052 NA 2 237 237 0 237 12539 "10x 3' v3_bladder organ_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998020821190294 NA 1 2872 2872 0 2872 17919 "10x 3' v3_large intestine_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99999999924192 NA 1 2764 2764 0 2764 22471 "10x 3' v3_large intestine_enterocyte of epithelium of large intestine"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.905606725007407 NA 1 543 543 0 543 14113 "10x 3' v3_large intestine_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.868247486703231 NA 1 330 330 0 330 13268 "10x 3' v3_large intestine_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.981320703776544 NA 2 2146 2146 0 2146 16301 "10x 3' v3_large intestine_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.979668938988457 NA 2 945 945 0 945 16264 "10x 3' v3_large intestine_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.93438344382436 NA 1 385 385 0 385 14908 "10x 3' v3_large intestine_large intestine goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.989276709749184 NA 2 888 888 0 888 16763 "10x 3' v3_large intestine_paneth cell of colon"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.81404598721253 NA 2 497 497 0 497 12157 "10x 3' v3_large intestine_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.916215586024513 NA 2 204 204 0 204 14317 "10x 3' v3_large intestine_transit amplifying cell of colon"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.588198329171176 NA 2 54 54 0 54 8585 "10x 3' v3_large intestine_intestinal enteroendocrine cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.74392383713528e-07 1 2.74392383713528e-07 3 8827 8827 0 8827 27506 "10x 3' v3_lung_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.88119624443532e-07 0.999998505902793 3.88120557328457e-07 3 729 729 0 729 19440 "10x 3' v3_lung_respiratory goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.914319474106731 NA 1 586 586 0 586 14338 "10x 3' v3_prostate gland_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.995303856889234 NA 1 365 365 0 365 17592 "10x 3' v3_prostate gland_myeloid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999634249827 NA 1 5257 5257 0 5257 20377 "10x 3' v3_small intestine_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999616930297115 NA 1 1100 1100 0 1100 18899 "10x 3' v3_small intestine_enterocyte of epithelium of small intestine"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.644060537078067 NA 1 64 64 0 64 9414 "10x 3' v3_small intestine_neutrophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.908934123731272 NA 2 197 197 0 197 14158 "10x 3' v3_small intestine_transit amplifying cell of small intestine"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.938267027910858 NA 1 300 300 0 300 15019 "10x 3' v3_small intestine_small intestine goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997675787394878 NA 2 2323 2323 0 2323 17508 "10x 3' v3_small intestine_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.879257433590684 NA 2 518 518 0 518 13477 "10x 3' v3_small intestine_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.601481722304574 NA 1 61 61 0 61 8790 "10x 3' v3_small intestine_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.991186855887434 NA 2 614 614 0 614 16859 "10x 3' v3_small intestine_paneth cell of epithelium of small intestine"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.883523420455027 NA 1 303 303 0 303 13598 "10x 3' v3_small intestine_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.440626050483318 NA 1 65 65 0 65 6480 "10x 3' v3_small intestine_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.699512242751782 NA 2 53 53 0 53 10256 "10x 3' v3_small intestine_intestinal enteroendocrine cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.85375775311459 NA 1 71 71 0 71 12960 "10x 3' v3_small intestine_intestinal crypt stem cell of small intestine"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.626779143375624 NA 1 118 118 0 118 9151 "10x 3' v3_skin of abdomen_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.985524949072642 NA 1 576 576 0 576 16698 "10x 3' v3_skin of abdomen_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.833499646624339 NA 1 139 139 0 139 12542 "10x 3' v3_skin of abdomen_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.6773207329029 NA 1 164 164 0 164 9903 "10x 3' v3_skin of abdomen_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.279846298699616 NA 1 51 51 0 51 4221 "10x 3' v3_skin of abdomen_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.678066466599432 NA 1 90 90 0 90 9925 "10x 3' v3_skin of abdomen_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.616530687001188 NA 1 101 101 0 101 8994 "10x 3' v3_skin of abdomen_muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.564369263749016 NA 1 98 98 0 98 8241 "10x 3' v3_skin of abdomen_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.947745506563147 NA 1 337 337 0 337 15191 "10x 3' v3_skin of chest_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99725542427954 NA 1 849 849 0 849 17730 "10x 3' v3_skin of chest_stromal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.597373290364906 NA 1 110 110 0 110 8719 "10x 3' v3_skin of chest_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.728642058943714 NA 1 156 156 0 156 10700 "10x 3' v3_skin of chest_muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.589844799049023 NA 1 120 120 0 120 8608 "10x 3' v3_skin of chest_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999355892899947 NA 1 1788 1788 0 1788 18341 "10x 3' v3_thymus_DN3 thymocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.989972564153025 NA 1 985 985 0 985 16937 "10x 3' v3_thymus_DN1 thymic pro-T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999832651814 NA 1 2594 2594 0 2594 20787 "10x 3' v3_thymus_innate lymphoid cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.993294666637303 NA 1 338 338 0 338 17168 "10x 3' v3_anterior part of tongue_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999974847857 NA 1 1751 1751 0 1751 20601 "10x 3' v3_anterior part of tongue_keratinocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.852988211806906 NA 1 296 296 0 296 12959 "10x 3' v3_anterior part of tongue_leukocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999976525 NA 1 3787 3787 0 3787 21951 "10x 3' v3_muscle of abdomen_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.901583810201629 NA 1 342 342 0 342 14010 "10x 3' v3_muscle of abdomen_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.961190856479326 NA 1 360 360 0 360 15637 "10x 3' v3_muscle of abdomen_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.785891233440495 NA 1 147 147 0 147 11682 "10x 3' v3_muscle of abdomen_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.82246430441791 NA 1 173 173 0 173 12347 "10x 3' v3_muscle of abdomen_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999982161 NA 2 2766 2766 0 2766 21988 "10x 3' v3_muscle of pelvic diaphragm_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.928928235188209 NA 2 574 574 0 574 14645 "10x 3' v3_muscle of pelvic diaphragm_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997351213192331 NA 2 955 955 0 955 17620 "10x 3' v3_muscle of pelvic diaphragm_skeletal muscle satellite stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998487807847408 NA 2 1445 1445 0 1445 17798 "10x 3' v3_muscle of pelvic diaphragm_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.644707764538912 NA 2 195 195 0 195 9408 "10x 3' v3_muscle of pelvic diaphragm_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 934 934 0 934 23794 "10x 3' v3_vasculature_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999997462469743 NA 1 537 537 0 537 20279 "10x 3' v3_vasculature_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999996045716476 NA 1 589 589 0 589 20334 "10x 3' v3_vasculature_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9982813769184 NA 1 283 283 0 283 18148 "10x 3' v3_vasculature_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999995218667 NA 1 1273 1273 0 1273 21232 "10x 3' v3_coronary artery_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.741076570068581 NA 1 153 153 0 153 10934 "10x 3' v3_coronary artery_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 1906 1906 0 1906 24399 "10x 3' v3_coronary artery_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999986818161266 NA 1 805 805 0 805 19687 "10x 3' v3_coronary artery_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.861743170532734 NA 1 117 117 0 117 13132 "10x 3' v3_coronary artery_endothelial cell of artery"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999341373569873 NA 1 526 526 0 526 18398 "10x 3' v3_coronary artery_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.994804803250445 NA 2 1046 1046 0 1046 17227 "10x 3' v3_bladder organ_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999744494946 NA 2 227 227 0 227 24192 "Smart-seq2_bladder organ_bladder urothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999977552073798 NA 2 2370 2370 0 2370 19028 "10x 3' v3_blood_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999999997 NA 2 8435 8435 0 8435 21437 "10x 3' v3_blood_monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.791882673068998 NA 1 488 488 0 488 11745 "10x 3' v3_blood_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999999999 NA 1 8158 8158 0 8158 22015 "10x 3' v3_kidney_kidney epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.803792408472635 NA 1 274 274 0 274 12013 "10x 3' v3_kidney_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.831396936061465 NA 1 183 183 0 183 12562 "10x 3' v3_kidney_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.903655169352631 NA 1 315 315 0 315 14068 "10x 3' v3_kidney_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.711261199205487 NA 1 149 149 0 149 10454 "10x 3' v3_kidney_CD4-positive helper T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.877163286322573 NA 1 173 173 0 173 13419 "Smart-seq2_kidney_kidney epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999826215047344 NA 1 1201 1201 0 1201 18438 "10x 3' v3_large intestine_enterocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.845208699862914 NA 1 109 109 0 109 12773 "10x 3' v3_large intestine_intestinal crypt stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.696136349061901 NA 1 61 61 0 61 10223 "10x 3' v3_large intestine_goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.907095410957779 NA 2 677 677 0 677 14102 "10x 3' v3_lung_basophil"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.941532848689911 NA 2 1390 1390 0 1390 14963 "10x 3' v3_lung_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999927689692631 NA 2 567 567 0 567 19033 "10x 3' v3_lung_lung ciliated cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.815525114507399 NA 2 278 278 0 278 12174 "10x 3' v3_lung_dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.845130637804549 NA 2 524 524 0 524 12770 "10x 3' v3_lung_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999904993 NA 2 2055 2055 0 2055 21692 "10x 3' v3_lung_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.677554990840937 NA 2 125 125 0 125 9906 "10x 3' v3_lung_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.88132989918436 NA 2 523 523 0 523 13530 "10x 3' v3_lung_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.951782731575124 NA 2 999 999 0 999 15262 "10x 3' v3_lung_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.980039044900015 NA 2 1374 1374 0 1374 16245 "10x 3' v3_lung_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.877103696194115 NA 2 204 204 0 204 13432 "10x 3' v3_lung_type I pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.920036405850823 NA 2 478 478 0 478 14424 "10x 3' v3_lung_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.843277722138044 NA 2 244 244 0 244 12757 "10x 3' v3_lung_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998289192423936 NA 2 1023 1023 0 1023 17740 "10x 3' v3_lung_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.899078696902249 NA 2 480 480 0 480 13916 "10x 3' v3_lung_lung microvascular endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999442259 NA 2 319 319 0 319 22555 "Smart-seq2_lung_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999628938181074 NA 2 126 126 0 126 18890 "Smart-seq2_lung_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999996845786 NA 2 133 133 0 133 22372 "Smart-seq2_lung_basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999788389 NA 2 299 299 0 299 23090 "Smart-seq2_lung_adventitial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.754807687845405 NA 1 252 252 0 252 11120 "10x 3' v3_lung_intermediate monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.965101898556857 NA 1 1324 1324 0 1324 15739 "10x 3' v3_lymph node_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999929433813043 NA 1 2919 2919 0 2919 18920 "10x 3' v3_lymph node_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.976848060478337 NA 1 1266 1266 0 1266 16195 "10x 3' v3_lymph node_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.991522331852837 NA 1 1241 1241 0 1241 17020 "10x 3' v3_lymph node_CD4-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.933822564936312 NA 1 750 750 0 750 14804 "10x 3' v3_lymph node_CD8-positive, alpha-beta memory T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.998961332933525 NA 1 292 292 0 292 18176 "Smart-seq2_lymph node_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.897714214635483 NA 1 108 108 0 108 13876 "Smart-seq2_inguinal lymph node_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.866654245997353 NA 1 234 234 0 234 13246 "10x 3' v3_muscle tissue_skeletal muscle satellite stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.956806129304396 NA 1 374 374 0 374 15508 "10x 3' v3_muscle tissue_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.939644062405611 NA 1 302 302 0 302 14997 "10x 3' v3_muscle tissue_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.72759243077978 NA 1 68 68 0 68 10711 "10x 3' v3_muscle tissue_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.994699921276448 NA 1 737 737 0 737 17352 "10x 3' v3_muscle tissue_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.917334160844483 NA 1 375 375 0 375 14400 "10x 3' v3_muscle tissue_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.510110040717568 NA 1 143 143 0 143 7461 "10x 3' v3_muscle tissue_fast muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.291854967104036 NA 1 57 57 0 57 4390 "10x 3' v3_muscle tissue_slow muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.995268907200255 NA 2 233 233 0 233 17347 "Smart-seq2_muscle tissue_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999872778324171 NA 2 355 355 0 355 20386 "Smart-seq2_muscle tissue_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999990705828 NA 2 620 620 0 620 23908 "Smart-seq2_muscle tissue_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.990755059866837 NA 1 673 673 0 673 17048 "10x 3' v3_rectus abdominis muscle_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 1 NA 1 5435 5435 0 5435 24546 "10x 3' v3_rectus abdominis muscle_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.9999914835969 NA 1 1918 1918 0 1918 19967 "10x 3' v3_rectus abdominis muscle_skeletal muscle satellite stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.963725252188261 NA 1 790 790 0 790 15757 "10x 3' v3_rectus abdominis muscle_capillary endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997452664701194 NA 1 947 947 0 947 17844 "10x 3' v3_rectus abdominis muscle_endothelial cell of vascular tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.980174384382003 NA 1 692 692 0 692 16404 "10x 3' v3_rectus abdominis muscle_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.764759685755345 NA 1 146 146 0 146 11303 "10x 3' v3_endocrine pancreas_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.759337224379335 NA 1 246 246 0 246 11209 "10x 3' v3_endocrine pancreas_pancreatic acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.991459354783106 NA 1 505 505 0 505 16997 "10x 3' v3_endocrine pancreas_pancreatic ductal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997555182489011 NA 1 196 196 0 196 28559 "Smart-seq2_endocrine pancreas_pancreatic acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.790298100242341 NA 1 62 62 0 62 11751 "10x 3' v3_small intestine_intestinal crypt stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.981531228963188 NA 1 468 468 0 468 16355 "10x 3' v3_small intestine_enterocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.872433557754322 NA 1 349 349 0 349 13380 "10x 3' v3_thymus_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999920722729275 NA 1 1829 1829 0 1829 19421 "10x 3' v3_thymus_memory B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.969606637847605 NA 1 873 873 0 873 15981 "10x 3' v3_thymus_naive B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.780310735948896 NA 1 66 66 0 66 11626 "10x 3' v3_thymus_fast muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.803111014674132 NA 1 553 553 0 553 11952 "10x 3' v3_thymus_thymocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.981828314154205 NA 1 96 96 0 96 16304 "Smart-seq2_thymus_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.885059270885061 NA 1 249 249 0 249 13651 "10x 3' v3_trachea_connective tissue cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999999947377 NA 1 2822 2822 0 2822 21737 "10x 3' v3_aorta_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999977884614416 NA 1 1660 1660 0 1660 19320 "10x 3' v3_aorta_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999500505967901 NA 1 1232 1232 0 1232 18268 "10x 3' v3_aorta_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999995996902342 NA 1 1274 1274 0 1274 19853 "10x 3' v3_aorta_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.52536480066895 NA 1 76 76 0 76 7686 "10x 3' v3_aorta_mature NK T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.922831723849048 NA 1 357 357 0 357 14525 "10x 3' v3_aorta_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.510286955159474 NA 1 60 60 0 60 7472 "10x 3' v3_aorta_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.997339235806707 NA 1 203 203 0 203 18074 "Smart-seq2_vasculature_fibroblast"
+
+
