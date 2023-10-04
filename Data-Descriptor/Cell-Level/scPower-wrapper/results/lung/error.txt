@@ -1,35 +1,60 @@
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
-"EFO:0009899_UBERON:0008946_CL:0000583" "10x 3' v2_lung parenchyma_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 24485 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
-" "5_3_47" 33561
-
-
-"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
-"EFO:0009899_UBERON:0008946_CL:0002063" "10x 3' v2_lung parenchyma_type II pneumocyte" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 24716 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
-" "5_3_47" 31000
-
-
-"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
-"EFO:0009899_UBERON:0001005_CL:0000583" "10x 3' v2_respiratory airway_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21558 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
-" "5_3_47" 5368
+"EFO:0009899_UBERON:0008946_CL:0002063" "10x 3' v2_lung parenchyma_type II pneumocyte" "Error: cannot allocate vector of size 6.5 Gb
+" "0_0_0" 31000
 
 
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
 "EFO:0009922_UBERON:0001005_CL:0002633" "10x 3' v3_respiratory airway_respiratory basal cell" "Error: cannot allocate vector of size 4.2 Gb
-" "5_3_47" 20307
+" "0_0_0" 20307
 
 
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
 "EFO:0009899_UBERON:0001005_CL:0002633" "10x 3' v2_respiratory airway_respiratory basal cell" "Error: cannot allocate vector of size 12.6 Gb
-" "5_3_47" 60114
+" "0_0_0" 60114
 
 
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
-"EFO:0009899_UBERON:0001005_CL:0000625" "10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21102 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
-" "5_3_47" 12611
+"EFO:0009922_UBERON:0008946_CL:0000583" "10x 3' v3_lung parenchyma_alveolar macrophage" "Error: cannot allocate vector of size 4.7 Gb
+" "0_0_0" 22369
 
 
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
-"EFO:0011025_UBERON:0008946_CL:0000583" "10x 5' v1_lung parenchyma_alveolar macrophage" "Error in mixed.gamma.estimation(norm.mean.values.temp$mean, num.genes.kept = 21000, : There are 21934 genes with positive expression. Increase the num.genes.kept parameter to a value larger than that!
-" "5_3_47" 16754
+"EFO:0011025_UBERON:0008946_CL:0000669" "10x 5' v1_lung parenchyma_pericyte" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 478
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0008946_CL:0000186" "10x 5' v1_lung parenchyma_myofibroblast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 122
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0008946_CL:4028003" "10x 3' v3_lung parenchyma_alveolar capillary type 2 endothelial cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 151
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0011025_UBERON:0008946_CL:0000057" "10x 5' v1_lung parenchyma_fibroblast" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 58
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009899_UBERON:0001005_CL:0000499" "10x 3' v2_respiratory airway_stromal cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 278
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009901_UBERON:0008946_CL:0000623" "10x 3' v1_lung parenchyma_natural killer cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 210
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009901_UBERON:0008946_CL:0000236" "10x 3' v1_lung parenchyma_B cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 55
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0008946_CL:0000097" "10x 3' v3_lung parenchyma_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 66
 
 

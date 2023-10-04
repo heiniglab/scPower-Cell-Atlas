@@ -1,0 +1,808 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_alveolar macrophage" 0.47876523192389 0.0962168313739826
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_natural killer cell" 0.367439194578204 0.0454456777999599
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_alveolar macrophage" 0.53130651025626 0.0921334400207902
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_vein endothelial cell" 1.16194301999003 0.121212318820691
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" 0.399331893620947 0.0531969216896329
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" 0.957963863218954 0.0922316265765261
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" 0.614277806768306 0.0483405123523764
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" 0.901566136923258 0.15739181145845
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" 0.454219624961977 0.051008258129117
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_alveolar macrophage" 0.699835594408489 0.113720994558965
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" 0.459198837057871 0.080580886161899
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_type II pneumocyte" 0.287859418543499 0.0916845932568817
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_type I pneumocyte" 0.650957494230514 0.116927005840877
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" 2.24339497770947 0.172959670808314
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_plasma cell" 1.20353962866757 0.198166667149797
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_nasal mucosa goblet cell" 0.50549962188946 0.0613692103782085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_club cell" 1.21817353952198 0.0789159874725297
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" 0.711769876551982 0.0547185494829794
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_type II pneumocyte" 0.848895263332168 0.101860095893349
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_smooth muscle cell" 0.62710338979273 0.172196100428
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_classical monocyte" 0.631709573548426 0.101251842802955
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" 0.609084016303246 0.139204376171881
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_elicited macrophage" 0.58762711120828 0.0881741031127623
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_club cell" 0.530420470631286 0.0371893808275678
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" 0.945410635235259 0.0771569598914554
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" 0.515308068081765 0.0810697364652482
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" 1.38312235550642 0.19019693203289
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_vein endothelial cell" 0.397847202998596 0.217693899361482
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_non-classical monocyte" 1.20518646097904 0.121598408067459
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_elicited macrophage" 0.812812841012127 0.0773282640682892
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_natural killer cell" 0.459147430342857 0.0869874180608712
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_nasal mucosa goblet cell" 0.5042288148431 0.0540172262608572
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_club cell" 0.614499594681504 0.0610434989752474
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" 0.746739379447861 0.0689549506205326
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_respiratory basal cell" 0.965515952842978 0.185250109886625
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_non-classical monocyte" 0.409663610951517 0.118022080033777
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" 0.751017694487375 0.146724135555666
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_classical monocyte" 0.397704764542596 0.0877182098805059
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" 0.590954403113261 0.077371563680774
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_fibroblast of lung" 0.434907809590277 0.152038190622945
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_vein endothelial cell" 1.48796023428972 0.0820132674077633
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_nasal mucosa goblet cell" 1.03844031074774 0.0342908265698138
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" 0.794931472812369 0.130888656137677
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" 0.520176065158303 0.0683099288206811
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_club cell" 1.3455458145738 0.121593922549895
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" 0.987514838223266 0.13363532892687
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" 0.796479968318007 0.126539741194296
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" 0.290212319484755 0.0917667594889195
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_alveolar macrophage" 1.13543908101732 0.337406249341422
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_fibroblast of lung" 0.649381936722259 0.10948301401711
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_vein endothelial cell" 0.995776393571145 0.107967843071047
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" 1.00090068237442 0.102508739793825
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_fibroblast of lung" 1.0607702823109 0.127646792073299
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_multi-ciliated epithelial cell" 0.597146669757232 0.0589608882074905
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" 0.501538504991482 0.0376168836285347
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_classical monocyte" 0.796044903455824 0.0759082994583507
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_bronchial goblet cell" 0.524146350965678 0.127279686708264
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" 0.62919027696986 0.0706568146024467
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_elicited macrophage" 0.885963407526477 0.0988434704733242
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_vein endothelial cell" 0.699363412340929 0.107987281046373
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" 1.117499590768 0.11996385788895
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_fibroblast of lung" 1.04006331179635 0.136353877696245
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" 0.953730399046866 0.157305759406384
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" 0.56458437478181 0.273750078741437
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" 0.95805670874736 0.262696330399855
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_classical monocyte" 0.809600406995722 0.117714887890824
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_club cell" 0.332041073401616 0.0332198392215814
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" 0.869091052543576 0.121767694478997
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_classical monocyte" 0.402651748877566 0.181841084002774
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_classical monocyte" 0.454854794778904 0.101778031394393
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" 0.879184522230936 0.211051472034208
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" 1.12796887312002 0.117012122844819
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" 0.548050316756226 0.209786505236647
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_myofibroblast cell" 0.544565514551142 0.207875372854002
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_type I pneumocyte" 0.786637810352248 0.105815732409601
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_natural killer cell" 0.267854124471021 0.0758436710006266
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_classical monocyte" 2.09368147036082 0.527195444557223
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_B cell" 0.299010734849665 0.147772195973455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_mast cell" 0.680068896343832 0.0780228961885113
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_lung macrophage" 0.509319821245352 0.0944466799875361
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_non-classical monocyte" 0.614538721830786 0.100386247308983
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_type I pneumocyte" 0.870378313632916 0.0826847816268081
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_lung macrophage" 0.627920366002919 0.107002786105434
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_elicited macrophage" 0.619739449793083 0.176867368107144
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_respiratory basal cell" 1.50351340141602 0.15802126947748
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_mucus secreting cell" 0.230924741923194 0.166491400348134
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" 0.286641995280764 0.185525044249367
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" 0.789577934395862 0.289353760323499
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" 1.21805900915445 0.114489684887878
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_bronchial goblet cell" 1.65310775535885 0.108720508224835
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" 0.698331087128421 0.354126801232711
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" 0.421864725525692 0.0822117634767197
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_B cell" 1.07299405242343 0.149716524911815
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_elicited macrophage" 0.367104107904704 0.087951843894262
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" 0.683346442301739 0.255556772106261
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" 2.95949759393854 0.139899467243939
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" 0.706420625796458 0.111002966919653
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" 0.553386300186079 0.0936279120019028
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" 1.45016149520308 0.120651434782167
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" 0.406264307203865 0.152219843208776
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" 0.663756514841544 0.102769816607561
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_pericyte" 0.476267306818853 0.126766899213263
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_fibroblast of lung" 1.63713272611798 0.14501450816839
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_mast cell" 0.541587218736536 0.151547512862199
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_non-classical monocyte" 0.802605206842683 0.171775707668486
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_pericyte" 0.300770597866659 0.0816418020647192
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_type II pneumocyte" 2.99091586830649 0.346467068386908
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" 0.460580272170621 0.169425560479474
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_B cell" 0.44187255097833 0.0913164221169806
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" 0.943479587937612 0.124274741558092
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" 1.00005601292529 0.132505098148455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" 0.98518907189236 0.144587245580569
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_acinar cell" 0.422659029786654 0.152128956520102
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_club cell" 0.600518376925426 0.178968258436447
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_lung macrophage" 0.726649068136255 0.121367148559046
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" 1.22424607404179 0.129396242861445
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_type II pneumocyte" 0.314475319089676 0.114070588901368
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" 1.89073230512951 0.246205739823111
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_mesothelial cell" 1.12226751403813 0.219724511105113
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_serous secreting cell" 0.387939943296955 0.0763195898994728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_lung macrophage" 0.875415512580832 0.206606605307528
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_type II pneumocyte" 0.658427344882071 0.114266654501571
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_respiratory basal cell" 0.896680014362645 0.0829997050067696
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" 0.895842780934469 0.0803233386749048
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_myofibroblast cell" 0.791065501376248 0.21774996489409
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" 1.24248638759405 0.230128208996874
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_ionocyte" 0.500662451124577 0.203746989589428
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_type I pneumocyte" 0.532770765935798 0.118759766553852
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" 0.546165052213113 0.166355672403664
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" 0.982276797692698 0.140331637449942
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" 0.284713172739916 0.18401064744327
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_mast cell" 0.708939536979461 0.162605526293615
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" 0.885626320559767 0.55896258523292
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_B cell" 0.614750533487204 0.195765524326269
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" 1.07142910574985 0.236358054907413
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_smooth muscle cell" 0.595056129776232 0.146825217351411
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_elicited macrophage" 1.95718083847994 0.483068461552085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" 1.21833554201254 0.235819629822227
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_club cell" 0.412806226002755 0.217545470661674
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" 0.490514713419916 0.217234776433954
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" 0.34254845058439 0.101758224681804
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" 1.96207164311827 0.234066054389312
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" 0.657457644366519 0.198674073756768
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" 0.680256387462616 0.159497478365298
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_T cell" 0.449729826625443 0.203031678088218
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_plasma cell" 1.65163221561987 0.276621181209514
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_plasma cell" 1.53097296752099 0.192614838535316
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_fibroblast" 0.517412881068848 0.170122168826412
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" 0.873605848118596 0.1255663240091
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" 1.0770765669119 0.203649586579568
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_respiratory basal cell" 1.12721720892304 0.19821042784604
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_pericyte" 0.249753409164269 0.0814482728704693
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_lung macrophage" 0.510443752413773 0.212766099089735
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_classical monocyte" 0.218534758491355 0.230772162206953
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_epithelial cell of lung" 0.640231918910462 0.153460652594346
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_plasmacytoid dendritic cell" 0.223389808142635 0.149635184490525
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_myofibroblast cell" 0.906832047510792 0.141690265963044
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" 1.04596997343416 0.491987627222707
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_acinar cell" 0.56714126900619 0.176963276770631
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" 0.93795521182848 0.201373513959671
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" 1.1514146642874 0.356577600696735
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_elicited macrophage" 1.16304976984049 0.242071079260318
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_non-classical monocyte" 0.304836889355489 0.254786751193317
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" 0.360406681170778 0.303146412638824
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_mast cell" 0.493122173122192 0.228326225671481
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" 2.23648743451003 0.355333841439591
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" 0.916881205405608 0.231140804785294
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_mucus secreting cell" 1.36117492775032 0.189413199171672
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_ionocyte" 0.779028044423059 0.214739448766092
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_non-classical monocyte" 0.499328297439229 0.184657791924806
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" 0.740759717688632 0.373552976282233
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_T cell" 0.725600569540884 0.201627568561921
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_acinar cell" 0.956497338292958 0.120862438292112
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_B cell" 0.164014465799285 0.446334567702748
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_ionocyte" 0.381282783296239 0.182847070834966
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v1_lung parenchyma_non-classical monocyte" 1.60674849231997 0.503967066266849
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" 1.29311635674229 0.166934472715066
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" 0.726956079548524 0.298392093575086
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_B cell" 0.608086786012789 0.200301598285916
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_alveolar macrophage" 0.843429213997407 0.216843156414401
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_dendritic cell" 0.812753480771738 0.307018953114233
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_dendritic cell" 0.701799033629232 0.213152092097179
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_T cell" 0.807177208887956 0.22423071606201
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_lung macrophage" 1.42591765831046 0.24939324490913
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_ionocyte" 0.439584959387752 0.264400929638213
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_nose_multi-ciliated epithelial cell" 0.562144718465693 0.169527371543732
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_mast cell" 0.303135291604247 0.393001120544947
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_respiratory basal cell" 1.21722662268535 0.196767204150055
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_B cell" 0.594518106605513 0.406323747376068
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" 0.506037616071535 0.172215868259285
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" 0.421076399120493 0.222866420189118
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_respiratory airway_conventional dendritic cell" 0.463488872991883 0.260392439463666
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" 0.209610617106004 0.258128376206776
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" 0.353733791791685 0.462379490825119
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_mesothelial cell" 0.573995521488305 0.293422780613934
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_club cell" 0.498504093057368 0.304850731473614
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" 0.585317578831707 0.236033562303909
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" 0.786098385146273 0.320102374357731
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_nose_multi-ciliated epithelial cell" 0.403108406432447 0.174674960002873
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" 3.12961545030325 0.243562056920537
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung parenchyma_plasma cell" 1.45109265999836 0.240969739937969
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" 0.75613105936688 0.25820442680617
+
+

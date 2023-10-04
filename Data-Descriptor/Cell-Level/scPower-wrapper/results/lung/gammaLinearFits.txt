@@ -1,0 +1,1818 @@
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "p1" 0.0131024104888687 -1.11078232937169e-06 "EFO:0009899_UBERON:0008946_CL:0000583"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "mean1" 0.0075073776534765 8.96594126792896e-06 "EFO:0009899_UBERON:0008946_CL:0000583"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "mean2" 0.208341606557561 0.000521505587029942 "EFO:0009899_UBERON:0008946_CL:0000583"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "sd1" 0.0233943572913936 1.84062893655613e-05 "EFO:0009899_UBERON:0008946_CL:0000583"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "sd2" 0.786768156756905 0.000993136841687862 "EFO:0009899_UBERON:0008946_CL:0000583"
+"10x 3' v2_lung parenchyma_alveolar macrophage" "p3" 0.0533613096913422 0 "EFO:0009899_UBERON:0008946_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_natural killer cell" "p1" 0.0223015575799921 -1.05306231062472e-05 "EFO:0009899_UBERON:0008946_CL:0000623"
+"10x 3' v2_lung parenchyma_natural killer cell" "mean1" 0.00126953864612273 1.65450998248137e-05 "EFO:0009899_UBERON:0008946_CL:0000623"
+"10x 3' v2_lung parenchyma_natural killer cell" "mean2" -0.0127462901974591 0.000631343053237053 "EFO:0009899_UBERON:0008946_CL:0000623"
+"10x 3' v2_lung parenchyma_natural killer cell" "sd1" 0.00434252088251741 2.96170755956901e-05 "EFO:0009899_UBERON:0008946_CL:0000623"
+"10x 3' v2_lung parenchyma_natural killer cell" "sd2" 0.0998258132684655 0.00114111346138815 "EFO:0009899_UBERON:0008946_CL:0000623"
+"10x 3' v2_lung parenchyma_natural killer cell" "p3" 0.0517385363005703 0 "EFO:0009899_UBERON:0008946_CL:0000623"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_alveolar macrophage" "p1" 0.0196385196129507 -1.5018639279041e-06 "EFO:0009899_UBERON:0001005_CL:0000583"
+"10x 3' v2_respiratory airway_alveolar macrophage" "mean1" 0.0136792233344862 9.61843653612536e-06 "EFO:0009899_UBERON:0001005_CL:0000583"
+"10x 3' v2_respiratory airway_alveolar macrophage" "mean2" 0.351015491797786 0.00057054925406028 "EFO:0009899_UBERON:0001005_CL:0000583"
+"10x 3' v2_respiratory airway_alveolar macrophage" "sd1" 0.0419759270020731 1.74438264734713e-05 "EFO:0009899_UBERON:0001005_CL:0000583"
+"10x 3' v2_respiratory airway_alveolar macrophage" "sd2" 1.39773463375323 0.000996454484295428 "EFO:0009899_UBERON:0001005_CL:0000583"
+"10x 3' v2_respiratory airway_alveolar macrophage" "p3" 0.0536387411149807 0 "EFO:0009899_UBERON:0001005_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "p1" 0.0241004896489526 -5.31622651211789e-06 "EFO:0009899_UBERON:0008946_CL:0002543"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "mean1" 0.00438476215578336 1.52296039464708e-05 "EFO:0009899_UBERON:0008946_CL:0002543"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "mean2" 0.0552449418206988 0.000592533563041419 "EFO:0009899_UBERON:0008946_CL:0002543"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "sd1" 0.0122429618009239 2.57460178940904e-05 "EFO:0009899_UBERON:0008946_CL:0002543"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "sd2" 0.293852356662285 0.000944891278518614 "EFO:0009899_UBERON:0008946_CL:0002543"
+"10x 3' v2_lung parenchyma_vein endothelial cell" "p3" 0.0531530321545692 0 "EFO:0009899_UBERON:0008946_CL:0002543"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "p1" 0.022173459908478 -9.37468167672403e-06 "EFO:0009899_UBERON:0008946_CL:0000625"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "mean1" 0.00129767769033742 1.41974807883058e-05 "EFO:0009899_UBERON:0008946_CL:0000625"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "mean2" -0.0135886078796994 0.000674953150118608 "EFO:0009899_UBERON:0008946_CL:0000625"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "sd1" 0.00429605678954146 2.49785210504236e-05 "EFO:0009899_UBERON:0008946_CL:0000625"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "sd2" 0.145484596396444 0.00125290891173435 "EFO:0009899_UBERON:0008946_CL:0000625"
+"10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell" "p3" 0.051700937624359 0 "EFO:0009899_UBERON:0008946_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "p1" 0.0259492961886479 -1.15337229465659e-05 "EFO:0011025_UBERON:0008946_CL:1001568"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "mean1" 0.00148067071258131 2.09074266815902e-05 "EFO:0011025_UBERON:0008946_CL:1001568"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "mean2" -0.00271493749675156 0.000595187079510495 "EFO:0011025_UBERON:0008946_CL:1001568"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "sd1" 0.00450787978146994 3.50210766395343e-05 "EFO:0011025_UBERON:0008946_CL:1001568"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "sd2" 0.0558347356383855 0.000908229882390455 "EFO:0011025_UBERON:0008946_CL:1001568"
+"10x 5' v1_lung parenchyma_pulmonary artery endothelial cell" "p3" 0.0519495451366208 0 "EFO:0011025_UBERON:0008946_CL:1001568"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "p1" 0.0248664417932978 -2.08139639072918e-05 "EFO:0009899_UBERON:0001005_CL:0000625"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "mean1" 0.000726521483702579 1.50821819466352e-05 "EFO:0009899_UBERON:0001005_CL:0000625"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "mean2" -0.00949458433074668 0.00063123428881451 "EFO:0009899_UBERON:0001005_CL:0000625"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "sd1" 0.00230007248676419 2.60263405980082e-05 "EFO:0009899_UBERON:0001005_CL:0000625"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "sd2" 0.0744346293285755 0.00117199325057709 "EFO:0009899_UBERON:0001005_CL:0000625"
+"10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell" "p3" 0.0517221320775691 0 "EFO:0009899_UBERON:0001005_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "p1" 0.0297130374872653 -1.33504274024441e-05 "EFO:0009899_UBERON:0001005_CL:2000093"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "mean1" 0.00176549163705583 2.15939602680957e-05 "EFO:0009899_UBERON:0001005_CL:2000093"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "mean2" -0.00459731123451557 0.000609736737328969 "EFO:0009899_UBERON:0001005_CL:2000093"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "sd1" 0.00478356116987298 3.20912512123413e-05 "EFO:0009899_UBERON:0001005_CL:2000093"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "sd2" 0.0893014463387118 0.000921911845891093 "EFO:0009899_UBERON:0001005_CL:2000093"
+"10x 3' v2_respiratory airway_bronchus fibroblast of lung" "p3" 0.0531799418792941 0 "EFO:0009899_UBERON:0001005_CL:2000093"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "p1" 0.0224031463481884 -8.35884559604054e-06 "EFO:0009899_UBERON:0008946_CL:0000624"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "mean1" 0.00131589220198943 1.23905667228304e-05 "EFO:0009899_UBERON:0008946_CL:0000624"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "mean2" -0.0148819420972823 0.000715973573724743 "EFO:0009899_UBERON:0008946_CL:0000624"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "sd1" 0.0043344476774301 2.18040279357975e-05 "EFO:0009899_UBERON:0008946_CL:0000624"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "sd2" 0.19372764791683 0.00136563707820249 "EFO:0009899_UBERON:0008946_CL:0000624"
+"10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell" "p3" 0.0515476458108262 0 "EFO:0009899_UBERON:0008946_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "p1" 0.0191842442797398 -2.94140491057117e-06 "EFO:0011025_UBERON:0008946_CL:0000583"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "mean1" 0.00400416864784293 1.06856282748055e-05 "EFO:0011025_UBERON:0008946_CL:0000583"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "mean2" 0.0858691000047314 0.000587802664295384 "EFO:0011025_UBERON:0008946_CL:0000583"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "sd1" 0.0121630315932586 2.08616869038921e-05 "EFO:0011025_UBERON:0008946_CL:0000583"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "sd2" 0.362267011840522 0.00105800977805124 "EFO:0011025_UBERON:0008946_CL:0000583"
+"10x 5' v1_lung parenchyma_alveolar macrophage" "p3" 0.0535266111912562 0 "EFO:0011025_UBERON:0008946_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "p1" 0.023597610630539 -1.15312404044484e-05 "EFO:0011025_UBERON:0008946_CL:0000624"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "mean1" 0.00119584779900999 1.82592278509156e-05 "EFO:0011025_UBERON:0008946_CL:0000624"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "mean2" -0.0285896934452634 0.000710149840970457 "EFO:0011025_UBERON:0008946_CL:0000624"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "sd1" 0.00380115793512608 3.10013778341939e-05 "EFO:0011025_UBERON:0008946_CL:0000624"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "sd2" 0.129808370499628 0.00134403783166955 "EFO:0011025_UBERON:0008946_CL:0000624"
+"10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "p3" 0.050091857946243 0 "EFO:0011025_UBERON:0008946_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "p1" 0.0191530414114161 -1.6829326420262e-06 "EFO:0009922_UBERON:0008946_CL:0002063"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "mean1" 0.00597071220353694 1.29870455909891e-05 "EFO:0009922_UBERON:0008946_CL:0002063"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "mean2" -0.11337139504902 0.000639070448968957 "EFO:0009922_UBERON:0008946_CL:0002063"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "sd1" 0.0187277114350572 2.49238636677804e-05 "EFO:0009922_UBERON:0008946_CL:0002063"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "sd2" 0.925982822453438 0.00140064432745978 "EFO:0009922_UBERON:0008946_CL:0002063"
+"10x 3' v3_lung parenchyma_type II pneumocyte" "p3" 0.049140183467326 0 "EFO:0009922_UBERON:0008946_CL:0002063"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "p1" 0.0266614990588818 -1.00738406484587e-05 "EFO:0009899_UBERON:0008946_CL:0002062"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "mean1" 0.00235659780571997 2.25689567519981e-05 "EFO:0009899_UBERON:0008946_CL:0002062"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "mean2" -0.00587011385842851 0.000617835570168554 "EFO:0009899_UBERON:0008946_CL:0002062"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "sd1" 0.00644396462778289 3.61135575836237e-05 "EFO:0009899_UBERON:0008946_CL:0002062"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "sd2" 0.116759424027596 0.000992224452131072 "EFO:0009899_UBERON:0008946_CL:0002062"
+"10x 3' v2_lung parenchyma_type I pneumocyte" "p3" 0.0522470677026932 0 "EFO:0009899_UBERON:0008946_CL:0002062"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "p1" 0.0346053107770926 -1.9688352856679e-05 "EFO:0009899_UBERON:0000004_CL:0002145"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "mean1" 0.00267137667461349 2.75681012603985e-05 "EFO:0009899_UBERON:0000004_CL:0002145"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "mean2" 0.0135599158651466 0.000637239055770533 "EFO:0009899_UBERON:0000004_CL:0002145"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "sd1" 0.00782735294761272 3.43083502473137e-05 "EFO:0009899_UBERON:0000004_CL:0002145"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "sd2" 0.117822941142136 0.000822186375434408 "EFO:0009899_UBERON:0000004_CL:0002145"
+"10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree" "p3" 0.0552000022760873 0 "EFO:0009899_UBERON:0000004_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_plasma cell" "p1" 0.0296593480217503 -3.15554938366501e-06 "EFO:0011025_UBERON:0008946_CL:0000786"
+"10x 5' v1_lung parenchyma_plasma cell" "mean1" 0.0110262662825166 1.19317883399695e-05 "EFO:0011025_UBERON:0008946_CL:0000786"
+"10x 5' v1_lung parenchyma_plasma cell" "mean2" 0.307329693962636 0.000785726296815244 "EFO:0011025_UBERON:0008946_CL:0000786"
+"10x 5' v1_lung parenchyma_plasma cell" "sd1" 0.0289479389253081 1.65602490832769e-05 "EFO:0011025_UBERON:0008946_CL:0000786"
+"10x 5' v1_lung parenchyma_plasma cell" "sd2" 1.09037097867357 0.0012647304327106 "EFO:0011025_UBERON:0008946_CL:0000786"
+"10x 5' v1_lung parenchyma_plasma cell" "p3" 0.0555902835983757 0 "EFO:0011025_UBERON:0008946_CL:0000786"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_nasal mucosa goblet cell" "p1" 0.0146246386230845 -1.63416406018897e-06 "EFO:0009899_UBERON:0000004_CL:0002480"
+"10x 3' v2_nose_nasal mucosa goblet cell" "mean1" 0.00524424253105979 1.470281483125e-05 "EFO:0009899_UBERON:0000004_CL:0002480"
+"10x 3' v2_nose_nasal mucosa goblet cell" "mean2" -0.0231598965975595 0.0005210425889767 "EFO:0009899_UBERON:0000004_CL:0002480"
+"10x 3' v2_nose_nasal mucosa goblet cell" "sd1" 0.0169213977283503 2.77193601434696e-05 "EFO:0009899_UBERON:0000004_CL:0002480"
+"10x 3' v2_nose_nasal mucosa goblet cell" "sd2" 0.428863058524744 0.00103141678341963 "EFO:0009899_UBERON:0000004_CL:0002480"
+"10x 3' v2_nose_nasal mucosa goblet cell" "p3" 0.0502358114008317 0 "EFO:0009899_UBERON:0000004_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_club cell" "p1" 0.016208111275052 -1.78131914838336e-06 "EFO:0009899_UBERON:0001005_CL:0000158"
+"10x 3' v2_respiratory airway_club cell" "mean1" 0.00410181669577214 7.86092461084217e-06 "EFO:0009899_UBERON:0001005_CL:0000158"
+"10x 3' v2_respiratory airway_club cell" "mean2" -0.0593465890774727 0.000676696889790844 "EFO:0009899_UBERON:0001005_CL:0000158"
+"10x 3' v2_respiratory airway_club cell" "sd1" 0.0114810836230109 1.42747776315628e-05 "EFO:0009899_UBERON:0001005_CL:0000158"
+"10x 3' v2_respiratory airway_club cell" "sd2" 0.958991588663796 0.00147996212681888 "EFO:0009899_UBERON:0001005_CL:0000158"
+"10x 3' v2_respiratory airway_club cell" "p3" 0.0496195783651138 0 "EFO:0009899_UBERON:0001005_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "p1" 0.0253939333787097 -1.37332844987244e-05 "EFO:0009899_UBERON:0001005_CL:0000624"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "mean1" 0.00114948844951165 1.46358710550152e-05 "EFO:0009899_UBERON:0001005_CL:0000624"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "mean2" -0.0200667154567759 0.000714721818612377 "EFO:0009899_UBERON:0001005_CL:0000624"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "sd1" 0.00350522751858606 2.40828927428018e-05 "EFO:0009899_UBERON:0001005_CL:0000624"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "sd2" 0.161886859366637 0.00134888734281465 "EFO:0009899_UBERON:0001005_CL:0000624"
+"10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell" "p3" 0.0510600107623619 0 "EFO:0009899_UBERON:0001005_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "p1" 0.0166741517547378 -2.85898323842438e-06 "EFO:0011025_UBERON:0008946_CL:0002063"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "mean1" 0.00319785395556595 1.12653425771227e-05 "EFO:0011025_UBERON:0008946_CL:0002063"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "mean2" 0.0103194724353877 0.000591936306113453 "EFO:0011025_UBERON:0008946_CL:0002063"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "sd1" 0.00954049523741551 2.15553146844519e-05 "EFO:0011025_UBERON:0008946_CL:0002063"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "sd2" 0.372286974062445 0.00120800509662468 "EFO:0011025_UBERON:0008946_CL:0002063"
+"10x 5' v1_lung parenchyma_type II pneumocyte" "p3" 0.0512377477971093 0 "EFO:0011025_UBERON:0008946_CL:0002063"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "p1" 0.031017845146729 -3.20801130936662e-06 "EFO:0009899_UBERON:0008946_CL:0000192"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "mean1" 0.0160642280454295 1.66544485915792e-05 "EFO:0009899_UBERON:0008946_CL:0000192"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "mean2" 0.506269332494097 0.000688043592522042 "EFO:0009899_UBERON:0008946_CL:0000192"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "sd1" 0.0413792678627874 2.18846084751191e-05 "EFO:0009899_UBERON:0008946_CL:0000192"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "sd2" 1.18414213366463 0.000908293446690154 "EFO:0009899_UBERON:0008946_CL:0000192"
+"10x 3' v2_lung parenchyma_smooth muscle cell" "p3" 0.0601338014926406 0 "EFO:0009899_UBERON:0008946_CL:0000192"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_classical monocyte" "p1" 0.0227644572771541 -6.99133400804202e-06 "EFO:0011025_UBERON:0008946_CL:0000860"
+"10x 5' v1_lung parenchyma_classical monocyte" "mean1" 0.00192955748148368 1.57688892151156e-05 "EFO:0011025_UBERON:0008946_CL:0000860"
+"10x 5' v1_lung parenchyma_classical monocyte" "mean2" 0.00372102173693989 0.000671758294679776 "EFO:0011025_UBERON:0008946_CL:0000860"
+"10x 5' v1_lung parenchyma_classical monocyte" "sd1" 0.00651532175675432 2.74905248009874e-05 "EFO:0011025_UBERON:0008946_CL:0000860"
+"10x 5' v1_lung parenchyma_classical monocyte" "sd2" 0.140705095849337 0.00111411723143809 "EFO:0011025_UBERON:0008946_CL:0000860"
+"10x 5' v1_lung parenchyma_classical monocyte" "p3" 0.0532772404944704 0 "EFO:0011025_UBERON:0008946_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "p1" 0.0167766592167963 -9.55325707485333e-07 "EFO:0009922_UBERON:0001005_CL:0002145"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "mean1" 0.0347082730063922 1.22029872552689e-05 "EFO:0009922_UBERON:0001005_CL:0002145"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "mean2" 0.409119876504565 0.000381622015707353 "EFO:0009922_UBERON:0001005_CL:0002145"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "sd1" 0.0812061904830582 2.14143236248865e-05 "EFO:0009922_UBERON:0001005_CL:0002145"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "sd2" 1.55403157971096 0.000704876429809915 "EFO:0009922_UBERON:0001005_CL:0002145"
+"10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree" "p3" 0.0514720551219005 0 "EFO:0009922_UBERON:0001005_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_elicited macrophage" "p1" 0.020130262863618 -3.33791365330733e-06 "EFO:0011025_UBERON:0008946_CL:0000861"
+"10x 5' v1_lung parenchyma_elicited macrophage" "mean1" 0.0033666212610008 1.35052931972025e-05 "EFO:0011025_UBERON:0008946_CL:0000861"
+"10x 5' v1_lung parenchyma_elicited macrophage" "mean2" 0.021074324860066 0.000617330975950239 "EFO:0011025_UBERON:0008946_CL:0000861"
+"10x 5' v1_lung parenchyma_elicited macrophage" "sd1" 0.0117369449693152 2.59236775291091e-05 "EFO:0011025_UBERON:0008946_CL:0000861"
+"10x 5' v1_lung parenchyma_elicited macrophage" "sd2" 0.243943902702354 0.00110603951652488 "EFO:0011025_UBERON:0008946_CL:0000861"
+"10x 5' v1_lung parenchyma_elicited macrophage" "p3" 0.0526111442672142 0 "EFO:0011025_UBERON:0008946_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_club cell" "p1" 0.0236629914996596 -9.47889858511859e-06 "EFO:0009900_UBERON:0000004_CL:0000158"
+"10x 5' v2_nose_club cell" "mean1" 0.0014108617813876 1.93935231095139e-05 "EFO:0009900_UBERON:0000004_CL:0000158"
+"10x 5' v2_nose_club cell" "mean2" -0.0177928098606637 0.000556067067278345 "EFO:0009900_UBERON:0000004_CL:0000158"
+"10x 5' v2_nose_club cell" "sd1" 0.00474227581790504 3.4297047601621e-05 "EFO:0009900_UBERON:0000004_CL:0000158"
+"10x 5' v2_nose_club cell" "sd2" 0.0832891213048903 0.00100044291379297 "EFO:0009900_UBERON:0000004_CL:0000158"
+"10x 5' v2_nose_club cell" "p3" 0.0511643268290912 0 "EFO:0009900_UBERON:0000004_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "p1" 0.0114326277385684 -1.64161386951807e-06 "EFO:0009899_UBERON:0001005_CL:0002145"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "mean1" 0.00889141667745411 1.39088777913849e-05 "EFO:0009899_UBERON:0001005_CL:0002145"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "mean2" 0.121216176938143 0.000379593590333553 "EFO:0009899_UBERON:0001005_CL:0002145"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "sd1" 0.0225781918689809 2.60557575928747e-05 "EFO:0009899_UBERON:0001005_CL:0002145"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "sd2" 0.401558906071752 0.000661024607198722 "EFO:0009899_UBERON:0001005_CL:0002145"
+"10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree" "p3" 0.0518357372826319 0 "EFO:0009899_UBERON:0001005_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "p1" 0.0237267436873495 -1.06342035946808e-05 "EFO:0011025_UBERON:0008946_CL:0000625"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "mean1" 0.00143941017765386 1.93878827812159e-05 "EFO:0011025_UBERON:0008946_CL:0000625"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "mean2" -0.0209262544061749 0.00064966100380308 "EFO:0011025_UBERON:0008946_CL:0000625"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "sd1" 0.00472021322663656 3.29575303309104e-05 "EFO:0011025_UBERON:0008946_CL:0000625"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "sd2" 0.113737287105034 0.00116607918960021 "EFO:0011025_UBERON:0008946_CL:0000625"
+"10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "p3" 0.0506445994376309 0 "EFO:0011025_UBERON:0008946_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "p1" 0.0307344764403791 -4.86843233879275e-06 "EFO:0009899_UBERON:0001005_CL:0019001"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "mean1" 0.00242188762967778 4.96528040207177e-06 "EFO:0009899_UBERON:0001005_CL:0019001"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "mean2" 0.103281593484338 0.000847638477264579 "EFO:0009899_UBERON:0001005_CL:0019001"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "sd1" 0.00665946475887728 7.24457934071849e-06 "EFO:0009899_UBERON:0001005_CL:0019001"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "sd2" 0.979722269459486 0.00170258297672061 "EFO:0009899_UBERON:0001005_CL:0019001"
+"10x 3' v2_respiratory airway_tracheobronchial serous cell" "p3" 0.0574871939986145 0 "EFO:0009899_UBERON:0001005_CL:0019001"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_vein endothelial cell" "p1" 0.0517844190695737 -1.74824632515104e-05 "EFO:0009899_UBERON:0000004_CL:0002543"
+"10x 3' v2_nose_vein endothelial cell" "mean1" 0.00532106810563958 1.89964655930704e-05 "EFO:0009899_UBERON:0000004_CL:0002543"
+"10x 3' v2_nose_vein endothelial cell" "mean2" 0.11412326889575 0.00100381172521242 "EFO:0009899_UBERON:0000004_CL:0002543"
+"10x 3' v2_nose_vein endothelial cell" "sd1" 0.0203505120640847 2.02547298698155e-05 "EFO:0009899_UBERON:0000004_CL:0002543"
+"10x 3' v2_nose_vein endothelial cell" "sd2" 0.849063628285995 0.00144471258552469 "EFO:0009899_UBERON:0000004_CL:0002543"
+"10x 3' v2_nose_vein endothelial cell" "p3" 0.0569826874334143 0 "EFO:0009899_UBERON:0000004_CL:0002543"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "p1" 0.0234916740822911 -5.66059182331031e-06 "EFO:0011025_UBERON:0008946_CL:0000875"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "mean1" 0.00324405928297246 1.55951378038535e-05 "EFO:0011025_UBERON:0008946_CL:0000875"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "mean2" 0.021854518139089 0.000623571566723066 "EFO:0011025_UBERON:0008946_CL:0000875"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "sd1" 0.0102115942324905 2.76312135737595e-05 "EFO:0011025_UBERON:0008946_CL:0000875"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "sd2" 0.205014110100097 0.00102924330344417 "EFO:0011025_UBERON:0008946_CL:0000875"
+"10x 5' v1_lung parenchyma_non-classical monocyte" "p3" 0.0528797491277976 0 "EFO:0011025_UBERON:0008946_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_elicited macrophage" "p1" 0.0193510149725433 -3.19578609223323e-06 "EFO:0009899_UBERON:0008946_CL:0000861"
+"10x 3' v2_lung parenchyma_elicited macrophage" "mean1" 0.00354316340451017 1.112208018198e-05 "EFO:0009899_UBERON:0008946_CL:0000861"
+"10x 3' v2_lung parenchyma_elicited macrophage" "mean2" 0.0525900096995442 0.000606468238691104 "EFO:0009899_UBERON:0008946_CL:0000861"
+"10x 3' v2_lung parenchyma_elicited macrophage" "sd1" 0.0113028227109559 2.10220784264913e-05 "EFO:0009899_UBERON:0008946_CL:0000861"
+"10x 3' v2_lung parenchyma_elicited macrophage" "sd2" 0.31360009290426 0.00103640136482815 "EFO:0009899_UBERON:0008946_CL:0000861"
+"10x 3' v2_lung parenchyma_elicited macrophage" "p3" 0.0541452024698232 0 "EFO:0009899_UBERON:0008946_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_natural killer cell" "p1" 0.0265433458993974 -1.36173834964863e-05 "EFO:0011025_UBERON:0008946_CL:0000623"
+"10x 5' v1_lung parenchyma_natural killer cell" "mean1" 0.00131731370407135 2.22822022948229e-05 "EFO:0011025_UBERON:0008946_CL:0000623"
+"10x 5' v1_lung parenchyma_natural killer cell" "mean2" -0.0154047286216356 0.000668986376426687 "EFO:0011025_UBERON:0008946_CL:0000623"
+"10x 5' v1_lung parenchyma_natural killer cell" "sd1" 0.00407332505237439 3.68924140148453e-05 "EFO:0011025_UBERON:0008946_CL:0000623"
+"10x 5' v1_lung parenchyma_natural killer cell" "sd2" 0.0733654569424849 0.00112206015804628 "EFO:0011025_UBERON:0008946_CL:0000623"
+"10x 5' v1_lung parenchyma_natural killer cell" "p3" 0.0513201373557195 0 "EFO:0011025_UBERON:0008946_CL:0000623"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_nasal mucosa goblet cell" "p1" 0.0241749914635487 -5.77164029162155e-06 "EFO:0011025_UBERON:0000004_CL:0002480"
+"10x 5' v1_nose_nasal mucosa goblet cell" "mean1" 0.00272447769691312 1.84967334965771e-05 "EFO:0011025_UBERON:0000004_CL:0002480"
+"10x 5' v1_nose_nasal mucosa goblet cell" "mean2" -0.0375262602632309 0.000603914475905623 "EFO:0011025_UBERON:0000004_CL:0002480"
+"10x 5' v1_nose_nasal mucosa goblet cell" "sd1" 0.00837733700654789 3.25992560288918e-05 "EFO:0011025_UBERON:0000004_CL:0002480"
+"10x 5' v1_nose_nasal mucosa goblet cell" "sd2" 0.207899049555818 0.00112805393073872 "EFO:0011025_UBERON:0000004_CL:0002480"
+"10x 5' v1_nose_nasal mucosa goblet cell" "p3" 0.0510281559532971 0 "EFO:0011025_UBERON:0000004_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_club cell" "p1" 0.0152548089516182 -1.98806157478008e-06 "EFO:0009899_UBERON:0000004_CL:0000158"
+"10x 3' v2_nose_club cell" "mean1" 0.00364112029826343 1.33244929673007e-05 "EFO:0009899_UBERON:0000004_CL:0000158"
+"10x 3' v2_nose_club cell" "mean2" -0.0212414635912359 0.000550639817109773 "EFO:0009899_UBERON:0000004_CL:0000158"
+"10x 3' v2_nose_club cell" "sd1" 0.0120214806692301 2.50464784876692e-05 "EFO:0009899_UBERON:0000004_CL:0000158"
+"10x 3' v2_nose_club cell" "sd2" 0.335552188360642 0.00107962242521745 "EFO:0009899_UBERON:0000004_CL:0000158"
+"10x 3' v2_nose_club cell" "p3" 0.0506288638385221 0 "EFO:0009899_UBERON:0000004_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "p1" 0.0235392950837672 -1.1005410174719e-05 "EFO:0009899_UBERON:0008946_CL:4028002"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean1" 0.00151031919877984 1.8336387160618e-05 "EFO:0009899_UBERON:0008946_CL:4028002"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean2" -0.00848955979065869 0.000589261376732174 "EFO:0009899_UBERON:0008946_CL:4028002"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd1" 0.00516362332463866 3.2075706767925e-05 "EFO:0009899_UBERON:0008946_CL:4028002"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd2" 0.0836802201439768 0.000982855966311687 "EFO:0009899_UBERON:0008946_CL:4028002"
+"10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell" "p3" 0.0527177660498331 0 "EFO:0009899_UBERON:0008946_CL:4028002"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "p1" 0.0285606915152996 -4.0158995722201e-06 "EFO:0009899_UBERON:0008946_CL:0002633"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "mean1" 0.0076331115453345 1.77475204704969e-05 "EFO:0009899_UBERON:0008946_CL:0002633"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "mean2" 0.103925180964612 0.000679303913020767 "EFO:0009899_UBERON:0008946_CL:0002633"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "sd1" 0.0187797036193509 2.55702936272895e-05 "EFO:0009899_UBERON:0008946_CL:0002633"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "sd2" 0.574712323519167 0.00105577742215038 "EFO:0009899_UBERON:0008946_CL:0002633"
+"10x 3' v2_lung parenchyma_respiratory basal cell" "p3" 0.0539670958824868 0 "EFO:0009899_UBERON:0008946_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "p1" 0.027950491168149 -4.97827304991018e-06 "EFO:0009922_UBERON:0008946_CL:0000875"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "mean1" 0.00484064250401947 1.96842372726167e-05 "EFO:0009922_UBERON:0008946_CL:0000875"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "mean2" 0.0267614969881307 0.000762415965488939 "EFO:0009922_UBERON:0008946_CL:0000875"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "sd1" 0.0147970146298448 3.24571405684661e-05 "EFO:0009922_UBERON:0008946_CL:0000875"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "sd2" 0.307312489925343 0.00117963899007911 "EFO:0009922_UBERON:0008946_CL:0000875"
+"10x 3' v3_lung parenchyma_non-classical monocyte" "p3" 0.0536917476699937 0 "EFO:0009922_UBERON:0008946_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "p1" 0.0248449504513477 -2.04625214502613e-06 "EFO:0009899_UBERON:0001005_CL:0002480"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "mean1" 0.0132911748774589 1.30264985641711e-05 "EFO:0009899_UBERON:0001005_CL:0002480"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "mean2" 0.252290179645347 0.000585365248340787 "EFO:0009899_UBERON:0001005_CL:0002480"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "sd1" 0.0334062032616756 2.15245214455048e-05 "EFO:0009899_UBERON:0001005_CL:0002480"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "sd2" 1.13467971377397 0.00100300277050536 "EFO:0009899_UBERON:0001005_CL:0002480"
+"10x 3' v2_respiratory airway_nasal mucosa goblet cell" "p3" 0.0528447060797588 0 "EFO:0009899_UBERON:0001005_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_classical monocyte" "p1" 0.0275423043321846 -8.59404488963647e-06 "EFO:0009900_UBERON:0008946_CL:0000860"
+"10x 5' v2_lung parenchyma_classical monocyte" "mean1" 0.00235904728341525 2.37053464154432e-05 "EFO:0009900_UBERON:0008946_CL:0000860"
+"10x 5' v2_lung parenchyma_classical monocyte" "mean2" 0.013719582361382 0.000844970730937803 "EFO:0009900_UBERON:0008946_CL:0000860"
+"10x 5' v2_lung parenchyma_classical monocyte" "sd1" 0.00676488368062254 3.55358383317877e-05 "EFO:0009900_UBERON:0008946_CL:0000860"
+"10x 5' v2_lung parenchyma_classical monocyte" "sd2" 0.138375772868804 0.00124024161049674 "EFO:0009900_UBERON:0008946_CL:0000860"
+"10x 5' v2_lung parenchyma_classical monocyte" "p3" 0.0545986740443833 0 "EFO:0009900_UBERON:0008946_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "p1" 0.0316869214251687 -1.27534929771038e-05 "EFO:0009899_UBERON:0001005_CL:4028002"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "mean1" 0.00182932484393006 2.14394330410594e-05 "EFO:0009899_UBERON:0001005_CL:4028002"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "mean2" -0.00564494212583044 0.000656742589399586 "EFO:0009899_UBERON:0001005_CL:4028002"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "sd1" 0.00565396029555423 3.41436068140313e-05 "EFO:0009899_UBERON:0001005_CL:4028002"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "sd2" 0.102656189963601 0.00102947869024045 "EFO:0009899_UBERON:0001005_CL:4028002"
+"10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell" "p3" 0.0537642823580484 0 "EFO:0009899_UBERON:0001005_CL:4028002"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_fibroblast of lung" "p1" 0.0286411260709663 -1.39287191694037e-06 "EFO:0009922_UBERON:0001005_CL:0002553"
+"10x 3' v3_respiratory airway_fibroblast of lung" "mean1" 0.0269233174075021 1.61226763025449e-05 "EFO:0009922_UBERON:0001005_CL:0002553"
+"10x 3' v3_respiratory airway_fibroblast of lung" "mean2" 0.248912312700425 0.000542758504517969 "EFO:0009922_UBERON:0001005_CL:0002553"
+"10x 3' v3_respiratory airway_fibroblast of lung" "sd1" 0.0747593247530079 2.4957288379724e-05 "EFO:0009922_UBERON:0001005_CL:0002553"
+"10x 3' v3_respiratory airway_fibroblast of lung" "sd2" 1.72456017110691 0.000842240698370357 "EFO:0009922_UBERON:0001005_CL:0002553"
+"10x 3' v3_respiratory airway_fibroblast of lung" "p3" 0.0522924305262338 0 "EFO:0009922_UBERON:0001005_CL:0002553"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_vein endothelial cell" "p1" 0.0235997762136868 -8.00976850855218e-06 "EFO:0009899_UBERON:0001005_CL:0002543"
+"10x 3' v2_respiratory airway_vein endothelial cell" "mean1" 0.00245266469143925 1.50088370695025e-05 "EFO:0009899_UBERON:0001005_CL:0002543"
+"10x 3' v2_respiratory airway_vein endothelial cell" "mean2" 0.00577602091662288 0.000596020309235452 "EFO:0009899_UBERON:0001005_CL:0002543"
+"10x 3' v2_respiratory airway_vein endothelial cell" "sd1" 0.00697915241584703 2.55254218024194e-05 "EFO:0009899_UBERON:0001005_CL:0002543"
+"10x 3' v2_respiratory airway_vein endothelial cell" "sd2" 0.190286525699654 0.00103143823804451 "EFO:0009899_UBERON:0001005_CL:0002543"
+"10x 3' v2_respiratory airway_vein endothelial cell" "p3" 0.0522099954821754 0 "EFO:0009899_UBERON:0001005_CL:0002543"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_nasal mucosa goblet cell" "p1" 0.0193351468979722 -7.5544064106247e-06 "EFO:0009900_UBERON:0000004_CL:0002480"
+"10x 5' v2_nose_nasal mucosa goblet cell" "mean1" 0.00142755822219575 1.77446066763979e-05 "EFO:0009900_UBERON:0000004_CL:0002480"
+"10x 5' v2_nose_nasal mucosa goblet cell" "mean2" -0.0179394538071816 0.000502687388187677 "EFO:0009900_UBERON:0000004_CL:0002480"
+"10x 5' v2_nose_nasal mucosa goblet cell" "sd1" 0.00501118287907484 3.23768354306744e-05 "EFO:0009900_UBERON:0000004_CL:0002480"
+"10x 5' v2_nose_nasal mucosa goblet cell" "sd2" 0.0975144508988737 0.000953065596571618 "EFO:0009900_UBERON:0000004_CL:0002480"
+"10x 5' v2_nose_nasal mucosa goblet cell" "p3" 0.0505991501033449 0 "EFO:0009900_UBERON:0000004_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "p1" 0.0258564690831866 -4.40485005114637e-06 "EFO:0009899_UBERON:0008946_CL:0002138"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "mean1" 0.00635673482382038 1.76213942646381e-05 "EFO:0009899_UBERON:0008946_CL:0002138"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "mean2" 0.0687695456057456 0.000623836567637445 "EFO:0009899_UBERON:0008946_CL:0002138"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "sd1" 0.0168235794249828 2.85126088287306e-05 "EFO:0009899_UBERON:0008946_CL:0002138"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "sd2" 0.427700012073165 0.00100600849257862 "EFO:0009899_UBERON:0008946_CL:0002138"
+"10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel" "p3" 0.0525353579698545 0 "EFO:0009899_UBERON:0008946_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "p1" 0.0277633849577814 -9.17353916343477e-06 "EFO:0009899_UBERON:0008946_CL:4028003"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "mean1" 0.00227323118593793 1.94419951221128e-05 "EFO:0009899_UBERON:0008946_CL:4028003"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "mean2" -0.0112846951684438 0.000617040596361175 "EFO:0009899_UBERON:0008946_CL:4028003"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "sd1" 0.00717151756951527 3.35919377096566e-05 "EFO:0009899_UBERON:0008946_CL:4028003"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "sd2" 0.122605504059958 0.00103414921901772 "EFO:0009899_UBERON:0008946_CL:4028003"
+"10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell" "p3" 0.0530918612516571 0 "EFO:0009899_UBERON:0008946_CL:4028003"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_club cell" "p1" 0.0257705247139703 -4.33996333031803e-06 "EFO:0011025_UBERON:0008946_CL:0000158"
+"10x 5' v1_lung parenchyma_club cell" "mean1" 0.00188522569120884 7.92173519505361e-06 "EFO:0011025_UBERON:0008946_CL:0000158"
+"10x 5' v1_lung parenchyma_club cell" "mean2" -0.0461258437625727 0.00101143735366341 "EFO:0011025_UBERON:0008946_CL:0000158"
+"10x 5' v1_lung parenchyma_club cell" "sd1" 0.00496961599433755 1.22471811733898e-05 "EFO:0011025_UBERON:0008946_CL:0000158"
+"10x 5' v1_lung parenchyma_club cell" "sd2" 0.53301040431632 0.00220450261892947 "EFO:0011025_UBERON:0008946_CL:0000158"
+"10x 5' v1_lung parenchyma_club cell" "p3" 0.0544234193356493 0 "EFO:0011025_UBERON:0008946_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "p1" 0.027216020395161 -7.45067711213545e-06 "EFO:0009899_UBERON:0008946_CL:0019019"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "mean1" 0.00337413377478957 1.79373422391973e-05 "EFO:0009899_UBERON:0008946_CL:0019019"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "mean2" 0.0439289133097744 0.000645088392354859 "EFO:0009899_UBERON:0008946_CL:0019019"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "sd1" 0.00882756911943804 2.77686774215069e-05 "EFO:0009899_UBERON:0008946_CL:0019019"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "sd2" 0.203795360507283 0.000963059200551422 "EFO:0009899_UBERON:0008946_CL:0019019"
+"10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell" "p3" 0.054710669182637 0 "EFO:0009899_UBERON:0008946_CL:0019019"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p1" 0.0205451149467849 -2.59297455192736e-06 "EFO:0009899_UBERON:0008946_CL:0002145"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean1" 0.0117549791422182 1.68530682651391e-05 "EFO:0009899_UBERON:0008946_CL:0002145"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean2" 0.126124218096304 0.000449304466335357 "EFO:0009899_UBERON:0008946_CL:0002145"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd1" 0.0283943022267503 2.84722585665621e-05 "EFO:0009899_UBERON:0008946_CL:0002145"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd2" 0.589740927018524 0.000732179442328174 "EFO:0009899_UBERON:0008946_CL:0002145"
+"10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p3" 0.0517002446050055 0 "EFO:0009899_UBERON:0008946_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "p1" 0.0303882811081825 -1.09781830497863e-05 "EFO:0011025_UBERON:0000004_CL:0002145"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "mean1" 0.00221367473757704 2.95255710142529e-05 "EFO:0011025_UBERON:0000004_CL:0002145"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "mean2" -0.00842659038400018 0.000624555527726759 "EFO:0011025_UBERON:0000004_CL:0002145"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "sd1" 0.00601674084599299 4.01554622778373e-05 "EFO:0011025_UBERON:0000004_CL:0002145"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "sd2" 0.0824801212395945 0.000887315487181797 "EFO:0011025_UBERON:0000004_CL:0002145"
+"10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree" "p3" 0.0536886768971616 0 "EFO:0011025_UBERON:0000004_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "p1" 0.0272023611599054 -2.69852764530852e-06 "EFO:0009901_UBERON:0008946_CL:0000583"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "mean1" 0.0184198764979882 7.65207030515767e-06 "EFO:0009901_UBERON:0008946_CL:0000583"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "mean2" 0.971531240760895 0.000528826964914911 "EFO:0009901_UBERON:0008946_CL:0000583"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "sd1" 0.0396385897460999 1.14595025087456e-05 "EFO:0009901_UBERON:0008946_CL:0000583"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "sd2" 1.97516177639314 0.000813148287893363 "EFO:0009901_UBERON:0008946_CL:0000583"
+"10x 3' v1_lung parenchyma_alveolar macrophage" "p3" 0.0623766752509743 0 "EFO:0009901_UBERON:0008946_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "p1" 0.0174227118422147 -2.08587722816443e-06 "EFO:0009922_UBERON:0008946_CL:0002553"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "mean1" 0.00595098179045914 1.55446845822305e-05 "EFO:0009922_UBERON:0008946_CL:0002553"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "mean2" 0.0072186768050515 0.000505034381225876 "EFO:0009922_UBERON:0008946_CL:0002553"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "sd1" 0.0198964888981087 2.87708539752756e-05 "EFO:0009922_UBERON:0008946_CL:0002553"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "sd2" 0.355244598749486 0.000903628172360166 "EFO:0009922_UBERON:0008946_CL:0002553"
+"10x 3' v3_lung parenchyma_fibroblast of lung" "p3" 0.0515144289104581 0 "EFO:0009922_UBERON:0008946_CL:0002553"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "p1" 0.0265466350477266 -1.14539592765672e-05 "EFO:0011025_UBERON:0008946_CL:0002543"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "mean1" 0.00140484364036399 1.98082206359145e-05 "EFO:0011025_UBERON:0008946_CL:0002543"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "mean2" -0.00119992857385487 0.000629864889848471 "EFO:0011025_UBERON:0008946_CL:0002543"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "sd1" 0.00435532861597252 3.26969632026569e-05 "EFO:0011025_UBERON:0008946_CL:0002543"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "sd2" 0.0660166299475751 0.000948614341795969 "EFO:0011025_UBERON:0008946_CL:0002543"
+"10x 5' v1_lung parenchyma_vein endothelial cell" "p3" 0.0525723706359599 0 "EFO:0011025_UBERON:0008946_CL:0002543"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p1" 0.0192917860771838 -4.2811498802253e-06 "EFO:0011025_UBERON:0008946_CL:0002145"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean1" 0.00434091540458831 1.69888517447171e-05 "EFO:0011025_UBERON:0008946_CL:0002145"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean2" 0.0405988361689023 0.000467810316244067 "EFO:0011025_UBERON:0008946_CL:0002145"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd1" 0.01176789783736 3.01944705052115e-05 "EFO:0011025_UBERON:0008946_CL:0002145"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd2" 0.173218805776326 0.000738983721722929 "EFO:0011025_UBERON:0008946_CL:0002145"
+"10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p3" 0.0525204254301415 0 "EFO:0011025_UBERON:0008946_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_fibroblast of lung" "p1" 0.0280223077641879 -7.96605952573402e-06 "EFO:0009899_UBERON:0001005_CL:0002553"
+"10x 3' v2_respiratory airway_fibroblast of lung" "mean1" 0.00246356854608494 1.93058998103171e-05 "EFO:0009899_UBERON:0001005_CL:0002553"
+"10x 3' v2_respiratory airway_fibroblast of lung" "mean2" 0.00283940989488851 0.000632124463760849 "EFO:0009899_UBERON:0001005_CL:0002553"
+"10x 3' v2_respiratory airway_fibroblast of lung" "sd1" 0.0073525804871709 2.88459810459806e-05 "EFO:0009899_UBERON:0001005_CL:0002553"
+"10x 3' v2_respiratory airway_fibroblast of lung" "sd2" 0.141201158032985 0.000950502522824304 "EFO:0009899_UBERON:0001005_CL:0002553"
+"10x 3' v2_respiratory airway_fibroblast of lung" "p3" 0.0540878155287214 0 "EFO:0009899_UBERON:0001005_CL:0002553"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "p1" 0.0170851315220662 -2.25119389669134e-06 "EFO:0009899_UBERON:0000004_CL:0005012"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "mean1" 0.00663164315524432 1.76267944544928e-05 "EFO:0009899_UBERON:0000004_CL:0005012"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "mean2" 0.0448775194061262 0.000468449571315634 "EFO:0009899_UBERON:0000004_CL:0005012"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "sd1" 0.0200797662288603 3.15545073863106e-05 "EFO:0009899_UBERON:0000004_CL:0005012"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "sd2" 0.276556583924016 0.000773956693956491 "EFO:0009899_UBERON:0000004_CL:0005012"
+"10x 3' v2_nose_multi-ciliated epithelial cell" "p3" 0.0519199643736546 0 "EFO:0009899_UBERON:0000004_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "p1" 0.0253413132714116 -1.38202628141435e-05 "EFO:0009900_UBERON:0000004_CL:0002145"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "mean1" 0.0014479283622231 2.46379262621632e-05 "EFO:0009900_UBERON:0000004_CL:0002145"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "mean2" -0.0130420770940648 0.000495342881956247 "EFO:0009900_UBERON:0000004_CL:0002145"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "sd1" 0.00447512912383861 4.00993396124209e-05 "EFO:0009900_UBERON:0000004_CL:0002145"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "sd2" 0.0408552107858033 0.000736368253874768 "EFO:0009900_UBERON:0000004_CL:0002145"
+"10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree" "p3" 0.0520867155655603 0 "EFO:0009900_UBERON:0000004_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_classical monocyte" "p1" 0.0220185523679573 -6.34056166913135e-06 "EFO:0009899_UBERON:0008946_CL:0000860"
+"10x 3' v2_lung parenchyma_classical monocyte" "mean1" 0.00190604546199205 1.12913228579028e-05 "EFO:0009899_UBERON:0008946_CL:0000860"
+"10x 3' v2_lung parenchyma_classical monocyte" "mean2" 0.0253480197450946 0.000642896816954274 "EFO:0009899_UBERON:0008946_CL:0000860"
+"10x 3' v2_lung parenchyma_classical monocyte" "sd1" 0.00619520494493357 2.00823780203229e-05 "EFO:0009899_UBERON:0008946_CL:0000860"
+"10x 3' v2_lung parenchyma_classical monocyte" "sd2" 0.186045651530718 0.00105565878637795 "EFO:0009899_UBERON:0008946_CL:0000860"
+"10x 3' v2_lung parenchyma_classical monocyte" "p3" 0.0551525197002638 0 "EFO:0009899_UBERON:0008946_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "p1" 0.0264503716132374 -1.91375170332438e-06 "EFO:0009899_UBERON:0001005_CL:1000312"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "mean1" 0.0148163217582057 1.41737629128298e-05 "EFO:0009899_UBERON:0001005_CL:1000312"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "mean2" 0.193099160335827 0.000683865728779751 "EFO:0009899_UBERON:0001005_CL:1000312"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "sd1" 0.0380542507025136 2.10555028578103e-05 "EFO:0009899_UBERON:0001005_CL:1000312"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "sd2" 1.59432910327607 0.00113874538054846 "EFO:0009899_UBERON:0001005_CL:1000312"
+"10x 3' v2_respiratory airway_bronchial goblet cell" "p3" 0.0541096441324738 0 "EFO:0009899_UBERON:0001005_CL:1000312"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "p1" 0.0283180701210542 -1.97001682035788e-05 "EFO:0011025_UBERON:0008946_CL:4028002"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean1" 0.00100753807291155 2.23991552455618e-05 "EFO:0011025_UBERON:0008946_CL:4028002"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean2" -0.00584082912998174 0.000604663358099126 "EFO:0011025_UBERON:0008946_CL:4028002"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd1" 0.00319095199699681 3.73237711613087e-05 "EFO:0011025_UBERON:0008946_CL:4028002"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd2" 0.0362217334643521 0.000888225645718981 "EFO:0011025_UBERON:0008946_CL:4028002"
+"10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell" "p3" 0.0527527529528429 0 "EFO:0011025_UBERON:0008946_CL:4028002"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_elicited macrophage" "p1" 0.0272377023909925 -5.6174828189314e-06 "EFO:0009900_UBERON:0008946_CL:0000861"
+"10x 5' v2_lung parenchyma_elicited macrophage" "mean1" 0.00346853733984841 1.97228138456529e-05 "EFO:0009900_UBERON:0008946_CL:0000861"
+"10x 5' v2_lung parenchyma_elicited macrophage" "mean2" 0.0337053549358148 0.000756140666024552 "EFO:0009900_UBERON:0008946_CL:0000861"
+"10x 5' v2_lung parenchyma_elicited macrophage" "sd1" 0.0097592784516732 3.19619184485004e-05 "EFO:0009900_UBERON:0008946_CL:0000861"
+"10x 5' v2_lung parenchyma_elicited macrophage" "sd2" 0.200146036560529 0.00118205469810878 "EFO:0009900_UBERON:0008946_CL:0000861"
+"10x 5' v2_lung parenchyma_elicited macrophage" "p3" 0.0534754669349851 0 "EFO:0009900_UBERON:0008946_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "p1" 0.0272164198450885 -9.80671911039291e-06 "EFO:0009922_UBERON:0008946_CL:0002543"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "mean1" 0.00197815056630198 2.23317857799866e-05 "EFO:0009922_UBERON:0008946_CL:0002543"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "mean2" -0.00688150212749594 0.0006657640158574 "EFO:0009922_UBERON:0008946_CL:0002543"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "sd1" 0.00578525041319539 3.46160244515747e-05 "EFO:0009922_UBERON:0008946_CL:0002543"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "sd2" 0.109305819512612 0.00103462885721967 "EFO:0009922_UBERON:0008946_CL:0002543"
+"10x 3' v3_lung parenchyma_vein endothelial cell" "p3" 0.0528424183604659 0 "EFO:0009922_UBERON:0008946_CL:0002543"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "p1" 0.0269609814304792 -5.46687162993269e-06 "EFO:0009899_UBERON:0008946_CL:1001568"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "mean1" 0.00599242746611695 1.67903788081078e-05 "EFO:0009899_UBERON:0008946_CL:1001568"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "mean2" 0.0790550828659908 0.000574959890741818 "EFO:0009899_UBERON:0008946_CL:1001568"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "sd1" 0.0162066834235618 2.79528311727925e-05 "EFO:0009899_UBERON:0008946_CL:1001568"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "sd2" 0.329817862053121 0.000895789792344345 "EFO:0009899_UBERON:0008946_CL:1001568"
+"10x 3' v2_lung parenchyma_pulmonary artery endothelial cell" "p3" 0.0526772890215794 0 "EFO:0009899_UBERON:0008946_CL:1001568"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "p1" 0.0175460344615444 -2.23825286419944e-06 "EFO:0009899_UBERON:0008946_CL:0002553"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "mean1" 0.0083775970321065 1.17788385927414e-05 "EFO:0009899_UBERON:0008946_CL:0002553"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "mean2" 0.201208774990622 0.000497657405362222 "EFO:0009899_UBERON:0008946_CL:0002553"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "sd1" 0.0223866730585606 2.08103896156298e-05 "EFO:0009899_UBERON:0008946_CL:0002553"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "sd2" 0.585522206727061 0.000793757604358957 "EFO:0009899_UBERON:0008946_CL:0002553"
+"10x 3' v2_lung parenchyma_fibroblast of lung" "p3" 0.0534710438136483 0 "EFO:0009899_UBERON:0008946_CL:0002553"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p1" 0.0250767710151974 -3.70622071301114e-06 "EFO:0009922_UBERON:0008946_CL:0002145"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean1" 0.0115609401526427 1.9613790589557e-05 "EFO:0009922_UBERON:0008946_CL:0002145"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean2" 0.020588034324251 0.000510509611396751 "EFO:0009922_UBERON:0008946_CL:0002145"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd1" 0.0266383371655886 3.09970369769333e-05 "EFO:0009922_UBERON:0008946_CL:0002145"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd2" 0.725533777354479 0.000876082119347386 "EFO:0009922_UBERON:0008946_CL:0002145"
+"10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p3" 0.0514735684445927 0 "EFO:0009922_UBERON:0008946_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "p1" 0.0387709408960596 -4.52543210364424e-06 "EFO:0009899_UBERON:0001005_CL:1000223"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "mean1" 0.0125473596240417 2.29243968554251e-05 "EFO:0009899_UBERON:0001005_CL:1000223"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "mean2" 0.146784231367098 0.000670534082766133 "EFO:0009899_UBERON:0001005_CL:1000223"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "sd1" 0.0347164642068434 2.78773712754195e-05 "EFO:0009899_UBERON:0001005_CL:1000223"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "sd2" 0.766296738867273 0.000911721865639347 "EFO:0009899_UBERON:0001005_CL:1000223"
+"10x 3' v2_respiratory airway_lung neuroendocrine cell" "p3" 0.0563630575890051 0 "EFO:0009899_UBERON:0001005_CL:1000223"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "p1" 0.0588308990945686 -3.07162586914798e-05 "EFO:0009922_UBERON:0008946_CL:0000625"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "mean1" 0.00507109244413208 3.36795819873588e-05 "EFO:0009922_UBERON:0008946_CL:0000625"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "mean2" 0.0371280351075631 0.00099843575383281 "EFO:0009922_UBERON:0008946_CL:0000625"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "sd1" 0.0266475732041898 2.90220419746294e-05 "EFO:0009922_UBERON:0008946_CL:0000625"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "sd2" 0.531862116652268 0.00118309779488175 "EFO:0009922_UBERON:0008946_CL:0000625"
+"10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell" "p3" 0.0550217958526322 0 "EFO:0009922_UBERON:0008946_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_classical monocyte" "p1" 0.0284601993883199 -9.864709192485e-06 "EFO:0009899_UBERON:0001005_CL:0000860"
+"10x 3' v2_respiratory airway_classical monocyte" "mean1" 0.00221628969598166 1.45634761690457e-05 "EFO:0009899_UBERON:0001005_CL:0000860"
+"10x 3' v2_respiratory airway_classical monocyte" "mean2" 0.0283264312321529 0.000711090677813094 "EFO:0009899_UBERON:0001005_CL:0000860"
+"10x 3' v2_respiratory airway_classical monocyte" "sd1" 0.00682578607079079 2.31919693786989e-05 "EFO:0009899_UBERON:0001005_CL:0000860"
+"10x 3' v2_respiratory airway_classical monocyte" "sd2" 0.1952184244503 0.00109941691941113 "EFO:0009899_UBERON:0001005_CL:0000860"
+"10x 3' v2_respiratory airway_classical monocyte" "p3" 0.0553380104727055 0 "EFO:0009899_UBERON:0001005_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_club cell" "p1" 0.0246043463727657 -6.62389859893196e-06 "EFO:0011025_UBERON:0000004_CL:0000158"
+"10x 5' v1_nose_club cell" "mean1" 0.00220183283591794 1.95088296350155e-05 "EFO:0011025_UBERON:0000004_CL:0000158"
+"10x 5' v1_nose_club cell" "mean2" -0.0390279733344276 0.000612874197375356 "EFO:0011025_UBERON:0000004_CL:0000158"
+"10x 5' v1_nose_club cell" "sd1" 0.00668717013055341 3.45955232290847e-05 "EFO:0011025_UBERON:0000004_CL:0000158"
+"10x 5' v1_nose_club cell" "sd2" 0.162021606812285 0.00115598218651919 "EFO:0011025_UBERON:0000004_CL:0000158"
+"10x 5' v1_nose_club cell" "p3" 0.0508251611827136 0 "EFO:0011025_UBERON:0000004_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "p1" 0.0265938617169422 -1.08444512646329e-05 "EFO:0011025_UBERON:0008946_CL:0002138"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "mean1" 0.00172366567854649 2.01336282469942e-05 "EFO:0011025_UBERON:0008946_CL:0002138"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "mean2" 0.00505715041460886 0.000645299642745629 "EFO:0011025_UBERON:0008946_CL:0002138"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "sd1" 0.00485131018546886 3.20151456161643e-05 "EFO:0011025_UBERON:0008946_CL:0002138"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "sd2" 0.0862775346404858 0.00099092723688305 "EFO:0011025_UBERON:0008946_CL:0002138"
+"10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel" "p3" 0.0530876316554991 0 "EFO:0011025_UBERON:0008946_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_classical monocyte" "p1" 0.0301660215709455 -3.46915426875781e-06 "EFO:0009922_UBERON:0001005_CL:0000860"
+"10x 3' v3_respiratory airway_classical monocyte" "mean1" 0.00839079228757153 2.00250866454693e-05 "EFO:0009922_UBERON:0001005_CL:0000860"
+"10x 3' v3_respiratory airway_classical monocyte" "mean2" 0.0813525065639942 0.000767625678268025 "EFO:0009922_UBERON:0001005_CL:0000860"
+"10x 3' v3_respiratory airway_classical monocyte" "sd1" 0.0248357109740441 3.19333886854606e-05 "EFO:0009922_UBERON:0001005_CL:0000860"
+"10x 3' v3_respiratory airway_classical monocyte" "sd2" 0.482338589883048 0.00111318735474646 "EFO:0009922_UBERON:0001005_CL:0000860"
+"10x 3' v3_respiratory airway_classical monocyte" "p3" 0.0545634410220013 0 "EFO:0009922_UBERON:0001005_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_classical monocyte" "p1" 0.0278008379926547 -7.83608481974308e-06 "EFO:0009922_UBERON:0008946_CL:0000860"
+"10x 3' v3_lung parenchyma_classical monocyte" "mean1" 0.00244644494285533 1.84306152244294e-05 "EFO:0009922_UBERON:0008946_CL:0000860"
+"10x 3' v3_lung parenchyma_classical monocyte" "mean2" 0.00997859625308228 0.000730621418749178 "EFO:0009922_UBERON:0008946_CL:0000860"
+"10x 3' v3_lung parenchyma_classical monocyte" "sd1" 0.00770318485596377 3.12386954450008e-05 "EFO:0009922_UBERON:0008946_CL:0000860"
+"10x 3' v3_lung parenchyma_classical monocyte" "sd2" 0.156434154931884 0.00113805144758988 "EFO:0009922_UBERON:0008946_CL:0000860"
+"10x 3' v3_lung parenchyma_classical monocyte" "p3" 0.0539796234720624 0 "EFO:0009922_UBERON:0008946_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "p1" 0.0327252390886485 -5.13756224593428e-06 "EFO:0009900_UBERON:0008946_CL:0002399"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean1" 0.0105924964989356 2.67593741955899e-05 "EFO:0009900_UBERON:0008946_CL:0002399"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean2" 0.179977813941615 0.000821090889863104 "EFO:0009900_UBERON:0008946_CL:0002399"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd1" 0.0295309172294221 3.16559200556787e-05 "EFO:0009900_UBERON:0008946_CL:0002399"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd2" 0.602804966243738 0.00109468323530126 "EFO:0009900_UBERON:0008946_CL:0002399"
+"10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "p3" 0.0560169417330267 0 "EFO:0009900_UBERON:0008946_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "p1" 0.0243130878563942 -5.28942167909636e-06 "EFO:0011025_UBERON:0008946_CL:0000082"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "mean1" 0.00242313650272129 1.29088504189299e-05 "EFO:0011025_UBERON:0008946_CL:0000082"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "mean2" -0.0349823216448288 0.000763882276852116 "EFO:0011025_UBERON:0008946_CL:0000082"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "sd1" 0.00649175764396522 1.99453100567872e-05 "EFO:0011025_UBERON:0008946_CL:0000082"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "sd2" 0.379976935733104 0.00147485303376716 "EFO:0011025_UBERON:0008946_CL:0000082"
+"10x 5' v1_lung parenchyma_epithelial cell of lung" "p3" 0.0529461549757677 0 "EFO:0011025_UBERON:0008946_CL:0000082"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "p1" 0.0375996003827998 -4.0224355308974e-06 "EFO:0009899_UBERON:0008946_CL:0000990"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "mean1" 0.00953743024645201 1.516172027055e-05 "EFO:0009899_UBERON:0008946_CL:0000990"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "mean2" 0.254619810334439 0.00087994781788594 "EFO:0009899_UBERON:0008946_CL:0000990"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "sd1" 0.0283768627160038 2.07488749400354e-05 "EFO:0009899_UBERON:0008946_CL:0000990"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "sd2" 1.08579641420682 0.00136392077770769 "EFO:0009899_UBERON:0008946_CL:0000990"
+"10x 3' v2_lung parenchyma_conventional dendritic cell" "p3" 0.0577817197848007 0 "EFO:0009899_UBERON:0008946_CL:0000990"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_myofibroblast cell" "p1" 0.0383329459061501 -9.07139416491118e-06 "EFO:0009899_UBERON:0001005_CL:0000186"
+"10x 3' v2_respiratory airway_myofibroblast cell" "mean1" 0.00603304929926342 2.72859657466998e-05 "EFO:0009899_UBERON:0001005_CL:0000186"
+"10x 3' v2_respiratory airway_myofibroblast cell" "mean2" 0.0527151402575017 0.000757141809181048 "EFO:0009899_UBERON:0001005_CL:0000186"
+"10x 3' v2_respiratory airway_myofibroblast cell" "sd1" 0.0215837091097746 3.1094037277032e-05 "EFO:0009899_UBERON:0001005_CL:0000186"
+"10x 3' v2_respiratory airway_myofibroblast cell" "sd2" 0.399915065730879 0.00095800916206565 "EFO:0009899_UBERON:0001005_CL:0000186"
+"10x 3' v2_respiratory airway_myofibroblast cell" "p3" 0.0561616323972163 0 "EFO:0009899_UBERON:0001005_CL:0000186"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "p1" 0.0300545573617497 -1.14940400226586e-05 "EFO:0009922_UBERON:0008946_CL:0002062"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "mean1" 0.00275596889991981 2.76636142519846e-05 "EFO:0009922_UBERON:0008946_CL:0002062"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "mean2" -0.0412555464011344 0.000621014362556828 "EFO:0009922_UBERON:0008946_CL:0002062"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "sd1" 0.00722131062131465 4.26605815618858e-05 "EFO:0009922_UBERON:0008946_CL:0002062"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "sd2" 0.150534168343529 0.00106021775493609 "EFO:0009922_UBERON:0008946_CL:0002062"
+"10x 3' v3_lung parenchyma_type I pneumocyte" "p3" 0.0518481138653293 0 "EFO:0009922_UBERON:0008946_CL:0002062"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_natural killer cell" "p1" 0.0290320382616233 -1.25733925884926e-05 "EFO:0009899_UBERON:0001005_CL:0000623"
+"10x 3' v2_respiratory airway_natural killer cell" "mean1" 0.00171549197522419 1.95916933751766e-05 "EFO:0009899_UBERON:0001005_CL:0000623"
+"10x 3' v2_respiratory airway_natural killer cell" "mean2" -0.02388893692771 0.000729491673905775 "EFO:0009899_UBERON:0001005_CL:0000623"
+"10x 3' v2_respiratory airway_natural killer cell" "sd1" 0.0052402013459399 3.14137383481482e-05 "EFO:0009899_UBERON:0001005_CL:0000623"
+"10x 3' v2_respiratory airway_natural killer cell" "sd2" 0.169304374264119 0.00129983973370034 "EFO:0009899_UBERON:0001005_CL:0000623"
+"10x 3' v2_respiratory airway_natural killer cell" "p3" 0.0515841541762537 0 "EFO:0009899_UBERON:0001005_CL:0000623"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_classical monocyte" "p1" 0.0472563757964288 -1.86560647052878e-05 "EFO:0009901_UBERON:0008946_CL:0000860"
+"10x 3' v1_lung parenchyma_classical monocyte" "mean1" 0.00962934103841054 1.68014689542343e-05 "EFO:0009901_UBERON:0008946_CL:0000860"
+"10x 3' v1_lung parenchyma_classical monocyte" "mean2" 0.411353313233946 0.000871701965015346 "EFO:0009901_UBERON:0008946_CL:0000860"
+"10x 3' v1_lung parenchyma_classical monocyte" "sd1" 0.0275676266070082 1.49842256633202e-05 "EFO:0009901_UBERON:0008946_CL:0000860"
+"10x 3' v1_lung parenchyma_classical monocyte" "sd2" 0.949928766791749 0.00110854980995729 "EFO:0009901_UBERON:0008946_CL:0000860"
+"10x 3' v1_lung parenchyma_classical monocyte" "p3" 0.0654234652800284 0 "EFO:0009901_UBERON:0008946_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_B cell" "p1" 0.0313898142022852 -5.75665729327959e-06 "EFO:0009922_UBERON:0001005_CL:0000236"
+"10x 3' v3_respiratory airway_B cell" "mean1" 0.00437237773375318 1.622179613297e-05 "EFO:0009922_UBERON:0001005_CL:0000236"
+"10x 3' v3_respiratory airway_B cell" "mean2" -0.0416753679504076 0.000792173302429184 "EFO:0009922_UBERON:0001005_CL:0000236"
+"10x 3' v3_respiratory airway_B cell" "sd1" 0.0125761285941699 2.53248577261699e-05 "EFO:0009922_UBERON:0001005_CL:0000236"
+"10x 3' v3_respiratory airway_B cell" "sd2" 0.518711675224203 0.00139601148166369 "EFO:0009922_UBERON:0001005_CL:0000236"
+"10x 3' v3_respiratory airway_B cell" "p3" 0.0518442627672702 0 "EFO:0009922_UBERON:0001005_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_mast cell" "p1" 0.0261307231610237 -1.11890652552926e-05 "EFO:0009899_UBERON:0008946_CL:0000097"
+"10x 3' v2_lung parenchyma_mast cell" "mean1" 0.00122858601586148 1.3502882305152e-05 "EFO:0009899_UBERON:0008946_CL:0000097"
+"10x 3' v2_lung parenchyma_mast cell" "mean2" 0.00211859821523763 0.000740786043346512 "EFO:0009899_UBERON:0008946_CL:0000097"
+"10x 3' v2_lung parenchyma_mast cell" "sd1" 0.00380962442954337 2.19796091416691e-05 "EFO:0009899_UBERON:0008946_CL:0000097"
+"10x 3' v2_lung parenchyma_mast cell" "sd2" 0.14349856975983 0.00129172425034878 "EFO:0009899_UBERON:0008946_CL:0000097"
+"10x 3' v2_lung parenchyma_mast cell" "p3" 0.053887872860284 0 "EFO:0009899_UBERON:0008946_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_lung macrophage" "p1" 0.0276927128549975 -5.75017588216859e-06 "EFO:0009922_UBERON:0008946_CL:1001603"
+"10x 3' v3_lung parenchyma_lung macrophage" "mean1" 0.00365414401788733 1.91069822313332e-05 "EFO:0009922_UBERON:0008946_CL:1001603"
+"10x 3' v3_lung parenchyma_lung macrophage" "mean2" 0.0121279208274698 0.000697787403263418 "EFO:0009922_UBERON:0008946_CL:1001603"
+"10x 3' v3_lung parenchyma_lung macrophage" "sd1" 0.010845609148748 3.2818817506961e-05 "EFO:0009922_UBERON:0008946_CL:1001603"
+"10x 3' v3_lung parenchyma_lung macrophage" "sd2" 0.209668701896494 0.00113617794077667 "EFO:0009922_UBERON:0008946_CL:1001603"
+"10x 3' v3_lung parenchyma_lung macrophage" "p3" 0.0527604508502597 0 "EFO:0009922_UBERON:0008946_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "p1" 0.0270833963461537 -5.40510362278871e-06 "EFO:0009899_UBERON:0008946_CL:0000875"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "mean1" 0.00304825603973299 1.34696774727938e-05 "EFO:0009899_UBERON:0008946_CL:0000875"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "mean2" 0.0304241920487831 0.000715417302546221 "EFO:0009899_UBERON:0008946_CL:0000875"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "sd1" 0.0099312499190853 2.27634272970342e-05 "EFO:0009899_UBERON:0008946_CL:0000875"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "sd2" 0.278452664548994 0.00115484560420559 "EFO:0009899_UBERON:0008946_CL:0000875"
+"10x 3' v2_lung parenchyma_non-classical monocyte" "p3" 0.0549230187091403 0 "EFO:0009899_UBERON:0008946_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "p1" 0.0258634514628253 -1.27517409630368e-05 "EFO:0011025_UBERON:0008946_CL:0002062"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "mean1" 0.00139647082761126 2.22188724208724e-05 "EFO:0011025_UBERON:0008946_CL:0002062"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "mean2" -0.0116022301837075 0.000588406922681845 "EFO:0011025_UBERON:0008946_CL:0002062"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "sd1" 0.004318720418516 3.6943769749772e-05 "EFO:0011025_UBERON:0008946_CL:0002062"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "sd2" 0.0595378751331186 0.000940202137215876 "EFO:0011025_UBERON:0008946_CL:0002062"
+"10x 5' v1_lung parenchyma_type I pneumocyte" "p3" 0.0521684135727368 0 "EFO:0011025_UBERON:0008946_CL:0002062"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_lung macrophage" "p1" 0.0280656281022276 -5.99570211605042e-06 "EFO:0009899_UBERON:0008946_CL:1001603"
+"10x 3' v2_lung parenchyma_lung macrophage" "mean1" 0.0029678120350759 1.60269542768369e-05 "EFO:0009899_UBERON:0008946_CL:1001603"
+"10x 3' v2_lung parenchyma_lung macrophage" "mean2" 0.0250632298601707 0.00072344588962837 "EFO:0009899_UBERON:0008946_CL:1001603"
+"10x 3' v2_lung parenchyma_lung macrophage" "sd1" 0.00948395617222994 2.57823118418264e-05 "EFO:0009899_UBERON:0008946_CL:1001603"
+"10x 3' v2_lung parenchyma_lung macrophage" "sd2" 0.243311130683248 0.00112502833174928 "EFO:0009899_UBERON:0008946_CL:1001603"
+"10x 3' v2_lung parenchyma_lung macrophage" "p3" 0.0546579085387816 0 "EFO:0009899_UBERON:0008946_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_elicited macrophage" "p1" 0.0245680354955494 -2.08611587103706e-06 "EFO:0009922_UBERON:0001005_CL:0000861"
+"10x 3' v3_respiratory airway_elicited macrophage" "mean1" 0.0169328219921844 1.2825226376288e-05 "EFO:0009922_UBERON:0001005_CL:0000861"
+"10x 3' v3_respiratory airway_elicited macrophage" "mean2" 0.243034892970833 0.000557011383155468 "EFO:0009922_UBERON:0001005_CL:0000861"
+"10x 3' v3_respiratory airway_elicited macrophage" "sd1" 0.046007879778422 2.23846538753378e-05 "EFO:0009922_UBERON:0001005_CL:0000861"
+"10x 3' v3_respiratory airway_elicited macrophage" "sd2" 1.02636930794048 0.000894195736748834 "EFO:0009922_UBERON:0001005_CL:0000861"
+"10x 3' v3_respiratory airway_elicited macrophage" "p3" 0.0532517459709974 0 "EFO:0009922_UBERON:0001005_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_respiratory basal cell" "p1" 0.0287684447837253 -7.50421513210718e-06 "EFO:0009899_UBERON:0000004_CL:0002633"
+"10x 3' v2_nose_respiratory basal cell" "mean1" 0.00321072631838785 1.27532953425937e-05 "EFO:0009899_UBERON:0000004_CL:0002633"
+"10x 3' v2_nose_respiratory basal cell" "mean2" 0.0544008687984778 0.000694021628113151 "EFO:0009899_UBERON:0000004_CL:0002633"
+"10x 3' v2_nose_respiratory basal cell" "sd1" 0.00820685704695323 1.88586697171541e-05 "EFO:0009899_UBERON:0000004_CL:0002633"
+"10x 3' v2_nose_respiratory basal cell" "sd2" 0.332280467276071 0.00117141983318747 "EFO:0009899_UBERON:0000004_CL:0002633"
+"10x 3' v2_nose_respiratory basal cell" "p3" 0.0549647265995009 0 "EFO:0009899_UBERON:0000004_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_mucus secreting cell" "p1" 0.0370077097474205 -4.82939890484458e-06 "EFO:0009899_UBERON:0000004_CL:0000319"
+"10x 3' v2_nose_mucus secreting cell" "mean1" 0.00642843270747413 1.37474683956479e-05 "EFO:0009899_UBERON:0000004_CL:0000319"
+"10x 3' v2_nose_mucus secreting cell" "mean2" 0.217694332559828 0.000922627392302605 "EFO:0009899_UBERON:0000004_CL:0000319"
+"10x 3' v2_nose_mucus secreting cell" "sd1" 0.021318957369229 1.81015775271004e-05 "EFO:0009899_UBERON:0000004_CL:0000319"
+"10x 3' v2_nose_mucus secreting cell" "sd2" 0.97301967489745 0.00146272815818392 "EFO:0009899_UBERON:0000004_CL:0000319"
+"10x 3' v2_nose_mucus secreting cell" "p3" 0.0595383164954594 0 "EFO:0009899_UBERON:0000004_CL:0000319"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "p1" 0.0471594157461356 -5.58763371022176e-05 "EFO:0011025_UBERON:0000004_CL:0000625"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "mean1" 0.00149442334286912 3.28947868944922e-05 "EFO:0011025_UBERON:0000004_CL:0000625"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "mean2" -0.00587396206346269 0.000945050525309577 "EFO:0011025_UBERON:0000004_CL:0000625"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "sd1" 0.00596261995573647 3.4869108250482e-05 "EFO:0011025_UBERON:0000004_CL:0000625"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "sd2" 0.121818526513767 0.00129587554202102 "EFO:0011025_UBERON:0000004_CL:0000625"
+"10x 5' v1_nose_CD8-positive, alpha-beta T cell" "p3" 0.0542555486176143 0 "EFO:0011025_UBERON:0000004_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "p1" 0.0423409238502391 -7.71996077454691e-06 "EFO:0009922_UBERON:0008946_CL:2000093"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "mean1" 0.00861071697634168 3.11471362118101e-05 "EFO:0009922_UBERON:0008946_CL:2000093"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "mean2" -0.00679946347351512 0.000757591885719325 "EFO:0009922_UBERON:0008946_CL:2000093"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "sd1" 0.0297134272988206 3.55312826649185e-05 "EFO:0009922_UBERON:0008946_CL:2000093"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "sd2" 0.447789274480668 0.00100792281352539 "EFO:0009922_UBERON:0008946_CL:2000093"
+"10x 3' v3_lung parenchyma_bronchus fibroblast of lung" "p3" 0.0542576589535939 0 "EFO:0009922_UBERON:0008946_CL:2000093"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "p1" 0.0342977484423703 -5.46716834536523e-06 "EFO:0009899_UBERON:0001005_CL:0019003"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "mean1" 0.00136223699672751 4.29058153206587e-06 "EFO:0009899_UBERON:0001005_CL:0019003"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "mean2" -0.0680894437602326 0.000999176334776444 "EFO:0009899_UBERON:0001005_CL:0019003"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "sd1" 0.00399160450777258 5.7203147533991e-06 "EFO:0009899_UBERON:0001005_CL:0019003"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "sd2" 1.15318073903555 0.00239186303830822 "EFO:0009899_UBERON:0001005_CL:0019003"
+"10x 3' v2_respiratory airway_tracheobronchial goblet cell" "p3" 0.0549559674496482 0 "EFO:0009899_UBERON:0001005_CL:0019003"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "p1" 0.0259677649532769 -1.84974823421409e-06 "EFO:0009922_UBERON:0001005_CL:1000312"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "mean1" 0.0235993983003538 8.17522494917763e-06 "EFO:0009922_UBERON:0001005_CL:1000312"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "mean2" 0.38495213153181 0.000589291137545737 "EFO:0009922_UBERON:0001005_CL:1000312"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "sd1" 0.0499543618577147 1.26994545308221e-05 "EFO:0009922_UBERON:0001005_CL:1000312"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "sd2" 2.76274187622999 0.00113157977548224 "EFO:0009922_UBERON:0001005_CL:1000312"
+"10x 3' v3_respiratory airway_bronchial goblet cell" "p3" 0.0504384490054082 0 "EFO:0009922_UBERON:0001005_CL:1000312"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "p1" 0.043253959114725 -7.28430947936608e-06 "EFO:0009922_UBERON:0001005_CL:0000624"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "mean1" 0.00990124714417173 2.34817005396252e-05 "EFO:0009922_UBERON:0001005_CL:0000624"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "mean2" 0.0547214472735331 0.000813813849517964 "EFO:0009922_UBERON:0001005_CL:0000624"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "sd1" 0.0257936047785712 3.09774865180289e-05 "EFO:0009922_UBERON:0001005_CL:0000624"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "sd2" 0.754395209262327 0.00123215823403458 "EFO:0009922_UBERON:0001005_CL:0000624"
+"10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell" "p3" 0.0537740432619441 0 "EFO:0009922_UBERON:0001005_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "p1" 0.0290685149919663 -8.27929746927722e-06 "EFO:0009899_UBERON:0001005_CL:4028003"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "mean1" 0.00268019559943812 2.22440848320467e-05 "EFO:0009899_UBERON:0001005_CL:4028003"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "mean2" -0.010268536099225 0.000674855724308147 "EFO:0009899_UBERON:0001005_CL:4028003"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "sd1" 0.00768944877881383 3.53026216849966e-05 "EFO:0009899_UBERON:0001005_CL:4028003"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "sd2" 0.141182749339238 0.00107564535345441 "EFO:0009899_UBERON:0001005_CL:4028003"
+"10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell" "p3" 0.0540280149770681 0 "EFO:0009899_UBERON:0001005_CL:4028003"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_B cell" "p1" 0.0354343596174666 -2.13455428440072e-05 "EFO:0009899_UBERON:0001005_CL:0000236"
+"10x 3' v2_respiratory airway_B cell" "mean1" 0.00155568688081261 1.69457825937842e-05 "EFO:0009899_UBERON:0001005_CL:0000236"
+"10x 3' v2_respiratory airway_B cell" "mean2" -0.0142868645656703 0.000857171452853397 "EFO:0009899_UBERON:0001005_CL:0000236"
+"10x 3' v2_respiratory airway_B cell" "sd1" 0.00446465278630559 2.35505723313298e-05 "EFO:0009899_UBERON:0001005_CL:0000236"
+"10x 3' v2_respiratory airway_B cell" "sd2" 0.236681826755946 0.00153322250638905 "EFO:0009899_UBERON:0001005_CL:0000236"
+"10x 3' v2_respiratory airway_B cell" "p3" 0.0522348230813969 0 "EFO:0009899_UBERON:0001005_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_elicited macrophage" "p1" 0.0261398001492597 -2.92563449760127e-06 "EFO:0009922_UBERON:0008946_CL:0000861"
+"10x 3' v3_lung parenchyma_elicited macrophage" "mean1" 0.00697573770197682 1.68977584168953e-05 "EFO:0009922_UBERON:0008946_CL:0000861"
+"10x 3' v3_lung parenchyma_elicited macrophage" "mean2" 0.0309954020661385 0.000693243847004503 "EFO:0009922_UBERON:0008946_CL:0000861"
+"10x 3' v3_lung parenchyma_elicited macrophage" "sd1" 0.0217781763343941 3.01235728674521e-05 "EFO:0009922_UBERON:0008946_CL:0000861"
+"10x 3' v3_lung parenchyma_elicited macrophage" "sd2" 0.505286487854991 0.00121274437167839 "EFO:0009922_UBERON:0008946_CL:0000861"
+"10x 3' v3_lung parenchyma_elicited macrophage" "p3" 0.0520514240297457 0 "EFO:0009922_UBERON:0008946_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "p1" 0.0414740332798518 -6.09782257082359e-06 "EFO:0011025_UBERON:0008946_CL:0000990"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "mean1" 0.0102503906708963 2.38306326149858e-05 "EFO:0011025_UBERON:0008946_CL:0000990"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "mean2" 0.175523717218256 0.00102801518588956 "EFO:0011025_UBERON:0008946_CL:0000990"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "sd1" 0.0366919640977193 2.78527942721838e-05 "EFO:0011025_UBERON:0008946_CL:0000990"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "sd2" 1.05512846293638 0.0015088041702302 "EFO:0011025_UBERON:0008946_CL:0000990"
+"10x 5' v1_lung parenchyma_conventional dendritic cell" "p3" 0.0562294478329067 0 "EFO:0011025_UBERON:0008946_CL:0000990"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "p1" 0.0375718999064668 -4.51943036638131e-06 "EFO:0009922_UBERON:0001005_CL:0000625"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "mean1" 0.0333025420907855 1.56307189778769e-05 "EFO:0009922_UBERON:0001005_CL:0000625"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "mean2" 0.74922982831769 0.000536456559700017 "EFO:0009922_UBERON:0001005_CL:0000625"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "sd1" 0.0655279966288543 1.59528746181445e-05 "EFO:0009922_UBERON:0001005_CL:0000625"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "sd2" 2.49047578650249 0.000663999025739739 "EFO:0009922_UBERON:0001005_CL:0000625"
+"10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell" "p3" 0.055264503786571 0 "EFO:0009922_UBERON:0001005_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "p1" 0.0229715158803028 -3.39990087201938e-06 "EFO:0009899_UBERON:0008946_CL:0002399"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean1" 0.00378231958728236 1.22739858838295e-05 "EFO:0009899_UBERON:0008946_CL:0002399"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean2" 0.0414423210051953 0.000638058841578736 "EFO:0009899_UBERON:0008946_CL:0002399"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd1" 0.0125947123928798 2.14829856541093e-05 "EFO:0009899_UBERON:0008946_CL:0002399"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd2" 0.349998034169523 0.00106334299348031 "EFO:0009899_UBERON:0008946_CL:0002399"
+"10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell" "p3" 0.0539613763259472 0 "EFO:0009899_UBERON:0008946_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "p1" 0.0290688876927303 -1.9980860848992e-05 "EFO:0011025_UBERON:0008946_CL:4028003"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "mean1" 0.00101290274265616 2.55245159284769e-05 "EFO:0011025_UBERON:0008946_CL:4028003"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "mean2" -0.000857959853970969 0.000663484050249874 "EFO:0011025_UBERON:0008946_CL:4028003"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "sd1" 0.00292388233243162 3.84107887902731e-05 "EFO:0011025_UBERON:0008946_CL:4028003"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "sd2" 0.0353818300946562 0.000894625059681374 "EFO:0011025_UBERON:0008946_CL:4028003"
+"10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell" "p3" 0.0546435510074506 0 "EFO:0011025_UBERON:0008946_CL:4028003"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "p1" 0.0266556637571095 -8.35773960647049e-06 "EFO:0009899_UBERON:0001005_CL:0002399"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "mean1" 0.00208120036248723 1.36485683710112e-05 "EFO:0009899_UBERON:0001005_CL:0002399"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "mean2" 0.0168786750516363 0.000676982879585111 "EFO:0009899_UBERON:0001005_CL:0002399"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "sd1" 0.0062830795849764 2.21969825486196e-05 "EFO:0009899_UBERON:0001005_CL:0002399"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "sd2" 0.209241403750905 0.00114481412957147 "EFO:0009899_UBERON:0001005_CL:0002399"
+"10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell" "p3" 0.0538419595352955 0 "EFO:0009899_UBERON:0001005_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "p1" 0.0194133512507201 -5.28026821398763e-07 "EFO:0009922_UBERON:0001005_CL:0002480"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "mean1" 0.0389930696642014 1.32849272959353e-05 "EFO:0009922_UBERON:0001005_CL:0002480"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "mean2" 0.569292231678876 0.000480098390044037 "EFO:0009922_UBERON:0001005_CL:0002480"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "sd1" 0.0998410387949289 2.39489702138305e-05 "EFO:0009922_UBERON:0001005_CL:0002480"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "sd2" 2.91757074573859 0.0009162172819637 "EFO:0009922_UBERON:0001005_CL:0002480"
+"10x 3' v3_respiratory airway_nasal mucosa goblet cell" "p3" 0.050679330113746 0 "EFO:0009922_UBERON:0001005_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "p1" 0.0304805971889832 -1.15299557242566e-05 "EFO:0009922_UBERON:0008946_CL:1001568"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "mean1" 0.00218366122201699 2.57376607400859e-05 "EFO:0009922_UBERON:0008946_CL:1001568"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "mean2" -0.00485052302024624 0.000682354175794775 "EFO:0009922_UBERON:0008946_CL:1001568"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "sd1" 0.00601677423360514 3.70113841669974e-05 "EFO:0009922_UBERON:0008946_CL:1001568"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "sd2" 0.0968489064639126 0.000994690463849513 "EFO:0009922_UBERON:0008946_CL:1001568"
+"10x 3' v3_lung parenchyma_pulmonary artery endothelial cell" "p3" 0.0533732980435959 0 "EFO:0009922_UBERON:0008946_CL:1001568"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_pericyte" "p1" 0.0328960815370367 -1.64098782837385e-05 "EFO:0009922_UBERON:0008946_CL:0000669"
+"10x 3' v3_lung parenchyma_pericyte" "mean1" 0.00216484948860817 3.08455593518143e-05 "EFO:0009922_UBERON:0008946_CL:0000669"
+"10x 3' v3_lung parenchyma_pericyte" "mean2" -0.0257041997983219 0.000557998211377275 "EFO:0009922_UBERON:0008946_CL:0000669"
+"10x 3' v3_lung parenchyma_pericyte" "sd1" 0.00526897018162772 4.6076214756604e-05 "EFO:0009922_UBERON:0008946_CL:0000669"
+"10x 3' v3_lung parenchyma_pericyte" "sd2" 0.0750268873263351 0.000907919907514859 "EFO:0009922_UBERON:0008946_CL:0000669"
+"10x 3' v3_lung parenchyma_pericyte" "p3" 0.0522454401907496 0 "EFO:0009922_UBERON:0008946_CL:0000669"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "p1" 0.0279443401742573 -1.07966414106923e-05 "EFO:0011025_UBERON:0008946_CL:0002553"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "mean1" 0.00182994786871633 1.85951484010274e-05 "EFO:0011025_UBERON:0008946_CL:0002553"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "mean2" 0.00811611272446444 0.000612242477578801 "EFO:0011025_UBERON:0008946_CL:0002553"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "sd1" 0.00486882219175398 2.94305508846484e-05 "EFO:0011025_UBERON:0008946_CL:0002553"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "sd2" 0.0960224383231312 0.000938094548384109 "EFO:0011025_UBERON:0008946_CL:0002553"
+"10x 5' v1_lung parenchyma_fibroblast of lung" "p3" 0.053051435017992 0 "EFO:0011025_UBERON:0008946_CL:0002553"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_mast cell" "p1" 0.0293538325342636 -8.80468074914466e-06 "EFO:0009899_UBERON:0001005_CL:0000097"
+"10x 3' v2_respiratory airway_mast cell" "mean1" 0.00199120752416906 1.38758608974748e-05 "EFO:0009899_UBERON:0001005_CL:0000097"
+"10x 3' v2_respiratory airway_mast cell" "mean2" 0.0113488864435862 0.000735806342971365 "EFO:0009899_UBERON:0001005_CL:0000097"
+"10x 3' v2_respiratory airway_mast cell" "sd1" 0.00635620796911905 2.20603670365849e-05 "EFO:0009899_UBERON:0001005_CL:0000097"
+"10x 3' v2_respiratory airway_mast cell" "sd2" 0.223934586721717 0.00124758260987407 "EFO:0009899_UBERON:0001005_CL:0000097"
+"10x 3' v2_respiratory airway_mast cell" "p3" 0.0542007701422727 0 "EFO:0009899_UBERON:0001005_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "p1" 0.0331284484739638 -9.66168532025578e-06 "EFO:0009900_UBERON:0008946_CL:0000875"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "mean1" 0.0037806145741756 2.98249611767199e-05 "EFO:0009900_UBERON:0008946_CL:0000875"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "mean2" 0.0408772153236181 0.000886258848359706 "EFO:0009900_UBERON:0008946_CL:0000875"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "sd1" 0.0124380459829069 3.75262964747079e-05 "EFO:0009900_UBERON:0008946_CL:0000875"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "sd2" 0.214736866733406 0.00115271516073844 "EFO:0009900_UBERON:0008946_CL:0000875"
+"10x 5' v2_lung parenchyma_non-classical monocyte" "p3" 0.0565643955837542 0 "EFO:0009900_UBERON:0008946_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_pericyte" "p1" 0.0323988438332361 -1.49248850366749e-05 "EFO:0009899_UBERON:0008946_CL:0000669"
+"10x 3' v2_lung parenchyma_pericyte" "mean1" 0.00148041684147185 2.77587811166323e-05 "EFO:0009899_UBERON:0008946_CL:0000669"
+"10x 3' v2_lung parenchyma_pericyte" "mean2" -0.00683894677159824 0.000659540100227477 "EFO:0009899_UBERON:0008946_CL:0000669"
+"10x 3' v2_lung parenchyma_pericyte" "sd1" 0.00365710386776499 4.04297521249823e-05 "EFO:0009899_UBERON:0008946_CL:0000669"
+"10x 3' v2_lung parenchyma_pericyte" "sd2" 0.0499983342221031 0.00098058916262755 "EFO:0009899_UBERON:0008946_CL:0000669"
+"10x 3' v2_lung parenchyma_pericyte" "p3" 0.0540662541503245 0 "EFO:0009899_UBERON:0008946_CL:0000669"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "p1" 0.0297660232403381 -5.95015384137237e-06 "EFO:0009901_UBERON:0008946_CL:0002063"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "mean1" 0.020394639627318 8.21735017271569e-06 "EFO:0009901_UBERON:0008946_CL:0002063"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "mean2" 0.788986032410654 0.0003993102979671 "EFO:0009901_UBERON:0008946_CL:0002063"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "sd1" 0.0375605192559547 8.77416148446836e-06 "EFO:0009901_UBERON:0008946_CL:0002063"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "sd2" 1.77137356291639 0.000526540931437798 "EFO:0009901_UBERON:0008946_CL:0002063"
+"10x 3' v1_lung parenchyma_type II pneumocyte" "p3" 0.0581448538722862 0 "EFO:0009901_UBERON:0008946_CL:0002063"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "p1" 0.0340534410985723 -1.95233175320925e-05 "EFO:0009900_UBERON:0000004_CL:0002399"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "mean1" 0.00157123133735065 2.26259537299413e-05 "EFO:0009900_UBERON:0000004_CL:0002399"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "mean2" 0.00513187454065378 0.000806885883102372 "EFO:0009900_UBERON:0000004_CL:0002399"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "sd1" 0.00502117704929234 3.18456296625576e-05 "EFO:0009900_UBERON:0000004_CL:0002399"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "sd2" 0.109731879987916 0.00119836915918482 "EFO:0009900_UBERON:0000004_CL:0002399"
+"10x 5' v2_nose_CD1c-positive myeloid dendritic cell" "p3" 0.0550480227345256 0 "EFO:0009900_UBERON:0000004_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_B cell" "p1" 0.0304005092504208 -1.14105867701792e-05 "EFO:0009899_UBERON:0008946_CL:0000236"
+"10x 3' v2_lung parenchyma_B cell" "mean1" 0.00169669932796736 1.48078449851143e-05 "EFO:0009899_UBERON:0008946_CL:0000236"
+"10x 3' v2_lung parenchyma_B cell" "mean2" -0.0182135065032365 0.000850405882788564 "EFO:0009899_UBERON:0008946_CL:0000236"
+"10x 3' v2_lung parenchyma_B cell" "sd1" 0.0053035790592471 2.25363464407933e-05 "EFO:0009899_UBERON:0008946_CL:0000236"
+"10x 3' v2_lung parenchyma_B cell" "sd2" 0.259159463907903 0.00152553225590166 "EFO:0009899_UBERON:0008946_CL:0000236"
+"10x 3' v2_lung parenchyma_B cell" "p3" 0.052590617862927 0 "EFO:0009899_UBERON:0008946_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "p1" 0.0316869603573187 -1.35607956133848e-05 "EFO:0009922_UBERON:0008946_CL:0002138"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "mean1" 0.00198168500528131 2.51048732106642e-05 "EFO:0009922_UBERON:0008946_CL:0002138"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "mean2" -0.0154958199077724 0.00065478349058242 "EFO:0009922_UBERON:0008946_CL:0002138"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "sd1" 0.00555254819876171 3.60646205630609e-05 "EFO:0009922_UBERON:0008946_CL:0002138"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "sd2" 0.116960483695346 0.00103319295468964 "EFO:0009922_UBERON:0008946_CL:0002138"
+"10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel" "p3" 0.0522950108158242 0 "EFO:0009922_UBERON:0008946_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "p1" 0.0269064616590959 -5.24955537946815e-06 "EFO:0011025_UBERON:0008946_CL:0002399"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean1" 0.00431581107344214 1.75874959563444e-05 "EFO:0011025_UBERON:0008946_CL:0002399"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean2" 0.0154693095136196 0.000676549419566506 "EFO:0011025_UBERON:0008946_CL:0002399"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd1" 0.0122733238985089 2.89864413048308e-05 "EFO:0011025_UBERON:0008946_CL:0002399"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd2" 0.269672807556464 0.00109006121298836 "EFO:0011025_UBERON:0008946_CL:0002399"
+"10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell" "p3" 0.0530789617297275 0 "EFO:0011025_UBERON:0008946_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "p1" 0.0273484542888262 -8.52962313423861e-06 "EFO:0009899_UBERON:0001005_CL:0019019"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "mean1" 0.00244628651786891 1.91505280370061e-05 "EFO:0009899_UBERON:0001005_CL:0019019"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "mean2" 0.00919153776630077 0.000645255484564495 "EFO:0009899_UBERON:0001005_CL:0019019"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "sd1" 0.00695539790067319 2.86571475141519e-05 "EFO:0009899_UBERON:0001005_CL:0019019"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "sd2" 0.159009402110846 0.000975612357763951 "EFO:0009899_UBERON:0001005_CL:0019019"
+"10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell" "p3" 0.0541333630802676 0 "EFO:0009899_UBERON:0001005_CL:0019019"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_acinar cell" "p1" 0.0252804140357163 -7.25928186468285e-07 "EFO:0009922_UBERON:0001005_CL:0000622"
+"10x 3' v3_respiratory airway_acinar cell" "mean1" 0.0408355187769995 1.18730693742875e-05 "EFO:0009922_UBERON:0001005_CL:0000622"
+"10x 3' v3_respiratory airway_acinar cell" "mean2" 0.496488282595724 0.00061809206700924 "EFO:0009922_UBERON:0001005_CL:0000622"
+"10x 3' v3_respiratory airway_acinar cell" "sd1" 0.0967199082794169 1.91962659542955e-05 "EFO:0009922_UBERON:0001005_CL:0000622"
+"10x 3' v3_respiratory airway_acinar cell" "sd2" 4.51502400149151 0.00113934916327537 "EFO:0009922_UBERON:0001005_CL:0000622"
+"10x 3' v3_respiratory airway_acinar cell" "p3" 0.0512266290618587 0 "EFO:0009922_UBERON:0001005_CL:0000622"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_club cell" "p1" 0.0255021991227546 -1.46565635728455e-06 "EFO:0009899_UBERON:0008946_CL:0000158"
+"10x 3' v2_lung parenchyma_club cell" "mean1" 0.0110426705828851 8.61308944903226e-06 "EFO:0009899_UBERON:0008946_CL:0000158"
+"10x 3' v2_lung parenchyma_club cell" "mean2" 0.198504008307374 0.000733591732039964 "EFO:0009899_UBERON:0008946_CL:0000158"
+"10x 3' v2_lung parenchyma_club cell" "sd1" 0.0259729739010423 1.35740114718892e-05 "EFO:0009899_UBERON:0008946_CL:0000158"
+"10x 3' v2_lung parenchyma_club cell" "sd2" 2.37205493564468 0.00150952734873237 "EFO:0009899_UBERON:0008946_CL:0000158"
+"10x 3' v2_lung parenchyma_club cell" "p3" 0.0535729983227269 0 "EFO:0009899_UBERON:0008946_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_lung macrophage" "p1" 0.0296179514327936 -6.35166401086983e-06 "EFO:0011025_UBERON:0008946_CL:1001603"
+"10x 5' v1_lung parenchyma_lung macrophage" "mean1" 0.00365426863063245 1.96376688462445e-05 "EFO:0011025_UBERON:0008946_CL:1001603"
+"10x 5' v1_lung parenchyma_lung macrophage" "mean2" 0.0211955400929442 0.000714236718573603 "EFO:0011025_UBERON:0008946_CL:1001603"
+"10x 5' v1_lung parenchyma_lung macrophage" "sd1" 0.0104127557421305 3.12113784090871e-05 "EFO:0011025_UBERON:0008946_CL:1001603"
+"10x 5' v1_lung parenchyma_lung macrophage" "sd2" 0.19825171535306 0.00108157880222697 "EFO:0011025_UBERON:0008946_CL:1001603"
+"10x 5' v1_lung parenchyma_lung macrophage" "p3" 0.0537415817562116 0 "EFO:0011025_UBERON:0008946_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "p1" 0.0338873594816501 -1.18079695607971e-05 "EFO:0009899_UBERON:0001005_CL:1001568"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "mean1" 0.00337978844453271 2.40046865249048e-05 "EFO:0009899_UBERON:0001005_CL:1001568"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "mean2" 0.0161654451394206 0.000683603582725851 "EFO:0009899_UBERON:0001005_CL:1001568"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "sd1" 0.00939701528924596 3.39630895965534e-05 "EFO:0009899_UBERON:0001005_CL:1001568"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "sd2" 0.177096883519579 0.000957220434162459 "EFO:0009899_UBERON:0001005_CL:1001568"
+"10x 3' v2_respiratory airway_pulmonary artery endothelial cell" "p3" 0.0539876133996586 0 "EFO:0009899_UBERON:0001005_CL:1001568"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_type II pneumocyte" "p1" 0.0224413548084564 -2.34420189121949e-06 "EFO:0009899_UBERON:0001005_CL:0002063"
+"10x 3' v2_respiratory airway_type II pneumocyte" "mean1" 0.00473258485311263 1.18459356915535e-05 "EFO:0009899_UBERON:0001005_CL:0002063"
+"10x 3' v2_respiratory airway_type II pneumocyte" "mean2" -0.010617502471538 0.000737443177120592 "EFO:0009899_UBERON:0001005_CL:0002063"
+"10x 3' v2_respiratory airway_type II pneumocyte" "sd1" 0.0141858605161254 2.0117563343081e-05 "EFO:0009899_UBERON:0001005_CL:0002063"
+"10x 3' v2_respiratory airway_type II pneumocyte" "sd2" 0.677607976569464 0.00139757814216029 "EFO:0009899_UBERON:0001005_CL:0002063"
+"10x 3' v2_respiratory airway_type II pneumocyte" "p3" 0.0536351375920481 0 "EFO:0009899_UBERON:0001005_CL:0002063"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "p1" 0.0516147720633135 -1.93460575859204e-05 "EFO:0009899_UBERON:0000004_CL:0002399"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "mean1" 0.00426692888800782 1.76774133451416e-05 "EFO:0009899_UBERON:0000004_CL:0002399"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "mean2" 0.0978899487760272 0.000966756426130333 "EFO:0009899_UBERON:0000004_CL:0002399"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "sd1" 0.0152565554163416 2.09812021524288e-05 "EFO:0009899_UBERON:0000004_CL:0002399"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "sd2" 0.597048090516286 0.00141853763668288 "EFO:0009899_UBERON:0000004_CL:0002399"
+"10x 3' v2_nose_CD1c-positive myeloid dendritic cell" "p3" 0.0564063938782935 0 "EFO:0009899_UBERON:0000004_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_mesothelial cell" "p1" 0.0309695894945526 -4.36944245001647e-06 "EFO:0011025_UBERON:0008946_CL:0000077"
+"10x 5' v1_lung parenchyma_mesothelial cell" "mean1" 0.00915972894996239 1.76208437967954e-05 "EFO:0011025_UBERON:0008946_CL:0000077"
+"10x 5' v1_lung parenchyma_mesothelial cell" "mean2" 0.226080064674674 0.000746648032988862 "EFO:0011025_UBERON:0008946_CL:0000077"
+"10x 5' v1_lung parenchyma_mesothelial cell" "sd1" 0.0246198522231938 2.17348994540622e-05 "EFO:0011025_UBERON:0008946_CL:0000077"
+"10x 5' v1_lung parenchyma_mesothelial cell" "sd2" 0.731403714585526 0.0010695591976279 "EFO:0011025_UBERON:0008946_CL:0000077"
+"10x 5' v1_lung parenchyma_mesothelial cell" "p3" 0.0573752447234757 0 "EFO:0011025_UBERON:0008946_CL:0000077"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_serous secreting cell" "p1" 0.0299956338231573 -2.06258662861545e-06 "EFO:0009899_UBERON:0000004_CL:0000313"
+"10x 3' v2_nose_serous secreting cell" "mean1" 0.00333328717299818 3.4064977248674e-06 "EFO:0009899_UBERON:0000004_CL:0000313"
+"10x 3' v2_nose_serous secreting cell" "mean2" 0.222885418254751 0.000927676026646497 "EFO:0009899_UBERON:0000004_CL:0000313"
+"10x 3' v2_nose_serous secreting cell" "sd1" 0.0101302646227352 5.47325228886004e-06 "EFO:0009899_UBERON:0000004_CL:0000313"
+"10x 3' v2_nose_serous secreting cell" "sd2" 2.29407150346461 0.00201377465034991 "EFO:0009899_UBERON:0000004_CL:0000313"
+"10x 3' v2_nose_serous secreting cell" "p3" 0.0581113982132309 0 "EFO:0009899_UBERON:0000004_CL:0000313"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_lung macrophage" "p1" 0.046339900561154 -1.16104099539327e-05 "EFO:0009900_UBERON:0008946_CL:1001603"
+"10x 5' v2_lung parenchyma_lung macrophage" "mean1" 0.00683970543815005 3.2195687197317e-05 "EFO:0009900_UBERON:0008946_CL:1001603"
+"10x 5' v2_lung parenchyma_lung macrophage" "mean2" 0.113900377337613 0.000914038248635408 "EFO:0009900_UBERON:0008946_CL:1001603"
+"10x 5' v2_lung parenchyma_lung macrophage" "sd1" 0.0265281867057797 3.51705403834777e-05 "EFO:0009900_UBERON:0008946_CL:1001603"
+"10x 5' v2_lung parenchyma_lung macrophage" "sd2" 0.403216951067508 0.00109509916804123 "EFO:0009900_UBERON:0008946_CL:1001603"
+"10x 5' v2_lung parenchyma_lung macrophage" "p3" 0.0574845718360317 0 "EFO:0009900_UBERON:0008946_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "p1" 0.0282334345471276 -5.65178620532542e-06 "EFO:0009900_UBERON:0008946_CL:0002063"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "mean1" 0.00344223725968697 1.73102851544432e-05 "EFO:0009900_UBERON:0008946_CL:0002063"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "mean2" 0.0181633967226285 0.000833544487538089 "EFO:0009900_UBERON:0008946_CL:0002063"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "sd1" 0.00931079647185237 2.44610170211062e-05 "EFO:0009900_UBERON:0008946_CL:0002063"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "sd2" 0.412451958009457 0.00142834664169612 "EFO:0009900_UBERON:0008946_CL:0002063"
+"10x 5' v2_lung parenchyma_type II pneumocyte" "p3" 0.0548605510408497 0 "EFO:0009900_UBERON:0008946_CL:0002063"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_respiratory basal cell" "p1" 0.0256255315295419 -5.89294806601791e-06 "EFO:0009900_UBERON:0000004_CL:0002633"
+"10x 5' v2_nose_respiratory basal cell" "mean1" 0.00361775028615463 1.84931879580835e-05 "EFO:0009900_UBERON:0000004_CL:0002633"
+"10x 5' v2_nose_respiratory basal cell" "mean2" 0.00830391221780014 0.000612729369428137 "EFO:0009900_UBERON:0000004_CL:0002633"
+"10x 5' v2_nose_respiratory basal cell" "sd1" 0.0108392274716268 3.12761593137317e-05 "EFO:0009900_UBERON:0000004_CL:0002633"
+"10x 5' v2_nose_respiratory basal cell" "sd2" 0.204948564850679 0.000998528809356266 "EFO:0009900_UBERON:0000004_CL:0002633"
+"10x 5' v2_nose_respiratory basal cell" "p3" 0.0520780828945734 0 "EFO:0009900_UBERON:0000004_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "p1" 0.033294072071213 -3.35551875467794e-05 "EFO:0009922_UBERON:0008946_CL:4028002"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean1" 0.000685417297222907 2.82659228992912e-05 "EFO:0009922_UBERON:0008946_CL:4028002"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "mean2" -0.00493973798234909 0.000675760564169592 "EFO:0009922_UBERON:0008946_CL:4028002"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd1" 0.00181505597439432 3.92806333547267e-05 "EFO:0009922_UBERON:0008946_CL:4028002"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "sd2" 0.0279619476789098 0.00101236809155065 "EFO:0009922_UBERON:0008946_CL:4028002"
+"10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell" "p3" 0.0533923825047031 0 "EFO:0009922_UBERON:0008946_CL:4028002"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "p1" 0.0398301426182014 -1.51164842169449e-05 "EFO:0009922_UBERON:0008946_CL:0000186"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "mean1" 0.00394848312263536 3.21704468932463e-05 "EFO:0009922_UBERON:0008946_CL:0000186"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "mean2" -0.0149963032441074 0.00070707234273622 "EFO:0009922_UBERON:0008946_CL:0000186"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "sd1" 0.0136600523424386 3.74437547005622e-05 "EFO:0009922_UBERON:0008946_CL:0000186"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "sd2" 0.199253058374775 0.000920720954325207 "EFO:0009922_UBERON:0008946_CL:0000186"
+"10x 3' v3_lung parenchyma_myofibroblast cell" "p3" 0.0546273279550363 0 "EFO:0009922_UBERON:0008946_CL:0000186"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "p1" 0.0345500916373665 -6.96825486353265e-06 "EFO:0011025_UBERON:0008946_CL:2000093"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "mean1" 0.00488726435906736 2.46773758491103e-05 "EFO:0011025_UBERON:0008946_CL:2000093"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "mean2" 0.0531445173345366 0.00075274009462488 "EFO:0011025_UBERON:0008946_CL:2000093"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "sd1" 0.0152408591304544 3.05453679489314e-05 "EFO:0011025_UBERON:0008946_CL:2000093"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "sd2" 0.306889413423483 0.00102968315539935 "EFO:0011025_UBERON:0008946_CL:2000093"
+"10x 5' v1_lung parenchyma_bronchus fibroblast of lung" "p3" 0.0555485894005092 0 "EFO:0011025_UBERON:0008946_CL:2000093"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_ionocyte" "p1" 0.0431747985276069 -6.61457225250605e-06 "EFO:0009899_UBERON:0000004_CL:0005006"
+"10x 3' v2_nose_ionocyte" "mean1" 0.00882535529635253 2.91626038803711e-05 "EFO:0009899_UBERON:0000004_CL:0005006"
+"10x 3' v2_nose_ionocyte" "mean2" -0.0229581840804807 0.000830968450872678 "EFO:0009899_UBERON:0000004_CL:0005006"
+"10x 3' v2_nose_ionocyte" "sd1" 0.0327345380303725 3.2275240906975e-05 "EFO:0009899_UBERON:0000004_CL:0005006"
+"10x 3' v2_nose_ionocyte" "sd2" 0.674425439796082 0.00119536289451452 "EFO:0009899_UBERON:0000004_CL:0005006"
+"10x 3' v2_nose_ionocyte" "p3" 0.055681889701296 0 "EFO:0009899_UBERON:0000004_CL:0005006"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_type I pneumocyte" "p1" 0.0319977279592385 -8.75883537934879e-06 "EFO:0009899_UBERON:0001005_CL:0002062"
+"10x 3' v2_respiratory airway_type I pneumocyte" "mean1" 0.00325262865828232 2.50822588262771e-05 "EFO:0009899_UBERON:0001005_CL:0002062"
+"10x 3' v2_respiratory airway_type I pneumocyte" "mean2" -0.00828952400706906 0.000696469667259429 "EFO:0009899_UBERON:0001005_CL:0002062"
+"10x 3' v2_respiratory airway_type I pneumocyte" "sd1" 0.0093199035491206 3.64550242188738e-05 "EFO:0009899_UBERON:0001005_CL:0002062"
+"10x 3' v2_respiratory airway_type I pneumocyte" "sd2" 0.173668505507285 0.00104756531337056 "EFO:0009899_UBERON:0001005_CL:0002062"
+"10x 3' v2_respiratory airway_type I pneumocyte" "p3" 0.0544758054611842 0 "EFO:0009899_UBERON:0001005_CL:0002062"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "p1" 0.0285347794286306 -3.76658269603919e-06 "EFO:0009922_UBERON:0008946_CL:0002399"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean1" 0.00666813161710786 1.98879574134568e-05 "EFO:0009922_UBERON:0008946_CL:0002399"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "mean2" 0.0404176337648199 0.000740748763009309 "EFO:0009922_UBERON:0008946_CL:0002399"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd1" 0.019526312254116 3.06925881734714e-05 "EFO:0009922_UBERON:0008946_CL:0002399"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "sd2" 0.454356896597467 0.0011426752819556 "EFO:0009922_UBERON:0008946_CL:0002399"
+"10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell" "p3" 0.053587907217509 0 "EFO:0009922_UBERON:0008946_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "p1" 0.0276836899084009 -2.53756644730971e-06 "EFO:0009899_UBERON:0001005_CL:0005012"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "mean1" 0.0210357190132646 1.66668008037269e-05 "EFO:0009899_UBERON:0001005_CL:0005012"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "mean2" 0.268037938204153 0.000515050048729657 "EFO:0009899_UBERON:0001005_CL:0005012"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "sd1" 0.0510904381922293 2.4316562970163e-05 "EFO:0009899_UBERON:0001005_CL:0005012"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "sd2" 1.0564742370299 0.000753931914845036 "EFO:0009899_UBERON:0001005_CL:0005012"
+"10x 3' v2_respiratory airway_multi-ciliated epithelial cell" "p3" 0.0532034437629673 0 "EFO:0009899_UBERON:0001005_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "p1" 0.0459616484541303 -6.50435647546899e-05 "EFO:0009900_UBERON:0000004_CL:0000625"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "mean1" 0.00164817076051431 3.33379779797179e-05 "EFO:0009900_UBERON:0000004_CL:0000625"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "mean2" -0.0103006448342582 0.000839607740894398 "EFO:0009900_UBERON:0000004_CL:0000625"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "sd1" 0.00752230848434917 2.99556479130247e-05 "EFO:0009900_UBERON:0000004_CL:0000625"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "sd2" 0.154483587415435 0.00098109718260235 "EFO:0009900_UBERON:0000004_CL:0000625"
+"10x 5' v2_nose_CD8-positive, alpha-beta T cell" "p3" 0.0534620353238821 0 "EFO:0009900_UBERON:0000004_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_mast cell" "p1" 0.0298821510459313 -1.2480406433964e-05 "EFO:0011025_UBERON:0008946_CL:0000097"
+"10x 5' v1_lung parenchyma_mast cell" "mean1" 0.00167782975778557 2.29771299413173e-05 "EFO:0011025_UBERON:0008946_CL:0000097"
+"10x 5' v1_lung parenchyma_mast cell" "mean2" -0.0147806998678326 0.000738921676812297 "EFO:0011025_UBERON:0008946_CL:0000097"
+"10x 5' v1_lung parenchyma_mast cell" "sd1" 0.00532330062838039 3.23263368396236e-05 "EFO:0011025_UBERON:0008946_CL:0000097"
+"10x 5' v1_lung parenchyma_mast cell" "sd2" 0.117260440378823 0.00115789741204828 "EFO:0011025_UBERON:0008946_CL:0000097"
+"10x 5' v1_lung parenchyma_mast cell" "p3" 0.0528780707639301 0 "EFO:0011025_UBERON:0008946_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "p1" 0.0415512431470467 -2.03510527537684e-05 "EFO:0009901_UBERON:0008946_CL:0000624"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "mean1" 0.00573031039132869 2.08445241564518e-05 "EFO:0009901_UBERON:0008946_CL:0000624"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "mean2" 0.187461181669049 0.00098006081918529 "EFO:0009901_UBERON:0008946_CL:0000624"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "sd1" 0.0184296755556938 2.1032226590075e-05 "EFO:0009901_UBERON:0008946_CL:0000624"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "sd2" 0.771533035036841 0.00127941444090631 "EFO:0009901_UBERON:0008946_CL:0000624"
+"10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell" "p3" 0.0562807059538799 0 "EFO:0009901_UBERON:0008946_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_B cell" "p1" 0.0333463771999145 -1.4045603834329e-05 "EFO:0011025_UBERON:0008946_CL:0000236"
+"10x 5' v1_lung parenchyma_B cell" "mean1" 0.0016610152384182 2.20573929355919e-05 "EFO:0011025_UBERON:0008946_CL:0000236"
+"10x 5' v1_lung parenchyma_B cell" "mean2" -0.0290773355608243 0.000872363734695534 "EFO:0011025_UBERON:0008946_CL:0000236"
+"10x 5' v1_lung parenchyma_B cell" "sd1" 0.00491014211513148 3.0200694682055e-05 "EFO:0011025_UBERON:0008946_CL:0000236"
+"10x 5' v1_lung parenchyma_B cell" "sd2" 0.177609426371924 0.00152115294754728 "EFO:0011025_UBERON:0008946_CL:0000236"
+"10x 5' v1_lung parenchyma_B cell" "p3" 0.0519897187866486 0 "EFO:0011025_UBERON:0008946_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "p1" 0.0320680200950867 -9.99605111820316e-06 "EFO:0009922_UBERON:0008946_CL:0019019"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "mean1" 0.00521918504522692 2.65255756928478e-05 "EFO:0009922_UBERON:0008946_CL:0019019"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "mean2" 0.0206758551072308 0.000697881561097318 "EFO:0009922_UBERON:0008946_CL:0019019"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "sd1" 0.0139995652110971 3.43500635810006e-05 "EFO:0009922_UBERON:0008946_CL:0019019"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "sd2" 0.27841297680561 0.000989627425774882 "EFO:0009922_UBERON:0008946_CL:0019019"
+"10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell" "p3" 0.0541189066008196 0 "EFO:0009922_UBERON:0008946_CL:0019019"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "p1" 0.0315201810797766 -4.21726260104236e-06 "EFO:0009922_UBERON:0008946_CL:0000192"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "mean1" 0.00941402910420862 2.12643078448353e-05 "EFO:0009922_UBERON:0008946_CL:0000192"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "mean2" 0.0840857996686073 0.000635177568246139 "EFO:0009922_UBERON:0008946_CL:0000192"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "sd1" 0.0248840351762319 3.00339174655068e-05 "EFO:0009922_UBERON:0008946_CL:0000192"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "sd2" 0.508912754649843 0.000925837962805033 "EFO:0009922_UBERON:0008946_CL:0000192"
+"10x 3' v3_lung parenchyma_smooth muscle cell" "p3" 0.0544709090542219 0 "EFO:0009922_UBERON:0008946_CL:0000192"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_elicited macrophage" "p1" 0.0280537850934735 -7.18664421791851e-06 "EFO:0009901_UBERON:0008946_CL:0000861"
+"10x 3' v1_lung parenchyma_elicited macrophage" "mean1" 0.00881851157072119 1.13967407389276e-05 "EFO:0009901_UBERON:0008946_CL:0000861"
+"10x 3' v1_lung parenchyma_elicited macrophage" "mean2" 0.381030024462592 0.00070966795965052 "EFO:0009901_UBERON:0008946_CL:0000861"
+"10x 3' v1_lung parenchyma_elicited macrophage" "sd1" 0.0194587327306203 1.47695138225266e-05 "EFO:0009901_UBERON:0008946_CL:0000861"
+"10x 3' v1_lung parenchyma_elicited macrophage" "sd2" 0.91174071371487 0.00108408211665365 "EFO:0009901_UBERON:0008946_CL:0000861"
+"10x 3' v1_lung parenchyma_elicited macrophage" "p3" 0.0617881585586466 0 "EFO:0009901_UBERON:0008946_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "p1" 0.0347981472544237 -8.80715926796562e-06 "EFO:0009899_UBERON:0001005_CL:0002138"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "mean1" 0.00716718349323341 2.43774398564269e-05 "EFO:0009899_UBERON:0001005_CL:0002138"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "mean2" 0.0808538782729404 0.000671021731323978 "EFO:0009899_UBERON:0001005_CL:0002138"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "sd1" 0.0182782140383463 3.17405370651224e-05 "EFO:0009899_UBERON:0001005_CL:0002138"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "sd2" 0.392492086847744 0.00090971326438636 "EFO:0009899_UBERON:0001005_CL:0002138"
+"10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel" "p3" 0.0540126544890726 0 "EFO:0009899_UBERON:0001005_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_club cell" "p1" 0.025981741340838 -7.71223579425854e-07 "EFO:0009922_UBERON:0001005_CL:0000158"
+"10x 3' v3_respiratory airway_club cell" "mean1" 0.0527756698363143 1.3710990276042e-05 "EFO:0009922_UBERON:0001005_CL:0000158"
+"10x 3' v3_respiratory airway_club cell" "mean2" 0.86736320231473 0.000542289668882549 "EFO:0009922_UBERON:0001005_CL:0000158"
+"10x 3' v3_respiratory airway_club cell" "sd1" 0.121797391273138 2.1235477425274e-05 "EFO:0009922_UBERON:0001005_CL:0000158"
+"10x 3' v3_respiratory airway_club cell" "sd2" 4.17705547641181 0.000912194265647343 "EFO:0009922_UBERON:0001005_CL:0000158"
+"10x 3' v3_respiratory airway_club cell" "p3" 0.0519657547944414 0 "EFO:0009922_UBERON:0001005_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "p1" 0.0307816607091112 -1.06498200192473e-06 "EFO:0009922_UBERON:0001005_CL:0002075"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "mean1" 0.0425115307552841 2.02571710684789e-05 "EFO:0009922_UBERON:0001005_CL:0002075"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "mean2" 0.308919166809025 0.000696380218007983 "EFO:0009922_UBERON:0001005_CL:0002075"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "sd1" 0.0807900541278842 2.57836547850463e-05 "EFO:0009922_UBERON:0001005_CL:0002075"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "sd2" 3.04241517704336 0.00111625513803549 "EFO:0009922_UBERON:0001005_CL:0002075"
+"10x 3' v3_respiratory airway_brush cell of trachebronchial tree" "p3" 0.052288348532468 0 "EFO:0009922_UBERON:0001005_CL:0002075"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "p1" 0.0348264204239986 -2.14073237821863e-05 "EFO:0009899_UBERON:0000004_CL:0000625"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "mean1" 0.00184482641116017 2.17520191854925e-05 "EFO:0009899_UBERON:0000004_CL:0000625"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "mean2" -0.0140079097706849 0.000825394648007677 "EFO:0009899_UBERON:0000004_CL:0000625"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "sd1" 0.00552743474397092 2.97806517623846e-05 "EFO:0009899_UBERON:0000004_CL:0000625"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "sd2" 0.193709273893724 0.00135812857378456 "EFO:0009899_UBERON:0000004_CL:0000625"
+"10x 3' v2_nose_CD8-positive, alpha-beta T cell" "p3" 0.0530635587339254 0 "EFO:0009899_UBERON:0000004_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "p1" 0.0596218859322577 -9.99337838492196e-06 "EFO:0011025_UBERON:0008946_CL:1000312"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "mean1" 0.00981369516325836 1.78486137229555e-05 "EFO:0011025_UBERON:0008946_CL:1000312"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "mean2" 0.305893224181079 0.00103219057959944 "EFO:0011025_UBERON:0008946_CL:1000312"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "sd1" 0.0384488483180181 1.76867848649252e-05 "EFO:0011025_UBERON:0008946_CL:1000312"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "sd2" 1.80065794965557 0.00161451007588148 "EFO:0011025_UBERON:0008946_CL:1000312"
+"10x 5' v1_lung parenchyma_bronchial goblet cell" "p3" 0.0592435677702015 0 "EFO:0011025_UBERON:0008946_CL:1000312"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "p1" 0.0472222371205957 -1.28422000987764e-05 "EFO:0009899_UBERON:0001005_CL:0000784"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "mean1" 0.00557840189532599 2.53003092800903e-05 "EFO:0009899_UBERON:0001005_CL:0000784"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "mean2" 0.0370593690160703 0.000918856932832788 "EFO:0009899_UBERON:0001005_CL:0000784"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "sd1" 0.0177963323585264 3.15883845566334e-05 "EFO:0009899_UBERON:0001005_CL:0000784"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "sd2" 0.478660124831956 0.00132734836941329 "EFO:0009899_UBERON:0001005_CL:0000784"
+"10x 3' v2_respiratory airway_plasmacytoid dendritic cell" "p3" 0.0547073163036486 0 "EFO:0009899_UBERON:0001005_CL:0000784"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "p1" 0.0283754841283083 -2.66489802662039e-06 "EFO:0009922_UBERON:0008946_CL:0000082"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "mean1" 0.00773479429976988 1.26028611555276e-05 "EFO:0009922_UBERON:0008946_CL:0000082"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "mean2" -0.196159433211672 0.000829766274373855 "EFO:0009922_UBERON:0008946_CL:0000082"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "sd1" 0.0193980260311128 1.89785458663128e-05 "EFO:0009922_UBERON:0008946_CL:0000082"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "sd2" 1.74621243025418 0.00174459458047889 "EFO:0009922_UBERON:0008946_CL:0000082"
+"10x 3' v3_lung parenchyma_epithelial cell of lung" "p3" 0.0513301741645001 0 "EFO:0009922_UBERON:0008946_CL:0000082"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_T cell" "p1" 0.0306673490112897 -3.03221570886736e-06 "EFO:0011025_UBERON:0008946_CL:0000084"
+"10x 5' v1_lung parenchyma_T cell" "mean1" 0.0226345786167111 2.01358257837704e-05 "EFO:0011025_UBERON:0008946_CL:0000084"
+"10x 5' v1_lung parenchyma_T cell" "mean2" 0.405692683291789 0.000635431887409133 "EFO:0011025_UBERON:0008946_CL:0000084"
+"10x 5' v1_lung parenchyma_T cell" "sd1" 0.0555473795561676 2.91582860296811e-05 "EFO:0011025_UBERON:0008946_CL:0000084"
+"10x 5' v1_lung parenchyma_T cell" "sd2" 1.13589468778113 0.000873162611174651 "EFO:0011025_UBERON:0008946_CL:0000084"
+"10x 5' v1_lung parenchyma_T cell" "p3" 0.0535718170719596 0 "EFO:0011025_UBERON:0008946_CL:0000084"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_plasma cell" "p1" 0.0318736952781207 -3.95906902652236e-06 "EFO:0009899_UBERON:0001005_CL:0000786"
+"10x 3' v2_respiratory airway_plasma cell" "mean1" 0.00357982825823331 7.04042105271404e-06 "EFO:0009899_UBERON:0001005_CL:0000786"
+"10x 3' v2_respiratory airway_plasma cell" "mean2" 0.0205698669406642 0.000954159058772367 "EFO:0009899_UBERON:0001005_CL:0000786"
+"10x 3' v2_respiratory airway_plasma cell" "sd1" 0.0106883623547118 9.81686380736731e-06 "EFO:0009899_UBERON:0001005_CL:0000786"
+"10x 3' v2_respiratory airway_plasma cell" "sd2" 1.67359380010742 0.00207423230576375 "EFO:0009899_UBERON:0001005_CL:0000786"
+"10x 3' v2_respiratory airway_plasma cell" "p3" 0.0543206758309306 0 "EFO:0009899_UBERON:0001005_CL:0000786"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_plasma cell" "p1" 0.0296852831677691 -2.9887689263625e-06 "EFO:0009899_UBERON:0008946_CL:0000786"
+"10x 3' v2_lung parenchyma_plasma cell" "mean1" 0.00519237332054133 7.63434900289034e-06 "EFO:0009899_UBERON:0008946_CL:0000786"
+"10x 3' v2_lung parenchyma_plasma cell" "mean2" 0.0627713753173493 0.000875383641267411 "EFO:0009899_UBERON:0008946_CL:0000786"
+"10x 3' v2_lung parenchyma_plasma cell" "sd1" 0.0136956134759528 1.14558245574119e-05 "EFO:0009899_UBERON:0008946_CL:0000786"
+"10x 3' v2_lung parenchyma_plasma cell" "sd2" 1.50588046086775 0.00179675142090149 "EFO:0009899_UBERON:0008946_CL:0000786"
+"10x 3' v2_lung parenchyma_plasma cell" "p3" 0.0546023506734136 0 "EFO:0009899_UBERON:0008946_CL:0000786"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_fibroblast" "p1" 0.0296611713160395 -2.68566608420262e-06 "EFO:0009899_UBERON:0008946_CL:0000057"
+"10x 3' v2_lung parenchyma_fibroblast" "mean1" 0.00967046463164767 1.71166820054039e-05 "EFO:0009899_UBERON:0008946_CL:0000057"
+"10x 3' v2_lung parenchyma_fibroblast" "mean2" 0.19695693048749 0.000724205687191702 "EFO:0009899_UBERON:0008946_CL:0000057"
+"10x 3' v2_lung parenchyma_fibroblast" "sd1" 0.0264631979989742 2.4220762604296e-05 "EFO:0009899_UBERON:0008946_CL:0000057"
+"10x 3' v2_lung parenchyma_fibroblast" "sd2" 0.683106439172511 0.00102808770809165 "EFO:0009899_UBERON:0008946_CL:0000057"
+"10x 3' v2_lung parenchyma_fibroblast" "p3" 0.0571537128670602 0 "EFO:0009899_UBERON:0008946_CL:0000057"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "p1" 0.0259440985367146 -3.87094657336672e-06 "EFO:0009899_UBERON:0008946_CL:0000082"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "mean1" 0.00561046186551961 1.40339676247317e-05 "EFO:0009899_UBERON:0008946_CL:0000082"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "mean2" 0.00286649289852736 0.000689793600002146 "EFO:0009899_UBERON:0008946_CL:0000082"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "sd1" 0.0141157502327031 2.21366909342594e-05 "EFO:0009899_UBERON:0008946_CL:0000082"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "sd2" 0.731512401726306 0.00128745834117891 "EFO:0009899_UBERON:0008946_CL:0000082"
+"10x 3' v2_lung parenchyma_epithelial cell of lung" "p3" 0.0518842337361985 0 "EFO:0009899_UBERON:0008946_CL:0000082"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "p1" 0.0318520952376331 -1.48130509683248e-05 "EFO:0011025_UBERON:0008946_CL:0019019"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "mean1" 0.00184600392664511 2.49265649059069e-05 "EFO:0011025_UBERON:0008946_CL:0019019"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "mean2" 0.0105609972181067 0.000683619052818462 "EFO:0011025_UBERON:0008946_CL:0019019"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "sd1" 0.00550827750341124 3.26030112332334e-05 "EFO:0011025_UBERON:0008946_CL:0019019"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "sd2" 0.0930243074169297 0.000906103416015168 "EFO:0011025_UBERON:0008946_CL:0019019"
+"10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell" "p3" 0.056012548432003 0 "EFO:0011025_UBERON:0008946_CL:0019019"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "p1" 0.0288316415462452 -4.23407447967789e-06 "EFO:0011025_UBERON:0008946_CL:0002633"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "mean1" 0.00766548192972925 1.73281537776183e-05 "EFO:0011025_UBERON:0008946_CL:0002633"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "mean2" 0.140377979380953 0.000682167751778506 "EFO:0011025_UBERON:0008946_CL:0002633"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "sd1" 0.0179421685396287 2.3145535959582e-05 "EFO:0011025_UBERON:0008946_CL:0002633"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "sd2" 0.510690542883999 0.00102695769581333 "EFO:0011025_UBERON:0008946_CL:0002633"
+"10x 5' v1_lung parenchyma_respiratory basal cell" "p3" 0.0559049692927513 0 "EFO:0011025_UBERON:0008946_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_pericyte" "p1" 0.0316433066746117 -1.31815260607831e-05 "EFO:0009899_UBERON:0001005_CL:0000669"
+"10x 3' v2_respiratory airway_pericyte" "mean1" 0.0015325851014371 2.79173245404849e-05 "EFO:0009899_UBERON:0001005_CL:0000669"
+"10x 3' v2_respiratory airway_pericyte" "mean2" -0.00782992819135298 0.00065504427274692 "EFO:0009899_UBERON:0001005_CL:0000669"
+"10x 3' v2_respiratory airway_pericyte" "sd1" 0.00377706483756733 4.0703993661916e-05 "EFO:0009899_UBERON:0001005_CL:0000669"
+"10x 3' v2_respiratory airway_pericyte" "sd2" 0.058877279096444 0.000990425717970458 "EFO:0009899_UBERON:0001005_CL:0000669"
+"10x 3' v2_respiratory airway_pericyte" "p3" 0.0537576802228442 0 "EFO:0009899_UBERON:0001005_CL:0000669"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_lung macrophage" "p1" 0.0328885082567555 -2.81799656376393e-06 "EFO:0009922_UBERON:0001005_CL:1001603"
+"10x 3' v3_respiratory airway_lung macrophage" "mean1" 0.0248073799274902 2.3516852907674e-05 "EFO:0009922_UBERON:0001005_CL:1001603"
+"10x 3' v3_respiratory airway_lung macrophage" "mean2" 0.365226987758295 0.000701530701583354 "EFO:0009922_UBERON:0001005_CL:1001603"
+"10x 3' v3_respiratory airway_lung macrophage" "sd1" 0.062105344111859 3.05879128961622e-05 "EFO:0009922_UBERON:0001005_CL:1001603"
+"10x 3' v3_respiratory airway_lung macrophage" "sd2" 1.29839026483773 0.000955954910344786 "EFO:0009922_UBERON:0001005_CL:1001603"
+"10x 3' v3_respiratory airway_lung macrophage" "p3" 0.0542495930369455 0 "EFO:0009922_UBERON:0001005_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_classical monocyte" "p1" 0.0710928456783957 -7.7269692823184e-05 "EFO:0009900_UBERON:0000004_CL:0000860"
+"10x 5' v2_nose_classical monocyte" "mean1" 0.00288657871369699 4.10026207832189e-05 "EFO:0009900_UBERON:0000004_CL:0000860"
+"10x 5' v2_nose_classical monocyte" "mean2" 0.0393173398177499 0.00120663449839768 "EFO:0009900_UBERON:0000004_CL:0000860"
+"10x 5' v2_nose_classical monocyte" "sd1" 0.0170826977503898 3.7127495298307e-05 "EFO:0009900_UBERON:0000004_CL:0000860"
+"10x 5' v2_nose_classical monocyte" "sd2" 0.223439627790222 0.00131547997084246 "EFO:0009900_UBERON:0000004_CL:0000860"
+"10x 5' v2_nose_classical monocyte" "p3" 0.0557263446471563 0 "EFO:0009900_UBERON:0000004_CL:0000860"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "p1" 0.0300302195762862 -3.1516453677715e-06 "EFO:0009899_UBERON:0001005_CL:0000082"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "mean1" 0.0104058656019222 1.38345460911266e-05 "EFO:0009899_UBERON:0001005_CL:0000082"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "mean2" 0.137033426554235 0.00072682347704999 "EFO:0009899_UBERON:0001005_CL:0000082"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "sd1" 0.0254739454357779 2.03826551372354e-05 "EFO:0009899_UBERON:0001005_CL:0000082"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "sd2" 1.23909319507044 0.00125762097185045 "EFO:0009899_UBERON:0001005_CL:0000082"
+"10x 3' v2_respiratory airway_epithelial cell of lung" "p3" 0.0534822659379373 0 "EFO:0009899_UBERON:0001005_CL:0000082"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "p1" 0.0491349976343225 -4.05355907055588e-05 "EFO:0009900_UBERON:0000004_CL:0000784"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "mean1" 0.00244090408797263 3.60789975540568e-05 "EFO:0009900_UBERON:0000004_CL:0000784"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "mean2" 0.00118288809024225 0.000966765805972187 "EFO:0009900_UBERON:0000004_CL:0000784"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "sd1" 0.00972004469204494 3.97884321523911e-05 "EFO:0009900_UBERON:0000004_CL:0000784"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "sd2" 0.152152641169704 0.0011791043556708 "EFO:0009900_UBERON:0000004_CL:0000784"
+"10x 5' v2_nose_plasmacytoid dendritic cell" "p3" 0.0556981873335455 0 "EFO:0009900_UBERON:0000004_CL:0000784"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "p1" 0.0314284838349143 -7.65714296801081e-06 "EFO:0009899_UBERON:0008946_CL:0000186"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "mean1" 0.00459978192449174 2.17283797219602e-05 "EFO:0009899_UBERON:0008946_CL:0000186"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "mean2" 0.0783202971309513 0.000702219966590479 "EFO:0009899_UBERON:0008946_CL:0000186"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "sd1" 0.0129719468349589 2.85519756750935e-05 "EFO:0009899_UBERON:0008946_CL:0000186"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "sd2" 0.289206186475972 0.000947825539983119 "EFO:0009899_UBERON:0008946_CL:0000186"
+"10x 3' v2_lung parenchyma_myofibroblast cell" "p3" 0.0562318580891145 0 "EFO:0009899_UBERON:0008946_CL:0000186"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "p1" 0.046019072465658 -3.26011419864267e-05 "EFO:0009901_UBERON:0008946_CL:0000625"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "mean1" 0.00361914855749063 2.38351265498001e-05 "EFO:0009901_UBERON:0008946_CL:0000625"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "mean2" 0.0969409911012692 0.000992045499453614 "EFO:0009901_UBERON:0008946_CL:0000625"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "sd1" 0.0118678808413561 2.3886037077695e-05 "EFO:0009901_UBERON:0008946_CL:0000625"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "sd2" 0.434604176116043 0.00128868492226518 "EFO:0009901_UBERON:0008946_CL:0000625"
+"10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell" "p3" 0.0564066960559353 0 "EFO:0009901_UBERON:0008946_CL:0000625"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_acinar cell" "p1" 0.0344991766050765 -4.98332403511968e-06 "EFO:0009899_UBERON:0000004_CL:0000622"
+"10x 3' v2_nose_acinar cell" "mean1" 0.00506298895992495 1.45320168354123e-05 "EFO:0009899_UBERON:0000004_CL:0000622"
+"10x 3' v2_nose_acinar cell" "mean2" 0.077726899773082 0.000876800323256474 "EFO:0009899_UBERON:0000004_CL:0000622"
+"10x 3' v2_nose_acinar cell" "sd1" 0.0148524466640567 1.95853144024249e-05 "EFO:0009899_UBERON:0000004_CL:0000622"
+"10x 3' v2_nose_acinar cell" "sd2" 0.716831965468963 0.00147158332899207 "EFO:0009899_UBERON:0000004_CL:0000622"
+"10x 3' v2_nose_acinar cell" "p3" 0.0566772653048205 0 "EFO:0009899_UBERON:0000004_CL:0000622"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "p1" 0.030577442816888 -1.2295886778249e-06 "EFO:0009922_UBERON:0001005_CL:0005012"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "mean1" 0.0658716615534978 1.8596823229482e-05 "EFO:0009922_UBERON:0001005_CL:0005012"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "mean2" 0.629686522055861 0.000505755886346741 "EFO:0009922_UBERON:0001005_CL:0005012"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "sd1" 0.120533901346528 2.49154119229399e-05 "EFO:0009922_UBERON:0001005_CL:0005012"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "sd2" 3.02303608191261 0.000831419253094342 "EFO:0009922_UBERON:0001005_CL:0005012"
+"10x 3' v3_respiratory airway_multi-ciliated epithelial cell" "p3" 0.052038395012076 0 "EFO:0009922_UBERON:0001005_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "p1" 0.0580800674756886 -2.66978725674532e-05 "EFO:0011025_UBERON:0000004_CL:0002399"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "mean1" 0.00486894640368857 3.08495182345294e-05 "EFO:0011025_UBERON:0000004_CL:0002399"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "mean2" 0.0272990096219254 0.000981817377006853 "EFO:0011025_UBERON:0000004_CL:0002399"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "sd1" 0.0218087576108611 3.03459536119348e-05 "EFO:0011025_UBERON:0000004_CL:0002399"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "sd2" 0.468224184948262 0.00127392282268285 "EFO:0011025_UBERON:0000004_CL:0002399"
+"10x 5' v1_nose_CD1c-positive myeloid dendritic cell" "p3" 0.0552331594223948 0 "EFO:0011025_UBERON:0000004_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_elicited macrophage" "p1" 0.0354583478603479 -6.5688074031717e-06 "EFO:0009899_UBERON:0001005_CL:0000861"
+"10x 3' v2_respiratory airway_elicited macrophage" "mean1" 0.00743931627417667 1.75969662211719e-05 "EFO:0009899_UBERON:0001005_CL:0000861"
+"10x 3' v2_respiratory airway_elicited macrophage" "mean2" 0.151022486422256 0.0007764692986041 "EFO:0009899_UBERON:0001005_CL:0000861"
+"10x 3' v2_respiratory airway_elicited macrophage" "sd1" 0.021703996873335 2.48981647653736e-05 "EFO:0009899_UBERON:0001005_CL:0000861"
+"10x 3' v2_respiratory airway_elicited macrophage" "sd2" 0.605989621941127 0.00114176749543321 "EFO:0009899_UBERON:0001005_CL:0000861"
+"10x 3' v2_respiratory airway_elicited macrophage" "p3" 0.0559359663245969 0 "EFO:0009899_UBERON:0001005_CL:0000861"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_non-classical monocyte" "p1" 0.0391212346521026 -3.96988746246822e-06 "EFO:0009922_UBERON:0001005_CL:0000875"
+"10x 3' v3_respiratory airway_non-classical monocyte" "mean1" 0.0123294031094045 2.60081555333197e-05 "EFO:0009922_UBERON:0001005_CL:0000875"
+"10x 3' v3_respiratory airway_non-classical monocyte" "mean2" 0.185018363672803 0.000890330380031978 "EFO:0009922_UBERON:0001005_CL:0000875"
+"10x 3' v3_respiratory airway_non-classical monocyte" "sd1" 0.0374839145283137 3.50099749136196e-05 "EFO:0009922_UBERON:0001005_CL:0000875"
+"10x 3' v3_respiratory airway_non-classical monocyte" "sd2" 0.725964159209793 0.00116933197137711 "EFO:0009922_UBERON:0001005_CL:0000875"
+"10x 3' v3_respiratory airway_non-classical monocyte" "p3" 0.0565174601523833 0 "EFO:0009922_UBERON:0001005_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "p1" 0.0579386114682004 -6.3299419521127e-05 "EFO:0009900_UBERON:0000004_CL:0000624"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "mean1" 0.0022032030080417 3.71601407766837e-05 "EFO:0009900_UBERON:0000004_CL:0000624"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "mean2" -0.0128755779095128 0.00100600888405874 "EFO:0009900_UBERON:0000004_CL:0000624"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "sd1" 0.0118731211268613 3.25813850877813e-05 "EFO:0009900_UBERON:0000004_CL:0000624"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "sd2" 0.221650852218196 0.00127095528721236 "EFO:0009900_UBERON:0000004_CL:0000624"
+"10x 5' v2_nose_CD4-positive, alpha-beta T cell" "p3" 0.0535551135624883 0 "EFO:0009900_UBERON:0000004_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_mast cell" "p1" 0.0495398235479794 -3.04864223074979e-05 "EFO:0009900_UBERON:0000004_CL:0000097"
+"10x 5' v2_nose_mast cell" "mean1" 0.00268649303878399 3.74151718820004e-05 "EFO:0009900_UBERON:0000004_CL:0000097"
+"10x 5' v2_nose_mast cell" "mean2" 0.00227693090269665 0.000888517166915229 "EFO:0009900_UBERON:0000004_CL:0000097"
+"10x 5' v2_nose_mast cell" "sd1" 0.0124581966791853 4.00666306683648e-05 "EFO:0009900_UBERON:0000004_CL:0000097"
+"10x 5' v2_nose_mast cell" "sd2" 0.165720935978382 0.00111670724979829 "EFO:0009900_UBERON:0000004_CL:0000097"
+"10x 5' v2_nose_mast cell" "p3" 0.0543443275346877 0 "EFO:0009900_UBERON:0000004_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "p1" 0.0582636104026594 -8.13793799641902e-06 "EFO:0009922_UBERON:0001005_CL:0019001"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "mean1" 0.0126435006360228 1.40189315595783e-05 "EFO:0009922_UBERON:0001005_CL:0019001"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "mean2" 0.418199281739214 0.00110824544849514 "EFO:0009922_UBERON:0001005_CL:0019001"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "sd1" 0.0424751993926243 1.43891518210925e-05 "EFO:0009922_UBERON:0001005_CL:0019001"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "sd2" 3.19575296493834 0.00193403949345052 "EFO:0009922_UBERON:0001005_CL:0019001"
+"10x 3' v3_respiratory airway_tracheobronchial serous cell" "p3" 0.0557525542012157 0 "EFO:0009922_UBERON:0001005_CL:0019001"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "p1" 0.0401162187552705 -5.35786273921913e-06 "EFO:0009899_UBERON:0001005_CL:0002075"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "mean1" 0.012352467897013 2.0669878895358e-05 "EFO:0009899_UBERON:0001005_CL:0002075"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "mean2" 0.191831403344471 0.000807573643570412 "EFO:0009899_UBERON:0001005_CL:0002075"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "sd1" 0.0336684437306495 2.40648329933164e-05 "EFO:0009899_UBERON:0001005_CL:0002075"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "sd2" 1.16813603335745 0.00116935825064778 "EFO:0009899_UBERON:0001005_CL:0002075"
+"10x 3' v2_respiratory airway_brush cell of trachebronchial tree" "p3" 0.0554023840691017 0 "EFO:0009899_UBERON:0001005_CL:0002075"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_mucus secreting cell" "p1" 0.0387502484789425 -8.567342756411e-06 "EFO:0009899_UBERON:0001005_CL:0000319"
+"10x 3' v2_respiratory airway_mucus secreting cell" "mean1" 0.00464566082326955 1.32920833449724e-05 "EFO:0009899_UBERON:0001005_CL:0000319"
+"10x 3' v2_respiratory airway_mucus secreting cell" "mean2" 0.117427986040087 0.000818252130155676 "EFO:0009899_UBERON:0001005_CL:0000319"
+"10x 3' v2_respiratory airway_mucus secreting cell" "sd1" 0.01387971494088 1.72778155138915e-05 "EFO:0009899_UBERON:0001005_CL:0000319"
+"10x 3' v2_respiratory airway_mucus secreting cell" "sd2" 0.694240047071765 0.00130137929433155 "EFO:0009899_UBERON:0001005_CL:0000319"
+"10x 3' v2_respiratory airway_mucus secreting cell" "p3" 0.0574614645033271 0 "EFO:0009899_UBERON:0001005_CL:0000319"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_ionocyte" "p1" 0.0305772191036071 -5.83146899268435e-06 "EFO:0009899_UBERON:0001005_CL:0005006"
+"10x 3' v2_respiratory airway_ionocyte" "mean1" 0.00766208492111975 2.38659856852321e-05 "EFO:0009899_UBERON:0001005_CL:0005006"
+"10x 3' v2_respiratory airway_ionocyte" "mean2" 0.0324347994592569 0.000616945838952533 "EFO:0009899_UBERON:0001005_CL:0005006"
+"10x 3' v2_respiratory airway_ionocyte" "sd1" 0.0194003343220132 3.2529952326387e-05 "EFO:0009899_UBERON:0001005_CL:0005006"
+"10x 3' v2_respiratory airway_ionocyte" "sd2" 0.412742874726335 0.000894994761911216 "EFO:0009899_UBERON:0001005_CL:0005006"
+"10x 3' v2_respiratory airway_ionocyte" "p3" 0.0535576028562549 0 "EFO:0009899_UBERON:0001005_CL:0005006"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_non-classical monocyte" "p1" 0.0354835521223524 -7.17138447284676e-06 "EFO:0009899_UBERON:0001005_CL:0000875"
+"10x 3' v2_respiratory airway_non-classical monocyte" "mean1" 0.00505706871803466 1.91035814059565e-05 "EFO:0009899_UBERON:0001005_CL:0000875"
+"10x 3' v2_respiratory airway_non-classical monocyte" "mean2" 0.0661983307930005 0.000814328532393371 "EFO:0009899_UBERON:0001005_CL:0000875"
+"10x 3' v2_respiratory airway_non-classical monocyte" "sd1" 0.015765957061415 2.75889250029742e-05 "EFO:0009899_UBERON:0001005_CL:0000875"
+"10x 3' v2_respiratory airway_non-classical monocyte" "sd2" 0.415292250414544 0.00119626898493259 "EFO:0009899_UBERON:0001005_CL:0000875"
+"10x 3' v2_respiratory airway_non-classical monocyte" "p3" 0.0555670040327886 0 "EFO:0009899_UBERON:0001005_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "p1" 0.0716274307490668 -3.04586753920717e-05 "EFO:0009899_UBERON:0000004_CL:0000624"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "mean1" 0.00452455896860565 3.10569463406352e-05 "EFO:0009899_UBERON:0000004_CL:0000624"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "mean2" -0.0297181361042989 0.00128118522311319 "EFO:0009899_UBERON:0000004_CL:0000624"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "sd1" 0.0292809129032743 2.79876503789769e-05 "EFO:0009899_UBERON:0000004_CL:0000624"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "sd2" 0.860858037123889 0.00193626316911755 "EFO:0009899_UBERON:0000004_CL:0000624"
+"10x 3' v2_nose_CD4-positive, alpha-beta T cell" "p3" 0.0529310053190691 0 "EFO:0009899_UBERON:0000004_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_T cell" "p1" 0.0395501181614631 -4.79591675240226e-06 "EFO:0009899_UBERON:0008946_CL:0000084"
+"10x 3' v2_lung parenchyma_T cell" "mean1" 0.0206365259855824 2.21379695276577e-05 "EFO:0009899_UBERON:0008946_CL:0000084"
+"10x 3' v2_lung parenchyma_T cell" "mean2" 0.446942786294109 0.000725223547921543 "EFO:0009899_UBERON:0008946_CL:0000084"
+"10x 3' v2_lung parenchyma_T cell" "sd1" 0.0548646545195501 2.49123475089426e-05 "EFO:0009899_UBERON:0008946_CL:0000084"
+"10x 3' v2_lung parenchyma_T cell" "sd2" 1.29739622475775 0.000888957089180128 "EFO:0009899_UBERON:0008946_CL:0000084"
+"10x 3' v2_lung parenchyma_T cell" "p3" 0.0587420888626763 0 "EFO:0009899_UBERON:0008946_CL:0000084"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_acinar cell" "p1" 0.0267085164639868 -2.06934902438702e-06 "EFO:0009899_UBERON:0001005_CL:0000622"
+"10x 3' v2_respiratory airway_acinar cell" "mean1" 0.0144105671825387 1.1287180967271e-05 "EFO:0009899_UBERON:0001005_CL:0000622"
+"10x 3' v2_respiratory airway_acinar cell" "mean2" 0.232822152522738 0.000682816433295548 "EFO:0009899_UBERON:0001005_CL:0000622"
+"10x 3' v2_respiratory airway_acinar cell" "sd1" 0.0333831726275935 1.70991929187126e-05 "EFO:0009899_UBERON:0001005_CL:0000622"
+"10x 3' v2_respiratory airway_acinar cell" "sd2" 1.82699779107716 0.00122133596027989 "EFO:0009899_UBERON:0001005_CL:0000622"
+"10x 3' v2_respiratory airway_acinar cell" "p3" 0.053415232403656 0 "EFO:0009899_UBERON:0001005_CL:0000622"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_B cell" "p1" 0.0835877006760455 -9.23861346953925e-05 "EFO:0009900_UBERON:0000004_CL:0000236"
+"10x 5' v2_nose_B cell" "mean1" 0.000982927397055227 4.59880408454151e-05 "EFO:0009900_UBERON:0000004_CL:0000236"
+"10x 5' v2_nose_B cell" "mean2" -0.0457357877248229 0.0013065704673722 "EFO:0009900_UBERON:0000004_CL:0000236"
+"10x 5' v2_nose_B cell" "sd1" 0.00627898204832705 4.88353617648708e-05 "EFO:0009900_UBERON:0000004_CL:0000236"
+"10x 5' v2_nose_B cell" "sd2" -0.0287107067619314 0.00213915083958726 "EFO:0009900_UBERON:0000004_CL:0000236"
+"10x 5' v2_nose_B cell" "p3" 0.0529119574358239 0 "EFO:0009900_UBERON:0000004_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_ionocyte" "p1" 0.0300661423094808 -1.95506530723329e-06 "EFO:0009922_UBERON:0001005_CL:0005006"
+"10x 3' v3_respiratory airway_ionocyte" "mean1" 0.030281147626516 2.1757718321231e-05 "EFO:0009922_UBERON:0001005_CL:0005006"
+"10x 3' v3_respiratory airway_ionocyte" "mean2" 0.108159024784909 0.000611339001972882 "EFO:0009922_UBERON:0001005_CL:0005006"
+"10x 3' v3_respiratory airway_ionocyte" "sd1" 0.0735909017902949 2.9098665732274e-05 "EFO:0009922_UBERON:0001005_CL:0005006"
+"10x 3' v3_respiratory airway_ionocyte" "sd2" 1.95329389886027 0.000913468187497237 "EFO:0009922_UBERON:0001005_CL:0005006"
+"10x 3' v3_respiratory airway_ionocyte" "p3" 0.053057472988381 0 "EFO:0009922_UBERON:0001005_CL:0005006"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "p1" 0.0617112600661952 -1.4733115829413e-05 "EFO:0009901_UBERON:0008946_CL:0000875"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "mean1" 0.020053300134341 2.3458867684261e-05 "EFO:0009901_UBERON:0008946_CL:0000875"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "mean2" 0.745497648995715 0.00105383349588989 "EFO:0009901_UBERON:0008946_CL:0000875"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "sd1" 0.0641196790045718 1.86173492359325e-05 "EFO:0009901_UBERON:0008946_CL:0000875"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "sd2" 1.62211595974817 0.00131693743053381 "EFO:0009901_UBERON:0008946_CL:0000875"
+"10x 3' v1_lung parenchyma_non-classical monocyte" "p3" 0.0643898070898895 0 "EFO:0009901_UBERON:0008946_CL:0000875"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "p1" 0.0305070067618253 -3.92197335361438e-06 "EFO:0011025_UBERON:0008946_CL:0005012"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "mean1" 0.0205265078115582 1.75285153236857e-05 "EFO:0011025_UBERON:0008946_CL:0005012"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "mean2" 0.378696532175342 0.000501258206154383 "EFO:0011025_UBERON:0008946_CL:0005012"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "sd1" 0.0422746495244096 2.27228761758341e-05 "EFO:0011025_UBERON:0008946_CL:0005012"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "sd2" 0.809341831283614 0.000657612560602482 "EFO:0011025_UBERON:0008946_CL:0005012"
+"10x 5' v1_lung parenchyma_multi-ciliated epithelial cell" "p3" 0.0564841296583626 0 "EFO:0011025_UBERON:0008946_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "p1" 0.0330536849380838 -2.23225928232533e-06 "EFO:0009922_UBERON:0001005_CL:0002399"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "mean1" 0.0297224576351744 1.88921673605746e-05 "EFO:0009922_UBERON:0001005_CL:0002399"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "mean2" 0.425030770270628 0.00071578574517325 "EFO:0009922_UBERON:0001005_CL:0002399"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "sd1" 0.0729435320427038 2.49270923424954e-05 "EFO:0009922_UBERON:0001005_CL:0002399"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "sd2" 1.82490299757431 0.00100889541699403 "EFO:0009922_UBERON:0001005_CL:0002399"
+"10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell" "p3" 0.0552903893803034 0 "EFO:0009922_UBERON:0001005_CL:0002399"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_B cell" "p1" 0.0419587244707327 -1.18868495508506e-05 "EFO:0009922_UBERON:0008946_CL:0000236"
+"10x 3' v3_lung parenchyma_B cell" "mean1" 0.00353885393723618 2.39303288613814e-05 "EFO:0009922_UBERON:0008946_CL:0000236"
+"10x 3' v3_lung parenchyma_B cell" "mean2" 0.00776456718746754 0.000952494715680551 "EFO:0009922_UBERON:0008946_CL:0000236"
+"10x 3' v3_lung parenchyma_B cell" "sd1" 0.00981752002585236 3.09253521441068e-05 "EFO:0009922_UBERON:0008946_CL:0000236"
+"10x 3' v3_lung parenchyma_B cell" "sd2" 0.336189070979616 0.00153329273152616 "EFO:0009922_UBERON:0008946_CL:0000236"
+"10x 3' v3_lung parenchyma_B cell" "p3" 0.0539031610074743 0 "EFO:0009922_UBERON:0008946_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "p1" 0.0321425963256022 -5.60532187734348e-06 "EFO:0009900_UBERON:0008946_CL:0000583"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "mean1" 0.00869318537808345 2.13766139957758e-05 "EFO:0009900_UBERON:0008946_CL:0000583"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "mean2" 0.246826143461405 0.000840882713437093 "EFO:0009900_UBERON:0008946_CL:0000583"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "sd1" 0.0227429000180893 2.67225194800359e-05 "EFO:0009900_UBERON:0008946_CL:0000583"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "sd2" 0.597899021370651 0.0011518704223132 "EFO:0009900_UBERON:0008946_CL:0000583"
+"10x 5' v2_lung parenchyma_alveolar macrophage" "p3" 0.059132928114437 0 "EFO:0009900_UBERON:0008946_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_dendritic cell" "p1" 0.044795955496944 -8.27234834064641e-06 "EFO:0011025_UBERON:0008946_CL:0000451"
+"10x 5' v1_lung parenchyma_dendritic cell" "mean1" 0.00828218635967934 2.32729609533305e-05 "EFO:0011025_UBERON:0008946_CL:0000451"
+"10x 5' v1_lung parenchyma_dendritic cell" "mean2" 0.182026746368973 0.000971719097044782 "EFO:0011025_UBERON:0008946_CL:0000451"
+"10x 5' v1_lung parenchyma_dendritic cell" "sd1" 0.030560628017897 2.67682483739608e-05 "EFO:0011025_UBERON:0008946_CL:0000451"
+"10x 5' v1_lung parenchyma_dendritic cell" "sd2" 0.871631558416956 0.00134451074017349 "EFO:0011025_UBERON:0008946_CL:0000451"
+"10x 5' v1_lung parenchyma_dendritic cell" "p3" 0.0570585509584602 0 "EFO:0011025_UBERON:0008946_CL:0000451"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_dendritic cell" "p1" 0.0413741753731131 -5.6607564410054e-06 "EFO:0009899_UBERON:0008946_CL:0000451"
+"10x 3' v2_lung parenchyma_dendritic cell" "mean1" 0.0074428774548605 1.56997725460241e-05 "EFO:0009899_UBERON:0008946_CL:0000451"
+"10x 3' v2_lung parenchyma_dendritic cell" "mean2" 0.18408068924841 0.000901513797074919 "EFO:0009899_UBERON:0008946_CL:0000451"
+"10x 3' v2_lung parenchyma_dendritic cell" "sd1" 0.0239513420061715 2.11037850457709e-05 "EFO:0009899_UBERON:0008946_CL:0000451"
+"10x 3' v2_lung parenchyma_dendritic cell" "sd2" 0.879784504540067 0.00137128095878895 "EFO:0009899_UBERON:0008946_CL:0000451"
+"10x 3' v2_lung parenchyma_dendritic cell" "p3" 0.0577628021534043 0 "EFO:0009899_UBERON:0008946_CL:0000451"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_T cell" "p1" 0.0458816092497926 -1.00781164368518e-05 "EFO:0009899_UBERON:0001005_CL:0000084"
+"10x 3' v2_respiratory airway_T cell" "mean1" 0.0128069520279508 2.60382502295297e-05 "EFO:0009899_UBERON:0001005_CL:0000084"
+"10x 3' v2_respiratory airway_T cell" "mean2" 0.161393707527472 0.000800029440730516 "EFO:0009899_UBERON:0001005_CL:0000084"
+"10x 3' v2_respiratory airway_T cell" "sd1" 0.0393123199201915 3.02186501146587e-05 "EFO:0009899_UBERON:0001005_CL:0000084"
+"10x 3' v2_respiratory airway_T cell" "sd2" 0.915745441131424 0.00100820653870487 "EFO:0009899_UBERON:0001005_CL:0000084"
+"10x 3' v2_respiratory airway_T cell" "p3" 0.054781474233593 0 "EFO:0009899_UBERON:0001005_CL:0000084"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_lung macrophage" "p1" 0.0546469574900597 -1.94050029584758e-05 "EFO:0009899_UBERON:0001005_CL:1001603"
+"10x 3' v2_respiratory airway_lung macrophage" "mean1" 0.00448795506505516 2.68011296073219e-05 "EFO:0009899_UBERON:0001005_CL:1001603"
+"10x 3' v2_respiratory airway_lung macrophage" "mean2" 0.0696683025179332 0.000937292193851339 "EFO:0009899_UBERON:0001005_CL:1001603"
+"10x 3' v2_respiratory airway_lung macrophage" "sd1" 0.0178797710877581 3.01381500453955e-05 "EFO:0009899_UBERON:0001005_CL:1001603"
+"10x 3' v2_respiratory airway_lung macrophage" "sd2" 0.373551941673159 0.00124710834783719 "EFO:0009899_UBERON:0001005_CL:1001603"
+"10x 3' v2_respiratory airway_lung macrophage" "p3" 0.0562012355685822 0 "EFO:0009899_UBERON:0001005_CL:1001603"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_ionocyte" "p1" 0.0642152786628634 -4.3403220643498e-05 "EFO:0009900_UBERON:0000004_CL:0005006"
+"10x 5' v2_nose_ionocyte" "mean1" 0.00553356397343721 4.01766763377962e-05 "EFO:0009900_UBERON:0000004_CL:0005006"
+"10x 5' v2_nose_ionocyte" "mean2" -0.0166955976944769 0.000858143718727712 "EFO:0009900_UBERON:0000004_CL:0005006"
+"10x 5' v2_nose_ionocyte" "sd1" 0.0297219331502274 2.94441378799698e-05 "EFO:0009900_UBERON:0000004_CL:0005006"
+"10x 5' v2_nose_ionocyte" "sd2" 0.352095549463804 0.000840297114812043 "EFO:0009900_UBERON:0000004_CL:0005006"
+"10x 5' v2_nose_ionocyte" "p3" 0.0553873535767631 0 "EFO:0009900_UBERON:0000004_CL:0005006"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "p1" 0.0376487206337669 -1.17693787479851e-05 "EFO:0009900_UBERON:0000004_CL:0005012"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "mean1" 0.00428393361233395 3.15015068386778e-05 "EFO:0009900_UBERON:0000004_CL:0005012"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "mean2" 0.0108608672888615 0.000658551725113084 "EFO:0009900_UBERON:0000004_CL:0005012"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "sd1" 0.0140070508932084 3.70593893654371e-05 "EFO:0009900_UBERON:0000004_CL:0005012"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "sd2" 0.171878914429112 0.000778947829150827 "EFO:0009900_UBERON:0000004_CL:0005012"
+"10x 5' v2_nose_multi-ciliated epithelial cell" "p3" 0.0554181801298845 0 "EFO:0009900_UBERON:0000004_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_mast cell" "p1" 0.0934491788898372 -7.02540093418793e-05 "EFO:0009900_UBERON:0008946_CL:0000097"
+"10x 5' v2_lung parenchyma_mast cell" "mean1" 0.00322057948496403 3.45782930160723e-05 "EFO:0009900_UBERON:0008946_CL:0000097"
+"10x 5' v2_lung parenchyma_mast cell" "mean2" -0.0220346261281597 0.00117879807108349 "EFO:0009900_UBERON:0008946_CL:0000097"
+"10x 5' v2_lung parenchyma_mast cell" "sd1" 0.00313330106644045 4.29975361085184e-05 "EFO:0009900_UBERON:0008946_CL:0000097"
+"10x 5' v2_lung parenchyma_mast cell" "sd2" 0.0159430098995583 0.00164223839286664 "EFO:0009900_UBERON:0008946_CL:0000097"
+"10x 5' v2_lung parenchyma_mast cell" "p3" 0.0577364200813599 0 "EFO:0009900_UBERON:0008946_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_respiratory basal cell" "p1" 0.0322999975556856 -7.04406708644557e-06 "EFO:0011025_UBERON:0000004_CL:0002633"
+"10x 5' v1_nose_respiratory basal cell" "mean1" 0.00627070465233469 2.28242796668838e-05 "EFO:0011025_UBERON:0000004_CL:0002633"
+"10x 5' v1_nose_respiratory basal cell" "mean2" 0.115055355586449 0.000806412973636273 "EFO:0011025_UBERON:0000004_CL:0002633"
+"10x 5' v1_nose_respiratory basal cell" "sd1" 0.0188336250471544 2.668316905667e-05 "EFO:0011025_UBERON:0000004_CL:0002633"
+"10x 5' v1_nose_respiratory basal cell" "sd2" 0.527984433071996 0.00113851341515278 "EFO:0011025_UBERON:0000004_CL:0002633"
+"10x 5' v1_nose_respiratory basal cell" "p3" 0.055952706478386 0 "EFO:0011025_UBERON:0000004_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_B cell" "p1" 0.0865540928883407 -7.22785902280392e-05 "EFO:0011025_UBERON:0000004_CL:0000236"
+"10x 5' v1_nose_B cell" "mean1" 0.00125296701905359 4.62064095139652e-05 "EFO:0011025_UBERON:0000004_CL:0000236"
+"10x 5' v1_nose_B cell" "mean2" -0.0340300441167642 0.00159091938995192 "EFO:0011025_UBERON:0000004_CL:0000236"
+"10x 5' v1_nose_B cell" "sd1" 0.0226646174795478 4.08985185582579e-05 "EFO:0011025_UBERON:0000004_CL:0000236"
+"10x 5' v1_nose_B cell" "sd2" 0.338358847046159 0.00238541875047105 "EFO:0011025_UBERON:0000004_CL:0000236"
+"10x 5' v1_nose_B cell" "p3" 0.0521221700027203 0 "EFO:0011025_UBERON:0000004_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "p1" 0.0377601429132658 -1.12134641121859e-05 "EFO:0009922_UBERON:0008946_CL:0000624"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "mean1" 0.00400588156791559 2.54369152568033e-05 "EFO:0009922_UBERON:0008946_CL:0000624"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "mean2" 0.0159525208821705 0.000839764398899361 "EFO:0009922_UBERON:0008946_CL:0000624"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "sd1" 0.0119035210928696 3.46049069996876e-05 "EFO:0009922_UBERON:0008946_CL:0000624"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "sd2" 0.311496972429915 0.00122187969670498 "EFO:0009922_UBERON:0008946_CL:0000624"
+"10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell" "p3" 0.0547946730096436 0 "EFO:0009922_UBERON:0008946_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "p1" 0.0409527500561757 -7.32146062059119e-06 "EFO:0009899_UBERON:0008946_CL:0000784"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "mean1" 0.00629906845241808 2.42715664012762e-05 "EFO:0009899_UBERON:0008946_CL:0000784"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "mean2" 0.0729315870106442 0.000956324489751749 "EFO:0009899_UBERON:0008946_CL:0000784"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "sd1" 0.0200284362754933 3.089888052523e-05 "EFO:0009899_UBERON:0008946_CL:0000784"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "sd2" 0.524420305691399 0.00140658111039631 "EFO:0009899_UBERON:0008946_CL:0000784"
+"10x 3' v2_lung parenchyma_plasmacytoid dendritic cell" "p3" 0.0554488005458005 0 "EFO:0009899_UBERON:0008946_CL:0000784"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "p1" 0.0516482569916073 -7.31809986803982e-06 "EFO:0009899_UBERON:0001005_CL:0000990"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "mean1" 0.0124943645455186 2.37942286234954e-05 "EFO:0009899_UBERON:0001005_CL:0000990"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "mean2" 0.180693305099194 0.00100247127613978 "EFO:0009899_UBERON:0001005_CL:0000990"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "sd1" 0.0433252425624852 2.71504937560699e-05 "EFO:0009899_UBERON:0001005_CL:0000990"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "sd2" 1.27413000162705 0.00141571622825334 "EFO:0009899_UBERON:0001005_CL:0000990"
+"10x 3' v2_respiratory airway_conventional dendritic cell" "p3" 0.0568260962301134 0 "EFO:0009899_UBERON:0001005_CL:0000990"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "p1" 0.0291078271962957 -9.39009446186862e-07 "EFO:0009922_UBERON:0001005_CL:1000223"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "mean1" 0.051965251780259 2.00861716073355e-05 "EFO:0009922_UBERON:0001005_CL:1000223"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "mean2" 0.173311753908012 0.000613866641595419 "EFO:0009922_UBERON:0001005_CL:1000223"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "sd1" 0.128586755620287 2.68154951986083e-05 "EFO:0009922_UBERON:0001005_CL:1000223"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "sd2" 3.63539678828812 0.000933186866376252 "EFO:0009922_UBERON:0001005_CL:1000223"
+"10x 3' v3_respiratory airway_lung neuroendocrine cell" "p3" 0.0534455507195772 0 "EFO:0009922_UBERON:0001005_CL:1000223"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "p1" 0.1079396968778 -9.97419280353283e-05 "EFO:0011025_UBERON:0000004_CL:0000624"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "mean1" 0.00543655363353714 4.6238793472008e-05 "EFO:0011025_UBERON:0000004_CL:0000624"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "mean2" -0.0733488107811282 0.00138995418444922 "EFO:0011025_UBERON:0000004_CL:0000624"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "sd1" 0.00341392875215828 5.47758956751075e-05 "EFO:0011025_UBERON:0000004_CL:0000624"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "sd2" -0.0627216663969736 0.00199190890254842 "EFO:0011025_UBERON:0000004_CL:0000624"
+"10x 5' v1_nose_CD4-positive, alpha-beta T cell" "p3" 0.0611253133275686 0 "EFO:0011025_UBERON:0000004_CL:0000624"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_mesothelial cell" "p1" 0.0329145003850799 -1.93568190999015e-06 "EFO:0009899_UBERON:0008946_CL:0000077"
+"10x 3' v2_lung parenchyma_mesothelial cell" "mean1" 0.0272735851590546 1.62443295576282e-05 "EFO:0009899_UBERON:0008946_CL:0000077"
+"10x 3' v2_lung parenchyma_mesothelial cell" "mean2" 0.726603419437156 0.000713193556715115 "EFO:0009899_UBERON:0008946_CL:0000077"
+"10x 3' v2_lung parenchyma_mesothelial cell" "sd1" 0.0740961613402299 2.03674088998388e-05 "EFO:0009899_UBERON:0008946_CL:0000077"
+"10x 3' v2_lung parenchyma_mesothelial cell" "sd2" 2.23104177565284 0.00100313374279556 "EFO:0009899_UBERON:0008946_CL:0000077"
+"10x 3' v2_lung parenchyma_mesothelial cell" "p3" 0.0574630118922022 0 "EFO:0009899_UBERON:0008946_CL:0000077"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_club cell" "p1" 0.0374736550295373 -1.89157013671427e-06 "EFO:0009922_UBERON:0008946_CL:0000158"
+"10x 3' v3_lung parenchyma_club cell" "mean1" 0.014577320673298 1.19915543924447e-05 "EFO:0009922_UBERON:0008946_CL:0000158"
+"10x 3' v3_lung parenchyma_club cell" "mean2" 0.279973889553403 0.00100640416657848 "EFO:0009922_UBERON:0008946_CL:0000158"
+"10x 3' v3_lung parenchyma_club cell" "sd1" 0.0454006187387821 1.45662123083747e-05 "EFO:0009922_UBERON:0008946_CL:0000158"
+"10x 3' v3_lung parenchyma_club cell" "sd2" 4.59333850275737 0.00208560836713983 "EFO:0009922_UBERON:0008946_CL:0000158"
+"10x 3' v3_lung parenchyma_club cell" "p3" 0.0556875861882939 0 "EFO:0009922_UBERON:0008946_CL:0000158"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p1" 0.0462471252791551 -1.14858986233585e-05 "EFO:0009900_UBERON:0008946_CL:0002145"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean1" 0.00938752250035682 3.4624838312016e-05 "EFO:0009900_UBERON:0008946_CL:0002145"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "mean2" 0.0480019700679244 0.000726514119823403 "EFO:0009900_UBERON:0008946_CL:0002145"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd1" 0.034726268597508 3.60662592511914e-05 "EFO:0009900_UBERON:0008946_CL:0002145"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "sd2" 0.390552265482777 0.000763548413332732 "EFO:0009900_UBERON:0008946_CL:0002145"
+"10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree" "p3" 0.0575634979921569 0 "EFO:0009900_UBERON:0008946_CL:0002145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "p1" 0.0548915763543673 -1.47406094276999e-05 "EFO:0011025_UBERON:0008946_CL:0000784"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "mean1" 0.00856630818890745 3.30247707916619e-05 "EFO:0011025_UBERON:0008946_CL:0000784"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "mean2" 0.0983949388143128 0.00094660194622022 "EFO:0011025_UBERON:0008946_CL:0000784"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "sd1" 0.0371162964305616 3.39471258677521e-05 "EFO:0011025_UBERON:0008946_CL:0000784"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "sd2" 0.582782197895868 0.00111082782127337 "EFO:0011025_UBERON:0008946_CL:0000784"
+"10x 5' v1_lung parenchyma_plasmacytoid dendritic cell" "p3" 0.055787564834289 0 "EFO:0011025_UBERON:0008946_CL:0000784"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "p1" 0.0391322696799376 -9.33288815647742e-06 "EFO:0011025_UBERON:0000004_CL:0005012"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "mean1" 0.00634008171537419 3.3793304494233e-05 "EFO:0011025_UBERON:0000004_CL:0005012"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "mean2" -0.00494125032931358 0.000680578811564723 "EFO:0011025_UBERON:0000004_CL:0005012"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "sd1" 0.0217714311665333 3.69609470183732e-05 "EFO:0011025_UBERON:0000004_CL:0005012"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "sd2" 0.270231549141786 0.000815754206738494 "EFO:0011025_UBERON:0000004_CL:0005012"
+"10x 5' v1_nose_multi-ciliated epithelial cell" "p3" 0.0563961990010766 0 "EFO:0011025_UBERON:0000004_CL:0005012"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "p1" 0.0564816752076567 -2.18669126570007e-05 "EFO:0011025_UBERON:0008946_CL:0002480"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "mean1" 0.0043227970014138 2.55638968799644e-05 "EFO:0011025_UBERON:0008946_CL:0002480"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "mean2" 0.0472984172939608 0.00084775062813909 "EFO:0011025_UBERON:0008946_CL:0002480"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "sd1" 0.0192128621011465 2.37337683042034e-05 "EFO:0011025_UBERON:0008946_CL:0002480"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "sd2" 0.464696900415815 0.00115059574973389 "EFO:0011025_UBERON:0008946_CL:0002480"
+"10x 5' v1_lung parenchyma_nasal mucosa goblet cell" "p3" 0.0570490150446332 0 "EFO:0011025_UBERON:0008946_CL:0002480"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_lung parenchyma_plasma cell" "p1" 0.0371792933165352 -2.84592703479065e-06 "EFO:0009922_UBERON:0008946_CL:0000786"
+"10x 3' v3_lung parenchyma_plasma cell" "mean1" 0.0404239578171851 1.518922824808e-05 "EFO:0009922_UBERON:0008946_CL:0000786"
+"10x 3' v3_lung parenchyma_plasma cell" "mean2" 0.662337011205167 0.000789536697442957 "EFO:0009922_UBERON:0008946_CL:0000786"
+"10x 3' v3_lung parenchyma_plasma cell" "sd1" 0.09241398095106 1.65306608847437e-05 "EFO:0009922_UBERON:0008946_CL:0000786"
+"10x 3' v3_lung parenchyma_plasma cell" "sd2" 3.94466500469871 0.0011585427163672 "EFO:0009922_UBERON:0008946_CL:0000786"
+"10x 3' v3_lung parenchyma_plasma cell" "p3" 0.0550234280321362 0 "EFO:0009922_UBERON:0008946_CL:0000786"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "p1" 0.0377824405202438 -5.10922071804307e-06 "EFO:0009899_UBERON:0008946_CL:2000093"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "mean1" 0.0116204977497595 2.34816554101275e-05 "EFO:0009899_UBERON:0008946_CL:2000093"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "mean2" 0.191069929632263 0.00076034606838211 "EFO:0009899_UBERON:0008946_CL:2000093"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "sd1" 0.0391939705663865 2.76981504278886e-05 "EFO:0009899_UBERON:0008946_CL:2000093"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "sd2" 0.857449911796831 0.00099261871606778 "EFO:0009899_UBERON:0008946_CL:2000093"
+"10x 3' v2_lung parenchyma_bronchus fibroblast of lung" "p3" 0.0562701182779295 0 "EFO:0009899_UBERON:0008946_CL:2000093"
+
+

@@ -1,0 +1,808 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"33561_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000583" "10x 3' v2_lung parenchyma_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"10458_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000623" "10x 3' v2_lung parenchyma_natural killer cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5368_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000583" "10x 3' v2_respiratory airway_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2785_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002543" "10x 3' v2_lung parenchyma_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8624_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000625" "10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4072_5_3_47" "EFO:0011025_UBERON:0008946_CL:1001568" "10x 5' v1_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"12611_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000625" "10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1225_5_3_47" "EFO:0009899_UBERON:0001005_CL:2000093" "10x 3' v2_respiratory airway_bronchus fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8685_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000624" "10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"16754_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000583" "10x 5' v1_lung parenchyma_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6450_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000624" "10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"7972_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002063" "10x 3' v3_lung parenchyma_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1838_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002062" "10x 3' v2_lung parenchyma_type I pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"373_5_3_47" "EFO:0009899_UBERON:0000004_CL:0002145" "10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"450_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000786" "10x 5' v1_lung parenchyma_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"10855_5_3_47" "EFO:0009899_UBERON:0000004_CL:0002480" "10x 3' v2_nose_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"9411_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000158" "10x 3' v2_respiratory airway_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5183_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000624" "10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"20419_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002063" "10x 5' v1_lung parenchyma_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"155_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000192" "10x 3' v2_lung parenchyma_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5141_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000860" "10x 5' v1_lung parenchyma_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2766_5_3_47" "EFO:0009922_UBERON:0001005_CL:0002145" "10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"11696_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000861" "10x 5' v1_lung parenchyma_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"7694_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000158" "10x 5' v2_nose_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"17682_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002145" "10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5874_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000625" "10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1345_5_3_47" "EFO:0009899_UBERON:0001005_CL:0019001" "10x 3' v2_respiratory airway_tracheobronchial serous cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"139_5_3_47" "EFO:0009899_UBERON:0000004_CL:0002543" "10x 3' v2_nose_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5044_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000875" "10x 5' v1_lung parenchyma_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"9783_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000861" "10x 3' v2_lung parenchyma_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4137_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000623" "10x 5' v1_lung parenchyma_natural killer cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5392_5_3_47" "EFO:0011025_UBERON:0000004_CL:0002480" "10x 5' v1_nose_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"12253_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000158" "10x 3' v2_nose_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"7400_5_3_47" "EFO:0009899_UBERON:0008946_CL:4028002" "10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"353_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002633" "10x 3' v2_lung parenchyma_respiratory basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1048_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000875" "10x 3' v3_lung parenchyma_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1116_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002480" "10x 3' v2_respiratory airway_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"895_5_3_47" "EFO:0009900_UBERON:0008946_CL:0000860" "10x 5' v2_lung parenchyma_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1719_5_3_47" "EFO:0009899_UBERON:0001005_CL:4028002" "10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"396_5_3_47" "EFO:0009922_UBERON:0001005_CL:0002553" "10x 3' v3_respiratory airway_fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4916_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002543" "10x 3' v2_respiratory airway_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"16936_5_3_47" "EFO:0009900_UBERON:0000004_CL:0002480" "10x 5' v2_nose_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1133_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002138" "10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3862_5_3_47" "EFO:0009899_UBERON:0008946_CL:4028003" "10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2146_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000158" "10x 5' v1_lung parenchyma_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1113_5_3_47" "EFO:0009899_UBERON:0008946_CL:0019019" "10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2152_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002145" "10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"443_5_3_47" "EFO:0011025_UBERON:0000004_CL:0002145" "10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"569_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000583" "10x 3' v1_lung parenchyma_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6957_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002553" "10x 3' v3_lung parenchyma_fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3601_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002543" "10x 5' v1_lung parenchyma_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6931_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002145" "10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1005_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002553" "10x 3' v2_respiratory airway_fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4931_5_3_47" "EFO:0009899_UBERON:0000004_CL:0005012" "10x 3' v2_nose_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3781_5_3_47" "EFO:0009900_UBERON:0000004_CL:0002145" "10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"7091_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000860" "10x 3' v2_lung parenchyma_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"420_5_3_47" "EFO:0009899_UBERON:0001005_CL:1000312" "10x 3' v2_respiratory airway_bronchial goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5496_5_3_47" "EFO:0011025_UBERON:0008946_CL:4028002" "10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1503_5_3_47" "EFO:0009900_UBERON:0008946_CL:0000861" "10x 5' v2_lung parenchyma_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1459_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002543" "10x 3' v3_lung parenchyma_vein endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2047_5_3_47" "EFO:0009899_UBERON:0008946_CL:1001568" "10x 3' v2_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4774_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002553" "10x 3' v2_lung parenchyma_fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"993_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002145" "10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_5_3_47" "EFO:0009899_UBERON:0001005_CL:1000223" "10x 3' v2_respiratory airway_lung neuroendocrine cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"88_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000625" "10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1650_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000860" "10x 3' v2_respiratory airway_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"5682_5_3_47" "EFO:0011025_UBERON:0000004_CL:0000158" "10x 5' v1_nose_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2373_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002138" "10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"436_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000860" "10x 3' v3_respiratory airway_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2119_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000860" "10x 3' v3_lung parenchyma_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"97_5_3_47" "EFO:0009900_UBERON:0008946_CL:0002399" "10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1842_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000082" "10x 5' v1_lung parenchyma_epithelial cell of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"163_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000990" "10x 3' v2_lung parenchyma_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"115_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000186" "10x 3' v2_respiratory airway_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1129_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002062" "10x 3' v3_lung parenchyma_type I pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2028_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000623" "10x 3' v2_respiratory airway_natural killer cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"208_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000860" "10x 3' v1_lung parenchyma_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"909_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000236" "10x 3' v3_respiratory airway_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3738_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000097" "10x 3' v2_lung parenchyma_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2173_5_3_47" "EFO:0009922_UBERON:0008946_CL:1001603" "10x 3' v3_lung parenchyma_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2062_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000875" "10x 3' v2_lung parenchyma_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"4406_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002062" "10x 5' v1_lung parenchyma_type I pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1266_5_3_47" "EFO:0009899_UBERON:0008946_CL:1001603" "10x 3' v2_lung parenchyma_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1780_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000861" "10x 3' v3_respiratory airway_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1038_5_3_47" "EFO:0009899_UBERON:0000004_CL:0002633" "10x 3' v2_nose_respiratory basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"186_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000319" "10x 3' v2_nose_mucus secreting cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"320_5_3_47" "EFO:0011025_UBERON:0000004_CL:0000625" "10x 5' v1_nose_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"66_5_3_47" "EFO:0009922_UBERON:0008946_CL:2000093" "10x 3' v3_lung parenchyma_bronchus fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"944_5_3_47" "EFO:0009899_UBERON:0001005_CL:0019003" "10x 3' v2_respiratory airway_tracheobronchial goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1172_5_3_47" "EFO:0009922_UBERON:0001005_CL:1000312" "10x 3' v3_respiratory airway_bronchial goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"115_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000624" "10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1276_5_3_47" "EFO:0009899_UBERON:0001005_CL:4028003" "10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1021_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000236" "10x 3' v2_respiratory airway_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2394_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000861" "10x 3' v3_lung parenchyma_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000990" "10x 5' v1_lung parenchyma_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000625" "10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3192_5_3_47" "EFO:0009899_UBERON:0008946_CL:0002399" "10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1864_5_3_47" "EFO:0011025_UBERON:0008946_CL:4028003" "10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2335_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002399" "10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1420_5_3_47" "EFO:0009922_UBERON:0001005_CL:0002480" "10x 3' v3_respiratory airway_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"697_5_3_47" "EFO:0009922_UBERON:0008946_CL:1001568" "10x 3' v3_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"924_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000669" "10x 3' v3_lung parenchyma_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2309_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002553" "10x 5' v1_lung parenchyma_fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1680_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000097" "10x 3' v2_respiratory airway_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"207_5_3_47" "EFO:0009900_UBERON:0008946_CL:0000875" "10x 5' v2_lung parenchyma_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"845_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000669" "10x 3' v2_lung parenchyma_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"227_5_3_47" "EFO:0009901_UBERON:0008946_CL:0002063" "10x 3' v1_lung parenchyma_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"796_5_3_47" "EFO:0009900_UBERON:0000004_CL:0002399" "10x 5' v2_nose_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1528_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000236" "10x 3' v2_lung parenchyma_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"822_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002138" "10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1712_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002399" "10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1046_5_3_47" "EFO:0009899_UBERON:0001005_CL:0019019" "10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"456_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000622" "10x 3' v3_respiratory airway_acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"574_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000158" "10x 3' v2_lung parenchyma_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1068_5_3_47" "EFO:0011025_UBERON:0008946_CL:1001603" "10x 5' v1_lung parenchyma_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"516_5_3_47" "EFO:0009899_UBERON:0001005_CL:1001568" "10x 3' v2_respiratory airway_pulmonary artery endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1972_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002063" "10x 3' v2_respiratory airway_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"200_5_3_47" "EFO:0009899_UBERON:0000004_CL:0002399" "10x 3' v2_nose_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"163_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000077" "10x 5' v1_lung parenchyma_mesothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1460_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000313" "10x 3' v2_nose_serous secreting cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_5_3_47" "EFO:0009900_UBERON:0008946_CL:1001603" "10x 5' v2_lung parenchyma_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"578_5_3_47" "EFO:0009900_UBERON:0008946_CL:0002063" "10x 5' v2_lung parenchyma_type II pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2453_5_3_47" "EFO:0009900_UBERON:0000004_CL:0002633" "10x 5' v2_nose_respiratory basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1407_5_3_47" "EFO:0009922_UBERON:0008946_CL:4028002" "10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"164_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000186" "10x 3' v3_lung parenchyma_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"150_5_3_47" "EFO:0011025_UBERON:0008946_CL:2000093" "10x 5' v1_lung parenchyma_bronchus fibroblast of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"58_5_3_47" "EFO:0009899_UBERON:0000004_CL:0005006" "10x 3' v2_nose_ionocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"523_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002062" "10x 3' v2_respiratory airway_type I pneumocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"593_5_3_47" "EFO:0009922_UBERON:0008946_CL:0002399" "10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"419_5_3_47" "EFO:0009899_UBERON:0001005_CL:0005012" "10x 3' v2_respiratory airway_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"367_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000625" "10x 5' v2_nose_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"823_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000097" "10x 5' v1_lung parenchyma_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"274_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000624" "10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"618_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000236" "10x 5' v1_lung parenchyma_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"277_5_3_47" "EFO:0009922_UBERON:0008946_CL:0019019" "10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"295_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000192" "10x 3' v3_lung parenchyma_smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"681_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000861" "10x 3' v1_lung parenchyma_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"229_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002138" "10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"250_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000158" "10x 3' v3_respiratory airway_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_5_3_47" "EFO:0009922_UBERON:0001005_CL:0002075" "10x 3' v3_respiratory airway_brush cell of trachebronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"763_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000625" "10x 3' v2_nose_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"57_5_3_47" "EFO:0011025_UBERON:0008946_CL:1000312" "10x 5' v1_lung parenchyma_bronchial goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"131_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000784" "10x 3' v2_respiratory airway_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"527_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000082" "10x 3' v3_lung parenchyma_epithelial cell of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"299_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000084" "10x 5' v1_lung parenchyma_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"513_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000786" "10x 3' v2_respiratory airway_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"722_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000786" "10x 3' v2_lung parenchyma_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"216_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000057" "10x 3' v2_lung parenchyma_fibroblast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1129_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000082" "10x 3' v2_lung parenchyma_epithelial cell of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"534_5_3_47" "EFO:0011025_UBERON:0008946_CL:0019019" "10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"263_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002633" "10x 5' v1_lung parenchyma_respiratory basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"784_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000669" "10x 3' v2_respiratory airway_pericyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"86_5_3_47" "EFO:0009922_UBERON:0001005_CL:1001603" "10x 3' v3_respiratory airway_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"117_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000860" "10x 5' v2_nose_classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"441_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000082" "10x 3' v2_respiratory airway_epithelial cell of lung"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"215_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000784" "10x 5' v2_nose_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"314_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000186" "10x 3' v2_lung parenchyma_myofibroblast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"328_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000625" "10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"247_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000622" "10x 3' v2_nose_acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"74_5_3_47" "EFO:0009922_UBERON:0001005_CL:0005012" "10x 3' v3_respiratory airway_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_5_3_47" "EFO:0011025_UBERON:0000004_CL:0002399" "10x 5' v1_nose_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"337_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000861" "10x 3' v2_respiratory airway_elicited macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"81_5_3_47" "EFO:0009922_UBERON:0001005_CL:0000875" "10x 3' v3_respiratory airway_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"168_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000624" "10x 5' v2_nose_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"131_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000097" "10x 5' v2_nose_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_5_3_47" "EFO:0009922_UBERON:0001005_CL:0019001" "10x 3' v3_respiratory airway_tracheobronchial serous cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"85_5_3_47" "EFO:0009899_UBERON:0001005_CL:0002075" "10x 3' v2_respiratory airway_brush cell of trachebronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"336_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000319" "10x 3' v2_respiratory airway_mucus secreting cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"249_5_3_47" "EFO:0009899_UBERON:0001005_CL:0005006" "10x 3' v2_respiratory airway_ionocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"327_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000875" "10x 3' v2_respiratory airway_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"58_5_3_47" "EFO:0009899_UBERON:0000004_CL:0000624" "10x 3' v2_nose_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"85_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000084" "10x 3' v2_lung parenchyma_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"552_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000622" "10x 3' v2_respiratory airway_acinar cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"90_5_3_47" "EFO:0009900_UBERON:0000004_CL:0000236" "10x 5' v2_nose_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"138_5_3_47" "EFO:0009922_UBERON:0001005_CL:0005006" "10x 3' v3_respiratory airway_ionocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"54_5_3_47" "EFO:0009901_UBERON:0008946_CL:0000875" "10x 3' v1_lung parenchyma_non-classical monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"196_5_3_47" "EFO:0011025_UBERON:0008946_CL:0005012" "10x 5' v1_lung parenchyma_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"92_5_3_47" "EFO:0009922_UBERON:0001005_CL:0002399" "10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"214_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000236" "10x 3' v3_lung parenchyma_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"161_5_3_47" "EFO:0009900_UBERON:0008946_CL:0000583" "10x 5' v2_lung parenchyma_alveolar macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"79_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000451" "10x 5' v1_lung parenchyma_dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"161_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000451" "10x 3' v2_lung parenchyma_dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"93_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000084" "10x 3' v2_respiratory airway_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"100_5_3_47" "EFO:0009899_UBERON:0001005_CL:1001603" "10x 3' v2_respiratory airway_lung macrophage"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"73_5_3_47" "EFO:0009900_UBERON:0000004_CL:0005006" "10x 5' v2_nose_ionocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"139_5_3_47" "EFO:0009900_UBERON:0000004_CL:0005012" "10x 5' v2_nose_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"90_5_3_47" "EFO:0009900_UBERON:0008946_CL:0000097" "10x 5' v2_lung parenchyma_mast cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"160_5_3_47" "EFO:0011025_UBERON:0000004_CL:0002633" "10x 5' v1_nose_respiratory basal cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"56_5_3_47" "EFO:0011025_UBERON:0000004_CL:0000236" "10x 5' v1_nose_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"288_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000624" "10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"113_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000784" "10x 3' v2_lung parenchyma_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"51_5_3_47" "EFO:0009899_UBERON:0001005_CL:0000990" "10x 3' v2_respiratory airway_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"67_5_3_47" "EFO:0009922_UBERON:0001005_CL:1000223" "10x 3' v3_respiratory airway_lung neuroendocrine cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_5_3_47" "EFO:0011025_UBERON:0000004_CL:0000624" "10x 5' v1_nose_CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"65_5_3_47" "EFO:0009899_UBERON:0008946_CL:0000077" "10x 3' v2_lung parenchyma_mesothelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"62_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000158" "10x 3' v3_lung parenchyma_club cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"59_5_3_47" "EFO:0009900_UBERON:0008946_CL:0002145" "10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"53_5_3_47" "EFO:0011025_UBERON:0008946_CL:0000784" "10x 5' v1_lung parenchyma_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"87_5_3_47" "EFO:0011025_UBERON:0000004_CL:0005012" "10x 5' v1_nose_multi-ciliated epithelial cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"88_5_3_47" "EFO:0011025_UBERON:0008946_CL:0002480" "10x 5' v1_lung parenchyma_nasal mucosa goblet cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"75_5_3_47" "EFO:0009922_UBERON:0008946_CL:0000786" "10x 3' v3_lung parenchyma_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"72_5_3_47" "EFO:0009899_UBERON:0008946_CL:2000093" "10x 3' v2_lung parenchyma_bronchus fibroblast of lung"
+
+

@@ -1,0 +1,808 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00986889407851281 1 0.00986889407851281 24 33561 33561 0 33561 20461 "10x 3' v2_lung parenchyma_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00364741234867729 0.99318624325996 0.0038268151911801 20 10458 10458 0 10458 16520 "10x 3' v2_lung parenchyma_natural killer cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000781722120224221 0.999905197972619 0.000782660363912645 16 5368 5368 0 5368 17726 "10x 3' v2_respiratory airway_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00665506321833908 0.972077376433681 0.00688224652556904 22 2785 2785 0 2785 15852 "10x 3' v2_lung parenchyma_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00365419647012618 0.989554551043412 0.00383884372721804 20 8624 8624 0 8624 16400 "10x 3' v2_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0380152660876827 0.964576546441472 0.0385148324060296 31 4072 4072 0 4072 15582 "10x 5' v1_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00651910408288583 0.998332034023936 0.00660006730297599 22 12611 12611 0 12611 16864 "10x 3' v2_respiratory airway_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0037875217367461 0.918500212570541 0.00407522071322891 20 1225 1225 0 1225 14302 "10x 3' v2_respiratory airway_bronchus fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00853433990859885 0.987919428797755 0.00874947307760804 23 8685 8685 0 8685 16349 "10x 3' v2_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.032318305318796 0.999998915265185 0.0323187851365219 30 16754 16754 0 16754 18024 "10x 5' v1_lung parenchyma_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0380144681756794 0.958813811481836 0.0383364062988391 31 6450 6450 0 6450 15402 "10x 5' v1_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999993044935311 NA 2 7972 7972 0 7972 18491 "10x 3' v3_lung parenchyma_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00678523598096653 0.914491343686687 0.00706639184913802 22 1838 1838 0 1838 14197 "10x 3' v2_lung parenchyma_type I pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.10052244607261e-05 0.733540306219327 0.000233500680348453 10 373 373 0 373 10734 "10x 3' v2_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0164825429283389 0.831341046719216 0.0172412758099374 26 450 450 0 450 12439 "10x 5' v1_lung parenchyma_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 9.15346337632115e-05 1 9.15346337632115e-05 12 10855 10855 0 10855 20300 "10x 3' v2_nose_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0226228369498024 1 0.0226228369498024 28 9411 9411 0 9411 19774 "10x 3' v2_respiratory airway_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00503958671761049 0.965932492514505 0.00520950485639233 21 5183 5183 0 5183 15635 "10x 3' v2_respiratory airway_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0586198357777433 1 0.0586198357777433 35 20419 20419 0 20419 19455 "10x 5' v1_lung parenchyma_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.7240359298082 NA 9 155 155 0 155 10582 "10x 3' v2_lung parenchyma_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0487936932613948 0.959066981205609 0.0492280233875616 33 5141 5141 0 5141 15409 "10x 5' v1_lung parenchyma_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.46900425761882e-05 1 1.46900425761882e-05 9 2766 2766 0 2766 19816 "10x 3' v3_respiratory airway_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0543662031096555 0.999707982626673 0.0545095730947667 34 11696 11696 0 11696 17332 "10x 5' v1_lung parenchyma_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 3.77107998844246e-06 0.999432771218591 2.38754025836755e-05 5 7694 7694 0 7694 17297 "10x 5' v2_nose_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0216333801751223 1 0.0216333801751223 28 17682 17682 0 17682 21985 "10x 3' v2_respiratory airway_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0330506355216336 0.968951135251849 0.033518593978733 30 5874 5874 0 5874 15738 "10x 5' v1_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00192997816999622 0.865764577141551 0.00217224402064185 18 1345 1345 0 1345 13153 "10x 3' v2_respiratory airway_tracheobronchial serous cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000126404939613037 0.446313397356678 0.00816577767904482 4 139 139 0 139 6554 "10x 3' v2_nose_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0487500909031951 0.976930938981505 0.0491650344146929 33 5044 5044 0 5044 16022 "10x 5' v1_lung parenchyma_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0106349193659865 0.99985601228832 0.0106561585595642 24 9783 9783 0 9783 17622 "10x 3' v2_lung parenchyma_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0203528746649552 0.925423874538098 0.0208498614447651 27 4137 4137 0 4137 14467 "10x 5' v1_lung parenchyma_natural killer cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.99136996531576 NA 2 5392 5392 0 5392 16586 "10x 5' v1_nose_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 9.18381278427679e-05 1 9.18381278427679e-05 12 12253 12253 0 12253 20226 "10x 3' v2_nose_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00365737806139359 0.987034345174463 0.00380860817325599 20 7400 7400 0 7400 16323 "10x 3' v2_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00276361293609249 0.860611936668339 0.00312008627487243 19 353 353 0 353 13042 "10x 3' v2_lung parenchyma_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.820436950727085 NA 2 1048 1048 0 1048 12240 "10x 3' v3_lung parenchyma_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0240717650888841 0.982940472403623 0.0245023931639325 28 1116 1116 0 1116 16202 "10x 3' v2_respiratory airway_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.760232212210818 NA 3 895 895 0 895 11162 "10x 5' v2_lung parenchyma_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000207461631549058 0.894397613961212 0.000273286923561496 13 1719 1719 0 1719 13780 "10x 3' v2_respiratory airway_alveolar capillary type 1 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.986812561096544 NA 1 396 396 0 396 16546 "10x 3' v3_respiratory airway_fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00845572587544909 0.998797716378289 0.00854811914447648 23 4916 4916 0 4916 16946 "10x 3' v2_respiratory airway_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.15912890115082e-06 0.99999999999995 1.15912890115104e-06 5 16936 16936 0 16936 19520 "10x 5' v2_nose_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00378121501507513 0.927164915738235 0.00394035610536005 20 1133 1133 0 1133 14523 "10x 3' v2_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000541748675410228 0.95702357095233 0.000561930782654132 15 3862 3862 0 3862 15355 "10x 3' v2_lung parenchyma_alveolar capillary type 2 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0603597395412699 0.943791712050245 0.0613754678791973 35 2146 2146 0 2146 14998 "10x 5' v1_lung parenchyma_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00514489176107882 0.890859918037355 0.00535377799261857 21 1113 1113 0 1113 13708 "10x 3' v2_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00477375761682991 0.999983578302306 0.0047745780942466 21 2152 2152 0 2152 17971 "10x 3' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.796947297999848 NA 2 443 443 0 443 11825 "10x 5' v1_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.704713758988691 NA 2 569 569 0 569 10287 "10x 3' v1_lung parenchyma_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.999999935794626 NA 2 6957 6957 0 6957 19269 "10x 3' v3_lung parenchyma_fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0431621793953272 0.95071459265446 0.0436953275767123 32 3601 3601 0 3601 15178 "10x 5' v1_lung parenchyma_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0473859819884332 1 0.0473859819884332 33 6931 6931 0 6931 18823 "10x 5' v1_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000546220977090333 0.930284192684095 0.000649441277288631 15 1005 1005 0 1005 14617 "10x 3' v2_respiratory airway_fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 5.37903482172586e-05 0.999999999999983 5.37903482172693e-05 11 4931 4931 0 4931 19015 "10x 3' v2_nose_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.6016195720232e-06 0.98702724426754 6.38551288270665e-05 5 3781 3781 0 3781 16356 "10x 5' v2_nose_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0108483047395493 0.992888690544216 0.0112049403992513 24 7091 7091 0 7091 16510 "10x 3' v2_lung parenchyma_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000858996972628554 0.925410372277576 0.000935012563444344 16 420 420 0 420 14479 "10x 3' v2_respiratory airway_bronchial goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0431283714878531 0.941379063459652 0.0438406853969431 32 5496 5496 0 5496 14937 "10x 5' v1_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.860335718343051 NA 3 1503 1503 0 1503 13042 "10x 5' v2_lung parenchyma_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.893242861884569 NA 1 1459 1459 0 1459 13771 "10x 3' v3_lung parenchyma_vein endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00670250281888357 0.960072792888945 0.00688662034100769 22 2047 2047 0 2047 15444 "10x 3' v2_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0104481866676479 0.999999987202765 0.0104481888056804 24 4774 4774 0 4774 18322 "10x 3' v2_lung parenchyma_fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.969309093709291 NA 2 993 993 0 993 15785 "10x 3' v3_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00130427078848292 0.724682802296008 0.00208467475892839 17 73 73 0 73 10593 "10x 3' v2_respiratory airway_lung neuroendocrine cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.322989839903643 NA 2 88 88 0 88 4826 "10x 3' v3_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0027777621774286 0.87932448440331 0.00312130308361382 19 1650 1650 0 1650 13450 "10x 3' v2_respiratory airway_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.982421328497715 NA 2 5682 5682 0 5682 16205 "10x 5' v1_nose_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0284662149525792 0.928269627472194 0.0291861213646179 29 2373 2373 0 2373 14552 "10x 5' v1_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.799463788626139 NA 1 436 436 0 436 11864 "10x 3' v3_respiratory airway_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.855227222835358 NA 2 2119 2119 0 2119 12940 "10x 3' v3_lung parenchyma_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.62563739473843 NA 3 97 97 0 97 9114 "10x 5' v2_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0486276383403993 0.948821016639747 0.0492325436832553 33 1842 1842 0 1842 15128 "10x 5' v1_lung parenchyma_epithelial cell of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00467547010706878 0.682969346538876 0.00564549188368833 21 163 163 0 163 9934 "10x 3' v2_lung parenchyma_conventional dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.65559958315559 NA 5 115 115 0 115 9550 "10x 3' v2_respiratory airway_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.854363703598399 NA 2 1129 1129 0 1129 12927 "10x 3' v3_lung parenchyma_type I pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00132681156008063 0.889585921935258 0.00143163136696003 17 2028 2028 0 2028 13680 "10x 3' v2_respiratory airway_natural killer cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.379667683593334 NA 2 208 208 0 208 5618 "10x 3' v1_lung parenchyma_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.862569530057136 NA 2 909 909 0 909 13100 "10x 3' v3_respiratory airway_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00377843191120593 0.928238919798692 0.00393765722500402 20 3738 3738 0 3738 14554 "10x 3' v2_lung parenchyma_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.890068055850607 NA 2 2173 2173 0 2173 13684 "10x 3' v3_lung parenchyma_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00875033199845961 0.923969518166829 0.00902380049877293 23 2062 2062 0 2062 14430 "10x 3' v2_lung parenchyma_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0432566345517905 0.961731306801623 0.043793218173342 32 4406 4406 0 4406 15490 "10x 5' v1_lung parenchyma_type I pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0110818126311162 0.889681524723407 0.0115802380820734 24 1266 1266 0 1266 13686 "10x 3' v2_lung parenchyma_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.978042182949292 NA 2 1780 1780 0 1780 16068 "10x 3' v3_respiratory airway_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.56606822055647e-05 0.904191841646102 0.000117198783731852 11 1038 1038 0 1038 13989 "10x 3' v2_nose_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.653929304490933 NA 7 186 186 0 186 9515 "10x 3' v2_nose_mucus secreting cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.441802398482871 NA 2 320 320 0 320 6493 "10x 5' v1_nose_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.549629884141101 NA 2 66 66 0 66 8026 "10x 3' v3_lung parenchyma_bronchus fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00132722637725071 0.830879697366769 0.00173686184549446 17 944 944 0 944 12436 "10x 3' v2_respiratory airway_tracheobronchial goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 9.28671267954235e-06 0.985144289013515 5.59873545169479e-05 8 1172 1172 0 1172 16278 "10x 3' v3_respiratory airway_bronchial goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.65239567616318 NA 3 115 115 0 115 9509 "10x 3' v3_respiratory airway_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.862618671415375 NA 2 1276 1276 0 1276 13098 "10x 3' v2_respiratory airway_alveolar capillary type 2 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00276353318866355 0.792332916568975 0.00335377143005076 19 1021 1021 0 1021 11701 "10x 3' v2_respiratory airway_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.928724797338144 NA 2 2394 2394 0 2394 14588 "10x 3' v3_lung parenchyma_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0016224717298566 0.504499003530805 0.00254337298167399 18 72 72 0 72 7370 "10x 5' v1_lung parenchyma_conventional dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000125464469280959 0.660709660659977 0.00596441598408812 4 81 81 0 81 9636 "10x 3' v3_respiratory airway_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0108385441566195 0.994795172328351 0.0110223026298395 24 3192 3192 0 3192 16589 "10x 3' v2_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0235980521828592 0.849571333434009 0.0247039160120765 28 1864 1864 0 1864 12818 "10x 5' v1_lung parenchyma_alveolar capillary type 2 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00376387486474009 0.938792021850131 0.00393026881618166 20 2335 2335 0 2335 14860 "10x 3' v2_respiratory airway_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.5294937850509e-05 0.999999999998488 1.52949378507223e-05 9 1420 1420 0 1420 19013 "10x 3' v3_respiratory airway_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.828515022405624 NA 1 697 697 0 697 12425 "10x 3' v3_lung parenchyma_pulmonary artery endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.83984626741458 NA 2 924 924 0 924 12637 "10x 3' v3_lung parenchyma_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0432515701023345 0.957789247166897 0.0438985801342882 32 2309 2309 0 2309 15375 "10x 5' v1_lung parenchyma_fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00513171174262079 0.901218939924669 0.00542455441859703 21 1680 1680 0 1680 13922 "10x 3' v2_respiratory airway_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.618001043730342 NA 3 207 207 0 207 9004 "10x 5' v2_lung parenchyma_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.73434579104918e-05 0.83311152270272 0.000121173166204185 11 845 845 0 845 12479 "10x 3' v2_lung parenchyma_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.550000462348862 NA 2 227 227 0 227 8030 "10x 3' v1_lung parenchyma_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.740231711553426 NA 5 796 796 0 796 10842 "10x 5' v2_nose_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00510833882912298 0.850717200877001 0.00554199245656048 21 1528 1528 0 1528 12839 "10x 3' v2_lung parenchyma_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.838014620365114 NA 2 822 822 0 822 12605 "10x 3' v3_lung parenchyma_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.054118691575019 0.927030072745294 0.0550881908241818 34 1712 1712 0 1712 14513 "10x 5' v1_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00379163693399886 0.911413540292411 0.00403942316179812 20 1046 1046 0 1046 14136 "10x 3' v2_respiratory airway_tracheobronchial smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.76348738623779e-05 0.988397658992964 5.55244194271235e-05 9 456 456 0 456 16384 "10x 3' v3_respiratory airway_acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00192478434857953 0.9147129857433 0.00210726725159099 18 574 574 0 574 14209 "10x 3' v2_lung parenchyma_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0420054201257847 0.870940508312325 0.0434469950171077 32 1068 1068 0 1068 13252 "10x 5' v1_lung parenchyma_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00377810631948223 0.802492414627557 0.00436602216793005 20 516 516 0 516 11884 "10x 3' v2_respiratory airway_pulmonary artery endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 2.64784244339972e-06 0.958827049454316 0.000113714434387306 6 1972 1972 0 1972 15422 "10x 3' v2_respiratory airway_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.506429568568218 NA 11 200 200 0 200 7398 "10x 3' v2_nose_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000124405399992141 0.745857460034599 0.000307586930083284 12 163 163 0 163 10930 "10x 5' v1_lung parenchyma_mesothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.836426421482136 NA 3 1460 1460 0 1460 12555 "10x 3' v2_nose_serous secreting cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.486904532178967 NA 3 74 74 0 74 7127 "10x 5' v2_lung parenchyma_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.818280824492384 NA 3 578 578 0 578 12199 "10x 5' v2_lung parenchyma_type II pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.95989305815638 NA 5 2453 2453 0 2453 15458 "10x 5' v2_nose_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.789027226554116 NA 2 1407 1407 0 1407 11679 "10x 3' v3_lung parenchyma_alveolar capillary type 1 endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.609912674560576 NA 2 164 164 0 164 8895 "10x 3' v3_lung parenchyma_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00483975093870249 0.718719583178263 0.0061851251348124 21 150 150 0 150 10497 "10x 5' v1_lung parenchyma_bronchus fibroblast of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.12566225530262e-05 0.57448685646722 0.000556907567218931 8 58 58 0 58 8379 "10x 3' v2_nose_ionocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.818641505068737 NA 5 523 523 0 523 12200 "10x 3' v2_respiratory airway_type I pneumocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.837278459405219 NA 2 593 593 0 593 12576 "10x 3' v3_lung parenchyma_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0203148844180712 0.962615859382348 0.0207256732968729 27 419 419 0 419 15526 "10x 3' v2_respiratory airway_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.563594109340702 NA 5 367 367 0 367 8222 "10x 5' v2_nose_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.019863077918445 0.84043183507794 0.0210535709180344 27 823 823 0 823 12628 "10x 5' v1_lung parenchyma_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.461913072844471 NA 2 274 274 0 274 6775 "10x 3' v1_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0159013317853846 0.768171724302639 0.0173541770529279 26 618 618 0 618 11280 "10x 5' v1_lung parenchyma_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.701714875665431 NA 2 277 277 0 277 10256 "10x 3' v3_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.839266159349612 NA 2 295 295 0 295 12630 "10x 3' v3_lung parenchyma_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.645759641260258 NA 2 681 681 0 681 9406 "10x 3' v1_lung parenchyma_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.748341850847133 NA 15 229 229 0 229 10968 "10x 3' v2_respiratory airway_endothelial cell of lymphatic vessel"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.95164926382541 NA 9 250 250 0 250 15213 "10x 3' v3_respiratory airway_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 4.30832705394859e-06 0.813933540979634 0.000527137378871171 6 54 54 0 54 12115 "10x 3' v3_respiratory airway_brush cell of trachebronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.753159772791735 NA 7 763 763 0 763 11049 "10x 3' v2_nose_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00271227102833836 0.415531152534532 0.00419294281999814 20 57 57 0 57 6119 "10x 5' v1_lung parenchyma_bronchial goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000796635412963338 0.554275494587011 0.00120157678728418 16 131 131 0 131 8083 "10x 3' v2_respiratory airway_plasmacytoid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.888790376183526 NA 2 527 527 0 527 13669 "10x 3' v3_lung parenchyma_epithelial cell of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00193215090484831 0.805074263433229 0.00224258239979594 18 299 299 0 299 11930 "10x 5' v1_lung parenchyma_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.001923057476484 0.795342333173608 0.00242219047351688 18 513 513 0 513 11757 "10x 3' v2_respiratory airway_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00510455552532359 0.860820887973759 0.00557903575829406 21 722 722 0 722 13045 "10x 3' v2_lung parenchyma_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.82995167502921 NA 9 216 216 0 216 12418 "10x 3' v2_lung parenchyma_fibroblast"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00869848581906861 0.948568263488573 0.00888773498181299 23 1129 1129 0 1129 15123 "10x 3' v2_lung parenchyma_epithelial cell of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0269747700443573 0.804180413799646 0.0291505066921116 29 534 534 0 534 11915 "10x 5' v1_lung parenchyma_tracheobronchial smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0135264233685704 0.831258009423016 0.0146845345584908 25 263 263 0 263 12440 "10x 5' v1_lung parenchyma_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.838516262445471 NA 5 784 784 0 784 12593 "10x 3' v2_respiratory airway_pericyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.707332165450408 NA 1 86 86 0 86 10350 "10x 3' v3_respiratory airway_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000132645258909336 0.23035984475132 0.00810321679221626 4 117 117 0 117 3531 "10x 5' v2_nose_classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.882079835629418 NA 9 441 441 0 441 13510 "10x 3' v2_respiratory airway_epithelial cell of lung"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000105318242717233 0.428702411249806 0.00691751030380698 4 215 215 0 215 6306 "10x 5' v2_nose_plasmacytoid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000567435511993401 0.789438316836151 0.00085495663789647 15 314 314 0 314 11650 "10x 3' v2_lung parenchyma_myofibroblast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.46029304052053 NA 2 328 328 0 328 6753 "10x 3' v1_lung parenchyma_CD8-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000123791850068996 0.741437198397659 0.000328794651608214 12 247 247 0 247 10859 "10x 3' v2_nose_acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.860322124616661 NA 9 74 74 0 74 13043 "10x 3' v3_respiratory airway_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.336941001024034 NA 2 87 87 0 87 5021 "10x 5' v1_nose_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000882052616851228 0.741883649960789 0.00135004397937627 16 337 337 0 337 10866 "10x 3' v2_respiratory airway_elicited macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.606694876253443 NA 1 81 81 0 81 8844 "10x 3' v3_respiratory airway_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00015675399721104 0.362444567056544 0.00885326560148369 4 168 168 0 168 5377 "10x 5' v2_nose_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.469471597764529 NA 3 131 131 0 131 6882 "10x 5' v2_nose_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.40168544982969 NA 3 59 59 0 59 5928 "10x 3' v3_respiratory airway_tracheobronchial serous cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00179319640110594 0.660799832574417 0.00257061886206014 18 85 85 0 85 9612 "10x 3' v2_respiratory airway_brush cell of trachebronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.74586140001201 NA 15 336 336 0 336 10929 "10x 3' v2_respiratory airway_mucus secreting cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0109225245993031 0.83447757062164 0.0120368282304517 24 249 249 0 249 12506 "10x 3' v2_respiratory airway_ionocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00131421451997036 0.728347483340676 0.00183307839745493 17 327 327 0 327 10652 "10x 3' v2_respiratory airway_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.287245872290086 NA 7 58 58 0 58 4326 "10x 3' v2_nose_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.637230332345731 NA 13 85 85 0 85 9274 "10x 3' v2_lung parenchyma_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.0137863261362256 0.937788889349538 0.0141886663379279 25 552 552 0 552 14834 "10x 3' v2_respiratory airway_acinar cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.221602100039708 NA 5 90 90 0 90 3407 "10x 5' v2_nose_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.877625147438826 NA 9 138 138 0 138 13413 "10x 3' v3_respiratory airway_ionocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.235932555296386 NA 2 54 54 0 54 3606 "10x 3' v1_lung parenchyma_non-classical monocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00193388573585162 0.833750103514388 0.00229203914240469 18 196 196 0 196 12493 "10x 5' v1_lung parenchyma_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.734339137233973 NA 1 92 92 0 92 10783 "10x 3' v3_respiratory airway_CD1c-positive myeloid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.589719065186825 NA 2 214 214 0 214 8598 "10x 3' v3_lung parenchyma_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.63152784927617 NA 3 161 161 0 161 9198 "10x 5' v2_lung parenchyma_alveolar macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00112878821622175 0.506351673764909 0.00207470051736843 17 79 79 0 79 7396 "10x 5' v1_lung parenchyma_dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000334798741152048 0.641066782009338 0.000791181547559207 14 161 161 0 161 9328 "10x 3' v2_lung parenchyma_dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000116711542748152 0.542220525552504 0.000284617001289328 12 93 93 0 93 7908 "10x 3' v2_respiratory airway_T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.462609346674491 NA 13 100 100 0 100 6783 "10x 3' v2_respiratory airway_lung macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.352239682133487 NA 3 73 73 0 73 5235 "10x 5' v2_nose_ionocyte"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.68978952852841 NA 5 139 139 0 139 10061 "10x 5' v2_nose_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.292545222324017 NA 3 90 90 0 90 4400 "10x 5' v2_lung parenchyma_mast cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.633843359385314 NA 2 160 160 0 160 9240 "10x 5' v1_nose_respiratory basal cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.123912874044476 NA 2 56 56 0 56 2003 "10x 5' v1_nose_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.641789576474649 NA 2 288 288 0 288 9350 "10x 3' v3_lung parenchyma_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.584559965555592 NA 9 113 113 0 113 8528 "10x 3' v2_lung parenchyma_plasmacytoid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.47327184975495 NA 9 51 51 0 51 6933 "10x 3' v2_respiratory airway_conventional dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.880352512584511 NA 9 67 67 0 67 13472 "10x 3' v3_respiratory airway_lung neuroendocrine cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.137611855900319 NA 2 59 59 0 59 2203 "10x 5' v1_nose_CD4-positive, alpha-beta T cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 1.16608979286757e-05 0.695718362762479 0.000510273884415279 8 65 65 0 65 10142 "10x 3' v2_lung parenchyma_mesothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.587974237842417 NA 2 62 62 0 62 8576 "10x 3' v3_lung parenchyma_club cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.528064012524652 NA 3 59 59 0 59 7715 "10x 5' v2_lung parenchyma_ciliated columnar cell of tracheobronchial tree"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 6.2421519503026e-05 0.408159049135785 0.000351133185487813 11 53 53 0 53 6016 "10x 5' v1_lung parenchyma_plasmacytoid dendritic cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.601799010856407 NA 2 87 87 0 87 8778 "10x 5' v1_nose_multi-ciliated epithelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00294766412859689 0.472365631041912 0.00484748862255115 20 88 88 0 88 6920 "10x 5' v1_lung parenchyma_nasal mucosa goblet cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.621175803343658 NA 2 75 75 0 75 9057 "10x 3' v3_lung parenchyma_plasma cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.621246712632368 NA 13 72 72 0 72 9051 "10x 3' v2_lung parenchyma_bronchus fibroblast of lung"
+
+
