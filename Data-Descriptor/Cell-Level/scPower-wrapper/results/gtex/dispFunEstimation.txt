@@ -1,0 +1,248 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_slow muscle cell" 1.85072798433902 0.2109492347737
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" 0.863271657147469 0.0649217821252292
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" 2.69647429884681 0.124161408751455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" 0.902316560715411 0.0609013886665126
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_fast muscle cell" 0.695352897627997 0.134156614041113
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_gastrocnemius_neutrophil" 0.652523311190756 0.521038588225731
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" 0.875313852724881 0.0870518446195574
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_breast_subcutaneous fat cell" 0.429729540922529 0.11416351489117
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_breast_macrophage" 0.759535405324017 0.236021372966851
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_breast_endothelial cell of vascular tree" 0.928215899628122 0.191796208394753
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_squamous epithelial cell" 1.74596901002661 0.154110508639822
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_basal cell" 1.2700448525309 0.113195363667492
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" 0.699850963485216 0.155830914352895
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" 0.783961432839607 0.106638334518737
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" 1.4709187351661 0.079450172534608
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_glandular epithelial cell" 1.22612469510473 0.193259524646422
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_fibroblast" 0.676689333031064 0.107496209041412
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" 0.487154291120306 0.126979484515035
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_contractile cell" 0.795245845306924 0.170187240317055
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_macrophage" 0.457851832060031 0.1463093011922
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_mucosa_T cell" 0.304524303335283 0.120586747992029
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" 1.31319255986079 0.0951686825535244
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" 0.847913126810487 0.0662406632944336
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" 2.05078990624216 0.117916077359036
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" 0.881300213275535 0.150348717252109
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" 0.97167548670963 0.0677725460630773
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" 0.350339494688778 0.118107772388433
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" 0.473320202494833 0.202474456057467
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" 0.532288155331812 0.245679876581742
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" 1.50303362739816 0.0812689292059128
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" 0.924896789071761 0.0723441013695335
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" 1.00211683438309 0.0628759585932182
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" 0.569688867139108 0.104762201147467
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_macrophage" 0.259664205644525 0.0915624650483435
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" 1.08983911370014 0.254851495243564
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" 0.482191183129352 0.0941079125318685
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_T cell" 0.385198814089047 0.218608186768173
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" 0.811603933660207 0.27012394602753
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" 1.1686268904141 0.215450629795109
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" 0.897982950179409 0.0321963588531183
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_respiratory basal cell" 0.840360022532758 0.121186462635923
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_alveolar macrophage" 1.43565527976187 0.0580374403850453
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" 0.610639331964784 0.153359656096695
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_macrophage" 0.757750130485436 0.147170605816886
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" 0.664913695091726 0.0877099760060835
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_fibroblast" 0.733299841672463 0.108868129274345
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" 0.509200284909707 0.181700765119483
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_lingula of left lung_B cell" 0.716850381791471 0.466206790098729
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" 1.90189103245989 0.0946757565730587
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_epithelial cell of prostate" 1.41813254978163 0.0956657437683989
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" 1.73324431447314 0.0707042953046019
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" 1.41207429735355 0.128960756960684
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_skin fibroblast" 1.36079146734313 0.138082309515053
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" 1.14196254369871 0.103031544482366
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_macrophage" 1.1189683484336 0.190539990550371
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" 0.811508041745329 0.211545365551428
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" 1.03326163850383 0.25715807843314
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_basal cell of epidermis" 0.538922817410813 0.105671459334418
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_sebaceous gland cell" 1.32649085576239 0.279356613644672
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_keratinocyte" 1.04587409873207 0.194447001207979
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_skin fibroblast" 0.384470453192822 0.170469964072861
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v2_skin of leg_subcutaneous fat cell" 0.662308905195693 0.526078085070492
+
+

@@ -1,0 +1,558 @@
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_slow muscle cell" "p1" 0.0391499706240074 -2.58954736709928e-05 "EFO:0009899_UBERON:0001388_CL:0000189"
+"10x 3' v2_gastrocnemius_slow muscle cell" "mean1" 0.00228462016668773 2.36035007850915e-05 "EFO:0009899_UBERON:0001388_CL:0000189"
+"10x 3' v2_gastrocnemius_slow muscle cell" "mean2" -0.0134393533576855 0.000554313600258965 "EFO:0009899_UBERON:0001388_CL:0000189"
+"10x 3' v2_gastrocnemius_slow muscle cell" "sd1" 0.00705587937909032 3.24831533151093e-05 "EFO:0009899_UBERON:0001388_CL:0000189"
+"10x 3' v2_gastrocnemius_slow muscle cell" "sd2" 0.103238070421155 0.0007453042407571 "EFO:0009899_UBERON:0001388_CL:0000189"
+"10x 3' v2_gastrocnemius_slow muscle cell" "p3" 0.0542603707911162 0 "EFO:0009899_UBERON:0001388_CL:0000189"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "p1" 0.0130687689269834 -1.09878224415427e-05 "EFO:0009899_UBERON:0001388_CL:0008002"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "mean1" 0.000660194872811761 1.29501947202531e-05 "EFO:0009899_UBERON:0001388_CL:0008002"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "mean2" 0.00487120845845446 0.000422097946514329 "EFO:0009899_UBERON:0001388_CL:0008002"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "sd1" 0.00191713208941692 2.12696723928491e-05 "EFO:0009899_UBERON:0001388_CL:0008002"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "sd2" 0.0330968590070009 0.000567563864478954 "EFO:0009899_UBERON:0001388_CL:0008002"
+"10x 3' v2_gastrocnemius_skeletal muscle fiber" "p3" 0.0603690128303686 0 "EFO:0009899_UBERON:0001388_CL:0008002"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "p1" 0.0365185988612094 -3.72455786252576e-05 "EFO:0009899_UBERON:0001388_CL:0002139"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "mean1" 0.00123993602471363 2.29594790870609e-05 "EFO:0009899_UBERON:0001388_CL:0002139"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "mean2" 0.00189245227200108 0.000430305000047437 "EFO:0009899_UBERON:0001388_CL:0002139"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "sd1" 0.00348538491201627 3.04773674739057e-05 "EFO:0009899_UBERON:0001388_CL:0002139"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "sd2" 0.0343536341382585 0.0004468324633001 "EFO:0009899_UBERON:0001388_CL:0002139"
+"10x 3' v2_gastrocnemius_endothelial cell of vascular tree" "p3" 0.0580542010520383 0 "EFO:0009899_UBERON:0001388_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "p1" 0.0206281751778938 -2.27260146419482e-05 "EFO:0009899_UBERON:0001388_CL:0011027"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "mean1" 0.000647532999590004 2.13673365858147e-05 "EFO:0009899_UBERON:0001388_CL:0011027"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "mean2" -0.00437936991990925 0.000385808516995298 "EFO:0009899_UBERON:0001388_CL:0011027"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "sd1" 0.00184406970531058 3.2245101793224e-05 "EFO:0009899_UBERON:0001388_CL:0011027"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "sd2" 0.0203963439975975 0.000528879648471383 "EFO:0009899_UBERON:0001388_CL:0011027"
+"10x 3' v2_gastrocnemius_skeletal muscle fibroblast" "p3" 0.0534713509831123 0 "EFO:0009899_UBERON:0001388_CL:0011027"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_fast muscle cell" "p1" 0.0352662424428862 -3.93762510493834e-05 "EFO:0009899_UBERON:0001388_CL:0000190"
+"10x 3' v2_gastrocnemius_fast muscle cell" "mean1" 0.0013101298790392 1.72524499086259e-05 "EFO:0009899_UBERON:0001388_CL:0000190"
+"10x 3' v2_gastrocnemius_fast muscle cell" "mean2" 0.0102717325815326 0.00048931152699049 "EFO:0009899_UBERON:0001388_CL:0000190"
+"10x 3' v2_gastrocnemius_fast muscle cell" "sd1" 0.00374763430166712 2.25469258474481e-05 "EFO:0009899_UBERON:0001388_CL:0000190"
+"10x 3' v2_gastrocnemius_fast muscle cell" "sd2" 0.062934356001246 0.000590518325457354 "EFO:0009899_UBERON:0001388_CL:0000190"
+"10x 3' v2_gastrocnemius_fast muscle cell" "p3" 0.0612032263934552 0 "EFO:0009899_UBERON:0001388_CL:0000190"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_gastrocnemius_neutrophil" "p1" 0.121084622914188 -0.000161954582543788 "EFO:0009899_UBERON:0001388_CL:0000775"
+"10x 3' v2_gastrocnemius_neutrophil" "mean1" 0.00264759737114841 6.59527563210205e-05 "EFO:0009899_UBERON:0001388_CL:0000775"
+"10x 3' v2_gastrocnemius_neutrophil" "mean2" 0.0161388552604947 0.000605452723463064 "EFO:0009899_UBERON:0001388_CL:0000775"
+"10x 3' v2_gastrocnemius_neutrophil" "sd1" -0.0159520574468287 0.000102916342025757 "EFO:0009899_UBERON:0001388_CL:0000775"
+"10x 3' v2_gastrocnemius_neutrophil" "sd2" -0.189908068030434 0.00115739510759358 "EFO:0009899_UBERON:0001388_CL:0000775"
+"10x 3' v2_gastrocnemius_neutrophil" "p3" 0.0737512634053906 0 "EFO:0009899_UBERON:0001388_CL:0000775"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "p1" 0.0192126889334775 -2.16832131757994e-05 "EFO:0009899_UBERON:0000310_CL:0002326"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "mean1" 0.00102567454049108 2.40267972665377e-05 "EFO:0009899_UBERON:0000310_CL:0002326"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "mean2" -0.0122719542660953 0.000316639607795307 "EFO:0009899_UBERON:0000310_CL:0002326"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "sd1" 0.00277725567895038 3.62381161612887e-05 "EFO:0009899_UBERON:0000310_CL:0002326"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "sd2" 0.0188988929349394 0.00036980828984056 "EFO:0009899_UBERON:0000310_CL:0002326"
+"10x 3' v2_breast_luminal epithelial cell of mammary gland" "p3" 0.0527977275685064 0 "EFO:0009899_UBERON:0000310_CL:0002326"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_breast_subcutaneous fat cell" "p1" 0.0307770568183618 -2.62690892053917e-05 "EFO:0009899_UBERON:0000310_CL:0002521"
+"10x 3' v2_breast_subcutaneous fat cell" "mean1" 0.00184484363755098 2.22987590447966e-05 "EFO:0009899_UBERON:0000310_CL:0002521"
+"10x 3' v2_breast_subcutaneous fat cell" "mean2" -0.0125559230488647 0.000438375912852149 "EFO:0009899_UBERON:0000310_CL:0002521"
+"10x 3' v2_breast_subcutaneous fat cell" "sd1" 0.00551654781523593 3.24570698025882e-05 "EFO:0009899_UBERON:0000310_CL:0002521"
+"10x 3' v2_breast_subcutaneous fat cell" "sd2" 0.0554838893783558 0.000478194253774013 "EFO:0009899_UBERON:0000310_CL:0002521"
+"10x 3' v2_breast_subcutaneous fat cell" "p3" 0.0548268896385189 0 "EFO:0009899_UBERON:0000310_CL:0002521"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_breast_macrophage" "p1" 0.0495744481574018 -5.64550223610566e-05 "EFO:0009899_UBERON:0000310_CL:0000235"
+"10x 3' v2_breast_macrophage" "mean1" 0.0038895697596344 3.37728321836833e-05 "EFO:0009899_UBERON:0000310_CL:0000235"
+"10x 3' v2_breast_macrophage" "mean2" -0.0482377772088399 0.000476414694682982 "EFO:0009899_UBERON:0000310_CL:0000235"
+"10x 3' v2_breast_macrophage" "sd1" 0.011959354439148 3.57609667699435e-05 "EFO:0009899_UBERON:0000310_CL:0000235"
+"10x 3' v2_breast_macrophage" "sd2" 0.0715038891533908 0.000341668057970299 "EFO:0009899_UBERON:0000310_CL:0000235"
+"10x 3' v2_breast_macrophage" "p3" 0.0538261426550654 0 "EFO:0009899_UBERON:0000310_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_breast_endothelial cell of vascular tree" "p1" 0.0385194428976554 -4.58261908102535e-05 "EFO:0009899_UBERON:0000310_CL:0002139"
+"10x 3' v2_breast_endothelial cell of vascular tree" "mean1" 0.0019632896999726 2.76466116027234e-05 "EFO:0009899_UBERON:0000310_CL:0002139"
+"10x 3' v2_breast_endothelial cell of vascular tree" "mean2" -0.0164150492521508 0.000430524520274158 "EFO:0009899_UBERON:0000310_CL:0002139"
+"10x 3' v2_breast_endothelial cell of vascular tree" "sd1" 0.00622447350872387 3.40687336706921e-05 "EFO:0009899_UBERON:0000310_CL:0002139"
+"10x 3' v2_breast_endothelial cell of vascular tree" "sd2" 0.0446561907998393 0.000368004828595077 "EFO:0009899_UBERON:0000310_CL:0002139"
+"10x 3' v2_breast_endothelial cell of vascular tree" "p3" 0.0545004980369495 0 "EFO:0009899_UBERON:0000310_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_squamous epithelial cell" "p1" 0.0227060353322622 -8.82936374349057e-06 "EFO:0009899_UBERON:0000344_CL:0000076"
+"10x 3' v2_mucosa_squamous epithelial cell" "mean1" 0.00286499105887617 1.39501116627528e-05 "EFO:0009899_UBERON:0000344_CL:0000076"
+"10x 3' v2_mucosa_squamous epithelial cell" "mean2" 0.0279074588374567 0.000480472469062373 "EFO:0009899_UBERON:0000344_CL:0000076"
+"10x 3' v2_mucosa_squamous epithelial cell" "sd1" 0.00819357825621384 2.22177810527348e-05 "EFO:0009899_UBERON:0000344_CL:0000076"
+"10x 3' v2_mucosa_squamous epithelial cell" "sd2" 0.172727832462256 0.000671461813370775 "EFO:0009899_UBERON:0000344_CL:0000076"
+"10x 3' v2_mucosa_squamous epithelial cell" "p3" 0.0574082519518931 0 "EFO:0009899_UBERON:0000344_CL:0000076"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_basal cell" "p1" 0.0241687671205985 -1.14496702597124e-05 "EFO:0009899_UBERON:0000344_CL:0000646"
+"10x 3' v2_mucosa_basal cell" "mean1" 0.00313919561819531 2.27842370070569e-05 "EFO:0009899_UBERON:0000344_CL:0000646"
+"10x 3' v2_mucosa_basal cell" "mean2" -0.0247106797711445 0.000382841442145785 "EFO:0009899_UBERON:0000344_CL:0000646"
+"10x 3' v2_mucosa_basal cell" "sd1" 0.00898414412768434 3.62043316190632e-05 "EFO:0009899_UBERON:0000344_CL:0000646"
+"10x 3' v2_mucosa_basal cell" "sd2" 0.0825458915544054 0.000516772027464812 "EFO:0009899_UBERON:0000344_CL:0000646"
+"10x 3' v2_mucosa_basal cell" "p3" 0.0528475590631087 0 "EFO:0009899_UBERON:0000344_CL:0000646"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "p1" 0.0276394523319909 -1.56061544100253e-05 "EFO:0009899_UBERON:0000344_CL:0002324"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "mean1" 0.00279229955014053 2.79144650999222e-05 "EFO:0009899_UBERON:0000344_CL:0002324"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "mean2" -0.034851163601583 0.000343635866710469 "EFO:0009899_UBERON:0000344_CL:0002324"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "sd1" 0.0076431523943274 3.9600831175017e-05 "EFO:0009899_UBERON:0000344_CL:0002324"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "sd2" 0.0548180641793047 0.000419959383890408 "EFO:0009899_UBERON:0000344_CL:0002324"
+"10x 3' v2_mucosa_myoepithelial cell of mammary gland" "p3" 0.0517981625172174 0 "EFO:0009899_UBERON:0000344_CL:0002324"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "p1" 0.0245674793641606 -2.28926495913165e-05 "EFO:0009899_UBERON:0000344_CL:0002139"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "mean1" 0.00128941561398002 2.26432219171814e-05 "EFO:0009899_UBERON:0000344_CL:0002139"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "mean2" -0.0107633917560235 0.000382004293978411 "EFO:0009899_UBERON:0000344_CL:0002139"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "sd1" 0.00381453790677294 3.40928327671422e-05 "EFO:0009899_UBERON:0000344_CL:0002139"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "sd2" 0.0316453883033646 0.000357739470620527 "EFO:0009899_UBERON:0000344_CL:0002139"
+"10x 3' v2_mucosa_endothelial cell of vascular tree" "p3" 0.0538178342394577 0 "EFO:0009899_UBERON:0000344_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "p1" 0.0165326712113456 -1.20004648673969e-05 "EFO:0009899_UBERON:0000344_CL:0002329"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "mean1" 0.00151701045211022 2.63551664523059e-05 "EFO:0009899_UBERON:0000344_CL:0002329"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "mean2" -0.0199708735132739 0.000276101574442693 "EFO:0009899_UBERON:0000344_CL:0002329"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "sd1" 0.00442827105375383 4.37415561309478e-05 "EFO:0009899_UBERON:0000344_CL:0002329"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "sd2" 0.0179361130499788 0.000428965876072394 "EFO:0009899_UBERON:0000344_CL:0002329"
+"10x 3' v2_mucosa_basal epithelial cell of tracheobronchial tree" "p3" 0.050816270827413 0 "EFO:0009899_UBERON:0000344_CL:0002329"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_glandular epithelial cell" "p1" 0.0363248279442922 -2.17040186465679e-05 "EFO:0009899_UBERON:0000344_CL:0000150"
+"10x 3' v2_mucosa_glandular epithelial cell" "mean1" 0.00436741939835187 3.33627999238951e-05 "EFO:0009899_UBERON:0000344_CL:0000150"
+"10x 3' v2_mucosa_glandular epithelial cell" "mean2" -0.0616208010901432 0.00038451644047923 "EFO:0009899_UBERON:0000344_CL:0000150"
+"10x 3' v2_mucosa_glandular epithelial cell" "sd1" 0.0108958904227084 4.55977109393366e-05 "EFO:0009899_UBERON:0000344_CL:0000150"
+"10x 3' v2_mucosa_glandular epithelial cell" "sd2" 0.095985618886682 0.000468453082982048 "EFO:0009899_UBERON:0000344_CL:0000150"
+"10x 3' v2_mucosa_glandular epithelial cell" "p3" 0.0515702426858438 0 "EFO:0009899_UBERON:0000344_CL:0000150"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_fibroblast" "p1" 0.0271948941991984 -3.11341635452795e-05 "EFO:0009899_UBERON:0000344_CL:0000057"
+"10x 3' v2_mucosa_fibroblast" "mean1" 0.00119591857039757 2.42861227392147e-05 "EFO:0009899_UBERON:0000344_CL:0000057"
+"10x 3' v2_mucosa_fibroblast" "mean2" -0.0117993390581345 0.000381685893540634 "EFO:0009899_UBERON:0000344_CL:0000057"
+"10x 3' v2_mucosa_fibroblast" "sd1" 0.00352800827440477 3.55257904966304e-05 "EFO:0009899_UBERON:0000344_CL:0000057"
+"10x 3' v2_mucosa_fibroblast" "sd2" 0.0289982653274793 0.000366104351655845 "EFO:0009899_UBERON:0000344_CL:0000057"
+"10x 3' v2_mucosa_fibroblast" "p3" 0.0529870489101481 0 "EFO:0009899_UBERON:0000344_CL:0000057"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "p1" 0.038348945220512 -4.35520679723207e-05 "EFO:0009899_UBERON:0000344_CL:0002138"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "mean1" 0.0011693845181282 2.63045765022955e-05 "EFO:0009899_UBERON:0000344_CL:0002138"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "mean2" -0.00760911232846118 0.000422042230230916 "EFO:0009899_UBERON:0000344_CL:0002138"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "sd1" 0.00305641092055794 3.87334842127122e-05 "EFO:0009899_UBERON:0000344_CL:0002138"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "sd2" 0.0238644739497149 0.000398843923491012 "EFO:0009899_UBERON:0000344_CL:0002138"
+"10x 3' v2_mucosa_endothelial cell of lymphatic vessel" "p3" 0.0536509485369401 0 "EFO:0009899_UBERON:0000344_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_contractile cell" "p1" 0.0458758363776074 -4.82761580779794e-05 "EFO:0009899_UBERON:0000344_CL:0000183"
+"10x 3' v2_mucosa_contractile cell" "mean1" 0.00173543123600341 3.0655266498755e-05 "EFO:0009899_UBERON:0000344_CL:0000183"
+"10x 3' v2_mucosa_contractile cell" "mean2" -0.0126912194858327 0.000428883990021193 "EFO:0009899_UBERON:0000344_CL:0000183"
+"10x 3' v2_mucosa_contractile cell" "sd1" 0.00457737564455061 3.8895755744467e-05 "EFO:0009899_UBERON:0000344_CL:0000183"
+"10x 3' v2_mucosa_contractile cell" "sd2" 0.0341537735250025 0.0004308053973338 "EFO:0009899_UBERON:0000344_CL:0000183"
+"10x 3' v2_mucosa_contractile cell" "p3" 0.0552202248057778 0 "EFO:0009899_UBERON:0000344_CL:0000183"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_macrophage" "p1" 0.0377430450784578 -3.91298035164516e-05 "EFO:0009899_UBERON:0000344_CL:0000235"
+"10x 3' v2_mucosa_macrophage" "mean1" 0.00253918662613062 2.85100964517437e-05 "EFO:0009899_UBERON:0000344_CL:0000235"
+"10x 3' v2_mucosa_macrophage" "mean2" -0.0292933781526601 0.000416651487090825 "EFO:0009899_UBERON:0000344_CL:0000235"
+"10x 3' v2_mucosa_macrophage" "sd1" 0.00697890149578067 3.85201327428269e-05 "EFO:0009899_UBERON:0000344_CL:0000235"
+"10x 3' v2_mucosa_macrophage" "sd2" 0.050468817585193 0.00037378327313817 "EFO:0009899_UBERON:0000344_CL:0000235"
+"10x 3' v2_mucosa_macrophage" "p3" 0.0530994756079783 0 "EFO:0009899_UBERON:0000344_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_mucosa_T cell" "p1" 0.0390913205337705 -5.52852316969931e-05 "EFO:0009899_UBERON:0000344_CL:0000084"
+"10x 3' v2_mucosa_T cell" "mean1" 0.00150213114809247 2.62130573749991e-05 "EFO:0009899_UBERON:0000344_CL:0000084"
+"10x 3' v2_mucosa_T cell" "mean2" -0.0115444923323262 0.000438506546055112 "EFO:0009899_UBERON:0000344_CL:0000084"
+"10x 3' v2_mucosa_T cell" "sd1" 0.00435419717770793 3.68643265914186e-05 "EFO:0009899_UBERON:0000344_CL:0000084"
+"10x 3' v2_mucosa_T cell" "sd2" 0.0311001357486473 0.000376089679470821 "EFO:0009899_UBERON:0000344_CL:0000084"
+"10x 3' v2_mucosa_T cell" "p3" 0.0545706036536835 0 "EFO:0009899_UBERON:0000344_CL:0000084"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "p1" 0.0217098702439396 -1.34916162987183e-05 "EFO:0009899_UBERON:0004648_CL:0000192"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "mean1" 0.00118335022904514 2.12450682613328e-05 "EFO:0009899_UBERON:0004648_CL:0000192"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "mean2" -0.0130697501000947 0.000413609186116757 "EFO:0009899_UBERON:0004648_CL:0000192"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "sd1" 0.00397184412276213 3.39667000040497e-05 "EFO:0009899_UBERON:0004648_CL:0000192"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "sd2" 0.0431155756696991 0.000644275510371709 "EFO:0009899_UBERON:0004648_CL:0000192"
+"10x 3' v2_esophagus muscularis mucosa_smooth muscle cell" "p3" 0.051725899339823 0 "EFO:0009899_UBERON:0004648_CL:0000192"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "p1" 0.0164326801375172 -1.43806724297392e-05 "EFO:0009899_UBERON:0004648_CL:0002504"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "mean1" 0.000715196979477695 2.040704924982e-05 "EFO:0009899_UBERON:0004648_CL:0002504"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "mean2" -0.00558797559349949 0.00037535554581574 "EFO:0009899_UBERON:0004648_CL:0002504"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "sd1" 0.00210485031575547 3.22279270823729e-05 "EFO:0009899_UBERON:0004648_CL:0002504"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "sd2" 0.0224701317072031 0.000548872267589649 "EFO:0009899_UBERON:0004648_CL:0002504"
+"10x 3' v2_esophagus muscularis mucosa_enteric smooth muscle cell" "p3" 0.0533497634344052 0 "EFO:0009899_UBERON:0004648_CL:0002504"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "p1" 0.0240655835213147 -2.50048944534862e-05 "EFO:0009899_UBERON:0004648_CL:0002139"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "mean1" 0.00104775177571135 2.18350158830989e-05 "EFO:0009899_UBERON:0004648_CL:0002139"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "mean2" -0.00444213510749775 0.000382430466512063 "EFO:0009899_UBERON:0004648_CL:0002139"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "sd1" 0.00308971748427401 3.16920580359341e-05 "EFO:0009899_UBERON:0004648_CL:0002139"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "sd2" 0.0276627383202237 0.000378706103555521 "EFO:0009899_UBERON:0004648_CL:0002139"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of vascular tree" "p3" 0.0554800329488945 0 "EFO:0009899_UBERON:0004648_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "p1" 0.0338743008996339 -3.35120482908584e-05 "EFO:0009899_UBERON:0004648_CL:0002138"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "mean1" 0.00143373637050103 2.67892429813693e-05 "EFO:0009899_UBERON:0004648_CL:0002138"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "mean2" -0.0110344081651829 0.000400939200548514 "EFO:0009899_UBERON:0004648_CL:0002138"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "sd1" 0.00401623189711268 3.72502918064412e-05 "EFO:0009899_UBERON:0004648_CL:0002138"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "sd2" 0.0324133234672735 0.000410335509618585 "EFO:0009899_UBERON:0004648_CL:0002138"
+"10x 3' v2_esophagus muscularis mucosa_endothelial cell of lymphatic vessel" "p3" 0.0537355932188259 0 "EFO:0009899_UBERON:0004648_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "p1" 0.017602346904863 -2.19259160621258e-05 "EFO:0009899_UBERON:0004648_CL:0000057"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "mean1" 0.000642826723979389 2.25044552622159e-05 "EFO:0009899_UBERON:0004648_CL:0000057"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "mean2" -0.00781810973520544 0.000342032158879047 "EFO:0009899_UBERON:0004648_CL:0000057"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "sd1" 0.00181874674474358 3.53380702579551e-05 "EFO:0009899_UBERON:0004648_CL:0000057"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "sd2" 0.0153024029564624 0.000381987418343088 "EFO:0009899_UBERON:0004648_CL:0000057"
+"10x 3' v2_esophagus muscularis mucosa_fibroblast" "p3" 0.0527064439920498 0 "EFO:0009899_UBERON:0004648_CL:0000057"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "p1" 0.0347642544738037 -4.55132356136701e-05 "EFO:0009899_UBERON:0004648_CL:0000235"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "mean1" 0.00125424285275723 2.56493452071342e-05 "EFO:0009899_UBERON:0004648_CL:0000235"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "mean2" -0.00751218714792037 0.000402503938565121 "EFO:0009899_UBERON:0004648_CL:0000235"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "sd1" 0.00376711561245399 3.55069057181237e-05 "EFO:0009899_UBERON:0004648_CL:0000235"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "sd2" 0.0260613646598779 0.000336974219152072 "EFO:0009899_UBERON:0004648_CL:0000235"
+"10x 3' v2_esophagus muscularis mucosa_macrophage" "p3" 0.0545244765791565 0 "EFO:0009899_UBERON:0004648_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "p1" 0.0407973202949905 -5.90258267486834e-05 "EFO:0009899_UBERON:0004648_CL:0000097"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "mean1" 0.00238544400374204 3.13992377858227e-05 "EFO:0009899_UBERON:0004648_CL:0000097"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "mean2" -0.033488055389466 0.000408223623897721 "EFO:0009899_UBERON:0004648_CL:0000097"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "sd1" 0.00642444191749296 3.78518363846109e-05 "EFO:0009899_UBERON:0004648_CL:0000097"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "sd2" 0.0558105956635567 0.000402012397857557 "EFO:0009899_UBERON:0004648_CL:0000097"
+"10x 3' v2_esophagus muscularis mucosa_mast cell" "p3" 0.0524347172871882 0 "EFO:0009899_UBERON:0004648_CL:0000097"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "p1" 0.0467950583123157 -2.15239556055555e-05 "EFO:0009899_UBERON:0004648_CL:0000136"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "mean1" 0.00642458779196738 3.09775275774906e-05 "EFO:0009899_UBERON:0004648_CL:0000136"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "mean2" -0.0740918367351153 0.000539852085713189 "EFO:0009899_UBERON:0004648_CL:0000136"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "sd1" 0.019688944036365 3.66829279260006e-05 "EFO:0009899_UBERON:0004648_CL:0000136"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "sd2" 0.256520024014776 0.000626922967408045 "EFO:0009899_UBERON:0004648_CL:0000136"
+"10x 3' v2_esophagus muscularis mucosa_fat cell" "p3" 0.0532522151769044 0 "EFO:0009899_UBERON:0004648_CL:0000136"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "p1" 0.0112449646393963 -2.95962528770159e-06 "EFO:0009899_UBERON:0036288_CL:0000746"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "mean1" 0.00183793912321393 1.67348878278668e-05 "EFO:0009899_UBERON:0036288_CL:0000746"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "mean2" -0.0163831753618564 0.000422482963397378 "EFO:0009899_UBERON:0036288_CL:0000746"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "sd1" 0.00529232148159689 2.84783633650135e-05 "EFO:0009899_UBERON:0036288_CL:0000746"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "sd2" 0.121961813611478 0.000782048743484309 "EFO:0009899_UBERON:0036288_CL:0000746"
+"10x 3' v2_anterior wall of left ventricle_cardiac muscle cell" "p3" 0.0510889481595636 0 "EFO:0009899_UBERON:0036288_CL:0000746"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "p1" 0.0194687030042739 -2.14184832017331e-05 "EFO:0009899_UBERON:0036288_CL:0002139"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "mean1" 0.00083468969267558 2.15884868693226e-05 "EFO:0009899_UBERON:0036288_CL:0002139"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "mean2" -0.00690315333112818 0.000373881150861893 "EFO:0009899_UBERON:0036288_CL:0002139"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "sd1" 0.00244916748223177 3.32798596904017e-05 "EFO:0009899_UBERON:0036288_CL:0002139"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "sd2" 0.0230400684166135 0.000478763764864623 "EFO:0009899_UBERON:0036288_CL:0002139"
+"10x 3' v2_anterior wall of left ventricle_endothelial cell of vascular tree" "p3" 0.0540553643016038 0 "EFO:0009899_UBERON:0036288_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "p1" 0.0163492604615401 -1.24054282707347e-05 "EFO:0009899_UBERON:0036288_CL:0000057"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "mean1" 0.000966300849780576 2.13273464594753e-05 "EFO:0009899_UBERON:0036288_CL:0000057"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "mean2" -0.00990494465708136 0.000362788510358292 "EFO:0009899_UBERON:0036288_CL:0000057"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "sd1" 0.00285715561129667 3.4462375215235e-05 "EFO:0009899_UBERON:0036288_CL:0000057"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "sd2" 0.0294051716016939 0.000559615074819756 "EFO:0009899_UBERON:0036288_CL:0000057"
+"10x 3' v2_anterior wall of left ventricle_fibroblast" "p3" 0.052400817459795 0 "EFO:0009899_UBERON:0036288_CL:0000057"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "p1" 0.0276598161558323 -2.88860668279944e-05 "EFO:0009899_UBERON:0036288_CL:0000183"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "mean1" 0.00125420019096755 2.21835581335519e-05 "EFO:0009899_UBERON:0036288_CL:0000183"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "mean2" -0.0124009860281194 0.00044493946987231 "EFO:0009899_UBERON:0036288_CL:0000183"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "sd1" 0.00337948180667443 3.17663931486516e-05 "EFO:0009899_UBERON:0036288_CL:0000183"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "sd2" 0.0625879955801437 0.000666965161015128 "EFO:0009899_UBERON:0036288_CL:0000183"
+"10x 3' v2_anterior wall of left ventricle_contractile cell" "p3" 0.0525776602311812 0 "EFO:0009899_UBERON:0036288_CL:0000183"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "p1" 0.0303299101287306 -3.30337797419343e-05 "EFO:0009899_UBERON:0036288_CL:0000235"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "mean1" 0.0012304774948558 2.26512623702031e-05 "EFO:0009899_UBERON:0036288_CL:0000235"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "mean2" -0.0088503713910334 0.000423681983186724 "EFO:0009899_UBERON:0036288_CL:0000235"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "sd1" 0.00351813952274719 3.43983918194681e-05 "EFO:0009899_UBERON:0036288_CL:0000235"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "sd2" 0.0341317943149321 0.000512674575034325 "EFO:0009899_UBERON:0036288_CL:0000235"
+"10x 3' v2_anterior wall of left ventricle_macrophage" "p3" 0.0545921732380932 0 "EFO:0009899_UBERON:0036288_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "p1" 0.0457454312004155 -2.00680145993653e-05 "EFO:0009899_UBERON:0036288_CL:0002521"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "mean1" 0.00527654813543998 3.06064997639259e-05 "EFO:0009899_UBERON:0036288_CL:0002521"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "mean2" -0.0701256613053372 0.000524996807223194 "EFO:0009899_UBERON:0036288_CL:0002521"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "sd1" 0.0144049248106279 3.85223731653584e-05 "EFO:0009899_UBERON:0036288_CL:0002521"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "sd2" 0.260921518655806 0.000791094908660787 "EFO:0009899_UBERON:0036288_CL:0002521"
+"10x 3' v2_anterior wall of left ventricle_subcutaneous fat cell" "p3" 0.0522998476435892 0 "EFO:0009899_UBERON:0036288_CL:0002521"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "p1" 0.027432904175032 -2.79206535207676e-05 "EFO:0009899_UBERON:0036288_CL:0000145"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "mean1" 0.00146953541031046 2.30996319520864e-05 "EFO:0009899_UBERON:0036288_CL:0000145"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "mean2" -0.0117201339631274 0.000412645021812283 "EFO:0009899_UBERON:0036288_CL:0000145"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "sd1" 0.00404948261505895 3.47459167352252e-05 "EFO:0009899_UBERON:0036288_CL:0000145"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "sd2" 0.0394558503582447 0.000467502342812291 "EFO:0009899_UBERON:0036288_CL:0000145"
+"10x 3' v2_anterior wall of left ventricle_professional antigen presenting cell" "p3" 0.0542415217467851 0 "EFO:0009899_UBERON:0036288_CL:0000145"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_T cell" "p1" 0.0540639673564554 -8.09701091891249e-05 "EFO:0009899_UBERON:0036288_CL:0000084"
+"10x 3' v2_anterior wall of left ventricle_T cell" "mean1" 0.00347994895740375 3.5424074617284e-05 "EFO:0009899_UBERON:0036288_CL:0000084"
+"10x 3' v2_anterior wall of left ventricle_T cell" "mean2" -0.0435097621267689 0.000532896818700017 "EFO:0009899_UBERON:0036288_CL:0000084"
+"10x 3' v2_anterior wall of left ventricle_T cell" "sd1" 0.0102797599144815 3.68305448492507e-05 "EFO:0009899_UBERON:0036288_CL:0000084"
+"10x 3' v2_anterior wall of left ventricle_T cell" "sd2" 0.106097324138926 0.000424061924419145 "EFO:0009899_UBERON:0036288_CL:0000084"
+"10x 3' v2_anterior wall of left ventricle_T cell" "p3" 0.0535502965039634 0 "EFO:0009899_UBERON:0036288_CL:0000084"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "p1" 0.0504911724325894 -6.17230475261573e-05 "EFO:0009899_UBERON:0036288_CL:0002548"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "mean1" 0.00122589588225233 3.23336623335832e-05 "EFO:0009899_UBERON:0036288_CL:0002548"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "mean2" -0.0111197248583308 0.000694072060159956 "EFO:0009899_UBERON:0036288_CL:0002548"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "sd1" 0.00559592260469323 3.4616580213163e-05 "EFO:0009899_UBERON:0036288_CL:0002548"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "sd2" 0.0719367959871665 0.000899517929171945 "EFO:0009899_UBERON:0036288_CL:0002548"
+"10x 3' v2_anterior wall of left ventricle_fibroblast of cardiac tissue" "p3" 0.0537117007090292 0 "EFO:0009899_UBERON:0036288_CL:0002548"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "p1" 0.0492963998292775 -4.21285224482086e-05 "EFO:0009899_UBERON:0036288_CL:0010008"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "mean1" 0.0036530526937544 3.24456060111578e-05 "EFO:0009899_UBERON:0036288_CL:0010008"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "mean2" -0.0289931440758294 0.000513001016804729 "EFO:0009899_UBERON:0036288_CL:0010008"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "sd1" 0.0118104866806737 3.60295227645639e-05 "EFO:0009899_UBERON:0036288_CL:0010008"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "sd2" 0.0952549521576338 0.000465364473931763 "EFO:0009899_UBERON:0036288_CL:0010008"
+"10x 3' v2_anterior wall of left ventricle_cardiac endothelial cell" "p3" 0.0550844114368367 0 "EFO:0009899_UBERON:0036288_CL:0010008"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "p1" 0.00905282396351151 -6.55024339934502e-06 "EFO:0009899_UBERON:0008954_CL:0010003"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "mean1" 0.00056010690800622 1.94883650749256e-05 "EFO:0009899_UBERON:0008954_CL:0010003"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "mean2" -0.00438610727085303 0.000343081441253575 "EFO:0009899_UBERON:0008954_CL:0010003"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "sd1" 0.00149365983542531 3.11261172438567e-05 "EFO:0009899_UBERON:0008954_CL:0010003"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "sd2" 0.019466306370197 0.000545728795893924 "EFO:0009899_UBERON:0008954_CL:0010003"
+"10x 3' v2_lingula of left lung_epithelial cell of alveolus of lung" "p3" 0.0531358782758966 0 "EFO:0009899_UBERON:0008954_CL:0010003"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "p1" 0.0229888744232527 -1.34787318202646e-05 "EFO:0009899_UBERON:0008954_CL:0002633"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "mean1" 0.00190632450984554 2.43140549288766e-05 "EFO:0009899_UBERON:0008954_CL:0002633"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "mean2" -0.015019122949995 0.000348609501819545 "EFO:0009899_UBERON:0008954_CL:0002633"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "sd1" 0.00524034501947602 3.25722528745106e-05 "EFO:0009899_UBERON:0008954_CL:0002633"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "sd2" 0.0508585701508416 0.000418353801258222 "EFO:0009899_UBERON:0008954_CL:0002633"
+"10x 3' v2_lingula of left lung_respiratory basal cell" "p3" 0.0537541008919052 0 "EFO:0009899_UBERON:0008954_CL:0002633"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "p1" 0.0129893898081115 -7.38363092955307e-06 "EFO:0009899_UBERON:0008954_CL:0000583"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "mean1" 0.00127342850177231 2.28913025120963e-05 "EFO:0009899_UBERON:0008954_CL:0000583"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "mean2" -0.0133365928612062 0.00032559438904119 "EFO:0009899_UBERON:0008954_CL:0000583"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "sd1" 0.00332040346090218 3.44749745217706e-05 "EFO:0009899_UBERON:0008954_CL:0000583"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "sd2" 0.0400373524611167 0.000493056975710595 "EFO:0009899_UBERON:0008954_CL:0000583"
+"10x 3' v2_lingula of left lung_alveolar macrophage" "p3" 0.0516679839992396 0 "EFO:0009899_UBERON:0008954_CL:0000583"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "p1" 0.0329463354767689 -2.63297883108352e-05 "EFO:0009899_UBERON:0008954_CL:0002328"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "mean1" 0.00304698726665928 2.54185357668134e-05 "EFO:0009899_UBERON:0008954_CL:0002328"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "mean2" -0.0357272701359748 0.00040819332089083 "EFO:0009899_UBERON:0008954_CL:0002328"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "sd1" 0.00819579572879603 3.202248552174e-05 "EFO:0009899_UBERON:0008954_CL:0002328"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "sd2" 0.104918241322337 0.000458123243044087 "EFO:0009899_UBERON:0008954_CL:0002328"
+"10x 3' v2_lingula of left lung_bronchial epithelial cell" "p3" 0.0533627221193599 0 "EFO:0009899_UBERON:0008954_CL:0002328"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_macrophage" "p1" 0.0386664833817791 -3.95876163355453e-05 "EFO:0009899_UBERON:0008954_CL:0000235"
+"10x 3' v2_lingula of left lung_macrophage" "mean1" 0.00189477959618271 2.69986456751006e-05 "EFO:0009899_UBERON:0008954_CL:0000235"
+"10x 3' v2_lingula of left lung_macrophage" "mean2" -0.0118445764477514 0.000396229714982333 "EFO:0009899_UBERON:0008954_CL:0000235"
+"10x 3' v2_lingula of left lung_macrophage" "sd1" 0.00513443159073855 3.41257138635063e-05 "EFO:0009899_UBERON:0008954_CL:0000235"
+"10x 3' v2_lingula of left lung_macrophage" "sd2" 0.0455889390903494 0.00040988258245318 "EFO:0009899_UBERON:0008954_CL:0000235"
+"10x 3' v2_lingula of left lung_macrophage" "p3" 0.0549569337240693 0 "EFO:0009899_UBERON:0008954_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "p1" 0.0233464594674312 -2.94276917052322e-05 "EFO:0009899_UBERON:0008954_CL:0002139"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "mean1" 0.000737656479899762 2.35911631204184e-05 "EFO:0009899_UBERON:0008954_CL:0002139"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "mean2" -0.00406450598137567 0.000354322947628846 "EFO:0009899_UBERON:0008954_CL:0002139"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "sd1" 0.00206441958311728 3.14078728933697e-05 "EFO:0009899_UBERON:0008954_CL:0002139"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "sd2" 0.0201353418054099 0.000409608196703894 "EFO:0009899_UBERON:0008954_CL:0002139"
+"10x 3' v2_lingula of left lung_endothelial cell of vascular tree" "p3" 0.0551113091096375 0 "EFO:0009899_UBERON:0008954_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_fibroblast" "p1" 0.0271390889308566 -2.63122745752812e-05 "EFO:0009899_UBERON:0008954_CL:0000057"
+"10x 3' v2_lingula of left lung_fibroblast" "mean1" 0.00196429589880402 2.08540047066836e-05 "EFO:0009899_UBERON:0008954_CL:0000057"
+"10x 3' v2_lingula of left lung_fibroblast" "mean2" 0.0333123077083122 0.000355723332359197 "EFO:0009899_UBERON:0008954_CL:0000057"
+"10x 3' v2_lingula of left lung_fibroblast" "sd1" 0.00471579078709701 2.7384390144216e-05 "EFO:0009899_UBERON:0008954_CL:0000057"
+"10x 3' v2_lingula of left lung_fibroblast" "sd2" 0.208989409438142 0.000261335688194385 "EFO:0009899_UBERON:0008954_CL:0000057"
+"10x 3' v2_lingula of left lung_fibroblast" "p3" 0.056474284912815 0 "EFO:0009899_UBERON:0008954_CL:0000057"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "p1" 0.0521225782374892 -6.76730379572038e-05 "EFO:0009899_UBERON:0008954_CL:0002138"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "mean1" 0.00298644335720651 3.08355606232255e-05 "EFO:0009899_UBERON:0008954_CL:0002138"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "mean2" -0.0363863816290396 0.000482388813142915 "EFO:0009899_UBERON:0008954_CL:0002138"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "sd1" 0.00944796982896031 3.23399145791598e-05 "EFO:0009899_UBERON:0008954_CL:0002138"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "sd2" 0.0765419279098115 0.000412991427639892 "EFO:0009899_UBERON:0008954_CL:0002138"
+"10x 3' v2_lingula of left lung_endothelial cell of lymphatic vessel" "p3" 0.0540970775614989 0 "EFO:0009899_UBERON:0008954_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_lingula of left lung_B cell" "p1" 0.121370117771736 -0.000137317410377478 "EFO:0009899_UBERON:0008954_CL:0000236"
+"10x 3' v2_lingula of left lung_B cell" "mean1" 0.00142710152426757 6.09574660864156e-05 "EFO:0009899_UBERON:0008954_CL:0000236"
+"10x 3' v2_lingula of left lung_B cell" "mean2" 0.0524293110290623 0.000497874043611338 "EFO:0009899_UBERON:0008954_CL:0000236"
+"10x 3' v2_lingula of left lung_B cell" "sd1" -0.0168664874203889 9.11203676420039e-05 "EFO:0009899_UBERON:0008954_CL:0000236"
+"10x 3' v2_lingula of left lung_B cell" "sd2" -0.372123249204728 0.0016388729872575 "EFO:0009899_UBERON:0008954_CL:0000236"
+"10x 3' v2_lingula of left lung_B cell" "p3" 0.0677397233259769 0 "EFO:0009899_UBERON:0008954_CL:0000236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p1" 0.0130080987382022 -6.34586692999932e-06 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean1" 0.00124058255071783 1.99146576129349e-05 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean2" -0.0159950935162795 0.000374575649577803 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd1" 0.00377575795907862 3.36117049537514e-05 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd2" 0.0567204409685605 0.000666618950359427 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p3" 0.0505704813397668 0 "EFO:0009899_UBERON:0002367_CL:0002340"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "p1" 0.0175501471472314 -1.0438935483167e-05 "EFO:0009899_UBERON:0002367_CL:0002231"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "mean1" 0.00156354939954079 2.4095807131789e-05 "EFO:0009899_UBERON:0002367_CL:0002231"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "mean2" -0.0180924706147296 0.000330664065005687 "EFO:0009899_UBERON:0002367_CL:0002231"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "sd1" 0.00441855658585581 3.80122695143171e-05 "EFO:0009899_UBERON:0002367_CL:0002231"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "sd2" 0.0364046768404681 0.000497429843100894 "EFO:0009899_UBERON:0002367_CL:0002231"
+"10x 3' v2_prostate gland_epithelial cell of prostate" "p3" 0.0517634797150666 0 "EFO:0009899_UBERON:0002367_CL:0002231"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "p1" 0.0185274610745944 -1.51018189800785e-05 "EFO:0009899_UBERON:0002367_CL:0002236"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "mean1" 0.00103910080093639 2.36466465595344e-05 "EFO:0009899_UBERON:0002367_CL:0002236"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "mean2" -0.0115979648872565 0.000328176066344018 "EFO:0009899_UBERON:0002367_CL:0002236"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "sd1" 0.00308035548534429 3.79590294913662e-05 "EFO:0009899_UBERON:0002367_CL:0002236"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "sd2" 0.0208988919155769 0.000483547029567934 "EFO:0009899_UBERON:0002367_CL:0002236"
+"10x 3' v2_prostate gland_basal epithelial cell of prostatic duct" "p3" 0.0521717465743491 0 "EFO:0009899_UBERON:0002367_CL:0002236"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p1" 0.0249623447708117 -1.39298891656212e-05 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean1" 0.0022498679500229 2.46941431144577e-05 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean2" -0.0343617672552901 0.00037389714325504 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd1" 0.00580883887066296 3.72605162859799e-05 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd2" 0.0968490404567424 0.000602801654331841 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p3" 0.0501412910866536 0 "EFO:0009899_UBERON:0002367_CL:1000487"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_skin fibroblast" "p1" 0.0316342784047025 -2.48926478591715e-05 "EFO:0009899_UBERON:0002367_CL:0002620"
+"10x 3' v2_prostate gland_skin fibroblast" "mean1" 0.00227058428799002 2.70812047240667e-05 "EFO:0009899_UBERON:0002367_CL:0002620"
+"10x 3' v2_prostate gland_skin fibroblast" "mean2" -0.0253763650880817 0.000383497074506096 "EFO:0009899_UBERON:0002367_CL:0002620"
+"10x 3' v2_prostate gland_skin fibroblast" "sd1" 0.00624722848444882 3.80024517787376e-05 "EFO:0009899_UBERON:0002367_CL:0002620"
+"10x 3' v2_prostate gland_skin fibroblast" "sd2" 0.0493224313068442 0.000428669102451651 "EFO:0009899_UBERON:0002367_CL:0002620"
+"10x 3' v2_prostate gland_skin fibroblast" "p3" 0.0531421270831018 0 "EFO:0009899_UBERON:0002367_CL:0002620"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "p1" 0.0256189882088541 -2.01792304857799e-05 "EFO:0009899_UBERON:0002367_CL:0002139"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "mean1" 0.00138364035405582 2.24336457803523e-05 "EFO:0009899_UBERON:0002367_CL:0002139"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "mean2" -0.00962664652742418 0.000399285677848067 "EFO:0009899_UBERON:0002367_CL:0002139"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "sd1" 0.00411503306068926 3.3677918361492e-05 "EFO:0009899_UBERON:0002367_CL:0002139"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "sd2" 0.0372836371480179 0.000447140382044161 "EFO:0009899_UBERON:0002367_CL:0002139"
+"10x 3' v2_prostate gland_endothelial cell of vascular tree" "p3" 0.0542303174780761 0 "EFO:0009899_UBERON:0002367_CL:0002139"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_macrophage" "p1" 0.0363879091028227 -2.56159772818773e-05 "EFO:0009899_UBERON:0002367_CL:0000235"
+"10x 3' v2_prostate gland_macrophage" "mean1" 0.00250127246660144 2.71623507515372e-05 "EFO:0009899_UBERON:0002367_CL:0000235"
+"10x 3' v2_prostate gland_macrophage" "mean2" -0.0219340144728262 0.000428329013768824 "EFO:0009899_UBERON:0002367_CL:0000235"
+"10x 3' v2_prostate gland_macrophage" "sd1" 0.00637941546000934 3.9074079027555e-05 "EFO:0009899_UBERON:0002367_CL:0000235"
+"10x 3' v2_prostate gland_macrophage" "sd2" 0.0683199437069826 0.000563297663186082 "EFO:0009899_UBERON:0002367_CL:0000235"
+"10x 3' v2_prostate gland_macrophage" "p3" 0.052768591235905 0 "EFO:0009899_UBERON:0002367_CL:0000235"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "p1" 0.0462311929688677 -3.42908925113097e-05 "EFO:0009899_UBERON:0002367_CL:0002138"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "mean1" 0.00419932773837241 3.42565485764724e-05 "EFO:0009899_UBERON:0002367_CL:0002138"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "mean2" -0.0456515139941899 0.000500009313049869 "EFO:0009899_UBERON:0002367_CL:0002138"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "sd1" 0.0132425469749859 3.98201858001669e-05 "EFO:0009899_UBERON:0002367_CL:0002138"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "sd2" 0.0913414638791628 0.000445863948102997 "EFO:0009899_UBERON:0002367_CL:0002138"
+"10x 3' v2_prostate gland_endothelial cell of lymphatic vessel" "p3" 0.0539495250408161 0 "EFO:0009899_UBERON:0002367_CL:0002138"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "p1" 0.0510415881732548 -5.32797409359025e-05 "EFO:0009899_UBERON:0001511_CL:1000448"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "mean1" 0.00423723999989328 3.07018028909614e-05 "EFO:0009899_UBERON:0001511_CL:1000448"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "mean2" -0.0559481669050489 0.000491545087741465 "EFO:0009899_UBERON:0001511_CL:1000448"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "sd1" 0.0123421423182441 3.31208125016986e-05 "EFO:0009899_UBERON:0001511_CL:1000448"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "sd2" 0.117717067545629 0.000425047029386405 "EFO:0009899_UBERON:0001511_CL:1000448"
+"10x 3' v2_skin of leg_epithelial cell of sweat gland" "p3" 0.0537806328733306 0 "EFO:0009899_UBERON:0001511_CL:1000448"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_basal cell of epidermis" "p1" 0.0315847992513643 -3.63356611822093e-05 "EFO:0009899_UBERON:0001511_CL:0002187"
+"10x 3' v2_skin of leg_basal cell of epidermis" "mean1" 0.0019391414732794 2.61432023466131e-05 "EFO:0009899_UBERON:0001511_CL:0002187"
+"10x 3' v2_skin of leg_basal cell of epidermis" "mean2" -0.0211126465964061 0.000383395530454894 "EFO:0009899_UBERON:0001511_CL:0002187"
+"10x 3' v2_skin of leg_basal cell of epidermis" "sd1" 0.00535251485357692 3.67644489762722e-05 "EFO:0009899_UBERON:0001511_CL:0002187"
+"10x 3' v2_skin of leg_basal cell of epidermis" "sd2" 0.0377230314344902 0.000301430567244924 "EFO:0009899_UBERON:0001511_CL:0002187"
+"10x 3' v2_skin of leg_basal cell of epidermis" "p3" 0.0533928454390562 0 "EFO:0009899_UBERON:0001511_CL:0002187"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_sebaceous gland cell" "p1" 0.0514486745911553 -3.71073588735986e-05 "EFO:0009899_UBERON:0001511_CL:2000021"
+"10x 3' v2_skin of leg_sebaceous gland cell" "mean1" 0.00398590526313712 3.1866374670755e-05 "EFO:0009899_UBERON:0001511_CL:2000021"
+"10x 3' v2_skin of leg_sebaceous gland cell" "mean2" -0.0467117396976873 0.000534139766907246 "EFO:0009899_UBERON:0001511_CL:2000021"
+"10x 3' v2_skin of leg_sebaceous gland cell" "sd1" 0.0124368499936397 3.93819810022083e-05 "EFO:0009899_UBERON:0001511_CL:2000021"
+"10x 3' v2_skin of leg_sebaceous gland cell" "sd2" 0.156647514614338 0.000654024860136803 "EFO:0009899_UBERON:0001511_CL:2000021"
+"10x 3' v2_skin of leg_sebaceous gland cell" "p3" 0.052708415047252 0 "EFO:0009899_UBERON:0001511_CL:2000021"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_keratinocyte" "p1" 0.0531570614732584 -5.24343804041004e-05 "EFO:0009899_UBERON:0001511_CL:0000312"
+"10x 3' v2_skin of leg_keratinocyte" "mean1" 0.00549399525270583 3.49687352633409e-05 "EFO:0009899_UBERON:0001511_CL:0000312"
+"10x 3' v2_skin of leg_keratinocyte" "mean2" -0.0622147954601068 0.000536289706072848 "EFO:0009899_UBERON:0001511_CL:0000312"
+"10x 3' v2_skin of leg_keratinocyte" "sd1" 0.0145726837095765 4.06232026849187e-05 "EFO:0009899_UBERON:0001511_CL:0000312"
+"10x 3' v2_skin of leg_keratinocyte" "sd2" 0.107531465518063 0.000401322009139334 "EFO:0009899_UBERON:0001511_CL:0000312"
+"10x 3' v2_skin of leg_keratinocyte" "p3" 0.053828073864893 0 "EFO:0009899_UBERON:0001511_CL:0000312"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_skin fibroblast" "p1" 0.0483409848420759 -6.54958835616657e-05 "EFO:0009899_UBERON:0001511_CL:0002620"
+"10x 3' v2_skin of leg_skin fibroblast" "mean1" 0.0022823013148226 2.91864517963196e-05 "EFO:0009899_UBERON:0001511_CL:0002620"
+"10x 3' v2_skin of leg_skin fibroblast" "mean2" -0.011435025425409 0.000475641302676239 "EFO:0009899_UBERON:0001511_CL:0002620"
+"10x 3' v2_skin of leg_skin fibroblast" "sd1" 0.00753461383539438 3.27698163350256e-05 "EFO:0009899_UBERON:0001511_CL:0002620"
+"10x 3' v2_skin of leg_skin fibroblast" "sd2" 0.0555354734405823 0.000371878379081729 "EFO:0009899_UBERON:0001511_CL:0002620"
+"10x 3' v2_skin of leg_skin fibroblast" "p3" 0.0545554347309963 0 "EFO:0009899_UBERON:0001511_CL:0002620"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "p1" 0.129599452578598 -0.000166434592354922 "EFO:0009899_UBERON:0001511_CL:0002521"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "mean1" 0.00330163517209706 6.33332454659312e-05 "EFO:0009899_UBERON:0001511_CL:0002521"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "mean2" 0.0316242776802632 0.000574043959993275 "EFO:0009899_UBERON:0001511_CL:0002521"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "sd1" -0.0169483177415848 9.97083783856838e-05 "EFO:0009899_UBERON:0001511_CL:0002521"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "sd2" -0.275887779957272 0.00146380665465339 "EFO:0009899_UBERON:0001511_CL:0002521"
+"10x 3' v2_skin of leg_subcutaneous fat cell" "p3" 0.0727532141556382 0 "EFO:0009899_UBERON:0001511_CL:0002521"
+
+
