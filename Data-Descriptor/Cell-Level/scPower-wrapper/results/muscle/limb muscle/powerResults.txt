@@ -1,0 +1,36 @@
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000878896845564655 0.840560661155675 0.000997629238246736 16 2485 2485 0 2485 12632 "10x 3' v2_limb muscle_macrophage"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000874843740641817 0.847495190396669 0.000952085276993598 16 6894 6894 0 6894 12780 "10x 3' v2_limb muscle_endothelial cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000868294404990462 0.907667031351069 0.000896125950931092 16 13037 13037 0 13037 14045 "10x 3' v2_limb muscle_mesenchymal stem cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.00087835206058102 0.771992739233396 0.00105435746113062 16 1165 1165 0 1165 11335 "10x 3' v2_limb muscle_smooth muscle cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000830845751045191 0.653468599630952 0.001227518134093 16 274 274 0 274 9499 "10x 3' v2_limb muscle_Schwann cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000880406487607958 0.782931386305206 0.00110952822552938 16 2055 2055 0 2055 11529 "10x 3' v2_limb muscle_skeletal muscle satellite cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000571592183170266 0.730472687111815 0.00073289659205742 15 1511 1511 0 1511 10689 "10x 3' v2_limb muscle_B cell"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" 0.000746170884068547 0.467746041931628 0.00105353088589049 16 192 192 0 192 6857 "10x 3' v2_limb muscle_cell of skeletal muscle"
+
+
+"name" "powerDetect" "exp.probs" "power" "sampleSize" "totalCells" "usableCells" "multipletFraction" "ctCells" "expressedGenes" "idToName"
+"Blueprint (Monocytes)" NA 0.746043315949029 NA 15 1254 1254 0 1254 10934 "10x 3' v2_limb muscle_T cell"
+
+
