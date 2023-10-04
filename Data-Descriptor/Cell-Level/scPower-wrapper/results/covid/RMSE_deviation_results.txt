@@ -1,0 +1,4 @@
+"mean_RMSE_complete" "mean_RMSE_subsampled75" "mean_RMSE_subsampled50" "mean_RMSE_subsampled25" "overall_mean_deviation"
+1840.86956521739 1665.5652173913 1419.47826086957 1068.21739130435 1.18420954291863
+
+

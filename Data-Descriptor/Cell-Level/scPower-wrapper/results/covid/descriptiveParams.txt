@@ -1,0 +1,92 @@
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3638_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000938" "10x 5' v1_blood_CD16-negative, CD56-bright natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"8679_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000788" "10x 5' v1_blood_naive B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"75_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000784" "10x 5' v1_blood_plasmacytoid dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6948_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000939" "10x 5' v1_blood_CD16-positive, CD56-dim natural killer cell, human"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"26887_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000895" "10x 5' v1_blood_naive thymus-derived CD4-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1923_1_1_26" "EFO:0011025_UBERON:0000178_CL:0002396" "10x 5' v1_blood_CD14-low, CD16-positive monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"23648_1_1_26" "EFO:0011025_UBERON:0000178_CL:0001054" "10x 5' v1_blood_CD14-positive monocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"2387_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000900" "10x 5' v1_blood_naive thymus-derived CD8-positive, alpha-beta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"6224_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000909" "10x 5' v1_blood_CD8-positive, alpha-beta memory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1807_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000814" "10x 5' v1_blood_mature NK T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"457_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000787" "10x 5' v1_blood_memory B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"223_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000940" "10x 5' v1_blood_mucosal invariant T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1697_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000084" "10x 5' v1_blood_T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"226_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000623" "10x 5' v1_blood_natural killer cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"306_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000815" "10x 5' v1_blood_regulatory T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"543_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000990" "10x 5' v1_blood_conventional dendritic cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1444_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000233" "10x 5' v1_blood_platelet"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"415_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000786" "10x 5' v1_blood_plasma cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"510_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000236" "10x 5' v1_blood_B cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"216_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000798" "10x 5' v1_blood_gamma-delta T cell"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"1239_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000980" "10x 5' v1_blood_plasmablast"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"3907_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000232" "10x 5' v1_blood_erythrocyte"
+
+
+"datasetBodySpecific" "resultTableSpecific" "idToName"
+"270_1_1_26" "EFO:0011025_UBERON:0000178_CL:0000037" "10x 5' v1_blood_hematopoietic stem cell"
+
+

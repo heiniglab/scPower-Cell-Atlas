@@ -62,3 +62,4 @@ Data-Descriptor/Cell-Level/scPower-wrapper/results/gtex/gtex.RData
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.png
