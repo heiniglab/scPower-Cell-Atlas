@@ -1,0 +1,1464 @@
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_ileum_CD4-positive helper T cell" 0.327210795748909 0.181731662623789
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_ileum_CD8-positive, alpha-beta memory T cell" 0.275150238088774 0.139563590618804
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_ileum_gamma-delta T cell" 0.329391432746618 0.178226905184574
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_ileum_alpha-beta T cell" 1.71034692258281 0.43471283268912
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_ileum_memory B cell" 0.339460534993697 0.221496031424917
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_conventional dendritic cell" 0.634507171928927 0.240580957743378
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_macrophage" 0.939585470998588 0.115968297460532
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_alveolar macrophage" 0.496427278635395 0.113953577611799
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_CD16-positive, CD56-dim natural killer cell, human" 0.305889586753551 0.148800019269529
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.280919596196139 0.110929823735259
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_CD4-positive helper T cell" 0.406465457961108 0.133046718785112
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.356205981211082 0.188245612106295
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_effector memory CD4-positive, alpha-beta T cell" 0.461571551577619 0.165732799582667
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_classical monocyte" 0.796128682254501 0.171392639658685
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_mast cell" 0.573730883197574 0.200114561276376
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_non-classical monocyte" 0.596603509696243 0.23413933725881
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_lung_animal cell" 0.605572842416998 0.192102904038945
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell" 0.215207922569683 0.0929788218500351
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.206780521131653 0.0557373658615525
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell" 0.229355166169346 0.0843060303702197
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_naive B cell" 0.247928897609118 0.0659894526061269
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_classical monocyte" 0.718851780617623 0.223379627090513
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.340720489186556 0.117926612943558
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_memory B cell" 0.438159324592621 0.0636918789521184
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_regulatory T cell" 0.419624850116081 0.103205423274629
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human" 0.458159843633016 0.150446635023601
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_T follicular helper cell" 0.258384316227376 0.0750817292424806
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_plasma cell" 1.34498692089087 0.249956823598098
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_alpha-beta T cell" 1.06212907093535 0.113299494631841
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_conventional dendritic cell" 1.03446244240343 0.289817330204759
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_macrophage" 3.18942511232399 0.141015207462704
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_CD4-positive helper T cell" 0.330712489608042 0.140855956343641
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_germinal center B cell" 1.23535631166605 0.237321195636831
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_mucosal invariant T cell" 0.59446341749128 0.205620955758082
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_alveolar macrophage" 1.69756566199395 0.230886093821707
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_dendritic cell, human" 1.48977908963786 0.3304182349805
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_group 3 innate lymphoid cell" 0.512488609223917 0.267063994907945
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_CD8-positive, alpha-beta memory T cell" 0.285563709787688 0.227196130077857
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_lymphocyte" 1.54556008352031 0.199540203809017
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thoracic lymph node_animal cell" 1.84988602449424 0.20754290282538
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.188909551917286 0.0573669896472191
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_naive B cell" 0.240888583137872 0.106636365766618
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_memory B cell" 0.310493831220059 0.0815265811677134
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_effector memory CD4-positive, alpha-beta T cell" 0.273268760158703 0.152592888567848
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_T follicular helper cell" 0.18454343538551 0.0835236137031924
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_naive thymus-derived CD8-positive, alpha-beta T cell" 0.197686314295257 0.115144654234419
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_regulatory T cell" 0.343164605211321 0.0985151362851361
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.304276432879133 0.131188801220344
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_lymphocyte" 1.24396991709914 0.213464880221714
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_germinal center B cell" 1.36351267005529 0.292930341993658
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_CD8-positive, alpha-beta memory T cell" 0.276181131369195 0.183513551313124
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_mesenteric lymph node_group 3 innate lymphoid cell" 0.405757711539011 0.264656407777697
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.244372535470292 0.093951971690751
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.292608740716703 0.134873905496696
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_classical monocyte" 0.557601715557488 0.121810824568124
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_CD16-positive, CD56-dim natural killer cell, human" 0.241738221965837 0.101425332561054
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_erythroid lineage cell" 0.623078298841704 0.145288340204946
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_effector memory CD4-positive, alpha-beta T cell" 0.244536175959471 0.135590700119919
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_mucosal invariant T cell" 0.247079203942429 0.209903800866269
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_progenitor cell" 1.33914989138823 0.216049345310303
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell" 0.194359163520553 0.146447497200937
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_gamma-delta T cell" 0.202245554083472 0.173428815844669
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_naive B cell" 0.187913072947303 0.150592661554037
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_megakaryocyte" 2.45953882587082 0.137802474845473
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_memory B cell" 0.291909391348162 0.166342290256818
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_conventional dendritic cell" 0.345623327475804 0.288222469916663
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_CD16-negative, CD56-bright natural killer cell, human" 0.374241092111203 0.237188978397742
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell" 0.196241959719832 0.224050453656297
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_non-classical monocyte" 0.371172332901944 0.159194437421478
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_lymphocyte" 0.404072245688401 0.179728879084446
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_plasmacytoid dendritic cell" 0.362766592117824 0.324664006313276
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_regulatory T cell" 0.323212950270957 0.271154585453889
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.185148432224214 0.200082957718196
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_classical monocyte" 0.698565595840956 0.213011484442443
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_CD16-positive, CD56-dim natural killer cell, human" 0.186774373963105 0.173352592085362
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.332496250832206 0.190785089213111
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_mucosal invariant T cell" 0.386321236309336 0.0791096439007628
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_macrophage" 2.00409800886022 0.185588057697779
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_classical monocyte" 0.568353391909772 0.102599366945866
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_CD16-negative, CD56-bright natural killer cell, human" 0.627594014950542 0.092359494690996
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_naive B cell" 0.470530021506074 0.253865631884302
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_gamma-delta T cell" 0.271825336991549 0.18872071250789
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_animal cell" 1.08658783111576 0.240144947727418
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_CD16-positive, CD56-dim natural killer cell, human" 0.341588576083835 0.113525446049728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_conventional dendritic cell" 1.15264878049592 0.217245636570269
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.607223289552667 0.170344163433455
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_non-classical monocyte" 0.528579049946571 0.157670160494918
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_effector memory CD4-positive, alpha-beta T cell" 0.801500167109791 0.223697301571334
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_plasma cell" 0.946543966276578 0.178869984411577
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_memory B cell" 1.14840827649735 0.190009134610528
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_effector memory CD4-positive, alpha-beta T cell" 0.236363522741009 0.0898417291059694
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_memory B cell" 0.315382386940157 0.0678463771622851
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_naive B cell" 0.269171050528579 0.0758695046529632
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_naive thymus-derived CD8-positive, alpha-beta T cell" 0.206106706145551 0.168280988317162
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_regulatory T cell" 0.537544445632517 0.166515410259669
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_animal cell" 1.11574098535452 0.243055778674918
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_gamma-delta T cell" 0.283046564651289 0.110890473970447
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_naive thymus-derived CD4-positive, alpha-beta T cell" 0.193902233088363 0.106616540688549
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.235284360031882 0.113048443318728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_mucosal invariant T cell" 0.28733624507917 0.123850732610426
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_macrophage" 1.36973817867867 0.169938263645629
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.332994068150259 0.0949939136474386
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_classical monocyte" 0.68393343948848 0.115794457993162
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_T follicular helper cell" 0.231239249246946 0.0933472029187331
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_CD16-negative, CD56-bright natural killer cell, human" 0.371607765373432 0.118660817863197
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_conventional dendritic cell" 0.545257786266153 0.255255978750214
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_non-classical monocyte" 0.432342605994921 0.176131284907376
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_CD16-positive, CD56-dim natural killer cell, human" 0.306547424966517 0.119353650773851
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_CD8-positive, alpha-beta memory T cell" 0.250073156585382 0.116480088054678
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_plasma cell" 0.740073807803912 0.172417100899864
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_CD4-positive helper T cell" 0.294166730364225 0.161444308109223
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_lymphocyte" 0.830675673870212 0.213275814612601
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_plasmablast" 0.518742107955061 0.178621222304786
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_spleen_germinal center B cell" 1.17507809152332 0.210517661328866
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_omentum_memory B cell" 0.224348264554137 0.239772324458261
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_omentum_CD4-positive helper T cell" 0.291641264023186 0.246995594464609
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_omentum_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.488854709342793 0.240280875387704
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_lymphocyte" 1.06125305090888 0.224608720617242
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_CD8-positive, alpha-beta memory T cell" 0.247567458707609 0.222495494636004
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_liver_CD4-positive helper T cell" 0.727562377420914 0.184717034390941
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_caecum_gamma-delta T cell" 0.631391367849005 0.23446318036248
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_caecum_CD8-positive, alpha-beta memory T cell" 0.53381482561817 0.265932072189274
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_caecum_plasma cell" 0.389854791626475 0.20822272484303
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_bone marrow_plasma cell" 0.689104617985026 0.275386169674566
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_thymus_memory B cell" 0.504008515423096 0.333685712848307
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_duodenum_CD4-positive helper T cell" 0.299744260408304 0.203328167286668
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_duodenum_CD8-positive, alpha-beta memory T cell" 0.233549314370591 0.149631039641879
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_duodenum_alpha-beta T cell" 0.75830907530171 0.316004465508799
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_classical monocyte" 0.507385212811764 0.0961818152827728
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_regulatory T cell" 0.325417210935141 0.192120046099366
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_naive thymus-derived CD4-positive, alpha-beta T cell" 0.0925971590940868 0.100694224606567
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_effector memory CD4-positive, alpha-beta T cell" 0.149675048649126 0.0870723045085253
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.180203568072405 0.109156148800601
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_non-classical monocyte" 0.344158873698691 0.157518088455064
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_CD16-positive, CD56-dim natural killer cell, human" 0.166470311924731 0.139755019081469
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_memory B cell" 0.273767331511481 0.213832474732741
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_naive thymus-derived CD8-positive, alpha-beta T cell" 0.138209148028356 0.238182651637225
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_mucosal invariant T cell" 0.0719803506763071 0.200667748339685
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_megakaryocyte" 0.833863982954589 0.289368044663026
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_lymphocyte" 0.446198138818629 0.167518680780287
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_blood_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.199291357896852 0.160645807357377
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_memory B cell" 0.429082619327943 0.260666533247132
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_effector memory CD4-positive, alpha-beta T cell" 0.276489798631474 0.306071978966978
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_skeletal muscle tissue_non-classical monocyte" 0.341792091622377 0.234293885042417
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v1_transverse colon_plasma cell" 0.595979475713552 0.286348567885039
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_naive B cell" 0.325221404447499 0.0708582585893986
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_T follicular helper cell" 0.254191863531328 0.0933088314290418
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_mucosal invariant T cell" 0.288405508040271 0.129973404035553
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_memory B cell" 0.407518603232673 0.0790869186237616
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_effector memory CD4-positive, alpha-beta T cell" 0.285402930281132 0.101371250331073
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_regulatory T cell" 0.500543730865562 0.130286404783985
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_classical monocyte" 0.627201394240211 0.124966908064341
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_CD16-positive, CD56-dim natural killer cell, human" 0.300475862315532 0.112546112256067
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_conventional dendritic cell" 0.693819842916177 0.250013866202942
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.310578854216102 0.106942357192752
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.231929018824133 0.126669108141825
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_naive thymus-derived CD4-positive, alpha-beta T cell" 0.257739078065215 0.0929048624167644
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_germinal center B cell" 1.6937188811536 0.163418862241106
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_memory B cell" 0.242270575600888 0.0806040414209821
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_CD16-negative, CD56-bright natural killer cell, human" 0.387069992601263 0.116415538540491
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_animal cell" 1.05122563115702 0.237281571120786
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_gamma-delta T cell" 0.210196119558557 0.111185005793043
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_macrophage" 1.82745209791526 0.269246509927108
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_lymphocyte" 1.2125335177712 0.194428088643126
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_CD8-positive, alpha-beta memory T cell" 0.355393025805646 0.165960988926723
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_alpha-beta T cell" 1.96334165997842 0.165865685748852
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_CD4-positive helper T cell" 0.336774844968909 0.181266564296675
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_naive thymus-derived CD8-positive, alpha-beta T cell" 0.190300849769196 0.1279493623965
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_regulatory T cell" 0.276767030738187 0.102072163003066
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_naive B cell" 0.179445679064295 0.0940272224746508
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_naive thymus-derived CD8-positive, alpha-beta T cell" 0.170516466129365 0.106163074342164
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_non-classical monocyte" 0.387708431216421 0.211139327735779
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_plasma cell" 0.775725739911803 0.224340977000594
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_animal cell" 0.448980008188532 0.287770142093925
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_spleen_group 3 innate lymphoid cell" 0.63621677856455 0.247045012636163
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_effector memory CD4-positive, alpha-beta T cell" 0.229571774647436 0.115436124858565
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_T follicular helper cell" 0.206325949364285 0.0964213109876646
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_group 3 innate lymphoid cell" 0.384501643704959 0.160254400884809
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_lymphocyte" 1.32572975099876 0.18331965159357
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.312050829741105 0.171464332510865
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_CD8-positive, alpha-beta memory T cell" 0.204958902750839 0.160242446566689
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_CD4-positive helper T cell" 0.275289375537504 0.0988755700284803
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_regulatory T cell" 0.547842711337966 0.128078844938612
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.299464730895685 0.0787267501365792
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell" 0.263627074800783 0.0855373654340936
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_lymphocyte" 1.50108154715629 0.166616277107739
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.452795107188369 0.338313102334207
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell" 0.25481437828591 0.109368364046725
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_CD8-positive, alpha-beta memory T cell" 0.203762336281501 0.0825148163196892
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_memory B cell" 0.412706994182895 0.0883419046409487
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_naive thymus-derived CD4-positive, alpha-beta T cell" 0.340014973808548 0.416972888976182
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_T follicular helper cell" 0.344573996200588 0.116629817353914
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human" 0.439268146032078 0.182856573219458
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_naive B cell" 0.280800586248594 0.082296801437304
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.604568389258894 0.182128833834749
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_naive thymus-derived CD4-positive, alpha-beta T cell" 0.132665582088303 0.16394339741466
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_naive B cell" 0.31873308580355 0.440116124018847
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_plasma cell" 0.545016151295769 0.214843495390601
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_plasma cell" 0.940653742832908 0.274241019448206
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_CD16-negative, CD56-bright natural killer cell, human" 0.601613787509191 0.250546285636927
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.683847260937674 0.176142894255022
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_thoracic lymph node_CD4-positive helper T cell" 0.416192296515967 0.193864277299547
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_effector memory CD4-positive, alpha-beta T cell" 0.565774934335532 0.31031762506359
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_CD4-positive helper T cell" 0.248740545367113 0.087327587176794
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_macrophage" 1.99041601942403 0.254721230551959
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lamina propria_gamma-delta T cell" 0.269665260783387 0.132607932456067
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_gamma-delta T cell" 0.275281303348309 0.0863112521204804
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.161365179462289 0.0737840621084709
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_CD16-positive, CD56-dim natural killer cell, human" 0.278721873624016 0.138977604715672
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_CD4-positive helper T cell" 0.253172362482295 0.149754300975294
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_CD16-negative, CD56-bright natural killer cell, human" 0.277956513954107 0.136603073179696
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_gamma-delta T cell" 0.231825402494027 0.179572632734049
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_mucosal invariant T cell" 0.347438634358074 0.225190911724581
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.262029784725642 0.143005131958373
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_effector memory CD4-positive, alpha-beta T cell" 0.22626776269972 0.147515601345755
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.200804962401958 0.128848408113556
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_CD4-positive helper T cell" 0.478920334699638 0.20883452130638
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell" 0.165941980342475 0.186857172006265
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell" 0.182857123310035 0.139491949495421
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_regulatory T cell" 0.414671908652436 0.25086484486065
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_erythroid lineage cell" 0.21757634323709 0.212109885490514
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_blood_CD16-positive, CD56-dim natural killer cell, human" 0.205998636686116 0.140123553024428
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_naive B cell" 0.293941997300865 0.155349096733816
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_blood_naive thymus-derived CD4-positive, alpha-beta T cell" 0.141985612485921 0.220876346290516
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_gamma-delta T cell" 0.216992469787399 0.16482842139388
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_CD16-negative, CD56-bright natural killer cell, human" 0.376956704313684 0.177429873061104
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_mucosal invariant T cell" 0.34578517359737 0.199500107565393
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_memory B cell" 0.376296145086032 0.175556261734372
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.181690452892704 0.158440567760739
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_blood_effector memory CD4-positive, alpha-beta T cell" 0.220182222981952 0.241094087922828
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_CD16-positive, CD56-dim natural killer cell, human" 0.284326235253956 0.116460327675876
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_animal cell" 1.25740744468192 0.219490461771011
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_classical monocyte" 0.754328183594001 0.164183433703004
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_progenitor cell" 0.652306520096342 0.189783256176799
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_bone marrow_non-classical monocyte" 0.452588760987142 0.191595447460344
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_mesenteric lymph node_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.219268987209503 0.176670652547233
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_CD16-negative, CD56-bright natural killer cell, human" 0.289562503245317 0.119096463238756
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.212624612110313 0.125301350696653
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_gamma-delta T cell" 0.213967786518266 0.101116283912613
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.208118451105856 0.121755671902042
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_CD16-positive, CD56-dim natural killer cell, human" 0.24229630771577 0.0976506939359848
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_mucosal invariant T cell" 0.263698707495917 0.132154502429863
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_CD4-positive helper T cell" 0.27729603875885 0.148791553416671
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_classical monocyte" 0.45996172609091 0.149249055646238
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_non-classical monocyte" 0.322797861758749 0.190705380549371
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_liver_effector memory CD4-positive, alpha-beta T cell" 0.193002838783862 0.189339234229338
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_lung_alveolar macrophage" 0.709745442729921 0.237658474032381
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_CD8-positive, alpha-beta memory T cell" 0.18455560640936 0.066413998048206
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 5' v2_jejunal epithelium_alpha-beta T cell" 0.969859198182077 0.137653975909978
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_CD8-positive, alpha-beta memory T cell" 0.315046366006846 0.0765584309371379
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD4-positive helper T cell" 0.326402718915752 0.102219006040099
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD16-negative, CD56-bright natural killer cell, human" 0.23766773548517 0.106271122972378
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_jejunal epithelium_CD8-positive, alpha-beta memory T cell" 0.267727969351691 0.0652915691654376
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_classical monocyte" 0.370886182076706 0.0819030345611733
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD16-negative, CD56-bright natural killer cell, human" 0.316567240824943 0.0867987631226044
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_mucosal invariant T cell" 0.222946702373087 0.14221282528594
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_alpha-beta T cell" 1.15823603924903 0.167668891482265
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD16-positive, CD56-dim natural killer cell, human" 0.257002413017138 0.080881955600401
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_naive thymus-derived CD4-positive, alpha-beta T cell" 0.144456363580254 0.0635110447521628
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_naive thymus-derived CD4-positive, alpha-beta T cell" 0.182648939185577 0.0731602486478772
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_classical monocyte" 0.4618185074277 0.0825393847316585
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD16-positive, CD56-dim natural killer cell, human" 0.211891910037684 0.0802734567844353
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.184793484250821 0.0969387735461513
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_jejunal epithelium_gamma-delta T cell" 0.253394485688773 0.0775775939613267
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_animal cell" 0.662716264840059 0.136536787828856
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD16-negative, CD56-bright natural killer cell, human" 0.345378890473614 0.136853618531042
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_regulatory T cell" 0.53681363991638 0.104214845702768
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_memory B cell" 0.21889627553806 0.0909266383752056
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_plasmablast" 0.422490562450595 0.207356436928112
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_CD4-positive helper T cell" 0.31769710273963 0.0767552014225612
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_effector memory CD4-positive, alpha-beta T cell" 0.268403844034764 0.124921981909707
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_jejunal epithelium_CD4-positive helper T cell" 0.301578573518758 0.0915369953491277
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_memory B cell" 0.235871195563601 0.0905726572336503
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_effector memory CD4-positive, alpha-beta T cell" 0.168831762971948 0.0901648026068799
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_naive thymus-derived CD8-positive, alpha-beta T cell" 0.119722580223313 0.130261134550386
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_classical monocyte" 0.448284840619845 0.109662076384955
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_gamma-delta T cell" 0.306689621385647 0.115274755746107
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_naive thymus-derived CD4-positive, alpha-beta T cell" 0.10528881312169 0.0628710188653636
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_naive B cell" 0.17014440273737 0.156808999530725
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_mast cell" 0.362048149493131 0.131282009521191
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive thymus-derived CD4-positive, alpha-beta T cell" 0.112286140906526 0.0707768837483897
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_naive thymus-derived CD8-positive, alpha-beta T cell" 0.0864928757041832 0.105295254839313
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_T follicular helper cell" 0.219616137685837 0.0796136723406855
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_effector memory CD4-positive, alpha-beta T cell" 0.200115059725612 0.0857239163076964
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_effector memory CD4-positive, alpha-beta T cell" 0.253381086070606 0.0844703765632902
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD16-negative, CD56-bright natural killer cell, human" 0.204501419128733 0.132187285307938
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive B cell" 0.125801132461157 0.11252476317563
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_naive thymus-derived CD8-positive, alpha-beta T cell" 0.125219173305005 0.12966566994661
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_classical monocyte" 0.239849406045594 0.0911766946431064
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_mast cell" 0.295958029407055 0.0919754741352405
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD16-positive, CD56-dim natural killer cell, human" 0.216122368502914 0.0661761595976085
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_gamma-delta T cell" 0.200922995419873 0.118004322372028
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.355757493737858 0.172508829089212
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_progenitor cell" 0.551956110067622 0.131262204678873
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_lymphocyte" 0.943917739277626 0.179873657848784
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_lymphocyte" 0.379023493233831 0.127408275430717
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_regulatory T cell" 0.396441038047551 0.151258806393494
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_memory B cell" 0.227087566617817 0.153979422916576
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_CD16-positive, CD56-dim natural killer cell, human" 0.236820561371601 0.0822685387161764
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_lymphocyte" 0.99403217724089 0.188286884129157
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_non-classical monocyte" 0.187565844803945 0.157202497020251
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_T follicular helper cell" 0.165482178041739 0.0855436994835562
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_regulatory T cell" 0.476919688614249 0.140764910561909
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_group 3 innate lymphoid cell" 0.434611575646609 0.197622891548788
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_alveolar macrophage" 0.245347749473952 0.157098313756293
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_erythroid lineage cell" 0.0680957919847929 0.223931845982576
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_regulatory T cell" 0.597754703534568 0.183750843253953
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.159653195169632 0.0743066018886051
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_plasma cell" 0.702179881689038 0.147554290840347
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD4-positive helper T cell" 0.241426877068569 0.222263255956884
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_lymphocyte" 0.605995230138968 0.239807043220835
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_CD16-negative, CD56-bright natural killer cell, human" 0.411705746442098 0.153403537598939
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD4-positive helper T cell" 0.295260981015647 0.244052568233153
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.262475867268677 0.128244115451981
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_CD4-positive helper T cell" 0.340188149158868 0.144392752660238
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_conventional dendritic cell" 0.155703959640478 0.217296696280056
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_macrophage" 0.600158800178065 0.189063293035048
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_conventional dendritic cell" 0.558479657573141 0.228956505938015
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_conventional dendritic cell" 0.572469283112498 0.319050184843008
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_plasmacytoid dendritic cell" 0.204545839177441 0.139760103139791
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_naive B cell" 0.190995040143511 0.325539506730973
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_regulatory T cell" 0.481751892531403 0.122847993037594
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_plasma cell" 0.459632869896879 0.12079897817
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.136965799112563 0.100677034353388
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_plasmablast" 0.325040410002483 0.296128925439123
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_T follicular helper cell" 0.179913622981181 0.204085407480574
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_non-classical monocyte" 0.322729398817721 0.143027954915661
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_alpha-beta T cell" 0.608593674011734 0.145770263168859
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.136515590914648 0.0928575984923946
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_plasma cell" 0.602678350516564 0.181192193126133
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_animal cell" 1.41756229066392 0.166890322454228
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_progenitor cell" 0.46977765382853 0.225017717878454
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.179223581743236 0.0925201256584569
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_lymphocyte" 0.52094144435808 0.176225654694606
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_macrophage" 0.681971654473055 0.1674794732721
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_progenitor cell" 0.544472873656033 0.204910921804539
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_naive B cell" 0.150884152594879 0.312503338018956
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_animal cell" 0.958168283814248 0.100075141982915
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_naive thymus-derived CD4-positive, alpha-beta T cell" 0.172970629994187 0.195602423086195
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_CD8-positive, alpha-beta memory T cell" 0.217321545155338 0.198433378235967
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_naive B cell" 0.357413858766349 0.153252613627161
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_group 3 innate lymphoid cell" 0.553149256863887 0.226612522730837
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_mast cell" 1.1376140199989 0.266747032624823
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_dendritic cell, human" 0.577357753682648 0.35558934695653
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_T follicular helper cell" 0.197958351208207 0.154658367891807
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_plasmacytoid dendritic cell" 0.18250260245865 0.22050039605618
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_mucosal invariant T cell" 0.372043287609634 0.240626058137237
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_mucosal invariant T cell" 0.325887782057514 0.281950959237254
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_gamma-delta T cell" 0.269700072014475 0.228629615091492
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_mast cell" 1.2160051264287 0.226827060209686
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_plasmablast" 0.29999852265587 0.302419886791317
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_effector memory CD8-positive, alpha-beta T cell, terminally differentiated" 0.171892149661241 0.139954376895215
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_gamma-delta T cell" 0.141059707619525 0.114204166428296
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_spleen_animal cell" 2.06247100634189 0.210750626611961
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_plasma cell" 0.712950910520661 0.244703111710242
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_CD8-positive, alpha-beta memory T cell, CD45RO-positive" 0.235216746646191 0.141949935405905
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_conventional dendritic cell" 0.202946067707512 0.271855370256202
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_mast cell" 0.602617907998055 0.269915578806793
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_bone marrow_mucosal invariant T cell" 0.20415567680468 0.146404679739741
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_naive thymus-derived CD8-positive, alpha-beta T cell" 0.116643749201396 0.0990582370460188
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_gamma-delta T cell" 0.161925904171532 0.275662063410731
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_blood_memory B cell" 0.354518209888656 0.206036221372248
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_thoracic lymph node_animal cell" 2.94716777079102 0.191123285156108
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lung_T follicular helper cell" 0.568690953910417 0.226522332002832
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_animal cell" 1.54901936563332 0.183676892089606
+
+
+"idToName" "asymptDisp" "extraPois"
+"10x 3' v3_lamina propria_lymphocyte" 2.28813389080586 0.236342929236508
+
+
