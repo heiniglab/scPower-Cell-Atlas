@@ -45,6 +45,9 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
 # some folders to avoid to be pushed
 _next-advancements/
 _errors/
@@ -58,8 +61,5 @@ Data-Descriptor/Cell-Level/scPower-wrapper/results/muscle/limb muscle/limb_muscl
 Data-Descriptor/Cell-Level/scPower-wrapper/results/gtex/gtex.RData
 *consoleOutput.txt
 *estimates_trimmed.txt
-*error.txt
-
-# Jupyter Notebook
-.ipynb_checkpoints
 *.png
+**/error.txt
