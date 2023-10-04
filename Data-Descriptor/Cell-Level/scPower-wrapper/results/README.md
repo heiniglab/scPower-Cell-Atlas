@@ -2,6 +2,7 @@
 
 | Collection | Success | Error | Total Unique Instance | #Tissue | #Assay | #Cells |
 | ---------- | ------- | ----- | --------------- | ------ | ------- | --------- | 
+| [Pathogenic variants damage cell composition and single cell transcription in cardiomyopathies](https://cellxgene.cziscience.com/collections/e75342a8-0f3b-4ec5-8ee1-245a23e0f7cb) | - | - | - | - | - | 881.081 |
 | [Tabula Sapiens](https://cellxgene.cziscience.com/collections/e5f58829-1a66-40b5-a624-9046778e74f5) | 391 | 19 | 1156 | 45 | 3 | 483152 |
 | [Cross-Tissue Immune Cell Analysis](https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3) | 369 | 31 | 891 | 17 | 3 | 329762 |
 | [Mapping Disease Gene Function with Molecular Reference Maps](https://cellxgene.cziscience.com/collections/a3ffde6c-7ad2-498a-903c-d58e732f7470) | 59 | 45 | 121 | 8 | 1 | 209126 |
@@ -11,6 +12,28 @@
 | [Pancreatic Islet Cell Transcriptional Cross-Species Map](https://cellxgene.cziscience.com/collections/0a77d4c0-d5d0-40f0-aa1a-5e1429bcbd7e) | 3 | 1 | 4 | 1 | 1 | 26474 |
 
 ## Details about each dataset:
+<details>
+  <summary>Pathogenic variants damage cell composition and single cell transcription in cardiomyopathies</summary>
+  
+  - **Dataset Name**: DCM/ACM heart cell atlas: All cells
+  - **Tissue**: 
+      <details> 
+        <summary> 4 Tissues </summary>
+          apex of heart, heart left ventricle, heart right ventricle, interventricular septum
+      </details>
+  - **Disease**: 
+      <details> 
+        <summary> Normal, 3 Diseases </summary>
+          arrhythmogenic right ventricular cardiomyopathy, dilated cardiomyopathy, non-compaction cardiomyopathy
+      </details>
+  - **Assay**: 10x 3' v2, 10x 3' v3
+  - **Organism**: Homo sapiens
+  - **Cells**: 881.081
+  - **Contact**: [Norbert Hübner](nhuebner@mdc-berlin.de)
+  - **Publication**: [Reichart et al. (2022) Science](https://doi.org/10.1126/science.abo1984)
+  - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/e75342a8-0f3b-4ec5-8ee1-245a23e0f7cb)
+</details>
+
 <details>
   <summary>Tabula Sapiens</summary>
   
