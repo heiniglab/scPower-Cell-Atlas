@@ -1,0 +1,225 @@
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p1" 0.0112995946546931 -1.83067207694398e-06 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean1" 0.00179462552378258 1.25135936102005e-05 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "mean2" -0.0643477079462875 0.000846521647855498 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd1" 0.00595797324961868 2.23771845370998e-05 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "sd2" 0.391023181359843 0.00175613783068536 "EFO:0009899_UBERON:0002367_CL:0002340"
+"10x 3' v2_prostate gland_luminal cell of prostate epithelium" "p3" 0.0503290909911669 0 "EFO:0009899_UBERON:0002367_CL:0002340"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_leukocyte" "p1" 0.0196696732093576 -4.50830522321201e-06 "EFO:0009899_UBERON:0002367_CL:0000738"
+"10x 3' v2_prostate gland_leukocyte" "mean1" 0.00178995379940505 1.7802862827963e-05 "EFO:0009899_UBERON:0002367_CL:0000738"
+"10x 3' v2_prostate gland_leukocyte" "mean2" 0.00502788208892557 0.000803077754519696 "EFO:0009899_UBERON:0002367_CL:0000738"
+"10x 3' v2_prostate gland_leukocyte" "sd1" 0.00505167828143567 2.58526947925169e-05 "EFO:0009899_UBERON:0002367_CL:0000738"
+"10x 3' v2_prostate gland_leukocyte" "sd2" 0.178238376596852 0.00131614973591929 "EFO:0009899_UBERON:0002367_CL:0000738"
+"10x 3' v2_prostate gland_leukocyte" "p3" 0.0553112644821377 0 "EFO:0009899_UBERON:0002367_CL:0000738"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "p1" 0.0183656363586232 -5.2402926539126e-06 "EFO:0009899_UBERON:0002367_CL:0002341"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "mean1" 0.0015510927362005 1.77604086086965e-05 "EFO:0009899_UBERON:0002367_CL:0002341"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "mean2" -0.0164072167012597 0.000794767550184718 "EFO:0009899_UBERON:0002367_CL:0002341"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "sd1" 0.00475301288269404 2.88789518150253e-05 "EFO:0009899_UBERON:0002367_CL:0002341"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "sd2" 0.16219284950468 0.001398026944027 "EFO:0009899_UBERON:0002367_CL:0002341"
+"10x 3' v2_prostate gland_basal cell of prostate epithelium" "p3" 0.0524183953764486 0 "EFO:0009899_UBERON:0002367_CL:0002341"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "p1" 0.0230022315514822 -3.20895324720154e-06 "EFO:0009899_UBERON:0002367_CL:1001597"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "mean1" 0.00260077177037221 1.00549329251753e-05 "EFO:0009899_UBERON:0002367_CL:1001597"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "mean2" -0.153744567890665 0.00106209788261674 "EFO:0009899_UBERON:0002367_CL:1001597"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "sd1" 0.0069802407115183 1.48429425407046e-05 "EFO:0009899_UBERON:0002367_CL:1001597"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "sd2" 0.904765187925554 0.00225618729566304 "EFO:0009899_UBERON:0002367_CL:1001597"
+"10x 3' v2_prostate gland_seminal vesicle glandular cell" "p3" 0.0532683780977831 0 "EFO:0009899_UBERON:0002367_CL:1001597"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p1" 0.0242141576748836 -6.66661169642397e-06 "EFO:0009899_UBERON:0002367_CL:1000299"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean1" 0.00241184933114732 2.39691704114368e-05 "EFO:0009899_UBERON:0002367_CL:1000299"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "mean2" 0.0197004954219628 0.000755940377029773 "EFO:0009899_UBERON:0002367_CL:1000299"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd1" 0.00704489223946571 3.15736709972321e-05 "EFO:0009899_UBERON:0002367_CL:1000299"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "sd2" 0.159808096314649 0.00108288636504102 "EFO:0009899_UBERON:0002367_CL:1000299"
+"10x 3' v2_prostate gland_fibroblast of connective tissue of prostate" "p3" 0.0561719636108693 0 "EFO:0009899_UBERON:0002367_CL:1000299"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "p1" 0.0414541124336251 -1.10798796877938e-05 "EFO:0009899_UBERON:0002367_CL:2000059"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "mean1" 0.00720966859620815 2.99077982574584e-05 "EFO:0009899_UBERON:0002367_CL:2000059"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "mean2" 0.0510571858711941 0.000880142347818985 "EFO:0009899_UBERON:0002367_CL:2000059"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "sd1" 0.0265728152858978 3.14786306844885e-05 "EFO:0009899_UBERON:0002367_CL:2000059"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "sd2" 0.573318958970925 0.00113294324421459 "EFO:0009899_UBERON:0002367_CL:2000059"
+"10x 3' v2_prostate gland_prostate gland microvascular endothelial cell" "p3" 0.05646729570321 0 "EFO:0009899_UBERON:0002367_CL:2000059"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_urethra urothelial cell" "p1" 0.024628034418097 -6.57314096277522e-06 "EFO:0009899_UBERON:0002367_CL:1001430"
+"10x 3' v2_prostate gland_urethra urothelial cell" "mean1" 0.00197161252524917 2.13011621033486e-05 "EFO:0009899_UBERON:0002367_CL:1001430"
+"10x 3' v2_prostate gland_urethra urothelial cell" "mean2" -0.00309373570934079 0.000856323341129767 "EFO:0009899_UBERON:0002367_CL:1001430"
+"10x 3' v2_prostate gland_urethra urothelial cell" "sd1" 0.00540954890221459 2.99686283583709e-05 "EFO:0009899_UBERON:0002367_CL:1001430"
+"10x 3' v2_prostate gland_urethra urothelial cell" "sd2" 0.245669014599335 0.00145397043666379 "EFO:0009899_UBERON:0002367_CL:1001430"
+"10x 3' v2_prostate gland_urethra urothelial cell" "p3" 0.0535707009367667 0 "EFO:0009899_UBERON:0002367_CL:1001430"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p1" 0.045598261614094 -9.30266898635949e-06 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean1" 0.0137319574940399 2.76592232001397e-05 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "mean2" 0.277030824376606 0.000820455399890809 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd1" 0.0532740260768652 2.46445781705684e-05 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "sd2" 0.99364597248418 0.000923713109082104 "EFO:0009899_UBERON:0002367_CL:1000487"
+"10x 3' v2_prostate gland_smooth muscle cell of prostate" "p3" 0.0619822800302536 0 "EFO:0009899_UBERON:0002367_CL:1000487"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "p1" 0.0233681360323241 -5.52701585511756e-06 "EFO:0009922_UBERON:0002367_CL:0002340"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "mean1" 0.00303795227533396 1.94747401420764e-05 "EFO:0009922_UBERON:0002367_CL:0002340"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "mean2" -0.0356101404257618 0.000862213921813557 "EFO:0009922_UBERON:0002367_CL:0002340"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "sd1" 0.00904284371300462 3.02948259945994e-05 "EFO:0009922_UBERON:0002367_CL:0002340"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "sd2" 0.369278902098114 0.00154393696190017 "EFO:0009922_UBERON:0002367_CL:0002340"
+"10x 3' v3_prostate gland_luminal cell of prostate epithelium" "p3" 0.0520653924576305 0 "EFO:0009922_UBERON:0002367_CL:0002340"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_prostate gland_leukocyte" "p1" 0.0304318813395494 -6.00091084689695e-06 "EFO:0009922_UBERON:0002367_CL:0000738"
+"10x 3' v3_prostate gland_leukocyte" "mean1" 0.00549419606034958 2.67928131436879e-05 "EFO:0009922_UBERON:0002367_CL:0000738"
+"10x 3' v3_prostate gland_leukocyte" "mean2" 0.0192452366148492 0.000891325215635184 "EFO:0009922_UBERON:0002367_CL:0000738"
+"10x 3' v3_prostate gland_leukocyte" "sd1" 0.0159823422182656 3.50773999130183e-05 "EFO:0009922_UBERON:0002367_CL:0000738"
+"10x 3' v3_prostate gland_leukocyte" "sd2" 0.421536925984862 0.00130554776354267 "EFO:0009922_UBERON:0002367_CL:0000738"
+"10x 3' v3_prostate gland_leukocyte" "p3" 0.0538694234676759 0 "EFO:0009922_UBERON:0002367_CL:0000738"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_leukocyte" "p1" 0.0376349104983437 -1.7066409105544e-05 "EFO:0009899_UBERON:0000057_CL:0000738"
+"10x 3' v2_urethra_leukocyte" "mean1" 0.00284484950375328 2.37783420064411e-05 "EFO:0009899_UBERON:0000057_CL:0000738"
+"10x 3' v2_urethra_leukocyte" "mean2" 0.035274309108063 0.000872380594146582 "EFO:0009899_UBERON:0000057_CL:0000738"
+"10x 3' v2_urethra_leukocyte" "sd1" 0.00980003166304138 2.5096903134548e-05 "EFO:0009899_UBERON:0000057_CL:0000738"
+"10x 3' v2_urethra_leukocyte" "sd2" 0.280723193788108 0.00121391709390225 "EFO:0009899_UBERON:0000057_CL:0000738"
+"10x 3' v2_urethra_leukocyte" "p3" 0.0579926857062781 0 "EFO:0009899_UBERON:0000057_CL:0000738"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_urethra urothelial cell" "p1" 0.0232477465996849 -9.73451830108843e-06 "EFO:0009899_UBERON:0000057_CL:1001430"
+"10x 3' v2_urethra_urethra urothelial cell" "mean1" 0.00135198011872442 2.28343547574994e-05 "EFO:0009899_UBERON:0000057_CL:1001430"
+"10x 3' v2_urethra_urethra urothelial cell" "mean2" -0.0380157229127374 0.000825961587002634 "EFO:0009899_UBERON:0000057_CL:1001430"
+"10x 3' v2_urethra_urethra urothelial cell" "sd1" 0.0036131420263238 3.43880003797524e-05 "EFO:0009899_UBERON:0000057_CL:1001430"
+"10x 3' v2_urethra_urethra urothelial cell" "sd2" 0.137883200266274 0.0014736546302342 "EFO:0009899_UBERON:0000057_CL:1001430"
+"10x 3' v2_urethra_urethra urothelial cell" "p3" 0.051085632353134 0 "EFO:0009899_UBERON:0000057_CL:1001430"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "p1" 0.0255752131552019 -7.50169900049064e-06 "EFO:0009899_UBERON:0000057_CL:0002340"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "mean1" 0.00172180134418746 1.93294890309129e-05 "EFO:0009899_UBERON:0000057_CL:0002340"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "mean2" -0.0269115359245933 0.000906495409603783 "EFO:0009899_UBERON:0000057_CL:0002340"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "sd1" 0.00459729682881625 2.70141087589962e-05 "EFO:0009899_UBERON:0000057_CL:0002340"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "sd2" 0.192142844994575 0.00160029788498719 "EFO:0009899_UBERON:0000057_CL:0002340"
+"10x 3' v2_urethra_luminal cell of prostate epithelium" "p3" 0.0543255482187686 0 "EFO:0009899_UBERON:0000057_CL:0002340"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "p1" 0.0219310208951377 -6.07473132671517e-06 "EFO:0009899_UBERON:0000057_CL:1001597"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "mean1" 0.0013856303421628 1.50519075208134e-05 "EFO:0009899_UBERON:0000057_CL:1001597"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "mean2" -0.0377362439716471 0.000910352464087704 "EFO:0009899_UBERON:0000057_CL:1001597"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "sd1" 0.00383190963976092 2.2489230863184e-05 "EFO:0009899_UBERON:0000057_CL:1001597"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "sd2" 0.237331436653834 0.00174152319212588 "EFO:0009899_UBERON:0000057_CL:1001597"
+"10x 3' v2_urethra_seminal vesicle glandular cell" "p3" 0.0538761392985806 0 "EFO:0009899_UBERON:0000057_CL:1001597"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p1" 0.0303064582288901 -1.49068303413521e-05 "EFO:0009899_UBERON:0000057_CL:1000299"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean1" 0.00190993167584429 2.61533233550905e-05 "EFO:0009899_UBERON:0000057_CL:1000299"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "mean2" -0.00386170031562427 0.000835430473364283 "EFO:0009899_UBERON:0000057_CL:1000299"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd1" 0.00566549072141775 2.91548537465565e-05 "EFO:0009899_UBERON:0000057_CL:1000299"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "sd2" 0.158343427719933 0.00124850633249959 "EFO:0009899_UBERON:0000057_CL:1000299"
+"10x 3' v2_urethra_fibroblast of connective tissue of prostate" "p3" 0.0554882640783341 0 "EFO:0009899_UBERON:0000057_CL:1000299"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "p1" 0.0349531724435495 -1.57609869319585e-05 "EFO:0009899_UBERON:0000057_CL:2000059"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "mean1" 0.00291738710486002 2.8816668015302e-05 "EFO:0009899_UBERON:0000057_CL:2000059"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "mean2" -0.0123024318679095 0.000849119200009507 "EFO:0009899_UBERON:0000057_CL:2000059"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "sd1" 0.0105945419775278 3.0135866522871e-05 "EFO:0009899_UBERON:0000057_CL:2000059"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "sd2" 0.310642245116776 0.00121611837532045 "EFO:0009899_UBERON:0000057_CL:2000059"
+"10x 3' v2_urethra_prostate gland microvascular endothelial cell" "p3" 0.0546491968117088 0 "EFO:0009899_UBERON:0000057_CL:2000059"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "p1" 0.0264393034238013 -1.37317109572948e-05 "EFO:0009899_UBERON:0000057_CL:0002341"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "mean1" 0.00108231609835659 2.06408034932165e-05 "EFO:0009899_UBERON:0000057_CL:0002341"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "mean2" -0.0268637119946058 0.00085866677805252 "EFO:0009899_UBERON:0000057_CL:0002341"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "sd1" 0.00274704492642955 2.95266190715549e-05 "EFO:0009899_UBERON:0000057_CL:0002341"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "sd2" 0.134484000537493 0.00151330932312667 "EFO:0009899_UBERON:0000057_CL:0002341"
+"10x 3' v2_urethra_basal cell of prostate epithelium" "p3" 0.0519123770935642 0 "EFO:0009899_UBERON:0000057_CL:0002341"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p1" 0.082757842731508 -4.60140738378005e-05 "EFO:0009899_UBERON:0000057_CL:1000487"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean1" 0.00238540939466361 3.1092488001511e-05 "EFO:0009899_UBERON:0000057_CL:1000487"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "mean2" -0.054519026135196 0.00102627076751684 "EFO:0009899_UBERON:0000057_CL:1000487"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd1" -0.00266305819868516 3.84099238893673e-05 "EFO:0009899_UBERON:0000057_CL:1000487"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "sd2" -0.158861930659258 0.00162540888735661 "EFO:0009899_UBERON:0000057_CL:1000487"
+"10x 3' v2_urethra_smooth muscle cell of prostate" "p3" 0.0627959646310678 0 "EFO:0009899_UBERON:0000057_CL:1000487"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_urethra urothelial cell" "p1" 0.0162270489122735 -1.71460147996107e-06 "EFO:0009922_UBERON:0000057_CL:1001430"
+"10x 3' v3_urethra_urethra urothelial cell" "mean1" 0.00716380576308498 2.09478545181685e-05 "EFO:0009922_UBERON:0000057_CL:1001430"
+"10x 3' v3_urethra_urethra urothelial cell" "mean2" -0.128274576448318 0.000720608346014565 "EFO:0009922_UBERON:0000057_CL:1001430"
+"10x 3' v3_urethra_urethra urothelial cell" "sd1" 0.0202429608742893 3.63284169503377e-05 "EFO:0009922_UBERON:0000057_CL:1001430"
+"10x 3' v3_urethra_urethra urothelial cell" "sd2" 0.773315097187226 0.0013942798957243 "EFO:0009922_UBERON:0000057_CL:1001430"
+"10x 3' v3_urethra_urethra urothelial cell" "p3" 0.0497221239425858 0 "EFO:0009922_UBERON:0000057_CL:1001430"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "p1" 0.0216119489017478 -1.23486664652417e-06 "EFO:0009922_UBERON:0000057_CL:1001597"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "mean1" 0.0114787511688967 1.44995830217905e-05 "EFO:0009922_UBERON:0000057_CL:1001597"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "mean2" -0.230981964577634 0.000909026255457813 "EFO:0009922_UBERON:0000057_CL:1001597"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "sd1" 0.0285440586011885 2.32385467288242e-05 "EFO:0009922_UBERON:0000057_CL:1001597"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "sd2" 2.6110891005997 0.00187811733472928 "EFO:0009922_UBERON:0000057_CL:1001597"
+"10x 3' v3_urethra_seminal vesicle glandular cell" "p3" 0.052230068271404 0 "EFO:0009922_UBERON:0000057_CL:1001597"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "p1" 0.0220478101633997 -1.66506854749348e-06 "EFO:0009922_UBERON:0000057_CL:0002340"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "mean1" 0.0140718108334739 1.91138760221309e-05 "EFO:0009922_UBERON:0000057_CL:0002340"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "mean2" 0.172300968580259 0.000726030194267425 "EFO:0009922_UBERON:0000057_CL:0002340"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "sd1" 0.0329591264731088 3.02931311811756e-05 "EFO:0009922_UBERON:0000057_CL:0002340"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "sd2" 1.11362994019343 0.00125358465113609 "EFO:0009922_UBERON:0000057_CL:0002340"
+"10x 3' v3_urethra_luminal cell of prostate epithelium" "p3" 0.0525617937539217 0 "EFO:0009922_UBERON:0000057_CL:0002340"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "p1" 0.0201327847372195 -2.42596998288317e-06 "EFO:0009922_UBERON:0000057_CL:0002341"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "mean1" 0.00561996706464732 2.12650896955971e-05 "EFO:0009922_UBERON:0000057_CL:0002341"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "mean2" -0.198616104907903 0.000787616190512886 "EFO:0009922_UBERON:0000057_CL:0002341"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "sd1" 0.0146070039998525 3.51429333008789e-05 "EFO:0009922_UBERON:0000057_CL:0002341"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "sd2" 0.778949333837733 0.00153111994146332 "EFO:0009922_UBERON:0000057_CL:0002341"
+"10x 3' v3_urethra_basal cell of prostate epithelium" "p3" 0.0495613775527257 0 "EFO:0009922_UBERON:0000057_CL:0002341"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_leukocyte" "p1" 0.0231610245267613 -3.88132074752729e-06 "EFO:0009922_UBERON:0000057_CL:0000738"
+"10x 3' v3_urethra_leukocyte" "mean1" 0.00538876211297673 2.46595350994654e-05 "EFO:0009922_UBERON:0000057_CL:0000738"
+"10x 3' v3_urethra_leukocyte" "mean2" -0.0051922386861647 0.000758768466883056 "EFO:0009922_UBERON:0000057_CL:0000738"
+"10x 3' v3_urethra_leukocyte" "sd1" 0.0134024855086441 3.32070216475616e-05 "EFO:0009922_UBERON:0000057_CL:0000738"
+"10x 3' v3_urethra_leukocyte" "sd2" 0.374935878088571 0.00119095922394056 "EFO:0009922_UBERON:0000057_CL:0000738"
+"10x 3' v3_urethra_leukocyte" "p3" 0.0529890312515712 0 "EFO:0009922_UBERON:0000057_CL:0000738"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p1" 0.021810304400753 -3.57785503970399e-06 "EFO:0009922_UBERON:0000057_CL:1000299"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean1" 0.003763387209855 2.68628834176055e-05 "EFO:0009922_UBERON:0000057_CL:1000299"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "mean2" -0.0633835205304578 0.000701055146218708 "EFO:0009922_UBERON:0000057_CL:1000299"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd1" 0.00881021390662695 3.75055148828553e-05 "EFO:0009922_UBERON:0000057_CL:1000299"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "sd2" 0.269501860048269 0.00117393892999128 "EFO:0009922_UBERON:0000057_CL:1000299"
+"10x 3' v3_urethra_fibroblast of connective tissue of prostate" "p3" 0.0521203966039009 0 "EFO:0009922_UBERON:0000057_CL:1000299"
+
+
+"idToName" "parameter" "intercept" "meanUMI" "ct"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "p1" 0.0228465171894945 -5.20613535091603e-06 "EFO:0009922_UBERON:0000057_CL:2000059"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "mean1" 0.00381244218124735 2.91967919406558e-05 "EFO:0009922_UBERON:0000057_CL:2000059"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "mean2" -0.0220120388490517 0.000727396965771235 "EFO:0009922_UBERON:0000057_CL:2000059"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "sd1" 0.0100056369163657 3.77404137821951e-05 "EFO:0009922_UBERON:0000057_CL:2000059"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "sd2" 0.242993706956107 0.00110768514906045 "EFO:0009922_UBERON:0000057_CL:2000059"
+"10x 3' v3_urethra_prostate gland microvascular endothelial cell" "p3" 0.0532075828372303 0 "EFO:0009922_UBERON:0000057_CL:2000059"
+
+
