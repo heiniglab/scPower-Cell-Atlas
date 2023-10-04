@@ -2,7 +2,8 @@
 
 | Collection | Success | Error | Total Unique Instance | #Tissue | #Assay | #Cells |
 | ---------- | ------- | ----- | --------------- | ------ | ------- | --------- | 
-| [Pathogenic variants damage cell composition and single cell transcription in cardiomyopathies](https://cellxgene.cziscience.com/collections/e75342a8-0f3b-4ec5-8ee1-245a23e0f7cb) | - | - | - | - | - | 881.081 |
+| [Pathogenic variants damage cell composition and single cell transcription in cardiomyopathies](https://cellxgene.cziscience.com/collections/e75342a8-0f3b-4ec5-8ee1-245a23e0f7cb) | - | - | - | - | - | 881081 |
+| [The integrated Human Lung Cell Atlas](https://cellxgene.cziscience.com/collections/6f6d381a-7701-4781-935c-db10d30de293) | - | - | - | - | - | 584944 |
 | [Tabula Sapiens](https://cellxgene.cziscience.com/collections/e5f58829-1a66-40b5-a624-9046778e74f5) | 391 | 19 | 1156 | 45 | 3 | 483152 |
 | [Cross-Tissue Immune Cell Analysis](https://cellxgene.cziscience.com/collections/62ef75e4-cbea-454e-a0ce-998ec40223d3) | 369 | 31 | 891 | 17 | 3 | 329762 |
 | [Mapping Disease Gene Function with Molecular Reference Maps](https://cellxgene.cziscience.com/collections/a3ffde6c-7ad2-498a-903c-d58e732f7470) | 59 | 45 | 121 | 8 | 1 | 209126 |
@@ -32,6 +33,24 @@
   - **Contact**: [Norbert Hübner](mailto:nhuebner@mdc-berlin.de)
   - **Publication**: [Reichart et al. (2022) Science](https://doi.org/10.1126/science.abo1984)
   - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/e75342a8-0f3b-4ec5-8ee1-245a23e0f7cb)
+</details>
+
+<details>
+  <summary>The integrated Human Lung Cell Atlas</summary>
+  
+  - **Dataset Name**: An integrated cell atlas of the human lung in health and disease (core)
+  - **Tissue**: 
+      <details> 
+        <summary> 3 Tissues </summary>
+          lung parenchyma, nose, respiratory airway
+      </details>
+  - **Disease**: Normal
+  - **Assay**: 10x 3' v1, 10x 3' v2, 10x 3' v3, 10x 5' v1, 10x 5' v2
+  - **Organism**: Homo sapiens
+  - **Cells**: 584.944
+  - **Contact**: [Malte D. Luecken](mailto:malte.luecken@helmholtz-muenchen.de)
+  - **Publication**: [Sikkema et al. (2023) Nat Med](https://doi.org/10.1038/s41591-023-02327-2)
+  - [**Cellxgene Link**](https://cellxgene.cziscience.com/collections/6f6d381a-7701-4781-935c-db10d30de293)
 </details>
 
 <details>
