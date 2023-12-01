@@ -320,8 +320,6 @@ parameterizationOfGammaFits <- function(gamma.fits, mean.umi.counts) {
   # Convert the gamma fits from the shape-rate parametrization to the mean-sd parametrization
   gamma.fits <- convert.gamma.parameters(gamma.fits)
 
-  visualizeLinearRelation(gamma.fits)
-
   # Fit relationship between gamma parameters and UMI values
   gamma.linear.fits <- umi.gamma.relation(gamma.fits)
 
@@ -713,4 +711,54 @@ Loop through cell types:
   dbDisconnect(connectionInstance)
   # Clean memory
   gc()
+```
+
+
+For getting UMI counts:
+```{r}
+datasetID <- "EFO:0009922_UBERON:0003126_CL:0000786"
+datasetID <- strsplit(datasetID, split = "_")[[1]]
+
+idToName <- paste(convertIDtoName(datasetID), collapse="_")
+
+dataset <- subset(wholeDataset, assay_ontology_term_id == datasetID[[1]] &
+                                tissue_ontology_term_id == datasetID[[2]] &
+                                cell_type_ontology_term_id == datasetID[[3]])
+
+cellCount <- dataset@assays$RNA@counts@Dim[[2]]
+
+counts <- sparseToMatrix(dataset@assays$RNA@counts)
+countsSubsampled <- subsampleIntoList(counts)
+
+censorPoints <- rep(NA, length(countsSubsampled))
+names(censorPoints) <- names(countsSubsampled)
+
+meanUmi <- rep(NA, length(countsSubsampled))
+names(meanUmi) <- names(countsSubsampled)
+
+for(matrixName in names(countsSubsampled)) {
+  # Number of cells per cell type as censoring point
+  censorPoints[matrixName] <- 1 / ncol(countsSubsampled[[matrixName]])
+  
+  # Estimate the mean umi values per cell for each matrix
+  meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
+}
+
+# Estimation of negative binomial paramters for each gene
+c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
+
+# Estimation of a gamma mixed distribution over all means
+nExpressedGenes <- sum(normMeanValues[normMeanValues$matrix == "complete",]$mean != 0)
+numGenesKept <- ceiling(nExpressedGenes / 100) * 100
+gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
+
+# visualize gamma fits
+p <- visualize.gamma.fits(normMeanValues$mean[normMeanValues$matrix == "complete"],
+                          gammaFits[gammaFits$matrix == "complete",],
+                          nGenes = numGenesKept)
+ggsave(paste0("C:/Users/Cem/Downloads/", paste0("gamma_fits_plot_", idToName, ".png")), plot = p)
+
+# Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
+# gammaLinearFits: parameter, intercept, meanUMI
+#c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
 ```
