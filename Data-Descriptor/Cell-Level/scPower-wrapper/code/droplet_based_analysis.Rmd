@@ -744,21 +744,41 @@ for(matrixName in names(countsSubsampled)) {
   meanUmi[matrixName] <- meanUMI.calculation(countsSubsampled[[matrixName]])
 }
 
+# getting increased censor points - for test purposes
+factors <- seq(1.2, 17.2, by = 0.2)
+increasedCensorPoints <- lapply(factors, function(factor) censorPoints * factor)
+names(increasedCensorPoints) <- paste0("factor_", sprintf("%.1f", factors))
+
 # Estimation of negative binomial paramters for each gene
 c(normMeanValues, dispParam) %<-% negBinomParamEstimation(countsSubsampled)
 
 # Estimation of a gamma mixed distribution over all means
 nExpressedGenes <- sum(normMeanValues[normMeanValues$matrix == "complete",]$mean != 0)
 numGenesKept <- ceiling(nExpressedGenes / 100) * 100
-gammaFits <- gammaMixedDistEstimation(normMeanValues, censorPoints, numGenesKept)
 
-# visualize gamma fits
-p <- visualize.gamma.fits(normMeanValues$mean[normMeanValues$matrix == "complete"],
-                          gammaFits[gammaFits$matrix == "complete",],
-                          nGenes = numGenesKept)
-ggsave(paste0("C:/Users/Cem/Downloads/", paste0("gamma_fits_plot_", idToName, ".png")), plot = p)
+for (factor_name in names(increasedCensorPoints)) {
+  currentCensorPoint <- increasedCensorPoints[[factor_name]]
+  print(factor_name)
+  print(currentCensorPoint)
+  
+  gammaFits <- gammaMixedDistEstimation(normMeanValues, currentCensorPoint, numGenesKept)
+  
+  # Visualize gamma fits for the 'complete' matrix
+  p <- visualize.gamma.fits(normMeanValues$mean[normMeanValues$matrix == "complete"],
+                            gammaFits[gammaFits$matrix == "complete",],
+                            nGenes = numGenesKept)
+  
+  # Add a vertical line and text annotation for the censor point
+  p <- p + geom_vline(xintercept = currentCensorPoint, linetype = "dashed", color = "black")
 
-# Parameterization of the parameters of the gamma fits by the mean UMI counts per cell
-# gammaLinearFits: parameter, intercept, meanUMI
-#c(umiValues, gammaLinearFits, gammaFits) %<-% parameterizationOfGammaFits(gammaFits, meanUmi)
+  # Add a label in the top right corner
+  label_text <- sprintf("Censor Point: %.5f", currentCensorPoint)
+  p <- p + annotate("text", x = Inf, y = Inf, label = label_text,
+               hjust = 1.1, vjust = 1.1, color = "black", size = 3)
+  
+  # Save the plot, incorporating the factor name into the file name
+  filename <- paste0("C:/Users/Cem/Downloads/3rd_gamma_fits/trachea_plasmacell_with_cutoff/", "gamma_fits_plot_", factor_name, ".png")
+  ggsave(filename, plot = p)
+}
+
 ```
