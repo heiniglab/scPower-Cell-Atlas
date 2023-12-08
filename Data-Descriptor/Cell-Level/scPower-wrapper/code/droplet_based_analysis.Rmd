@@ -523,31 +523,40 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000,
 
 }
 
-sampleMeanValuesQuantiles<-function(gamma.parameters, nGenes=21000){
+sampleMeanValuesQuantiles <- function(gamma.parameters, nGenes = 21000, censorPoint = NULL) {
+  # Set p1 to a minimal value of 0.01
+  gamma.parameters$p1 <- max(gamma.parameters$p1, 0.01)
 
-  #Set p1 to a minimal value of 0.01
-  gamma.parameters$p1<-max(gamma.parameters$p1,0.01)
-
-  #Calculate p2 given the other two parameters if it is not provided
-  if(! "p2" %in% colnames(gamma.parameters)){
-    gamma.parameters$p2<-1-gamma.parameters$p1-gamma.parameters$p3
+  # Calculate p2 given the other two parameters if it is not provided
+  if (!"p2" %in% colnames(gamma.parameters)) {
+    gamma.parameters$p2 <- 1 - gamma.parameters$p1 - gamma.parameters$p3
   }
 
-  #Zero Component
-  nZeros<-round(nGenes*gamma.parameters$p1)
-  vals<-rep(0,nZeros)
+  # Zero Component
+  nZeros <- round(nGenes * gamma.parameters$p1)
+  vals <- rep(0, nZeros)
 
-  #First Gamma component
-  nGamma1<-round(nGenes*gamma.parameters$p2)
-  quantiles.c1<-seq(1/(nGamma1+1),1-1/(nGamma1+1),by=1/(nGamma1+1))
-  vals<-c(vals,qgamma(quantiles.c1,shape = gamma.parameters$s1,
-                      rate = gamma.parameters$r1))
+  # First Gamma component
+  nGamma1 <- round(nGenes * gamma.parameters$p2)
+  quantiles.c1 <- seq(1 / (nGamma1 + 1), 1 - 1 / (nGamma1 + 1), by = 1 / (nGamma1 + 1))
+  vals <- c(vals, qgamma(quantiles.c1, shape = gamma.parameters$s1, 
+                         rate = gamma.parameters$r1))
 
-  #Second Gamma component
-  nGamma2<-nGenes-nZeros-nGamma1
-  quantiles.c2<-seq(1/(nGamma2+1),1-1/(nGamma2+1),by=1/(nGamma2+1))
-  vals<-c(vals,qgamma(quantiles.c2,shape = gamma.parameters$s2,
-                      rate = gamma.parameters$r2))
+  # Second Gamma component
+  nGamma2 <- round(nGenes * gamma.parameters$p3)
+  quantiles.c2 <- seq(1 / (nGamma2 + 1), 1 - 1 / (nGamma2 + 1), by = 1 / (nGamma2 + 1))
+  vals <- c(vals, qgamma(quantiles.c2, shape = gamma.parameters$s2, 
+                         rate = gamma.parameters$r2))
+
+  # Third Gamma component
+  nGamma3 <- nGenes - nZeros - nGamma1 - nGamma2
+  quantiles.c3 <- seq(1 / (nGamma3 + 1), 1 - 1 / (nGamma3 + 1), by = 1 / (nGamma3 + 1))
+  vals <- c(vals, qgamma(quantiles.c3, shape = gamma.parameters$s3, rate = gamma.parameters$r3))
+
+  # Exclude values below the censor point
+  if (!is.null(censorPoint)) {
+    vals <- vals[vals >= censorPoint]
+  }
 
   return(vals)
 }
