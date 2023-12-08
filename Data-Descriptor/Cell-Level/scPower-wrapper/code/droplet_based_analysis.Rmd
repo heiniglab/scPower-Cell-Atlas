@@ -283,18 +283,18 @@ gammaMixedDistEstimation <- function(norm.mean.values, censor.points, num.genes.
 
   gamma.fits <- NULL
 
-  for(name in unique(norm.mean.values$matrix)){
+  name <- "complete"
 
-    # Number of cells per cell type as censoring point
-    censoredPoint <- censor.points[name]
+  # Number of cells per cell type as censoring point
+  censoredPoint <- censor.points[name]
 
-    norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
-    gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
-                                             num.genes.kept = num.genes.kept,
-                                             censoredPoint = censoredPoint)
-    gamma.fit.temp$matrix <- name
-    gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
-  }
+  norm.mean.values.temp <- norm.mean.values[norm.mean.values$matrix == name, ]
+  gamma.fit.temp <- mixed.gamma.estimation(norm.mean.values.temp$mean,
+                                           num.genes.kept = num.genes.kept,
+                                           censoredPoint = censoredPoint)
+  gamma.fit.temp$matrix <- name
+  gamma.fits <- rbind(gamma.fits, gamma.fit.temp)
+
 
   print("Estimation of a gamma mixed distribution done successfully.")
   return(gamma.fits)
@@ -457,8 +457,8 @@ writeToDatabase <- function(data.frame, table.name, append = TRUE) {
   dbWriteTable(connectionInstance, table.name, data.frame, append = append)
 }
 
-visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000,
-                          lower.dist=1e-5,zero.pos=1e-6, num.bins=30){
+visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoint = NULL,
+                            lower.dist=1e-5,zero.pos=1e-6, num.bins=30){
 
   require(ggplot2)
 
@@ -468,7 +468,7 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000,
   }
 
   #Simulate mean values
-  sim.mean.vals<-sampleMeanValuesQuantiles(gamma.parameters, nGenes)
+  sim.mean.vals<-sampleMeanValuesQuantiles(gamma.parameters, nGenes, censorPoint)
 
   #Set p1 to a minimal value of 0.01
   gamma.parameters$p1<-max(gamma.parameters$p1,0.01)
@@ -554,6 +554,7 @@ sampleMeanValuesQuantiles <- function(gamma.parameters, nGenes = 21000, censorPo
   vals <- c(vals, qgamma(quantiles.c3, shape = gamma.parameters$s3, rate = gamma.parameters$r3))
 
   # Exclude values below the censor point
+  print(censorPoint)
   if (!is.null(censorPoint)) {
     vals <- vals[vals >= censorPoint]
   }
@@ -863,7 +864,8 @@ for (factor_name in names(increasedCensorPoints)) {
   # Visualize gamma fits for the 'complete' matrix
   p <- visualizeGammaFits(normMeanValues$mean[normMeanValues$matrix == "complete"],
                             gammaFits[gammaFits$matrix == "complete",],
-                            nGenes = numGenesKept)
+                            nGenes = numGenesKept,
+                            censorPoint = currentCensorPoint)
   
   # Add a vertical line and text annotation for the censor point
   p <- p + geom_vline(xintercept = currentCensorPoint, linetype = "dashed", color = "black")
@@ -874,7 +876,7 @@ for (factor_name in names(increasedCensorPoints)) {
                hjust = 1.1, vjust = 1.1, color = "black", size = 3)
   
   # Save the plot, incorporating the factor name into the file name
-  filename <- paste0("C:/Users/Cem/Downloads/3rd_gamma_fits/trachea_plasmacell_with_cutoff/", "gamma_fits_plot_", factor_name, ".png")
+  filename <- paste0("C:/Users/Cem/Downloads/3rd_gamma_fits/trachea_plasmacell_with_cutoff_updated/", "gamma_fits_plot_", factor_name, ".png")
   ggsave(filename, plot = p)
 }
 
