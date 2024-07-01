@@ -1,5 +1,85 @@
 "completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
 "EFO:0009922_UBERON:0002080_CL:0008034" "10x 3' v3_heart right ventricle_mural cell" "Error: cannot allocate vector of size 9.8 Gb
-" "2_4_10" 39755
+" "0_0_0" 39755
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002080_CL:0002548" "10x 3' v3_heart right ventricle_fibroblast of cardiac tissue" "Error: cannot allocate vector of size 8.7 Gb
+" "0_0_0" 35156
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002080_CL:0000746" "10x 3' v3_heart right ventricle_cardiac muscle cell" "Error: cannot allocate vector of size 16.3 Gb
+" "0_0_0" 65839
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002080_CL:0000003" "10x 3' v3_heart right ventricle_native cell" "Error: cannot allocate vector of size 3.3 Gb
+" "0_0_0" 13209
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002080_CL:0000097" "10x 3' v3_heart right ventricle_mast cell" "Error in parametricDispersionFit_DEseq(means, disps): Parametric dispersion fit failed.
+" "0_0_0" 481
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002094_CL:0008034" "10x 3' v3_interventricular septum_mural cell" "Error: cannot allocate vector of size 9.5 Gb
+" "0_0_0" 38502
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002094_CL:0000746" "10x 3' v3_interventricular septum_cardiac muscle cell" "Error: cannot allocate vector of size 17.5 Gb
+" "0_0_0" 70736
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002094_CL:0000115" "10x 3' v3_interventricular septum_endothelial cell" "Error: cannot allocate vector of size 7.5 Gb
+" "0_0_0" 30300
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002094_CL:0002548" "10x 3' v3_interventricular septum_fibroblast of cardiac tissue" "Error: cannot allocate vector of size 9.0 Gb
+" "0_0_0" 36301
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002094_CL:0000763" "10x 3' v3_interventricular septum_myeloid cell" "Error: cannot allocate vector of size 3.3 Gb
+" "0_0_0" 13372
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0000746" "10x 3' v3_heart left ventricle_cardiac muscle cell" "Error: cannot allocate vector of size 30.0 Gb
+" "0_0_0" 121116
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0000115" "10x 3' v3_heart left ventricle_endothelial cell" "Error: cannot allocate vector of size 12.2 Gb
+" "0_0_0" 49277
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0000003" "10x 3' v3_heart left ventricle_native cell" "Error: cannot allocate vector of size 5.6 Gb
+" "0_0_0" 22609
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0008034" "10x 3' v3_heart left ventricle_mural cell" "Error: cannot allocate vector of size 18.6 Gb
+" "0_0_0" 74975
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0000763" "10x 3' v3_heart left ventricle_myeloid cell" "Error: cannot allocate vector of size 6.4 Gb
+" "0_0_0" 25816
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0002548" "10x 3' v3_heart left ventricle_fibroblast of cardiac tissue" "Error: cannot allocate vector of size 13.3 Gb
+" "0_0_0" 53699
+
+
+"completeDatasetID" "idToName" "errorMessage" "datasetBodySpecific" "cellCount"
+"EFO:0009922_UBERON:0002084_CL:0000542" "10x 3' v3_heart left ventricle_lymphocyte" "Error: cannot allocate vector of size 1.7 Gb
+" "0_0_0" 6991
 
 
