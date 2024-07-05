@@ -1,30 +1,14 @@
 library(plumber)
 
-#* @apiTitle Table API
-
-#* Return a summary of the dataset
-#* @param dataset The name of the dataset
-#* @get /summary
-function(dataset) {
-  data <- get(dataset, "package:datasets")
-  summary(data)
-}
+#* @apiTitle scPower API
 
 #* Return the dataset as JSON
 #* @param dataset The name of the dataset
 #* @get /data
+# example usage: http://localhost:8000/data?dataset=iris
 function(dataset) {
   data <- get(dataset, "package:datasets")
   as.data.frame(data)
-}
-
-#* Subtract two numbers
-#* @param x The first number
-#* @param y The second number
-#* @get /subtract/:x/:y
-function(x, y) {
-  result <- as.numeric(x) - as.numeric(y)
-  list(result = result)
 }
 
 # Enable CORS
