@@ -609,6 +609,8 @@ shinyServer(
 
       colnames(power.study.plot)[2]<-"Detection.power"
 
+      saveRDS(power.study.plot, file = "power_study_plot.rds")
+      
       plot_ly(data=power.study.plot,
               type = "scatter",
               mode="markers",
