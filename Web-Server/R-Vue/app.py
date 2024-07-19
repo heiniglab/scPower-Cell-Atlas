@@ -1,39 +1,37 @@
 import streamlit as st
-import pandas as pd
 import requests
+import json
 
-# Function to load data from API
-@st.cache_data
-def load_data_from_api(api_url):
-    response = requests.get(api_url)
-    if response.status_code == 200:
-        return pd.DataFrame(response.json())
-    else:
-        st.error(f"Failed to fetch data: HTTP {response.status_code}")
-        return None
+def fetch_api_data(api_url):
+    try:
+        response = requests.get(api_url)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        return response.text, response.headers.get('content-type')
+    except requests.RequestException as e:
+        return str(e), None
 
-# Streamlit app
 def main():
-    st.title("API Data Viewer")
+    st.title("scPower Power Results")
 
     # API URL input
     api_url = st.text_input("Enter API URL", value="http://localhost:8000/data")
     
-    if st.button("Load Data"):
-        # Load the data
-        df = load_data_from_api(api_url)
-        
-        if df is not None:
-            # Display basic info
-            st.write(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
+    if st.button("Fetch Data"):
+        data, content_type = fetch_api_data(api_url)
+
+        data = data[2:-2].replace('\\"', '"')
+
+        st.subheader("Power Results:")
+        try:
+            parsed_data = json.loads(data)
             
-            # Search functionality
-            search = st.text_input("Search in any column:")
-            if search:
-                df = df[df.astype(str).apply(lambda row: row.str.contains(search, case=False).any(), axis=1)]
+            if isinstance(parsed_data, list):
+                st.write(f"Number of items: {len(parsed_data)}")
             
-            # Display the dataframe
-            st.dataframe(df)
+            st.json(parsed_data)
+               
+        except json.JSONDecodeError:
+            st.error("The API response is not valid JSON.")
 
 if __name__ == "__main__":
     main()
