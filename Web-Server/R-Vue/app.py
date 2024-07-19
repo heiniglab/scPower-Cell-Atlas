@@ -1,35 +1,48 @@
 import streamlit as st
 import requests
 import json
+import io
 
 def fetch_api_data(api_url):
     try:
         response = requests.get(api_url)
         response.raise_for_status()  # Raise an exception for bad status codes
-        return response.text, response.headers.get('content-type')
+        return response.json()
     except requests.RequestException as e:
-        return str(e), None
+        st.error(f"API Error: {str(e)}")
+        return None
+    except json.JSONDecodeError:
+        st.error("The API response is not valid JSON.")
+        return None
+
+def read_json_file(file):
+    try:
+        content = file.getvalue().decode("utf-8")
+        return json.loads(content)
+    except json.JSONDecodeError:
+        st.error("The uploaded file is not valid JSON.")
+        return None
 
 def main():
     st.title("scPower Power Results")
-
-    # API URL input
-    api_url = st.text_input("Enter API URL", value="http://localhost:8000/data")
+    api_url = "http://localhost:8000/data"
     
-    if st.button("Fetch Data"):
-        data, content_type = fetch_api_data(api_url)
+    uploaded_file = st.file_uploader("Choose a JSON file", type=['json'])
 
-        st.subheader("Power Results:")
-        try:
-            parsed_data = json.loads(data)
+    if st.button("Fetch Data"):
+        if uploaded_file is None:
+            print("api fetch")
+            data = fetch_api_data(api_url)
+        else:
+            print("read file")
+            data = read_json_file(uploaded_file)
+
+        if data is not None:
+            st.subheader("Power Results:")
+            if isinstance(data, list):
+                st.write(f"Number of items: {len(data)}")
             
-            if isinstance(parsed_data, list):
-                st.write(f"Number of items: {len(parsed_data)}")
-            
-            st.json(parsed_data)
-               
-        except json.JSONDecodeError:
-            st.error("The API response is not valid JSON.")
+            st.json(data)
 
 if __name__ == "__main__":
     main()
