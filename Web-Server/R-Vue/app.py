@@ -19,8 +19,6 @@ def main():
     if st.button("Fetch Data"):
         data, content_type = fetch_api_data(api_url)
 
-        data = data[2:-2].replace('\\"', '"')
-
         st.subheader("Power Results:")
         try:
             parsed_data = json.loads(data)

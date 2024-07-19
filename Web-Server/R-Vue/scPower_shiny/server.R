@@ -1,5 +1,5 @@
 # Loading libraries
-lapply(c("DBI", "dplyr", "plotly", "reshape2", "RPostgres", "RPostgreSQL", "scPower", "shiny",
+lapply(c("DBI", "dplyr", "jsonlite", "plotly", "reshape2", "RPostgres", "RPostgreSQL", "scPower", "shiny",
          "RSQLite", "readr", "magrittr", "zeallot"), 
       library, character.only = TRUE)
 
@@ -609,7 +609,8 @@ shinyServer(
 
       colnames(power.study.plot)[2]<-"Detection.power"
 
-      saveRDS(power.study.plot, file = "power_study_plot.rds")
+      json_data <- toJSON(power.study.plot)
+      write(json_data, file = "power_study_plot.json")
       
       plot_ly(data=power.study.plot,
               type = "scatter",
