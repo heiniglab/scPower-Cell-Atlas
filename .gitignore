@@ -89,5 +89,3 @@ pnpm-debug.log*
 *.sw?
 Web-Server/R-Vue/scPower_shiny/power_study_plot.rds
 Web-Server/R-Vue/scPower_shiny/tests/testthat/_snaps/windows-4.1/shinytest2/scPower_shiny-001.json
-Web-Server/R-Vue/scPower_shiny/power_study_plot.json
-Web-Server/R-Vue/scPower_shiny/power_study.json
