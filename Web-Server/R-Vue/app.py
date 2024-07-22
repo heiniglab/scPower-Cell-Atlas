@@ -6,16 +6,27 @@ import os
 import plotly.graph_objects as go
 import plotly.subplots as sp
 import pandas as pd
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from google.oauth2 import service_account
+from io import BytesIO
 
-def fetch_api_data(url):
-    response = requests.get(url)
-        
-    if response.status_code == 200:
-        st.success("Successfully fetched the data. Loading it...")
-        time.sleep(2)    
-        return json.loads(response.text)
-    else:
-        st.error(f"Failed to fetch data from GitHub. Status code: {response.status_code}")
+# Function to set up Google Drive API client
+def get_gdrive_service():
+    creds = service_account.Credentials.from_service_account_file(
+        'scpower-cell-atlas-ea6689019916.json',
+        scopes=['https://www.googleapis.com/auth/drive.readonly']
+    )
+    return build('drive', 'v3', credentials=creds)
+
+# Function to fetch JSON from Google Drive
+def fetch_gdrive_json(file_id):
+    service = get_gdrive_service()
+    try:
+        file = service.files().get_media(fileId=file_id).execute()
+        return json.loads(file.decode('utf-8'))
+    except Exception as e:
+        st.error(f"Error fetching file from Google Drive: {str(e)}")
         return None
 
 def read_json_file(file):
@@ -154,11 +165,10 @@ def create_influence_plot(data, parameter_vector):
 
     return fig
 
-
 def main():
     st.title("scPower Power Results")
-    scatter_github_url = "https://raw.githubusercontent.com/Cem-Gulec/scPower-Cell-Atlas/main/Web-Server/R-Vue/scPower_shiny/power_study_plot.json"
-    influence_github_url = "https://raw.githubusercontent.com/Cem-Gulec/scPower-Cell-Atlas/main/Web-Server/R-Vue/scPower_shiny/power_study.json"
+    scatter_file_id   = "1NkBP3AzLWuXKeYwgtVdTYxrzLjCuqLkR"
+    influence_file_id = "1viAH5OEyhSoQjdGHi2Cm0_tFHrr1Z3GQ"
     
     # Initialize session state
     if 'data' not in st.session_state:
@@ -182,8 +192,8 @@ def main():
             st.session_state.data = None
 
     if st.button("Fetch Data"):
-        st.session_state.data = fetch_api_data(scatter_github_url)
-        st.session_state.influence_data = fetch_api_data(influence_github_url)
+        st.session_state.data = fetch_gdrive_json(scatter_file_id)
+        st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
         st.session_state.show_influence_plot = False
 
     if st.session_state.data is not None:
