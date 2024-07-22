@@ -4,6 +4,7 @@ import json
 import time
 import os
 import plotly.graph_objects as go
+import plotly.subplots as sp
 import pandas as pd
 
 def fetch_api_data(api_url):
@@ -75,15 +76,100 @@ def create_scatter_plot(data, x_axis, y_axis, size_axis):
 
     return fig
 
+def create_influence_plot(data, parameter_vector):
+    df = pd.DataFrame(data)
+    
+    selected_pair = parameter_vector[0]
+    study_type = parameter_vector[5]
+
+    # Set grid dependent on parameter choice
+    if selected_pair == "sc":
+        x_axis, x_axis_label = "sampleSize", "Sample size"
+        y_axis, y_axis_label = "totalCells", "Cells per sample"
+    elif selected_pair == "sr":
+        x_axis, x_axis_label = "sampleSize", "Sample size"
+        y_axis, y_axis_label = "readDepth", "Read depth"
+    else:
+        x_axis, x_axis_label = "totalCells", "Cells per sample"
+        y_axis, y_axis_label = "readDepth", "Read depth"
+
+    # Check if the required columns exist
+    required_columns = [x_axis, y_axis, 'sampleSize', 'totalCells', 'readDepth']
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        st.error(f"Missing required columns: {', '.join(missing_columns)}")
+        return None
+
+    # Select study with the maximal values 
+    power_column = next((col for col in df.columns if 'power' in col.lower()), None)
+    if not power_column:
+        st.error("No power column found in the data.")
+        return None
+    max_study = df.loc[df[power_column].idxmax()]
+
+    # Identify the columns for plotting
+    plot_columns = [col for col in df.columns if any(keyword in col.lower() for keyword in ['power', 'probability', 'prob'])]
+    if not plot_columns:
+        st.error("No suitable columns found for plotting.")
+        return None
+
+    # Create subplots
+    fig = sp.make_subplots(rows=1, cols=2, shared_yaxes=True)
+
+    # Plot cells per person
+    df_plot1 = df[df[y_axis] == max_study[y_axis]]
+    for col in plot_columns:
+        fig.add_trace(
+            go.Scatter(
+                x=df_plot1[x_axis], y=df_plot1[col],
+                mode='lines+markers', name=col,
+                text=[f'Sample size: {row.sampleSize}<br>Cells per individuum: {row.totalCells}<br>Read depth: {row.readDepth}<br>{col}: {row[col]:.3f}' for _, row in df_plot1.iterrows()],
+                hoverinfo='text'
+            ),
+            row=1, col=1
+        )
+
+    # Plot read depth
+    df_plot2 = df[df[x_axis] == max_study[x_axis]]
+    for col in plot_columns:
+        fig.add_trace(
+            go.Scatter(
+                x=df_plot2[y_axis], y=df_plot2[col],
+                mode='lines+markers', name=col, showlegend=False,
+                text=[f'Sample size: {row.sampleSize}<br>Cells per individuum: {row.totalCells}<br>Read depth: {row.readDepth}<br>{col}: {row[col]:.3f}' for _, row in df_plot2.iterrows()],
+                hoverinfo='text'
+            ),
+            row=1, col=2
+        )
+
+    # Update layout
+    fig.update_layout(
+        title="Power Analysis Results",
+        xaxis_title=x_axis_label,
+        xaxis2_title=y_axis_label,
+        yaxis_title="Probability",
+        legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
+    )
+
+    # Add vertical lines
+    fig.add_vline(x=max_study[x_axis], line_dash="dot", row=1, col=1)
+    fig.add_vline(x=max_study[y_axis], line_dash="dot", row=1, col=2)
+
+    return fig
+
+
 def main():
     st.title("scPower Power Results")
-    api_url = "http://localhost:8000/data"
+    scatter_api_url = "http://localhost:8000/scatter_data"
+    influence_api_url = "http://localhost:8000/influence_data"
     
     # Initialize session state
     if 'data' not in st.session_state:
         st.session_state.data = None
     if 'uploaded_file' not in st.session_state:
         st.session_state.uploaded_file = None
+    if 'influence_data' not in st.session_state:
+        st.session_state.influence_data = None
 
     uploaded_file = st.file_uploader("Choose a file to upload")
     
@@ -97,7 +183,8 @@ def main():
             st.session_state.data = None
 
     if st.button("Fetch Data"):
-        st.session_state.data = fetch_api_data(api_url)
+        st.session_state.data = fetch_api_data(scatter_api_url)
+        st.session_state.influence_data = fetch_api_data(influence_api_url)
 
     if st.session_state.data is not None:
         st.subheader("Power Results:")
@@ -118,6 +205,14 @@ def main():
                 st.plotly_chart(fig)
         else:
             st.warning("No data available for plotting. Please fetch or upload data first.")
+
+        # Add the new influence plot
+        if st.session_state.influence_data is not None:
+            st.subheader("Influence Plot")
+            parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
+            fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
+            if fig is not None:
+                st.plotly_chart(fig)
 
 
 if __name__ == "__main__":

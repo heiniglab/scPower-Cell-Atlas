@@ -609,6 +609,7 @@ shinyServer(
 
       colnames(power.study.plot)[2]<-"Detection.power"
 
+      # save power.study.plot as a json file
       json_data <- toJSON(power.study.plot)
       write(json_data, file = "power_study_plot.json")
       
@@ -685,6 +686,10 @@ shinyServer(
       } else {
         powerName<-"DE power"
       }
+
+      # save power.study as a json file
+      json_data <- toJSON(power.study)
+      write(json_data, file = "power_study.json")
 
       ##############
       #Plot cells per person
