@@ -170,6 +170,8 @@ def main():
         st.session_state.uploaded_file = None
     if 'influence_data' not in st.session_state:
         st.session_state.influence_data = None
+    if 'show_influence_plot' not in st.session_state:
+        st.session_state.show_influence_plot = False
 
     uploaded_file = st.file_uploader("Choose a file to upload")
     
@@ -185,6 +187,7 @@ def main():
     if st.button("Fetch Data"):
         st.session_state.data = fetch_api_data(scatter_api_url)
         st.session_state.influence_data = fetch_api_data(influence_api_url)
+        st.session_state.show_influence_plot = False
 
     if st.session_state.data is not None:
         st.subheader("Power Results:")
@@ -203,11 +206,12 @@ def main():
             fig = create_scatter_plot(st.session_state.data, x_axis, y_axis, size_axis)
             if fig is not None:
                 st.plotly_chart(fig)
+                st.session_state.show_influence_plot = True
         else:
             st.warning("No data available for plotting. Please fetch or upload data first.")
 
         # Add the new influence plot
-        if st.session_state.influence_data is not None:
+        if st.session_state.influence_data is not None and st.session_state.show_influence_plot:
             st.subheader("Influence Plot")
             parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
             fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
