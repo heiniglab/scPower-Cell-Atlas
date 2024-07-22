@@ -24,6 +24,9 @@ def fetch_gdrive_json(file_id):
     service = get_gdrive_service()
     try:
         file = service.files().get_media(fileId=file_id).execute()
+        file_name = service.files().get(fileId=file_id, fields="name").execute().get('name')
+        st.success(f"Successfully fetched *{file_name}*. Loading it...")
+        time.sleep(2) 
         return json.loads(file.decode('utf-8'))
     except Exception as e:
         st.error(f"Error fetching file from Google Drive: {str(e)}")
