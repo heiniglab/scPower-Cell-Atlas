@@ -7,18 +7,15 @@ import plotly.graph_objects as go
 import plotly.subplots as sp
 import pandas as pd
 
-def fetch_api_data(api_url):
-    try:
-        response = requests.get(api_url)
-        response.raise_for_status()  # Raise an exception for bad status codes
+def fetch_api_data(url):
+    response = requests.get(url)
+        
+    if response.status_code == 200:
         st.success("Successfully fetched the data. Loading it...")
         time.sleep(2)    
-        return response.json()
-    except requests.RequestException as e:
-        st.error(f"API Error: {str(e)}")
-        return None
-    except json.JSONDecodeError:
-        st.error("The API response is not valid JSON.")
+        return json.loads(response.text)
+    else:
+        st.error(f"Failed to fetch data from GitHub. Status code: {response.status_code}")
         return None
 
 def read_json_file(file):
@@ -160,8 +157,8 @@ def create_influence_plot(data, parameter_vector):
 
 def main():
     st.title("scPower Power Results")
-    scatter_api_url = "http://localhost:8000/scatter_data"
-    influence_api_url = "http://localhost:8000/influence_data"
+    scatter_github_url = "https://raw.githubusercontent.com/Cem-Gulec/scPower-Cell-Atlas/main/Web-Server/R-Vue/scPower_shiny/power_study_plot.json"
+    influence_github_url = "https://raw.githubusercontent.com/Cem-Gulec/scPower-Cell-Atlas/main/Web-Server/R-Vue/scPower_shiny/power_study.json"
     
     # Initialize session state
     if 'data' not in st.session_state:
@@ -185,8 +182,8 @@ def main():
             st.session_state.data = None
 
     if st.button("Fetch Data"):
-        st.session_state.data = fetch_api_data(scatter_api_url)
-        st.session_state.influence_data = fetch_api_data(influence_api_url)
+        st.session_state.data = fetch_api_data(scatter_github_url)
+        st.session_state.influence_data = fetch_api_data(influence_github_url)
         st.session_state.show_influence_plot = False
 
     if st.session_state.data is not None:
