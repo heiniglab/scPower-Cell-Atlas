@@ -1,5 +1,4 @@
 import streamlit as st
-import requests
 import json
 import time
 import os
@@ -55,7 +54,6 @@ def create_scatter_plot(data, x_axis, y_axis, size_axis):
     df = df.dropna(subset=[x_axis, y_axis, size_axis, 'Detection.power'])
     
     if df.empty:
-        st.error("No valid numeric data for the selected axes.")
         return None
     
     # Calculate size reference
@@ -174,60 +172,67 @@ def main():
     influence_file_id = "1viAH5OEyhSoQjdGHi2Cm0_tFHrr1Z3GQ"
     
     # Initialize session state
-    if 'data' not in st.session_state:
-        st.session_state.data = None
-    if 'uploaded_file' not in st.session_state:
-        st.session_state.uploaded_file = None
+    if 'scatter_data' not in st.session_state:
+        st.session_state.scatter_data = None
     if 'influence_data' not in st.session_state:
         st.session_state.influence_data = None
-    if 'show_influence_plot' not in st.session_state:
-        st.session_state.show_influence_plot = False
+    if 'uploaded_data' not in st.session_state:
+        st.session_state.uploaded_data = None
+    if 'uploaded_file' not in st.session_state:
+        st.session_state.uploaded_file = None
+    if 'show_user_options' not in st.session_state:
+        st.session_state.show_user_options = False
 
-    uploaded_file = st.file_uploader("Choose a file to upload")
-    
-    if uploaded_file is not None and uploaded_file != st.session_state.uploaded_file:
-        st.session_state.uploaded_file = uploaded_file
-        file_extension = os.path.splitext(uploaded_file.name)[1].lower()
-        if file_extension == ".json":
-            st.session_state.data = read_json_file(uploaded_file)
-        else:
-            st.error("Error: The uploaded file is not a valid JSON file.")
-            st.session_state.data = None
-
-    if st.button("Fetch Data"):
-        st.session_state.data = fetch_gdrive_json(scatter_file_id)
+    # Fetch initial data if not already present
+    if st.session_state.scatter_data is None:
+        st.session_state.scatter_data = fetch_gdrive_json(scatter_file_id)
+    if st.session_state.influence_data is None:
         st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
-        st.session_state.show_influence_plot = False
 
-    if st.session_state.data is not None:
-        st.subheader("Power Results:")
-        if isinstance(st.session_state.data, list):
-            st.write(f"Number of items: {len(st.session_state.data)}")
-        
-        st.json(st.session_state.data)
+    # Add the new influence plot
+    if st.session_state.influence_data is not None:
+        st.subheader("Influence Plot")
+        parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
+        fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
+        if fig is not None:
+            st.plotly_chart(fig)
+    else:
+        st.warning("No influence data available. Please check your data source.")
+    
+    # Create scatter plot
+    st.subheader("Power Results Scatter Plot")
+    if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
+        x_axis = st.selectbox("Select X-axis", options=st.session_state.scatter_data[0].keys())
+        y_axis = st.selectbox("Select Y-axis", options=st.session_state.scatter_data[0].keys())
+        size_axis = st.selectbox("Select Size-axis", options=st.session_state.scatter_data[0].keys())
 
-        # Create scatter plot
-        st.subheader("Power Results Scatter Plot")
-        if isinstance(st.session_state.data, list) and len(st.session_state.data) > 0:
-            x_axis = st.selectbox("Select X-axis", options=st.session_state.data[0].keys())
-            y_axis = st.selectbox("Select Y-axis", options=st.session_state.data[0].keys())
-            size_axis = st.selectbox("Select Size-axis", options=st.session_state.data[0].keys())
+        fig = create_scatter_plot(st.session_state.scatter_data, x_axis, y_axis, size_axis)
+        if fig is not None:
+            st.plotly_chart(fig)
+            st.session_state.show_user_options = True
+    else:
+        st.warning("No data available for plotting. Please fetch or upload data first.")
 
-            fig = create_scatter_plot(st.session_state.data, x_axis, y_axis, size_axis)
-            if fig is not None:
-                st.plotly_chart(fig)
-                st.session_state.show_influence_plot = True
-        else:
-            st.warning("No data available for plotting. Please fetch or upload data first.")
+    # after plots are being drawn, show user options
+    if st.session_state.show_user_options:
+        st.subheader("Upload Your Own Data")
+        uploaded_file = st.file_uploader("Choose a file to upload")
+    
+        if uploaded_file is not None and uploaded_file != st.session_state.uploaded_file:
+            st.session_state.uploaded_file = uploaded_file
+            file_extension = os.path.splitext(uploaded_file.name)[1].lower()
+            if file_extension == ".json":
+                st.session_state.uploaded_data = read_json_file(uploaded_file)
+                st.success("File uploaded successfully!")
+            else:
+                st.error("Error: The uploaded file is not a valid JSON file.")
+                st.session_state.uploaded_data = None        
 
-        # Add the new influence plot
-        if st.session_state.influence_data is not None and st.session_state.show_influence_plot:
-            st.subheader("Influence Plot")
-            parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
-            fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
-            if fig is not None:
-                st.plotly_chart(fig)
-
+        if st.session_state.uploaded_data is not None:
+            st.subheader("Uploaded Data:")
+            if isinstance(st.session_state.uploaded_data, list):
+                st.write(f"Number of items: {len(st.session_state.uploaded_data)}")
+            st.json(st.session_state.uploaded_data)
 
 if __name__ == "__main__":
     main()
