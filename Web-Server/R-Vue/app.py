@@ -200,21 +200,19 @@ def main():
             opacity: 1;
         }
         </style>
-        """, unsafe_allow_html=True)
+                
 
-    # Custom JavaScript for handling hover on mobile devices
-    st.markdown("""
-    <script>
-        var elements = document.getElementsByClassName('hover-text');
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].addEventListener('touchstart', function() {
-                var content = this.getElementsByClassName('hover-content')[0];
-                content.style.visibility = content.style.visibility === 'visible' ? 'hidden' : 'visible';
-                content.style.opacity = content.style.opacity === '1' ? '0' : '1';
-            });
-        }
-    </script>
-    """, unsafe_allow_html=True)
+        <script>
+            var elements = document.getElementsByClassName('hover-text');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('touchstart', function() {
+                    var content = this.getElementsByClassName('hover-content')[0];
+                    content.style.visibility = content.style.visibility === 'visible' ? 'hidden' : 'visible';
+                    content.style.opacity = content.style.opacity === '1' ? '0' : '1';
+                });
+            }
+        </script>
+        """, unsafe_allow_html=True)
     
     # Initialize session state
     if 'scatter_data' not in st.session_state:
