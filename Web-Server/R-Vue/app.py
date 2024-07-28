@@ -260,7 +260,6 @@ def main():
         fig = create_scatter_plot(st.session_state.scatter_data, x_axis, y_axis, size_axis)
         if fig is not None:
             st.plotly_chart(fig)
-            st.session_state.show_user_options = True
     else:
         st.warning("No data available for plotting. Please fetch or upload data first.")
 
@@ -284,11 +283,18 @@ def main():
         fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
         if fig is not None:
             st.plotly_chart(fig)
+            st.session_state.show_user_options = True
     else:
         st.warning("No influence data available. Please check your data source.")
     
+    # data shown as json as well
+    if isinstance(st.session_state.scatter_data, list):
+        st.write(f"Number of items: {len(st.session_state.scatter_data)}")
+    st.json(st.session_state.scatter_data)
+    
     # after plots are being drawn, show user options
     if st.session_state.show_user_options:
+        st.markdown("<br><br>", unsafe_allow_html=True)
         st.subheader("Upload Your Own Data (optional)")
         uploaded_file = st.file_uploader("Choose a file to upload")
     
