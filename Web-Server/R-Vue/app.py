@@ -168,29 +168,9 @@ def main():
     st.title("Detect DE/eQTL genes")
     scatter_file_id   = "1NkBP3AzLWuXKeYwgtVdTYxrzLjCuqLkR"
     influence_file_id = "1viAH5OEyhSoQjdGHi2Cm0_tFHrr1Z3GQ"
-    
-    # Initialize session state
-    if 'scatter_data' not in st.session_state:
-        st.session_state.scatter_data = None
-    if 'influence_data' not in st.session_state:
-        st.session_state.influence_data = None
-    if 'uploaded_data' not in st.session_state:
-        st.session_state.uploaded_data = None
-    if 'uploaded_file' not in st.session_state:
-        st.session_state.uploaded_file = None
-    if 'show_user_options' not in st.session_state:
-        st.session_state.show_user_options = False
 
-    # Fetch initial data if not already present
-    if st.session_state.scatter_data is None:
-        st.session_state.scatter_data = fetch_gdrive_json(scatter_file_id)
-    if st.session_state.influence_data is None:
-        st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
-
-    # Create scatter plot
-    if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
-        # Custom CSS for the hover effect
-        st.markdown("""
+    # Custom CSS for the hover effect
+    st.markdown("""
         <style>
         .hover-text {
             position: relative;
@@ -222,20 +202,40 @@ def main():
         </style>
         """, unsafe_allow_html=True)
 
-        # Custom JavaScript for handling hover on mobile devices
-        st.markdown("""
-        <script>
-            var elements = document.getElementsByClassName('hover-text');
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].addEventListener('touchstart', function() {
-                    var content = this.getElementsByClassName('hover-content')[0];
-                    content.style.visibility = content.style.visibility === 'visible' ? 'hidden' : 'visible';
-                    content.style.opacity = content.style.opacity === '1' ? '0' : '1';
-                });
-            }
-        </script>
-        """, unsafe_allow_html=True)
+    # Custom JavaScript for handling hover on mobile devices
+    st.markdown("""
+    <script>
+        var elements = document.getElementsByClassName('hover-text');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('touchstart', function() {
+                var content = this.getElementsByClassName('hover-content')[0];
+                content.style.visibility = content.style.visibility === 'visible' ? 'hidden' : 'visible';
+                content.style.opacity = content.style.opacity === '1' ? '0' : '1';
+            });
+        }
+    </script>
+    """, unsafe_allow_html=True)
+    
+    # Initialize session state
+    if 'scatter_data' not in st.session_state:
+        st.session_state.scatter_data = None
+    if 'influence_data' not in st.session_state:
+        st.session_state.influence_data = None
+    if 'uploaded_data' not in st.session_state:
+        st.session_state.uploaded_data = None
+    if 'uploaded_file' not in st.session_state:
+        st.session_state.uploaded_file = None
+    if 'show_user_options' not in st.session_state:
+        st.session_state.show_user_options = False
 
+    # Fetch initial data if not already present
+    if st.session_state.scatter_data is None:
+        st.session_state.scatter_data = fetch_gdrive_json(scatter_file_id)
+    if st.session_state.influence_data is None:
+        st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
+
+    # Create scatter plot
+    if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
         # Subheader with hover effect
         st.markdown("""
         <div class="hover-text">
@@ -268,14 +268,18 @@ def main():
 
     # Add the new influence plot
     if st.session_state.influence_data is not None:
-        st.subheader("Influence Plot")
-        
+
         st.markdown("""
-            <div style='background-color: #0E1117; padding: 10px; margin-bottom: 5px;'>
-                <p>The overall detection power is the result of expression probability (probability that the DE/eQTL genes are detected) and DE power (probability that the DE/eQTL genes are found significant).</p>
-                <p>The plots show the influence of the y axis (left) and x axis (right) parameter of the upper plot onto the power of the selected study, while keeping the second parameter constant.</p>
-                <p>The dashed lines shows the location of the selected study.</p>
+        <div class="hover-text">
+            <h3>Influence Plot</h3>
+            <div class="hover-content">
+                <ul>
+                    <li>The overall detection power is the result of expression probability (probability that the DE/eQTL genes are detected) and DE power (probability that the DE/eQTL genes are found significant).</p>
+                    <li>The plots show the influence of the y axis (left) and x axis (right) parameter of the upper plot onto the power of the selected study, while keeping the second parameter constant.</p>
+                    <li>The dashed lines shows the location of the selected study.</p>
+                </ul>
             </div>
+        </div>
         """, unsafe_allow_html=True)
 
         parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
