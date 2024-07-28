@@ -79,8 +79,7 @@ def create_scatter_plot(data, x_axis, y_axis, size_axis):
 
     fig.update_layout(
         xaxis_title=x_axis,
-        yaxis_title=y_axis,
-        title="Power Results Scatter Plot"
+        yaxis_title=y_axis
     )
 
     return fig
@@ -153,7 +152,6 @@ def create_influence_plot(data, parameter_vector):
 
     # Update layout
     fig.update_layout(
-        title="Power Analysis Results",
         xaxis_title=x_axis_label,
         xaxis2_title=y_axis_label,
         yaxis_title="Probability",
@@ -167,7 +165,7 @@ def create_influence_plot(data, parameter_vector):
     return fig
 
 def main():
-    st.title("scPower Power Results")
+    st.title("Detect DE/eQTL genes")
     scatter_file_id   = "1NkBP3AzLWuXKeYwgtVdTYxrzLjCuqLkR"
     influence_file_id = "1viAH5OEyhSoQjdGHi2Cm0_tFHrr1Z3GQ"
     
@@ -189,6 +187,22 @@ def main():
     if st.session_state.influence_data is None:
         st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
 
+    # Create scatter plot
+    st.subheader("Scatter Plot")
+    if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
+        keys = sorted(st.session_state.scatter_data[0].keys())
+
+        x_axis = st.selectbox("Select X-axis", options=keys, index=keys.index("sampleSize"))
+        y_axis = st.selectbox("Select Y-axis", options=keys, index=keys.index("totalCells"))
+        size_axis = st.selectbox("Select Size-axis", options=keys, index=keys.index("Detection.power"))
+
+        fig = create_scatter_plot(st.session_state.scatter_data, x_axis, y_axis, size_axis)
+        if fig is not None:
+            st.plotly_chart(fig)
+            st.session_state.show_user_options = True
+    else:
+        st.warning("No data available for plotting. Please fetch or upload data first.")
+
     # Add the new influence plot
     if st.session_state.influence_data is not None:
         st.subheader("Influence Plot")
@@ -199,23 +213,9 @@ def main():
     else:
         st.warning("No influence data available. Please check your data source.")
     
-    # Create scatter plot
-    st.subheader("Power Results Scatter Plot")
-    if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
-        x_axis = st.selectbox("Select X-axis", options=st.session_state.scatter_data[0].keys())
-        y_axis = st.selectbox("Select Y-axis", options=st.session_state.scatter_data[0].keys())
-        size_axis = st.selectbox("Select Size-axis", options=st.session_state.scatter_data[0].keys())
-
-        fig = create_scatter_plot(st.session_state.scatter_data, x_axis, y_axis, size_axis)
-        if fig is not None:
-            st.plotly_chart(fig)
-            st.session_state.show_user_options = True
-    else:
-        st.warning("No data available for plotting. Please fetch or upload data first.")
-
     # after plots are being drawn, show user options
     if st.session_state.show_user_options:
-        st.subheader("Upload Your Own Data")
+        st.subheader("Upload Your Own Data (optional)")
         uploaded_file = st.file_uploader("Choose a file to upload")
     
         if uploaded_file is not None and uploaded_file != st.session_state.uploaded_file:
