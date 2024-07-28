@@ -188,8 +188,71 @@ def main():
         st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
 
     # Create scatter plot
-    st.subheader("Scatter Plot")
     if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
+        # Custom CSS for the hover effect
+        st.markdown("""
+        <style>
+        .hover-text {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+
+        .hover-text .hover-content {
+            visibility: hidden;
+            width: 510px;
+            background-color: #1E2A3A;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            transform: translateX(-570px);
+        }
+
+        .hover-text:hover .hover-content {
+            visibility: visible;
+            opacity: 1;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
+        # Custom JavaScript for handling hover on mobile devices
+        st.markdown("""
+        <script>
+            var elements = document.getElementsByClassName('hover-text');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('touchstart', function() {
+                    var content = this.getElementsByClassName('hover-content')[0];
+                    content.style.visibility = content.style.visibility === 'visible' ? 'hidden' : 'visible';
+                    content.style.opacity = content.style.opacity === '1' ? '0' : '1';
+                });
+            }
+        </script>
+        """, unsafe_allow_html=True)
+
+        # Subheader with hover effect
+        st.markdown("""
+        <div class="hover-text">
+            <h3>Scatter Plot</h3>
+            <div class="hover-content">
+                <p>Detection power depending on <em>cells per individual</em>, <em>read depth</em> and <em>sample size</em>.</p>
+                <p><strong>How to use this scatter plot:</strong></p>
+                <ul style="padding-left: 20px;">
+                    <li>Select the variables for X-axis, Y-axis, and Size from the dropdowns below.</li>
+                    <li>The plot will update automatically based on your selections.</li>
+                    <li>Use the plot tools to zoom, pan, or save the image.</li>
+                </ul>
+                <p><em>Tip: Try different combinations to discover interesting patterns in your data!</em></p>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
         keys = sorted(st.session_state.scatter_data[0].keys())
 
         x_axis = st.selectbox("Select X-axis", options=keys, index=keys.index("sampleSize"))
@@ -206,6 +269,15 @@ def main():
     # Add the new influence plot
     if st.session_state.influence_data is not None:
         st.subheader("Influence Plot")
+        
+        st.markdown("""
+            <div style='background-color: #0E1117; padding: 10px; margin-bottom: 5px;'>
+                <p>The overall detection power is the result of expression probability (probability that the DE/eQTL genes are detected) and DE power (probability that the DE/eQTL genes are found significant).</p>
+                <p>The plots show the influence of the y axis (left) and x axis (right) parameter of the upper plot onto the power of the selected study, while keeping the second parameter constant.</p>
+                <p>The dashed lines shows the location of the selected study.</p>
+            </div>
+        """, unsafe_allow_html=True)
+
         parameter_vector = ["sc", 1000, 100, 200, 400000000, "eqtl"]
         fig = create_influence_plot(st.session_state.influence_data, parameter_vector)
         if fig is not None:
