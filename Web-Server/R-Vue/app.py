@@ -219,10 +219,6 @@ def main():
         st.session_state.scatter_data = None
     if 'influence_data' not in st.session_state:
         st.session_state.influence_data = None
-    if 'uploaded_data' not in st.session_state:
-        st.session_state.uploaded_data = None
-    if 'uploaded_file' not in st.session_state:
-        st.session_state.uploaded_file = None
     if 'show_user_options' not in st.session_state:
         st.session_state.show_user_options = False
     if 'success_message' not in st.session_state:
@@ -301,21 +297,12 @@ def main():
         st.subheader("Upload Your Own Data (optional)")
         uploaded_file = st.file_uploader("Choose a file to upload")
     
-        if uploaded_file is not None and uploaded_file != st.session_state.uploaded_file:
-            st.session_state.uploaded_file = uploaded_file
+        if uploaded_file is not None:
             file_extension = os.path.splitext(uploaded_file.name)[1].lower()
             if file_extension == ".json":
-                st.session_state.uploaded_data = read_json_file(uploaded_file)
                 st.success("File uploaded successfully!")
             else:
                 st.error("Error: The uploaded file is not a valid JSON file.")
-                st.session_state.uploaded_data = None        
-
-        if st.session_state.uploaded_data is not None:
-            st.subheader("Uploaded Data:")
-            if isinstance(st.session_state.uploaded_data, list):
-                st.write(f"Number of items: {len(st.session_state.uploaded_data)}")
-            st.json(st.session_state.uploaded_data)
 
 if __name__ == "__main__":
     main()
