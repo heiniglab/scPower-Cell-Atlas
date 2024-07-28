@@ -294,15 +294,21 @@ def main():
     # after plots are being drawn, show user options
     if st.session_state.show_user_options:
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.subheader("Upload Your Own Data (optional)")
-        uploaded_file = st.file_uploader("Choose a file to upload")
-    
-        if uploaded_file is not None:
-            file_extension = os.path.splitext(uploaded_file.name)[1].lower()
-            if file_extension == ".json":
-                st.success("File uploaded successfully!")
-            else:
-                st.error("Error: The uploaded file is not a valid JSON file.")
+        
+        st.subheader("Further Operations")
+        data_source = st.radio("Data source", ["Upload Data", "Use Our Model"])
+        if data_source == "Upload Data":
+            uploaded_file = st.file_uploader("Upload Your Own Data (optional)")
+
+            if uploaded_file is not None:
+                file_extension = os.path.splitext(uploaded_file.name)[1].lower()
+                if file_extension == ".json":
+                    st.success("File uploaded successfully!")
+                else:
+                    st.error("Error: The uploaded file is not a valid JSON file.")
+        elif data_source == "Use Our Model":
+            organism = st.selectbox("Organism", ["Homo sapiens", "Mus musculus"])
+            
 
 if __name__ == "__main__":
     main()
