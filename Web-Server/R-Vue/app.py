@@ -24,7 +24,7 @@ def fetch_gdrive_json(file_id):
     try:
         file = service.files().get_media(fileId=file_id).execute()
         file_name = service.files().get(fileId=file_id, fields="name").execute().get('name')
-        st.success(f"Successfully fetched *{file_name}*. Loading it...")
+        st.session_state.success_message.success(f"Successfully fetched *{file_name}*. Loading it...")
         time.sleep(2) 
         return json.loads(file.decode('utf-8'))
     except Exception as e:
@@ -34,7 +34,7 @@ def fetch_gdrive_json(file_id):
 def read_json_file(file):
     try:
         content = file.getvalue().decode("utf-8")
-        st.success("File successfully uploaded and validated as JSON...")
+        st.session_state.success_message.success("File successfully uploaded and validated as JSON...")
         time.sleep(2)
         return json.loads(content)
     except json.JSONDecodeError:
@@ -225,6 +225,8 @@ def main():
         st.session_state.uploaded_file = None
     if 'show_user_options' not in st.session_state:
         st.session_state.show_user_options = False
+    if 'success_message' not in st.session_state:
+        st.session_state.success_message = st.empty()
 
     # Fetch initial data if not already present
     if st.session_state.scatter_data is None:
@@ -260,6 +262,7 @@ def main():
         fig = create_scatter_plot(st.session_state.scatter_data, x_axis, y_axis, size_axis)
         if fig is not None:
             st.plotly_chart(fig)
+            st.session_state.success_message.empty() # clear the success messages shown in the UI
     else:
         st.warning("No data available for plotting. Please fetch or upload data first.")
 
