@@ -539,6 +539,9 @@ shinyServer(
       parameter.vector<-c(selectedPair,totalBudget,costKit,
                           costFlowCell,readsPerFlowcell,type)
 
+      scatterData(power.study.plot)
+      influenceData(power.study.plot)
+
       return(list(power.study.plot, parameter.vector))
     }, ignoreNULL = FALSE)
 
@@ -611,8 +614,6 @@ shinyServer(
       }
 
       colnames(power.study.plot)[2]<-"Detection.power"
-
-      scatterData(power.study.plot)
       
       plot_ly(data=power.study.plot,
               type = "scatter",
@@ -640,6 +641,108 @@ shinyServer(
     })
 
     observeEvent(input$recalc, {
+      # Force the recalculation of powerFrame
+      power.study.plot<-powerFrame()[[1]]
+      parameter.vector<-powerFrame()[[2]]
+      selectedPair<-parameter.vector[1]
+
+      #Set grid dependent on parameter choice
+      if(selectedPair=="sc"){
+        xAxis<-"sampleSize"
+        xAxisLabel<-"Sample size"
+        yAxis<-"totalCells"
+        yAxisLabel<-"Cells per sample"
+        sizeAxis<-"readDepth"
+        sizeAxisLabel<-"Read depth"
+      } else if(selectedPair=="sr"){
+        xAxis<-"sampleSize"
+        xAxisLabel<-"Sample size"
+        yAxis<-"readDepth"
+        yAxisLabel<-"Read depth"
+        sizeAxis<-"totalCells"
+        sizeAxisLabel<-"Cells per sample"
+      } else {
+        xAxis<-"totalCells"
+        xAxisLabel<-"Cells per sample"
+        yAxis<-"readDepth"
+        yAxisLabel<-"Read depth"
+        sizeAxis<-"sampleSize"
+        sizeAxisLabel<-"Sample size"
+      }
+
+      #Round value to not display to many digits
+      power.study.plot$powerDetect<-round(power.study.plot$powerDetect,3)
+
+      #Highlight one point
+      s<-event_data("plotly_click", source = "powerMap")
+      if (! is.null(s)) {
+        #Select study of interest dependent on the click
+        max.study<-power.study.plot[power.study.plot[,c(xAxis)]==s[["x"]] &
+                                      power.study.plot[,c(yAxis)]==s[["y"]],]
+        selectedData(max.study)
+
+      } else {
+        max.study<-power.study.plot[which.max(power.study.plot$powerDetect),]
+        selectedData(max.study)
+      }
+
+      colnames(power.study.plot)[2]<-"Detection.power"
+
+      scatterData(power.study.plot)
+      
+      ########################
+
+      power.study<-powerFrame()[[1]]
+      parameter.vector<-powerFrame()[[2]]
+
+      selectedPair<-parameter.vector[1]
+      totalBudget<-parameter.vector[2]
+      costKit<-parameter.vector[3]
+      costFlowCell<-parameter.vector[4]
+      readsPerFlowcell<-parameter.vector[5]
+      studyType<-parameter.vector[6]
+
+      #Set grid dependent on parameter choice
+      if(selectedPair=="sc"){
+        xAxis<-"sampleSize"
+        xAxisLabel<-"Sample size"
+        yAxis<-"totalCells"
+        yAxisLabel<-"Cells per sample"
+      } else if(selectedPair=="sr"){
+        xAxis<-"sampleSize"
+        xAxisLabel<-"Sample size"
+        yAxis<-"readDepth"
+        yAxisLabel<-"Read depth"
+      } else {
+        xAxis<-"totalCells"
+        xAxisLabel<-"Cells per sample"
+        yAxis<-"readDepth"
+        yAxisLabel<-"Read depth"
+      }
+
+      s<-event_data("plotly_click", source = "powerMap")
+      if (length(s)) {
+
+        #Select study of interest dependent on the click
+        max.study<-power.study[power.study[,xAxis]==s[["x"]] &
+                                 power.study[,yAxis]==s[["y"]],]
+
+      } else {
+        #Select study with the maximal values
+        max.study<-power.study[which.max(power.study$powerDetect),]
+      }
+
+      #Get study type
+      if(studyType=="eqtl"){
+        powerName<-"eQTL power"
+      } else {
+        powerName<-"DE power"
+      }
+
+      influenceData(power.study)
+
+      ########################
+      
       scatter_data <- toJSON(scatterData())
       influence_data <- toJSON(influenceData())
       
@@ -695,8 +798,6 @@ shinyServer(
       } else {
         powerName<-"DE power"
       }
-
-      influenceData(power.study)
 
       ##############
       #Plot cells per person
