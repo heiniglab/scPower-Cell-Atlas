@@ -31,14 +31,21 @@ def fetch_gdrive_json(file_id):
         st.error(f"Error fetching file from Google Drive: {str(e)}")
         return None
 
-def read_json_file(file):
+def read_json_file(file_path):
     try:
-        content = file.getvalue().decode("utf-8")
+        with open(file_path, 'r') as file:
+            content = file.read()
         st.session_state.success_message.success("File successfully uploaded and validated as JSON...")
         time.sleep(2)
         return json.loads(content)
+    except FileNotFoundError:
+        st.error(f"The file '{file_path}' was not found.")
+        return None
     except json.JSONDecodeError:
         st.error("The uploaded file is not valid JSON.")
+        return None
+    except Exception as e:
+        st.error(f"An error occurred while reading the file: {str(e)}")
         return None
 
 def create_scatter_plot(data, x_axis, y_axis, size_axis):
@@ -226,9 +233,9 @@ def main():
 
     # Fetch initial data if not already present
     if st.session_state.scatter_data is None:
-        st.session_state.scatter_data = fetch_gdrive_json(scatter_file_id)
+        st.session_state.scatter_data = read_json_file("./scPower_shiny/power_study_plot.json")
     if st.session_state.influence_data is None:
-        st.session_state.influence_data = fetch_gdrive_json(influence_file_id)
+        st.session_state.influence_data = read_json_file("./scPower_shiny/power_study.json")
 
     # Create scatter plot
     if isinstance(st.session_state.scatter_data, list) and len(st.session_state.scatter_data) > 0:
