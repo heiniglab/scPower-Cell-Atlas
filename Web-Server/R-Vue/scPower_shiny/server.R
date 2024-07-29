@@ -171,6 +171,9 @@ shinyServer(
   function(input, output, session) {
 
     onlineToggle <- TRUE
+
+    scatterData <- reactiveVal(NULL)
+    influenceData <- reactiveVal(NULL)
     
     ###############################
     # Power to detect rare cell type
@@ -609,9 +612,7 @@ shinyServer(
 
       colnames(power.study.plot)[2]<-"Detection.power"
 
-      # save power.study.plot as a json file
-      json_data <- toJSON(power.study.plot)
-      write(json_data, file = "power_study_plot.json")
+      scatterData(power.study.plot)
       
       plot_ly(data=power.study.plot,
               type = "scatter",
@@ -638,6 +639,14 @@ shinyServer(
                )
     })
 
+    observeEvent(input$recalc, {
+      scatter_data <- toJSON(scatterData())
+      influence_data <- toJSON(influenceData())
+      
+      write(scatter_data, file = "power_study_plot.json")
+      write(influence_data, file = "power_study.json")
+    })
+    
     output$readPlot<-renderPlotly({
 
       power.study<-powerFrame()[[1]]
@@ -687,9 +696,7 @@ shinyServer(
         powerName<-"DE power"
       }
 
-      # save power.study as a json file
-      json_data <- toJSON(power.study)
-      write(json_data, file = "power_study.json")
+      influenceData(power.study)
 
       ##############
       #Plot cells per person
