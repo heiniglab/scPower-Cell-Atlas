@@ -176,7 +176,7 @@ calculateZeroPerc <- function(counts) {
   return(c(zero_perc = zeros/total * 100, non_zero_perc = non_zeros/total * 100))
 }
 
-calculateGeneRanks <- function(count.matrix, idToName) {
+calculateGeneRanks <- function(count.matrix, idToName, ndiff, among_top_N, mean_fc, sd_fc) {
 
   # To speed up computation, remove all 0 genes
   count.matrix <- count.matrix[rowSums(count.matrix) > 0,]
@@ -184,14 +184,33 @@ calculateGeneRanks <- function(count.matrix, idToName) {
   # Normalize by count per cell
   count.matrix <- t(t(count.matrix) / colSums(count.matrix))
   
-  # Randomly select a fraction of the gene to be significant DE genes
-  sign.genes <- rownames(count.matrix)[1:300]
+  # Rank genes by their mean expression and select top among_top_N
+  ranked_genes <- rownames(count.matrix)[order(-rowMeans(count.matrix))[1:among_top_N]]
+  # Randomly select ndiff genes from the top among_top_N expressed genes
+  sign.genes <- sample(ranked_genes, ndiff)
   
   # Calculate gene ranks
   gene.ranks <- gene.rank.calculation(count.matrix, sign.genes)
   
   # Indicator to distinguish different list of elements belongs to different cell type results
-  gene.ranks[["indicator"]] <- idToName
+  gene.ranks[["name"]] <- idToName
+  colnames(gene.ranks)[colnames(gene.ranks) == "gene_symbol"] <- "gene"
+  row.names(gene.ranks) <- NULL
+  
+  # Simulate fold changes for the selected differentially expressed genes
+  # Add simulated fold changes to gene.ranks
+  set.seed(0)
+  gene.ranks$FoldChange <- effectSize.DE.simulation(mean = mean_fc, sd = sd_fc, numGenes = ndiff)
+  
+  # assigning "type" column
+  gene.ranks$type <- strsplit(idToName, split = "_")[[1]][[2]]
+  
+  # blank columns
+  gene.ranks$FDR <- NA
+  gene.ranks$geneLength <- NA
+  
+  # re-order columns
+  gene.ranks <- gene.ranks[, c("name", "gene", "FoldChange", "FDR", "cumFraction", "rank", "geneLength", "type")]
   
   return(gene.ranks)
 }
@@ -457,8 +476,8 @@ writeToDatabase <- function(data.frame, table.name, append = TRUE) {
   dbWriteTable(connectionInstance, table.name, data.frame, append = append)
 }
 
-visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoint = NULL,
-                            lower.dist=1e-5,zero.pos=1e-6, num.bins=30){
+visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000,
+                          lower.dist=1e-5,zero.pos=1e-6, num.bins=30){
 
   require(ggplot2)
 
@@ -468,7 +487,10 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoin
   }
 
   #Simulate mean values
-  sim.mean.vals<-sampleMeanValuesQuantiles(gamma.parameters, nGenes, censorPoint)
+  sim.mean.vals<-sampleMeanValuesQuantiles(gamma.parameters, nGenes)
+  
+  # Calculate the sum of simulated means
+  sum_sim_means <- sum(sim.mean.vals)
 
   #Set p1 to a minimal value of 0.01
   gamma.parameters$p1<-max(gamma.parameters$p1,0.01)
@@ -477,7 +499,8 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoin
   nZeros <-round(nGenes*gamma.parameters$p1)
   nGamma1<-round(nGenes*gamma.parameters$p2)
   nGamma2<-round(nGenes*gamma.parameters$p3)
-  nGamma3<-nGenes-nZeros-nGamma1-nGamma2
+  nGamma3<-round(nGenes*gamma.parameters$p4)
+  nGammaSim <- nGenes-nZeros-nGamma1-nGamma2-nGamma3
 
   #Remove zero values from mean vector to reduce it to a size of nGenes
   zeroGenes<-mean.vals==0
@@ -495,7 +518,7 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoin
   plot.values <- data.frame(means = c(mean.vals, sim.mean.vals),
                           type = c(rep("Observed", nGenes), rep("sim.mean.zero", nZeros),
                                    rep("sim.mean.c1", nGamma1), rep("sim.mean.c2", nGamma2),
-                                   rep("sim.mean.c3", nGamma3)))
+                                   rep("sim.mean.c3", nGamma3), rep("sim.mean.sim", nGammaSim)))
 
   #Set zero values to a very small value to be able to plot on logarithmic scale
   plot.values<-plot.values[plot.values$means==0 | plot.values$means>=lower.dist,]
@@ -507,7 +530,7 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoin
   #Order estimated means
   plot.values$type <- factor(plot.values$type,
                            levels = c("Observed", "sim.mean.zero",
-                                      "sim.mean.c1", "sim.mean.c2", "sim.mean.c3"))
+                                      "sim.mean.c1", "sim.mean.c2", "sim.mean.c3", "sim.mean.sim"))
 
   g<-ggplot(data=plot.values,aes(x=means, fill=type))+
     geom_histogram(position="dodge",bins=num.bins)+
@@ -517,50 +540,57 @@ visualizeGammaFits<-function(mean.vals,gamma.parameters,nGenes=21000, censorPoin
     geom_vline(xintercept=lower.dist)+
     theme_bw()+
     xlab("Deseq fitted mean value (logarithmized)")+ylab("Frequency")+
-    labs(fill="Mean value")
+    labs(fill="Mean value") +
+    annotate("text", x = 1e1, y = max(plot.values$means, na.rm = TRUE) * 0.9, 
+             label = paste("Sum of simulated means:", round(sum_sim_means, 2)), 
+             size = 4, hjust = 0)
 
   return(g)
 
 }
 
 sampleMeanValuesQuantiles <- function(gamma.parameters, nGenes = 21000, censorPoint = NULL) {
-  # Set p1 to a minimal value of 0.01
+  # Ensure minimum value for p1
   gamma.parameters$p1 <- max(gamma.parameters$p1, 0.01)
 
-  # Calculate p2 given the other two parameters if it is not provided
-  if (!"p2" %in% colnames(gamma.parameters)) {
-    gamma.parameters$p2 <- 1 - gamma.parameters$p1 - gamma.parameters$p3
+  # Calculate p4 to ensure all proportions sum to 1, assuming p1, p2, p3, and p4 correspond to the proportions
+  if (!"p2" %in% names(gamma.parameters)) {
+    gamma.parameters$p2 <- 1 - sum(gamma.parameters[c("p1", "p2", "p3")])
   }
 
   # Zero Component
   nZeros <- round(nGenes * gamma.parameters$p1)
-  vals <- rep(0, nZeros)
+  zeroVals <- rep(0, nZeros)
 
-  # First Gamma component
+  # Generate values for the first Gamma component
   nGamma1 <- round(nGenes * gamma.parameters$p2)
-  quantiles.c1 <- seq(1 / (nGamma1 + 1), 1 - 1 / (nGamma1 + 1), by = 1 / (nGamma1 + 1))
-  vals <- c(vals, qgamma(quantiles.c1, shape = gamma.parameters$s1, 
-                         rate = gamma.parameters$r1))
+  gammaVals1 <- qgamma(seq(1 / (nGamma1 + 1), 1 - 1 / (nGamma1 + 1), by = 1 / nGamma1),
+                       shape = gamma.parameters$s1, rate = gamma.parameters$r1)
 
-  # Second Gamma component
+  # Generate values for the second Gamma component
   nGamma2 <- round(nGenes * gamma.parameters$p3)
-  quantiles.c2 <- seq(1 / (nGamma2 + 1), 1 - 1 / (nGamma2 + 1), by = 1 / (nGamma2 + 1))
-  vals <- c(vals, qgamma(quantiles.c2, shape = gamma.parameters$s2, 
-                         rate = gamma.parameters$r2))
+  gammaVals2 <- qgamma(seq(1 / (nGamma2 + 1), 1 - 1 / (nGamma2 + 1), by = 1 / nGamma2),
+                       shape = gamma.parameters$s2, rate = gamma.parameters$r2)
 
-  # Third Gamma component
+  # Generate values for the third Gamma component
   nGamma3 <- nGenes - nZeros - nGamma1 - nGamma2
-  quantiles.c3 <- seq(1 / (nGamma3 + 1), 1 - 1 / (nGamma3 + 1), by = 1 / (nGamma3 + 1))
-  vals <- c(vals, qgamma(quantiles.c3, shape = gamma.parameters$s3, rate = gamma.parameters$r3))
+  gammaVals3 <- qgamma(seq(1 / (nGamma3 + 1), 1 - 1 / (nGamma3 + 1), by = 1 / nGamma3),
+                       shape = gamma.parameters$s3, rate = gamma.parameters$r3)
 
-  # Exclude values below the censor point
-  print(censorPoint)
+  # Combine all Gamma values
+  gammaVals <- c(gammaVals1, gammaVals2, gammaVals3)
+
+  # Exclude values below the censor point, if specified
   if (!is.null(censorPoint)) {
-    vals <- vals[vals >= censorPoint]
+    gammaVals <- gammaVals[gammaVals >= censorPoint]
   }
+
+  # Combine zero and Gamma values
+  vals <- c(zeroVals, gammaVals)
 
   return(vals)
 }
+
 
 mainProcessing <- function(dataset) {
   numberOfAssays <- length(levels(dataset$assay_ontology_term_id))
@@ -577,8 +607,14 @@ mainProcessing <- function(dataset) {
   countsSubsampled <- subsampleIntoList(counts)
   print(calculateZeroPerc(counts))
   
+  ## assumptions about the differentially expressed genes
+  ndiff <- 50
+  among_top_N <- 5000
+  mean_fc <- 1.5
+  sd_fc <- 0.5
+  
   # Calculating gene ranks
-  geneRanks <- calculateGeneRanks(counts, idToName) 
+  geneRanks <- calculateGeneRanks(counts, idToName, ndiff, among_top_N, mean_fc, sd_fc) 
 
   censorPoints <- rep(NA, length(countsSubsampled))
   names(censorPoints) <- names(countsSubsampled)
@@ -813,7 +849,7 @@ Loop through cell types:
 
 For getting UMI counts:
 ```{r}
-datasetID <- "EFO:0009922_UBERON:0003126_CL:0000786"
+datasetID <- datasetCollectionCombinedID[[1]]
 datasetID <- strsplit(datasetID, split = "_")[[1]]
 
 idToName <- paste(convertIDtoName(datasetID), collapse="_")
@@ -862,10 +898,9 @@ for (factor_name in names(increasedCensorPoints)) {
   gammaFits <- gammaMixedDistEstimation(normMeanValues, currentCensorPoint, numGenesKept)
   
   # Visualize gamma fits for the 'complete' matrix
-  p <- visualizeGammaFits(normMeanValues$mean[normMeanValues$matrix == "complete"],
+  p <- visualize.gamma.fits(normMeanValues$mean[normMeanValues$matrix == "complete"],
                             gammaFits[gammaFits$matrix == "complete",],
-                            nGenes = numGenesKept,
-                            censorPoint = currentCensorPoint)
+                            nGenes = numGenesKept)
   
   # Add a vertical line and text annotation for the censor point
   p <- p + geom_vline(xintercept = currentCensorPoint, linetype = "dashed", color = "black")
@@ -876,7 +911,7 @@ for (factor_name in names(increasedCensorPoints)) {
                hjust = 1.1, vjust = 1.1, color = "black", size = 3)
   
   # Save the plot, incorporating the factor name into the file name
-  filename <- paste0("C:/Users/Cem/Downloads/3rd_gamma_fits/trachea_plasmacell_with_cutoff_updated/", "gamma_fits_plot_", factor_name, ".png")
+  filename <- paste0("C:/Users/Cem/Downloads/3rd_gamma_fits/en_son/", "gamma_fits_plot_", factor_name, ".png")
   ggsave(filename, plot = p)
 }
 
