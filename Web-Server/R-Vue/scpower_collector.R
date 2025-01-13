@@ -4,10 +4,10 @@
 library(jsonlite)
 library(scPower)  # Assuming the optimize.constant.budget.restrictedDoublets function is in this package
 
-load("disp.fun.param.RData")
-load("gamma.mixed.fits.RData")
-load("read.umi.fit.RData")
-load("ref.study.RData")
+load("data/disp.fun.param.RData")
+load("data/gamma.mixed.fits.RData")
+load("data/read.umi.fit.RData")
+load("data/ref.study.RData")
 
 # Read command-line arguments
 args <- commandArgs(trailingOnly = TRUE)
