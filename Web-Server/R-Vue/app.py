@@ -204,21 +204,29 @@ def json_safe(obj):
 def extract_and_filter(celltypes, assay_filter=None, tissue_filter=None):
     assays = set()
     tissues = set()
-    filtered_celltypes = celltypes
+    filtered_celltypes = []
 
-    if assay_filter and assay_filter != "All":
-        filtered_celltypes = [ct for ct in filtered_celltypes if ct.startswith(assay_filter)]
-    
-    if tissue_filter and tissue_filter != "All":
-        filtered_celltypes = [ct for ct in filtered_celltypes if ct.split('_')[1] == tissue_filter]
-
+    # First collect all assays and tissues
     for celltype in celltypes:
         parts = celltype.split('_')
         if len(parts) >= 3:
             assays.add(parts[0])
             tissues.add(parts[1])
     
-    return sorted(list(assays)), sorted(list(tissues)), filtered_celltypes
+    # Apply filters
+    filtered_celltypes = celltypes
+    
+    # Apply assay filter first
+    if assay_filter and assay_filter != "All":
+        filtered_celltypes = [ct for ct in filtered_celltypes if ct.split('_')[0] == assay_filter]
+        # Update available tissues based on assay filter
+        tissues = {ct.split('_')[1] for ct in filtered_celltypes}
+    
+    # Then apply tissue filter
+    if tissue_filter and tissue_filter != "All":
+        filtered_celltypes = [ct for ct in filtered_celltypes if ct.split('_')[1] == tissue_filter]
+    
+    return sorted(list(assays)), sorted(list(tissues)), sorted(filtered_celltypes)
 
 # Callback functions to update session state
 def update_assay():
@@ -290,22 +298,24 @@ def perform_analysis():
 
     all_celltypes = pd.read_csv('database/main_table.csv')['id_to_name'].tolist()
 
-    assays, tissues, _ = extract_and_filter(all_celltypes)
-
     # Create scatter plot
     with st.expander("General Parameters", expanded=True):
         study_type = st.radio(
             "Study type:",
             ["de", "eqtl"])
         organism = st.selectbox("Organisms", ["Homo sapiens", "Mus musculus"])
+        
+        assays, _, _ = extract_and_filter(all_celltypes)
         selected_assay = st.selectbox("Assays", ["All"] + assays, key='assay', on_change=update_assay)
 
         _, tissues, _ = extract_and_filter(all_celltypes, assay_filter=selected_assay)
         selected_tissue = st.selectbox("Tissues", ["All"] + tissues, key='tissue')
-        
-        _, _, filtered_celltypes = extract_and_filter(all_celltypes, assay_filter=selected_assay, tissue_filter=selected_tissue)
+
+        _, _, filtered_celltypes = extract_and_filter(all_celltypes, 
+                                                    assay_filter=selected_assay, 
+                                                    tissue_filter=selected_tissue)
         celltype = st.selectbox("Cell Types", filtered_celltypes)
-    
+            
     with st.expander("Advanced Options", expanded=False):
         col1, col2 = st.columns([3, 3])
         
